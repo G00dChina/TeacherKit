@@ -1,0 +1,25 @@
+{
+      "kind" : "remix",
+      "shape" : "speech-bubble2",
+      "style" : "urban",
+      "font" : {
+          "name":"Dosis",
+          "size":70.0,
+          "weight": "Semi Bold",
+          "color-red":1.0,
+          "color-green":1.0,
+          "color-blue":1.0,
+          "tracking":0.0
+      },
+      "text" : "ABC",
+      "word-wrap" : true,
+      "tail-x" : -212,
+      "tail-y" : -160,
+      "width" : 280,
+      "height" : 200,
+      "fill-color": "F58662",
+      "fill-style" : "solid",
+      "stroke-style" : "solid",
+      "stroke-width": 0.0,
+      "stroke-color" : "FFFFFF"
+}

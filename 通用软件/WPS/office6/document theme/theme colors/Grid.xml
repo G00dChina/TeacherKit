@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Grid" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="534949"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="CCD1B9"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="C66951"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="BF974D"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="928B70"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="87706B"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="94734E"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="6F777D"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="CC9900"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="C0C0C0"/>
+   </a:folHlink>
+</a:clrScheme>
+

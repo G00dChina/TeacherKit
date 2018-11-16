@@ -1,0 +1,22 @@
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="$VideoWidth" height="$VideoHeight" id="csSWF">
+                <param name="movie" value="$FetchFileURLVideoObj$#$MediaDirectory$#$VideoFileName" />
+                <param name="quality" value="$FlashQuality" />
+                <param name="csConfigFile" value="$FetchFileURLFLASHCONFIG$#$MediaDirectory$#$FlashConfig" />
+                <param name="csColor" value="$SWFBGColor" />
+                $SWFcsLoadingKeyword
+                <param name="allowfullscreen" value="true" />
+                <param name="scale" value="showall" />
+                <param name="allowscriptaccess" value="always" />
+                <param name="flashvars" value="autostart=false&color=0x1A1A1A,0x1A1A1A" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="$FetchFileURLVideoObj$#$MediaDirectory$#$VideoFileName" width="$VideoWidth" height="$VideoHeight">
+                    <param name="quality" value="best" />
+                    <param name="csConfigFile" value="$FetchFileURLFLASHCONFIG$#$MediaDirectory$#$FlashConfig" />
+                    <param name="csColor" value="$SWFBGColor" />
+                    $SWFcsLoadingKeyword
+                    <param name="allowfullscreen" value="true" />
+                    <param name="scale" value="showall" />
+                    <param name="allowscriptaccess" value="always" />
+                    <param name="flashvars" value="autostart=false&color=0x1A1A1A,0x1A1A1A" />
+                <!--<![endif]-->
+

@@ -1,0 +1,264 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Edit Menu &gt; Action Buttons</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Edit Menu,Edit Menu Action Buttons,Action Buttons">
+   <meta name="description" content="Action Buttons">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_edit_btns.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Action Buttons</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_edit.htm">Edit Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Action Buttons</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_edit_clear.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_edit.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_edit_btns_hideshow.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | Action Buttons</span><span class="f_BodyText"> submenu contains commands for creating various kinds of <a href="objects_btns.htm" class="topiclink">action buttons</a>. Action buttons are sketch objects that you can press to perform a previously defined action.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Sometimes you’ll create an action button for your own convenience in working with a sketch, and sometimes you’ll create a button to help present a mathematical feature of your sketch to someone else.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For example, instead of hiding a group of objects by selecting them and choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_hideobjects.htm" class="topiclink">Display | Hide Objects</a>,</span><span class="f_BodyText"> create a <a href="menus_edit_btns_hideshow.htm" class="topiclink">Hide/Show</a> button that hides the objects with a single click. Instead of using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool to drag point </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> toward point </span><span class="f_BodyText" style="font-style: italic;">B,</span><span class="f_BodyText"> create a <a href="menus_edit_btns_movement.htm" class="topiclink">Movement</a> button to do it for you. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Most of these commands display a <a href="menus_edit_properties.htm" class="topiclink">Properties</a> dialog box panel that allows you to specify certain details about the action the button will perform.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="action_button_menu_zoom75.png" width="218" height="130" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Command</span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Prerequisites</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Action</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Button Description and Properties</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_hideshow.htm" class="topiclink">Hide/Show</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more objects</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Hide or show the selected objects</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_hideshowprops.htm" class="topiclink">Hide/Show Buttons and Properties</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_animation.htm" class="topiclink">Animation</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more geometric objects or parameters</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Animate the selected objects</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_animateprops.htm" class="topiclink">Animation Buttons and Properties</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_movement.htm" class="topiclink">Movement</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more pairs of points or values. The first object of each pair must be free to move or vary.</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">For a pair of points, move the first point toward the second; for a pair of values, vary the first value toward the second</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_moveprops.htm" class="topiclink">Movement Buttons and Properties</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_present.htm" class="topiclink">Presentation</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more action buttons</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Present the action buttons simultaneously or sequentially</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_presentprops.htm" class="topiclink">Presentation Buttons and Properties</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_sound.htm" class="topiclink">Sound</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or two functions or function plots</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Make a sound defined by the function(s)</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="sound_buttons.htm" class="topiclink">Sound Buttons</a> (No Properties)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_link.htm" class="topiclink">Link</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">None</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Link to another page, another sketch, or a location on the Internet</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_linkprops.htm" class="topiclink">Link Buttons and Properties</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:15%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_scroll.htm" class="topiclink">Scroll</a></span></p>
+</td>
+<td style="vertical-align:top; width:20%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One point</span></p>
+</td>
+<td style="vertical-align:top; width:45%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Scroll the window based on the location of the point</span></p>
+</td>
+<td style="vertical-align:top; width:14%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_scrollprops.htm" class="topiclink">Scroll Buttons and Properties</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<x:xmpmeta tsc:version="2.0.1" xmlns:x="adobe:ns:meta/" xmlns:tsc="http://www.techsmith.com/xmp/tsc/">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/" xmlns:xmpG="http://ns.adobe.com/xap/1.0/g/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:tscDM="http://www.techsmith.com/xmp/tscDM/" xmlns:tscIQ="http://www.techsmith.com/xmp/tscIQ/" xmlns:tscHS="http://www.techsmith.com/xmp/tscHS/" xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#" xmlns:stFnt="http://ns.adobe.com/xap/1.0/sType/Font#" xmlns:exif="http://ns.adobe.com/exif/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description >
+         <xmpDM:duration />
+         <xmpDM:videoFrameSize stDim:unit="pixel" />
+         <tsc:langName>
+            <rdf:Bag>
+            </rdf:Bag>
+         </tsc:langName>
+         <xmpDM:Tracks>
+            <rdf:Bag>
+               <rdf:li>
+                  <rdf:Description xmpDM:trackType="Caption" xmpDM:frameRate="f1000" xmpDM:trackName="Captioning">
+                     <xmpDM:markers>
+                        <rdf:Seq>
+                        </rdf:Seq>
+                     </xmpDM:markers>
+                  </rdf:Description>
+               </rdf:li>
+               <rdf:li>
+                  <rdf:Description xmpDM:trackType="Hotspot" xmpDM:frameRate="f1000" xmpDM:trackName="Hotspots">
+                     <xmpDM:markers>
+                        <rdf:Seq>
+                        </rdf:Seq>
+                     </xmpDM:markers>
+                  </rdf:Description>
+               </rdf:li>
+               <rdf:li>
+                  <rdf:Description xmpDM:trackType="ScreenText" xmpDM:frameRate="f1000" xmpDM:trackName="Screen Text">
+                     <xmpDM:markers>
+                        <rdf:Seq>
+                        </rdf:Seq>
+                     </xmpDM:markers>
+                  </rdf:Description>
+               </rdf:li>
+               <rdf:li>
+                  <rdf:Description xmpDM:trackType="TableOfContents" xmpDM:frameRate="f1000" xmpDM:trackName="Table of Contents">
+                     <xmpDM:markers>
+                        <rdf:Seq>
+                        </rdf:Seq>
+                     </xmpDM:markers>
+                  </rdf:Description>
+               </rdf:li>
+	       <rdf:li>
+                  <rdf:Description xmpDM:trackType="Quiz" xmpDM:frameRate="f1000" xmpDM:trackName="Quiz">
+                     <xmpDM:markers>
+                        <rdf:Seq>
+                        </rdf:Seq>
+                     </xmpDM:markers>
+                  </rdf:Description>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpDM:Tracks>
+         <tscDM:controller>
+            <rdf:Description xmpDM:name="tscplayer">
+               <tscDM:parameters>
+                  <rdf:Bag>
+                  </rdf:Bag>
+               </tscDM:parameters>
+               <tscDM:controllerText>
+                  <rdf:Bag>
+                  </rdf:Bag>
+               </tscDM:controllerText>
+	         </rdf:Description>
+	      </tscDM:controller>
+	      <tscDM:contentList>
+	         <rdf:Description>
+		         <tscDM:files>
+		            <rdf:Seq>
+		            </rdf:Seq>
+		         </tscDM:files>
+	         </rdf:Description>
+	      </tscDM:contentList>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>

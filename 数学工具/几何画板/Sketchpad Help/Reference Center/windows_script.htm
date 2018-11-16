@@ -1,0 +1,263 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Script View</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Script View,Script View,Script View showing and hiding,Script View changing font size,Script View tool comment,Script View given objects and steps,Script View using a custom tool as a command,Script View printing the Script View,Custom Tools,Custom Tools using a custom tool as a command,Dialog Boxes,Dialog Boxes Script View">
+   <meta name="description" content="Script View">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_script.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Script View</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Script View</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_advprefs_editclrmac.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_script_givenssteps.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_Centered_Large"><img src="win_scriptview_zoom75.png" width="267" height="296" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">The Script View window displays a readable description of the mathematical construction performed by a <a href="tools_cust.htm" class="topiclink">custom tool</a>. Use the Script View to review the given object requirements of a particular custom tool, or to investigate how a tool was originally defined. In the Script View, you can add or read comments about the tool written by the tool’s author; change properties—such as color or line weight—of the objects that the tool creates; and even apply the tool’s construction in a step-by-step fashion to objects in your sketch.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The Script View offers an “inside look” at the workings of any custom tool. You should be familiar with using custom tools before working with the Script View.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Show the Script View</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To display the Script View window, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_cust_menu.htm" class="topiclink">Show Script View</a></span><span class="f_BodyText"> from the <a href="tools_cust_menu.htm" class="topiclink">Custom Tools</a> menu or click the </span><span class="f_BodyText" style="font-weight: bold;">Show Script View</span><span class="f_BodyText"> checkbox in the <a href="windows_docs_docoptions.htm" class="topiclink">Document Options</a> dialog box’s view of custom tools. The Script View window sits on top of open document windows and displays the Script View of the most-recently chosen custom tool. To change the tool described by the Script View, choose a different custom tool from the available tools in the Custom Tools menu or in the Document Options dialog box.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote"><a href="tools_cust_menu.htm" class="topiclink">Show Script View</a> is only available when one or more custom tools have been added to your Custom Tools menu.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can reposition the Script View by dragging its title bar and resize it by dragging its resize area. The Script View remains visible until you close it by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_cust_menu.htm" class="topiclink">Hide Script View</a></span><span class="f_BodyText"> from the Custom Tools menu, or by clicking the window’s close box.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To show the Script View at the same time as you choose a custom tool, hold the Shift key while you pull down the <a href="tools_cust_menu.htm" class="topiclink">Custom Tools</a> menu.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Change Script View Font Size</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="script_view_font_size.png" width="51" height="28" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the Font Size buttons at the bottom of the Script View window to increase or decrease the font size used in the Script View window.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Smaller fonts are useful to see more steps; larger fonts are useful to project for students to see.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Tool Comment</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="win_scrptview_commnt_zoom75.png" width="220" height="71" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">The Tool Comment appears at the top of the Script View window, and contains any comments about the custom tool’s purpose or behavior that its author chose to add. Adjust the size of the Tool Comment by dragging the divider bar beneath it, and add to, or change the Tool Comment by typing. If you create new custom tools you plan to share with other Sketchpad users, use the Tool Comment to describe the tool’s given objects, to identify yourself as the tool’s author, and to explain how the tool should be used.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Any comments you add are saved with the tool, so you — or another Sketchpad user — can always refer to them when using the tool. When a Script View construction is printed, the comment is printed with the rest of the construction.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Givens and Steps of a Tool</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The Script View lists the given objects and steps that make up the <a href="tools_cust.htm" class="topiclink">custom tool</a>, and allows you to <a href="windows_script_givenssteps.htm" class="topiclink">change their attributes and rearrange the given objects.</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Use a Custom Tool with the Script View</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">If the Script View window is showing when you use a custom tool in a sketch, it provides visual feedback about the tool’s use. <a href="windows_script_givenssteps.htm" class="topiclink">Given objects</a> that you’ve already matched with the tool appear highlighted. Given objects that you haven’t matched yet appear after those you’ve matched, and are not highlighted. The object that the tool is currently matching appears between the two.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Use the Script View feedback to walk through a custom tool the first time you’re trying a tool created by someone else.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Use a Custom Tool as a Custom Command</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sometimes you may want to <a href="tools_cust_menu.htm" class="topiclink">use a custom tool as a command</a> rather than as a tool, by selecting the objects first and then applying the command to the selected objects.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Apply the Script View Step-by-Step</a></span></td></tr></table></div><div id="TOGGLE0186A7" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sometimes you may want to apply a custom tool’s construction to a sketch in a <a href="windows_script_apply.htm" class="topiclink">step-by-step fashion,</a> rather than use it as a tool.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Print a Script View Construction</a></span></td></tr></table></div><div id="TOGGLE0186A8" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When the Script View is showing, you can print its Tool Comment and Object List. Right-click (Windows) or Ctrl-click (Macintosh) on any object in the script, and choose </span><span class="f_BodyText" style="font-weight: bold;">Print Script View</span><span class="f_BodyText"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu that appears.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_script_givenssteps.htm" class="topiclink">Givens and Steps of a Tool</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_script_apply.htm" class="topiclink">Apply the Script View Step-by-Step</a></span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool.htm" class="topiclink">Advanced Tool Topics</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

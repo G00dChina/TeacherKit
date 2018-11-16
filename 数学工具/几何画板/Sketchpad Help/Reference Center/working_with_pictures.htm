@@ -1,0 +1,234 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Pictures and Drawings &gt; Working with Pictures and Drawings</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Pictures,Pictures loci,Pictures iterations,Pictures cropping,Pictures defining functions,Drawings,Drawings changing color">
+   <meta name="description" content="Working with Pictures and Drawings">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "working_with_pictures.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Working with Pictures and Drawings</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_pictures.htm">Pictures and Drawings</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Working with Pictures and Drawings</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="transforming_pictures.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_pictures.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_iter.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Transformed images of pictures and drawings provide compelling and revealing ways to view and understand geometric and mathematical transformations. Sketchpad provides a number of ways of transforming pictures and creating objects based on pictures.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Create a Locus of a Picture or Drawing</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:65%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To create the locus of a picture, the shape or position of the picture must depend on a point that can move along a path or on a parameter that can vary. Select the picture and the point or parameter and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_locus.htm" class="topiclink">Construct | Locus</a>.</span><span class="f_BodyText"> The locus of the picture appears.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="locus_param_sun2_zoom60.png" width="202" height="125" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Driver: Parameter </span><span class="f_Image_Centered_Large" style="font-style: italic;">Elevation</span><br />
+<span class="f_Image_Centered_Large">Domain: 0° ≤ </span><span class="f_Image_Centered_Large" style="font-style: italic;">Elevation</span><span class="f_Image_Centered_Large"> ≤ 180°</span><br />
+<span class="f_Image_Centered_Large">Driven object: Picture Attached to </span><span class="f_Image_Centered_Large" style="font-style: italic;">P'</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Create an Iterated Image of a Picture or Drawing</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To create an iterated image of a picture, the shape or position of the picture must depend on a pre-image point or parameter. Select the pre-image object(s) and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Transform | Iterate</a>.</span><span class="f_BodyText"> The picture is iterated along with the points it depends on.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="picture_iterated_zoom75.png" width="137" height="124" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Crop a Picture or Drawing to a Polygon</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To display only the portion of a picture that overlaps a polygon, select the picture and polygon and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_croppicture.htm" class="topiclink">Edit | Crop Picture to Polygon</a>.</span><span class="f_BodyText"> The original picture is hidden, and the new cropped image appears in a layer on top of the polygon.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="crop_picture_zoom60.png" width="230" height="173" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Define a Function Based on a Drawing or Picture</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To define a function based on the top edge of a picture or drawing, select it and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_number_deffndrawing.htm" class="topiclink">Number | Define Function from Drawing</a>.</span><span class="f_BodyText"> The value of the function is determined by the highest opaque pixel at each location in the function’s domain.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the Marker tool to draw the desired graph of your function, and then define a function based on your drawing. You can use it in the same way as other functions: evaluate it, transform it, and so forth.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can even modify the function by creating a new drawing, copying it, and choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_paste.htm" class="topiclink">Edit | Paste Replacement Picture</a>.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="picture_function_zoom60.png" width="161" height="94" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Change the Color of a Drawing</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">After you create a drawing using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_marker.htm" class="topiclink">Marker</a></span><span class="f_BodyText"> tool, you can change its color using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_color.htm" class="topiclink">Display | Color</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Opulent" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="B13F9A"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="F4E7ED"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="B83D68"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="AC66BB"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="DE6C36"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="F9B639"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="CF6DA4"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="FA8D3D"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="FFDE66"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="D490C5"/>
+   </a:folHlink>
+</a:clrScheme>
+

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>roundededgerecttransparent.png</Overlay_Filename>
+<Overlay_Name>圆角矩形</Overlay_Name>
+<Overlay_XGrow>16</Overlay_XGrow>
+<Overlay_YGrow>16</Overlay_YGrow>
+<Text_Top>10</Text_Top>
+<Text_Left>10</Text_Left>
+<Text_Bottom>10</Text_Bottom>
+<Text_Right>10</Text_Right>
+<Vector_Grow>0</Vector_Grow>
+<CanRotate_90>0</CanRotate_90>
+<CanRotate_180>0</CanRotate_180>
+<CanRotate_270>0</CanRotate_270>
+<CanFlip_X>0</CanFlip_X>
+<CanFlip_X90>0</CanFlip_X90>
+<CanFlip_X180>0</CanFlip_X180>
+<CanFlip_X270>0</CanFlip_X270>
+<Fill_Color>0</Fill_Color>
+<Border_Color>1</Border_Color>
+<Border_Enabled>1</Border_Enabled>
+<Fill_Enabled>0</Fill_Enabled>
+<Initial_Width>150</Initial_Width>
+<Initial_Height>150</Initial_Height>
+<VectorProps>
+  <figure>
+    <svg>M10,0 h130 c5.521,0,10,4.477,10,10 v130 c0,5.521-4.479,10-10,10 H10 c-5.523,0-10-4.479-10-10 V10 C0,4.477,4.477,0,10,0 z</svg>
+  </figure>
+  <borderWidth>5.00</borderWidth>
+  <seamY>-1</seamY>
+  <roundedRectRadius>10</roundedRectRadius>
+  <shapeWidth>150</shapeWidth>
+  <shapeHeight>150</shapeHeight>
+</VectorProps>
+<Style>4</Style>
+</Overlay>

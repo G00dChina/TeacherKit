@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-Vendor: XMind Ltd.
+Fragment-Host: org.xmind.ui.help
+Build-Jdk: 1.7.0_75
+Built-By: so
+Bundle-Version: 3.6.0.201511090408
+Eclipse-BundleShape: dir
+Bundle-Name: XMind Help Russian Language Support
+Created-By: Apache Maven 3.3.3
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.xmind.ui.help.nl_ru;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: META-INF/maven/org.xmind.help.plugins/org.xmind.ui.help.nl_ru/po
+ m.xml
+SHA-256-Digest: 0/kCaCxLA1Gfy/UvICN4L2qO0JY62Dnk4WKYzbxXe80=
+
+Name: META-INF/maven/org.xmind.help.plugins/org.xmind.ui.help.nl_ru/po
+ m.properties
+SHA-256-Digest: aP3aWhdWGqy222893PrOqEunJi/xjGIvlIQ1Cxlt7UQ=
+
+Name: plugin_ru.properties
+SHA-256-Digest: 8aH+Dh/8wcEekfzoPs/pfHu0nnJolEigkc7Ye4LyCNM=
+
+Name: about.html
+SHA-256-Digest: zIP/do0RthmafXjThr5FKRgwokiG8oPXBVIhy6B3atk=
+

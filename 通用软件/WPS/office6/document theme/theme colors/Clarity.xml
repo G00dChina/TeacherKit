@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Clarity" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:srgbClr val="292934"/>
+   </a:dk1>
+   <a:lt1>
+      <a:srgbClr val="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="D2533C"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="F3F2DC"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="93A299"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="AD8F67"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="726056"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="4C5A6A"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="808DA0"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="79463D"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="0000FF"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="800080"/>
+   </a:folHlink>
+</a:clrScheme>
+

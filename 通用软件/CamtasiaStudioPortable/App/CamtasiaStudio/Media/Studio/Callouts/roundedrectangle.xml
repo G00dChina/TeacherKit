@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>roundedrectangle.png</Overlay_Filename>
+<Overlay_Name>圆角矩形</Overlay_Name>
+<Text_Top>15</Text_Top>
+<Text_Left>15</Text_Left>
+<Text_Bottom>15</Text_Bottom>
+<Text_Right>15</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M10,0h286c5.521,0,10,4.477,10,10v207c0,5.521-4.479,10-10,10H10c-5.523,0-10-4.479-10-10V10
+	C0,4.477,4.477,0,10,0z</svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>-1</seamY>
+<roundedRectRadius>30</roundedRectRadius>
+<shapeWidth>306</shapeWidth>
+<shapeHeight>227</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

@@ -1,0 +1,1 @@
+regasm /unregister CoreAudio.dll

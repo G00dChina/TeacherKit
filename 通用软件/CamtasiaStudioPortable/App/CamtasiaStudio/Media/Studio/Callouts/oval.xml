@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>oval.png</Overlay_Filename>
+<Overlay_Name>气泡标注</Overlay_Name>
+<Overlay_XGrow>99</Overlay_XGrow>
+<Overlay_YGrow>50</Overlay_YGrow>
+<Text_Top>25</Text_Top>
+<Text_Left>10</Text_Left>
+<Text_Bottom>50</Text_Bottom>
+<Text_Right>20</Text_Right>
+<Vector_Grow>1</Vector_Grow>
+<CanRotate_90>1</CanRotate_90>
+<CanRotate_180>1</CanRotate_180>
+<CanRotate_270>1</CanRotate_270>
+<CanFlip_X>1</CanFlip_X>
+<CanFlip_X90>1</CanFlip_X90>
+<CanFlip_X180>1</CanFlip_X180>
+<CanFlip_X270>1</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<VectorProps>
+<figure>
+<svg>M44,115 47,113 49,111 51.5,108 55,103 59,97 62,89.5 54,88.5 46,87 37,85 30,83 23,80 15,75 8.5,69 3,60 1,52 1,43 3,35 6,29 10.5,23 17,18 22,15 29,12 38,9 45,7 54,5 63,3 70,2 77,1 86,.6 94,.5 102,.5 111,.7 120,1 127,1.5 132,2 139,3.3 146,5 152,7 158,9 166,12 172,15 177,18 181,21 185,24 189,28 192,33 193.5,39 194.3,46 194,53 192,59 189,64 186,68 181,73 175,77 166,81 159,84 150,86 139,88 128,89 117,90 106,90 98,90 90,90 79,90 73,96 66,104 63,107 59,110 54,113 49,114.5 47,115Z</svg>
+</figure>
+<borderWidth>3.00</borderWidth>
+<seamY>-1</seamY>
+<shapeWidth>194</shapeWidth>
+<shapeHeight>115</shapeHeight>
+</VectorProps>
+</Overlay>

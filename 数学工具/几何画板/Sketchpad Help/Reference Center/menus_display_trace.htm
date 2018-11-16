@@ -1,0 +1,193 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Display Menu &gt; Trace</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Display Menu,Display Menu Trace,Trace Command,Objects,Objects tracing,Traces,Traces,Traces starting,Traces stopping">
+   <meta name="description" content="Trace">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_display_trace.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Trace</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_display.htm">Display Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Trace</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_display_labelobjects.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_display.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_display_erasetraces.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">This </span><span class="f_BodyText"><a href="menus_display.htm" class="topiclink">Display</a> </span><span class="f_BodyText">menu command turns tracing on or off for each selected object. If all the selected objects are currently being traced, a check mark appears next to the command. Choosing the command turns tracing off for each selected object. If no check mark appears, choosing the command turns tracing on for each selected object.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The keyboard shortcut for </span><span class="f_MarginNote" style="font-weight: bold;">Trace</span><span class="f_MarginNote"> is Ctrl+T (Windows) or <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" />T (Mac).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When an object is traced, it leaves behind a trail as it moves, no matter how the motion is caused — whether by <a href="tools_arrow.htm" class="topiclink">dragging</a> the traced object, by dragging some object on which the traced object <a href="objects_attrib_relations.htm" class="topiclink">depends</a>, or by <a href="menus_display_animate.htm" class="topiclink">animating</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Tracing can be useful for exploring how an object’s movement is constrained or for creating interesting mathematical art.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The faster a traced object moves, the more spread out its trail; the slower the object moves, the denser its trail.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use <a href="windows_prefs_color.htm" class="topiclink">Color Preferences</a> to make traces gradually fade over time and eventually disappear. You can also control how fast traces fade — or turn off the fading of traces altogether. If fading is disabled, traces will remain on the screen indefinitely. To remove traces (whether fading or not) from the screen, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_erasetraces.htm" class="topiclink">Erase Traces</a>.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Think of a trace as a temporary display of an object’s <a href="objects_loci.htm" class="topiclink">locus</a>. To construct a permanent locus, use the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_construct.htm" class="topiclink">Construct</a> | <a href="menus_construct_locus.htm" class="topiclink">Locus</a></span><span class="f_MarginNote"> command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There’s an important difference between erasing traces and deactivating tracing for an object or objects. Erasing traces (using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_erasetraces.htm" class="topiclink">Display | Erase Traces</a></span><span class="f_BodyText"> command) removes all existing traces from the screen but has no effect on whether objects will leave traces in the future. Turning tracing off for an object (using the </span><span class="f_BodyText" style="font-weight: bold;">Trace</span><span class="f_BodyText"> command) prevents that object from leaving traces as it moves in the future, but has no effect on any traces the object has already left on the screen. If you want to remove all existing traces an object has left behind, and also to prevent that object from leaving traces in the future, you must use both commands:</span></p>
+<p class="p_BodyText"><span class="f_BodyText">1.  <a href="tools_arrow_selectdeselect.htm" class="topiclink">Select the object</a> and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display.htm" class="topiclink">Display</a> | Trace</span><span class="f_BodyText"> to turn off future tracing for the object.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">2. Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_erasetraces.htm" class="topiclink">Display | Erase Traces</a> </span><span class="f_BodyText">to erase any existing traces from the screen.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="trace1.png" width="189" height="178" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">The perpendicular bisector of a segment attached to a circle is selected and traced.</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="trace2.png" width="188" height="178" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">As the segment’s endpoint is dragged around the circle, the bisector traces a hyperbolic envelope.</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="trace3.png" width="189" height="178" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Animating the endpoint around the circle results in smoother traces.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+{
+      "kind" : "remix",
+      "shape" : "speech-bubble",
+      "style" : "abstract",
+      "font" : {
+          "name":"Lato",
+          "size":64.0,
+          "weight": "Regular",
+          "color-red":1.0,
+          "color-green":1.0,
+          "color-blue":1.0,
+          "tracking":0.0
+      },
+      "text" : "ABC",
+      "word-wrap" : true,
+      "width" : 400,
+      "height" : 160,
+      "tail-x" : -213,
+      "tail-y" : -120,
+      "fill-color": "A84502",
+      "fill-style" : "solid",
+      "stroke-style" : "solid",
+      "stroke-width": 0.0,
+      "stroke-color": "FFFFFF"
+}

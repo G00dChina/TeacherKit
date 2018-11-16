@@ -1,0 +1,183 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Script View &gt; Apply the Script View Step-by-Step</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Script View,Script View,Script View applying a custom tool step-by-step,Custom Tools,Custom Tools applying a custom tool step-by-step">
+   <meta name="description" content="Apply the Script View Step-by-Step">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_script_apply.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Apply the Script View Step-by-Step</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_script.htm">Script View</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Apply the Script View Step-by-Step</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_script_givenssteps.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_script.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_colorpicker.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Sometimes you may want to apply a custom tool’s construction to a sketch in a step-by-step fashion, rather than use it as a tool. If you are reasoning through the construction described in the Script View, for example, it’s convenient to watch the construction occur in your sketch one object at a time. Likewise, if you’re demonstrating a particular construction to your teacher or students, it may be useful to advance object by object. When you use a custom tool directly in the sketch, its constructed steps happen all at once, as soon as you’ve matched given objects, and only the tool’s final results are displayed. But when you apply a Script View construction step-by-step, objects appear one at a time, and the construction’s intermediate objects are temporarily displayed (so you can see them) until all steps are complete (when Sketchpad hides them for you).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To apply Script View’s construction step-by-step to a particular sketch:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Selection Arrow</a></span><span class="f_BodyText"> tool to select sketch objects that match the given objects displayed in Script View, in the order they appear in the Script View object list. For example, if the Script View lists three given points, select three matching points in your sketch.</span></p><p class="p_BodyText_Indented"><span class="f_BodyText_Indented">If the Script View displays both Assumed and <a href="windows_script_givenssteps.htm" class="topiclink">Given objects</a>, select matching objects first for the Assumed objects and then for the Givens. </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Assumed objects match automatically only when using custom tools directly, not when applying the Script View step-by-step.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented">As you select matching sketch objects, the Script View displays feedback about your selections. Given objects that match your selections appear highlighted; given objects for which you must still select matching sketch objects appear on a normal background.</span></p>
+<p class="p_Image_FlushRight_Narrative"><img src="script_view_apply.png" width="178" height="33" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Once you have selected objects to match all of the Script View given objects, two buttons appear at the bottom of the Script View window.</span></p><p class="p_BodyText_Indented"><span class="f_BodyText_Indented">Click </span><span class="f_BodyText_Indented" style="font-weight: bold;">Next Step</span><span class="f_BodyText_Indented"> to apply the first step of the construction. Click this button repeatedly to walk through the entire construction, step-by-step. As each step is applied, the corresponding object appears in your sketch. While stepping through the construction, you can drag objects in your sketch to investigate their relationships to other objects.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented">Click </span><span class="f_BodyText_Indented" style="font-weight: bold;">All Steps</span><span class="f_BodyText_Indented"> to finish the construction by immediately constructing all remaining steps.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">When the last step of the construction has been completed, the construction’s intermediate objects — which the Script View temporarily displays in your sketch during stepping — are hidden, the results are selected, and the </span><span class="f_BodyText" style="font-weight: bold;">Next Step</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">All Steps</span><span class="f_BodyText"> buttons disappear. The Script View returns to its normal appearance.</span></p><p class="p_MarginNote"><span class="f_MarginNote">If the tool’s results match the givens, you can apply the tool repeatedly to its own results simply by clicking the All Steps button.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented">To apply the Script View construction a second time, select new matching objects as described in step 1.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">During stepping, you can press the mouse on any already-matched given object or already-constructed step in the Script View to highlight the corresponding sketch object to which it matches. If you want to stop step-by-step application of the construction without completing All Steps, press the <a href="shortcuts.htm" class="topiclink">Esc</a> key or close the Script View window.</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_script_givenssteps.htm" class="topiclink">Object List</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool.htm" class="topiclink">Advanced Tool Topics</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

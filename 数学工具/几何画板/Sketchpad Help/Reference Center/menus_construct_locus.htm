@@ -1,0 +1,201 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Construct Menu &gt; Locus</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Construct Menu,Construct Menu Locus,Locus Command,Loci,Objects,Objects loci">
+   <meta name="description" content="Locus">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_construct_locus.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Locus</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_construct.htm">Construct Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Locus</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_construct_int_segment.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_construct.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_trans.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_FlushRight_Narrative"><img src="two_locus_examples.png" width="162" height="239" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Selection prerequisites:</span><span class="f_BodyText" style="font-style: italic;"> One of the following combinations:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_points.htm" class="topiclink">point</a> (the driver) on a <a href="objects_cats_paths.htm" class="topiclink">path</a> (the domain) and one object (the driven object) that depends on the point</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One independent point (the driver), one path (the domain) that does not depend on the point, and one object (the driven object) that depends on the point</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_parameters.htm" class="topiclink">parameter</a> (the driver) and one object (the driven object) that depends on the parameter (the domain is the numeric domain of the parameter)</span></p><p class="p_BodyText"><span class="f_BodyText">This <a href="menus_construct.htm" class="topiclink">Construct</a></span><span class="f_BodyText"> </span><span class="f_BodyText">menu command constructs</span><span class="f_BodyText"> the locus of the driven object as the driver moves or varies along the domain.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Th</span><span class="f_MarginNote">e driven object can be a point, a straight object, a circle, an arc, an interior, a picture, a function plot, or another locus.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the driven object is</span><span class="f_BodyText"> a function plot, the command becomes </span><span class="f_BodyText" style="font-weight: bold;">Family of Functions.</span><span class="f_BodyText"> </span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the </span><span class="f_BodyText">driven object is a point locus, the command becomes </span><span class="f_BodyText" style="font-weight: bold;">Family of Curves.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the </span><span class="f_BodyText">driven object is a non-point locus, the command becomes </span><span class="f_BodyText" style="font-weight: bold;">Family of Loci.</span></p>
+<p class="p_ExpandableNote"><img id="TOGGLE0186A1_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A1" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 24px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNote">One way to think of these prerequisites is that they specify three things: a driver, a domain, and a driven object. The driver is a point or parameter. For a point driver, the domain specifies the path on which it moves; for a parameter driver, the domain specifies the numeric values over which the parameter varies. The driven object is the object controlled by the driver; it’s the object that determines the appearance of the locus.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">To construct a locus, follow these steps:</span></p>
+<p class="p_BodyText"><span class="f_BodyText">1. Select the driver and the driven object. The position of the driven object must depend on the driver. (</span><span class="f_BodyText">The order in which you select the objects does not matter.</span><span class="f_BodyText">)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">2. If the driver is an independent point, select the domain of the driver — a path object that does not depend on the driver.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">3. Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct.htm" class="topiclink">Construct</a> | Locus.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the driver is a parameter, the <a href="objects_cats_plots.htm" class="topiclink">Plot Properties</a> panel appears, allowing you to set the domain of the driver.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">See <a href="objects_loci_anatomy.htm" class="topiclink">Anatomy of a Locus</a> for detailed examples of the many different types of loci you can construct.</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_cats_plot_locprops.htm" class="topiclink">Plot Properties for a Locus</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_advprefs_sampling.htm" class="topiclink">Sampling Preferences</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

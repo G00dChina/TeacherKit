@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Hardcover" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="895D1D"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="ECE9C6"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="873624"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="D6862D"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="D0BE40"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="877F6C"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="972109"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="AEB795"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="CC9900"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="B2B2B2"/>
+   </a:folHlink>
+</a:clrScheme>
+

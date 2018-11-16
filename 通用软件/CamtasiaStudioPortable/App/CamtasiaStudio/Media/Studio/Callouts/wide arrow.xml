@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>wide arrow.png</Overlay_Filename>
+<Overlay_Name>宽箭头</Overlay_Name>
+<Text_Top>70</Text_Top>
+<Text_Left>15</Text_Left>
+<Text_Bottom>70</Text_Bottom>
+<Text_Right>80</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+  <figure>
+    <svg>M0,214.944l172.529-40v61.08l156.479-118.012L172.529,0v61.082L0,21.082V214.944Z
+    </svg>
+  </figure>
+  <borderWidth>5.00</borderWidth>
+  <seamY>118.01</seamY>
+  <textBoundaries>P6 P5 IH5:3:4 P1</textBoundaries>
+  <reshapers>
+    <reshapers_Object>
+      <pointIndex>5</pointIndex>
+      <constrainLeftA>0.00</constrainLeftA>
+      <constrainLeftB>0.00</constrainLeftB>
+      <constrainTopA>0.00</constrainTopA>
+      <constrainTopB>40.00</constrainTopB>
+      <constrainRightA>1.00</constrainRightA>
+      <constrainRightB>-25.00</constrainRightB>
+      <constrainBottomA>0.50</constrainBottomA>
+      <constrainBottomB>-10.00</constrainBottomB>
+      <dependencies>
+          <dependencies_Object>
+            <pointIndex>1</pointIndex>
+            <axisX>1.00</axisX>
+            <axisY>0.00</axisY>
+          </dependencies_Object>
+          <dependencies_Object>
+            <pointIndex>1</pointIndex>
+            <axisX>0.00</axisX>
+            <axisY>-1.00</axisY>
+          </dependencies_Object>
+          <dependencies_Object>
+            <pointIndex>2</pointIndex>
+            <axisX>1.00</axisX>
+            <axisY>0.00</axisY>
+          </dependencies_Object>
+          <dependencies_Object>
+            <pointIndex>4</pointIndex>
+            <axisX>1.00</axisX>
+            <axisY>0.00</axisY>
+          </dependencies_Object>
+          <dependencies_Object>
+            <pointIndex>6</pointIndex>
+            <axisX>0.00</axisX>
+            <axisY>1.00</axisY>
+          </dependencies_Object>
+          <dependencies_Object>
+            <pointIndex>0</pointIndex>
+            <axisX>0.00</axisX>
+            <axisY>-1.00</axisY>
+          </dependencies_Object>
+          <dependencies_Object>
+            <pointIndex>7</pointIndex>
+            <axisX>0.00</axisX>
+            <axisY>-1.00</axisY>
+          </dependencies_Object>
+      </dependencies>
+    </reshapers_Object>
+  </reshapers>
+  <shapeWidth>330</shapeWidth>
+  <shapeHeight>237</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

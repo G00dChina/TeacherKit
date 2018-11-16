@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Concourse" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="464646"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="DEF5FA"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="2DA2BF"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="DA1F28"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="EB641B"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="39639D"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="474B78"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="7D3C4A"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="FF8119"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="44B9E8"/>
+   </a:folHlink>
+</a:clrScheme>
+

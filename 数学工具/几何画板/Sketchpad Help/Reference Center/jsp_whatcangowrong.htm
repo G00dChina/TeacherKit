@@ -1,0 +1,236 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; JavaSketchpad and Web-Based Dynamic Geometry &gt; What Can Go Wrong</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="JavaSketchpad,JavaSketchpad what can go wrong">
+   <meta name="description" content="What Can Go Wrong">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "jsp_whatcangowrong.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">What Can Go Wrong</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="jsp.htm">JavaSketchpad and Web-Based Dynamic Geometry</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">What Can Go Wrong</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="jsp_modifyyourpages.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="jsp.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="adv.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Because of the many factors involved, it may take a few tries to get things right. Here are some common JavaSketchpad mishaps and steps you can take to avoid them.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">More detailed information is available on the JavaSketchpad web site: <a href="http://www.dynamicgeometry.com/JavaSketchpad.html" target="_top" class="weblink">http://www.dynamicgeometry.com/JavaSketchpad.html</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Unsupported Objects</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Problem:</span><span class="f_BodyText"> When you save, Sketchpad warns you that not all objects were successfully saved to JavaSketchpad format.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Cause:</span><span class="f_BodyText"> Because JavaSketchpad is smaller than “desktop” Sketchpad, it supports fewer ways of defining objects than you can use in the desktop application. If your sketch contains objects that JavaSketchpad doesn’t support, Sketchpad warns you about them — and selects the unsupported objects and their <a href="objects_attrib_relations.htm" class="topiclink">children</a> in your sketch so that you can tell which ones were not supported. (Even when your sketch has unsupported objects, Sketchpad will save the objects that JavaSketchpad does support, so you can continue testing your web page.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To work around unsupported objects, explore different ways of constructing the same illustration. For example, at present, JavaSketchpad does not support <a href="objects_iter.htm" class="topiclink">iterations or iterated images</a>. If your sketch contains a construction that you’ve iterated using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Transform | Iterate</a></span><span class="f_BodyText"> command, you may be able to replace it with one that you’ve iterated “manually” by actually constructing the first several iterations.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">A complete list of objects supported by JavaSketchpad is available on the </span><span class="f_MarginNote"><a href="http://www.dynamicgeometry.com/JavaSketchpad.html" target="_top" class="weblink">JavaSketchpad web site</a></span><span class="f_BodyText">. Also, new versions of the applet—that support more and more Sketchpad objects — occasionally appear on the web site.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If your sketch or activity requires objects not supported by JavaSketchpad, you won’t be able to share that sketch as an illustration. However, you can still post your original Sketchpad sketch — your </span><span class="f_MarginNote" style="font-weight: bold;">.gsp</span><span class="f_MarginNote"> file — as a downloadable file, so that visitors who use The Geometer’s Sketchpad can download it and open it in Sketchpad, rather than in their browser.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">No Preview Offered</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Problem: </span><span class="f_BodyText">Rather than ask whether you want to preview your file in a browser, when you save, Sketchpad warns that you saved to a folder that does not contain a copy of </span><span class="f_BodyText" style="font-weight: bold;">jsp5.jar.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Cause: </span><span class="f_BodyText">Sketchpad could not locate the </span><span class="f_BodyText" style="font-weight: bold;">jsp5.jar</span><span class="f_BodyText"> applet to copy it to the folder with your HTML page. The original copy of the applet may have been accidentally removed from its normal location in the Sketchpad folder. Reinstall Sketchpad to restore the applet.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Non-Java Browsers</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Problem: </span><span class="f_BodyText">When you preview your web page in a browser, the page contains a message reading “Sorry, this page requires a Java-capable browser.”</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Cause: </span><span class="f_BodyText">If you have an old web browser, it may not support the Java language and, therefore, won’t work with JavaSketchpad. Contact your browser manufacturer for a newer version. Alternately, it may be that your browser supports Java, but that it’s currently set to disable Java applets. Go to your browser’s Preferences or Options to turn on support for Java applets.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Java Exception or Error Occurs</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Problem: </span><span class="f_BodyText">When you preview your web page in a browser, a dialog box appears saying that a Java error or “exception” occurred.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Cause: </span><span class="f_BodyText">If the message goes on to say that a “class” was not found — for example “GSP.class: class not found” — then </span><span class="f_BodyText" style="font-weight: bold;">jsp5.jar</span><span class="f_BodyText"> is either in the wrong location or has become corrupted. (For example, vital files within it may have been accidentally deleted or moved.) Try removing </span><span class="f_BodyText" style="font-weight: bold;">jsp5.jar</span><span class="f_BodyText"> from the folder and then resaving your document as HTML, so that Sketchpad can copy a fresh copy of </span><span class="f_BodyText" style="font-weight: bold;">jsp5.jar</span><span class="f_BodyText"> to the destination folder.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the error message says something else, a different problem has occurred. While JavaSketchpad has been extensively tested on current versions of Internet Explorer, FireFox, and Safari, older browsers are erratic in their support of Java, and other browsers may have similar problems. (Java is a relatively new language and undergoes frequent modifications; different browsers support it to different degrees.) Check with your browser manufacturer to see if a more recent version of your browser is available. Errors or exceptions may also indicate a problem with JavaSketchpad itself. Visit the JavaSketchpad web site to see if a more recent version of the applet is available.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Appearance Discrepancies</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Problem: </span><span class="f_BodyText">Your sketch saves correctly and previews in your browser, but certain details in the JavaSketchpad illustration — such as choice of fonts, size of exact position of text — do not match your original sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Cause: </span><span class="f_BodyText">These minor discrepancies are inevitable in Java applets, where less sophisticated graphic and text services are available to an applet than to a nonapplet program (like your browser or desktop Sketchpad). What you sacrifice in appearance flexibility you gain in generality: Applets like JavaSketchpad work well on a much wider variety of computers than are capable of running the full desktop version of Sketchpad.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_weboverview.htm" class="topiclink">Web Publishing Overview</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_javafolder.htm" class="topiclink">Essential JavaSketchpad Folder Structure</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_createjava.htm" class="topiclink">Create a JavaSketchpad Web Page</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_modifyyourpages.htm" class="topiclink">Modify and Publish Your Pages</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

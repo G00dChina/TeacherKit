@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_handoutmaster" component="wpp">
+	<commands>
+		<KListCommand id="RB_HandoutMasterPageSetup" text="@Page Setup" rbFileMenuEmbed="1">
+			<KListCommand icon="HandoutOrientation" customTip="HandoutOrientation" text="@Handout Orientation" qtspyName="HandoutOrientation" rbHotKey="0">
+				<KxValueCommand ksoCmd="NotesOrientation" icon="LandscapeHandout" index="1" text="@Landscape" qtspyName="HandoutOrient_Landscape"/>
+				<KxValueCommand ksoCmd="NotesOrientation" icon="PortraitHandout" index="2" text="@Portrait" qtspyName="HandoutOrient_Portrait"/>
+			</KListCommand>
+			<KListCommand icon="SlideOrientation" customTip="SlideSize" text="@Slide Size" qtspyName="SlideOrientation">
+				<KxValueCommand ksoCmd="ChangeSlideAspectRatio" icon="StandScreen" index="1" text="@Stand Screen(4:3)" qtspyName="StandScreen"/>
+				<KxValueCommand ksoCmd="ChangeSlideAspectRatio" icon="WideScreen" index="2" text="@Wide Screen(16:9)" qtspyName="WideScreen"/>
+				<KxValueCommand ksoCmd="ChangeSlideAspectRatio" icon="PhoneScreen" index="3" text="@Phone Screen(9:16)" qtspyName="PhoneScreen"/>
+				<separator/>
+				<KxValueCommand ksoCmd="PageSetup" index="4" dialogHint="1" text="@Custom Size" qtspyName="PageSetup"/>
+			</KListCommand>
+			<KListCommand icon="SlideAmount" customTip="SlideAmount" text="@Count of Slide Per Page" qtspyName="SlideAmount">
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="OneSlide" index="1" text="@One Slide" qtspyName="OneSlide"/>
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="TwoSlide" index="2" text="@Two Slide" qtspyName="TwoSlide"/>
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="ThreeSlide" index="3" text="@Three Slide" qtspyName="ThreeSlide"/>
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="FourSlide" index="4" text="@Four Slide" qtspyName="FourSlide"/>
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="SixSlide" index="5" text="@Six Slide" qtspyName="SixSlide"/>
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="NineSlide" index="6" text="@Nine Slide" qtspyName="NineSlide"/>
+				<KxValueCommand ksoCmd="ChangeAmountOfShowSlideFrame" icon="OutlineSlide" index="7" text="@Outline" qtspyName="OutlineSlide"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_HandoutMasterPlaceHolder" text="@PlasceHolder" rbFileMenuEmbed="1">
+			<KxCheckBoxCommand ksoCmd="AddHeaderPhOnMaster" spaceHint="suitable" customTip="HeaderPlaceHolder" text="@Header PlaceHolder" qtspyName="AddHeaderPhOnMaster"/>
+			<KxCheckBoxCommand ksoCmd="AddDatePhOnMaster" spaceHint="suitable" customTip="DataPlaceHolder" text="@data PlaceHolder" qtspyName="AddDatePhOnMaster"/>
+			<KxCheckBoxCommand ksoCmd="AddFooterPhOnMaster" spaceHint="suitable" customTip="FooterPlaceHolder" text="@footer PlaceHolder" qtspyName="AddFooterPhOnMaster"/>
+			<KxCheckBoxCommand ksoCmd="AddSlideNumberPhOnMaster" spaceHint="suitable" customTip="PageNumber" text="@Slide Number PlaceHolder" qtspyName="AddSlideNumberPhOnMaster"/>
+		</KListCommand>
+		<KListCommand id="RB_BackGround" text="@BackGround" rbFileMenuEmbed="1">
+			<KxThemeColorsGalleryCommand ksoCmd="ThemeColors" galleryWidth="250" icon="themeColor" customTip="Theme Colors" spaceHint="autocompact" text="@Colors" qtspyName="ThemeColors" rbHotKey="TC"/>
+			<KxThemeFontsGalleryCommand ksoCmd="ThemeFonts" galleryWidth="250" icon="themeFont" customTip="Theme Fonts" spaceHint="autocompact" text="@Fonts" qtspyName="ThemeFonts" rbHotKey="TF"/>
+			<KxThemeEffectsGalleryCommand ksoCmd="ThemeEffects" galleryWidth="350" icon="themeEffect" customTip="Theme Effects" text="@Effects" qtspyName="ThemeEffects" rbHotKey="TE"/>
+		</KListCommand>
+		<KListCommand id="RB_HandoutMasterClose" text="@Close" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="HandoutMasterClose" icon="CloseWindow" customTip="HandoutMasterClose" text="@Close" qtspyName="HandoutMasterClose" rbHotKey="C"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_HandoutMaster">
+			<command idQ="RB_HandoutMasterPageSetup"/>
+			<separator/>
+			<command idQ="RB_HandoutMasterPlaceHolder"/>
+			<separator/>
+			<command idQ="RB_BackGround"/>
+			<separator/>
+			<command idQ="RB_HandoutMasterClose"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

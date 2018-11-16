@@ -1,0 +1,195 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Tools &gt; Point Tool</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Objects,Objects points,Point Tool,Points,Tools,Tools Point">
+   <meta name="description" content="Point Tool">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tools_point.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Point Tool</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="tools.htm">Tools</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Point Tool</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="howto_zoom.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="tools.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="tools_compass.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><img src="point_tool.png" width="40" height="40" alt="" style="border:none" /><span class="f_ImageCaption"> </span><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;">Point</span><span class="f_BodyText"> tool to draw or construct independent <a href="objects_points.htm" class="topiclink">points</a>, <a href="menus_construct_pointonobj.htm" class="topiclink">points on paths</a>, and <a href="menus_construct_intersect.htm" class="topiclink">points at intersections</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click in an empty area of your sketch to create an independent point.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="independent_point.png" width="22" height="30" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click a <a href="objects_cats_paths.htm" class="topiclink">path object</a> — such as a segment, a circle, or the edge of a polygon — to construct a point on the path. When the </span><span class="f_BodyText" style="font-weight: bold;">Point</span><span class="f_BodyText"> tool is in the right place to construct a point on a path, the path is highlighted, appearing thicker and in a special color.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">A point constructed on a path can move anywhere along the path, but nowhere else.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="construct_point_on_path.png" width="58" height="50" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click the intersection of two path objects — such as a segment and a circle, or a line and a function plot — to construct a point of intersection. When the </span><span class="f_BodyText" style="font-weight: bold;">Point</span><span class="f_BodyText"> tool is in the right place to construct an intersection, both paths are highlighted, appearing thicker and in a special color.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="point_on_intesection.png" width="115" height="96" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">In addition to highlighting your targeted objects, Sketchpad displays a message in the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> telling you when you can construct a point on a path or at an intersection.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are several ways to create points without using the </span><span class="f_BodyText" style="font-weight: bold;">Point</span><span class="f_BodyText"> tool. For example, clicking with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool on an intersection constructs a point of intersection there in the same way the </span><span class="f_BodyText" style="font-weight: bold;">Point</span><span class="f_BodyText"> tool does. The </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_compass.htm" class="topiclink">Compass</a></span><span class="f_BodyText"> tool, </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_straight.htm" class="topiclink">Straightedge</a></span><span class="f_BodyText"> tools, </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_polygon.htm" class="topiclink">Polygon</a></span><span class="f_BodyText"> tools, and most </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_cust.htm" class="topiclink">Custom</a></span><span class="f_BodyText"> tools may construct their own points as part of their operation. The </span><span class="f_BodyText"><a href="menus_construct.htm" class="topiclink">Construct</a> menu commands</span><span class="f_BodyText" style="font-weight: bold;"> <a href="menus_construct_pointonobj.htm" class="topiclink">Point on Object</a>, <a href="menus_construct_midpoint.htm" class="topiclink">Midpoint</a>,</span><span class="f_BodyText"> </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_intersect.htm" class="topiclink">Intersection</a>,</span><span class="f_BodyText"> and other menu commands also construct points.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The<a href="objects_attrib_display.htm" class="topiclink"> color and style</a> of a new point is determined by Sketchpad's <a href="windows_prefs_color.htm" class="topiclink">Preferences</a> or by the last point for which you set the color or style.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

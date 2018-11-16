@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>roundedarrow.png</Overlay_Filename>
+<Overlay_Name>圆角箭头</Overlay_Name>
+<Text_Top>-1</Text_Top>
+<Text_Left>-1</Text_Left>
+<Text_Bottom>-1</Text_Bottom>
+<Text_Right>-1</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xff017b34</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M29.27,148.243c94.722,0,131.744,0,131.744,0s-6.617,6.619-26.562,26.568
+	c-33.056,33.055,14.351,79.121,48.086,45.385c13.726-13.723,57.03-57.029,68.668-68.666c21.731-21.732,23.239-49.4,4.19-68.45
+	c-18.033-18.033-51.981-51.98-73.981-73.98C152.773-19.542,105.138,26.28,131.057,52.2c21.607,21.609,29.957,29.959,29.957,29.959
+	s-35.786,0-130.057,0C-9.106,82.159-10.93,148.243,29.27,148.243z</svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>116.00</seamY>
+<shapeWidth>269</shapeWidth>
+<shapeHeight>232</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

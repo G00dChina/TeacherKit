@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Foundry" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="676A55"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="EAEBDE"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="72A376"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="B0CCB0"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="A8CDD7"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="C0BEAF"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="CEC597"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="E8B7B7"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="DB5353"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="903638"/>
+   </a:folHlink>
+</a:clrScheme>
+

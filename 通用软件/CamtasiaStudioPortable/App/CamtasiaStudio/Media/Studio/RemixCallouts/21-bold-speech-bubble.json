@@ -1,0 +1,25 @@
+{
+      "kind" : "remix",
+      "shape" : "speech-bubble",
+      "style" : "bold",
+      "font" : {
+          "name":"Source Sans Pro",
+          "size":70.0,
+          "weight": "Semi Bold",
+          "color-red":1.0,
+          "color-green":1.0,
+          "color-blue":1.0,
+          "tracking":0.0
+      },
+      "text" : "ABC",
+      "word-wrap" : true,
+      "tail-x" : 200,
+      "tail-y" : -200,
+      "width" : 250,
+      "height" : 250,
+      "fill-color": "E5461C",
+      "fill-style" : "solid",
+      "stroke-style" : "solid",
+      "stroke-width": 0.0,
+      "stroke-color": "FFFFFF"
+}

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; JavaSketchpad and Web-Based Dynamic Geometry &gt; Create a JavaSketchpad Web Page</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="JavaSketchpad,JavaSketchpad creating a JavaSketchpad web page,Create a JavaSketchpad Web Page">
+   <meta name="description" content="Create a JavaSketchpad Web Page">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "jsp_createjava.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Create a JavaSketchpad Web Page</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="jsp.htm">JavaSketchpad and Web-Based Dynamic Geometry</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Create a JavaSketchpad Web Page</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="jsp_javafolder.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="jsp.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="jsp_modifyyourpages.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">If this is your first time creating a JavaSketchpad illustration, start with a simple construction like a triangle.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Use Sketchpad to create or open a sketch containing the construction you want to show in a web page.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Resize the sketch window to be the size of your intended illustration on your web page. Adjust your construction so that it appears as you’d like your visitors to first see it.</span></p><p class="p_MarginNote"><span class="f_MarginNote">The size of the illustration in your web page is the same as the size of your sketch window at the moment you saved the HTML file. Be sure to decrease the size of the window before saving unless you want very large web page illustrations!</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_file_save.htm" class="topiclink">File | Save</a></span><span class="f_BodyText"> and save your document normally. This way you’ll have a saved copy of the sketch from which you’re about to create the web page.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_file_saveas.htm" class="topiclink">File | Save As</a>.</span></p><p class="p_MarginNote"><span class="f_MarginNote">Shortcut: Hold down Shift while displaying the File menu to turn </span><span class="f_MarginNote" style="font-weight: bold;">Save As</span><span class="f_MarginNote"> into </span><span class="f_MarginNote" style="font-weight: bold;">Save As HTML.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">6.</span><span class="f_BodyText">In the Save As dialog box, change the file format or type to </span><span class="f_BodyText" style="font-weight: bold;">HTML/JavaSketchpad Document.</span><span class="f_BodyText"> Click </span><span class="f_BodyText" style="font-weight: bold;">Save.</span><span class="f_BodyText"> </span></p><p class="p_Image_Centered_Large"><img src="adv_jsp_save_as_zoom60.png" width="344" height="250" alt="" style="border:none" /></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented">Sketchpad creates a new web page — an HTML file — describing the Sketchpad illustration. (Sketchpad also copies </span><span class="f_BodyText_Indented" style="font-weight: bold;">jsp5.jar,</span><span class="f_BodyText_Indented"> the JavaSketchpad applet,</span><span class="f_BodyText_Indented"> to the same folder it it's not there already.)  </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Note: Sketchpad cannot open HTML documents, so saving your document as HTML does not save your document in a way that Sketchpad can reopen. This is the reason you did a normal save in step 4 above.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">7.</span><span class="f_BodyText">Assuming all goes well, Sketchpad will ask if you want to preview the web page in your browser. Click </span><span class="f_BodyText" style="font-weight: bold;">Yes</span><span class="f_BodyText" style="font-weight: bold;">.</span><span class="f_BodyText"> </span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">8.</span><span class="f_BodyText">Your browser opens and displays the web page. The first time your browser opens a page containing JavaSketchpad illustrations, it may take a few seconds to load.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">9.</span><span class="f_BodyText">Once your illustration appears, drag its independent points to explore your construction. You’ve successfully created your first Dynamic Geometry web page!</span></p><p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_weboverview.htm" class="topiclink">Web Publishing Overview</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_javafolder.htm" class="topiclink">Essential JavaSketchpad Folder Structure</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_modifyyourpages.htm" class="topiclink">Modify and Publish Your Pages</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="jsp_whatcangowrong.htm" class="topiclink">What Can Go Wrong</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

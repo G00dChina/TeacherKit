@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>ring.png</Overlay_Filename>
+<Overlay_Name>环</Overlay_Name>
+<Overlay_XGrow>88</Overlay_XGrow>
+<Overlay_YGrow>69</Overlay_YGrow>
+<Text_Top>-1</Text_Top>
+<Text_Left>-1</Text_Left>
+<Text_Bottom>-1</Text_Bottom>
+<Text_Right>-1</Text_Right>
+<Vector_Grow>0</Vector_Grow>
+<CanRotate_90>0</CanRotate_90>
+<CanRotate_180>0</CanRotate_180>
+<CanRotate_270>0</CanRotate_270>
+<CanFlip_X>0</CanFlip_X>
+<CanFlip_X90>0</CanFlip_X90>
+<CanFlip_X180>0</CanFlip_X180>
+<CanFlip_X270>0</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe2b38d</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<Fill_Enabled>1</Fill_Enabled>
+<VectorProps>
+<figure>
+<svg>M128,0c70.691,0,128,57.308,128,128c0,70.691-57.309,128-128,128C57.308,256,0,198.691,0,128
+	C0,57.308,57.308,0,128,0z</svg>
+</figure>
+<borderWidth>11.00</borderWidth>
+<seamY>-1</seamY>
+<cutoutPercentage>0.9</cutoutPercentage>
+<cutoutScaling>0</cutoutScaling>
+<shapeWidth>256</shapeWidth>
+<shapeHeight>256</shapeHeight>
+</VectorProps>
+<Style>3</Style>
+</Overlay>

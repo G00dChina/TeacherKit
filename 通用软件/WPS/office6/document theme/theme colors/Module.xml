@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Module" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="5A6378"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="D4D4D6"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="F0AD00"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="60B5CC"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="E66C7D"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="6BB76D"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="E88651"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="C64847"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="168BBA"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="680000"/>
+   </a:folHlink>
+</a:clrScheme>
+

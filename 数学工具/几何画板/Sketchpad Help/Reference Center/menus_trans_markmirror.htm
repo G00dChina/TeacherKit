@@ -1,0 +1,174 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Transform Menu &gt; Mark Mirror</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Mark Mirror Command,Transform Menu,Transform Menu Mark Mirror">
+   <meta name="description" content="Mark Mirror">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_trans_markmirror.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Mark Mirror</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_trans.htm">Transform Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Mark Mirror</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_trans_markcenter.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_trans.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_trans_markangle.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Selection prerequisites:</span><span class="f_BodyText" style="font-style: italic;"> Any number of objects including at least one straight object</span></p>
+<p class="p_BodyText"><span class="f_BodyText">This <a href="menus_trans.htm" class="topiclink">Transform</a></span><span class="f_BodyText"> </span><span class="f_BodyText">menu command <a href="menus_trans_mark.htm" class="topiclink">marks</a> the most recently selected straight object as the mirror across which future <a href="menus_trans_reflect.htm" class="topiclink">reflections</a> will take place. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">To mark a mirror:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Select a <a href="objects_segmentsrayslines.htm" class="topiclink">straight object</a> and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans.htm" class="topiclink">Transform</a> | Mark Mirror,</span><span class="f_BodyText"> or</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Double-click a straight object with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Selection Arrow</a></span><span class="f_BodyText"> tool.</span></p><p class="p_MarginNote"><span class="f_MarginNote">If you haven’t yet marked a mirror when you choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_trans_reflect.htm" class="topiclink">Reflect</a>,</span><span class="f_MarginNote"> Sketchpad will automatically choose a straight object and mark it for you.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The marked straight object will flash briefly to indicate it has been marked as the mirror for future reflections. Once marked, this mirror will be used for all future reflections until you mark a different mirror.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

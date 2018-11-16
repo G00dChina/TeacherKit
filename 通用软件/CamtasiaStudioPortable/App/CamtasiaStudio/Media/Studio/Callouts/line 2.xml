@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>line 2.png</Overlay_Filename>
+<Overlay_Name>线条 2</Overlay_Name>
+<Text_Top>0</Text_Top>
+<Text_Left>0</Text_Left>
+<Text_Bottom>0</Text_Bottom>
+<Text_Right>0</Text_Right>
+<Style>5</Style>
+<Initial_Fill_Color>0xffd8a57c</Initial_Fill_Color>
+<Initial_Border_Color>0xff017b34</Initial_Border_Color>
+<StartCap>2</StartCap>
+<EndCap>1</EndCap>
+<UseDefaultSpec>1</UseDefaultSpec>
+</Overlay>

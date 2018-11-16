@@ -1,0 +1,2920 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="popupmenu" component="wps">
+	<libraries/>
+	<commands>
+		<KProxyCommand targetId="WpsXieDePictureStyle" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="wpsxiede" autoLoad="true" visible="false" icon="XieDe_Menu" id="ProxyWpsXieDePictureStyle" text="@Xie De Menu"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="ChartDelete" aid="47" id="ChartDelete" text="@Delete"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="DeleteSeries" aid="100091" id="Delete_Series" text="@Delete Series"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="ResetToFitStyle" aid="100092" icon="ResetToFitStyle" id="Reset_To_Fit_Style" text="@Reset to Match Style"/>
+		<KxLegacyTriggerCommand ksoCmd="ChartEditText" aid="100093" icon="EditChartText" id="Edit_Text" text="@Edit Text"/>
+		<KxLegacyTriggerCommand hotKey="x" ksoCmd="ChartExitEdit" aid="100094" icon="EditChartText" id="Exit_Edit" text="@Exit Edit"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="ChartFont" aid="100095" icon="Font" id="ChartFont" dialogHint="1" text="@Font"/>
+		<KxChangeChartTypeCommand hotKey="y" ksoCmd="ChangeChartType" aid="918" icon="InsertChart" id="Change_Chart_Type" dialogHint="1" text="@Change Chart Type"/>
+		<KxChangeChartTypeCommand hotKey="y" ksoCmd="ChangeChartType" aid="918" icon="InsertChart" id="Change_Series_Chart_Type" dialogHint="1" text="@Change Series Chart Type"/>
+		<KxChartRPCTriggerCommand hotKey="e" ksoCmd="ChooseChartDataSource" aid="954" icon="SelectData" id="Select_Data" dialogHint="1" text="@Select Data"/>
+		<KxChartRPCTriggerCommand hotKey="e" ksoCmd="EditChartDataSource" aid="954" icon="SelectData" id="Edit_Data" dialogHint="1" text="@Edit Data"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="AddDataLabel" aid="100098" id="Add_DataLabel" text="@Add Data Label"/>
+		<KxChartFormatCommand hotKey="b" ksoCmd="FormatDataLabel" aid="917" icon="FormatChartElement" id="Set_DataLabel_Format" dialogHint="1" text="@Format Data Labels"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="AddTrendline" aid="914" id="Add_Trendline" dialogHint="1" text="@Add Trendline"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="AddMinorGridLine" aid="100101" id="Add_Minor_GridLine" text="@Add Minor Gridlines"/>
+		<KxChartFormatCommand hotKey="n" ksoCmd="FormatMinorGridLine" aid="917" icon="FormatChartElement" id="Format_Minor_GridLine" dialogHint="1" text="@Format Minor Gridlines"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="AddMajorGridLine" aid="100103" id="Add_Major_GridLine" text="@Add Major Gridlines"/>
+		<KxChartFormatCommand hotKey="m" ksoCmd="FormatMajorGridLine" aid="917" icon="FormatChartElement" id="Format_Major_GridLine" dialogHint="1" text="@Format Major Gridlines"/>
+		<KxLegacyTriggerCommand ksoCmd="ChangeDataLabelGeometry" aid="100105" id="Change_DataLabel_Geometry" text="@Change DataLabel Geometry"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_ChartArea" dialogHint="1" text="@Format Chart Area"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="ChartFormatting" id="Format_ChartArea_QuickBar" dialogHint="1" customTip="QuickBarFormatChartArea" text="@Format Chart Area"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_ChartTitle" dialogHint="1" text="@Format Chart Title"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_AxisTitle" dialogHint="1" text="@Format Axis Title"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_Axis" dialogHint="1" text="@Format Axis"/>
+		<KxChartFormatCommand ksoCmd="FormatSeries" aid="917" icon="FormatChartElement" id="Format_CategoryLabel" text="@Format Category Label"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_Legend" dialogHint="1" text="@Format Legend"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_LegendEntry" dialogHint="1" text="@Format Legend Entry"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_PlotArea" dialogHint="1" text="@Format Plot Area"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_Series" dialogHint="1" text="@Format Data Series"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_Datapoint" dialogHint="1" text="@Format Data Point"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_Trendline" dialogHint="1" text="@Format Trendline"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_TrendLineLabel" dialogHint="1" text="@Format TrendLine Label"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_DropLine" dialogHint="1" text="@Format Drop Lines"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_Gridline" dialogHint="1" text="@Format Gridlines"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_DataTable" dialogHint="1" text="@Format Data Table"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_ErrorBar" dialogHint="1" text="@Format Error Bars"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_UpBar" dialogHint="1" text="@Format Up Bars"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_DownBar" dialogHint="1" text="@Format Down Bars"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_HighLowLine" dialogHint="1" text="@Format High-Low Lines"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_SeriesLine" dialogHint="1" text="@Format Series Lines"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_DataLabel" dialogHint="1" text="@Format Data Labels"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_UnitLabel" dialogHint="1" text="@Format Display Unit"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_LeadLine" dialogHint="1" text="@Format Leader Lines"/>
+		<KxChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="Format_DataTable" dialogHint="1" text="@Format Data Table"/>
+		<KxChartFormatCommand hotKey="i" ksoCmd="FormatSeries" aid="917" icon="FormatChartElement" id="Set_Series_Format" dialogHint="1" text="@Format Data Series"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="AddAxis" aid="100130" id="Add_Axis" text="@Add Axis"/>
+		<KxChartFormatCommand hotKey="i" ksoCmd="FormatAxis" aid="917" icon="FormatChartElement" id="Set_Axis_Format" dialogHint="1" text="@Format Axis"/>
+		<KxChartFormatCommand hotKey="t" ksoCmd="FormatTrendline" aid="917" icon="FormatChartElement" id="Set_TrendLine_Format" dialogHint="1" text="@Format Trendline"/>
+		<KxChangeColorCommand ksoCmd="ChangeColor" id="QuickBar_ChangeChartColors"/>
+		<KxChartStyleCommand bStyleQuickBar="true" ksoCmd="ChartStyles" id="QuickBar_ChangeChartStyles"/>
+		<KxSpeedLayoutCommand ksoCmd="SpeedLayout" id="QuickBar_ChartQuickLayout"/>
+		<KxChartAddUpDownBarCommand aid="6050" id="QuickBar_AddUpDownBar" qtspyName="AddUpDownBar" text="@Up/Down Bars">
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddUpDownBarCommand>
+		<KxChartAddTrendLineCommand aid="6050" id="QuickBar_AddTrendLine" qtspyName="AddTrendLine" text="@TrendLine">
+			<KxChartAddElmentItemCommand icon="ChartTrendline_1" index="1" text="@Linear" qtspyName="ChartTrendline_1"/>
+			<KxChartAddElmentItemCommand icon="ChartTrendline_2" index="2" text="@Exponential" qtspyName="ChartTrendline_2"/>
+			<KxChartAddElmentItemCommand icon="ChartTrendline_3" index="3" text="@Linear Forecast" qtspyName="ChartTrendline_3"/>
+			<KxChartAddElmentItemCommand icon="ChartTrendline_4" index="4" text="@Two Period Moving Average" qtspyName="ChartTrendline_4"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddTrendLineCommand>
+		<KxChartAddLegendCommand aid="6050" id="QuickBar_AddLegend" qtspyName="AddLegend" text="@Legend">
+			<KxChartAddElmentItemCommand icon="ChartLegend_1" index="1" text="@Right" qtspyName="ChartLegend_1"/>
+			<KxChartAddElmentItemCommand icon="ChartLegend_2" index="2" text="@Top" qtspyName="ChartLegend_2"/>
+			<KxChartAddElmentItemCommand icon="ChartLegend_3" index="3" text="@Left" qtspyName="ChartLegend_3"/>
+			<KxChartAddElmentItemCommand icon="ChartLegend_4" index="4" text="@Bottom" qtspyName="ChartLegend_4"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddLegendCommand>
+		<KxChartAddGridLineCommand aid="6050" id="QuickBar_AddGridLine" qtspyName="AddGridLine" text="@Gridlines">
+			<KxChartAddElmentItemCommand icon="ChartGridline_0" index="0" text="@Primary Major Horizontal" qtspyName="ChartGridline_0"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_1" index="1" text="@Primary Major Vertical" qtspyName="ChartGridline_1"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_2" index="2" text="@Primary Minor Horizontal" qtspyName="ChartGridline_2"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_3" index="3" text="@Primary Minor Vertial" qtspyName="ChartGridline_3"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_0" index="4" text="@Secondary Major Horizontal" qtspyName="ChartGridline_0"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_1" index="5" text="@Secondary Major Vertical" qtspyName="ChartGridline_1"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_2" index="6" text="@Secondary Minor Horizontal" qtspyName="ChartGridline_2"/>
+			<KxChartAddElmentItemCommand icon="ChartGridline_3" index="7" text="@Secondary Minor Vertial" qtspyName="ChartGridline_3"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddGridLineCommand>
+		<KxChartAddErrorBarCommand aid="6050" id="QuickBar_AddErrorBar" qtspyName="AddErrorBar" text="@Error Bars">
+			<KxChartAddElmentItemCommand index="1" text="@Standard Error"/>
+			<KxChartAddElmentItemCommand index="2" text="@Percentage"/>
+			<KxChartAddElmentItemCommand index="3" text="@Standard Deviation"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddErrorBarCommand>
+		<KxChartAddDataTableCommand aid="6050" id="QuickBar_AddDataTable" qtspyName="AddDataTable" text="@Data Table">
+			<KxChartAddElmentItemCommand index="1" text="@With Legend Keys"/>
+			<KxChartAddElmentItemCommand index="2" text="@No Legend Keys"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddDataTableCommand>
+		<KxQuickBarAddDataLabelCommand aid="6050" id="QuickBar_AddDataLabels" qtspyName="AddDataLabels" text="@Data Labels">
+			<KxChartAddElmentItemCommand index="1" text="@Center"/>
+			<KxChartAddElmentItemCommand index="2" text="@Inside End"/>
+			<KxChartAddElmentItemCommand index="3" text="@Inside Base"/>
+			<KxChartAddElmentItemCommand index="4" text="@Outside End"/>
+			<KxChartAddElmentItemCommand index="5" text="@Left"/>
+			<KxChartAddElmentItemCommand index="6" text="@Right"/>
+			<KxChartAddElmentItemCommand index="7" text="@Above"/>
+			<KxChartAddElmentItemCommand index="8" text="@Below"/>
+			<KxChartAddElmentItemCommand index="9" text="@BestFit"/>
+			<KxChartAddElmentItemCommand index="10" text="@Data Callout"/>
+			-->
+						<KxChartAddElmentItemCommand index="11" text="@Show"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxQuickBarAddDataLabelCommand>
+		<KxChartAddChartTitleCommand aid="6050" id="QuickBar_AddChartTitle" qtspyName="AddChartTitle" text="@Chart Title">
+			<KxChartAddElmentItemCommand index="1" text="@Above Chart"/>
+			<KxChartAddElmentItemCommand index="2" text="@Centered Overlay"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddChartTitleCommand>
+		<KxChartAddAxisTitleCommand aid="6050" id="QuickBar_AddAxisTitle" qtspyName="AddAxisTitle" text="@Axis Title">
+			<KxChartAddElmentItemCommand index="0" text="@Primary Horizontal"/>
+			<KxChartAddElmentItemCommand index="1" text="@Primary Vertical"/>
+			<KxChartAddElmentItemCommand index="2" text="@Secondary Horizontal"/>
+			<KxChartAddElmentItemCommand index="3" text="@Secondary Vertical"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddAxisTitleCommand>
+		<KxChartAddAxisCommand aid="6050" icon="ChartAxis" id="QuickBar_AddAxis" qtspyName="AddAxis" text="@Axes">
+			<KxChartAddElmentItemCommand index="0" text="@Primary Horizontal"/>
+			<KxChartAddElmentItemCommand index="1" text="@Primary Vertical"/>
+			<KxChartAddElmentItemCommand index="2" text="@Secondary Horizontal"/>
+			<KxChartAddElmentItemCommand index="3" text="@Secondary Vertical"/>
+			<KxChartAddElmentItemCommand index="-1" text="@More Option..."/>
+		</KxChartAddAxisCommand>
+		<KxChartAddElementsCommand id="QuickBar_AddChartElements" text="@AddChartElements">
+			<command idQ="QuickBar_AddAxis"/>
+			<command idQ="QuickBar_AddAxisTitle"/>
+			<command idQ="QuickBar_AddChartTitle"/>
+			<command idQ="QuickBar_AddDataLabels"/>
+			<command idQ="QuickBar_AddDataTable"/>
+			<command idQ="QuickBar_AddErrorBar"/>
+			<command idQ="QuickBar_AddGridLine"/>
+			<command idQ="QuickBar_AddLegend"/>
+			<command idQ="QuickBar_AddTrendLine"/>
+			<command idQ="QuickBar_AddUpDownBar"/>
+		</KxChartAddElementsCommand>
+		<KxLegacyTriggerCommand ksoCmd="ChooseChartDataSource" id="QuickBar_SelectData"/>
+		<KChartLayoutBarWidgetCommand addElementsCmd="QuickBar_AddChartElements" quickLayoutCmd="QuickBar_ChartQuickLayout" icon="ChartLayout" id="AddChartElementQuickBar" customTip="QuickBarAddChartElement" text="@Chart Elements"/>
+		<KChartStyleBarWidgetCommand fixedHeight="320" chartStylesCmd="QuickBar_ChangeChartStyles" chartColorsCmd="QuickBar_ChangeChartColors" icon="ChartStyle" id="ChartStyleQuickBar" customTip="QuickBarChartStyle" text="@Chart Styles"/>
+		<KChartFiltersBarCommand selectDataCmd="QuickBar_SelectData" icon="ChartFilter" id="ChartFiltersQuickBar" customTip="QuickBarChartFilters" text="@Chart Filters"/>
+		<KxPDF2WordPopupCommand hotKey="F" aid="3000042" filter="kstyle!=classic" icon="PDFToWord" id="PDF2WordPopup" customTip="PDFToWord" text="@PDF To Word"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="NewFileFromTemplates" aid="80141" filter="lang=zh_CN,ja_JP,zh_TW" icon="WpsNewFileFromTemplates" id="NewFileFromTemplates" dialogHint="1" text="@New from Other Templates"/>
+		<KxCloseAllCommand hotKey="l" aid="80002" idMso="FileCloseAll" icon="CloseAll" controlType="0" id="CloseAllFiles" text="@Close All"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="SaveAllFiles" aid="80003" id="SaveAllFiles" text="@Save All"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="PrintToPDF" aid="80004" filter="support:ExportToPDF=true" icon="ExportToPDF" id="PrintToPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="SendMail" aid="83002" filter="platform=win32" icon="SendMail" id="SendMail" dialogHint="1" text="@Send E-mail"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="Convert" icon="Convert" id="Convert" text="@Convert"/>
+		<KxLegacyTriggerCommand hotKey="y" ksoCmd="Encrypt" aid="80005" icon="Encrypt" id="Encrypt" dialogHint="1" text="@Encryption"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="ViewPermission" filter="support:RightsManagementServices=true" icon="ViewPermission" id="ViewPermission" dialogHint="1" text="@View Permissions"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="UnrestrictedAccess" aid="7990" id="UnrestrictedAccess" dialogHint="1" text="@Unrestricted Access"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RestrictedAccess" aid="7991" id="RestrictedAccess" dialogHint="1" text="@Restricted Access"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="ManageCredentials" aid="10014" id="ManageCredentials" dialogHint="1" text="@Manage Credentials"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="ReloadTxtFileWithEncodingDlg" aid="80006" id="ReloadTxtFileWithEncodingDlg" dialogHint="1" text="@Reload"/>
+		<KxWpsShowMoreHistoriesCommand hotKey="0" aid="80008" id="ShowMoreHistories" dialogHint="1" text="@More Historical Records"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="ClearFormats" aid="872" idMso="ClearFormats" controlType="0" id="ClearFormats" text="@Formats"/>
+		<KxLegacyTriggerCommand hotKey="P" ksoCmd="PrintLayoutView" aid="287" idMso="ViewPrintLayoutView" icon="PrintLayout" controlType="6" id="PrintLayoutView" customTip="PrintLayoutView" text="@Print Layout" rbHotKey="P"/>
+		<KxMinisiteCommand hotKey="M" ksoCmd="MinisitePlugin" aid="100041" icon="minisite" id="MinisitePlugin" text="@Minisite"/>
+		<KxKsoHomepageCommand hotKey="J" ksoCmd="HomepagePlugin" aid="2000059" filter="support:IntranetVersion=false" icon="wpshome" id="rHomepagePlugin" text="@Online Templates"/>
+		<KxKsoHomepageCommand hotKey="J" ksoCmd="HomepagePlugin" aid="2000059" filter="support:IntranetVersion=true" icon="wpshome" id="rHomepagePlugin" text="@IntranetVersion Online Templates"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="StatusBar" aid="80009" id="StatusBar" text="@Status Bar"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="Ruler" aid="7391" icon="ViewRuler" id="Ruler" spaceHint="suitable" text="@Ruler"/>
+		<KxLegacyTriggerCommand hotKey="S" ksoCmd="ShowParagraphMarks" aid="3252" id="ShowParagraphMarks" text="@Show Paragraph Marks"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Gridlines" aid="300" icon="Gridlines" id="Gridlines" spaceHint="suitable" text="@Gridlines"/>
+		<KxLegacyTriggerCommand hotKey="V" ksoCmd="VertReviewPane" icon="vertReviewPane" id="vertReviewPane" text="@Reviewing Pane Vertical"/>
+		<KxLegacyTriggerCommand hotKey="H" ksoCmd="HorzReviewPane" aid="6239" icon="horzReviewPane" id="horzReviewPane" text="@Reviewing Pane Horizontal"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="LineNumOff" aid="92011" id="LineNumOff" text="@None"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="LineNumContinuous" aid="92012" id="LineNumContinuous" text="@Continuous"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="LineNumRestPage" aid="92013" id="LineNumRestPage" text="@Restart Each Page"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="LineNumResetSection" aid="92014" id="LineNumResetSection" text="@Restart Each Section"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="LineNumSuppress" aid="92015" id="LineNumSuppress" text="@Suppress for Current Paragraph"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="LineNumBlanklineNoLnn" aid="92016" id="LineNumBlanklineNoLnn" text="@Do not Show Line Number for Blank Line"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="SetLineNumbering" aid="92017" id="SetLineNumbering" dialogHint="1" text="@Line Number Options"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="DocumentMapLeft" aid="80011" id="DocumentMapLeft" text="@Place on Left"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="DocumentMapRight" aid="80012" id="DocumentMapRight" text="@Place on Right"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="DocumentMapVisible" aid="80013" id="DocumentMapVisible" text="@Invisible"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeaderFooter" aid="762" idMso="GroupHeaderFooter" icon="HeaderFooter" controlType="16" id="HeaderFooter" text="@Header and Footer"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="Footnotes" aid="764" icon="ViewFootnotes" id="FootnotesView" text="@Footnotes"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="Markup" aid="6547" icon="Markup" id="Markup" spaceHint="suitable" text="@Markup"/>
+		<KxWpsFullScreenCommand hotKey="u" aid="178" idMso="ViewFullScreenView" icon="FullScreenMode" controlType="0" id="FullScreenModeOnMenu" customTip="FullScreenMode" text="@Full Screen" rbHotKey="F"/>
+		<KxLegacyTriggerCommand hotKey="z" ksoCmd="Zoom" aid="925" icon="Zoom" id="Zoom" dialogHint="1" text="@Zoom"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="InsertColumnBreak" aid="80015" icon="Columns" id="InsertColumnBreak" text="@Column Break"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertNextPageSectionBreak" aid="80017" icon="InsertNextPageSectionBreak" id="InsertNextPageSectionBreak" text="@Next Page Section Break" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="InsertContinuousSectionBreak" aid="80018" icon="InsertContinuousSectionBreak" id="InsertContinuousSectionBreak" text="@Continuous Section Break"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="InsertEvenPageSectionBreak" aid="80019" icon="InsertEvenPageSectionBreak" id="InsertEvenPageSectionBreak" text="@Even Page Section Break" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="InsertOddPageSectionBreak" aid="80020" icon="InsertOddPageSectionBreak" id="InsertOddPageSectionBreak" text="@Odd Page Section Break"/>
+		<KxLegacyTriggerCommand tc="InsertBlankPage" hotKey="v" ksoCmd="InsertVerticalBlankPage" aid="92019" icon="InsertVerticalBlankPage" id="InsertVerticalBlankPage" text="@Vertical"/>
+		<KxLegacyTriggerCommand tc="InsertBlankPage" hotKey="h" ksoCmd="InsertHorizonBlankPage" aid="92020" icon="InsertHorizonBlankPage" id="InsertHorizonBlankPage" text="@Horizontal"/>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="PageBreak" aid="92101" icon="InsertPageBreak" id="PageBreak" text="@Page Break"/>
+		<KListCommand hotKey="u" aid="127" icon="InsertPageNumber" id="InsertPageNumbers" text="@Page Numbers">
+			<KxSmartPageNumMenuItemCommand hotKey="n" aid="92021" icon="Pagenum_None" id="InsertPageNumbers_DeletePageNumbers" text="@Delete Page Numbers" qtspyName="Pagenum_None" cmdType="6"/>
+			<KxSmartPageNumMenuItemCommand hotKey="t" aid="92022" icon="Pagenum_TopLeft" id="InsertPageNumbers_HeaderLeft" text="@Header Left" qtspyName="Pagenum_TopLeft" cmdType="1"/>
+			<KxSmartPageNumMenuItemCommand hotKey="m" aid="92023" icon="Pagenum_TopMid" id="InsertPageNumbers_HeaderCenter" text="@Header Center" qtspyName="Pagenum_TopMid" cmdType="2"/>
+			<KxSmartPageNumMenuItemCommand hotKey="b" aid="92024" icon="Pagenum_TopRight" id="InsertPageNumbers_HeaderRight" text="@Header Right" qtspyName="Pagenum_TopRight" cmdType="3"/>
+			<KxSmartPageNumMenuItemCommand hotKey="i" aid="92025" icon="Pagenum_TopInside" id="InsertPageNumbers_HeaderInside" text="@Header Inside" qtspyName="Pagenum_TopInside" cmdType="4"/>
+			<KxSmartPageNumMenuItemCommand hotKey="o" aid="92026" icon="Pagenum_TopOutside" id="InsertPageNumbers_HeaderOutside" text="@Header Outside" qtspyName="Pagenum_TopOutside" cmdType="5"/>
+			<KxSmartPageNumMenuItemCommand hotKey="l" isInHeader="false" aid="92027" icon="Pagenum_BottomLeft" id="InsertPageNumbers_FooterLeft" text="@Footer Left" qtspyName="Pagenum_BottomLeft" cmdType="1"/>
+			<KxSmartPageNumMenuItemCommand hotKey="c" isInHeader="false" aid="92028" icon="Pagenum_BottomMid" id="InsertPageNumbers_FooterCenter" text="@Footer Center" qtspyName="Pagenum_BottomMid" cmdType="2"/>
+			<KxSmartPageNumMenuItemCommand hotKey="r" isInHeader="false" aid="92029" icon="Pagenum_BottomRight" id="InsertPageNumbers_FooterRight" text="@Footer Right" qtspyName="Pagenum_BottomRight" cmdType="3"/>
+			<KxSmartPageNumMenuItemCommand hotKey="n" isInHeader="false" aid="92030" icon="Pagenum_BottomInside" id="InsertPageNumbers_FooterInside" text="@Footer Inside" qtspyName="Pagenum_BottomInside" cmdType="4"/>
+			<KxSmartPageNumMenuItemCommand hotKey="u" isInHeader="false" aid="92031" icon="Pagenum_BottomOutside" id="InsertPageNumbers_FooterOutside" text="@Footer Outside" qtspyName="Pagenum_BottomOutside" cmdType="5"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="InsertDateTime" aid="768" idMso="DateAndTimeInsert" icon="InsertDateTime" controlType="0" id="InsertDateTime" dialogHint="1" customTip="InsertDateTime" text="@Date and Time" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="InsertField" aid="772" idMso="FieldInsert" icon="Field" controlType="0" id="InsertField" dialogHint="1" customTip="InsertField" text="@Fields" rbHotKey="QF"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="InsertSymbol" aid="308" icon="InsertSymbol" id="InsertSymbol" dialogHint="1" text="@Symbol"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="InsertComment" aid="1589" icon="InsertComment" id="InsertComment" text="@Comment"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="InsertNumber" aid="769" id="InsertNumber" dialogHint="1" text="@Number"/>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="InsertFootnote" aid="3365" idMso="FootnoteEndnoteDialog" icon="Footnote" controlType="0" id="InsertFootnote" dialogHint="1" text="@Footnote"/>
+		<KxLegacyTriggerCommand hotKey="z" ksoCmd="InsertCaption" aid="774" idMso="CaptionInsert" icon="InsertCaption" controlType="0" id="InsertCaption" dialogHint="1" text="@Caption"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="CrossReference" aid="775" idMso="CrossReferenceInsert" controlType="0" id="CrossReference" dialogHint="1" text="@Cross-reference"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="InsertIndexTables" aid="776" idMso="IndexInsert" icon="TableOfContents" controlType="0" id="InsertIndexTables" dialogHint="1" text="@Table of Contents"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="InsertPictureFromFile" aid="2619" idMso="PictureInsertFromFile" icon="InsertPictureFromFile" controlType="0" id="InsertPictureFromFile" dialogHint="1" text="@From File" rbHotKey="P"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertCanvas" aid="2619" idMso="InsertCanvas" icon="InsertWpsCanvas" controlType="0" id="InsertCanvas" dialogHint="1" text="@Insert Canvas" rbHotKey="P"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="InsertPictureFromScan" aid="1764" filter="platform=win32" icon="InsertPictureFromScan" id="InsertPictureFromScan" dialogHint="1" text="@From Scanner"/>
+		<KxLegacyTriggerCommand detail="@Insert Clip Art" hotKey="c" ksoCmd="InsertClipArt" filter="lang=ja_JP" aid="100048" idMso="ClipArtInsert" icon="InsertClipArt" controlType="6" id="InsertClipArt" customTip="InsertClipArt" text="@Clip Art" rbHotKey="F"/>
+		<KxGalleryChangeShapesCommand hotKey="n" ksoCmd="DynamicShape" aid="100060" barid="44562" triggerAble="0" id="ChangeAutoShape" customTip="ChangeAutoShape" text="@Change Shapes" ksoTriggerCmd="ChangeAutoShape" rbHotKey="N"/>
+		<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="o" customShortcutEnabled="false" aid="100056" filter="support:IntranetVersion=false" icon="onlinepicture" id="FromOnline" customTip="InsertOnlinePicture" text="@Online Pictures" rbHotKey="SI"/>
+		<KPictureFillFromOnlineCommand relatedKsoCmd="FillColor" hotKey="o" icon="onlinepicture" id="FillPictureFromOnline" text="@Online Pictures"/>
+		<KxWpsWordArtInsertCommand hotKey="w" ksoCmd="InsertWordArt" aid="1031" icon="InsertWordArt" id="InsertWordArt" dialogHint="1" text="@WordArt"/>
+		<KxLegacyTriggerCommand tc="InsertTextBox" hotKey="h" ksoCmd="WpsInsertTextboxHorizontal" aid="139" icon="InsertTextboxHorizontal" id="InsertTextboxHorizontal" text="@Horizontal" rbHotKey="D"/>
+		<KxLegacyTriggerCommand tc="InsertTextBox" hotKey="v" ksoCmd="WpsInsertTextboxVertical" aid="318" icon="InsertTextboxVertical" id="InsertTextboxVertical" text="@Vertical" rbHotKey="V"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="InsertFile" aid="777" id="InsertFile" dialogHint="1" text="@Insert Text from File"/>
+		<KxWpsInsertFileObjectCommand hotKey="Z" aid="92034" filter="platform=win32" icon="InsertFileObject" id="InsertFileObject" dialogHint="1" customTip="InsertFileObject" spaceHint="suitable" text="@File Object" rbHotKey="NF"/>
+		<KxChangeChartTypeCommand hotKey="h" ksoCmd="InsertChart" aid="80021" icon="InsertChart" id="InsertChart" dialogHint="1" text="@Chart"/>
+		<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" aid="80022" showiconAndText="1" filter="lang=zh_CN,zh_TW;support:EquationEditor=true" icon="EquationEditor" id="KingsoftEquationEditor" dialogHint="1" customTip="KingsoftEquationEditor" spaceHint="suitable" text="@Equation" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" showiconAndText="1" aid="80022" filter="lang!=zh_CN,zh_TW;support:EquationEditor=true" icon="EquationEditor" id="KingsoftEquationEditor" dialogHint="1" customTip="KingsoftEquationEditor" text="@Equation" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="InsertObject" aid="546" filter="platform=win32" icon="InsertObject" id="InsertObject" dialogHint="1" text="@Object"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="Paragraph" aid="779" icon="Paragraph" id="Paragraph" dialogHint="1" text="@Paragraph"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="BulletsNumber" aid="783" icon="BulletsNumber" id="BulletsNumber" dialogHint="1" text="@Bullets and Numbering"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="BorderShading" aid="781" id="BorderShading" dialogHint="1" text="@Borders and Shading"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="Columns" aid="9" icon="Columns" id="Columns" dialogHint="1" text="@Columns"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="Tabs" aid="780" icon="FormatTabs" id="Tabs" dialogHint="1" customTip="Tabs" text="@Tabs" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DropCap" aid="289" idMso="DropCapOptionsDialog" icon="DropCap" controlType="0" id="DropCap" dialogHint="1" customTip="DropCap" text="@Drop Cap" rbHotKey="RC"/>
+		<KxWpsTextDirectionDlgCommand hotKey="x" ksoCmd="TextDirection" aid="782" idMso="TextDirectionOptionsDialog" icon="TextDirection" controlType="0" id="TextDirection" dialogHint="1" text="@Text Orientation" rbHotKey="X"/>
+		<KxLegacyTriggerCommand idMsop="ChangeCase" hotKey="e" ksoCmd="ChangeCase" aid="309" icon="ChangeCase" controlType="0" id="ChangeCase" dialogHint="1" text="@Change Case"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="PhoneticGuide" forceVisible="1" aid="3511" filter="support:PhoneticGuide=true" idMso="AsianLayoutPhoneticGuide" icon="PhoneticGuide" controlType="0" id="PhoneticGuide" dialogHint="1" customTip="PhoneticGuide" text="@Phonetic Guide"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EncloseCharacters" aid="3969" icon="EncloseCharacters" id="EncloseCharacters" dialogHint="1" text="@Enclose Characters"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CombineCharacters" aid="3512" icon="CombineCharacters" id="CombineCharacters" dialogHint="1" text="@Combine Characters"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="TwoLinesInOne" aid="3964" icon="TwoLinesInOne" id="TwoLinesInOne" dialogHint="1" text="@Two Lines in One" rbHotKey="W"/>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="BackgroundShapeFillColor" aid="1051" icon="MoreColor" id="MoreBackgroundShapeColors" dialogHint="1" text="@More Fill Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="BackgroundShapeFillColor" aid="100074" icon="SnapperFill" forceEnabled="1" id="SnapBackgroundShapeColors" text="@Eyedropper" rbHotKey="E"/>
+		<KxWpsFillColorCommand4Rainbow hotKey="k" ksoCmd="BackgroundShapeFillColor" aid="30403" icon="CellFillColor" id="NewBackGroundColor" text="@Background">
+			<command idQ="MoreBackgroundShapeColors"/>
+			<command idQ="SnapBackgroundShapeColors"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="g" ksoCmd="BackgroundShape" aid="92035" icon="GradiantFill" id="GradiantFillInFormatMenu" dialogHint="1" text="@Gradient" qtspyName="Gradient" rbHotKey="G"/>
+			<KxPropComposeCommand tabIndex="1" hotKey="t" ksoCmd="BackgroundShape" aid="92036" icon="TextureFill" id="TextureFillInFormatMenu" dialogHint="1" text="@Texture" qtspyName="Texture" rbHotKey="T"/>
+			<KxPropComposeCommand tabIndex="2" hotKey="n" ksoCmd="BackgroundShape" aid="92037" icon="PatternFill" id="PatternFillInFormatMenu" dialogHint="1" text="@Pattern" qtspyName="Pattern"/>
+			<KxPropComposeCommand tabIndex="3" hotKey="p" ksoCmd="BackgroundShape" aid="30180" icon="PictureFill" id="PictureFillInFormatMenu" dialogHint="1" text="@Picture" qtspyName="Picture" rbHotKey="P"/>
+		</KxWpsFillColorCommand4Rainbow>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="StyleFormat" aid="5757" icon="StyleFormat" id="StyleFormat" dialogHint="1" text="@Styles and Formatting"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="GenkoSetting" aid="80023" id="GenkoSetting" dialogHint="1" text="@Genko Setting"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="FormatObject" aid="3249" barid="44531" icon="ChartObjects" id="FormatObject" dialogHint="1" text="@Format Object"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="LayoutObject" aid="92301" icon="LayoutObject" id="LayoutObject" dialogHint="1" text="@More Layout Options"/>
+		<KListCommand hotKey="d" delayloadPath="commands/wps/WordTools.kuip" aid="92115" filter="l10n:WORD_TOOLS_SUPPORT=true" barid="44536" icon="WordTools" id="WordTools" customTip="WordTools" text="@Word Tools" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="N" customShortcutEnabled="false" ksoCmd="ChineseTranslation" aid="3958" filter="l10n:TCSC_CONVERSION_SUPPORT=true" icon="ChineseTranslation" id="ChineseTranslation" dialogHint="1" text="@Chinese Transition"/>
+		<KxLegacyTriggerCommand hotKey="P" ksoCmd="RestrictEditing" aid="7116" icon="RestrictEditing" id="RestrictEditing" text="@Restrict Editing"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="MailMerge" aid="5911" id="MailMerge" text="@Mail Merge Toolbar"/>
+		<KxWpsEnvelopesCommand hotKey="M" ksoCmd="InsertEnvelopes" filter="support:InsertEnvelopes=true" icon="Envelopes" id="InsertEnvelopes" customTip="InsertEnvelopes" text="@Envelopes" rbHotKey="M"/>
+		<KxMacroCommand hotKey="s" ksoCmd="Security" aid="3627" filter="support:VBASupport=true" idMso="MacroSecurity" controlType="5" id="Security" dialogHint="1" text="@Security"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="TemplateAddIns" aid="751" filter="platform=win32" idMso="AddInManager" controlType="0" id="TemplateAddIns" dialogHint="1" text="@Add-Ins"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="COMAddIns" aid="80024" filter="platform=win32" idMso="ComAddInsDialog" controlType="0" id="COMAddIns" dialogHint="1" text="@COM 
+Add-Ins"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="BackupManagement" aid="80025" id="BackupManagement" dialogHint="1" text="@Backup Management"/>
+		<KxLegacyTriggerCommand hotKey="O" ksoCmd="Options" aid="2354" icon="Options" id="Options" dialogHint="1" text="@Options"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="DrawTable" aid="2059" idMso="TableDrawTable" icon="DrawTable" controlType="6" id="DrawTable" text="@Draw Table"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="InsertTable" aid="3392" icon="InsertTable" id="InsertTable" dialogHint="1" text="@Insert Table"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="InsertColumnLeft" aid="3685" icon="InsertColumnsLeft" id="InsertColumnLeft" text="@Columns to the Left"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="InsertColumnRight" aid="3687" icon="InsertColumnsRight" id="InsertColumnRight" text="@Columns to the Right"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="InsertRowAbove" aid="3681" idMso="TableRowsInsertAboveExcel" icon="InsertRowsAbove" controlType="0" id="InsertRowAbove" text="@Rows Above"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="InsertRowBelow" aid="3683" idMso="TableRowsInsertBelowExcel" icon="InsertRowsBelow" controlType="0" id="InsertRowBelow" text="@Rows Below"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="InsertCells" aid="295" idMso="InsertCellstMenu" icon="InsertCells" controlType="5" id="InsertCells" dialogHint="1" text="@Cells"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="DeleteTable" aid="3679" icon="DeleteTable" id="DeleteTable" text="@Table" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="DeleteColumns" aid="294" icon="DeleteColumns" id="DeleteColumns" text="@Column" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="DeleteRows" aid="293" icon="DeleteRows" id="DeleteRows" text="@Rows" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="DeleteCells" aid="334" idMso="CellsDelete" icon="DeleteCells" controlType="0" id="DeleteCells" dialogHint="1" text="@Cell" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="SelectTable" aid="803" idMso="TableSelect" controlType="0" id="SelectTable" text="@Table"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="SelectColumn" aid="802" id="SelectColumn" text="@Column"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="SelectRow" aid="801" id="SelectRow" text="@Row"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="SelectCell" aid="3678" id="SelectCell" text="@Cell"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="TableSelection" aid="80026" icon="TableSelection" id="TableSelection" text="@Select Table with Dashed Borders"/>
+		<KxLegacyTriggerCommand hotKey="P" ksoCmd="SplitCells" aid="800" icon="SplitCells" id="SplitCells" dialogHint="1" customTip="SplitCells" spaceHint="suitable" text="@Split Cells" rbHotKey="P"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="FieldFormula" aid="807" id="FieldFormula" dialogHint="1" text="@Formula"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="FastCalcSum" aid="80029" icon="AutoSum" id="FastCalcSum" text="@Sum"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="FastCalcAverage" aid="80030" icon="Average" id="FastCalcAverage" text="@Average"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="FastCalcMax" aid="80031" icon="Max" id="FastCalcMax" text="@Max"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="FastCalcMin" aid="80032" icon="Min" id="FastCalcMin" text="@Min"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="AutoFitWindow" aid="3908" idMso="TableAutoFitWindow" icon="AutoFitWindow" controlType="0" id="AutoFitWindow" customTip="AutoFitWindow" spaceHint="suitable" text="@AutoFit to Window" rbHotKey="UW"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="AutoFitContent" aid="3907" idMso="TableAutoFitContent" icon="AutoFitContent" controlType="0" id="AutoFitContent" customTip="AutoFitContent" spaceHint="suitable" text="@AutoFit to Content" rbHotKey="UF"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="DistributeRows" aid="2068" idMso="TableRowsDistribute" icon="DistributeRows" controlType="0" id="DistributeRows" customTip="DistributeRows" spaceHint="suitable" text="@Distribute Rows Evenly" rbHotKey="UR"/>
+		<KxLegacyTriggerCommand hotKey="y" ksoCmd="DistributeColumns" aid="2067" idMso="TableColumnsDistribute" icon="DistributeColumns" controlType="0" id="DistributeColumns" customTip="DistributeColumns" spaceHint="suitable" text="@Distribute Columns Evenly" rbHotKey="UC"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeadRowsRepeat" aid="805" id="HeadRowsRepeat" text="@Repeat Header Rows"/>
+		<KxLegacyTriggerCommand text2="@Draw
+Diagonal Line in Cell" hotKey="u" customShortcutEnabled="false" ksoCmd="InsertMutidiagonalCell" aid="3961" idMso="TableInsertMultidiagonalCell" icon="InsertMutidiagonalCell" controlType="0" id="InsertMutidiagonalCell" dialogHint="1" customTip="InsertMutidiagonalCell" spaceHint="suitable" text="@Draw Diagonal Line in Cell" rbHotKey="W"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="ShowGridlines" aid="2816" idMso="TableShowGridlines" icon="ShowGridlines" controlType="6" id="ShowGridlines" spaceHint="suitable" text="@Gridlines@Table"/>
+		<KxLegacyTriggerCommand hotKey="x" ksoCmd="ConvertTexttoTable" aid="806" idMso="ConvertTextToTable" controlType="0" id="ConvertTexttoTable" dialogHint="1" text="@Convert Text to Table"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="ConvertTabletoText" aid="929" idMso="ConvertTableToText" controlType="0" id="ConvertTabletoText" dialogHint="1" text="@Convert Table to Text"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="TableProperties" aid="3704" idMso="TablePropertiesDialog" controlType="0" id="TableProperties" dialogHint="1" text="@Table Properties"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewWindow" aid="303" idMso="WindowNew" controlType="0" id="NewWindow" text="@New Window" rbHotKey="N"/>
+		<KxCloseWindowCommand hotKey="c" ksoCmd="CloseWindow" aid="80033" shortcutHint="Ctrl+W" id="CloseWindow" text="@Close Window"/>
+		<KxCloseOtherCommand hotKey="o" aid="80034" id="CloseOtherWindows" text="@Close Other Windows"/>
+		<KxWpsCmpSideBySideCommand hotKey="b" aid="7698" filter="support:CompareDoc=true" id="CmpSideBySide" dialogHint="1" text="@Compared Side by Side"/>
+		<KxCurrentFileMRUCommand aid="92123" autoShortCut="1" id="CurrentFileList" text="Current File List"/>
+		<KxOpenUrlCommand featureid="16777258" hotKey="o" aid="80037" ksourl="Product:HomePage" idMso="BlogHomePage" icon="KingsoftOffice" controlType="0" id="WPSOfficeHomePage" text="@WPS Office Homepage"/>
+		<KxOpenUrlCommand hotKey="c" customShortcutEnabled="false" aid="100009" ksourl="Product:CommunityHomePage" icon="WPSCommunity" id="WPSOfficeCommunity" text="@WPS Office Community"/>
+		<KxOpenUrlCommand hotKey="f" aid="2000035" ksourl="Product:WPSFacebook" icon="KingsoftOfficeFacebook" id="WPSFacebook" text="@WPS Office Facebook"/>
+		<KxOpenUrlCommand hotKey="m" customShortcutEnabled="false" aid="3775" ksourl="Product:MicroblogUrl" icon="MicroblogFeedback" id="MicroblogFeedback" text="@WPS Microblog"/>
+		<KxNewFeaturesCommand hotKey="n" aid="92049" filter="lang=zh_CN;category=personal" icon="NewFeatures" id="WPSOfficeNewFeatures" text="@WPS Office New features"/>
+		<KxOpenUrlCommand hotKey="f" customShortcutEnabled="false" aid="7903" ksourl="Product:ForumUrl" icon="WPSBBS" id="WPSOfficeForum" text="@WPS Forum"/>
+		<KxUpdateOnlineCommand hotKey="u" aid="9340" filter="platform=win32;oem_WithUpdate!=0" url="../wtoolex/wpsupdate" icon="UpdateOnline" id="UpdateOnline" args="-from=manual" text="@Check for Updates"/>
+		<KxChangeVersionCommand hotKey="c" aid="92050" filter="platform=win32" icon="ChangeVersion" id="ChangeVersion" text="@Change Version"/>
+		<KxOpenUrlCommand featureid="16777262" hotKey="m" aid="100012" filter="support:ProductManagementCenter=true" url="ksomisc" icon="ProductManagementCenter" id="ProductManagementCenter" args="-snmanager" text="@Product Management Center"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="About" aid="927" idMso="About" icon="About" controlType="0" id="About" text="@About WPS Writer"/>
+		<kxKOSUserLoginCommand hotKey="L" ksoCmd="KOSUserLoginCmd" aid="2000017" icon="OS_Login" id="KOSUserLoginCmd" dialogHint="1" text="@Sign in" rbHotKey="L"/>
+		<kxKOSRechargeCommand hotKey="R" ksoCmd="KOSRechargeCmd" aid="2000018" icon="OS_Recharge" id="KOSRechargeCmd" text="@Recharge" rbHotKey="R"/>
+		<kxKOSLogoutCommand hotKey="X" ksoCmd="KOSLogoutCommand" aid="2000021" icon="OS_Login" id="KOSLogoutCommand" customTip="KOSLogoutTip" text="@Sign out" rbHotKey="X"/>
+		<kxKOSOpenCloudFileCommand hotKey="O" ksoCmd="KOSOpenCloudFileCmd" aid="2000022" icon="OS_OpenCloudFile" id="KOSOpenCloudFileCmd" dialogHint="1" customTip="KOSOpenCloudFileTip" text="@Open from Cloud Docs" rbHotKey="O"/>
+		<kxKOSSaveToCloudCommand hotKey="Y" ksoCmd="KOSSaveToCloudCmd" aid="2000023" icon="OS_SaveToCloudFile" id="KOSSaveToCloudCmd" dialogHint="1" customTip="KOSSaveFileTocloudTip" text="@Save to Cloud Docs" rbHotKey="Y"/>
+		<kxKOSCreateCloudLinkCommand hotKey="K" ksoCmd="KOSCreateCloudLinkCmd" aid="2000024" icon="OS_CreateCloudLinkFile" id="KOSCreateCloudLinkCmd" dialogHint="1" customTip="KOSCreatecloudLinkTip" text="@Create Cloud Link" rbHotKey="K"/>
+		<KxAutoVersionCommand text2="@Enable AutoBackup" hotKey="A" ksoCmd="AutoVersionCmd" aid="2000025" icon="WS_AutoVersiong" id="AutoVersionCmd" dialogHint="1" customTip="AutoVersion" text="@Enable AutoBackup" rbHotKey="A"/>
+		<KxStopAutoVersionCommand text2="@Disable AutoBackup" hotKey="S" ksoCmd="StopAutoVersionCmd" aid="2000026" icon="WS_AutoVersiong" id="StopAutoVersionCmd" dialogHint="1" customTip="StopAutoVersion" text="@Disable AutoBackup" rbHotKey="S"/>
+		<KxMarkVersionCommand text2="@Manual Backup" hotKey="M" ksoCmd="MarkVersionCmd" aid="2000027" icon="WS_MarkVersiong" id="MarkVersionCmd" dialogHint="1" customTip="MarkVersion" text="@Manual Backup" rbHotKey="M"/>
+		<KxExplorVersionCommand text2="@View Historical Backup" hotKey="E" ksoCmd="ExplorVersionCmd" aid="2000028" icon="WS_ExplorVersiong" id="ExplorVersionCmd" dialogHint="1" customTip="ExplorVersion" text="@View Historical Backup" rbHotKey="E"/>
+		<KxExplorBackupDirCommand text2="@View File Safe" hotKey="d" ksoCmd="ExplorBackupDirCmd" aid="2000029" icon="WS_ExplorBackupdir" id="ExplorBackupDirCmd" dialogHint="1" customTip="ExplorBackupDir" text="@View File Safe" rbHotKey="D"/>
+		<KxExportWeiboImageCommand text2="@Export as Image" hotKey="X" ksoCmd="ExportWeiboImageCmd" aid="2000031" icon="exporttopicture32" id="ExportWeiboImageCmd" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="X"/>
+		<KxWpsWeiboLayoutCommand text2="@WPS Microblog Layout" hotKey="P" ksoCmd="WpsWeiboLayoutCmd" aid="2000032" icon="PivotTableShowFieldList" id="WpsWeiboLayoutCmd" text="@WPS Microblog Layout" rbHotKey="P"/>
+		<KxOpenWebWeiboCommand text2="@Share to Microblog Webpage" hotKey="O" ksoCmd="OpenWebWeiboCmd" aid="2000033" icon="weibowebshare" id="OpenWebWeiboCmd" text="@Share to Microblog Webpage" rbHotKey="O"/>
+		<KxWeiboCommand text2="@Share to Microblog" hotKey="W" ksoCmd="WeiboCmd" aid="2000034" icon="cweibo32" id="WeiboCmd" text="@Share to Microblog" rbHotKey="W"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="ExpandPasteText" aid="80071" icon="ExpandPasteText" id="ExpandPasteText" text="@Unformatted Text" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="CCInsertItemBefore" aid="24142" id="InsertItemBefore" text="@Insert Item Before" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="F" ksoCmd="CCInsertItemAfter" aid="24141" id="InsertItemAfter" text="@Insert Item After" rbHotKey="F"/>
+		<KxLegacyTriggerCommand hotKey="D" ksoCmd="CCDeleteItem" aid="24143" id="DeleteItem" text="@Delete Item" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="DeleteContentControl" aid="13464" id="DeleteContentControl" text="@Delete Content Control" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="V" ksoCmd="Reconvert" aid="3720" id="Reconvert" text="@Reconvert"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="InsertHyperlinkPopupMenu" aid="1576" icon="InsertHyperlink" shortcutHint="Ctrl+K" id="InsertHyperlinkInPopup" dialogHint="1" text="@Hyperlink"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="EditHyperlink" aid="1577" icon="InsertHyperlink" id="EditHyperlink" dialogHint="1" text="@Edit Hyperlink"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SelectHyperlink" aid="1578" id="SelectHyperlink" text="@Select Hyperlink"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="OpenHyperlink" aid="2664" id="OpenHyperlink" text="@Open Hyperlink"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CopyHyperlink" aid="1575" id="CopyHyperlink" text="@Copy Hyperlink"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RemoveHyperlink" aid="3626" id="RemoveHyperlink" text="@Remove Hyperlink"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditComment" aid="2056" id="EditComment" text="@Edit Comment"/>
+		<KxLegacyTriggerCommand hotKey="M" ksoCmd="DeleteComment" aid="1592" idMso="ReviewDeleteCommentsMenu" icon="DeleteComment" controlType="5" id="DeleteCommentPopupMenu" text="@Delete Comment"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditField" aid="5731" idMso="EditField" controlType="0" id="EditField" dialogHint="1" text="@Edit Field"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="GotoFootnote" aid="3215" idMso="GoToFootnote" controlType="0" id="GotoFootnote" text="@Go to Footnote"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="ConvertToEndnote" aid="2783" id="ConvertToEndnote" text="@Convert to Endnote"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="SelectTable" aid="80040" id="SelectTableOnPopupMenu" text="@Select Table"/>
+		<KxStaticGalleryCommand hotKey="g" column="3" ksoCmd="TableCellAlignmentPalette" aid="30461" barid="44532" idMso="CellFillColorPicker" icon="CellAlignment_0" controlType="0" id="TableCellAlignment" text="@Cell Alignment" ksoTriggerCmd="RecentTableCellAlignment" hasDynamicIcon="1">
+			<KxStaticGalleryItemCommand icon="CellAlignment_0" index="0" qtspyName="CellAlignment_0"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_1" index="1" qtspyName="CellAlignment_1"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_2" index="2" qtspyName="CellAlignment_2"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_3" index="3" qtspyName="CellAlignment_3"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_4" index="4" qtspyName="CellAlignment_4"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_5" index="5" qtspyName="CellAlignment_5"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_6" index="6" qtspyName="CellAlignment_6"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_7" index="7" qtspyName="CellAlignment_7"/>
+			<KxStaticGalleryItemCommand icon="CellAlignment_8" index="8" qtspyName="CellAlignment_8"/>
+		</KxStaticGalleryCommand>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="GotoEndnote" aid="3216" idMso="GoToEndnote" controlType="0" id="GotoEndnote" text="@Go to Endnote"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="ConvertToFootnote" aid="2783" id="ConvertToFootnote" text="@Convert to Footnote"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="ContiuneNumbering" aid="80087" id="ContinueNumbering" text="@Continue Numbering"/>
+		<KxValueCommand hotKey="l" ksoCmd="TabType" aid="80090" icon="LeftAlignTabs" id="LeftAlignTabs" index="0" text="@Left Tab"/>
+		<KxValueCommand hotKey="c" ksoCmd="TabType" aid="80091" icon="CenterAlignTabs" id="CenterAlignTabs" index="1" text="@Center Tab"/>
+		<KxValueCommand hotKey="r" ksoCmd="TabType" aid="80092" icon="RightAlignTabs" id="RightAlignTabs" index="2" text="@Right Tab"/>
+		<KxValueCommand hotKey="d" ksoCmd="TabType" aid="80093" icon="DecimalAlignTabs" id="DecimalAlignTabs" index="3" text="@Decimal Tab"/>
+		<KxValueCommand hotKey="f" ksoCmd="TabType" aid="80094" icon="FirstLineIndent" id="FirstLineIndent" index="5" text="@First Line Indent"/>
+		<KxValueCommand hotKey="h" ksoCmd="TabType" aid="80095" idMso="HangingIndent" icon="HangingIndent" controlType="0" id="HangingIndent" index="6" text="@Hanging Indent"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoveHere" aid="80096" id="MoveHere" text="@Move Here"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CopyHere" aid="80097" id="CopyHere" text="@Copy Here"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="Cancel" aid="80098" idMso="Cancel" controlType="0" id="Cancel" text="@Cancel"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptInsertPopupMenu" aid="1715" icon="AcceptChange" id="AcceptInsertPopupMenu" text="@Accept Insertion"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectInsertPopupMenu" aid="1716" icon="RejectChange" id="RejectInsertPopupMenu" text="@Reject Insertion"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptDeletePopupMenu" aid="1715" icon="AcceptChange" id="AcceptDeletePopupMenu" text="@Accept Deletion"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectDeletePopupMenu" aid="1716" icon="RejectChange" id="RejectDeletePopupMenu" text="@Reject Deletion"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptFormatPopupMenu" aid="1715" icon="AcceptChange" id="AcceptFormatPopupMenu" text="@Accept Formatting Changes"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectFormatPopupMenu" aid="1716" icon="RejectChange" id="RejectFormatPopupMenu" text="@Reject Formating Changes"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptNumberPopupMenu" aid="1715" icon="AcceptChange" id="AcceptNumberPopupMenu" text="@Accept Formatting Changes"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectNumberPopupMenu" aid="1716" icon="RejectChange" id="RejectNumberPopupMenu" text="@Reject Formating Changes"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptTablePopupMenu" aid="1715" icon="AcceptChange" id="AcceptTablePopupMenu" text="@Accept Formatting Changes"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectTablePopupMenu" aid="1716" icon="RejectChange" id="RejectTablePopupMenu" text="@Reject Formating Changes"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptParaPopupMenu" aid="1715" icon="AcceptChange" id="AcceptParaPopupMenu" text="@Accept Formatting Changes"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectParaPopupMenu" aid="1716" icon="RejectChange" id="RejectParaPopupMenu" text="@Reject Formating Changes"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="AcceptAllPopupMenu" aid="1715" icon="AcceptChange" id="AcceptAllPopupMenu" text="@Accept Change"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RejectAllPopupMenu" aid="1716" icon="RejectChange" id="RejectAllPopupMenu" text="@Reject Change"/>
+		<KxCloseWindowCommand hotKey="c" ksoCmd="CloseWindow" aid="80033" icon="Exit" shortcutHint="Ctrl+W" id="TabMenuCloseWindow" text="@Close Window"/>
+		<kxKOSSaveToCloudCommand hotKey="Y" ksoCmd="KOSSaveToCloudMenuCmd" aid="2000023" id="KOSSaveToCloudMenuCmd" dialogHint="1" customTip="KOSSaveFileTocloudTip" text="@Save to Cloud Docs" rbHotKey="Y"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="OpenFileFolder" aid="80105" id="OpenFileFolder" text="@Open Folder"/>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="FormFieldOption" aid="1607" icon="FormFieldOption" id="FormFieldOption" text="@Form Field Options"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="ExpandPasteFormatTextOnSmartLabels" aid="80107" icon="ExpandPasteFormatText" id="ExpandPasteFormatTextOnSmartLabels" text="@Formatted Text"/>
+		<KxLegacyTriggerCommand hotKey="M" ksoCmd="ExpandPasteMatchingFormatOnSmartLabels" aid="80108" icon="ExpandPasteMatchingFormat" id="ExpandPasteMatchingFormatOnSmartLabels" text="@Matching Current Format"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="ExpandPasteTextOnSmartLabels" aid="80109" icon="ExpandPasteText" id="ExpandPasteTextOnSmartLabels" text="@Unformatted Text"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="PasteSpecialOnSmartLabels" aid="80110" icon="PasteSpecial" id="PasteSpecialOnSmartLabels" dialogHint="1" text="@Paste Special"/>
+		<KxWpsSpellSuggestionCommand ksoCmd="SpellingSuggestions" aid="80072" id="SpellingSuggestions" text="@Spelling Suggestions"/>
+		<KxWpsSynonymsSuggestionCommand ksoCmd="SynonymsSuggestions" filter="support:SynonymAndThesaurus=true" id="SynonymsSuggestions" text="@Synonyms"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="IgnoreIt" aid="80073" id="IgnoreIt" text="@Ignore"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="AddtoDic" aid="80074" id="AddtoDic" text="@Add to Dictionary"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="CheckSpellingAsYouType" aid="80075" id="CheckSpellingAsYouType" text="@Check Spelling As You Type"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="ShowSpellingIgnoredWords" aid="80076" id="ShowSpellingIgnoredWords" text="@Show Ignored Words"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="SpellingCheckOption" aid="80077" id="SpellingCheckOption" dialogHint="1" text="@Option"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SaveasPicture" aid="80046" id="SaveasPicture" dialogHint="1" text="@Save as Picture"/>
+		<KxLegacyTriggerCommand hotKey="x" ksoCmd="AddText" aid="80078" id="AddText" text="@Add Text"/>
+		<KxLegacyTriggerCommand hotKey="x" ksoCmd="EditText" aid="1401" id="EditText" text="@Edit Text"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="CreateTextBoxLink" aid="80079" icon="CreateTextBoxLink" id="CreateTextBoxLink" text="@Create Text Box Link"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="BreakForwardLink" aid="80080" icon="BreakForwardLink" id="BreakForwardLink" text="@Break Forward Link"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PreviousTextBox" aid="80081" icon="PreviousTextBox" id="PreviousTextBox" text="@Previous Text Box"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="NextTextBox" aid="80082" icon="NextTextBox" id="NextTextBox" text="@Next Text Box"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Group" aid="164" icon="GroupPopup" id="Group" text="@Group"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="UnGroup" aid="165" idMso="ObjectsUnGroup" icon="UnGroupPopup" controlType="0" id="UnGroup" text="@Ungroup"/>
+		<KListCommand hotKey="g" aid="30175" barid="520" id="GroupingMenu" name="Grouping" text="@Grouping">
+			<command idQ="Group"/>
+			<command idQ="UnGroup"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="BringToFront" aid="166" idMso="ObjectBringToFront" icon="BringToFront" controlType="0" id="BringToFront" text="@Bring to Front"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="SendToBack" aid="167" idMso="ObjectSendToBack" icon="SendToBack" controlType="0" id="SendToBack" text="@Send to Back"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="BringForward" aid="170" idMso="ObjectBringForward" icon="BringForward" controlType="0" id="BringForward" text="@Bring Forward"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="SendBackward" aid="171" idMso="ObjectSendBackward" icon="SendBackward" controlType="0" id="SendBackward" text="@Send Backward"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="BringInFrontOfText" aid="168" icon="BringInFrontOfText" id="BringInFrontOfText" text="@Bring in Front of Text"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="SendBehindText" aid="169" idMso="ObjectSendBehindText" icon="SendBehindText" controlType="0" id="SendBehindText" text="@Send Behind Text" rbHotKey="H"/>
+		<KxListCommand hotKey="u" ksoCmd="BringToFront" aid="166" idMso="ObjectBringToFront" icon="BringToFront" controlType="0" id="OrderUpMenu" text="@Bring to Front">
+			<command idQ="BringToFront"/>
+			<command idQ="BringForward"/>
+			<command idQ="BringInFrontOfText"/>
+		</KxListCommand>
+		<KxListCommand hotKey="k" ksoCmd="SendToBack" aid="167" idMso="ObjectSendToBack" icon="SendToBack" controlType="0" id="OrderDownMenu" text="@Send to Back">
+			<command idQ="SendToBack"/>
+			<command idQ="SendBackward"/>
+			<command idQ="SendBehindText"/>
+		</KxListCommand>
+		<KxConnectorGroupListCommand hotKey="g" aid="92111" barid="520" id="ConnectorGroupingMenu" name="Grouping" text="@Grouping">
+			<command idQ="Group"/>
+			<command idQ="UnGroup"/>
+		</KxConnectorGroupListCommand>
+		<KxConnectorOrderListCommand hotKey="r" aid="92110" barid="135" id="ConnectorOrderMenu" name="Order" text="@Order">
+			<command idQ="BringToFront"/>
+			<command idQ="SendToBack"/>
+			<command idQ="BringForward"/>
+			<command idQ="SendBackward"/>
+			<command idQ="BringInFrontOfText"/>
+			<command idQ="SendBehindText"/>
+		</KxConnectorOrderListCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="AutoShapeDefaults" aid="2179" id="AutoShapeDefaults" text="@Set AutoShape Defaults"/>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="PasteTableOnPopupMenu" aid="83124" icon="ExpandPasteText" id="PasteTableOnPopupMenu" text="@Paste as Nest Table"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="DeleteTable" aid="80060" icon="DeleteTable" id="DeleteTableOnPopupMenu" text="@Delete Table" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="InsertMultipleRows" aid="92100" id="InsertMultipleRows" dialogHint="1" text="@Insert Multiple Rows"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DeleteRows" aid="80069" icon="DeleteRows" id="DeleteRowsInPopup" text="@Delete Rows"/>
+		<KxLegacyTriggerCommand hotKey="P" ksoCmd="PasteTableOnPopupMenu" aid="83125" icon="ExpandPasteText" id="PasteColumnOnPopupMenu" text="@Paste Column"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DeleteColumns" aid="80070" icon="DeleteColumns" id="DeleteColumnsInPopup" text="@Delete Columns"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="ChangePicture" aid="80045" icon="ChangePicture" id="ChangePicture" dialogHint="1" text="@Change Picture"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditPoints" aid="206" idMso="ObjectEditPoints" icon="EditPoints" controlType="6" id="EditPoints" customTip="EditPoints" spaceHint="suitable" text="@Edit Points" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="OpenPath" aid="2693" id="OpenPath" text="@Open Path"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="ClosePath" aid="1420" id="ClosePath" text="@Close Path"/>
+		<KxLegacyTriggerCommand hotKey="A" ksoCmd="AddPoint" aid="1415" id="AddPoint" text="@Add Point"/>
+		<KxLegacyTriggerCommand hotKey="L" ksoCmd="DeletePoint" aid="1416" id="DeletePoint" text="@Delete Point"/>
+		<KxValueCommand hotKey="T" ksoCmd="PointType" aid="1421" id="AutoPoint" index="0" text="@AutoPoint"/>
+		<KxValueCommand hotKey="s" ksoCmd="PointType" aid="1422" id="SmoothPoint" index="1" text="@Smooth Point"/>
+		<KxValueCommand hotKey="r" ksoCmd="PointType" aid="1423" id="StraightPoint" index="2" text="@Straight Point"/>
+		<KxValueCommand hotKey="c" ksoCmd="PointType" aid="1424" id="CornerPoint" index="3" text="@Corner Point"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="ExitEditPoints" aid="1425" id="ExitEditPoints" text="@Exit Edit Point"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="DeleteSegment" aid="2692" id="DeleteSegment" text="@Delete Segment"/>
+		<KxValueCommand hotKey="s" ksoCmd="SegmentType" aid="1417" id="StraightSegment" index="0" text="@Straight Segment"/>
+		<KxValueCommand hotKey="c" ksoCmd="SegmentType" aid="1418" id="CurvedSegment" index="1" text="@Curved Segment"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="OleObjectSaveToFile" aid="80083" id="OleObjectSaveToFile" dialogHint="1" text="@Save to File"/>
+		<KxLegacyTriggerCommand hotKey="x" ksoCmd="EditWordArtText" aid="2094" id="EditWordArtText" dialogHint="1" text="@Edit Text"/>
+		<KxValueCommand hotKey="s" ksoCmd="ConnectorType" aid="2091" idMso="ShapeStraightConnector" icon="StraightConnector" controlType="6" id="StraightConnector" index="0" text="@Straight Connector"/>
+		<KxValueCommand hotKey="e" ksoCmd="ConnectorType" aid="2092" idMso="ShapeElbowConnector" icon="ElbowConnector" controlType="6" id="ElbowConnector" index="1" text="@Elbow Connector"/>
+		<KxValueCommand hotKey="u" ksoCmd="ConnectorType" aid="2093" icon="CurvedConnector" id="CurvedConnector" index="2" text="@Curved Connector"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="CTB_Property" aid="222" idMso="ControlProperties" icon="FTB_Property" controlType="0" id="CTB_Property" text="@Properties" rbHotKey="J"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="CTB_ViewCode" aid="1561" idMso="ViewVisualBasicCode" icon="CTB_ViewCode" controlType="0" id="CTB_ViewCode" text="@View Code"/>
+		<KxMRUCommand ksoCmd="CTB_ControlItemList" aid="80085" id="CTB_ControlItemList" text="@Control Menu List" shortCutFromText="1"/>
+		<KxComposeListCommand hotKey="o" ksoCmd="CTB_ViewControlMenu" aid="80084" barid="44550" id="CTB_ViewControlMenu" text="@Object">
+			<compose idQ="CTB_ControlItemList"/>
+		</KxComposeListCommand>
+		<KxMRUCommand ksoCmd="EditObjectVerbList" aid="2000001" id="EditObjectVerbList" text="@Object Menu List" shortCutFromText="1"/>
+		<KxLegacyTriggerCommand hotKey="U" ksoCmd="UpdateLink" id="UpdateLink" text="@Update Link"/>
+		<KxLegacyTriggerCommand hotKey="V" ksoCmd="ConvertObject" id="ConvertObject" text="@Convert..."/>
+		<KxLegacyTriggerCommand hotKey="K" ksoCmd="ObjectLinks" id="ObjectLinks" text="@Links..."/>
+		<KxComposeListCommand hotKey="o" ksoCmd="EditObject" aid="2000002" barid="44528" id="EditObject" text="@Object Menu">
+			<compose idQ="EditObjectVerbList"/>
+			<command idQ="ObjectLinks"/>
+		</KxComposeListCommand>
+		<KxBrowseBackupDirCommand hotKey="b" ksoCmd="BrowseBackupDir" aid="2000003" filter="platform=unix" id="BrowseBackupDir" text="@Open Backup Directory"/>
+		<KTriggerInfoCommand hotKey="P" aid="2000004" cmdName="PageNumberInfoCommand" id="PageNumberStatusBar" text="@Page Number"/>
+		<KTriggerInfoCommand hotKey="A" aid="2000005" cmdName="PageAreaInfoCommand" id="PageAreaStatusBar" text="@Page Area"/>
+		<KTriggerInfoCommand hotKey="E" aid="2000006" cmdName="SectionInfoCommand" id="PageSectionStatusBar" text="@Section"/>
+		<KTriggerInfoCommand hotKey="B" aid="2000007" cmdName="RowInfoCommand" id="RowStatusBar" text="@Line Number"/>
+		<KTriggerInfoCommand hotKey="C" aid="2000008" cmdName="ColumnInfoCommand" id="ColumnStatusBar" text="@Column"/>
+		<KTriggerInfoCommand hotKey="W" aid="2000009" cmdName="WordCountInfoCommand" id="WordCountStatusBar" text="@Word Count"/>
+		<KTriggerInfoCommand hotKey="O" aid="2000010" cmdName="InsertKeyCommand" id="OverTypeStatusBar" text="@Over Type"/>
+		<KTriggerInfoCommand hotKey="T" aid="2000011" cmdName="TrackCommand" id="TrackStatusBar" text="@Track"/>
+		<KTriggerInfoCommand hotKey="S" aid="2000012" filter="support:SpellCheck=true" cmdName="SpellCheckCommand" id="SpellCheckStatusBar" text="@Spell Check"/>
+		<KTriggerInfoCommand hotKey="U" aid="2000013" cmdName="UnitCommand" id="UnitStatusBar" text="@Unit"/>
+		<KTriggerInfoCommand hotKey="V" aid="2000014" cmdName="ViewInfoCommand" id="ViewStatusBar" text="@View Shortcut"/>
+		<KTriggerInfoCommand hotKey="Z" aid="2000015" cmdParam="ZoomRatio" cmdName="ZoomCommand" id="ZoomTextStatusBar" text="@Zoom"/>
+		<KTriggerInfoCommand hotKey="Z" aid="2000016" cmdParam="ZoomSlider" cmdName="ZoomCommand" id="ZoomSliderStatusBar" text="@Zoom Slider"/>
+		<KxRecordMacroCommand hotKey="R" ksoCmd="RecordMacro" forceVisible="1" aid="2780" filter="support:VBASupport=true" idMso="MacroRecord" controlType="0" id="RecordMacro" dialogHint="1" text="@Record Macro"/>
+		<KTriggerInfoCommand hotKey="P" aid="2000004" cmdName="PageNumberInfoCommand" id="PageNumberStatusBar" text="@Page Number"/>
+		<KTriggerInfoCommand hotKey="A" aid="2000005" cmdName="PageAreaInfoCommand" id="PageAreaStatusBar" text="@Page Area"/>
+		<KTriggerInfoCommand hotKey="E" aid="2000006" cmdName="SectionInfoCommand" id="PageSectionStatusBar" text="@Section"/>
+		<KTriggerInfoCommand hotKey="B" aid="2000007" cmdName="RowInfoCommand" id="RowStatusBar" text="@Line Number"/>
+		<KTriggerInfoCommand hotKey="C" aid="2000008" cmdName="ColumnInfoCommand" id="ColumnStatusBar" text="@Column"/>
+		<KTriggerInfoCommand hotKey="W" aid="2000009" cmdName="WordCountInfoCommand" id="WordCountStatusBar" text="@Word Count"/>
+		<KTriggerInfoCommand hotKey="O" aid="2000010" cmdName="InsertKeyCommand" id="OverTypeStatusBar" text="@Over Type"/>
+		<KTriggerInfoCommand hotKey="T" aid="2000011" cmdName="TrackCommand" id="TrackStatusBar" text="@Track"/>
+		<KTriggerInfoCommand hotKey="S" aid="2000012" filter="support:SpellCheck=true" cmdName="SpellCheckCommand" id="SpellCheckStatusBar" text="@Spell Check"/>
+		<KTriggerInfoCommand hotKey="U" aid="2000013" cmdName="UnitCommand" id="UnitStatusBar" text="@Unit"/>
+		<KTriggerInfoCommand hotKey="V" aid="2000014" cmdName="ViewInfoCommand" id="ViewStatusBar" text="@View Shortcut"/>
+		<KTriggerInfoCommand hotKey="Z" aid="2000015" cmdParam="ZoomRatio" cmdName="ZoomCommand" id="ZoomTextStatusBar" text="@Zoom"/>
+		<KTriggerInfoCommand hotKey="Z" aid="2000016" cmdParam="ZoomSlider" cmdName="ZoomCommand" id="ZoomSliderStatusBar" text="@Zoom Slider"/>
+		<KTabGalleryListCommand initialWidth="204" ksoCmd="PictureCrop" initialHeight="300" icon="PictureCrop" id="PictureCrop_OnQuickBar" text="@Show/Hide Crop Panel">
+			<KxGalleryCroppingShapesCommand ksoCmd="PictureShapeCrop" customTip="PictureCropByShape" text="@Crop By Shape" qtspyName="PictureShapeCrop"/>
+			<KxGalleryCroppingScalesCommand ksoCmd="PictureScaleCrop" customTip="PictureCropByScale" text="@Crop By Scale" qtspyName="PictureScaleCrop"/>
+		</KTabGalleryListCommand>
+		<KListCommand aid="100063" barid="44561" id="Wrapping_Quick">
+			<KxWpsWrapTextItemCommand aid="100064" bHead="true" text="@In Line with Text" qtspyName="100064"/>
+			<KxWpsWrapTextItemCommand bNeedReactivation="true" hotKey="i" ksoCmd="WrappingInLineWithText" aid="100065" icon="WrappingInLineWithText" text="@In Line with Text" qtspyName="WrappingInLineWithText"/>
+			<KxWpsWrapTextItemCommand aid="100066" bHead="true" text="@Wrap Text" qtspyName="100066"/>
+			<KxWpsWrapTextItemCommand hotKey="s" ksoCmd="WrappingSquare" aid="100067" icon="WrappingSquare" text="@Square" qtspyName="WrappingSquare" rbHotKey="S"/>
+			<KxWpsWrapTextItemCommand hotKey="t" ksoCmd="WrappingTight" aid="100068" icon="WrappingTight" text="@Tight" qtspyName="WrappingTight" rbHotKey="T"/>
+			<KxWpsWrapTextItemCommand hotKey="h" ksoCmd="WrappingThrough" aid="100069" icon="WrappingInFrontofText" text="@Through" qtspyName="WrappingThrough" rbHotKey="H"/>
+			<KxWpsWrapTextItemCommand bNewLine="true" hotKey="o" ksoCmd="WrappingTopandBottom" aid="100070" icon="WrappingTopandBottom" text="@Top and Bottom" qtspyName="WrappingTopandBottom" rbHotKey="O"/>
+			<KxWpsWrapTextItemCommand hotKey="d" ksoCmd="WrappingBehindText" aid="100071" icon="WrappingBehindText" text="@Behind Text" qtspyName="WrappingBehindText" rbHotKey="D"/>
+			<KxWpsWrapTextItemCommand hotKey="n" ksoCmd="WrappingInFrontofText" aid="100072" icon="WrappingInFrontofText" text="@In Front of Text" qtspyName="WrappingInFrontofText" rbHotKey="N"/>
+		</KListCommand>
+		<KxWpsWrapTextCommand idMso="TextWrappingMenu" icon="TextWrappingMenu" controlType="15" id="WrapTextList" text="@Wrap Text" rbHotKey="TW">
+			<KxLegacyTriggerCommand hotKey="i" ksoCmd="WrappingInLineWithText" idMso="TextWrappingInLineWithText" icon="WrappingInLineWithText" controlType="6" text="@In Line with Text" qtspyName="WrappingInLineWithText"/>
+			<separator/>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="WrappingSquare" idMso="TextWrappingSquare" icon="WrappingSquare" controlType="6" text="@Square" qtspyName="WrappingSquare" rbHotKey="S"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="WrappingTight" idMso="TextWrappingTight" icon="WrappingTight" controlType="6" text="@Tight" qtspyName="WrappingTight" rbHotKey="T"/>
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="WrappingThrough" idMso="TextWrappingThrough" icon="WrappingInFrontofText" controlType="6" text="@Through" qtspyName="WrappingThrough" rbHotKey="H"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="WrappingTopandBottom" idMso="TextWrappingTopAndBottom" icon="WrappingTopandBottom" controlType="6" text="@Top and Bottom" qtspyName="WrappingTopandBottom" rbHotKey="O"/>
+			<separator/>
+			<KxLegacyTriggerCommand hotKey="d" ksoCmd="WrappingBehindText" idMso="TextWrappingBehindText" icon="WrappingBehindText" controlType="6" text="@Behind Text" qtspyName="WrappingBehindText" rbHotKey="D"/>
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="WrappingInFrontofText" idMso="TextWrappingInFrontOfText" icon="WrappingInFrontofText" controlType="6" text="@In Front of Text" qtspyName="WrappingInFrontofText" rbHotKey="N"/>
+			<separator/>
+			<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditPoints" aid="206" idMso="ObjectEditPoints" icon="EditPoints" controlType="6" customTip="EditPoints" spaceHint="suitable" text="@Edit Points" qtspyName="EditPoints" rbHotKey="E"/>
+			<separator/>
+			<command idQ="LayoutObject"/>
+		</KxWpsWrapTextCommand>
+		<KxWpsWrapTextMore hotKey="o" ksoCmd="FormatObject" aid="100133" icon="ChartObjects" id="FormatObject_Wrap" dialogHint="1" text="@View more"/>
+		<KxWpsWrapTextMore hotKey="o" ksoCmd="LayoutObject" aid="100134" icon="ChartObjects" id="LayoutObject_Wrap" dialogHint="1" text="@View more"/>
+		<KTriggerCommand hotKey="M" icon="Help" id="FixedText" customTip="WrapFixedText" text="@Fixed Text"/>
+		<KTriggerCommand hotKey="N" icon="Help" id="FollowText" customTip="WrapFollowText" text="@Move With Text"/>
+		<KxWpsWrapTextWidgetCommand listWrapCmd="Wrapping_Quick" wrapMoreDmlCmd="LayoutObject_Wrap" icon="WrapText" followTextInfoCmd="FollowText" id="WrapText" fixedTextInfoCmd="FixedText" customTip="WrapText" wrapMoreCmd="FormatObject_Wrap"/>
+		<KxInstancedSeperatorCommand id="SeperatorMinitoolPopup"/>
+		<KxOleLegacyTriggerCommand hotKey="c" ksoCmd="Copy" aid="19" idMso="Copy" icon="Copy" controlType="0" shortcutHint="Ctrl+C" id="CopyPopup" customTip="Copy" spaceHint="autocompact" text="@Copy" rbHotKey="C"/>
+		<KxOleLegacyTriggerCommand hotKey="t" ksoCmd="Cut" aid="21" idMso="Cut" icon="Cut" controlType="0" shortcutHint="Ctrl+X" id="CutPopup" customTip="Cut" spaceHint="autocompact" text="@Cut" rbHotKey="X"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="ExpandPasteFormatText" icon="ExpandPasteFormatText" id="RbExpandPasteFormatTextPopup" text="@Formatted Text" rbHotKey="K"/>
+		<KxLegacyTriggerCommand hotKey="M" ksoCmd="ExpandPasteMatchingFormat" icon="ExpandPasteMatchingFormat" id="ExpandPasteMatchingFormatPopup" text="@Matching Current Format" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="ExpandPasteText" aid="80071" icon="ExpandPasteText" id="ExpandPasteTextPopup" text="@Unformatted Text" rbHotKey="T"/>
+		<KxPropComposeCommand tabIndex="1" hotKey="A" ksoCmd="Options" icon="SetDefaultPaste" id="m_DefaultPastePopup" dialogHint="1" text="@Set Default Paste"/>
+		<KxOleLegacyTriggerCommand hotKey="S" ksoCmd="PasteSpecial" aid="755" idMso="PasteSpecialDialog" icon="PasteSpecial" controlType="0" id="PasteSpecialPopup" dialogHint="1" text="@Paste Special" rbHotKey="S"/>
+		<KxListCommand hotKey="p" ksoCmd="Paste" idMso="PasteMenu" icon="Paste" customTip2="sp_Paste2" controlType="5" shortcutHint="Ctrl+V" id="sp_PastePopup" customTip="sp_Paste" text="@Paste" rbHotKey="V">
+			<command idQ="RbExpandPasteFormatTextPopup"/>
+			<command idQ="ExpandPasteMatchingFormatPopup"/>
+			<command idQ="ExpandPasteTextPopup"/>
+			<separator/>
+			<command idQ="PasteSpecialPopup"/>
+			<command idQ="m_DefaultPastePopup"/>
+		</KxListCommand>
+		<KxFontSizeComboboxCommand hotKey="FS" horizontalPolicy="Preferred" ksoCmd="FontSize" icon="FontSize" fontSizeList="@5;5.5;6.5;7.5;8;9;10;10.5;11;12;14;16;18;20;22;26;28;36;48;56;72" id="FontSizePopup" customTip="FontSize" verticalPolicy="Preferred" text="@Font Size" rbHotKey="FS"/>
+		<KxLegacyTriggerCommand hotKey="FG" ksoCmd="GrowFont" icon="IncreaseFontSize" shortcutHint="Ctrl+]" id="GrowFontRainbowPopup" customTip="GrowFont" text="@Grow Font" rbHotKey="FG"/>
+		<KxLegacyTriggerCommand hotKey="FK" ksoCmd="ShrinkFont" icon="DecreaseFontSize" shortcutHint="Ctrl+[" id="ShrinkFontRainbowPopup" customTip="ShrinkFont" text="@Shrink Font" rbHotKey="FK"/>
+		<KxStaticGalleryCommand hotKey="b" column="4" ksoCmd="BulletsPalette" icon="BulletsNumber" customTip2="Bullets2" id="BulletsPopup" customTip="Bullets" spaceHint="suitable" text="@Bullets" ksoTriggerCmd="RecentBullets" rbHotKey="U">
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_numbering_0" galleryItemHeight="72" index="-1" customTip="@None" qtspyName="wps_numbering_0"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_0" galleryItemHeight="72" index="0" customTip="@With Filling Effect Of Large Round-Shaped Bullets" qtspyName="wps_bullets_0"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_1" galleryItemHeight="72" index="1" customTip="@With Filling Effect Of Large Square-Shaped Bullets" qtspyName="wps_bullets_1"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_2" galleryItemHeight="72" index="2" customTip="@With Filling Effect Of Diamond-Shaped Bullets" qtspyName="wps_bullets_2"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_3" galleryItemHeight="72" index="3" customTip="@Bold Square-Hollow Bullets" qtspyName="wps_bullets_3"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_4" galleryItemHeight="72" index="4" customTip="@Sagittate Bullet " qtspyName="wps_bullets_4"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_5" galleryItemHeight="72" index="5" customTip="@The Check Mark-shaped Bullets" qtspyName="wps_bullets_5"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wps_bullets_6" galleryItemHeight="72" index="6" customTip="@With Filling Effect Of Round-Shaped Bullets" qtspyName="wps_bullets_6"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreBullets" id="MoreBulletsPopup" dialogHint="1" text="@More Bullets"/>
+		</KxStaticGalleryCommand>
+		<KxStaticGalleryCommand tc="Num" hotKey="n" column="4" ksoCmd="NumberingPalette" aid="80064" icon="Numbering" customTip2="Numbering2" id="NumberingPopup" customTip="Numbering" spaceHint="suitable" text="@Number" ksoTriggerCmd="RecentNumbering" rbHotKey="N">
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_0" galleryItemHeight="70" index="0" customTip="@None" qtspyName="wps_numbering_0"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" filter="lang=zh_CN,zh_TW,jp_JP;category=personal,professional" icon="wps_numbering_1" galleryItemHeight="70" index="1" customTip="@1.2.3." qtspyName="wps_numbering_1"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" filter="lang=en_US" icon="wps_numbering_1" galleryItemHeight="70" index="1" customTip="@1.2.3." qtspyName="wps_numbering_1"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" filter="lang=zh_CN,zh_TW,jp_JP;category=personal,professional" icon="wps_numbering_2" galleryItemHeight="70" index="2" customTip="@With The Circle Number." qtspyName="wps_numbering_2"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" filter="lang=en_US" icon="wps_numbering_2" galleryItemHeight="70" index="2" customTip="@With The Circle Number." qtspyName="wps_numbering_2"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_3" galleryItemHeight="70" index="3" customTip="@Ⅰ.Ⅱ.Ⅲ." qtspyName="wps_numbering_3"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_4" galleryItemHeight="70" index="4" customTip="@A.B.C." qtspyName="wps_numbering_4"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_5" galleryItemHeight="70" index="5" customTip="@a).b).c)." qtspyName="wps_numbering_5"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_6" galleryItemHeight="70" index="6" customTip="@a.b.c." qtspyName="wps_numbering_6"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_7" galleryItemHeight="70" index="7" customTip="@Pictographic Number, Wide End" qtspyName="wps_numbering_7"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_7" galleryItemHeight="70" index="7" qtspyName="wps_numbering_7"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreNumbering" id="MoreNumberingPopup" dialogHint="1" text="@More Numbering"/>
+		</KxStaticGalleryCommand>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="Bold" icon="Bold" id="BoldPopup" customTip="Bold" text="@Bold" rbHotKey="1"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="Italic" icon="Italic" id="ItalicPopup" customTip="Italic" text="@Italic" rbHotKey="2"/>
+		<KxStaticGalleryCommand hotKey="u" column="1" ksoCmd="UnderlinePalette" icon="Underline" customTip2="Underline2" id="UnderlinePopup" customTip="Underline" text="@Underline" ksoTriggerCmd="Underline" rbHotKey="3">
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_0" galleryItemHeight="18" index="0" qtspyName="Underline_0"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_1" galleryItemHeight="18" index="1" qtspyName="Underline_1"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_2" galleryItemHeight="18" index="2" qtspyName="Underline_2"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_3" galleryItemHeight="18" index="3" qtspyName="Underline_3"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_4" galleryItemHeight="18" index="4" qtspyName="Underline_4"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_5" galleryItemHeight="18" index="5" qtspyName="Underline_5"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_6" galleryItemHeight="18" index="6" qtspyName="Underline_6"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_7" galleryItemHeight="18" index="7" qtspyName="Underline_7"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreUnderlines" id="MoreUnderlines" dialogHint="1" text="@More Underlines" rbHotKey="M"/>
+			<KxWpsUnderlineColorCommand hotKey="u" ksoCmd="UnderLineColor" id="UnderLineColor" text="@Underline Color" rbHotKey="U">
+				<KxWpsMoreUnderlineColorCommand hotKey="m" ksoCmd="UnderLineColor" id="MoreUnderLineColor" dialogHint="1" text="@More Underline Colors"/>
+			</KxWpsUnderlineColorCommand>
+		</KxStaticGalleryCommand>
+		<KxLegacyTriggerCommandEx hotKey="u" ksoCmd="Underline" icon="Underline" id="rnUnderline" customTip="Underline" text="@Underline" rbHotKey="3"/>
+		<KxHighlightColorCommand hotKey="h" ksoCmd="HighlightColor" aid="80068" icon="Highlighter" customTip2="HighlightColor2" id="HighlightColorPopup" customTip="HighlightColor" text="@Highlight" ksoTriggerCmd="RecentHighlightColor" rbHotKey="i"/>
+		<KxWpsFontColorCommand hotKey="FT" ksoCmd="FontColor" icon="ChartFontColor" customTip2="FontColor2" id="FontColorPopup" customTip="FontColor" text="@Font Color" ksoTriggerCmd="RecentFontColor" rbHotKey="FC">
+			<KxWpsMoreFontColorCommand hotKey="m" ksoCmd="FontColor" aid="100076" id="MoreFontColorsPopup" dialogHint="1" text="@More Font Colors"/>
+			<KxWpsSnapColorCommand hotKey="e" ksoCmd="FontColor" aid="100086" icon="SnapperFill" forceEnabled="1" id="SnapFontColorPopup" text="@Eyedropper" rbHotKey="E"/>
+		</KxWpsFontColorCommand>
+		<KxLegacyTriggerCommand ksoCmd="CharacterShading" icon="CharacterShading" id="CharacterShadingRainbowPopup" customTip="CharacterShading" text="@Character Shading"/>
+		<KxValueCommand hotKey="l" ksoCmd="FormatAlignment" idMso="AlignLeft" icon="AlignLeft" controlType="6" id="FormatAlignLeftPopup" index="0" customTip="FormatAlignLeft" text="@Align Left" rbHotKey="AL"/>
+		<KxValueCommand hotKey="c" ksoCmd="FormatAlignment" idMso="AlignCenter" icon="AlignCenter" controlType="6" id="FormatAlignCenterPopup" index="1" customTip="FormatAlignCenter" text="@Center" rbHotKey="AC"/>
+		<KxValueCommand hotKey="r" ksoCmd="FormatAlignment" idMso="AlignRight" icon="AlignRight" controlType="6" id="FormatAlignRightPopup" index="2" customTip="FormatAlignRight" text="@Align Right" rbHotKey="AR"/>
+		<KxValueCommand hotKey="j" ksoCmd="FormatAlignment" idMso="AlignJustify" icon="AlignJustify" controlType="6" id="FormatAlignJustifyPopup" index="3" customTip="FormatAlignJustify" text="@Justify" rbHotKey="AJ"/>
+		<KxValueCommand hotKey="d" ksoCmd="FormatAlignment" icon="AlignDistributed" id="FormatAlignDistributedPopup" index="4" customTip="FormatAlignDistributed" text="@Distributed" rbHotKey="AD"/>
+		<KQuickMenuCommandEx icon="AlignCenter" id="FormatAlignPopup" customTip="FormatAlignCenter" text="@Center" referenceCommand="FormatAlignCenterPopup" rbHotKey="AC">
+			<command idQ="FormatAlignLeftPopup"/>
+			<command idQ="FormatAlignCenterPopup"/>
+			<command idQ="FormatAlignRightPopup"/>
+			<separator/>
+			<command idQ="FormatAlignJustifyPopup"/>
+			<command idQ="FormatAlignDistributedPopup"/>
+		</KQuickMenuCommandEx>
+		<KxValueCommand hotKey="c" ksoCmd="FormatAlignment" idMso="AlignCenter" icon="AlignCenter" controlType="6" id="FormatAlignCenterSglPopup" index="1" customTip="FormatAlignCenter" text="@Center" rbHotKey="AC"/>
+		<KxLegacyTriggerCommandEx text2="@Format
+Painter" hotKey="FP" ksoCmd="FormatPainter" icon="FormatPainter" id="FormatPainterPopup" customTip="FormatPainter" text="@Format Painter" rbHotKey="FP"/>
+		<KxLegacyTriggerCommandEx text2="@Format
+Painter" hotKey="FP" ksoCmd="FormatPainter" icon="FormatPainter" id="FormatPainter2Popup" customTip="FormatPainter" text="@Format Painter" rbHotKey="FP"/>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="TableShadingColor" aid="100085" icon="MoreColor" id="MoreTableShandColor" dialogHint="1" text="@More Fill Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="TableShadingColor" aid="100084" icon="SnapperFill" forceEnabled="1" id="SnapTableShandColor" text="@Eyedropper" rbHotKey="E"/>
+		<KxWpsTableFillColorCommand hotKey="s" ksoCmd="TableShadingColor" icon="TableShadingColor" customTip2="TableShadingColor2" id="TableShadingColorPopup" customTip="TableShadingColor" text="@Shading Color" ksoTriggerCmd="RecentTableShadingColor" rbHotKey="H">
+			<command idQ="MoreTableShandColor"/>
+			<command idQ="SnapTableShandColor"/>
+		</KxWpsTableFillColorCommand>
+		<KxValueCommand hotKey="b" ksoCmd="TableOutsideBorderPalette" icon="BottomBorder" id="BottomBorderPopup" index="7" text="@Bottom Border"/>
+		<KxValueCommand hotKey="p" ksoCmd="TableOutsideBorderPalette" icon="TopBorder" id="TopBorderPopup" index="2" text="@Top Border"/>
+		<KxValueCommand hotKey="l" ksoCmd="TableOutsideBorderPalette" icon="LeftBorder" id="LeftBorderPopup" index="3" text="@Left Border"/>
+		<KxValueCommand hotKey="r" ksoCmd="TableOutsideBorderPalette" icon="RightBorder" id="RightBorderPopup" index="8" text="@Right Border"/>
+		<KxValueCommand hotKey="n" ksoCmd="TableOutsideBorderPalette" icon="NoBorder" id="NoBorderPopup" index="6" text="@No Border"/>
+		<KxValueCommand hotKey="a" ksoCmd="TableOutsideBorderPalette" icon="AllBorders" id="AllBordersPopup" index="1" text="@All Borders"/>
+		<KxValueCommand hotKey="s" ksoCmd="TableOutsideBorderPalette" icon="OutsideBorders" id="OutsideBordersPopup" index="0" text="@Outside Borders"/>
+		<KxValueCommand hotKey="i" ksoCmd="TableOutsideBorderPalette" icon="CrossBorder" id="CrossBorderPopup" index="5" text="@Inside Borders"/>
+		<KxValueCommand hotKey="h" ksoCmd="TableOutsideBorderPalette" icon="HMiddleBorder" id="HMiddleBorderPopup" index="4" text="@Inside Horizontal Border"/>
+		<KxValueCommand hotKey="v" ksoCmd="TableOutsideBorderPalette" icon="VMiddleBorder" id="VMiddleBorderPopup" index="9" text="@Inside Vertical Border"/>
+		<KQuickMenuCommandEx icon="OutsideBorders" customTip2="RbTableOutsideBorder2" id="RbTableOutsideBorderPopup" customTip="RbTableOutsideBorder" text="@Outside Borders" referenceCommand="OutsideBordersPopup" rbHotKey="B">
+			<command idQ="BottomBorderPopup"/>
+			<command idQ="TopBorderPopup"/>
+			<command idQ="LeftBorderPopup"/>
+			<command idQ="RightBorderPopup"/>
+			<separator/>
+			<command idQ="NoBorderPopup"/>
+			<command idQ="AllBordersPopup"/>
+			<command idQ="OutsideBordersPopup"/>
+			<command idQ="CrossBorderPopup"/>
+			<separator/>
+			<command idQ="HMiddleBorderPopup"/>
+			<command idQ="VMiddleBorderPopup"/>
+			<separator/>
+			<KxPropComposeCommand hotKey="o" ksoCmd="BorderShading" icon="PageBorderColor" id="BorderAndShading" dialogHint="1" text="@Borders and Shading" qtspyName="BorderShading"/>
+		</KQuickMenuCommandEx>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="InsertRowAbove" icon="InsertRowsAbove" id="InsertRowsAbove_AlwaysVisiblePopup" customTip="InsertRowAbove" text="@Insert Row Above" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="InsertRowBelow" icon="InsertRowsBelow" id="InsertRowsBelow_AlwaysVisiblePopup" customTip="InsertRowBelow" text="@Insert Row Below" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="InsertColumnLeft" icon="InsertColumnsLeft" id="InsertColumnsLeft_AlwaysVisiblePopup" customTip="InsertColumnLeft" text="@Insert Column Left" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="InsertColumnRight" icon="InsertColumnsRight" id="InsertColumnsRight_AlwaysVisiblePopup" customTip="InsertColumnRight" text="@Insert Column Right" rbHotKey="R"/>
+		<KListCommand icon="InsertRowsBelow" id="InsertTablePopup" text="@Insert">
+			<command idQ="InsertRowsAbove_AlwaysVisiblePopup"/>
+			<command idQ="InsertRowsBelow_AlwaysVisiblePopup"/>
+			<command idQ="InsertColumnsLeft_AlwaysVisiblePopup"/>
+			<command idQ="InsertColumnsRight_AlwaysVisiblePopup"/>
+		</KListCommand>
+		<KListCommand hotKey="d" icon="Delete" id="DelTablePopup" customTip="Delete" text="@Delete" rbHotKey="DD">
+			<KxLegacyTriggerCommand hotKey="d" ksoCmd="DeleteCells" icon="DeleteCells" id="DeleteCellsInTableTextFloatbar" dialogHint="1" text="@Delete Cells" qtspyName="DeleteCells" rbHotKey="D"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="DeleteColumns" icon="DeleteColumns" id="DeleteColumnsInTableTextFloatbar" text="@Delete Columns" qtspyName="DeleteColumns" rbHotKey="C"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="DeleteRows" icon="DeleteRows" id="DeleteRowsInTableTextFloatbar" text="@Delete Rows" qtspyName="DeleteRows" rbHotKey="R"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="DeleteTable" icon="DeleteTable" id="DeleteTableInTableTextFloatbar" text="@Delete Table" qtspyName="DeleteTable" rbHotKey="T"/>
+		</KListCommand>
+		<KGalleryShapeStyleCommand hotKey="f" ksoCmd="ShapeStyles" icon="StyleShapeTool" id="ShapeFormatStylePopup" customTip="ShapeFormatStyle" styleType="1" text="@Shape Style">
+			<command idQ="MoreEffects"/>
+		</KGalleryShapeStyleCommand>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="3" selectionCountHint="3" selectionCanvasHint="1" selectionMediaHint="3" selectionVmlHint="1" id="ShapeFormatStyleWarpPopup" referenceCommand="ShapeFormatStylePopup"/>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="FillColor" aid="100087" icon="MoreColor" id="MoreFillColorsPopup" dialogHint="1" text="@More Fill Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="FillColor" aid="100077" icon="SnapperFill" forceEnabled="1" id="SnapperFillPopup" text="@Eyedropper" rbHotKey="E"/>
+		<KxPropComposeCommand tabIndex="0" hotKey="g" ksoCmd="FillEffects" icon="GradiantFill" id="GradiantFillPopup" text="@Gradient" rbHotKey="G"/>
+		<KxPropComposeCommand tabIndex="1" hotKey="t" ksoCmd="FillEffects" icon="TextureFill" id="TextureFillPopup" text="@Texture" rbHotKey="T"/>
+		<KxPropComposeCommand tabIndex="2" hotKey="n" ksoCmd="FillEffects" icon="PatternFill" id="PatternFillPopup" text="@Pattern"/>
+		<KxPropComposeCommand tabIndex="3" hotKey="p" ksoCmd="FillEffects" icon="PictureFill" id="PictureFillPopup" text="@Picture" rbHotKey="P"/>
+		<KxWpsFillColorCommand4Rainbow ksoCmd="FillColor" icon="FillColorTool" customTip2="FillColor2" id="FillColorPopup" customTip="FillColor" text="@Shape Fill" ksoTriggerCmd="RecentFillColor" rbHotKey="SF">
+			<command idQ="MoreFillColorsPopup"/>
+			<command idQ="SnapperFillPopup"/>
+			<command idQ="GradiantFillPopup"/>
+			<command idQ="TextureFillPopup"/>
+			<command idQ="PatternFillPopup"/>
+			<command idQ="PictureFillPopup"/>
+		</KxWpsFillColorCommand4Rainbow>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="1" selectionCountHint="3" selectionCanvasHint="3" selectionMediaHint="1" id="FillColorWarpPopup" referenceCommand="FillColorPopup"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PatternedLines" id="PatternedLinesPopup" dialogHint="1" text="@Patterned Lines"/>
+		<KxLineStyleStaticGalleryCommand hotKey="w" column="1" ksoCmd="LineStylePalette" icon="LineStyleMenu" id="LineStylePalettePopup" text="@Line Style" rbHotKey="W">
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_0" galleryItemHeight="16" index="0" text="@0.25 pt" qtspyName="LineStyle_0"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_1" galleryItemHeight="16" index="1" text="@0.5 pt" qtspyName="LineStyle_1"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_2" galleryItemHeight="16" index="2" text="@0.75 pt" qtspyName="LineStyle_2"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_3" galleryItemHeight="16" index="3" text="@1 pt" qtspyName="LineStyle_3"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_4" galleryItemHeight="16" index="4" text="@1.5 pt" qtspyName="LineStyle_4"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_5" galleryItemHeight="16" index="5" text="@2.25 pt" qtspyName="LineStyle_5"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_6" galleryItemHeight="16" index="6" text="@3 pt" qtspyName="LineStyle_6"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_7" galleryItemHeight="16" index="7" text="@4.5 pt" qtspyName="LineStyle_7"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_8" galleryItemHeight="16" index="8" text="@6 pt" qtspyName="LineStyle_8"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_9" galleryItemHeight="16" index="9" text="@3 pt" qtspyName="LineStyle_9"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_10" galleryItemHeight="16" index="10" text="@4.5 pt" qtspyName="LineStyle_10"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_11" galleryItemHeight="16" index="11" text="@4.5 pt" qtspyName="LineStyle_11"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_12" galleryItemHeight="16" index="12" text="@6 pt" qtspyName="LineStyle_12"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="m" ksoCmd="MoreLines" id="MoreLines" dialogHint="1" text="@More Lines"/>
+		</KxLineStyleStaticGalleryCommand>
+		<KxStaticGalleryCommand hotKey="s" column="1" ksoCmd="DashStylePalette" icon="DashStyleMenu" id="DashStylePalettePopup" text="@Dash Style" rbHotKey="S">
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Solid" icon="DashStyle_0" galleryItemHeight="14" index="0" qtspyName="DashStyle_0"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Round Dot" icon="DashStyle_1" galleryItemHeight="14" index="1" qtspyName="DashStyle_1"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Square Dot" icon="DashStyle_2" galleryItemHeight="14" index="2" qtspyName="DashStyle_2"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Dash" icon="DashStyle_3" galleryItemHeight="14" index="3" qtspyName="DashStyle_3"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Dash Dot" icon="DashStyle_4" galleryItemHeight="14" index="4" qtspyName="DashStyle_4"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Long Dash" icon="DashStyle_5" galleryItemHeight="14" index="5" qtspyName="DashStyle_5"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Long Dash Dot" icon="DashStyle_6" galleryItemHeight="14" index="6" qtspyName="DashStyle_6"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Long Dash Dot Dot" icon="DashStyle_7" galleryItemHeight="14" index="7" qtspyName="DashStyle_7"/>
+		</KxStaticGalleryCommand>
+		<KxStaticGalleryCommand hotKey="r" column="1" ksoCmd="ArrowStylePalette" icon="ArrowStyleMenu" id="ArrowStylePalettePopup" text="@Arrow Style" rbHotKey="R">
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 1" icon="ArrowStyle_0" galleryItemHeight="16" index="0" qtspyName="ArrowStyle_0"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 2" icon="ArrowStyle_1" galleryItemHeight="16" index="1" qtspyName="ArrowStyle_1"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 3" icon="ArrowStyle_2" galleryItemHeight="16" index="2" qtspyName="ArrowStyle_2"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 4" icon="ArrowStyle_3" galleryItemHeight="16" index="3" qtspyName="ArrowStyle_3"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 5" icon="ArrowStyle_4" galleryItemHeight="16" index="4" qtspyName="ArrowStyle_4"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 6" icon="ArrowStyle_5" galleryItemHeight="16" index="5" qtspyName="ArrowStyle_5"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 7" icon="ArrowStyle_6" galleryItemHeight="16" index="6" qtspyName="ArrowStyle_6"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 8" icon="ArrowStyle_7" galleryItemHeight="16" index="7" qtspyName="ArrowStyle_7"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 9" icon="ArrowStyle_8" galleryItemHeight="16" index="8" qtspyName="ArrowStyle_8"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 10" icon="ArrowStyle_9" galleryItemHeight="16" index="9" qtspyName="ArrowStyle_9"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="135" detail="@Arrow Style 11" icon="ArrowStyle_10" galleryItemHeight="16" index="10" qtspyName="ArrowStyle_10"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="m" ksoCmd="MoreArrows" id="MoreArrowsPopup" dialogHint="1" text="@More Arrows"/>
+		</KxStaticGalleryCommand>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="LineColor" aid="100088" icon="MoreColor" id="MoreLineColorsPopup" dialogHint="1" text="@More Line Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="LineColor" aid="100078" icon="SnapperFill" forceEnabled="1" id="SnapperLinesPopup" text="@Eyedropper" rbHotKey="E"/>
+		<KxWpsLineColorCommand ksoCmd="LineColor" icon="LineColorTool" customTip2="LineColor2" id="LineColorPopup" customTip="LineColor" text="@Shape Outline" ksoTriggerCmd="RecentLineColor" rbHotKey="SO">
+			<command idQ="MoreLineColorsPopup"/>
+			<command idQ="SnapperLinesPopup"/>
+			<command idQ="PatternedLinesPopup"/>
+			<command idQ="LineStylePalettePopup"/>
+			<command idQ="DashStylePalettePopup"/>
+			<command idQ="ArrowStylePalettePopup"/>
+		</KxWpsLineColorCommand>
+		<KxWpsLineColorCommand ksoCmd="LineColor" icon="LineColorTool" customTip2="LineColor2" id="LineColorPopupDml" customTip="LineColor" text="@Shape Outline" ksoTriggerCmd="RecentLineColor" rbHotKey="SO">
+			<command idQ="MoreLineColorsPopup"/>
+			<command idQ="SnapperLinesPopup"/>
+			<command idQ="LineStylePalettePopup"/>
+			<command idQ="DashStylePalettePopup"/>
+			<command idQ="ArrowStylePalettePopup"/>
+		</KxWpsLineColorCommand>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="3" selectionCountHint="3" selectionCanvasHint="3" id="LineColorWarpPopup" referenceCommand="LineColorPopup"/>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="3" selectionCountHint="3" selectionCanvasHint="3" id="LineColorWarpPopupDml" referenceCommand="LineColorPopupDml"/>
+		<KxLegacyTriggerCommandEx text2="@Format
+Painter" hotKey="FP" ksoCmd="FormatPainter" icon="FormatPainter" id="ShapeFormatPainterPopup" customTip="FormatPainter" text="@Format Painter" rbHotKey="FP"/>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="1" selectionCountHint="1" selectionCanvasHint="3" id="ShapeFormatPainterWarpPopup" referenceCommand="ShapeFormatPainterPopup"/>
+		<KxFormatStylesWidgetCommand hotKey="f" icon="StylePictureTool" id="PictureFormatStylePopup" styleType="3" text="@Style"/>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="2" selectionCountHint="3" selectionCanvasHint="3" id="PictureFormatStyleWarpPopup" referenceCommand="PictureFormatStylePopup"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PictureCrop" hideMiniToolBar="1" icon="PictureCropTool" id="PictureCropPopup" customTip="PictureCrop" text="@Crop" rbHotKey="V"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="FreeRotate" icon="FreeRotate" id="FreeRotatePopup" text="@Free Rotate"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="RotateLeft" icon="RotateLeft" id="RotateLeftPopup" text="@Rotate Left 90°" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RotateRight" icon="RotateRight" id="RotateRightPopup" text="@Rotate Right 90°" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="FlipHorizontal" icon="FlipHorizontal" id="FlipHorizontalPopup" text="@Flip Horizontal" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="FlipVertical" icon="FlipVertical" id="FlipVerticalPopup" text="@Flip Vertical" rbHotKey="V"/>
+		<KListCommand icon="RotateRight" id="m_RotatePopup" customTip="m_Rotate" text="@Rotate Style" rbHotKey="AY">
+			<command idQ="FreeRotatePopup"/>
+			<command idQ="RotateLeftPopup"/>
+			<command idQ="RotateRightPopup"/>
+			<separator/>
+			<command idQ="FlipHorizontalPopup"/>
+			<command idQ="FlipVerticalPopup"/>
+		</KListCommand>
+		<KxValueCommand hotKey="l" ksoCmd="DrawAlign" icon="DrawAlignLeft" id="DrawAlignLeftPopup" index="0" text="@Align Left" rbHotKey="L"/>
+		<KxValueCommand hotKey="c" ksoCmd="DrawAlign" icon="DrawAlignCenter" id="DrawAlignCenterPopup" index="1" text="@Align Center" rbHotKey="C"/>
+		<KxValueCommand hotKey="r" ksoCmd="DrawAlign" icon="DrawAlignRight" id="DrawAlignRightPopup" index="2" text="@Align Right" rbHotKey="R"/>
+		<KxValueCommand hotKey="t" ksoCmd="DrawAlign" icon="DrawAlignTop" id="DrawAlignTopPopup" index="3" text="@Align Top" rbHotKey="T"/>
+		<KxValueCommand hotKey="m" ksoCmd="DrawAlign" icon="DrawAlignMiddle" id="DrawAlignMiddlePopup" index="4" text="@Align Middle" rbHotKey="M"/>
+		<KxValueCommand hotKey="b" ksoCmd="DrawAlign" icon="DrawAlignBottom" id="DrawAlignBottomPopup" index="5" text="@Align Bottom" rbHotKey="B"/>
+		<KxAlignMiddleCenterCommand hotKey="a" middleAlignCommand="DrawAlignMiddlePopup" icon="DrawAlignMiddleCenter" id="DrawAlignMiddleCenterPopup" centerAlignCommand="DrawAlignCenterPopup" text="@Align Middle and Center" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="AlignDistributeHori" icon="AlignDistributeHori" id="AlignDistributeHoriPopup" text="@Distribute Horizontally"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="AlignDistributeVert" icon="AlignDistributeVert" id="AlignDistributeVertPopup" text="@Distribute Vertically"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EqualHeight" icon="EqualHeight" id="EqualHeightPopup" text="@Equal Height"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="EqualWidth" icon="EqualWidth" id="EqualWidthPopup" text="@Equal Width"/>
+		<KxLegacyTriggerCommand hotKey="Q" ksoCmd="EqualSize" icon="EqualSize" id="RbEqualSizePopup" text="@Equal Size"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="AlighRelativeToPage" icon="RelativetoPage" id="RbAlighRelativeToPagePopup" text="@Relative to Page"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Gridlines" aid="300" icon="Gridlines" id="RbGridlinesPopup" spaceHint="suitable" text="@Gridlines"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Grid" icon="FTB_GridSwitch" id="RbGridPopup" dialogHint="1" text="@Grid"/>
+		<KListCommand icon="AlignTool" id="m_AlignPopup" customTip="m_Align" text="@Align" rbHotKey="AA">
+			<command idQ="DrawAlignLeftPopup"/>
+			<command idQ="DrawAlignCenterPopup"/>
+			<command idQ="DrawAlignRightPopup"/>
+			<command idQ="DrawAlignTopPopup"/>
+			<command idQ="DrawAlignMiddlePopup"/>
+			<command idQ="DrawAlignBottomPopup"/>
+			<separator/>
+			<command idQ="AlignDistributeHoriPopup"/>
+			<command idQ="AlignDistributeVertPopup"/>
+			<separator/>
+			<command idQ="EqualHeightPopup"/>
+			<command idQ="EqualWidthPopup"/>
+			<command idQ="RbEqualSizePopup"/>
+			<separator/>
+			<command idQ="RbAlighRelativeToPagePopup"/>
+			<separator/>
+			<command idQ="RbGridlinesPopup"/>
+			<command idQ="RbGridPopup"/>
+		</KListCommand>
+		<KQuickMenuCommand id="Fontsel_FormatAlignPopup" referenceCommand="FormatAlignLeft">
+			<KxValueCommand descName="@Align Text Left" ksoCmd="FormatAlignment" icon="AlignLeft" id="FormatAlignLeft" index="0" customTip="FormatAlignLeft" text="@Align Left"/>
+			<KxValueCommand descName="@Align Text Center" ksoCmd="FormatAlignment" icon="AlignCenter" id="FormatAlignCenter" index="1" customTip="FormatAlignCenter" text="@Center"/>
+			<KxValueCommand descName="@Align Text Right" ksoCmd="FormatAlignment" icon="AlignRight" id="FormatAlignRight" index="2" customTip="FormatAlignRight" text="@Align Right"/>
+			<KxValueCommand descName="@Align Text Justify" ksoCmd="FormatAlignment" icon="AlignJustify" id="FormatAlignJustify" index="3" customTip="FormatAlignJustify" text="@Justify"/>
+			<KxValueCommand descName="@Align Text Distributed" ksoCmd="FormatAlignment" icon="AlignDistributed" id="FormatAlignDistributed" index="4" customTip="FormatAlignDistributed" text="@Distributed"/>
+		</KQuickMenuCommand>
+		<KListCommand icon="LineSpacing" id="m_LineSpacingPopup" dialogHint="1" customTip="m_LineSpacing" text="@Line Spacing" rbHotKey="K">
+			<KxValueCommand ksoCmd="LineSpacingNumber" index="10" text="@1.0" qtspyName="LineSpacingNumber10"/>
+			<KxValueCommand ksoCmd="LineSpacingNumber" index="15" text="@1.5" qtspyName="LineSpacingNumber15"/>
+			<KxValueCommand ksoCmd="LineSpacingNumber" index="20" text="@2.0" qtspyName="LineSpacingNumber20"/>
+			<KxValueCommand ksoCmd="LineSpacingNumber" aid="80061" index="25" text="@2.5" qtspyName="LineSpacingNumber25"/>
+			<KxValueCommand ksoCmd="LineSpacingNumber" aid="80062" index="30" text="@3.0" qtspyName="LineSpacingNumber30"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="LineSpacingMore" aid="80063" dialogHint="1" text="@More" qtspyName="LineSpacingMore"/>
+		</KListCommand>
+		<KxWpsMiniToolItemWrapCommand selectionImageHint="3" selectionCountHint="2" selectionCanvasHint="3" id="m_AlignWarpPopup" referenceCommand="m_AlignPopup"/>
+		<KListCommand vertspace="3" embedHint="1" id="Float_FontPopup_2013">
+			<KRbLayoutListCommand horizontalSpacing="3" layoutOnly="1">
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<KxWpsFontComboBoxCommand hotKey="FF" minimumWidth="67" horizontalPolicy="Expanding" ksoCmd="FontName" icon="FontName" id="FontNameInTextFloatbar" customTip="FontName" verticalPolicy="Preferred" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+					<KxFontSizeComboboxCommand hotKey="FS" ksoCmd="FontSize" fixedWidth="45" icon="FontSize" fontSizeList="@5;5.5;6.5;7.5;8;9;10;10.5;11;12;14;16;18;20;22;26;28;36;48;56;72" customTip="FontSize" text="@Font Size" qtspyName="FontSize" rbHotKey="FS"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="GrowFontRainbowPopup"/>
+					<command idQ="ShrinkFontRainbowPopup"/>
+					<command idQ="m_LineSpacingPopup"/>
+				</KRbLayoutListCommand>
+			</KRbLayoutListCommand>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+				<command idQ="BoldPopup"/>
+				<command idQ="ItalicPopup"/>
+				<command idQ="rnUnderline"/>
+				<command idQ="HighlightColorPopup"/>
+				<command idQ="FontColorPopup"/>
+				<command idQ="Fontsel_FormatAlignPopup"/>
+				<command idQ="FormatPainterPopup"/>
+				<KLayoutWidgetCommand fixedHeight="20" fixedWidth="8"/>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KxWpsFillColorLineExcludedCommand4Rainbow isCompletedHide="true" ksoCmd="FillColor" icon="FillColorTool" id="ShapeFillColorReselect" customTip="FillColor" text="@Shape Fill" rbHotKey="SF">
+			<command idQ="MoreFillColorsPopup"/>
+			<command idQ="SnapperFillPopup"/>
+			<command idQ="GradiantFillPopup"/>
+			<command idQ="TextureFillPopup"/>
+			<command idQ="PatternFillPopup"/>
+			<command idQ="PictureFillPopup"/>
+		</KxWpsFillColorLineExcludedCommand4Rainbow>
+		<KxWpsLineColorCommand isCompletedHide="true" ksoCmd="LineColor" triggerAble="0" icon="LineColorTool" customTip2="LineColor2" id="ShapeLineColorReselect" customTip="LineColor" text="@Shape Outline" rbHotKey="SO">
+			<command idQ="MoreLineColorsPopup"/>
+			<command idQ="SnapperLinesPopup"/>
+			<KxQuickHelpVmlOnlyTriggerCommand hotKey="p" ksoCmd="PatternedLines" dialogHint="1" text="@Patterned Lines" qtspyName="PatternedLines"/>
+			<command idQ="LineStylePalettePopup"/>
+			<command idQ="DashStylePalettePopup"/>
+			<command idQ="ArrowStylePalettePopup"/>
+		</KxWpsLineColorCommand>
+		<KListCommand embedHint="1" id="Float_FontPopup">
+			<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="70" idMso="Font" icon="FontName" controlType="2" id="FontNameInTextFloatbar" customTip="FontName" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+			<command idQ="FontSizePopup"/>
+			<command idQ="GrowFontRainbowPopup"/>
+			<command idQ="ShrinkFontRainbowPopup"/>
+			<command idQ="BulletsPopup"/>
+			<command idQ="NumberingPopup"/>
+			<command idQ="BoldPopup"/>
+			<command idQ="ItalicPopup"/>
+			<command idQ="UnderlinePopup"/>
+			<command idQ="HighlightColorPopup"/>
+			<command idQ="FontColorPopup"/>
+			<command idQ="CharacterShadingRainbowPopup"/>
+			<command idQ="Fontsel_FormatAlignPopup"/>
+			<command idQ="m_LineSpacingPopup"/>
+			<command idQ="FormatPainterPopup"/>
+			<KLayoutWidgetCommand fixedHeight="20" fixedWidth="10"/>
+		</KListCommand>
+		<KListCommand vertspace="3" embedHint="1" id="Float_FontSelPopup_2013">
+			<KRbLayoutListCommand horizontalSpacing="3" layoutOnly="1">
+				<command idQ="CopyPopup"/>
+				<command idQ="sp_PastePopup"/>
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="59" icon="FontName" customTip="FontName" text="@Font Name" qtspyName="FontNamePopup" rbHotKey="FF"/>
+					<command idQ="FontSizePopup"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="GrowFontRainbowPopup"/>
+					<command idQ="ShrinkFontRainbowPopup"/>
+				</KRbLayoutListCommand>
+			</KRbLayoutListCommand>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+				<command idQ="CutPopup"/>
+				<KLayoutWidgetCommand fixedHeight="20" fixedWidth="4"/>
+				<command idQ="FormatPainterPopup"/>
+				<KLayoutWidgetCommand fixedHeight="20" fixedWidth="6"/>
+				<command idQ="SeperatorMinitoolPopup"/>
+				<command idQ="BoldPopup"/>
+				<command idQ="ItalicPopup"/>
+				<command idQ="rnUnderline"/>
+				<command idQ="HighlightColorPopup"/>
+				<command idQ="FontColorPopup"/>
+				<command idQ="Fontsel_FormatAlignPopup"/>
+				<command idQ="m_LineSpacingPopup"/>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KListCommand embedHint="1" id="Float_FontSelPopup">
+			<command idQ="CutPopup"/>
+			<command idQ="sp_PastePopup"/>
+			<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="50" idMso="Font" icon="FontName" controlType="2" customTip="FontName" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+			<command idQ="FontSizePopup"/>
+			<command idQ="GrowFontRainbowPopup"/>
+			<command idQ="ShrinkFontRainbowPopup"/>
+			<command idQ="BulletsPopup"/>
+			<command idQ="NumberingPopup"/>
+			<command idQ="CopyPopup"/>
+			<command idQ="FormatPainterPopup"/>
+			<KLayoutWidgetCommand fixedHeight="20" fixedWidth="6"/>
+			<command idQ="SeperatorMinitoolPopup"/>
+			<command idQ="BoldPopup"/>
+			<command idQ="ItalicPopup"/>
+			<command idQ="UnderlinePopup"/>
+			<command idQ="HighlightColorPopup"/>
+			<command idQ="FontColorPopup"/>
+			<command idQ="CharacterShadingRainbowPopup"/>
+			<command idQ="Fontsel_FormatAlignPopup"/>
+			<command idQ="m_LineSpacingPopup"/>
+		</KListCommand>
+		<KListCommand vertspace="3" embedHint="1" id="Float_TableTextPopup_2013">
+			<KRbLayoutListCommand horizontalSpacing="3" layoutOnly="1">
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="88" icon="FontName" id="FontNameInTableTextFloatbar" customTip="FontName" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+					<command idQ="FontSizePopup"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="GrowFontRainbowPopup"/>
+					<command idQ="ShrinkFontRainbowPopup"/>
+					<command idQ="m_LineSpacingPopup"/>
+				</KRbLayoutListCommand>
+			</KRbLayoutListCommand>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+				<command idQ="BoldPopup"/>
+				<command idQ="ItalicPopup"/>
+				<command idQ="UnderlinePopup"/>
+				<command idQ="HighlightColorPopup"/>
+				<command idQ="FontColorPopup"/>
+				<command idQ="TableShadingColorPopup"/>
+				<command idQ="RbTableOutsideBorderPopup"/>
+				<command idQ="FormatAlignPopup"/>
+				<command idQ="FormatPainterPopup"/>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KListCommand vertspace="3" embedHint="1" id="Float_TableTextPopup_2012">
+			<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="105" icon="FontName" id="FontNameInTableTextFloatbar" customTip="FontName" text="@Font Name" rbHotKey="FF"/>
+			<command idQ="FontSizePopup"/>
+			<command idQ="GrowFontRainbowPopup"/>
+			<command idQ="ShrinkFontRainbowPopup"/>
+			<command idQ="BulletsPopup"/>
+			<command idQ="NumberingPopup"/>
+			<command idQ="BoldPopup"/>
+			<command idQ="ItalicPopup"/>
+			<command idQ="UnderlinePopup"/>
+			<command idQ="HighlightColorPopup"/>
+			<command idQ="FontColorPopup"/>
+			<command idQ="TableShadingColorPopup"/>
+			<command idQ="RbTableOutsideBorderPopup"/>
+			<command idQ="FormatAlignPopup"/>
+			<command idQ="m_LineSpacingPopup"/>
+			<command idQ="FormatPainterPopup"/>
+		</KListCommand>
+		<KListCommand vertspace="3" embedHint="1" id="Float_TableTextSelPopup_2013">
+			<KRbLayoutListCommand horizontalSpacing="3" layoutOnly="1">
+				<command idQ="CopyPopup"/>
+				<command idQ="sp_PastePopup"/>
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="40" icon="FontName" customTip="FontName" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+					<command idQ="FontSizePopup"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="GrowFontRainbowPopup"/>
+					<command idQ="ShrinkFontRainbowPopup"/>
+					<command idQ="m_LineSpacingPopup"/>
+				</KRbLayoutListCommand>
+			</KRbLayoutListCommand>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+				<command idQ="CutPopup"/>
+				<command idQ="FormatPainterPopup"/>
+				<KLayoutWidgetCommand fixedHeight="20" fixedWidth="6"/>
+				<command idQ="SeperatorMinitoolPopup"/>
+				<command idQ="BoldPopup"/>
+				<command idQ="ItalicPopup"/>
+				<command idQ="HighlightColorPopup"/>
+				<command idQ="FontColorPopup"/>
+				<command idQ="TableShadingColorPopup"/>
+				<command idQ="RbTableOutsideBorderPopup"/>
+				<command idQ="FormatAlignPopup"/>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KListCommand vertspace="3" embedHint="1" id="Float_TableTextSelPopup">
+			<command idQ="CutPopup"/>
+			<command idQ="sp_PastePopup"/>
+			<KxWpsFontComboBoxCommand hotKey="FF" ksoCmd="FontName" fixedWidth="55" icon="FontName" customTip="FontName" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+			<command idQ="FontSizePopup"/>
+			<command idQ="GrowFontRainbowPopup"/>
+			<command idQ="ShrinkFontRainbowPopup"/>
+			<command idQ="BulletsPopup"/>
+			<command idQ="NumberingPopup"/>
+			<command idQ="CopyPopup"/>
+			<command idQ="FormatPainterPopup"/>
+			<KLayoutWidgetCommand fixedHeight="20" fixedWidth="6"/>
+			<command idQ="SeperatorMinitoolPopup"/>
+			<command idQ="BoldPopup"/>
+			<command idQ="ItalicPopup"/>
+			<command idQ="HighlightColorPopup"/>
+			<command idQ="FontColorPopup"/>
+			<command idQ="TableShadingColorPopup"/>
+			<command idQ="RbTableOutsideBorderPopup"/>
+			<command idQ="FormatAlignPopup"/>
+			<command idQ="m_LineSpacingPopup"/>
+		</KListCommand>
+		<KChartElementCommand hotKey="c" aid="1622" itemWidth="150" id="ChartObjectsInPopupMenu" comboboxHint="1" customTip="ChartElements" text="@Chart Objects"/>
+		<KProxyPopupCommand pluginModule="ktranslation" hotKey="t" filter="kstyle!=classic;support:WPSTranslation=true" proxyCommandId="ProxyTranslationMenu" icon="translation" targetCategoryContext="CT_Review" targetCommandId="Translation" id="ProxyTranslationPopup" text="@Translation"/>
+		<KListCommand extensible="false" icon="Paste" customTip2="Paste2" controlType="0" shortcutHint="Ctrl+V" id="PasteMenu" customTip="Paste" text="@Paste">
+			<command idQ="Paste"/>
+			<command idQ="ExpandPasteText"/>
+			<command idQ="PasteSpecial"/>
+		</KListCommand>
+		<KxDeleteObjectCommand hotKey="D" icon="DeleteRecordBig-act" id="DeleteObject" text="@Delete Object"/>
+		<KxCurUserPermissionCommand hotKey="V" id="CurUserPermission" text="@Check Mine Permission"/>
+		<KxCheckPermissionsCommand hotKey="R" id="CheckUserPermission" text="@Check Users Permissions"/>
+		<KxApplyPermissionsCommand id="ApplyPermissions" text="@Apply Permissions"/>
+		<KxPermissionApplyCommand id="PermissionApply" text="@My Permssions Apply"/>
+		<KxPermissionApproveCommand id="PermissionApprove" text="@My Pending Approval"/>
+	</commands>
+	<subcommands>
+		<subcommand id="FileMenu">
+			<command idQ="NewBlankFile"/>
+			<command idQ="NewFileFromTemplates"/>
+			<command idQ="OpenFile"/>
+			<command idQ="CloseFile"/>
+			<command idQ="CloseAllFiles"/>
+			<separator/>
+			<command idQ="SaveFile"/>
+			<command idQ="SaveAllFiles"/>
+			<command idQ="SaveAs"/>
+			<separator/>
+			<command idQ="PageSetup"/>
+			<command idQ="PrintPreview"/>
+			<command idQ="Print"/>
+			<command idQ="PrintToPDF"/>
+			<separator/>
+			<command idQ="SendMail"/>
+			<command idQ="Convert"/>
+			<command idQ="Properties"/>
+			<command idQ="Encrypt"/>
+			<command idQ="ViewPermission"/>
+			<KxPermissionCommand menuHotKey="B" triggerText="@View Permissions" menuIcon="RestrictPermission" menuText="@Restrict Permission by People" triggerHotKey="B" triggerIcon="ViewPermission" ksoCmd="RestrictPermission" aid="31308" filter="support:RightsManagementServices=true" barid="1919" customTip2="" id="RestrictPermission" customTip="Restrict Permission by People">
+				<command idQ="UnrestrictedAccess"/>
+				<command idQ="RestrictedAccess"/>
+				<command idQ="ManageCredentials"/>
+			</KxPermissionCommand>
+			<separator/>
+			<command idQ="ReloadTxtFileWithEncodingDlg"/>
+			<separator/>
+			<compose idQ="RecentFileList"/>
+			<command idQ="ShowMoreHistories"/>
+			<separator/>
+			<command idQ="Exit"/>
+		</subcommand>
+		<subcommand id="EditMenu">
+			<command idQ="Undo"/>
+			<command idQ="Redo"/>
+			<separator/>
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<KListCommand hotKey="a" aid="30021" barid="390" icon="EraserOne" id="Clear" text="@Erase">
+				<command idQ="ClearFormats"/>
+				<command idQ="ClearContents"/>
+			</KListCommand>
+			<command idQ="SelectAll"/>
+			<separator/>
+			<command idQ="Find"/>
+			<command idQ="Replace"/>
+			<command idQ="GoTo"/>
+		</subcommand>
+		<subcommand id="ViewMenu">
+			<command idQ="PrintLayoutView"/>
+			<command idQ="OutLine"/>
+			<command idQ="WebLayoutView"/>
+			<KxWpsProtectEyesCommand hotKey="b" aid="100058" filter="kstyle!=classic|category=personal" icon="ProtectEyes" id="ProtectEyesInViewMenu" customTip="Protect_Eyes" text="@Eye Protection Mode" qtspyName="ProtectEyes" rbHotKey="B"/>
+			<command idQ="NightMode" filter="kstyle!=classic|category=personal"/>
+			<separator/>
+			<command idQ="TaskPane"/>
+			<KListCommand hotKey="R" aid="6239" icon="ReviewPane" id="ReviewPane" text="@Reviewing Pane">
+				<command idQ="vertReviewPane"/>
+				<command idQ="horzReviewPane"/>
+			</KListCommand>
+			<command idQ="MinisitePlugin" filter="lang=zh_CN;category=personal"/>
+			<command idQ="rHomepagePlugin"/>
+			<command idQ="Toolbar List"/>
+			<command idQ="StatusBar"/>
+			<command idQ="Ruler"/>
+			<command idQ="ShowParagraphMarks"/>
+			<command idQ="Gridlines"/>
+			<KListCommand hotKey="L" aid="81576" barid="44524" idMso="LineNumbersMenu" icon="LineNumbering" controlType="15" id="LineNumber" text="@Line Numbers">
+				<command idQ="LineNumOff"/>
+				<command idQ="LineNumContinuous"/>
+				<command idQ="LineNumRestPage"/>
+				<command idQ="LineNumResetSection"/>
+				<separator/>
+				<command idQ="LineNumSuppress"/>
+				<command idQ="LineNumBlanklineNoLnn"/>
+				<separator/>
+				<command idQ="SetLineNumbering"/>
+			</KListCommand>
+			<separator/>
+			<KListCommand hotKey="M" aid="81714" barid="953" icon="DocumentMap" id="DocumentMapMenu" name="Document Map" text="@Document Map">
+				<command idQ="DocumentMapLeft"/>
+				<command idQ="DocumentMapRight"/>
+				<command idQ="DocumentMapVisible"/>
+			</KListCommand>
+			<separator/>
+			<command idQ="HeaderFooter"/>
+			<command idQ="FootnotesView"/>
+			<KxWpsShowFootnoteSeparatorCommand detail="@Show or Hide Footnote/Endnote Separator" hotKey="b" aid="92018" icon="FootnoteSeparator" id="ShowOrHideNoteSeparator" text="@Show Footnote/Endnote Separator" qtspyName="FootnoteSeparator"/>
+			<command idQ="Markup"/>
+			<separator/>
+			<command idQ="FullScreenModeOnMenu"/>
+			<command idQ="Zoom"/>
+		</subcommand>
+		<subcommand id="InsertMenu">
+			<KxWpsBreaksListCommand hotKey="b" aid="766" id="InsertBreakMenu" text="@Breaks">
+				<command idQ="InsertPageBreak"/>
+				<command idQ="InsertColumnBreak"/>
+				<command idQ="InsertTextWrappingBreak"/>
+				<separator/>
+				<command idQ="InsertNextPageSectionBreak"/>
+				<command idQ="InsertContinuousSectionBreak"/>
+				<command idQ="InsertEvenPageSectionBreak"/>
+				<command idQ="InsertOddPageSectionBreak"/>
+			</KxWpsBreaksListCommand>
+			<KListCommand hotKey="D" aid="92112" barid="44526" id="InsertBlankPageMenu" text="@Blank Page">
+				<command idQ="InsertVerticalBlankPage"/>
+				<command idQ="InsertHorizonBlankPage"/>
+			</KListCommand>
+			<command idQ="PageBreak"/>
+			<command idQ="InsertPageNumbers"/>
+			<command idQ="ShowHeaderLine"/>
+			<command idQ="InsertDateTime"/>
+			<command idQ="InsertField"/>
+			<command idQ="InsertSymbol"/>
+			<command idQ="InsertComment"/>
+			<separator/>
+			<command idQ="InsertNumber" filter="lang=zh_CN,zh_TW"/>
+			<KListCommand hotKey="n" aid="31174" id="ReferenceMenu" text="@Reference">
+				<KxLegacyTriggerCommand hotKey="G" ksoCmd="InsertFootnote" aid="3365" icon="Footnote" id="FootnoteAndEndnoteDialog" dialogHint="1" text="@Footnote" qtspyName="InsertFootnote"/>
+				<command idQ="InsertCaption"/>
+				<command idQ="CrossReference"/>
+				<command idQ="InsertIndexTables"/>
+			</KListCommand>
+			<separator/>
+			<KListCommand hotKey="p" aid="30180" barid="140" icon="InsertPictureFromFile" id="InsertPicture" name="Picture" text="@Picture" qtspyName="Picture">
+				<command idQ="FromOnline"/>
+				<command idQ="InsertClipArt" filter="lang=ja_JP"/>
+				<command idQ="InsertPictureFromFile"/>
+				<command idQ="InsertCanvas"/>
+				<command idQ="InsertWordArt"/>
+				<command idQ="InsertPictureFromScan"/>
+			</KListCommand>
+			<command idQ="InsertMap"/>
+			<KListCommand hotKey="g" aid="92120" barid="44535" icon="WaterMark" id="WaterMarkMenu" text="@Watermark" qtspyName="WaterMark">
+				<KxWpsInsertWaterMarkCommand detail="@Insert Watermark" hotKey="w" aid="92032" icon="WaterMark" commandMark="1" id="InsertWaterMark" dialogHint="1" text="@Insert Watermark" qtspyName="WaterMark" rbHotKey="W"/>
+				<KxWpsDeleteWaterMarkCommand detail="@Remove Watermark" hotKey="r" aid="92033" icon="deleteWaterMark" commandMark="1" id="DeleteWaterMark" text="@Remove Watermark" qtspyName="deleteWaterMark" rbHotKey="R"/>
+			</KListCommand>
+			<KListCommand hotKey="x" aid="30163" barid="495" idMso="TextBoxDrawMenu" controlType="15" id="InsertTextboxInInsertMenu" name="Textbox" text="@Text Box" qtspyName="Textbox">
+				<command idQ="InsertTextboxHorizontal"/>
+				<command idQ="InsertTextboxVertical"/>
+			</KListCommand>
+			<command idQ="InsertFile"/>
+			<command idQ="InsertEnvelopes"/>
+			<command idQ="InsertFileObject"/>
+			<command idQ="InsertChart"/>
+			<KListCommand hotKey="A" aid="100055" filter="kstyle!=classic;feature_16777325!=0|category=personal;feature_16777325!=0" barid="44556" icon="GrabScreenMenu" id="InsertScreenGrabList" customTip="tip_ScreenGrab" text="@Screen Grab">
+				<command idQ="ScreenGrab"/>
+				<command idQ="ScreenGrabHide"/>
+			</KListCommand>
+			<command idQ="KingsoftEquationEditor"/>
+			<command idQ="InsertObject" filter="platform=win32"/>
+			<command idQ="InsertBookmark"/>
+			<command idQ="InsertHyperlink"/>
+		</subcommand>
+		<subcommand id="FormatMenu">
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="BorderShading"/>
+			<separator/>
+			<command idQ="Columns"/>
+			<command idQ="Tabs"/>
+			<command idQ="DropCap"/>
+			<command idQ="TextDirection"/>
+			<command idQ="ChangeCase"/>
+			<separator/>
+			<KListCommand groupindex="1" hotKey="l" aid="30463" id="AsianLayoutMemu" text="@Asian Layout">
+				<command idQ="PhoneticGuide"/>
+				<command idQ="EncloseCharacters"/>
+				<command idQ="CombineCharacters"/>
+				<command idQ="TwoLinesInOne"/>
+			</KListCommand>
+			<separator/>
+			<command idQ="NewBackGroundColor"/>
+			<command idQ="StyleFormat"/>
+			<command idQ="GenkoSetting" filter="lang=zh_CN,zh_TW"/>
+			<separator/>
+			<command idQ="FormatObject"/>
+			<separator/>
+			<KTableStyleCommand hotKey="A" aid="92102" icon="TaskPaneTableStyle" id="WpsTableStyle" dialogHint="1" rbHotkey="A" text="@Table Style"/>
+		</subcommand>
+		<subcommand id="ToolsMenu">
+			<command idQ="WordTools" filter="lang=zh_CN;category=personal,professional"/>
+			<command idQ="CheckSpelling"/>
+			<command idQ="SetSpellcheckLanguageCommand"/>
+			<command idQ="ChineseTranslation"/>
+			<command idQ="WordCount"/>
+			<command idQ="TrackChanges"/>
+			<command idQ="CompareDoc"/>
+			<command idQ="RestrictEditing"/>
+			<command idQ="MailMerge"/>
+			<command idQ="InsertEnvelopes"/>
+			<command idQ="OpenThesaurus"/>
+			<separator/>
+			<KxMacroListCommand hotKey="m" disableTrigger="true" ksoCmd="RunMacro" aid="30017" filter="platform=win32;support:VBASupport=true" id="MacroMenu" text="@Macros">
+				<command idQ="RunMacro"/>
+				<command idQ="RecordMacro"/>
+				<command idQ="Security"/>
+				<command idQ="VisualBasicEditor"/>
+			</KxMacroListCommand>
+			<command idQ="COMAddIns"/>
+			<command idQ="TemplateAddIns"/>
+			<command idQ="BackupManagement"/>
+			<command idQ="Options"/>
+			<separator/>
+			<command idQ="switchLangDlg"/>
+			<command idQ="switchFaceDlg" filter="oem_SwitchFace!=0"/>
+		</subcommand>
+		<subcommand id="TableMenu">
+			<command idQ="DrawTable"/>
+			<separator/>
+			<KListCommand hotKey="i" aid="30005" barid="43" icon="InsertTable" id="InsertCellsInTableMenu" name="Insert" text="@Insert" qtspyName="Insert">
+				<command idQ="InsertTable"/>
+				<command idQ="InsertColumnLeft"/>
+				<command idQ="InsertColumnRight"/>
+				<command idQ="InsertRowAbove"/>
+				<command idQ="InsertRowBelow"/>
+				<command idQ="InsertCells"/>
+			</KListCommand>
+			<KListCommand hotKey="d" aid="30445" id="DeleteInTableMenu" text="@Delete" qtspyName="Delete">
+				<command idQ="DeleteTable" aid="5858"/>
+				<command idQ="DeleteColumns"/>
+				<command idQ="DeleteRows"/>
+				<command idQ="DeleteCells"/>
+			</KListCommand>
+			<KListCommand hotKey="s" aid="30446" barid="1506" idMso="TableSelectMenu" icon="TableSelectMenu" controlType="15" name="Select" text="@Select" qtspyName="Select">
+				<command idQ="SelectTable"/>
+				<command idQ="SelectColumn"/>
+				<command idQ="SelectRow"/>
+				<command idQ="SelectCell"/>
+			</KListCommand>
+			<command idQ="TableSelection"/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCells"/>
+			<KListCommand hotKey="t" aid="80038" barid="44538" id="SplitTable" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<separator/>
+			<command idQ="FieldFormula"/>
+			<KListCommand hotKey="f" aid="92108" barid="44537" icon="RecentFastCalc" id="RecentFastCalc" text="@Fast Calculation">
+				<command idQ="FastCalcSum"/>
+				<command idQ="FastCalcAverage"/>
+				<command idQ="FastCalcMax"/>
+				<command idQ="FastCalcMin"/>
+			</KListCommand>
+			<separator/>
+			<KListCommand hotKey="A" aid="30460" barid="1042" id="AutoFitMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="AutoFitWindow"/>
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+			</KListCommand>
+			<command idQ="HeadRowsRepeat"/>
+			<command idQ="InsertMutidiagonalCell" filter="lang!=en_US"/>
+			<command idQ="ShowGridlines"/>
+			<separator/>
+			<KListCommand hotKey="v" aid="30447" id="ConvertInTableMenu" text="@Convert" qtspyName="Convert">
+				<command idQ="ConvertTexttoTable"/>
+				<command idQ="ConvertTabletoText"/>
+			</KListCommand>
+			<separator/>
+			<command idQ="TableProperties"/>
+		</subcommand>
+		<subcommand id="WindowMenu">
+			<command idQ="NewWindow"/>
+			<command idQ="CloseWindow"/>
+			<command idQ="CloseOtherWindows"/>
+			<separator/>
+			<KxHorzTileCommand hotKey="h" aid="82005" icon="HorizontalTile" id="HorizontalTile" text="@Horizontal"/>
+			<KxVertTileCommand hotKey="v" aid="80035" icon="VerticalTile" id="VerticalTile" text="@Vertical"/>
+			<KxCascadeCommand hotKey="a" aid="80036" icon="Cascade" id="Cascade" text="@Cascade"/>
+			<command idQ="Split Window"/>
+			<command idQ="CmpSideBySide"/>
+			<separator/>
+			<compose idQ="CurrentFileList"/>
+			<KxShowMoreWindowCommand hotKey="m" aid="830" id="ShowMoreWindows" dialogHint="1" text="@Show More Windows" qtspyName="ShowMoreWindows"/>
+		</subcommand>
+		<subcommand id="SecurityMenu">
+			<command idQ="CurUserPermission"/>
+			<command idQ="CheckUserPermission"/>
+			<command idQ="ApplyPermissions"/>
+			<separator/>
+			<command idQ="PermissionApply"/>
+			<command idQ="PermissionApprove"/>
+			<command idQ="ApplyPermissions"/>
+		</subcommand>
+		<subcommand id="HelpMenu">
+			<command idQ="About"/>
+		</subcommand>
+		<subcommand id="WorkspaceMenu">
+			<command idQ="KOSUserLoginCmd"/>
+			<KLoginMenuCommand hotKey="L" aid="92107" barid="44533" id="Menu_Cloud_login" customTip="@Sign in" text="@Sign in">
+				<KUserCenterCommand id="userCenterCmd"/>
+				<KxOpenPersonalCenterCommand icon="OS_ViewUserInfo" id="OpenPersonalCenterCmd" text="@Personal Center"/>
+				<command idQ="KOSLogoutCommand"/>
+				<command idQ="KOSRechargeCmd" filter="lang=zh_CN;category=personal"/>
+				<command idQ="KOSHireCmd" filter="lang=zh_CN;category=personal"/>
+			</KLoginMenuCommand>
+			<separator/>
+			<command idQ="KOSOpenCloudFileCmd" filter="support:CloudStorage=true"/>
+			<command idQ="KOSSaveToCloudCmd" filter="support:CloudStorage=true"/>
+			<command idQ="KOSCreateCloudLinkCmd" filter="support:CloudStorage=true"/>
+			<separator filter="support:CloudStorage=true"/>
+			<command idQ="AutoVersionCmd" filter="support:CloudAutoBackup=true"/>
+			<command idQ="StopAutoVersionCmd" filter="support:CloudAutoBackup=true"/>
+			<command idQ="MarkVersionCmd" filter="support:CloudAutoBackup=true"/>
+			<command idQ="ExplorVersionCmd" filter="support:CloudAutoBackup=true"/>
+			<command idQ="ExplorBackupDirCmd" filter="support:CloudAutoBackup=true"/>
+			<separator filter="support:CloudAutoBackup=true"/>
+			<separator/>
+			<command idQ="ExportWeiboImageCmd" filter="support:WeiboPlugin=true"/>
+			<command idQ="WpsWeiboLayoutCmd" filter="support:WeiboPlugin=true"/>
+			<command idQ="OpenWebWeiboCmd" filter="support:WeiboPlugin=true"/>
+			<command idQ="WeiboCmd" filter="support:WeiboPlugin=true"/>
+		</subcommand>
+		<subcommand id="Text">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="ExpandPasteText"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="InsertItemBefore"/>
+			<command idQ="InsertItemAfter"/>
+			<command idQ="DeleteItem"/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Hyperlink Context Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="SelectHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="CopyHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Comment">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="EditComment"/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Fields">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="UpdateField"/>
+			<command idQ="EditField"/>
+			<command idQ="ToggleFieldCodes"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+		</subcommand>
+		<subcommand id="Footnotes">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoFootnote"/>
+			<command idQ="ConvertToEndnote"/>
+			<command idQ="InsertFootnote"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Footnotes Hyperlink Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoFootnote"/>
+			<command idQ="ConvertToEndnote"/>
+			<command idQ="InsertFootnote"/>
+			<separator/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="SelectHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="CopyHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+		</subcommand>
+		<subcommand id="Footnotes Table Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoFootnote"/>
+			<command idQ="ConvertToEndnote"/>
+			<command idQ="InsertFootnote"/>
+			<separator/>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInFootnotesTableMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInFootnotesTableMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TableProperties"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+		</subcommand>
+		<subcommand id="Footnotes Field Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="UpdateField"/>
+			<command idQ="EditField"/>
+			<command idQ="ToggleFieldCodes"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoFootnote"/>
+			<command idQ="ConvertToEndnote"/>
+			<command idQ="InsertFootnote"/>
+		</subcommand>
+		<subcommand id="Endnotes">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoEndnote"/>
+			<command idQ="ConvertToFootnote"/>
+			<command idQ="InsertFootnote"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Endnotes Hyperlink Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoEndnote"/>
+			<command idQ="ConvertToFootnote"/>
+			<command idQ="InsertFootnote"/>
+			<separator/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="SelectHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="CopyHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+		</subcommand>
+		<subcommand id="Endnotes Table Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoEndnote"/>
+			<command idQ="ConvertToFootnote"/>
+			<command idQ="InsertFootnote"/>
+			<separator/>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInEndnotesTableMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInEndnotesTableMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TableProperties"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+		</subcommand>
+		<subcommand id="Endnotes Field Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="UpdateField"/>
+			<command idQ="EditField"/>
+			<command idQ="ToggleFieldCodes"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="GotoEndnote"/>
+			<command idQ="ConvertToFootnote"/>
+			<command idQ="InsertFootnote"/>
+		</subcommand>
+		<subcommand id="Comment Text Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Comment Hyperlink Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<separator/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="SelectHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="CopyHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+		</subcommand>
+		<subcommand id="Comment Table Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="InsertTable"/>
+			<command idQ="DeleteCellsInPopup"/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCells"/>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInCommentTableMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<command idQ="TableCellAlignment"/>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInCommentTableMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="TextDirection"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TableProperties"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+		</subcommand>
+		<subcommand id="Comment Field Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<separator/>
+			<command idQ="UpdateField"/>
+			<command idQ="EditField"/>
+			<command idQ="ToggleFieldCodes"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+		</subcommand>
+		<subcommand id="Frames">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+		</subcommand>
+		<subcommand id="Numbered Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="RestartNumbering"/>
+			<command idQ="ContinueNumbering"/>
+			<separator/>
+			<command idQ="DecreaseIndent"/>
+			<command idQ="IncreaseIndent"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+		</subcommand>
+		<subcommand id="Bulleted Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="DecreaseIndent"/>
+			<command idQ="IncreaseIndent"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+		</subcommand>
+		<subcommand id="Ruler Popup Menu">
+			<command idQ="LeftAlignTabs"/>
+			<command idQ="CenterAlignTabs"/>
+			<command idQ="RightAlignTabs"/>
+			<command idQ="DecimalAlignTabs"/>
+			<separator/>
+			<command idQ="FirstLineIndent"/>
+			<command idQ="HangingIndent"/>
+		</subcommand>
+		<subcommand id="Drag Popup Menu">
+			<command idQ="MoveHere"/>
+			<command idQ="CopyHere"/>
+			<separator/>
+			<command idQ="Cancel"/>
+		</subcommand>
+		<subcommand id="Track Changes">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="AcceptInsertPopupMenu"/>
+			<command idQ="RejectInsertPopupMenu"/>
+			<command idQ="AcceptDeletePopupMenu"/>
+			<command idQ="RejectDeletePopupMenu"/>
+			<command idQ="AcceptFormatPopupMenu"/>
+			<command idQ="RejectFormatPopupMenu"/>
+			<command idQ="AcceptNumberPopupMenu"/>
+			<command idQ="RejectNumberPopupMenu"/>
+			<command idQ="AcceptTablePopupMenu"/>
+			<command idQ="RejectTablePopupMenu"/>
+			<command idQ="AcceptParaPopupMenu"/>
+			<command idQ="RejectParaPopupMenu"/>
+			<command idQ="AcceptAllPopupMenu"/>
+			<command idQ="RejectAllPopupMenu"/>
+			<separator/>
+			<command idQ="TrackChanges"/>
+			<separator/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="SelectHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="CopyHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+		</subcommand>
+		<subcommand id="TabMenu Popup Menu">
+			<command idQ="TabMenuCloseWindow"/>
+			<separator/>
+			<command idQ="SaveFile"/>
+			<command idQ="SaveAllFiles"/>
+			<command idQ="SaveAs"/>
+			<command idQ="KOSSaveToCloudMenuCmd" filter="support:FileRoaming=true"/>
+			<separator/>
+			<command idQ="CloseOtherWindows"/>
+			<command idQ="CloseAllFiles"/>
+			<separator/>
+			<command idQ="OpenFileFolder"/>
+			<separator/>
+			<KxWpsWebPreviewCommand hotKey="g" filter="lang=zh_CN;category=personal" icon="H5Share" id="WebPreview" text="@Web Preview"/>
+			<separator/>
+			<command idQ="Properties"/>
+			<separator/>
+		</subcommand>
+		<subcommand id="TabBarMenu Popup Menu">
+			<command idQ="NewBlankFile"/>
+			<command idQ="SaveAllFiles"/>
+			<command idQ="CloseAllFiles"/>
+			<separator/>
+		</subcommand>
+		<subcommand id="Formfeilds Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="FormFieldOption"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+		</subcommand>
+		<subcommand id="Smart Paste Popup Menu">
+			<command idQ="ExpandPasteFormatTextOnSmartLabels"/>
+			<command idQ="ExpandPasteMatchingFormatOnSmartLabels"/>
+			<command idQ="ExpandPasteTextOnSmartLabels"/>
+			<separator/>
+			<command idQ="PasteSpecialOnSmartLabels"/>
+		</subcommand>
+		<subcommand id="Spelling Suggestions Popup Menu">
+			<compose idQ="SpellingSuggestions"/>
+			<separator/>
+			<command idQ="IgnoreIt"/>
+			<command idQ="AddtoDic"/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Spelling Popup Menu">
+			<command idQ="CheckSpellingAsYouType"/>
+			<command idQ="ShowSpellingIgnoredWords"/>
+			<command idQ="SpellingCheckOption"/>
+		</subcommand>
+		<subcommand id="Shapes">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<command idQ="ChangeAutoShape"/>
+			<separator/>
+			<command idQ="AddText"/>
+			<command idQ="EditText"/>
+			<separator/>
+			<command idQ="CreateTextBoxLink"/>
+			<command idQ="BreakForwardLink"/>
+			<command idQ="PreviousTextBox"/>
+			<command idQ="NextTextBox"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Dml Shapes">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="DeleteObject"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<command idQ="ChangeAutoShape"/>
+			<command idQ="EditPoints"/>
+			<separator/>
+			<command idQ="AddText"/>
+			<command idQ="EditText"/>
+			<separator/>
+			<command idQ="CreateTextBoxLink"/>
+			<command idQ="BreakForwardLink"/>
+			<command idQ="PreviousTextBox"/>
+			<command idQ="NextTextBox"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="InsertCaption"/>
+			<separator/>
+			<command idQ="WrapTextList"/>
+			<separato/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="LayoutObject"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Horizontal Line">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<command idQ="CreateTextBoxLink"/>
+			<command idQ="BreakForwardLink"/>
+			<command idQ="PreviousTextBox"/>
+			<command idQ="NextTextBox"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Table Text">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<command idQ="PasteTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<command idQ="InsertItemBefore"/>
+			<command idQ="InsertItemAfter"/>
+			<command idQ="DeleteItem"/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<KListCommand hotKey="i" aid="3392" barid="43" icon="InsertTable" id="InsertCellsInTableTextMenu" name="Insert" text="@Insert" qtspyName="Insert">
+				<command idQ="InsertColumnLeft"/>
+				<command idQ="InsertColumnRight"/>
+				<command idQ="InsertRowAbove"/>
+				<command idQ="InsertRowBelow"/>
+				<command idQ="InsertCells"/>
+			</KListCommand>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInTableTextMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInTableTextMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="SplitCells"/>
+			<command idQ="DeleteCellsInPopup"/>
+			<separator/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TextDirection"/>
+			<command idQ="TableProperties"/>
+			<separator/>
+			<command idQ="BulletsNumber"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<separator/>
+			<command idQ="SynonymsSuggestions"/>
+			<command idQ="OpenThesaurus"/>
+		</subcommand>
+		<subcommand id="Table Cells">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<command idQ="PasteTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<KListCommand hotKey="i" aid="3392" barid="43" icon="InsertTable" id="InsertCellsInTableCellMenu" name="Insert" text="@Insert" qtspyName="Insert">
+				<command idQ="InsertColumnLeft"/>
+				<command idQ="InsertColumnRight"/>
+				<command idQ="InsertRowAbove"/>
+				<command idQ="InsertRowBelow"/>
+				<command idQ="InsertCells"/>
+			</KListCommand>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInTableCellMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInTableCellMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCells"/>
+			<command idQ="DeleteCellsInPopup"/>
+			<separator/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TextDirection"/>
+			<command idQ="TableProperties"/>
+		</subcommand>
+		<subcommand id="Whole Table">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<command idQ="PasteTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<KListCommand hotKey="i" aid="3392" barid="43" icon="InsertTable" id="InsertCellsInWholeTableMenu" name="Insert" text="@Insert" qtspyName="Insert">
+				<command idQ="InsertColumnLeft"/>
+				<command idQ="InsertColumnRight"/>
+				<command idQ="InsertRowAbove"/>
+				<command idQ="InsertRowBelow"/>
+				<command idQ="InsertCells"/>
+			</KListCommand>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInWholeTableMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInWholeTableMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="DeleteTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCells"/>
+			<separator/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TextDirection"/>
+			<command idQ="InsertCaption"/>
+			<command idQ="TableProperties"/>
+		</subcommand>
+		<subcommand id="Table Row Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<command idQ="PasteTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<KListCommand hotKey="i" aid="3392" barid="43" icon="InsertTable" id="InsertCellsInTableRowMenu" name="Insert" text="@Insert" qtspyName="Insert">
+				<command idQ="InsertColumnLeft"/>
+				<command idQ="InsertColumnRight"/>
+				<command idQ="InsertRowAbove"/>
+				<command idQ="InsertRowBelow"/>
+				<command idQ="InsertMultipleRows"/>
+				<command idQ="InsertCells"/>
+			</KListCommand>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInTableRowMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInTableRowMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCells"/>
+			<command idQ="DeleteRowsInPopup"/>
+			<separator/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TextDirection"/>
+			<command idQ="TableProperties"/>
+		</subcommand>
+		<subcommand id="Table Column Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="PasteSpecial"/>
+			<command idQ="PasteColumnOnPopupMenu"/>
+			<separator/>
+			<command idQ="ProxyTranslationPopup"/>
+			<separator/>
+			<KListCommand hotKey="i" aid="3392" barid="44539" icon="InsertTable" id="InsertCellsInTableColumnMenu" name="Insert" text="@Insert" qtspyName="Insert">
+				<command idQ="InsertColumnLeft"/>
+				<command idQ="InsertColumnRight"/>
+				<command idQ="InsertRowAbove"/>
+				<command idQ="InsertRowBelow"/>
+				<command idQ="InsertCells"/>
+			</KListCommand>
+			<KListCommand hotKey="a" aid="80038" barid="44538" id="SplitTableInTableColumnMenu" text="@Split Table" qtspyName="SplitTable">
+				<command idQ="SplitTableByRow"/>
+				<command idQ="SplitTableByColumn"/>
+			</KListCommand>
+			<KListCommand hotKey="A" aid="30459" barid="1042" id="AutoFitMenuInTableColumnMenu" name="AutoFit" text="@AutoFit" qtspyName="AutoFit">
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+				<command idQ="AutoFitWindow"/>
+			</KListCommand>
+			<command idQ="SelectTableOnPopupMenu"/>
+			<separator/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCells"/>
+			<command idQ="DeleteColumnsInPopup"/>
+			<separator/>
+			<command idQ="TableCellAlignment"/>
+			<command idQ="BorderShading"/>
+			<command idQ="TextDirection"/>
+			<command idQ="TableProperties"/>
+		</subcommand>
+		<subcommand id="Curve">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="DeleteObject"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="ChangePicture"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<separator/>
+			<command idQ="EditPoints"/>
+			<command idQ="OpenPath"/>
+			<command idQ="ClosePath"/>
+			<separator/>
+			<command idQ="CreateTextBoxLink"/>
+			<command idQ="BreakForwardLink"/>
+			<command idQ="PreviousTextBox"/>
+			<command idQ="NextTextBox"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="LayoutObject"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Curve Point">
+			<command idQ="AddPoint"/>
+			<command idQ="DeletePoint"/>
+			<command idQ="OpenPath"/>
+			<command idQ="ClosePath"/>
+			<separator/>
+			<command idQ="SmoothPoint"/>
+			<command idQ="StraightPoint"/>
+			<command idQ="CornerPoint"/>
+			<separator/>
+			<command idQ="ExitEditPoints"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Curve Point For VML">
+			<command idQ="AddPoint"/>
+			<command idQ="DeletePoint"/>
+			<command idQ="OpenPath"/>
+			<command idQ="ClosePath"/>
+			<separator/>
+			<command idQ="AutoPoint"/>
+			<command idQ="SmoothPoint"/>
+			<command idQ="StraightPoint"/>
+			<command idQ="CornerPoint"/>
+			<separator/>
+			<command idQ="ExitEditPoints"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Curve Segment">
+			<command idQ="AddPoint"/>
+			<command idQ="DeleteSegment"/>
+			<command idQ="OpenPath"/>
+			<command idQ="ClosePath"/>
+			<separator/>
+			<command idQ="StraightSegment"/>
+			<command idQ="CurvedSegment"/>
+			<separator/>
+			<command idQ="ExitEditPoints"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Floating Picture">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="ChangePicture"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="LayoutObject"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Picture Context Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="DeleteObject"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="DeleteContentControl"/>
+			<separator/>
+			<command idQ="ChangePicture"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="InsertCaption"/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="LayoutObject"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="OLE Object">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="DeleteObject"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="UpdateLink"/>
+			<command idQ="EditObject"/>
+			<command idQ="PDF2WordPopup"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<command idQ="OleObjectSaveToFile"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Linked Text">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<command idQ="ExpandPasteText"/>
+			<command idQ="PasteSpecial"/>
+			<seperator/>
+			<command idQ="UpdateLink"/>
+			<command idQ="EditObject"/>
+			<separator/>
+			<command idQ="Reconvert"/>
+			<separator/>
+			<command idQ="Font"/>
+			<command idQ="Paragraph"/>
+			<command idQ="BulletsNumber"/>
+		</subcommand>
+		<subcommand id="Word Art Context Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<separator/>
+			<command idQ="EditWordArtText"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Rotate Mode">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Connector">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="DeleteObject"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="SaveasPicture"/>
+			<separator/>
+			<command idQ="StraightConnector"/>
+			<command idQ="ElbowConnector"/>
+			<command idQ="CurvedConnector"/>
+			<separator/>
+			<command idQ="ConnectorGroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="LayoutObject"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Inline Picture">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="DeleteCommentPopupMenu"/>
+			<command idQ="BorderShading"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="ActiveX Control">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="CTB_Property"/>
+			<command idQ="CTB_ViewCode"/>
+			<separator/>
+			<command idQ="CTB_ViewControlMenu"/>
+			<separator/>
+			<command idQ="GroupingMenu"/>
+			<command idQ="OrderUpMenu"/>
+			<command idQ="OrderDownMenu"/>
+			<separator/>
+			<command idQ="InsertHyperlinkInPopup"/>
+			<command idQ="EditHyperlink"/>
+			<command idQ="OpenHyperlink"/>
+			<command idQ="RemoveHyperlink"/>
+			<separator/>
+			<command idQ="AutoShapeDefaults"/>
+			<command idQ="FormatObject"/>
+		</subcommand>
+		<subcommand id="Toolbar List">
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Standard" aid="761" qtspyName="Standard"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Formatting" aid="761" qtspyName="Formatting"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Tables and Borders" aid="761" qtspyName="Tables and Borders"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Align" aid="761" qtspyName="Align"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Reviewing" aid="761" qtspyName="Reviewing"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Extended Formatting" aid="761" qtspyName="Extended Formatting"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Drawing" aid="761" qtspyName="Drawing"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Symbol" aid="761" qtspyName="Symbol"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="3DSettings" aid="761" qtspyName="3DSettings"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Shadow Settings" aid="761" qtspyName="Shadow Settings"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="ClassicalTaskpane" aid="761" qtspyName="ClassicalTaskpane"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Mail Merge" aid="761" filter="platform=win32" qtspyName="Mail Merge"/>
+			<KxControlToolboxToolBarViewCommand groups="0" toolbarName="Control Tool Box" aid="761" filter="platform=win32" qtspyName="Control Tool Box"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Outlining" aid="761" qtspyName="Outlining"/>
+			<KxToolBarToggleViewCommand groups="0" toolbarName="Forms" aid="761" qtspyName="Forms"/>
+			<KxToolBarToggleViewCommand groups="2" toolbarName="Full Screen" aid="178" qtspyName="Full Screen"/>
+		</subcommand>
+		<subcommand id="Text Octopus Menu">
+			<KxWpsResetParaFormatCommand text="@Reset Paragraph Format"/>
+			<KxWpsTextOctopusCommand text="@Hide Paragraph Layout"/>
+		</subcommand>
+		<subcommand id="Auto Backup Popup Menu">
+			<command idQ="BrowseBackupDir"/>
+		</subcommand>
+		<subcommand id="Status bar Popup Menu">
+			<command idQ="PageNumberStatusBar"/>
+			<command idQ="PageAreaStatusBar"/>
+			<command idQ="PageSectionStatusBar"/>
+			<separator/>
+			<command idQ="RowStatusBar"/>
+			<command idQ="ColumnStatusBar"/>
+			<separator/>
+			<command idQ="WordCountStatusBar"/>
+			<separator/>
+			<command idQ="OverTypeStatusBar"/>
+			<command idQ="TrackStatusBar"/>
+			<command idQ="SpellCheckStatusBar"/>
+			<separator/>
+			<command idQ="UnitStatusBar"/>
+			<separator/>
+			<command idQ="ViewStatusBar"/>
+			<command idQ="ZoomTextStatusBar"/>
+			<command idQ="ZoomSliderStatusBar"/>
+		</subcommand>
+		<subcommand id="Font Floatbar">
+			<command idQ="Float_FontPopup_2013"/>
+		</subcommand>
+		<subcommand id="FontSel Floatbar">
+			<command idQ="Float_FontSelPopup_2013"/>
+		</subcommand>
+		<subcommand id="TextEdit Floatbar">
+			<command idQ="Float_FontPopup_2013"/>
+		</subcommand>
+		<subcommand id="TextEditSel Floatbar">
+			<command idQ="Float_FontSelPopup_2013"/>
+		</subcommand>
+		<subcommand id="Table Floatbar">
+			<command idQ="Float_TableTextPopup_2013"/>
+			<separator/>
+			<command idQ="InsertTablePopup"/>
+			<command idQ="DelTablePopup"/>
+		</subcommand>
+		<subcommand id="TableSel Floatbar">
+			<command idQ="Float_TableTextSelPopup_2013"/>
+			<separator/>
+			<command idQ="InsertTablePopup"/>
+			<command idQ="DelTablePopup"/>
+		</subcommand>
+		<subcommand id="Picture Floatbar">
+			<command idQ="PictureCropPopup"/>
+			<command idQ="m_RotatePopup"/>
+		</subcommand>
+		<subcommand id="Shapes Floatbar">
+			<command idQ="ShapeFormatStyleWarpPopup"/>
+			<command idQ="FillColorWarpPopup"/>
+			<command idQ="LineColorWarpPopup"/>
+			<command idQ="ShapeFormatPainterWarpPopup"/>
+			<command idQ="m_AlignWarpPopup"/>
+		</subcommand>
+		<subcommand id="Shapes Floatbar Dml">
+			<command idQ="ShapeFormatStyleWarpPopup"/>
+			<command idQ="FillColorWarpPopup"/>
+			<command idQ="LineColorWarpPopupDml"/>
+			<command idQ="ShapeFormatPainterWarpPopup"/>
+			<command idQ="m_AlignWarpPopup"/>
+		</subcommand>
+		<subcommand id="Chart Floatbar">
+			<command idQ="ShapeFormatStyleWarpPopup"/>
+			<command idQ="FillColorWarpPopup"/>
+			<command idQ="LineColorWarpPopupDml"/>
+			<command idQ="ChartObjectsInPopupMenu"/>
+		</subcommand>
+		<subcommand id="ActiveX Control Floatbar">
+			<command idQ="FillColorWarpPopup"/>
+		</subcommand>
+		<subcommand id="Shapes QuickBar">
+			<command idQ="UnGroup"/>
+			<command idQ="WrapText"/>
+			<KGalleryShapeStyleDmlOnlyCommand isCompletedHide="true" hotKey="f" icon="StyleShapeTool" customTip="ShapeFormatStyle" styleType="1" text="@Shape Style" qtspyName="StyleShapeTool">
+				<command idQ="MoreEffects"/>
+			</KGalleryShapeStyleDmlOnlyCommand>
+			<command idQ="ShapeFillColorReselect"/>
+			<command idQ="ShapeLineColorReselect"/>
+		</subcommand>
+		<subcommand id="Picture QuickBar">
+			<command idQ="WrapText"/>
+			<command idQ="ImagePreview"/>
+			<command idQ="PictureCropPopup"/>
+			<command idQ="AddPicFrame"/>
+			<command idQ="WpsXieDePictureStyle"/>
+		</subcommand>
+		<subcommand id="PictureCrop QuickBar">
+			<command idQ="PictureCrop_OnQuickBar"/>
+		</subcommand>
+		<subcommand id="MultipleShapes QuickBar">
+			<command idQ="DrawAlignLeftPopup"/>
+			<command idQ="DrawAlignCenterPopup"/>
+			<command idQ="DrawAlignRightPopup"/>
+			<command idQ="DrawAlignTopPopup"/>
+			<command idQ="DrawAlignMiddlePopup"/>
+			<command idQ="DrawAlignBottomPopup"/>
+			<command idQ="DrawAlignMiddleCenterPopup"/>
+			<command idQ="AlignDistributeHoriPopup"/>
+			<command idQ="AlignDistributeVertPopup"/>
+			<separator/>
+			<command idQ="Group"/>
+		</subcommand>
+		<subcommand id="Chart QuickBar">
+			<command idQ="WrapText"/>
+			<command idQ="AddChartElementQuickBar"/>
+			<command idQ="ChartStyleQuickBar"/>
+			<command idQ="ChartFiltersQuickBar"/>
+			<command idQ="Format_ChartArea_QuickBar"/>
+		</subcommand>
+		<subcommand id="WordArt QuickBar">
+			<KxWordArtQuickBarCommand icon="CollapseWordArtBar;CollapseWordArtBarHover;CollapseWordArtBarClick;CollapseWordArtBar" id="Expand_WordArtQuickBar" customTip="WordArtQuickBarCollapse"/>
+			<KxWordArtQuickBarCommand icon="ExpandWordArtBar;ExpandWordArtBarHover;ExpandWordArtBarClick;ExpandWordArtBar" id="Collapse_WordArtQuickBar" customTip="WordArtQuickBarExpand"/>
+			<KxWpsWordArtQuickBarWrapTextWidgetCommand listWrapCmd="Wrapping_Quick" wrapMoreDmlCmd="LayoutObject_Wrap" icon="WrapText" followTextInfoCmd="FollowText" id="WrapText_WordArtQuickBar" fixedTextInfoCmd="FixedText" customTip="WrapText" wrapMoreCmd="FormatObject_Wrap"/>
+			<KxWpsQuickBarWordArtStylesCommand isCompletedHide="true" ksoCmd="FontStyles" galleryWidth="328" triggerAble="1" icon="WordArtStyle" embedHint="1" id="WordArtStyle_WordArtQuickBar" customTip="WordArtGalleryQuickBar" qtspyName="FontStyles">
+				<command idQ="MoreFontEffects"/>
+			</KxWpsQuickBarWordArtStylesCommand>
+			<KWpsWordArtQuickBarFontTransformCommand isCompletedHide="true" hotKey="t" icon="WordArtTransform" id="FontTransform_WordArtQuickBar" customTip="TransformQuickBar" columnNumber="4" qtspyName="font_transform_ongmani" rbHotKey="T"/>
+		</subcommand>
+		<subcommand id="WordArt Font QuickBar">
+			<KxLegacyTriggerCommand hotKey="FG" ksoCmd="GrowFont" idMso="FontSizeIncreaseWord" icon="IncreaseWordArtFontSize" controlType="0" shortcutHint="Ctrl+]" id="GrowFontRainbow" customTip="GrowFont" text="@Grow Font" rbHotKey="FG"/>
+			<KxLegacyTriggerCommand hotKey="FK" ksoCmd="ShrinkFont" idMso="FontSizeDecreaseWord" icon="DecreaseWordArtFontSize" controlType="0" shortcutHint="Ctrl+[" id="ShrinkFontRainbow" customTip="ShrinkFont" text="@Shrink Font" rbHotKey="FK"/>
+		</subcommand>
+		<subcommand id="Chart Area Popup Menu">
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="DeleteObject"/>
+			<command idQ="Paste"/>
+			<separator/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Save_As_Mould"/>
+			<command idQ="SaveasPicture"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Move_Chart"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Grouping"/>
+			<command idQ="Place_In_Top"/>
+			<command idQ="Place_In_Bottom"/>
+			<separator/>
+			<command idQ="Appoint_Macro"/>
+			<separator/>
+			<command idQ="InsertCaption"/>
+			<separator/>
+			<command idQ="WrapTextList"/>
+			<separator/>
+			<command idQ="Format_ChartArea"/>
+			<separator/>
+			<command idQ="Pivot_Table"/>
+		</subcommand>
+		<subcommand id="Plot Area">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_PlotArea"/>
+		</subcommand>
+		<subcommand id="Format Data Series">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Series_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Add_DataLabel"/>
+			<command idQ="Set_DataLabel_Format"/>
+			<command idQ="Add_Trendline"/>
+			<command idQ="Format_Series"/>
+		</subcommand>
+		<subcommand id="Data Point Popup Menu">
+			<command idQ="Delete_Series"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Add_DataLabel"/>
+			<command idQ="Add_Trendline"/>
+			<command idQ="Set_DataLabel_Format"/>
+			<command idQ="Format_Datapoint"/>
+		</subcommand>
+		<subcommand id="Title Bar (Charting)">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Edit_Text"/>
+			<command idQ="Exit_Edit"/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_ChartTitle"/>
+		</subcommand>
+		<subcommand id="Axis Title Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Edit_Text"/>
+			<command idQ="Exit_Edit"/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_AxisTitle"/>
+		</subcommand>
+		<subcommand id="Data Table Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_DataTable"/>
+			<command idQ="Set_Axis_Format"/>
+		</subcommand>
+		<subcommand id="Format Axis">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Add_Major_GridLine"/>
+			<command idQ="Add_Minor_GridLine"/>
+			<command idQ="Format_Major_GridLine"/>
+			<command idQ="Format_Minor_GridLine"/>
+			<command idQ="Format_Axis"/>
+		</subcommand>
+		<subcommand id="Legend Key Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_Legend"/>
+		</subcommand>
+		<subcommand id="Format Legend Entry">
+			<command idQ="Move"/>
+			<separator/>
+			<command idQ="ChartDelete"/>
+			<command idQ="Delete_Series"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Series_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Set_Series_Format"/>
+			<command idQ="Format_LegendEntry"/>
+		</subcommand>
+		<subcommand id="Data Label Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Edit_Text"/>
+			<command idQ="Exit_Edit"/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Set_Series_Format"/>
+			<command idQ="Set_DataLabelGeometry2D"/>
+			<command idQ="Format_DataLabel"/>
+		</subcommand>
+		<subcommand id="Trendline">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_Trendline"/>
+		</subcommand>
+		<subcommand id="NewChart TrendLineLabel Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Edit_Text"/>
+			<command idQ="Exit_Edit"/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_TrendLineLabel"/>
+			<command idQ="Set_TrendLine_Format"/>
+			<command idQ="Set_Series_Format"/>
+		</subcommand>
+		<subcommand id="Up Bars Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_UpBar"/>
+		</subcommand>
+		<subcommand id="Down Bars Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_DownBar"/>
+		</subcommand>
+		<subcommand id="Error Bars Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_ErrorBar"/>
+		</subcommand>
+		<subcommand id="Hi Lo Line Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_HighLowLine"/>
+		</subcommand>
+		<subcommand id="Drop Line Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_DropLine"/>
+		</subcommand>
+		<subcommand id="Series Line Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_SeriesLine"/>
+		</subcommand>
+		<subcommand id="Gridlines Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_Gridline"/>
+			<command idQ="Set_Axis_Format"/>
+			<command idQ="Add_Axis"/>
+		</subcommand>
+		<subcommand id="Display Unit Label Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Edit_Text"/>
+			<command idQ="Exit_Edit"/>
+			<command idQ="ChartFont"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_UnitLabel"/>
+			<command idQ="Set_Axis_Format"/>
+		</subcommand>
+		<subcommand id="Lead Line Popup Menu">
+			<command idQ="ChartDelete"/>
+			<command idQ="Reset_To_Fit_Style"/>
+			<separator/>
+			<command idQ="Change_Chart_Type"/>
+			<command idQ="Edit_Data"/>
+			<command idQ="Select_Data"/>
+			<command idQ="Three_Dimensional_Rotation"/>
+			<separator/>
+			<command idQ="Format_LeadLine"/>
+		</subcommand>
+	</subcommands>
+</shell>

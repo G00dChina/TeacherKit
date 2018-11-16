@@ -1,0 +1,175 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; Advanced Topics &gt; Sketchpad's Internal Mathematics</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Advanced Topics,Advanced Topics Sketchpad’s Internal Mathematics,Sketchpad’s Internal Mathematics">
+   <meta name="description" content="Sketchpad’s Internal Mathematics">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "adv_sketchpadsmath.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Sketchpad’s Internal Mathematics</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="adv.htm">Advanced Topics</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Sketchpad’s Internal Mathematics</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="adv_menustructure.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="adv.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="adv_commandlineflags.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Sketchpad’s internal mathematics determine how the program computes and represents numbers, geometric figures, functions, and other mathematical quantities. This in turn determines how these objects appear graphically, numerically, or symbolically.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">At the numeric level, Sketchpad represents point coordinates and other quantities using 64-bit floating-point arithmetic. This standard representation for scientific computation allows your computer to represent a value with 14 to 16 significant digits of decimal precision over a wide range of magnitudes (roughly, as large as ±10</span><span class="f_BodyText" style="font-size: 9px; vertical-align: super;">300</span><span class="f_BodyText"> and as small as ±10</span><span class="f_BodyText" style="font-size: 9px; vertical-align: super;">–300</span><span class="f_BodyText">). While this is very precise, it is not exact in a mathematical sense. (For example, </span><span class="f_BodyText" style="font-style: italic;">π</span><span class="f_BodyText"> cannot be represented exactly with only 15 significant digits.) Sketchpad uses tuned algorithms to attempt to represent numbers as close to their exact value as possible, and to minimize the inevitable error introduced by calculating with only a finite number of significant digits. Nonetheless, you may witness numerical error effects in the least significant digits of numbers in sketches involving a lot of internal calculation. Regrettably, no computer or computer program can represent every number exactly: there are an infinite number of numbers, of course, and — at least today! — computers have only a finite amount of memory. Thus, while Sketchpad’s numeric calculations are generally reliable and can serve as the basis of a convincing argument or conjecture, a Sketchpad result should never be mistaken for constituting a mathematical proof.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Don’t confuse the displayed precision of a value with its internal <a href="windows_prefs_precision.htm" class="topiclink">precision or accuracy</a>. When you display a value (such as a measurement), it appears only to the number of decimal places you choose in the <a href="menus_edit_preferences.htm" class="topiclink">Preferences</a> or <a href="menus_edit_properties.htm" class="topiclink">Properties</a> dialog box. Internally, that number is represented to much greater precision, as described here.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">At the graphical level, Sketchpad transforms its internal numeric representations into the shapes and positions that appear in your sketch window. For objects such as circles, points, and segments, the resulting images are as accurate as can be displayed on your computer screen. (When you print to a printer with higher resolution than your screen, you’ll see the images are even more accurate than their on-screen representations.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">However, for plotted functions and loci, Sketchpad displays only a visual approximation of the curve’s ideal mathematical shape. Primarily to maintain responsiveness when you’re dragging objects, Sketchpad employs the same technique to plot these objects as a person might use if plotting them by hand: it evaluates the ideal curve at a number of different positions (called samples), then plots the curve by interpolating between these known samples. The samples themselves are very accurate, but the interpolations may or may not be, depending on the ideal shape of the mathematical object. In the <a href="windows_properties.htm" class="topiclink">Properties dialog box</a> for <a href="objects_cats_plot_locprops.htm" class="topiclink">loci</a> and <a href="objects_cats_plot_fnprops.htm" class="topiclink">functions</a>, the <a href="objects_cats_plots.htm" class="topiclink">Plot panel</a> gives you control over how many samples Sketchpad uses to plot a function or a locus, as well as whether it displays that plot only as the (discrete) collection of accurate samples or by including the (continuous) interpolations between samples. If you consistently prefer a higher number of samples than Sketchpad uses by default, you can increase the default on the <a href="windows_advprefs_sampling.htm" class="topiclink">Sampling Preferences</a> panel. Also, while Sketchpad uses approximate interpolations for display purposes, it never relies on them for mathematical purposes. Thus, if you construct a point on a function plot or on a locus (or use the Calculator to evaluate a function at given values), that point’s coordinates (or function’s values) are always based on the exact curve or function and not on its visual approximation.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Finally, at the symbolic level, Sketchpad performs simple computer algebra to differentiate functions when you use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_derivative.htm" class="topiclink">Number | Define Derivative Function</a></span><span class="f_BodyText"> command. While these computed derivatives are generally reliable for graphing and evaluation purposes, they may not be exact. In particular, when differentiating intricate functions, Sketchpad may fail to simplify the result fully, introducing point discontinuities in the derivative; and Sketchpad does not compute domain restrictions on the derivative function. Use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_derivative.htm" class="topiclink">Define Derivative Function</a></span><span class="f_BodyText"> to compute the slope of a function at an arbitrary point for graphing purposes or for mathematical constructions, but be sure to verify the result before using it as the basis of a mathematical proof.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

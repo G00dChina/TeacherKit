@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.7.0_75
+Built-By: so
+Created-By: Apache Maven 3.3.3
+Archiver-Version: Plexus Archiver
+
+Name: lgpl-3.0.html
+SHA-256-Digest: dYUm/iHWE+ZStb/+EOpGWMFIlMALwJ+b2CWxhDaM6jE=
+
+Name: license.html
+SHA-256-Digest: Ur+Ip2ZohqZP7Zyl79KJJ23M4uR4qjztqJgSOy692e8=
+
+Name: feature.xml
+SHA-256-Digest: S1YifrF30Jsj7XChyFXna6FPVr+CqKnYR6M3H6j1BUo=
+
+Name: epl-v10.html
+SHA-256-Digest: EJuGHRk+KUXMTCrwM6GIRBli/DTJgwCc4tqYG9LOPdM=
+

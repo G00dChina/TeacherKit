@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <!-- saved from url=(0025)http://www.techsmith.com/ -->
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      $VideoMetaData
+      <title>$HTMLTitle</title>   
+      $EmbedPlayerJSInclude
+      $RealEmbedJSInclude
+      $CamJSInclude
+      $SCORMIncludeJS             
+   </head>
+
+   <body $OnLoadParams >
+      <table border="0" cellpadding="0" style="text-align:$Align$#;margin:auto" width="$VideoWidth" align="$Alignment">
+        <tr> 
+          <td >
+             <div id="media">
+                <div id="cs_noJSorReal">
+                   <p>The Camtasia Studio video content presented here requires JavaScript to be enabled and the  latest version of the Real Player. If you are using a browser with JavaScript disabled please enable it now. Otherwise, please update your version of the free Real Player by <a href="http://www.real.com/player">downloading here</a>. </p>
+                </div>
+             </div>
+             <div id="player"> </div>
+             <script type="text/javascript">
+                if ( isRealInstalled() )
+                {
+                   $RealMediaPlayer
+                   $RealMediaController
+                }
+             </script>
+          </td>
+        </tr> 
+      </table>
+   </body>
+</html>

@@ -1,0 +1,239 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Display Menu &gt; Point Style</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Display Menu,Display Menu Point Style,Point Style Command">
+   <meta name="description" content="Point Style">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_display_pointstyle.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Point Style</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_display.htm">Display Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Point Style</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_display.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_display.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_display_linestyle.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Selection prerequisite:</span><span class="f_BodyText" style="font-style: italic;"> One or more objects, at least one of which must be a <a href="objects_points.htm" class="topiclink">point</a>, an <a href="objects_iter.htm" class="topiclink">iterated image</a> of a point, an <a href="objects_markers.htm" class="topiclink">angle marker</a>, a dotted grid, or a discrete <a href="objects_functionplots.htm" class="topiclink">function plot</a> or <a href="objects_loci.htm" class="topiclink">point locus</a></span></p>
+<p class="p_BodyText"><span class="f_BodyText">This <a href="menus_display.htm" class="topiclink">Display</a> menu command sets the point style of each selected object.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:164px; padding:0px;"><p style="margin: 3px 0px 0px 0px;"><img src="menu_display_pointstyle.png" width="137" height="97" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:98px; padding:0px;"><p style="margin: 3px 0px 0px 0px;"><img src="point_style_examples.png" width="82" height="123" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">When all selected objects share a common point style, a checkmark appears in the submenu next to that style.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you change the selected object’s point style, Sketchpad remembers your chosen style for future similar objects in the current sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To change an object’s point style without changing the setting for future objects, hold down the Shift key while choosing the command. (You can also uncheck </span><span class="f_BodyText" style="font-weight: bold;">Update automatically when restyling existing objects</span><span class="f_BodyText"> in <a href="windows_prefs_text.htm" class="topiclink">Text Preferences</a> to preserve the default point style.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The Point Style setting has special results for <a href="objects_markers.htm" class="topiclink">angle markers</a>, for dotted grids, and for discrete <a href="objects_loci.htm" class="topiclink">loci</a> and <a href="objects_functionplots.htm" class="topiclink">function plots</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Point Style</span></p>
+</td>
+<td style="vertical-align:top; width:180px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><span class="f_BodyText">Appearance of Discrete Loci and Function Plots</span></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><span class="f_BodyText">Appearance of Angle Markers</span></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><span class="f_BodyText">Appearance of Dotted Grid</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Dot</span></p>
+</td>
+<td style="vertical-align:top; width:180px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_loc1.png" width="100" height="71" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_angmk1.png" width="79" height="50" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="disp_dot_grid1.png" width="79" height="81" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Small</span></p>
+</td>
+<td style="vertical-align:top; width:180px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_loc2.png" width="100" height="71" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_angmk2.png" width="79" height="50" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="disp_dot_grid2.png" width="79" height="81" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Medium</span></p>
+</td>
+<td style="vertical-align:top; width:180px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_loc3.png" width="100" height="71" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_angmk3.png" width="79" height="50" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="disp_dot_grid3.png" width="79" height="81" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p>Thick</p>
+</td>
+<td style="vertical-align:top; width:180px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_loc4.png" width="100" height="71" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><img src="disp_pt_style_angmk4.png" width="79" height="50" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:99px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="disp_dot_grid4.png" width="79" height="81" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_attrib_display.htm" class="topiclink">Object Display Attributes</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_file" component="wps">
+	<commands>
+		<KxRbFileMenuPopupPaneCommand title="@New Document" hotKey="n" ksoCmd="NewBlankFile" infoId="0" icon="NewFile" id="RbFileMenuNewFileMenu" text="@New">
+			<KxFileMenuLegacyTriggerCommand hotKey="n" ksoCmd="NewBlankFile" aid="18" infoId="b" idMso="FileNew" icon="NewFile" controlType="0" text="@New Blank Document" qtspyName="NewBlankFile"/>
+			<command idQ="WpsXieDeFileMenu"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="m" ksoCmd="NewFileFromTemplates" aid="80141" infoId="c" icon="WpsNewFileFromTemplates" id="RbFileMenuNewFileFromTemplates" dialogHint="1" text="@New from Other Templates" qtspyName="NewFileFromTemplates"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="t" ksoCmd="NewFileFromDefaultTemplate" infoId="d" filter="support:NewFromDefaultTemplate=true" icon="WpsNewFileFromDefaultTemplate" id="RbFileMenuNewFileFromDefaultTemplate" text="@New from Default Template" qtspyName="NewFileFromDefaultTemplate"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@Print" hotKey="p" ksoCmd="Print" infoId="5" idMso="FilePrintMenu" icon="Print" controlType="5" id="RbFileMenuPrintMenu" text="@Print">
+			<KxFileMenuLegacyTriggerCommand hotKey="p" ksoCmd="Print" infoId="5" idMso="FilePrint" icon="Print" controlType="0" id="CTF_Print" dialogHint="1" text="@Print" qtspyName="Print"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="v" ksoCmd="PrintPreview" infoId="6" idMso="FilePrintPreview" icon="PrintPreview" controlType="0" id="CTF_PrintPreview" text="@Print Preview"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@Document Protection and Properties" hotKey="F" disableTrigger="true" ksoCmd="Properties" infoId="8" icon="RbFileMenuDocInfoMenu" id="RbFileMenuDocInfoMenu" text="@File Information">
+			<KxFileMenuLegacyTriggerCommand hotKey="y" ksoCmd="Encrypt" infoId="g" icon="Encrypt" id="RbFileMenuEncrypt" dialogHint="1" text="@Encryption" qtspyName="Encrypt"/>
+			<KxFileMenuDocPermissionCommand hotKey="p" filter="support:DocPermission=true" icon="DocumentsPremissions" id="DocumentPermission" text="@Document Permissions"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="g" ksoCmd="ViewPermission" filter="support:RightsManagementServices=true" icon="ViewPermission" text="@View Permissions"/>
+			<KxFileMenuPermissionCommand menuHotKey="B" triggerText="@View Permissions" menuIcon="RestrictPermission" menuText="@Restrict Permission by People" triggerHotKey="B" triggerIcon="ViewPermission" ksoCmd="RestrictPermission" filter="support:RightsManagementServices=true" customTip2="" id="RestrictPermission" customTip="Restrict Permission by People">
+				<KxLegacyTriggerCommand hotKey="u" ksoCmd="UnrestrictedAccess" infoId="i" id="RbFileMenuUnrestrictedAccess" text="@Unrestricted Access" qtspyName="UnrestrictedAccess"/>
+				<KxLegacyTriggerCommand hotKey="r" ksoCmd="RestrictedAccess" infoId="i" id="RbFileMenuRestrictedAccess" text="@Restricted Access" qtspyName="RestrictedAccess"/>
+				<KxLegacyTriggerCommand hotKey="m" ksoCmd="ManageCredentials" infoId="i" id="RbFileMenuManageCredentials" text="@Manage Credentials" qtspyName="ManageCredentials"/>
+			</KxFileMenuPermissionCommand>
+			<KxFileMenuLegacyTriggerCommand hotKey="i" ksoCmd="Properties" infoId="h" icon="Properties" id="RbFileMenuProperties" dialogHint="1" text="@Properties" qtspyName="Properties"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="b" ksoCmd="Convert" icon="Convert" text="@Convert" qtspyName="Convert"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@Backup and Recovery" hotKey="k" disableTrigger="true" ksoCmd="BackupManagement" infoId="9" icon="BackupManagement" id="RbFileMenuBackupManagement" text="@Backup and Recover">
+			<KxFileMenuLegacyTriggerCommand hotKey="k" ksoCmd="BackupManagement" infoId="9" icon="BackupManagement" id="RbFileMenuBackupManagementBtn" text="@Backup Management" qtspyName="BackupManagement"/>
+			<KxFileMenuDocumentFixCommand hotKey="f" filter="support:DocumentFix=true" icon="DocumentFix" id="RbFileMenuDocumentFix" customTip="DocumentFix" text="@Document Fix" qtspyName="DocumentFix"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand groupindex="5" title="@Feedback and Product Information" hotKey="h" infoId="a" icon="Help" shortcutHint="F1" id="RbFileMenuHelpMenu" text="@Help">
+			<KFileMenuHelpDocumentCommand tc="Help" hotKey="h" ksoCmd="Help" idMso="Help" icon="Help" controlType="0" id="RbFileMenuHelp" text="@WPS Writer Help" qtspyName="Help"/>
+			<KxFileMenuOpenUrlCommand hotKey="S" ksourl="Product:WPSStudyOnlinePage" icon="StudyOnline" id="RbFileMenuStudyOnline" text="@Study Online" qtspyName="StudyOnline"/>
+			<KxFileMenuFeedbackCommand showIconAndText="1" hotKey="F" filter="support:FeedbackByWebInMenu=true" ksourl="Product:UserFeedbackPage" icon="OS_CloudFeedback" id="UserFeedbackByWeb" text="@User Feedback"/>
+			<KxFileMenuFeedbackCommand showIconAndText="1" hotKey="b" filter="support:FeedbackByMailInMenu=true" ksourl="Product:UserFeedbackMail" icon="UserFeedbackByMail" id="UserFeedbackByMail" text="@Feedback by Email"/>
+			<KxFileMenuOpenUrlCommand hotKey="m" infoId="i" ksourl="Product:MicroblogUrl" icon="MicroblogFeedback" id="RbFileMenuMicroblogFeedback" text="@Seek Help via Microblog" qtspyName="MicroblogFeedback"/>
+			<KxFileMenuOpenUrlCommand hotKey="f" infoId="j" ksourl="Product:ForumUrl" icon="WPSBBS" id="RbFileMenuWPSBBS" text="@WPS Forum" qtspyName="WPSBBS"/>
+			<KxFileMenuOpenUrlCommand featureid="16777258" hotKey="o" aid="80037" ksourl="Product:HomePage" icon="KingsoftOffice" id="RbFileMenuOfficeHomepage" text="@WPS Office Homepage" qtspyName="KingsoftOffice"/>
+			<KxFileMenuOpenUrlCommand hotKey="c" ksourl="Product:CommunityHomePage" icon="WPSCommunity" id="RbFileMenuWPSCommunity" text="@WPS Office Community" qtspyName="WPSCommunity"/>
+			<KxFileMenuOpenUrlCommand hotKey="f" ksourl="Product:WPSFacebook" icon="KingsoftOfficeFacebook" id="RbFileMenuKingsoftOfficeFacebook" text="@WPS Office Facebook" qtspyName="KingsoftOfficeFacebook"/>
+			<KxNewFeaturesFileMenuCommand hotKey="n" filter="lang=zh_CN;category=personal" icon="NewFeatures" id="RbFileMenuNewFeatures" text="@WPS Office New features"/>
+			<KxFileMenuOpenUrlCommand hotKey="c" ksourl="Product:ProductCenterUrl" icon="ProductCenter" id="RbFileMenuProductCenter" text="@WPS Office Product Center" qtspyName="ProductCenter"/>
+			<KxFileMenuUpdateOnlineCommand hotKey="u" infoId="k" filter="platform=win32" url="../wtoolex/wpsupdate" icon="UpdateOnline" id="RbFileMenuUpdateOnline" args="-from=manual" text="@Check for Updates" qtspyName="UpdateOnline"/>
+			<KxFileMenuChangeVersionCommand hotKey="g" filter="platform=win32" infoId="l" icon="ChangeVersion" text="@Change Version"/>
+			<KxFileMenuOpenUrlCommand featureid="16777262" hotKey="m" filter="support:ProductManagementCenter=true" url="ksomisc" icon="ProductManagementCenter" id="RbFileMenuProductManagementCenter" args="-snmanager" text="@Product Management Center" qtspyName="ProductManagementCenter"/>
+			<KxFileMenuTrialToolCommand hotKey="p" ksourl="Auth:ProBuySerialNumberUrl" icon="PurchaseSerialNumber" id="RbFileMenuPurchaseSerialNumber" text="@Purchase Serial Number" qtspyName="PurchaseSerialNumber"/>
+			<KxFileMenuQingActiveCodeCommand hotKey="I" icon="EnterActivationCode" id="RbFileMenuEnterActivationCode" text="@Enter Activation Code" qtspyName="EnterActivationCode"/>
+			<KxFileMenuDonateCommand hotKey="S" filter="support:DonateMoney=true" icon="DonateMoney" text="@Support WPS" qtspyName="DonateMoney"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="a" ksoCmd="About" aid="927" idMso="About" icon="About" controlType="0" id="RbFileMenuAbout" text="@About WPS Writer"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxWpsPrintInfoCommand hookIds="RbFileMenuPrintMenu" id="CTF_PrintHook"/>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_File">
+			<command idQ="RbFileMenuNewFileMenu"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="o" ksoCmd="OpenFile" aid="23" infoId="1" idMso="FileOpen" icon="OpenFile" controlType="0" id="RbFileMenuOpenFileMenu" text="@Open"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="r" ksoCmd="ReloadTxtFileWithEncodingDlg" infoId="2" icon="ReloadTxtFile" id="RbFileMenuReloadTxtFile" text="@Reload" qtspyName="ReloadTxtFileWithEncodingDlg"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="s" ksoCmd="SaveFile" infoId="3" idMso="FileSave" icon="SaveFile" controlType="0" id="RbFileMenuSaveFileMenu" text="@Save"/>
+			<command idQ="RbFileMenuSaveAsMenu"/>
+			<command idQ="RbFileMenuPrintMenu"/>
+			<separator startEndTransparent="1"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="d" ksoCmd="SendMail" infoId="7" filter="platform=win32" icon="SendMail" id="RbFileMenuSendMail" text="@Send E-mail"/>
+			<command idQ="RbFileMenuDocInfoMenu"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="k" ksoCmd="BackupManagement" infoId="9" filter="lang!=zh_CN" icon="BackupManagement" id="RbFileMenuBackupManagement" text="@Backup Management"/>
+			<command idQ="RbFileMenuBackupManagement" filter="lang=zh_CN"/>
+			<separator startEndTransparent="1"/>
+			<KxFileMenuThemeLegacyTriggerCommand hotKey="l" ksoCmd="Options" infoId="m" icon="Options" id="RbOptions" text="@Options" qtspyName="Options" rbHotKey="L"/>
+			<KxFileMenuThemeLegacyTriggerCommand hotKey="q" ksoCmd="Exit" infoId="n" icon="CloseWindow" text="@Exit" qtspyName="Exit" rbHotKey="Q"/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,108 @@
+字号 16
+类名 11sfktLinex75783046
+属性  309 293 108  49F
+可见 T
+控位  101   0   0  42  50  42
+结束
+类名 11sfktLinex20885745
+属性  235 132  74 242F
+可见 T
+控位    0 235  67   0   0 117
+结束
+类名  0sfktBegin1
+属性  258  36 100  45F
+方向 1
+结束
+类名 10sfktEnd1
+属性  257 461 100  50F
+方向 1
+结束
+类名  2sfktchuli37389166
+属性  375 237  74  58F
+可见 T
+方向 1
+内容 S=2*i+1
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  S\i0 =2\i i\i0 +1
+\par }
+
+结束
+类名  2sfktchuli04745923
+属性  262  81  92  57F
+可见 T
+方向 1
+内容 i=1,S=0
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32   i\i0 =1,\i S\i0 =0
+\par }
+
+结束
+类名  3sfktPanduan22015947
+属性  231 198 154  78F
+是否 23
+可见 T
+方向 1
+内容 i%2=1
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs28 i\i0\f1\'ca\'c7\'c6\'e6\'ca\'fd
+\par }
+
+结束
+类名  2sfktchuli52036021
+属性  268 138  80  60F
+可见 T
+方向 1
+内容 i=i+1
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32    i\i0 =\i i\i0 +1
+\par }
+
+结束
+类名  5sfktLiner98878687
+属性  384 230  32  14F
+可见 F
+结束
+类名  2sfktchuli10469958
+属性  268 276  80  60F
+可见 F
+方向 1
+内容 S=2*i
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs28     S\i0 =2\i i
+\par }
+
+结束
+类名  3sfktPanduan74999930
+属性  238 336 140  70F
+是否 12
+可见 T
+方向 1
+内容 S<10
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs28  S\i0 <10
+\par }
+
+结束
+类名  4sfktshuru62265012
+属性  258 406  99  55F
+可见 T
+方向 1
+内容 输出i
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs28   \u36755?\u20986?\i i
+\par }
+
+结束
+完成
+s28   \u36755?\u20986?\i i
+\par }
+
+结束
+完成

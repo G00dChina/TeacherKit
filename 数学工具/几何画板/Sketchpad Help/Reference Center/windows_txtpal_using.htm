@@ -1,0 +1,189 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Text Palette &gt; Using the Text Palette</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Text Palette,Text Palette parts of">
+   <meta name="description" content="Using the Text Palette">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_txtpal_using.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Using the Text Palette</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_txtpal.htm">Text Palette</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Using the Text Palette</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_txtpal.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_txtpal.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_txtpal_mathnotation.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">The various parts of the Text Palette allow you to change the font, size, style, and color of <a href="objects_attrib_labels.htm" class="topiclink">labels</a> and text. You can also use the Text Palette to add <a href="windows_txtpal_mathnotation.htm" class="topiclink">mathematical notation</a> to your <a href="objects_captions.htm" class="topiclink">captions</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_textpalette.htm" class="topiclink">Show/Hide Text Palette</a></span><span class="f_BodyText"> to determine whether or not the Text Palette is visible.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To change the font, size, style, or text color of one or more labeled objects or objects displaying text, select those objects and use the Text Palette to make your desired modifications.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Pressing the down arrow triangles displays Font, Size, and Color pop-up menus.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">&nbsp;</span></p>
+<p class="p_Image_Centered_Large"><img src="text_palette.png" width="454" height="72" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><img src="text_palette_mac_zoom75.png" width="480" height="111" alt="" style="border:none" /></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Font:</span><span class="f_BodyText_Indented"> Change text font by choosing a font from the pop-up menu. Recently-used fonts appear at the top of the menu.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Size:</span><span class="f_BodyText_Indented"> Change text size by typing a size or by choosing a size from the pop-up menu.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Color Picker:</span><span class="f_BodyText_Indented"> Change text color to any color your computer can display by clicking this button use your system’s <a href="windows_colorpicker.htm" class="topiclink">Color Picker</a> dialog box.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Color Menu:</span><span class="f_BodyText_Indented"> Change text color (to one of Sketchpad’s default colors) by choosing a color from the pop-up menu.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">When a Text Palette color is applied to selected geometric objects, it affects the color of those objects’ labels. To change the color of the objects themselves, choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_display_color.htm" class="topiclink">Display | Color</a>.</span><span class="f_MarginNote"> (You can change the available colors by holding the Shift key and choosing </span><span class="f_MarginNote" style="font-weight: bold;"><a href="windows_advprefs_system.htm" class="topiclink">Edit | Advanced Preferences | System</a> | Edit Color Menu.</span><span class="f_MarginNote">)</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Style:</span><span class="f_BodyText_Indented"> Change bold, italic, or underline text style by clicking a button. One click sets the style and depresses the button; a second click removes the style and releases the button.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Symbolic Notation:</span><span class="f_BodyText_Indented"> Display additional buttons for <a href="windows_txtpal_mathnotation.htm" class="topiclink">mathematical notation</a> by clicking here when you’re editing a caption. Click a second time to hide the math formatting buttons.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you change an object's font, size, or style, the default style for newly-created similar objects is updated to match. Press the Shift key, or uncheck </span><span class="f_BodyText" style="font-weight: bold;">Update automatically when restyling existing objects</span><span class="f_BodyText"> in <a href="windows_prefs_text.htm" class="topiclink">Text Preferences</a>, to preserve default settings for font, style, and size.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_text.htm" class="topiclink">Display | Text</a></span><span class="f_BodyText"> submenu to set the style and font of labels and other text. The command shortcuts from this submenu are particularly convenient. There are shortcuts for </span><span class="f_BodyText" style="font-weight: bold;">Bold, Italic,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">Underline</span><span class="f_BodyText"> (Ctrl+B, Ctrl+I, and Ctrl+U in Windows, or <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />B, <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />I, and <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />U on Mac) and for </span><span class="f_BodyText" style="font-weight: bold;">Increase Size</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">Decrease Size</span><span class="f_BodyText"> (Alt+</span><span class="f_BodyText" style="font-weight: bold;">&gt;</span><span class="f_BodyText"> and Alt+</span><span class="f_BodyText" style="font-weight: bold;">&lt;</span><span class="f_BodyText"> in Windows, or <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" /></span><span class="f_BodyText" style="font-weight: bold;">&gt;</span><span class="f_BodyText"> and <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" /></span><span class="f_BodyText" style="font-weight: bold;">&lt;</span><span class="f_BodyText"> on Mac).</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_display_text.htm" class="topiclink">Display | Text submenu</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_text.htm" class="topiclink">Advanced Text Topics</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_display_textpalette.htm" class="topiclink">Show/Hide Text Palette command</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Tools &gt; Custom Tools &gt; How to Make a Perpendicular Bisector Tool</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Special Constructions and Techniques,Special Constructions and Techniques Perpendicular Bisector Tool,Custom Tools,Custom Tools creating,Perpendicular Bisector Custom Tool">
+   <meta name="description" content="How to Make a Perpendicular Bisector Tool">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "howto_bisectortool.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to Make a Perpendicular Bisector Tool</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="tools.htm">Tools</a> &gt; <a href="tools_cust.htm">Custom Tools</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">How to Make a Perpendicular Bisector Tool</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="tools_cust_making.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="tools_cust.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="tools_cust_toolfolder.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">If you’re doing an investigation in which you need to construct several perpendicular bisectors, you can make a perpendicular bisector custom tool to simplify your work. Suppose you want to construct the perpendicular bisectors to all three sides of a triangle. Rather than do the perpendicular bisector construction three times, you can do it once and make it into a tool. Then use the tool for the other two perpendicular bisectors. This example shows you how.</span></p>
+<p class="p_Image_FlushRight_Narrative"><img src="hmfile_hash_fd6ccf1d.png" width="218" height="110" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">First you’ll create a </span><span class="f_BodyText" style="font-weight: bold;">Perpendicular Bisector</span><span class="f_BodyText"> tool.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">In a new document, use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_straight.htm" class="topiclink">Segment</a></span><span class="f_BodyText"> tool to construct the edges of </span><img src="triangle.png" width="11" height="10" alt="" style="border:none" /><span class="f_BodyText" style="font-style: italic;">ABC</span><span class="f_BodyText">.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">On segment </span><span class="f_BodyText" style="font-style: italic;">AB,</span><span class="f_BodyText"> construct the <a href="menus_construct_midpoint.htm" class="topiclink">midpoint</a> and the <a href="menus_construct_perpendic.htm" class="topiclink">perpendicular</a> to segment </span><span class="f_BodyText" style="font-style: italic;">AB</span><span class="f_BodyText"> through the midpoint.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Select segment </span><span class="f_BodyText" style="font-style: italic;">AB,</span><span class="f_BodyText"> the midpoint, and the perpendicular line. Segment </span><span class="f_BodyText" style="font-style: italic;">AB</span><span class="f_BodyText"> will be the <a href="windows_script_givenssteps.htm" class="topiclink">given</a> object, and the midpoint and perpendicular will be <a href="windows_script_givenssteps.htm" class="topiclink">results</a>. (If you had also selected points </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">B,</span><span class="f_BodyText"> they would have been the givens, and the segment would have been an intermediate result.)</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">Press and hold the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_cust.htm" class="topiclink">Custom</a></span><span class="f_BodyText"> tool icon and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_cust_menu.htm" class="topiclink">Create New Tool</a></span><span class="f_BodyText"> from the Custom Tools menu that appears.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Type “</span><span class="f_BodyText">Perpendicular Bisector”</span><span class="f_BodyText"> to name your tool and click </span><span class="f_BodyText" style="font-weight: bold;">OK</span><span class="f_BodyText">.</span></p><p class="p_BodyText"><span class="f_BodyText">Next you’ll use your new </span><span class="f_BodyText" style="font-weight: bold;">Perpendicular Bisector</span><span class="f_BodyText"> tool.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">6.</span><span class="f_BodyText">Click the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tool icon to choose your new tool. (You don’t need to pull down the Custom Tools menu, because your new tool is already the active custom tool.)</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">7.</span><span class="f_BodyText">Click each of the other two sides of the triangle. The tool constructs the perpendicular bisectors on those two sides.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">8.</span><span class="f_BodyText">Press the <a href="shortcuts_specialkeys.htm" class="topiclink">Esc</a> key or choose a different tool from the <a href="tools.htm" class="topiclink">Toolbox</a> to stop using your custom tool.</span></p><p class="p_BodyText"><span class="f_BodyText">Because the given of this tool is a segment, match it either by clicking a segment, as you did above, or by clicking twice (or pressing and dragging) to construct a new segment to match the given. This means you can use the tool to construct a triangle from scratch with the perpendicular bisectors constructed automatically.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">9.</span><span class="f_BodyText">Click the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tool icon to choose your </span><span class="f_BodyText" style="font-weight: bold;">Perpendicular Bisector</span><span class="f_BodyText"> tool.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">10.</span><span class="f_BodyText"> Press in empty space in the sketch and drag to construct one side of a triangle.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">11.</span><span class="f_BodyText"> Press and drag two more times to construct the remaining two sides of the triangle.</span></p><p class="p_BodyText"><span class="f_BodyText">You’ve just constructed a triangle, as easily as you’d have done it with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_straight.htm" class="topiclink">Segment</a></span><span class="f_BodyText"> tool, but with perpendicular bisectors on all three sides.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use your new tool to construct a quadrilateral with the perpendicular bisectors of all four sides. Then construct one diagonal, along with its perpendicular bisector. What do you notice about the perpendicular bisector of the diagonal as you drag the quadrilateral into different configurations?</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_script.htm" class="topiclink">Script View</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool.htm" class="topiclink">Advanced Tool Topics</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

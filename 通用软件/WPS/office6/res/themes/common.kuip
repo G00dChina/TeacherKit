@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<theme>
+		<style class="QTextEdit">
+			<color value="#FFFFFF" name="background"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#FFFFFF"/>
+			</linearGradient>
+			<color value="#232d30" name="text"/>
+			<color value="#00000000" name="text-shadow"/>
+			<color value="#a3b6da" name="text-highlight"/>
+		</style>
+	</theme>
+</shell>

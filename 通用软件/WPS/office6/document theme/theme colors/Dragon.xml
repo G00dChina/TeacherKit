@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Dragon" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="001B36"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="EDF8FE"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="477AB1"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="51848E"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="7B9B57"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="8B8D8C"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="8B7396"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="E89A53"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="0080FF"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="FF00FF"/>
+   </a:folHlink>
+</a:clrScheme>
+

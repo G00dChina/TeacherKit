@@ -1,0 +1,278 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Construct Menu</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Menus,Menus Construct,Construct Menu">
+   <meta name="description" content="Construct Menu">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_construct.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Construct Menu</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Construct Menu</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_display_toolbox.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_construct_pointonobj.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">The Construct menu provides commands for accomplishing many important geometric constructions. Most of these constructions could also be done with Sketchpad’s </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_compass.htm" class="topiclink">Compass</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_straight.htm" class="topiclink">Straightedge</a></span><span class="f_BodyText"> tools, but the Construct menu often provides simpler and quicker ways of completing a construction.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:300px; padding:0px;"><p style="margin: 7px 0px 0px 0px;"><map name="map5" id="map5"><area shape="rect" coords="0,361,256,383" href="menus_construct_locus.htm" alt="Locus" title="Locus" /><area shape="rect" coords="0,332,256,354" href="menus_construct_int.htm" alt="Interior" title="Interior" /><area shape="rect" coords="0,302,256,324" href="menus_construct_arc3points.htm" alt="Arc through 3 Points" title="Arc through 3 Points" /><area shape="rect" coords="0,280,256,302" href="menus_construct_arconcircle.htm" alt="Arc on Circle" title="Arc on Circle" /><area shape="rect" coords="0,258,256,280" href="menus_construct_circctrrad.htm" alt="Circle by Center+Radius" title="Circle by Center+Radius" /><area shape="rect" coords="0,206,256,228" href="menus_construct_bisector.htm" alt="Angle Bisector" title="Angle Bisector" /><area shape="rect" coords="0,236,256,258" href="menus_construct_circctrpt.htm" alt="Circle by Center+Point" title="Circle by Center+Point" /><area shape="rect" coords="0,184,256,206" href="menus_construct_perpendic.htm" alt="Perpendicular Line" title="Perpendicular Line" /><area shape="rect" coords="0,162,256,184" href="menus_construct_parallel.htm" alt="Parallel Line" title="Parallel Line" /><area shape="rect" coords="0,140,256,162" href="menus_construct_segment.htm" alt="Line" title="Line" /><area shape="rect" coords="0,118,256,140" href="menus_construct_segment.htm" alt="Ray" title="Ray" /><area shape="rect" coords="0,96,256,118" href="menus_construct_segment.htm" alt="Segment" title="Segment" /><area shape="rect" coords="0,65,256,87" href="menus_construct_intersect.htm" alt="Intersection" title="Intersection" /><area shape="rect" coords="0,43,256,65" href="menus_construct_midpoint.htm" alt="Midpoint" title="Midpoint" /><area shape="rect" coords="0,21,256,43" href="menus_construct_pointonobj.htm" alt="Point on Object" title="Point on Object" /></map><img src="menu_construct.png" width="258" height="390" alt="" style="border:none" usemap="#map5" /></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click the name of any command in the menu to see detailed information about that command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">To use any Construct menu command, you must select the appropriate objects (the </span><span class="f_BodyText" style="font-style: italic;">prerequisites</span><span class="f_BodyText">) in the sketch.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If a command you want to use is unavailable, you might have too few or too many objects selected. Check the list of prerequisites below, and check the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> to make sure you don't have extra unnoticed objects selected. Then select additional required objects or deselect unwanted objects. Alternatively, <a href="tools_arrow_selectdeselect.htm" class="topiclink">deselect all objects</a> and then carefully select the appropriate prerequisites.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Command:</span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Prerequisites:</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_pointonobj.htm" class="topiclink">Point on Object</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One or more <a href="objects_cats_paths.htm" class="topiclink">path</a> objects</span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_midpoint.htm" class="topiclink">Midpoint</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One or more <a href="objects_segmentsrayslines.htm" class="topiclink">segments</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_intersect.htm" class="topiclink">Intersection</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Two <a href="objects_segmentsrayslines.htm" class="topiclink">segments, rays, lines</a>, <a href="objects_circles.htm" class="topiclink">circles</a>, or <a href="objects_arcs.htm" class="topiclink">arcs</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_loci.htm" class="topiclink">locus</a> or <a href="objects_functionplots.htm" class="topiclink">function plot</a> and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment, ray, line</a>, <a href="objects_circles.htm" class="topiclink">circle</a>, or <a href="objects_arcs.htm" class="topiclink">arc</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Two <a href="objects_functionplots.htm" class="topiclink">function plots</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_polygonsinteriors.htm" class="topiclink">polygon</a> and one <a href="objects_segmentsrayslines.htm" class="topiclink">ray</a> (command becomes </span><span class="f_BodyText" style="font-weight: bold;">First Intersection</span><span class="f_BodyText">)</span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_segment.htm" class="topiclink">Segment, Ray, and Line</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Two or more <a href="objects_points.htm" class="topiclink">points</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_parallel.htm" class="topiclink">Parallel Line</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One </span><span class="f_BodyText"><a href="objects_points.htm" class="topiclink">point</a> </span><span class="f_BodyText">and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment, ray, or line</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Multiple <a href="objects_points.htm" class="topiclink">points</a> and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment, ray, or line</a> </span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_points.htm" class="topiclink">point</a> and multiple <a href="objects_segmentsrayslines.htm" class="topiclink">segments, rays, or lines</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_perpendic.htm" class="topiclink">Perpendicular Line</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One </span><span class="f_BodyText"><a href="objects_points.htm" class="topiclink">point</a> </span><span class="f_BodyText">and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment, ray, or line</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Multiple <a href="objects_points.htm" class="topiclink">points</a> and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment, ray, or line</a> </span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_points.htm" class="topiclink">point</a> and multiple <a href="objects_segmentsrayslines.htm" class="topiclink">segments, rays, or lines</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_bisector.htm" class="topiclink">Angle Bisector</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Three <a href="objects_points.htm" class="topiclink">points</a>, with the vertex point selected second</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Two <a href="objects_segmentsrayslines.htm" class="topiclink">rays or segments</a> with a common endpoint</span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_circctrpt.htm" class="topiclink">Circle by Center+Point</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Two <a href="objects_points.htm" class="topiclink">points</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_circctrrad.htm" class="topiclink">Circle by Center+Radius</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_points.htm" class="topiclink">point</a> and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment</a> or <a href="objects_cats_values.htm" class="topiclink">distance value</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Multiple <a href="objects_points.htm" class="topiclink">points</a> and one <a href="objects_segmentsrayslines.htm" class="topiclink">segment</a> or <a href="objects_cats_values.htm" class="topiclink">distance value</a></span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_points.htm" class="topiclink">point</a> and multiple <a href="objects_segmentsrayslines.htm" class="topiclink">segments</a> and/or <a href="objects_cats_values.htm" class="topiclink">distance values</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_arconcircle.htm" class="topiclink">Arc on Circle</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_circles.htm" class="topiclink">circle</a> and two <a href="objects_points.htm" class="topiclink">points</a> on the circle</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One center <a href="objects_points.htm" class="topiclink">point</a> and two other points equally distant from the center point</span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_arc3points.htm" class="topiclink">Arc through 3 Points</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Three </span><span class="f_BodyText"><a class="inline-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1')">noncollinear</a> <span id="TOGGLE0186A1" class="f_MarginNote"> (noncollinear points do not lie in a straight line)</span></span><span class="f_BodyText"> <a href="objects_points.htm" class="topiclink">points</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int.htm" class="topiclink">Polygon Interior</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Three or more <a href="objects_points.htm" class="topiclink">points</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int.htm" class="topiclink">Circle Interior</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One or more <a href="objects_circles.htm" class="topiclink">circles</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int.htm" class="topiclink">Arc Sector Interior</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One or more <a href="objects_arcs.htm" class="topiclink">arcs</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int.htm" class="topiclink">Arc Segment Interior</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One or more <a href="objects_arcs.htm" class="topiclink">arcs</a></span></p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:244px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_locus.htm" class="topiclink">Locus</a></span></p>
+</td>
+<td style="vertical-align:top; width:609px; padding:5px; border:solid 1px #000000;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_points.htm" class="topiclink">point</a> on a <a href="objects_cats_paths.htm" class="topiclink">path</a> and one object that depends on the point on path</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One <a href="objects_parameters.htm" class="topiclink">parameter</a> and one object that depends on the parameter</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">One independent <a href="objects_points.htm" class="topiclink">point</a>, one <a href="objects_cats_paths.htm" class="topiclink">path</a> that does not depend on the point, and one object that depends on the independent point</span></p></td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','inline','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

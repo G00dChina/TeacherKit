@@ -1,0 +1,15 @@
+﻿//请严格按照格式编辑样式字符串
+
+//每行一个样式
+
+//注意！Default与Default-L2样式不可删除
+//以下样式针对Windows优化
+
+//Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+
+Style: Default,微软雅黑,54,&H00FFFFFF,&H00FFFFFF,&H19533B3B,&H910E0807,0,0,0,0,100.0,100.0,0.0,0.0,1,3.1,1.2,2,135,135,72,1
+Style: Default-L2,微软雅黑,32,&H00FFFFFF,&H00FFFFFF,&H19533B3B,&H910E0807,0,0,0,0,100.0,100.0,0.0,0.0,1,2.5,0.0,2,135,135,35,1
+Style: Default-Box,微软雅黑,54,&H00FFFFFF,&H00FFFFFF,&H41000000,&HFF000000,0,0,0,0,100.0,100.0,0.0,0.0,3,8.5,0.0,2,135,135,72,1
+Style: Yahei-1280x720,微软雅黑,48,&H00FFFFFF,&H00FFFFFF,&H19533B3B,&H910E0807,0,0,0,0,100.0,100.0,0.0,0.0,1,3.1,1.2,2,135,135,72,1
+Style: Yahei-1920x1080,微软雅黑,60,&H00FFFFFF,&H00FFFFFF,&H19533B3B,&H910E0807,0,0,0,0,100.0,100.0,0.0,0.0,1,4.2,1.5,2,200,200,102,1
+Style: OneFX,楷体,54,&H00FFFE67,&H000000FF,&H00A4671B,&H914F310D,-1,-1,-1,0,100.0,120.0,0.0,10.32258,1,5.6910567,4.268293,2,10,10,80,1

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- saved from url=(0025)http://www.techsmith.com/ -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        $VideoMetaData
+        <title>$HTMLTitle</title>
+        
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript">
+            swfobject.registerObject("csSWF", "$PlayerVersion", "expressInstall.swf");
+        </script>
+        $CamJSInclude
+        <script type="text/javascript" src="scormwrapper.js"></script>
+        <style type="text/css">
+            body 
+            {
+                background-color: #1a1a1a;
+                font: .8em/1.3em verdana,arial,helvetica,sans-serif;
+                text-align: center;
+            }
+            #media
+            {
+                margin-top: 40px;
+            }
+            #noUpdate
+            {
+                margin: 0 auto;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: x-small;
+                color: #cccccc;
+                text-align: left;
+                width: 210px; 
+                height: 200px;   
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body onload="pageLoad();" onunload="dispose();">
+        <div id="media">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="$Width" height="$Height" id="csSWF">
+                <param name="movie" value="$FlashController" />
+                <param name="quality" value="best" />
+                <param name="bgcolor" value="#1a1a1a" />
+                <param name="allowfullscreen" value="$FullScreen" />
+                <param name="scale" value="$ScaleMode" />
+                <param name="allowscriptaccess" value="always" />
+                <param name="flashvars" value="autostart=$AutoStart$#$AdditionalFlashVars" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="$FlashController" width="$Width" height="$Height">
+                    <param name="quality" value="best" />
+                    <param name="bgcolor" value="#1a1a1a" />
+                    <param name="allowfullscreen" value="$FullScreen" />
+                    <param name="scale" value="$ScaleMode" />
+                    <param name="allowscriptaccess" value="always" />
+                    <param name="flashvars" value="autostart=$AutoStart$#$AdditionalFlashVars" />
+                <!--<![endif]-->
+                    <div id="noUpdate">
+                        <p>$NeedMoreRecentFlash</p>
+                    </div>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_printpreview" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="PrintDirect" aid="1125" faceid="329" icon="PrintDirect" id="PrintDirect" customTip="PrintDirect" text="@Print 
+Directly" rbHotKey="R"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_Slides" id="WpPrintWhat_Slides" index="0" customTip="WpPrintWhat_Slides" text="@Slides"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_1" id="WpPrintWhat_1" index="1" customTip="WpPrintWhat_1" text="@Handouts (1 slide per page)"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_2" id="WpPrintWhat_2" index="2" customTip="WpPrintWhat_2" text="@Handouts (2 slides per page)"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_3" id="WpPrintWhat_3" index="3" customTip="WpPrintWhat_3" text="@Handouts (3 slides per page)"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_4" id="WpPrintWhat_4" index="4" customTip="WpPrintWhat_4" text="@Handouts (4 slides per page)"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_6" id="WpPrintWhat_6" index="5" customTip="WpPrintWhat_6" text="@Handouts (6 slides per page)"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_9" id="WpPrintWhat_9" index="6" customTip="WpPrintWhat_9" text="@Handouts (9 slides per page)"/>
+		<KxIndexCommand ksoCmd="PrevPrintWhat" icon="WpPrintWhat_1Notes" id="WpPrintWhat_1Notes" index="7" customTip="WpPrintWhat_1Notes" text="@Notes pages (1 slide per page)"/>
+		<KxIndexCommand hotKey="o" ksoCmd="PrevPrintWhat" icon="WpPrintWhat_OutlineView" id="RbWpPrintWhat_OutlineView" index="9" customTip="WpPrintWhat_OutlineView" text="@Outline View"/>
+		<KListCommand id="RB_Print" text="@Print">
+			<KQuickMenuCommand customTip2="Print2" id="RB_PrintMenu" referenceCommand="Print" rbHotKey="P">
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+			</KQuickMenuCommand>
+			<KListCommand customTip2="WpPrintWhat_Slides2" icon="WpPrintWhat_Slides" id="PrintSlideMenu" text="@Slides" referenceCommand="WpPrintWhat_Slides" qtspyName="WpPrintWhat_Slides" rbHotKey="H">
+				<command idQ="WpPrintWhat_Slides"/>
+				<command idQ="WpPrintWhat_1"/>
+				<command idQ="WpPrintWhat_2"/>
+				<command idQ="WpPrintWhat_3"/>
+				<command idQ="WpPrintWhat_4"/>
+				<command idQ="WpPrintWhat_6"/>
+				<command idQ="WpPrintWhat_9"/>
+				<command idQ="WpPrintWhat_1Notes"/>
+				<command idQ="WpPrintWhat_3Notes"/>
+				<command idQ="RbWpPrintWhat_OutlineView"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_PrintShow" text="@Show">
+			<KxLegacyTriggerCommand ksoCmd="PreviewPage" icon="PreviewPage" id="PrevPreviousPageInPrintPreviewTab" customTip="PreviewPage" text="@Previous
+Page" qtspyName="PreviewPage" rbHotKey="E"/>
+			<KxLegacyTriggerCommand ksoCmd="PrevNextPage" icon="PrevNextPage" id="PrevNextPageInPrintPreviewTab" customTip="PrevNextPage" text="@Next
+Page" qtspyName="PrevNextPage" rbHotKey="N"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxWppZoomComboCommand space="9" labelText="@Zoom:" ksoCmd="ZoomCombo" icon="PrevNextPage" id="ZoomComboInPrintPreviewTab" customTip="ZoomCombo" bVertical="1" qtspyName="ZoomCombo" rbHotKey="S"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="PrevLandscape" aid="934" faceid="45" icon="PrevLandscape" id="PrevLandscape" customTip="PrevLandscape" text="@Landscape" rbHotKey="L"/>
+		<KxLegacyTriggerCommand ksoCmd="PrevPortrait" aid="935" faceid="46" icon="PrevPortrait" id="PrevPortrait" customTip="PrevPortrait" text="@Portrait" rbHotKey="R"/>
+		<KxValueCommand hotKey="C" ksoCmd="PrevColorGray" aid="1007" faceid="32" icon="Color" id="PrevColor" index="0" text="@Color"/>
+		<KxValueCommand hotKey="U" ksoCmd="PrevColorGray" aid="1009" faceid="34" icon="Pure" id="PrevPureBlackWhite" index="1" text="@Pure Black and White"/>
+		<KxLegacyTriggerCommand tc="PrevPrintHorizontal" hotKey="h" ksoCmd="PrevPrintHorizontal" aid="997" faceid="47" icon="PrevPrintHorizontal" id="PrevPrintHorizontal" text="@Horizontal"/>
+		<KxLegacyTriggerCommand tc="PrevPrintVertical" hotKey="v" ksoCmd="PrevPrintVertical" aid="998" faceid="48" icon="PrevPrintVertical" id="PrevPrintVertical" text="@Vertical"/>
+		<KListCommand id="RB_PrintSettiing" text="@Settings">
+			<command idQ="PrevLandscape"/>
+			<command idQ="PrevPortrait"/>
+			<KxLegacyTriggerCommand hotKey="p" ksoCmd="PrevPrintHiddenSlide" icon="PrevPrintHiddenSlide" id="PrintHiddenSlide" customTip="PrevPrintHiddenSlide" text="@Print
+Hidden Slides" qtspyName="PrevPrintHiddenSlide" rbHotKey="D"/>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="PrevFrameSlides" icon="PrevFrameSlides" id="FrameSlides" customTip="PrevFrameSlides" text="@Frame
+Slides" qtspyName="PrevFrameSlides" rbHotKey="F"/>
+			<KxLegacyTriggerCommand ksoCmd="HeaderFooter" icon="HeaderFooter" id="HeaderFooterInPrintPreviewTab" customTip="HeaderFooter" text="@Header and 
+Footer" qtspyName="HeaderFooter" rbHotKey="G"/>
+			<KListCommand hotKey="c" icon="ColorGrayscaleMenu" id="ColorInPrintPreviewTab" customTip="Color" text="@Color" qtspyName="ColorGrayscaleMenu" rbHotKey="O">
+				<command idQ="PrevColor"/>
+				<command idQ="PrevPureBlackWhite"/>
+			</KListCommand>
+			<KListCommand icon="PrintingOrder" id="PrintingOrder" customTip="PrintingOrder" text="@Printing
+Order" rbHotKey="I">
+				<command idQ="PrevPrintHorizontal"/>
+				<command idQ="PrevPrintVertical"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_ClosePrintPreview" text="@Close">
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="PrevClose" icon="CloseWindow" id="PrevClose" customTip="PrevClose" text="@Close" rbHotKey="C"/>
+		</KListCommand>
+		<KxWppPrintInfoCommand hookIds="RB_PrintMenu" id="CTP_PrintHook"/>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_PrintPreview">
+			<command idQ="RB_Print"/>
+			<separator/>
+			<command idQ="RB_PrintShow"/>
+			<separator/>
+			<command idQ="RB_PrintSettiing"/>
+			<separator/>
+			<command idQ="RB_ClosePrintPreview"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

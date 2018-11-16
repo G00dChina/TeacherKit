@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_security" component="et">
+	<commands>
+		<KListCommand id="RB_Permissions" text="@Document Security" rbFileMenuEmbed="1">
+			<KxCurUserPermissionCommand icon="CurUserPermission" text="@Check Mine Permission" rbHotKey="V"/>
+			<KxCheckPermissionsCommand icon="CheckPermissions" text="@Check Users Permissions" rbHotKey="R"/>
+			<KxApplyPermissionsCommand icon="ApplyPermissions" text="@Apply Permissions"/>
+		</KListCommand>
+		<KListCommand id="RB_Apply" text="@Document Security" rbFileMenuEmbed="1">
+			<KxPermissionApplyCommand icon="PermissionsApply" text="@My Permssions Apply"/>
+			<KxPermissionApproveCommand icon="PermissionsApprove" text="@My Pending Approval"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Security">
+			<command idQ="RB_Permissions"/>
+			<separator/>
+			<command idQ="RB_Apply"/>
+		</subcommand>
+	</subcommands>
+</shell>

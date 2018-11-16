@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>note.png</Overlay_Filename>
+<Overlay_Name>记事本</Overlay_Name>
+<Overlay_XGrow>90</Overlay_XGrow>
+<Overlay_YGrow>90</Overlay_YGrow>
+<Text_Top>20</Text_Top>
+<Text_Left>20</Text_Left>
+<Text_Bottom>10</Text_Bottom>
+<Text_Right>20</Text_Right>
+<Vector_Grow>1</Vector_Grow>
+<CanRotate_90>1</CanRotate_90>
+<CanRotate_180>1</CanRotate_180>
+<CanRotate_270>1</CanRotate_270>
+<CanFlip_X>0</CanFlip_X>
+<CanFlip_X90>0</CanFlip_X90>
+<CanFlip_X180>0</CanFlip_X180>
+<CanFlip_X270>0</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<VectorProps>
+  <figure>
+    <svg>M0,38.55 0,181 181,181 181,0 42.36,0 42.36,38.55 Z</svg>
+  </figure>
+  <borderWidth>3.00</borderWidth>
+  <seamY>-1.00</seamY>
+  <solidFigure>
+    <svg>M0,38.55 42.36,38.55 42.36,0 Z</svg>
+  </solidFigure>
+  <glassyFigure>
+    <svg>M0,38.55 0,181 181,181 181,0 42.36,0 Z</svg>
+  </glassyFigure>
+  <shapeWidth>181</shapeWidth>
+  <shapeHeight>181</shapeHeight>
+</VectorProps>
+</Overlay>

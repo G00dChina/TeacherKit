@@ -1,0 +1,341 @@
+V4.30 2018.3.6
+1 Added supports for Apple Heic picture format
+2 Added output format "TS,MTS,M2TS" in "Video joiner"
+3 Supports modifying task setting for "Video joiner" "Mux" "Audio Joiner" and "Mix"
+4 Added "All to OGG" Video file format.
+
+V4.20 2017.11.26
+1 Added function "Add Author Titles" in "Video Joiner" 
+2 Added function "visual watermark editing" in "Output Setting"
+3 improved the UI of video cropping and set range in "Option"
+5 Adjust the "Black" and "White" skin
+4 Fixed some of issues about "Mix", "Mux", Audio and Video Joiner
+6 Update the "MediaInfo library" to the latest version
+7 Fixed some issues about ID3v2 tag information
+8 Fixed issue with rotation angle in video files
+
+V4.10 2017.04.07
+1 Added "Size Limit" option in video convertion
+2 Added new feature "Audio Mix" in utility
+3 Added support for keeping the original audio stream in utility "Mux"
+4 Update MediaInfo to latest version
+
+V4.05 2017.01.21
+1 Added QSV File decode
+2 Fixed the bug of crop 
+3 Fixed the bug of VFlip and HFlip
+
+V4.00 2016.12.5
+1 Added HEVC(H265) codec in MP4,MKV
+2 Improved the algorithm of default bitrate 
+3 AVC,HEVC,DIVX support codec CRF mode
+4 Updated some codecs and decodecs to latest version
+
+V3.95 2016.7.17
+1 Added "All to WebM"
+2 Added MP3 VBR
+3 Fixed bugs that wrong writing order of Hebrew,Arabic subtitle. 
+4 Fixed the bug in Audio Joiner
+5 Fixed the bug of A/V Sync
+
+V3.90 2016.4.18
+1 Added BluRay Ripper
+2 Fixed the bug of Video Joiner
+3 Fixed the bug of Mux
+4 Added ALAC lossless codec in "All to M4A"
+
+V3.80 2015.10.17
+1 Added EBook supports Mobi,azw,epub
+2 Added PDF->Html
+
+V3.75 2015.9.8
+1 Fixed rotation issue of MP4
+2 Fixed 3.70 can not change the resolution
+
+V3.70 2015.7.7
+1 Supports new picture format "WebP".
+2 Fixed streaks issues when MTS, M2TS file conversion.
+3 Improved GUI compatibility in 4K screen.
+
+V3.6.0 2015.1.30
+1 Added file size comparison function after convertion
+2 Fixed bugs of previous version
+
+V3.5.0 2014.11.25
+1 Added BT update module
+2 Remove the bottom banner
+3 Fiexed some bugs of GUI
+
+V3.3.5 2014.05.26
+1 Added save task list to file and load from file.
+2 Added supporting of bik game video file.
+
+V3.3.1 2013.12.30
+1 Fixed wrong IDV3 tag.
+2 Fixed problem about "Error while decoding frame!".
+3 Added supporting of DTS wave.
+4 Updated some codecs.
+
+V3.3.0 2013.11.21
+1 Fix bugs of Rename tools
+2 Added Raw format Picture decoder
+
+V3.2.1 2013.10.30
+1 Add 5.1 7.1 Stereo profile of WAV , WavPack and FLAC
+
+V3.2.0 2013.10.11
+1 Inprove "High quality" profiles of audio , now supports auto-calc equal bitrate
+2 Added APE audio file encoder
+3 Fixed some bugs of multi-threads
+4 "All to MKV" supports inside srt subtitle
+5 Fixed problems of runtime error on WinXP
+6 Update some inside codecs.
+
+V3.1.1 2013.6.18
+1 Improved interface to better support Pad
+2 Add batch rename function
+3 Corrected the problems that function rotation, mirroring are not saved to the "custom"
+
+V3.00 2012.10.15
+1 Adjust GUI to support Win8 pad
+2 Adjust some profiles of video.
+3 Fixed a bug of default bitrate and resolution algorithm
+4 Fixed a bug of subtitle.
+5 Fixed problems of MP4 muxer
+
+V2.96 2012.07.06
+1 update some codecs to latest version
+2 Fixed a bug of RMVB encoding
+
+V2.95 2012.04.11
+1 Default option doesn't use multi-Threads to convert.
+2 Fixed the problem of stopping task in Multi-Threads mode.
+3 Fixed the problem of adding a large number of files.
+4 Fixed the problem of Animation GIF convert to GIF.
+5 Support XV Video files.
+
+V2.90 2012.01.20
+1 Update ffdshow,Haali codecs to latest version.
+2 Fixed some bugs of codecs installation
+3 Fixed some bugs of "MUX"
+4 Add install and uninstall system context mmenu features to advanced option. 
+
+V2.80 2011.11.26
+1 Video Files support multi-thread conversion
+2 Picture Files support multi-thread conversion
+3 Added output folder selection on accept file dialog.
+4 Fixed aspect problem of "All to GIF"
+
+V2.70 2011.6.17
+1 Added right button menu item to invoke Format Factory.
+  Now you can use it to convert and view info of media files.
+2 Fixed the profiles of iPad,PSP that fail to be played.
+3 Fixed bugs in Mux.
+4 Update codecs to MediaInfo 0.7.44,ffdshow rev3882,Haali 1.11.96.14
+
+V2.60 2010.11.4
+1 Improve "Mux",Now supports multiple video and audio files.
+2 Fixed the compatibility issue MP4 files.
+3 Improve "Drag and Drop" , now supports drag folder object into user interface
+
+V2.50 2010.8.17
+1 Improve DVD Rip,Now supports DVD to RMVB.
+2 Fix an issue with "All tom RMVB" about split video.
+3 Fix an issue about conflict with Vista,Windows7 Areo effect.
+4 Added RMVB output type in video joiner.
+5 Improve video size calculation , you can input "auto" instead of width or height.
+
+V2.45 2010.7.9
+1 Fix a problem that AVC MP4 can't be played correctly in version 2.40
+2 Added the option whether install FormatFactory inside codecs to system.
+
+V2.40 2010.7.1
+1 Fix the problem of Apple's MP4 time is twice as long as the original.
+2 Improve the configuration of "All to Picture",now it can be saved as "All to Custom".
+3 Added several profiles of some latest devices.
+4 Fix a bug that fail to clip video when adding watermark.
+
+V2.30 2010.4.1
+1 Fixed compatibility issues of codecs on Windows 7 UAC.
+2 Fixed bug of watermark.
+3 Added "Cancel" Button on several places that needed waiting.
+4 Added "Language select page" in menu.
+5 Added several new language files.
+
+V2.20 2009.11.26
+1 Added MIDI to MP3,WMA,and others.
+2 Added more media muxing output types.
+3 Added "Custom" output type to "Video Joiner".
+4 Adjust Bitrate of "High quality and size" profile.
+5 Improve the accuracy of media file splitting
+
+V2.15 2009.10.15
+1 Fixed some problems of "Fail to decode"
+2 Fixed some decoder conflict
+3 Fixed some problems of MKV convertion
+4 Added some codecs to support more media file types
+
+V2.10 2009.8.18
+1 Added "All to Custom"
+2 Added "Watermark", support png,bmp,jpg
+3 Added "Mux"
+4 Added "Video Crop"
+5 Fixed AV sync of some wmv files.
+6 Fixed problem of ffdshow filter installation
+
+V2.00 2009.7.9
+1 Added "All to RMVB"
+2 Added "Audio Joiner"
+3 Added "AviSynth" to support AVS script and SSA effect.
+4 Fixed bugs of missing MP3,WMA tag info.
+5 Fixed bugs of MOV convertion.
+6 Fixed problem of selecting MKV audio stream.
+7 Added new 2 language files.
+8 Fixed error H264 level of IPod,Zune Mobile Device.
+
+V1.90 2009.6.2
+1 Added "All to GIF",supports video files to GIF
+2 Added selecting Audio and subtitle stream of MKV.
+3 Adjust Video aspect ratio calculating.
+4 Fixed bugs of "video merge"
+5 Added some profiles of mobile devices.
+
+V1.85 2009.4.25
+1 Added Volume control in video setting.
+2 Added Audio stream index control in video setting.
+3 Adjust Video aspect ratio calculating.
+4 Fixed Fail to shut off PC after conversion.
+5 Fixed show "FFMpeg.dll missing" when audio conversion.
+6 Fixed Fail to get CD info from FreeDB.org.
+7 Added 2 language files to support up to 47 kinds of languages.
+8 Added some profiles of HTC Mobile devices.
+9 Added "All to WavPack"
+
+V1.80 2009.3.23
+1 Added "All to MKV".
+2 Added H264,DIVX,XVID codec advanced configuration.
+3 Added supporting of H264,DIVX,XVID 2 pass encoding. 
+4 Added Video,Audio file's split and preview function.
+5 Generate THM files automatically after PSP MP4 converted.
+6 Fixed WMA encoding problem.
+7 Added several language files to support up to 45 kinds of languages.
+8 Fixed some problems of video merging.
+9 Improved DVD Ripper function.
+10 Added aspect ratio of the video file configuration settings.
+
+V1.70 2009.1.23
+1 Fixed bug: Audio out of sync.
+2 Fixed bug: Fail to resample 5.1 channels to stereo
+3 Fixed bug: correct XVID codec's FourCC.
+4 Added new function: "Video Merger".
+5 Added new function: "All to FLAC".
+6 Added Lithuanian , Basque language files
+7 Added subtitle font preview.
+
+V1.65 2008.12.8
+1 Fixed bug: "codec exception" when decode wma stream.
+2 Fixed bug: some error of rmvb decoder.
+3 Fixed bug: a error about when video aspect conversion.
+4 Added Albanian , Galician Language files.
+
+V1.61 2008.11.24
+1 Fixed bug: a error about fail to run FormatFactory.
+2 Fixed bug: Xvid is very slow.
+3 Fixed bug: some dup frames cause conversion dead loop.
+4 Fixed bug: some movie files use PCM8 have no sound after conversion.
+5 Added AMR_WB audio codec of 3GP
+
+V1.60 2008.11.13
+1 Fixed bug: a green line appear in the output video files.
+2 Fixed bug: audio conversion errors.
+3 Fixed bug: "All to MPG" can't be played by Window Media Player.
+4 Fixed bug: Convert video files with SRT subtitle
+5 Added "All to MOV"
+6 Added "Serbian-Latin" , "Croatian" , "Norwegian" Language
+7 Adjust default bitrate of All to MP4/AVi.
+
+V1.55 2008.10.15
+1 Added Multi-CPUs supporting for H264,MPEG4(DIVX),XVID.
+2 Fixed bug : some problems of A/V sync.
+3 Fixed bug : DVD to Video File couldn't convert DVD folder when path name contains "space".
+4 Added "All to M4R" (iPhone ringtones).
+5 Added "Music CD to Audio File"
+6 Added options,"Output to source file folder","Append setting name".
+7 Added convert video file with "SRT" subtitle file.
+
+V1.48 2008.9.5
+1 Fixed bug that couldn't add source files under Win2000
+2 Fixed bug of "All to JPG" that cause output gray.
+3 Added "All to MP2" method.
+4 Added video conversion option "5.1 Stereo".
+5 Added video conversion option "Source Audio Channel Select"
+6 Added Bulgarian Language file.
+7 Added more "Bitrate" options of "All to MP3".
+8 Fixed some internal error. 
+
+V1.45 2008.8.19
+1 Added "Azerbaijani","Ukrainian","Vietnamese" Language files.
+2 Added "Custom" options saving.
+3 Fixed bug of "All to MPG" aspect.
+4 Remove popuping internel connect dialog while FormatFactory starting.
+
+V1.42 2008.8.10
+1 Added "Korean","Arabic" Language files.
+2 Added iPod , Zune MP4 conversion method.
+3 Added "Pause" function while converting.
+4 Fixed bug of "All to MPG" aspect.
+
+V1.40 2008.7.29
+1 Added several options of audio and video converting.
+  Such as "Start Time" , "Duration" , "Keep Aspect" , "Disable Audio" ....
+  Now you can use it to segregate video and audio files.
+2 Audio converting supports video source files , now you can convert mp4/wmv/flv/mpeg/ to mp3.
+3 Improve "DVD to Video File" , provide title and audio stream selection.
+4 Added "Finnish","Turkish","Swedish","Hebrew","Hindi-India","Polish" language supporting.
+5 Added 4 User Interface skins: Aqua , Luna Blue , Obsidian and Silver.
+6 Fixed some bugs of "All to WAV".
+7 Fixed some bugs of picture converting.
+
+V1.32 2008.7.9
+1 Added new converting method "All to MMF".
+2 Added new converting method "All to AMR".
+3 Adjuct default profiles of "All to 3GP"
+4 "DVD to Video file" supports Title selecting.
+5 Fix bug of installt process that create "Format Factory" empty folder
+
+V1.31 2008.7.8
+1 Added new language files: Dutch,French,German,Italian,Japanese,Romanian,Turkish
+2 Fix bug of "wav to other audio format.
+
+V1.30 2008.7.2
+1 Fix some bugs of "All to MPG".
+2 Added new converting method "All to WMV".
+3 Added new converting method "All to SWF".
+4 Added new converting method "DVD/CD to ISO/CSO".
+5 Added new converting method "ISO <--> CSO".
+6 "DVD to Video File" supports more video types, "3GP,WMV,SWF".
+7 Added new language files : Portuguese , Spanish.
+
+v1.25
+1 Fix some bugs of audio option
+2 Modify GUI to support unicode
+3 added Russian language file
+4 added Traditional Chinese language file
+
+v1.20
+1 FormatFactory become freeware
+2 Fix bug of 3GP's audio AMR decode
+3 Fix dead lock when converting
+
+v1.13 
+1 Fix bug of "RMVB to 3GP"
+2 Added some profiles about PSP,iPhone,MP4
+3 Added start page logo
+
+v1.12
+1 Modify FormatFactory GUI
+2 Added file type icon
+
+V1.00 2008.3.1
+
+v0.00 2007.10.1

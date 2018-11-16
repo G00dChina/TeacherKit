@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Phoenix" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="004646"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="E1F0FF"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="50742F"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="268868"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="33BD56"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="4BC5B9"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="3163CA"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="4B14AA"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="D9BE02"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="F900F9"/>
+   </a:folHlink>
+</a:clrScheme>
+

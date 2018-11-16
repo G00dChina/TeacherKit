@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.help.nls.feature"
+      label="XMind Offline Help Contents NLS Support"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      XMind Offline Help Contents NLS Support
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2012, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin
+         id="org.xmind.ui.help.nl_ar"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_da"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_de"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_es"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_fr"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_it"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_ja"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_ko"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_pt_BR"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_ru"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_sl"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_zh_CN"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.help.nl_zh_TW"
+         download-size="4"
+         install-size="4"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+</feature>

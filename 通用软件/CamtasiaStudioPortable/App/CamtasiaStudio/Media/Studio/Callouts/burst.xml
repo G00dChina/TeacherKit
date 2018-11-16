@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>burst.png</Overlay_Filename>
+<Overlay_Name>爆裂</Overlay_Name>
+<Text_Top>95</Text_Top>
+<Text_Left>75</Text_Left>
+<Text_Bottom>100</Text_Bottom>
+<Text_Right>70</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M241.597,0l-69.028,71.445l-32.767-38.971l-1.747,53.765L19.223,24.537l51.115,67.476l-45.873,6.496
+	l24.029,25.619L0,148.664l62.91,17.681l-14.854,31.032l70.338-0.36l-27.086,90.93l81.26-68.919l27.523,19.484l17.912-21.649
+	l87.812,34.279l-39.318-47.991l50.679-5.413l-32.33-35l59.854-27.062l-64.223-19.847l47.185-38.248l-73.834-10.104L241.597,0z
+</svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>135.67</seamY>
+<shapeWidth>345</shapeWidth>
+<shapeHeight>288</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="common">
+	<attributes>
+		<attribute type="int" name="aid"/>
+		<attribute type="int" name="barid"/>
+		<attribute type="string" name="id"/>
+		<attribute type="string" name="idMso"/>
+		<attribute type="string" name="name"/>
+		<attribute type="int" name="comboboxHint"/>
+		<attribute type="string" name="hotKey"/>
+		<attribute type="string" name="rbHotKey"/>
+		<attribute type="bool" name="forceShowIconAndText"/>
+		<attribute type="bool" name="showIconAndText"/>
+		<attribute type="enum" name="spaceHint">
+			<item name="compact"/>
+			<item name="autocompact"/>
+			<item name="suitable"/>
+			<item name="loose"/>
+			<item name="autoiconsize"/>
+			<item name="topsuitable"/>
+		</attribute>
+		<attribute type="bool" name="embedHint"/>
+		<attribute type="bool" name="triggerAble"/>
+		<attribute type="bool" name="showIconAndText"/>
+		<attribute type="bool" name="rbFileMenuEmbed"/>
+		<attribute type="bool" name="hideMiniToolBar"/>
+		<attribute type="bool" name="isCompletedHide"/>
+		<attribute type="string" name="galleryWidth"/>
+		<attribute type="color" name="rbContextTableButton"/>
+		<attribute type="string" name="text2"/>
+		<attribute type="enum" name="OLEMenuCategory">
+			<item name="file"/>
+			<item name="edit"/>
+			<item name="container"/>
+			<item name="object"/>
+			<item name="window"/>
+			<item name="help"/>
+		</attribute>
+		<attribute type="int" name="vertspace"/>
+		<attribute type="string" name="qtspyName"/>
+		<attribute type="string" name="textUnder1280"/>
+		<attribute type="string" name="textOver1280"/>
+		<attribute type="bool" name="visibleUnder1280"/>
+		<attribute type="bool" name="visibleOver1280"/>
+		<attribute type="string" name="shortcutHint"/>
+		<attribute type="bool" name="referenceDisable"/>
+		<attribute type="string" name="secondText"/>
+	</attributes>
+</shell>

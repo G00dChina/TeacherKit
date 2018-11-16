@@ -1,0 +1,23 @@
+<?xml xml version="1.0" encoding="utf-8"?>
+<!--System Information-->
+<SysInfoObj xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<UTCOffset>8</UTCOffset>
+	<CPUArchitecture>64</CPUArchitecture>
+	<OsWordLength>64</OsWordLength>
+	<CoreCount>2</CoreCount>
+	<PCSystemType>1</PCSystemType>
+	<ProcessorCount>1</ProcessorCount>
+	<HasBattery>1</HasBattery>
+	<HasLid>1</HasLid>
+	<ScreenCount>1</ScreenCount>
+	<CurrentUICulture>2052</CurrentUICulture>
+	<CurrentCulture>2052</CurrentCulture>
+	<RAM>5005</RAM>
+	<OS>2&amp;&amp;6&amp;&amp;1&amp;&amp;1&amp;&amp;0&amp;&amp;1&amp;&amp;0&amp;&amp;0&amp;&amp;0&amp;&amp;9</OS>
+	<MACAddress>00:FF:17:21:C8:BC&amp;&amp;74:D0:2B:18:7B:00</MACAddress>
+	<CPU>       Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz</CPU>
+	<GPU>Primary: {Intel(R) HD Graphics 4000||Intel Corporation}</GPU>
+	<DotNet>2.0.50727.5420 SP2&amp;&amp;3.0.30729.5420 SP2&amp;&amp;3.5.30729.5420 SP1&amp;&amp;4.6.01055 Client&amp;&amp;4.6.01055 Full</DotNet>
+	<ScreenRes>Primary: {Width=1366, Height=768}</ScreenRes>
+</SysInfoObj>
+

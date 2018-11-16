@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_workspace" component="wps">
+	<libraries>
+		<library path="." filter="support:WeiboPlugin=true" name="kweibo"/>
+		<library path="." filter="lang=zh_CN;category=personal;osarch=x86" name="kpdf2word_x86"/>
+		<library path="." filter="lang=zh_CN;category=personal;osarch=x64" name="kpdf2word_x64"/>
+		<library path="." filter="lang=zh_CN;category=personal" name="kpdf2wordv2"/>
+	</libraries>
+	<commands>
+		<KxAutoVersionCommand text2="@Enable AutoBackup" hotKey="A" ksoCmd="AutoVersionCmd" icon="WS_AutoVersiong" id="AutoVersionCmd" dialogHint="1" customTip="AutoVersion" text="@Enable AutoBackup" rbHotKey="A"/>
+		<KxStopAutoVersionCommand text2="@Disable AutoBackup" hotKey="S" ksoCmd="StopAutoVersionCmd" icon="WS_AutoVersiong" id="StopAutoVersionCmd" dialogHint="1" customTip="StopAutoVersion" text="@Disable AutoBackup" rbHotKey="S"/>
+		<KxMarkVersionCommand text2="@Manual Backup" hotKey="M" ksoCmd="MarkVersionCmd" icon="WS_MarkVersiong" id="MarkVersionCmd" dialogHint="1" customTip="MarkVersion" text="@Manual Backup" rbHotKey="M"/>
+		<KxExplorVersionCommand text2="@View Historical Backup" hotKey="E" ksoCmd="ExplorVersionCmd" icon="WS_ExplorVersiong" id="ExplorVersionCmd" dialogHint="1" customTip="ExplorVersion" text="@View Historical Backup" rbHotKey="E"/>
+		<KxExplorBackupDirCommand text2="@View File Safe" hotKey="S" ksoCmd="ExplorBackupDirCmd" icon="WS_ExplorBackupdir" id="ExplorBackupDirCmd" dialogHint="1" customTip="ExplorBackupDir" text="@View File Safe" rbHotKey="S"/>
+		<kxAutobackupList id="RB_Autobackup" customTip="Autobackup" text="@View File Safe">
+			<KListCommand hotKey="B" icon="WS_AutoVersiong" id="BackupMenuInWorkSpaceTab" customTip="WorkSpace_Backup" text="@File Backup" qtspyName="BackupMenuInWorkSpaceTab" rbHotKey="B">
+				<command idQ="AutoVersionCmd"/>
+				<command idQ="StopAutoVersionCmd"/>
+				<command idQ="MarkVersionCmd"/>
+				<command idQ="ExplorVersionCmd"/>
+			</KListCommand>
+			<command idQ="ExplorBackupDirCmd"/>
+		</kxAutobackupList>
+		<kxKOSCloudInfoCommand hotKey="I" ksoCmd="KOSCloudInfoCmd" icon="OS_CloudInfo" id="KOSCloudInfoCmd" customTip="KOSCloudInformationTip" text="@Guide" rbHotKey="I"/>
+		<kxKOSCloudFeedbackCommand hotKey="F" ksoCmd="KOSCloudFeedbackCmd" icon="OS_CloudFeedback" id="KOSCloudFeedbackCmd" customTip="KOSCloudFeedbackTip" text="@User Feedback" rbHotKey="F"/>
+		<KListCommand id="RB_CloudGuid" customTip="@Help us to improve WPS Office" text="@Help">
+			<KxOpenUrlCommand hotKey="d" referenceDisable="1" filter="support:DocerEntrance=true;lang!=zh_TW" url="http://www.docer.com/?from=wps_func_wpssp" icon="DocerURLEntrance" customTip="DocerURLEntranceTip" text="@Docer Entrance" qtspyName="DocerURLEntrance"/>
+		</KListCommand>
+		<KxExportWeiboImageCommand text2="@Export as Image" hotKey="OP" ksoCmd="ExportWeiboImageCmd" icon="exporttopicture32" id="ExportWeiboImageCmd" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="OP"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="PrintToPDF" aid="80004" filter="support:ExportToPDF=true" icon="ExportToPDF" id="PrintToPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF"/>
+		<KxWpsWeiboLayoutCommand text2="@WPS Microblog Layout" hotKey="P" ksoCmd="WpsWeiboLayoutCmd" icon="PivotTableShowFieldList" id="WpsWeiboLayoutCmd" text="@WPS Microblog Layout" rbHotKey="P"/>
+		<KxWeiboCommand text2="@Share to Microblog" hotKey="W" ksoCmd="WeiboCmd" icon="cweibo32" id="WeiboCmd" text="@Share to Microblog" rbHotKey="W"/>
+		<KxOpenWebWeiboCommand text2="@Share to Microblog Webpage" hotKey="O" ksoCmd="OpenWebWeiboCmd" icon="weibowebshare" id="OpenWebWeiboCmd" text="@Share to Microblog Webpage" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="OF" ksoCmd="PrintToPDF" aid="92106" filter="support:ExportToPDF=true" icon="ExportToPDF" id="ExportPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF" rbHotKey="OF"/>
+		<KxWeiboListCommand id="RB_WpsWeibo" text="@Laboratory">
+			<command idQ="PDF2Word" proxyCmdId="ProxyPDF2Word"/>
+			<command idQ="PDF2WordV2" proxyCmdId="ProxyPDF2WordV2"/>
+			<command idQ="ExportPDF"/>
+			<command idQ="ExportWeiboImageCmd"/>
+		</KxWeiboListCommand>
+		<KListCommand id="RB_SpecialTool" text="@Special Features">
+			<command idQ="PDF2Word" proxyCmdId="ProxyPDF2Word"/>
+			<command idQ="PDF2WordV2" proxyCmdId="ProxyPDF2WordV2"/>
+			<command idQ="ExportPDF"/>
+			<command idQ="ExportWeiboImageCmd"/>
+			<KxWpsWebPreviewListCommand hotKey="L" filter="lang=zh_CN;category=personal" customTip2="H5LinkManager" icon="H5Share" customTip="WebPreview" text="@Web Preview" qtspyName="H5Share" rbHotKey="L">
+				<KH5LinkMgrCommand hotKey="m" icon="H5LinkManager" text="@H5 link Manager" qtspyName="H5LinkManager"/>
+			</KxWpsWebPreviewListCommand>
+			<command idQ="OCRToolCmd" proxyCmdId="ProxyOCRToolCmd"/>
+		</KListCommand>
+		<KProxyCommand targetId="TranslationSelect" hotKey="h" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="ktranslation" autoLoad="true" filter="support:WPSTranslation=true" icon="selection_translate" id="ProxyTranslationSelect" text="@Translate selected text" qtspyName="translationselect"/>
+		<KListCommand id="RB_WorkTools">
+			<KListCommand hotKey="T" delayloadPath="commands/wps/WordTools.kuip" aid="92115" filter="l10n:WORD_TOOLS_SUPPORT=true;support:WordTools=true" icon="WordTools" id="WordTools" customTip="WordTools" text="@Text Tools" rbHotKey="T"/>
+			<command idQ="TextToSpeechOption" proxyCmdId="ProxyTextToSpeechOption"/>
+			<command idQ="DocumentFix" proxyCmdId="ProxyDocumentFix"/>
+			<command idQ="TranslationSelect" proxyCmdId="ProxyTranslationSelect"/>
+		</KListCommand>
+		<KListCommand id="RB_Donate" text="@Feedback and Support">
+			<KLayoutWidgetCommand filter="support:DonateMoney=true" fixedWidth="3"/>
+			<KxTpDonateMoneyCommand hotKey="M" screenGrabCmd="screenGrabEx" filter="support:DonateMoney=true" alias="TpDonateMoney" icon="DonateMoney" shortHint="@Donate" id="TpDonate" customTip="DonateMoney" text="@Donate" rbHotKey="M"/>
+			<KLayoutWidgetCommand filter="support:DocerEntrance/WorkSpace=true" fixedWidth="5"/>
+			<KxKsoHomepageTriggerCommand hotKey="D" ksoCmd="HomepagePlugin" filter="support:DocerEntrance/WorkSpace=true;support:IntranetVersion=false" icon="wpshome" id="WSKxKsoHomepageTriggerCommand" customTip="DocerHomeEntranceTip" text="@Docer Entrance" qtspyName="HomepagePlugin" rbHotKey="D"/>
+			<KxKsoHomepageTriggerCommand hotKey="D" ksoCmd="HomepagePlugin" filter="support:DocerEntrance/WorkSpace=true;support:IntranetVersion=true" icon="wpshome" id="WSKxKsoHomepageTriggerCommand" customTip="IntranetVersion DocerURLEntranceTip" text="@IntranetVersion Docer Entrance" qtspyName="HomepagePlugin" rbHotKey="D"/>
+		</KListCommand>
+		<KListCommand id="RB_XiuTang" text="@XiuTang">
+			<KxOpenUrlWidthSidCommand hotKey="H" filter="support:XiuTang=true" url="http://s.wps.cn/?from=tese-wps" icon="XiuTangH5" id="XiuTang" customTip="XiuTangH5Tip" text="@XiuTang H5" rbHotKey="H"/>
+			<command idQ="WpsXieDe"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_WorkSpace">
+			<command idQ="RB_UserCloud"/>
+			<separator/>
+			<command idQ="RB_Autobackup" filter="support:CloudAutoBackup=true"/>
+			<separator filter="support:CloudAutoBackup=true"/>
+			<command idQ="RB_SpecialTool"/>
+			<separator/>
+			<command idQ="RB_WorkTools"/>
+		</subcommand>
+	</subcommands>
+</shell>

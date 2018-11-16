@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<Background>
+		<Width>600</Width>
+		<Height>800</Height>
+	</Background>
+	<LayerList>
+		<LayerItem>
+			<Left>10</Left>
+			<Top>10</Top>
+			<Width>580</Width>
+			<Height>385</Height>
+			<Color>
+				<A>255</A>
+				<R>178</R>
+				<G>227</G>
+				<B>255</B>
+			</Color>
+		</LayerItem>
+		<LayerItem>
+			<Left>10</Left>
+			<Top>405</Top>
+			<Width>580</Width>
+			<Height>385</Height>
+			<Color>
+				<A>255</A>
+				<R>217</R>
+				<G>237</G>
+				<B>255</B>
+			</Color>
+		</LayerItem>
+	</LayerList>
+</Config>

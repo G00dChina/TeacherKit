@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Apothecary" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="564B3C"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="ECEDD1"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="93A299"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="CF543F"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="B5AE53"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="848058"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="E8B54D"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="786C71"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="CCCC00"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="B2B2B2"/>
+   </a:folHlink>
+</a:clrScheme>
+

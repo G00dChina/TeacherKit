@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- saved from url=(0025)http://www.techsmith.com/ -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        $VideoMetaData
+        <title>$HTMLTitle</title>
+        <script type="text/javascript" src="swfobject.js"></script>
+        $CamJSInclude
+        <script type="text/javascript" src="scormwrapper.js"></script>
+        <style type="text/css">
+            body 
+            {
+                background-color: #1a1a1a;
+                font: .8em/1.3em verdana,arial,helvetica,sans-serif;
+                text-align: center;
+            }
+            #media
+            {
+                margin-top: 40px;
+            }
+            #noUpdate
+            {
+                margin: 0 auto;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: x-small;
+                color: #cccccc;
+                text-align: left;
+                width: $Width px; 
+                height: $Height px;
+                padding: 40px;
+            }
+        </style>
+
+        <script type="text/javascript" charset="utf-8">
+        function detectIE()
+        // Returns the version of Internet Explorer or a -1
+        // (indicating the use of another browser).
+        {
+           var rv = false;
+           var path = ( document.location.href );
+           if (navigator.appName == 'Microsoft Internet Explorer' && path.indexOf("http") == 0 )
+           {
+              rv = true;
+           }
+           return rv;
+        }
+        function mediaLocation()
+        {
+           var path = ( document.location.href );
+           var baseindex = path.lastIndexOf("/");
+           var basex = path.substring( 0 , baseindex+1 );
+           if(detectIE()==true)
+              basex = encodeURI(basex);
+              basex = basex.split("%25").join("%");
+           return basex;
+        }
+
+        var flashvars = {}; 
+        flashvars.content = mediaLocation(); 
+
+        if(detectIE()==true)
+        {
+           var addvars = "$AutoStart$#$AdditionalFlashVars";
+           flashvars.autostart = addvars.split("thumb=").join( "thumb=" + encodeURIComponent(mediaLocation()) );
+        }
+        else
+           flashvars.autostart = "$AutoStart$#$AdditionalFlashVars";
+ 
+        var params = {}; 
+        params.quality = "best"; 
+        params.bgcolor = "#1a1a1a";
+        params.scale   = "$ScaleMode"; 
+        params.allowscriptaccess = "always"; 
+        params.allowfullscreen   = "$FullScreen"; 
+
+        var attributes = {}; 
+        attributes.id      = "csPlayer"; 
+        attributes.name    = "csPlayer"; 
+        attributes.classid = "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000";
+
+        if(detectIE()==true)
+           attributes.data  = mediaLocation() + encodeURI("$URI");
+        else
+           attributes.data  = "$URI";
+              
+        if(detectIE()==true)
+           swfobject.embedSWF( attributes.data , "media", "$Width", "$Height", "$PlayerVersion", "expressInstall.swf", flashvars, params, attributes);
+        else
+           swfobject.embedSWF( "$URI", "media", "$Width", "$Height", "$PlayerVersion", "expressInstall.swf", flashvars, params, attributes);  
+ 
+         </script>
+    </head>
+    <body onload="pageLoad();" onunload="dispose();">
+        <div id="media">
+          <div id="noUpdate">
+                        <p>$NeedMoreRecentFlash</p>
+          </div>
+        </div>
+        <!-- Users looking for simple object / embed tags can copy and paste the needed tags below.
+        <div id="media">
+            <object id="csSWF" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="$Width" height="$Height" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0">
+                <param name="src" value="$URI"/>
+                <param name="bgcolor" value="#1a1a1a"/>
+                <param name="quality" value="best"/>
+                <param name="allowScriptAccess" value="always"/>
+                <param name="allowFullScreen" value="$FullScreen"/>
+                <param name="scale" value="$ScaleMode"/>
+                <param name="flashVars" value="autostart=$AutoStart#$AdditionalFlashVars"/>
+                <embed name="csSWF" src="$URI" width="$Width" height="$Height" bgcolor="#1a1a1a" quality="best" allowScriptAccess="always" allowFullScreen="$FullScreen" scale="$ScaleMode" flashVars="autostart=$AutoStart$#$AdditionalFlashVars" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+            </object>
+        </div>
+        -->
+    </body>
+</html>

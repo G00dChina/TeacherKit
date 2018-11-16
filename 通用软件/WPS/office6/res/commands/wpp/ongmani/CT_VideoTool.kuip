@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_videotool" component="wpp">
+	<commands>
+		<KListCommand id="Media_Play">
+			<KxWppMediaPlayCommand icon="MediaPlay" text="@media play" rbHotKey="P"/>
+			<separator/>
+		</KListCommand>
+		<KxWppVolListCommand id="Media_Vol">
+			<KListCommand icon="MediaVol" customTip="MediaVol" text="@media vol" qtspyName="MediaVol" rbHotKey="V">
+				<KxWppMediaVolCommand index="3" text="@hight" qtspyName="MediaVolHight"/>
+				<KxWppMediaVolCommand index="2" text="@mid" qtspyName="MediaVolMid"/>
+				<KxWppMediaVolCommand index="1" text="@low" qtspyName="MediaVolLow"/>
+				<KxWppMediaVolCommand index="0" text="@mute" qtspyName="MediaVolMute"/>
+			</KListCommand>
+		</KxWppVolListCommand>
+		<KListCommand id="Media_Trim">
+			<KxWppEditVideoCommand icon="MediaTrim" customTip="VideoTrim" text="@media trim" rbHotKey="T"/>
+			<separator/>
+		</KListCommand>
+		<KxListCommand id="Media_Play_Setting" customTip="FormatObjectSize" text="@Size" rbFileMenuEmbed="1">
+			<KxWppNoTriggerCommand icon="VideoStart" customTip="VideoBegin" spaceHint="suitable" text="@begin" qtspyName="MediaStartModeLabel" rbHotKey=""/>
+			<KxWppMediaStartModeCommand customTip="VideoBegin" spaceHint="suitable" text="@Auto" qtspyName="MediaStartMode" rbHotKey="U"/>
+			<KLayoutWidgetCommand fixedWidth="6"/>
+			<KxWppVideoFullSceenCommand customTip="FullScreenPlay" spaceHint="suitable" text="@full screen paly" leftSpace="2" qtspyName="FullSceen" rbHotKey="C"/>
+			<KxWppMediaHideCommand customTip="HideVideo" spaceHint="suitable" text="@hidden when stop" leftSpace="2" qtspyName="HideMedia" rbHotKey="I"/>
+			<KLayoutWidgetCommand fixedWidth="6"/>
+			<KxWppMediaLoopCommand customTip="LoopVideo" spaceHint="suitable" text="@Loop until stopped" qtspyName="LoopMedia" rbHotKey="L"/>
+			<KxWppMediaRewindCommand customTip="RewindVideo" spaceHint="suitable" text="@Rewind movie when done playing" qtspyName="RewindMedia" rbHotKey="E"/>
+		</KxListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_VideoTool">
+			<command idQ="Media_Play"/>
+			<command idQ="Media_Vol"/>
+			<separator/>
+			<command idQ="Media_Trim"/>
+			<command idQ="Media_Play_Setting"/>
+		</subcommand>
+	</subcommands>
+</shell>

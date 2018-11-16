@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MotionCallouts name="草图运动" groupIndex="2">
+   <Callout type="sketch">
+      <name>草图运动椭圆</name>
+      <sourceFile>anim_drawnoval.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动矩形</name>
+      <sourceFile>anim_drawnsquare.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动箭头</name>
+      <sourceFile>anim_arrow.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动 √</name>
+      <sourceFile>anim_checkmark.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动直线</name>
+      <sourceFile>anim_straightline.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动完美椭圆</name>
+      <sourceFile>anim_drawnperfectoval.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动完美矩形</name>
+      <sourceFile>anim_drawnperfectrectangle.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动 X</name>
+      <sourceFile>anim_x.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动星形</name>
+      <sourceFile>anim_star.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+   <Callout type="sketch">
+      <name>草图运动轮廓箭头</name>
+      <sourceFile>anim_outlinearrow.svg</sourceFile>
+      <fadeInSeconds>2.00</fadeInSeconds>
+      <speedChangeMultiplier>200</speedChangeMultiplier>
+      <totalPauseFraction>.2</totalPauseFraction>
+   </Callout>
+
+</MotionCallouts>

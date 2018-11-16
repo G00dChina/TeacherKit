@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_slideshow" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="SlideShow" icon="FromCurrentSlide" shortcutHint="F5" id="SlideShow2" customTip="SlideShow" text="@From
+Beginning" rbHotKey="B"/>
+		<KListCommand id="RB_StartSlideShow" text="@Start Slide Show" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="SlideShow" icon="FromCurrentSlide" shortcutHint="F5" id="FromBeginningInSlideShowTab" customTip="SlideShow" text="@From Beginning" qtspyName="SlideShow" rbHotKey="B"/>
+			<command idQ="SlideShowFromCurrent"/>
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="CustomShows" icon="CustomShows" id="CustomShows" customTip="CustomShows" text="@Custom 
+Slide Shows" rbHotKey="M"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="HideSlide" icon="HideSlide" id="SkipSlide" customTip="SkipSlide" text="@Hide Slide" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="PlayTiming" aid="1120" icon="PlayTiming" id="Rehearse" customTip="Rehearse" text="@Rehearse 
+Timings" rbHotKey="T"/>
+		<KListCommand id="RB_SetUp" text="@Set Up" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand text2="@Slide Show
+Settings" hotKey="s" ksoCmd="SetUpShow" icon="SlideShowSettings" id="SetUpShow" customTip="SetUpShow" text="@Set Up Show" rbHotKey="S"/>
+			<command idQ="SkipSlide"/>
+			<command idQ="Rehearse"/>
+			<KxLegacyTriggerCommand ksoCmd="SpeakerNotes" icon="SpeakerNotes" id="SpeakerNotes" customTip="SpeakerNotes" text="@Speaker
+Notes" rbHotKey="P"/>
+		</KListCommand>
+		<KListCommand id="RB_SlideTransition">
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="SlideTransition" icon="SlideTransition" id="SlideTransitionInSlideShowTab" customTip="SlideTransition" text="@Slide
+Transition" qtspyName="SlideTransition" rbHotKey="L"/>
+		</KListCommand>
+		<KListCommand id="RB_CellPhoneControl">
+			<KxCellPhoneControlCommand hotKey="e" icon="Remote" id="cellphoneControl" customTip="cellphoneControl" text="@Cellphone Control"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_SlideShow">
+			<command idQ="RB_StartSlideShow"/>
+			<separator/>
+			<command idQ="RB_SetUp"/>
+			<separator/>
+			<command idQ="RB_SlideTransition"/>
+			<separator/>
+			<command idQ="RB_CellPhoneControl" filter="support:CellphoneControl=true"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

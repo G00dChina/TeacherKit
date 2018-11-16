@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<Overlay version="1.0.1">
+<Overlay_Filename>wedge.png</Overlay_Filename>
+<Overlay_Name>楔形</Overlay_Name>
+<Text_Top>30</Text_Top>
+<Text_Left>20</Text_Left>
+<Text_Bottom>30</Text_Bottom>
+<Text_Right>140</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+   <svg>
+      M 0,70
+      C 0, 31.34, 31.34, 0, 70 , 0
+      c 38.66,0, 250, 70, 250, 70
+      s -211.34, 70 -250, 70
+      C 31.34, 140, 0, 108.66, 0, 70
+      z
+   </svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>116.00</seamY>
+<shapeWidth>320</shapeWidth>
+<shapeHeight>140</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_design" component="wpp">
+	<commands>
+		<KListCommand id="RB_PageSetup" text="@Page Setup" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="u" ksoCmd="PageSetup" icon="PageSetup" id="PageSetupInDesignTab" customTip="PageSetup" text="@Page Setup" qtspyName="PageSetup" rbHotKey="S"/>
+			<KListCommand icon="SlideOrientation" id="SlideSize" customTip="SlideSize" text="@Slide Size" qtspyName="SlideOrientation">
+				<KxValueCommand ksoCmd="ChangeSlideAspectRatio" icon="StandScreen" index="1" text="@Stand Screen(4:3)" qtspyName="StandScreen"/>
+				<KxValueCommand ksoCmd="ChangeSlideAspectRatio" icon="WideScreen" index="2" text="@Wide Screen(16:9)" qtspyName="WideScreen"/>
+				<KxValueCommand ksoCmd="ChangeSlideAspectRatio" icon="PhoneScreen" index="3" text="@Phone Screen(9:16)" qtspyName="PhoneScreen"/>
+				<separator/>
+				<KxValueCommand ksoCmd="PageSetup" index="4" dialogHint="1" text="@Custom Size" qtspyName="PageSetup"/>
+			</KListCommand>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="ColorScheme" icon="ColorScheme" id="ColorScheme" customTip="ColorScheme" text="@Color
+Schemes" rbHotKey="TC"/>
+		<KListCommand id="RB_DesignTemplates" text="@Design Templates" rbFileMenuEmbed="1">
+			<KWpsAssistOnlineTemplateInlineCommand galleryWidth="542" filter="category=personal;support:WpsAssistOnlineTemplate=true;support:IntranetVersion=false" embedHint="1" id="KxOnlinetemplateInline" galleryHeight="100"/>
+			<KxWppDesignCommand galleryWidth="542" filter="category!=personal;support:WpsAssistOnlineTemplate=true" embedHint="1" id="DesignTemplatesGallery" galleryHeight="100" rbHotKey="H"/>
+			<KLayoutWidgetCommand filter="support:WpsAssistOnlineTemplate=true;support:IntranetVersion=false" fixedWidth="3"/>
+			<KImportTemplatesCommand hotKey="i" filter="lang!=ja_JP" icon="wppimporttemplates" id="ImportTemplates" customTip="importtemplates" spaceHint="autocompact" text="@Import Templates" qtspyName="wppimporttemplates" rbHotKey="I"/>
+			<KxLegacyTriggerCommand hotKey="k" ksoCmd="InvolvedTemplate" filter="lang=ja_JP" icon="InvolvedTemplate" id="InvolvedTemplate" customTip="InvolvedTemplate" text="@Involved
+Template" rbHotKey="K"/>
+			<KxLegacyTriggerCommand hotKey="k" ksoCmd="InvolvedTemplate" filter="lang!=ja_JP" icon="InvolvedTemplate" id="InvolvedTemplate" customTip="InvolvedTemplate" spaceHint="autocompact" text="@Involved
+Template" rbHotKey="K"/>
+			<KxWppDesignCommand galleryWidth="542" filter="support:WpsAssistOnlineTemplate!=true" embedHint="1" id="DesignGallery" galleryHeight="100" rbHotKey="H"/>
+			<separator filter="lang=ja_JP"/>
+			<KLayoutWidgetCommand filter="lang=ja_JP" fixedWidth="3"/>
+			<KxLegacyTriggerCommand hotKey="e" ksoCmd="SlideDesign" filter="lang=ja_JP" icon="SlideDesign" id="SlideDesignInDesignTab" customTip="SlideDesign" text="@Design Templates" qtspyName="SlideDesignInDesignTab" rbHotKey="E"/>
+		</KListCommand>
+		<KListCommand id="RB_EditTheme" text="@Edit Theme" rbFileMenuEmbed="1">
+			<KxThemesGalleryCommand ksoCmd="Themes" galleryWidth="330" bForceScrollToIndex="1" icon="theme" customTip="Themes" text="@Themes" qtspyName="Themes" rbHotKey="TT"/>
+			<KxThemeColorsGalleryCommand ksoCmd="ThemeColors" galleryWidth="250" bForceScrollToIndex="1" icon="themeColor" customTip="Theme Colors" spaceHint="autocompact" text="@Colors" qtspyName="ThemeColors" rbHotKey="TC"/>
+			<KxThemeFontsGalleryCommand ksoCmd="ThemeFonts" galleryWidth="250" bForceScrollToIndex="1" icon="themeFont" customTip="Theme Fonts" spaceHint="autocompact" text="@Fonts" qtspyName="ThemeFonts" rbHotKey="TF"/>
+			<KxThemeEffectsGalleryCommand ksoCmd="ThemeEffects" galleryWidth="350" bForceScrollToIndex="1" icon="themeEffect" customTip="Theme Effects" spaceHint="autocompact" text="@Effects" qtspyName="ThemeEffects" rbHotKey="TE"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="SaveBackgroundPicture" icon="SaveBackgroundAsPic" id="SaveBackgroundPicture" dialogHint="1" text="@Save Background Picture"/>
+		<KListCommand id="RB_BackDrop" text="@Background" rbFileMenuEmbed="1">
+			<KxListCommand hotKey="k" ksoCmd="Background" icon="Background" id="BackgroundMenu" customTip="Backdrop" text="@Background" qtspyName="Background" rbHotKey="B">
+				<command idQ="BackDrop"/>
+				<command idQ="SaveBackgroundPicture"/>
+			</KxListCommand>
+			<KxThemeColorsGalleryCommand ksoCmd="ThemeColors" galleryWidth="250" bForceScrollToIndex="1" icon="ColorScheme" id="ThemeColors" customTip="ThemeColors" text="@Color
+Schemes" qtspyName="ThemeColors" rbHotKey="TC"/>
+		</KListCommand>
+		<KListCommand id="RB_Design_PresentationTool">
+			<KxPresentationToolCommand icon="PresentationTool" id="PresentationTool" customTip="presentationTool" text="@Presentation Tool" rbHotKey="TP">
+				<command idQ="ReplaceFont RainBow"/>
+				<KxBatchSetFontCommand hotKey="S" icon="BatchSetFont" dialogHint="1" text="@Bulk Font Setting" qtspyName="BatchSetFont"/>
+				<KxCustomTextFormatCommand hotKey="C" icon="CustomTextFormat" dialogHint="1" text="@Custom Text Format" qtspyName="CustomTextFormat"/>
+				<KxInsertPicturesToMultiSlide hotKey="P" filter="support:InsertPicturesIntoMultiSlides=true" icon="InsertPicturesToMultiSlide" dialogHint="1" text="@Insert Picture To Multiple Slides" qtspyName="InsertPicturesToMultiSlide"/>
+			</KxPresentationToolCommand>
+		</KListCommand>
+		<KListCommand id="RB_Master">
+			<KxGallerySlideLayoutCommand galleryWidth="490" filter="category!=personal" icon="TaskPaneSlideLayout" id="SlideLayout" customTip="SlideLayouts" spaceHint="suitable" text="@Layout" qtspyName="SlideLayoutGallery"/>
+			<KxWppChangeLayoutWebGalleryCommand entrance="designTab_Layout" filter="lang=zh_CN;category=personal" icon="TaskPaneSlideLayout" id="SlideLayout" customTip="SlideLayouts" spaceHint="suitable" text="@Layout"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="ResetSlide" icon="ResetSlide" id="ResetSlide" customTip="ResetSlide" spaceHint="suitable" text="@Reset Slide" rbHotKey="R"/>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="SlideMaster" aid="971" faceid="30" icon="SlideMaster" id="Design_SlideMaster" customTip="SlideMaster" text="@Edit
+Slide Master" rbHotKey="M"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Design">
+			<command idQ="RB_DesignMagic"/>
+			<separator/>
+			<command idQ="RB_DesignTemplates"/>
+			<separator/>
+			<command idQ="RB_BackDrop"/>
+			<separator/>
+			<command idQ="RB_Master"/>
+			<separator/>
+			<command idQ="RB_PageSetup"/>
+			<separator/>
+			<command idQ="RB_Design_PresentationTool"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

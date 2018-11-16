@@ -1,0 +1,1 @@
+SwitchPlayer( "video1", "video2", "$VideoFileName", "$TOCAndVideoWidth", "$VideoHeight", "$FetchFileURLVideoObj$#$MediaDirectory", "$FlashQuality", "$SWFMinPlayerVersion", "$SWFBGColor", "$SWFLoadingMovURL", "$SWFMatchPreloadMovieSize" )

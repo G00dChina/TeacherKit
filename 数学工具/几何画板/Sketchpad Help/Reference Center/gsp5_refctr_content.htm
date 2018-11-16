@@ -1,0 +1,831 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="styles.css" rel="stylesheet">
+
+<!-- This block defines the styles of the TOC headings, change them as needed -->
+<style type="text/css">
+a { color: black; text-decoration: none }
+a:visited {color: black}
+a:hover { text-decoration: underline }
+.navtitle    { font-size: 14pt; font-weight: bold; margin-bottom: 16px; }
+.navbar      { font-size: 10pt; }
+span#navsearch {display: none;}
+
+ body { }
+.heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+.heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+.heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+.heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+.heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+.heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+.hilight1 { font-size: 10pt; color: #FFFFFF; background: #004101; text-decoration: none; }
+.hilight2 { font-size: 10pt; color: #FFFFFF; background: #004101; text-decoration: none; }
+.hilight3 { font-size: 10pt; color: #FFFFFF; background: #004101; text-decoration: none; }
+.hilight4 { font-size: 10pt; color: #FFFFFF; background: #004101; text-decoration: none; }
+.hilight5 { font-size: 10pt; color: #FFFFFF; background: #004101; text-decoration: none; }
+.hilight6 { font-size: 10pt; color: #FFFFFF; background: #004101; text-decoration: none; }
+
+/* TOC LIST CSS */
+#toc    { padding:0; margin:0 }
+#toc li { margin-top:2px; margin-left:0px; padding:1px; }
+#toc ul { padding-left:0; margin-left:-16px; }
+/* TOC LIST CSS */
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">
+ html {padding: 0; margin: 0;overflow-x: hidden;}
+ body { margin: 0; padding: 15px 0 0 10px;} 
+</style> 
+<![endif]-->
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+
+<body style = "padding:0; margin:0">
+<div style="background:url('logo-bg.gif')">
+  <img src="GSP5_ReferenceCenter.gif" alt="Sketchpad Reference Center" />
+</div>
+
+<div style="padding:10px;">
+
+<p class="navbar">
+<b>Contents</b>&nbsp;|&nbsp;<a href="gsp5_refctr_kwindex.htm">Index</a>&nbsp;
+<span id="navsearch">|&nbsp;<a href="gsp5_refctr_ftsearch.htm">Search</a></span>
+<hr size="1" />
+
+<!-- Placeholder for the TOC - this variable is REQUIRED! -->
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="sketchpadreference.htm" target="hmcontent"><span class="heading1" id="s1">Sketchpad Reference</span></a>
+</li>
+<li class="heading1" id="i2" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="objects.htm" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Objects</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="objects_points.htm" target="hmcontent"><span class="heading2" id="s2.1">Points</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="objects_segmentsrayslines.htm" target="hmcontent"><span class="heading2" id="s2.2">Segments, Rays, and Lines</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="objects_circles.htm" target="hmcontent"><span class="heading2" id="s2.3">Circles</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="objects_arcs.htm" target="hmcontent"><span class="heading2" id="s2.4">Arcs</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="objects_polygonsinteriors.htm" target="hmcontent"><span class="heading2" id="s2.5">Polygons and Other Interiors</span></a>
+</li>
+<li class="heading2" id="i2.6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="objects_loci.htm" target="hmcontent"><span class="heading2" id="s2.6" ondblclick="return dblclicked(this)">Loci</span></a>
+<ul id="ul2.6" style="list-style-type:none">
+<li class="heading3" id="i2.6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.1" href="objects_loci_anatomy.htm" target="hmcontent"><span class="heading3" id="s2.6.1">Anatomy of a Locus</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.7" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="objects_pictures.htm" target="hmcontent"><span class="heading2" id="s2.7" ondblclick="return dblclicked(this)">Pictures and Drawings</span></a>
+<ul id="ul2.7" style="list-style-type:none">
+<li class="heading3" id="i2.7.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.7.1" href="importing_pictures.htm" target="hmcontent"><span class="heading3" id="s2.7.1">Importing Pictures</span></a>
+</li>
+<li class="heading3" id="i2.7.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.7.2" href="transforming_pictures.htm" target="hmcontent"><span class="heading3" id="s2.7.2">Transforming Pictures</span></a>
+</li>
+<li class="heading3" id="i2.7.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.7.3" href="working_with_pictures.htm" target="hmcontent"><span class="heading3" id="s2.7.3">Working with Pictures and Drawings</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.8" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="objects_iter.htm" target="hmcontent"><span class="heading2" id="s2.8" ondblclick="return dblclicked(this)">Iterations and Iterated Images</span></a>
+<ul id="ul2.8" style="list-style-type:none">
+<li class="heading3" id="i2.8.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.1" href="objects_iter_geometric.htm" target="hmcontent"><span class="heading3" id="s2.8.1">A Geometric Iteration</span></a>
+</li>
+<li class="heading3" id="i2.8.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.2" href="objects_iter_numeric.htm" target="hmcontent"><span class="heading3" id="s2.8.2">A Numeric Iteration</span></a>
+</li>
+<li class="heading3" id="i2.8.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.3" href="objects_iter_working.htm" target="hmcontent"><span class="heading3" id="s2.8.3">Working with Iterations</span></a>
+</li>
+<li class="heading3" id="i2.8.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.4" href="howto_sierpinski.htm" target="hmcontent"><span class="heading3" id="s2.8.4">How to Construct a Sierpiński Gasket</span></a>
+</li>
+<li class="heading3" id="i2.8.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.8.5" href="objects_iter_props.htm" target="hmcontent"><span class="heading3" id="s2.8.5">Iteration Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="objects_measurements.htm" target="hmcontent"><span class="heading2" id="s2.9">Measurements</span></a>
+</li>
+<li class="heading2" id="i2.10" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="objects_parameters.htm" target="hmcontent"><span class="heading2" id="s2.10" ondblclick="return dblclicked(this)">Parameters</span></a>
+<ul id="ul2.10" style="list-style-type:none">
+<li class="heading3" id="i2.10.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.1" href="objects_parameters_props.htm" target="hmcontent"><span class="heading3" id="s2.10.1">Parameter Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="objects_calculations.htm" target="hmcontent"><span class="heading2" id="s2.11">Calculations</span></a>
+</li>
+<li class="heading2" id="i2.12" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="objects_tables.htm" target="hmcontent"><span class="heading2" id="s2.12" ondblclick="return dblclicked(this)">Tables</span></a>
+<ul id="ul2.12" style="list-style-type:none">
+<li class="heading3" id="i2.12.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.12.1" href="objects_tables_props.htm" target="hmcontent"><span class="heading3" id="s2.12.1">Table Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.13" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.13" href="objects_coordsys.htm" target="hmcontent"><span class="heading2" id="s2.13" ondblclick="return dblclicked(this)">Coordinate Systems and Axes</span></a>
+<ul id="ul2.13" style="list-style-type:none">
+<li class="heading3" id="i2.13.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.13.1" href="objects_coordsys_multiple.htm" target="hmcontent"><span class="heading3" id="s2.13.1">Multiple Coordinate Systems</span></a>
+</li>
+<li class="heading3" id="i2.13.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.13.2" href="objects_coordsys_axisprops.htm" target="hmcontent"><span class="heading3" id="s2.13.2">Axis Properties</span></a>
+</li>
+<li class="heading3" id="i2.13.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.13.3" href="shortcuts_howto_geoboard.htm" target="hmcontent"><span class="heading3" id="s2.13.3">How to Construct a Geoboard</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.14" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.14" href="objects_functions.htm" target="hmcontent"><span class="heading2" id="s2.14" ondblclick="return dblclicked(this)">Functions</span></a>
+<ul id="ul2.14" style="list-style-type:none">
+<li class="heading3" id="i2.14.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.14.1" href="using_functions.htm" target="hmcontent"><span class="heading3" id="s2.14.1">Using Functions</span></a>
+</li>
+<li class="heading3" id="i2.14.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.14.2" href="objects_functions_ddfprops.htm" target="hmcontent"><span class="heading3" id="s2.14.2">Data-Defined Function Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.15" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.15" href="objects_functionplots.htm" target="hmcontent"><span class="heading2" id="s2.15">Function Plots</span></a>
+</li>
+<li class="heading2" id="i2.16" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.16" href="object_parametriccurve.htm" target="hmcontent"><span class="heading2" id="s2.16">Parametric Plots</span></a>
+</li>
+<li class="heading2" id="i2.17" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.17" href="objects_captions.htm" target="hmcontent"><span class="heading2" id="s2.17" ondblclick="return dblclicked(this)">Captions</span></a>
+<ul id="ul2.17" style="list-style-type:none">
+<li class="heading3" id="i2.17.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.17.1" href="hot_text.htm" target="hmcontent"><span class="heading3" id="s2.17.1">Hot Text™</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.18" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.18" href="objects_markers.htm" target="hmcontent"><span class="heading2" id="s2.18" ondblclick="return dblclicked(this)">Angle Markers and Tick Marks</span></a>
+<ul id="ul2.18" style="list-style-type:none">
+<li class="heading3" id="i2.18.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.18.1" href="angle_markers.htm" target="hmcontent"><span class="heading3" id="s2.18.1">Angle Markers</span></a>
+</li>
+<li class="heading3" id="i2.18.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.18.2" href="tick_markers.htm" target="hmcontent"><span class="heading3" id="s2.18.2">Tick Marks</span></a>
+</li>
+<li class="heading3" id="i2.18.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.18.3" href="objects_markers_props.htm" target="hmcontent"><span class="heading3" id="s2.18.3">Marker Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.19" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.19" href="objects_btns.htm" target="hmcontent"><span class="heading2" id="s2.19" ondblclick="return dblclicked(this)">Action Buttons</span></a>
+<ul id="ul2.19" style="list-style-type:none">
+<li class="heading3" id="i2.19.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.1" href="objects_btns_hideshowprops.htm" target="hmcontent"><span class="heading3" id="s2.19.1">Hide/Show Buttons and Properties</span></a>
+</li>
+<li class="heading3" id="i2.19.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.2" href="objects_btns_animateprops.htm" target="hmcontent"><span class="heading3" id="s2.19.2">Animation Buttons and Properties</span></a>
+</li>
+<li class="heading3" id="i2.19.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.3" href="objects_btns_moveprops.htm" target="hmcontent"><span class="heading3" id="s2.19.3">Movement Buttons and Properties</span></a>
+</li>
+<li class="heading3" id="i2.19.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.4" href="objects_btns_presentprops.htm" target="hmcontent"><span class="heading3" id="s2.19.4">Presentation Buttons and Properties</span></a>
+</li>
+<li class="heading3" id="i2.19.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.5" href="sound_buttons.htm" target="hmcontent"><span class="heading3" id="s2.19.5">Sound Buttons</span></a>
+</li>
+<li class="heading3" id="i2.19.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.6" href="objects_btns_linkprops.htm" target="hmcontent"><span class="heading3" id="s2.19.6">Link Buttons and Properties</span></a>
+</li>
+<li class="heading3" id="i2.19.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.19.7" href="objects_btns_scrollprops.htm" target="hmcontent"><span class="heading3" id="s2.19.7">Scroll Buttons and Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.20" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.20" href="objects_attrib.htm" target="hmcontent"><span class="heading2" id="s2.20" ondblclick="return dblclicked(this)">Common Object Attributes</span></a>
+<ul id="ul2.20" style="list-style-type:none">
+<li class="heading3" id="i2.20.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.20.1" href="objects_attrib_props.htm" target="hmcontent"><span class="heading3" id="s2.20.1">Object Properties</span></a>
+</li>
+<li class="heading3" id="i2.20.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.20.2" href="objects_attrib_relations.htm" target="hmcontent"><span class="heading3" id="s2.20.2">Parent-Child Relationships</span></a>
+</li>
+<li class="heading3" id="i2.20.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.20.3" href="objects_attrib_labels.htm" target="hmcontent"><span class="heading3" id="s2.20.3">Object Labels</span></a>
+</li>
+<li class="heading3" id="i2.20.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.20.4" href="objects_attrib_labelprops.htm" target="hmcontent"><span class="heading3" id="s2.20.4">Label Properties</span></a>
+</li>
+<li class="heading3" id="i2.20.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.20.5" href="objects_attrib_display.htm" target="hmcontent"><span class="heading3" id="s2.20.5">Display Attributes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.21" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a2.21" href="objects_cats.htm" target="hmcontent"><span class="heading2" id="s2.21" ondblclick="return dblclicked(this)">Object Categories</span></a>
+<ul id="ul2.21" style="list-style-type:none">
+<li class="heading3" id="i2.21.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.1" href="objects_cats_paths.htm" target="hmcontent"><span class="heading3" id="s2.21.1">Path Objects</span></a>
+</li>
+<li class="heading3" id="i2.21.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.2" href="objects_cats_straight.htm" target="hmcontent"><span class="heading3" id="s2.21.2">Straight Objects</span></a>
+</li>
+<li class="heading3" id="i2.21.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.3" href="objects_cats_layered.htm" target="hmcontent"><span class="heading3" id="s2.21.3">Layered Objects</span></a>
+</li>
+<li class="heading3" id="i2.21.4" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.4" href="translucent_objects.htm" target="hmcontent"><span class="heading3" id="s2.21.4" ondblclick="return dblclicked(this)">Translucent Objects</span></a>
+<ul id="ul2.21.4" style="list-style-type:none">
+<li class="heading4" id="i2.21.4.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a2.21.4.1" href="objects_cats_opacity_props.htm" target="hmcontent"><span class="heading4" id="s2.21.4.1">Opacity Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.21.5" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.5" href="objects_cats_values.htm" target="hmcontent"><span class="heading3" id="s2.21.5" ondblclick="return dblclicked(this)">Values</span></a>
+<ul id="ul2.21.5" style="list-style-type:none">
+<li class="heading4" id="i2.21.5.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a2.21.5.1" href="objects_cats_values_props.htm" target="hmcontent"><span class="heading4" id="s2.21.5.1">Value Properties</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.21.6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.6" href="objects_cats_plots.htm" target="hmcontent"><span class="heading3" id="s2.21.6" ondblclick="return dblclicked(this)">Plots and Sampled Objects</span></a>
+<ul id="ul2.21.6" style="list-style-type:none">
+<li class="heading4" id="i2.21.6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a2.21.6.1" href="objects_cats_plot_locprops.htm" target="hmcontent"><span class="heading4" id="s2.21.6.1">Plot Properties for a Locus or Sampled Transformed Path</span></a>
+</li>
+<li class="heading4" id="i2.21.6.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a2.21.6.2" href="objects_cats_plot_fnprops.htm" target="hmcontent"><span class="heading4" id="s2.21.6.2">Plot Properties for a Function Plot or Parametric Plot</span></a>
+</li>
+<li class="heading4" id="i2.21.6.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a2.21.6.3" href="objects_cat_plot_sampledpic.htm" target="hmcontent"><span class="heading4" id="s2.21.6.3">Plot Properties for a Sampled Transformed Picture</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i2.21.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a2.21.7" href="objects_cats_text.htm" target="hmcontent"><span class="heading3" id="s2.21.7">Text Objects</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="tools.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">Tools</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="tools_arrow.htm" target="hmcontent"><span class="heading2" id="s3.1" ondblclick="return dblclicked(this)">Arrow Tools</span></a>
+<ul id="ul3.1" style="list-style-type:none">
+<li class="heading3" id="i3.1.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.1.1" href="drag_objects.htm" target="hmcontent"><span class="heading3" id="s3.1.1">Drag Objects</span></a>
+</li>
+<li class="heading3" id="i3.1.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.1.2" href="tools_arrow_selectdeselect.htm" target="hmcontent"><span class="heading3" id="s3.1.2">Select and Deselect Objects</span></a>
+</li>
+<li class="heading3" id="i3.1.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.1.3" href="tools_arrow_otheractions.htm" target="hmcontent"><span class="heading3" id="s3.1.3">Other Arrow Actions</span></a>
+</li>
+<li class="heading3" id="i3.1.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.1.4" href="howto_zoom.htm" target="hmcontent"><span class="heading3" id="s3.1.4">How to Zoom In and Out on a Sketch</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="tools_point.htm" target="hmcontent"><span class="heading2" id="s3.2">Point Tool</span></a>
+</li>
+<li class="heading2" id="i3.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="tools_compass.htm" target="hmcontent"><span class="heading2" id="s3.3">Compass Tool</span></a>
+</li>
+<li class="heading2" id="i3.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="tools_straight.htm" target="hmcontent"><span class="heading2" id="s3.4">Straightedge Tools</span></a>
+</li>
+<li class="heading2" id="i3.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="tools_polygon.htm" target="hmcontent"><span class="heading2" id="s3.5">Polygon Tools</span></a>
+</li>
+<li class="heading2" id="i3.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.6" href="tools_text.htm" target="hmcontent"><span class="heading2" id="s3.6">Text Tool</span></a>
+</li>
+<li class="heading2" id="i3.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.7" href="tools_marker.htm" target="hmcontent"><span class="heading2" id="s3.7">Marker Tool</span></a>
+</li>
+<li class="heading2" id="i3.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.8" href="tools_objectinformation.htm" target="hmcontent"><span class="heading2" id="s3.8">Information Tool</span></a>
+</li>
+<li class="heading2" id="i3.9" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a3.9" href="tools_cust.htm" target="hmcontent"><span class="heading2" id="s3.9" ondblclick="return dblclicked(this)">Custom Tools</span></a>
+<ul id="ul3.9" style="list-style-type:none">
+<li class="heading3" id="i3.9.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.9.1" href="tools_cust_menu.htm" target="hmcontent"><span class="heading3" id="s3.9.1">Custom Tools Menu</span></a>
+</li>
+<li class="heading3" id="i3.9.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.9.2" href="tools_cust_using.htm" target="hmcontent"><span class="heading3" id="s3.9.2">Use a Custom Tool</span></a>
+</li>
+<li class="heading3" id="i3.9.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.9.3" href="tools_cust_making.htm" target="hmcontent"><span class="heading3" id="s3.9.3">Make a Custom Tool</span></a>
+</li>
+<li class="heading3" id="i3.9.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.9.4" href="howto_bisectortool.htm" target="hmcontent"><span class="heading3" id="s3.9.4">How to Make a Perpendicular Bisector Tool</span></a>
+</li>
+<li class="heading3" id="i3.9.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a3.9.5" href="tools_cust_toolfolder.htm" target="hmcontent"><span class="heading3" id="s3.9.5">The Tool Folder</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="menus.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Menus</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="menus_file.htm" target="hmcontent"><span class="heading2" id="s4.1" ondblclick="return dblclicked(this)">File Menu</span></a>
+<ul id="ul4.1" style="list-style-type:none">
+<li class="heading3" id="i4.1.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.1" href="menus_file_newsketch.htm" target="hmcontent"><span class="heading3" id="s4.1.1">New Sketch</span></a>
+</li>
+<li class="heading3" id="i4.1.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.2" href="menus_file_open.htm" target="hmcontent"><span class="heading3" id="s4.1.2">Open</span></a>
+</li>
+<li class="heading3" id="i4.1.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.3" href="menus_file_open_sll.htm" target="hmcontent"><span class="heading3" id="s4.1.3">Sketchpad LessonLink</span></a>
+</li>
+<li class="heading3" id="i4.1.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.4" href="menus_file_open_sketchexchange.htm" target="hmcontent"><span class="heading3" id="s4.1.4">Sketchpad Sketch Exchange</span></a>
+</li>
+<li class="heading3" id="i4.1.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.5" href="menus_file_save.htm" target="hmcontent"><span class="heading3" id="s4.1.5">Save</span></a>
+</li>
+<li class="heading3" id="i4.1.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.6" href="menus_file_saveas.htm" target="hmcontent"><span class="heading3" id="s4.1.6">Save As</span></a>
+</li>
+<li class="heading3" id="i4.1.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.7" href="menus_file_close.htm" target="hmcontent"><span class="heading3" id="s4.1.7">Close</span></a>
+</li>
+<li class="heading3" id="i4.1.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.8" href="menus_file_documentoptions.htm" target="hmcontent"><span class="heading3" id="s4.1.8">Document Options</span></a>
+</li>
+<li class="heading3" id="i4.1.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.9" href="menus_file_pagesetup.htm" target="hmcontent"><span class="heading3" id="s4.1.9">Page Setup</span></a>
+</li>
+<li class="heading3" id="i4.1.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.10" href="menus_file_printpreview.htm" target="hmcontent"><span class="heading3" id="s4.1.10">Print Preview</span></a>
+</li>
+<li class="heading3" id="i4.1.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.11" href="menus_file_print.htm" target="hmcontent"><span class="heading3" id="s4.1.11">Print</span></a>
+</li>
+<li class="heading3" id="i4.1.12" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.12" href="menus_file_quit.htm" target="hmcontent"><span class="heading3" id="s4.1.12">Quit</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.2" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="menus_edit.htm" target="hmcontent"><span class="heading2" id="s4.2" ondblclick="return dblclicked(this)">Edit Menu</span></a>
+<ul id="ul4.2" style="list-style-type:none">
+<li class="heading3" id="i4.2.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.1" href="menus_edit_undo.htm" target="hmcontent"><span class="heading3" id="s4.2.1">Undo</span></a>
+</li>
+<li class="heading3" id="i4.2.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.2" href="menus_edit_redo.htm" target="hmcontent"><span class="heading3" id="s4.2.2">Redo</span></a>
+</li>
+<li class="heading3" id="i4.2.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.3" href="menus_edit_cut.htm" target="hmcontent"><span class="heading3" id="s4.2.3">Cut</span></a>
+</li>
+<li class="heading3" id="i4.2.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.4" href="menus_edit_copy.htm" target="hmcontent"><span class="heading3" id="s4.2.4">Copy</span></a>
+</li>
+<li class="heading3" id="i4.2.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.5" href="menus_edit_paste.htm" target="hmcontent"><span class="heading3" id="s4.2.5">Paste</span></a>
+</li>
+<li class="heading3" id="i4.2.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.6" href="menus_edit_clear.htm" target="hmcontent"><span class="heading3" id="s4.2.6">Clear</span></a>
+</li>
+<li class="heading3" id="i4.2.7" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.7" href="menus_edit_btns.htm" target="hmcontent"><span class="heading3" id="s4.2.7" ondblclick="return dblclicked(this)">Action Buttons</span></a>
+<ul id="ul4.2.7" style="list-style-type:none">
+<li class="heading4" id="i4.2.7.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.1" href="menus_edit_btns_hideshow.htm" target="hmcontent"><span class="heading4" id="s4.2.7.1">Hide/Show</span></a>
+</li>
+<li class="heading4" id="i4.2.7.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.2" href="menus_edit_btns_animation.htm" target="hmcontent"><span class="heading4" id="s4.2.7.2">Animation</span></a>
+</li>
+<li class="heading4" id="i4.2.7.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.3" href="menus_edit_btns_movement.htm" target="hmcontent"><span class="heading4" id="s4.2.7.3">Movement</span></a>
+</li>
+<li class="heading4" id="i4.2.7.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.4" href="menus_edit_btns_present.htm" target="hmcontent"><span class="heading4" id="s4.2.7.4">Presentation</span></a>
+</li>
+<li class="heading4" id="i4.2.7.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.5" href="menus_edit_btns_sound.htm" target="hmcontent"><span class="heading4" id="s4.2.7.5">Sound</span></a>
+</li>
+<li class="heading4" id="i4.2.7.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.6" href="menus_edit_btns_link.htm" target="hmcontent"><span class="heading4" id="s4.2.7.6">Link</span></a>
+</li>
+<li class="heading4" id="i4.2.7.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.7.7" href="menus_edit_btns_scroll.htm" target="hmcontent"><span class="heading4" id="s4.2.7.7">Scroll</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.2.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.8" href="menus_edit_selectall.htm" target="hmcontent"><span class="heading3" id="s4.2.8">Select All</span></a>
+</li>
+<li class="heading3" id="i4.2.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.9" href="menus_edit_selectparents.htm" target="hmcontent"><span class="heading3" id="s4.2.9">Select Parents</span></a>
+</li>
+<li class="heading3" id="i4.2.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.10" href="menus_edit_selectchildren.htm" target="hmcontent"><span class="heading3" id="s4.2.10">Select Children</span></a>
+</li>
+<li class="heading3" id="i4.2.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.11" href="menus_edit_croppicture.htm" target="hmcontent"><span class="heading3" id="s4.2.11">Crop Picture to Polygon</span></a>
+</li>
+<li class="heading3" id="i4.2.12" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.12" href="menus_edit_splitmerge.htm" target="hmcontent"><span class="heading3" id="s4.2.12" ondblclick="return dblclicked(this)">Split/Merge</span></a>
+<ul id="ul4.2.12" style="list-style-type:none">
+<li class="heading4" id="i4.2.12.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.12.1" href="shortcuts_howto_splitmerge.htm" target="hmcontent"><span class="heading4" id="s4.2.12.1">How to Use Split and Merge to Explore Constructions</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.2.13" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.13" href="menus_edit_editdefinition.htm" target="hmcontent"><span class="heading3" id="s4.2.13">Edit Definition</span></a>
+</li>
+<li class="heading3" id="i4.2.14" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.14" href="menus_edit_properties.htm" target="hmcontent"><span class="heading3" id="s4.2.14">Properties</span></a>
+</li>
+<li class="heading3" id="i4.2.15" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.15" href="menus_edit_preferences.htm" target="hmcontent"><span class="heading3" id="s4.2.15" ondblclick="return dblclicked(this)">Preferences</span></a>
+<ul id="ul4.2.15" style="list-style-type:none">
+<li class="heading4" id="i4.2.15.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.2.15.1" href="menus_edit_preferences_adv.htm" target="hmcontent"><span class="heading4" id="s4.2.15.1">Advanced Preferences</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.3" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="menus_display.htm" target="hmcontent"><span class="heading2" id="s4.3" ondblclick="return dblclicked(this)">Display Menu</span></a>
+<ul id="ul4.3" style="list-style-type:none">
+<li class="heading3" id="i4.3.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.1" href="menus_display_pointstyle.htm" target="hmcontent"><span class="heading3" id="s4.3.1">Point Style</span></a>
+</li>
+<li class="heading3" id="i4.3.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.2" href="menus_display_linestyle.htm" target="hmcontent"><span class="heading3" id="s4.3.2">Line Style</span></a>
+</li>
+<li class="heading3" id="i4.3.3" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.3" href="menus_display_color.htm" target="hmcontent"><span class="heading3" id="s4.3.3" ondblclick="return dblclicked(this)">Color</span></a>
+<ul id="ul4.3.3" style="list-style-type:none">
+<li class="heading4" id="i4.3.3.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.1" href="menus_display_color_param.htm" target="hmcontent"><span class="heading4" id="s4.3.3.1">Parametric Color</span></a>
+</li>
+<li class="heading4" id="i4.3.3.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.3.2" href="menus_display_color_other.htm" target="hmcontent"><span class="heading4" id="s4.3.3.2">Other Color</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.3.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.4" href="menus_display_text.htm" target="hmcontent"><span class="heading3" id="s4.3.4">Text</span></a>
+</li>
+<li class="heading3" id="i4.3.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.5" href="menus_display_hideobjects.htm" target="hmcontent"><span class="heading3" id="s4.3.5">Hide Objects</span></a>
+</li>
+<li class="heading3" id="i4.3.6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.6" href="menus_display_showallhidden.htm" target="hmcontent"><span class="heading3" id="s4.3.6" ondblclick="return dblclicked(this)">Show All Hidden</span></a>
+<ul id="ul4.3.6" style="list-style-type:none">
+<li class="heading4" id="i4.3.6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.3.6.1" href="shortcuts_howto_showjustone.htm" target="hmcontent"><span class="heading4" id="s4.3.6.1">How to Show Just One Hidden Object</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.3.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.7" href="menus_display_showhidelabel.htm" target="hmcontent"><span class="heading3" id="s4.3.7">Show/Hide Labels</span></a>
+</li>
+<li class="heading3" id="i4.3.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.8" href="menus_display_labelobjects.htm" target="hmcontent"><span class="heading3" id="s4.3.8">Label Object</span></a>
+</li>
+<li class="heading3" id="i4.3.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.9" href="menus_display_trace.htm" target="hmcontent"><span class="heading3" id="s4.3.9">Trace</span></a>
+</li>
+<li class="heading3" id="i4.3.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.10" href="menus_display_erasetraces.htm" target="hmcontent"><span class="heading3" id="s4.3.10">Erase Traces</span></a>
+</li>
+<li class="heading3" id="i4.3.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.11" href="menus_display_animate.htm" target="hmcontent"><span class="heading3" id="s4.3.11">Animate</span></a>
+</li>
+<li class="heading3" id="i4.3.12" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.12" href="menus_display_incdecspeed.htm" target="hmcontent"><span class="heading3" id="s4.3.12">Increase Speed/Decrease Speed</span></a>
+</li>
+<li class="heading3" id="i4.3.13" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.13" href="menus_display_stopanimation.htm" target="hmcontent"><span class="heading3" id="s4.3.13">Stop Animation</span></a>
+</li>
+<li class="heading3" id="i4.3.14" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.14" href="menus_display_textpalette.htm" target="hmcontent"><span class="heading3" id="s4.3.14">Show/Hide Text Palette</span></a>
+</li>
+<li class="heading3" id="i4.3.15" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.15" href="menus_display_motioncontrol.htm" target="hmcontent"><span class="heading3" id="s4.3.15">Show/Hide Motion Controller</span></a>
+</li>
+<li class="heading3" id="i4.3.16" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.16" href="menus_display_toolbox.htm" target="hmcontent"><span class="heading3" id="s4.3.16">Show/Hide Toolbox</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.4" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="menus_construct.htm" target="hmcontent"><span class="heading2" id="s4.4" ondblclick="return dblclicked(this)">Construct Menu</span></a>
+<ul id="ul4.4" style="list-style-type:none">
+<li class="heading3" id="i4.4.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.1" href="menus_construct_pointonobj.htm" target="hmcontent"><span class="heading3" id="s4.4.1">Point on Object</span></a>
+</li>
+<li class="heading3" id="i4.4.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.2" href="menus_construct_midpoint.htm" target="hmcontent"><span class="heading3" id="s4.4.2">Midpoint</span></a>
+</li>
+<li class="heading3" id="i4.4.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.3" href="menus_construct_intersect.htm" target="hmcontent"><span class="heading3" id="s4.4.3">Intersection</span></a>
+</li>
+<li class="heading3" id="i4.4.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.4" href="menus_construct_segment.htm" target="hmcontent"><span class="heading3" id="s4.4.4">Segment, Ray, and Line</span></a>
+</li>
+<li class="heading3" id="i4.4.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.5" href="menus_construct_parallel.htm" target="hmcontent"><span class="heading3" id="s4.4.5">Parallel Line</span></a>
+</li>
+<li class="heading3" id="i4.4.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.6" href="menus_construct_perpendic.htm" target="hmcontent"><span class="heading3" id="s4.4.6">Perpendicular Line</span></a>
+</li>
+<li class="heading3" id="i4.4.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.7" href="menus_construct_bisector.htm" target="hmcontent"><span class="heading3" id="s4.4.7">Angle Bisector</span></a>
+</li>
+<li class="heading3" id="i4.4.8" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.8" href="menus_construct_circctrpt.htm" target="hmcontent"><span class="heading3" id="s4.4.8" ondblclick="return dblclicked(this)">Circle by Center+Point</span></a>
+<ul id="ul4.4.8" style="list-style-type:none">
+<li class="heading4" id="i4.4.8.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.8.1" href="howto_fixedlengthsegment.htm" target="hmcontent"><span class="heading4" id="s4.4.8.1">How to Construct a Segment of Fixed Length</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.4.9" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.9" href="menus_construct_circctrrad.htm" target="hmcontent"><span class="heading3" id="s4.4.9" ondblclick="return dblclicked(this)">Circle by Center+Radius</span></a>
+<ul id="ul4.4.9" style="list-style-type:none">
+<li class="heading4" id="i4.4.9.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.9.1" href="howto_congruentsegments.htm" target="hmcontent"><span class="heading4" id="s4.4.9.1">How to Construct Congruent Segments</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.4.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.10" href="menus_construct_arconcircle.htm" target="hmcontent"><span class="heading3" id="s4.4.10">Arc on Circle</span></a>
+</li>
+<li class="heading3" id="i4.4.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.11" href="menus_construct_arc3points.htm" target="hmcontent"><span class="heading3" id="s4.4.11">Arc through 3 Points</span></a>
+</li>
+<li class="heading3" id="i4.4.12" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.12" href="menus_construct_int.htm" target="hmcontent"><span class="heading3" id="s4.4.12" ondblclick="return dblclicked(this)">Interior</span></a>
+<ul id="ul4.4.12" style="list-style-type:none">
+<li class="heading4" id="i4.4.12.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.12.1" href="menus_construct_int_poly.htm" target="hmcontent"><span class="heading4" id="s4.4.12.1">Polygon Interior</span></a>
+</li>
+<li class="heading4" id="i4.4.12.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.12.2" href="menus_construct_int_circle.htm" target="hmcontent"><span class="heading4" id="s4.4.12.2">Circle Interior</span></a>
+</li>
+<li class="heading4" id="i4.4.12.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.12.3" href="menus_construct_int_sector.htm" target="hmcontent"><span class="heading4" id="s4.4.12.3">Arc Sector</span></a>
+</li>
+<li class="heading4" id="i4.4.12.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.4.12.4" href="menus_construct_int_segment.htm" target="hmcontent"><span class="heading4" id="s4.4.12.4">Arc Segment</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.4.13" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.13" href="menus_construct_locus.htm" target="hmcontent"><span class="heading3" id="s4.4.13">Locus</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.5" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.5" href="menus_trans.htm" target="hmcontent"><span class="heading2" id="s4.5" ondblclick="return dblclicked(this)">Transform Menu</span></a>
+<ul id="ul4.5" style="list-style-type:none">
+<li class="heading3" id="i4.5.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.1" href="menus_trans_mark.htm" target="hmcontent"><span class="heading3" id="s4.5.1">Mark Commands</span></a>
+</li>
+<li class="heading3" id="i4.5.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.2" href="menus_trans_markcenter.htm" target="hmcontent"><span class="heading3" id="s4.5.2">Mark Center</span></a>
+</li>
+<li class="heading3" id="i4.5.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.3" href="menus_trans_markmirror.htm" target="hmcontent"><span class="heading3" id="s4.5.3">Mark Mirror</span></a>
+</li>
+<li class="heading3" id="i4.5.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.4" href="menus_trans_markangle.htm" target="hmcontent"><span class="heading3" id="s4.5.4">Mark Angle</span></a>
+</li>
+<li class="heading3" id="i4.5.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.5" href="menus_trans_markratio.htm" target="hmcontent"><span class="heading3" id="s4.5.5">Mark Ratio/Mark Segment Ratio/Mark Scale Factor</span></a>
+</li>
+<li class="heading3" id="i4.5.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.6" href="menus_trans_markvector.htm" target="hmcontent"><span class="heading3" id="s4.5.6">Mark Vector</span></a>
+</li>
+<li class="heading3" id="i4.5.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.7" href="menus_trans_markdistance.htm" target="hmcontent"><span class="heading3" id="s4.5.7">Mark Distance</span></a>
+</li>
+<li class="heading3" id="i4.5.8" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.8" href="menus_trans_translate.htm" target="hmcontent"><span class="heading3" id="s4.5.8" ondblclick="return dblclicked(this)">Translate</span></a>
+<ul id="ul4.5.8" style="list-style-type:none">
+<li class="heading4" id="i4.5.8.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.8.1" href="menus_trans_translate_polar.htm" target="hmcontent"><span class="heading4" id="s4.5.8.1">Polar Translation Vector</span></a>
+</li>
+<li class="heading4" id="i4.5.8.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.8.2" href="menus_trans_translate_rect.htm" target="hmcontent"><span class="heading4" id="s4.5.8.2">Rectangular Translation Vector</span></a>
+</li>
+<li class="heading4" id="i4.5.8.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.8.3" href="menus_trans_translate_mrked.htm" target="hmcontent"><span class="heading4" id="s4.5.8.3">Marked Translation Vector</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.5.9" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.9" href="menus_trans_rotate.htm" target="hmcontent"><span class="heading3" id="s4.5.9" ondblclick="return dblclicked(this)">Rotate</span></a>
+<ul id="ul4.5.9" style="list-style-type:none">
+<li class="heading4" id="i4.5.9.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.9.1" href="howto_fixedangle.htm" target="hmcontent"><span class="heading4" id="s4.5.9.1">How to Construct an Angle of Fixed Measure</span></a>
+</li>
+<li class="heading4" id="i4.5.9.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.9.2" href="howto_congruentangles.htm" target="hmcontent"><span class="heading4" id="s4.5.9.2">How to Construct Congruent Angles</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.5.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.10" href="menus_trans_dilate.htm" target="hmcontent"><span class="heading3" id="s4.5.10">Dilate</span></a>
+</li>
+<li class="heading3" id="i4.5.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.11" href="menus_trans_reflect.htm" target="hmcontent"><span class="heading3" id="s4.5.11">Reflect</span></a>
+</li>
+<li class="heading3" id="i4.5.12" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.12" href="menus_trans_iter.htm" target="hmcontent"><span class="heading3" id="s4.5.12" ondblclick="return dblclicked(this)">Iterate</span></a>
+<ul id="ul4.5.12" style="list-style-type:none">
+<li class="heading4" id="i4.5.12.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.12.1" href="menus_trans_iter_usedialog.htm" target="hmcontent"><span class="heading4" id="s4.5.12.1">Using the Iterate Dialog Box</span></a>
+</li>
+<li class="heading4" id="i4.5.12.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.5.12.2" href="menus_trans_iter_multmaps.htm" target="hmcontent"><span class="heading4" id="s4.5.12.2">Multiple Iteration Maps</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.5.13" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.13" href="menus_trans_custdefine.htm" target="hmcontent"><span class="heading3" id="s4.5.13">Define Custom Transform</span></a>
+</li>
+<li class="heading3" id="i4.5.14" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.5.14" href="menus_trans_custedit.htm" target="hmcontent"><span class="heading3" id="s4.5.14">Edit Custom Transforms</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.6" href="menus_measure.htm" target="hmcontent"><span class="heading2" id="s4.6" ondblclick="return dblclicked(this)">Measure Menu</span></a>
+<ul id="ul4.6" style="list-style-type:none">
+<li class="heading3" id="i4.6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.1" href="menus_measure_length.htm" target="hmcontent"><span class="heading3" id="s4.6.1">Length</span></a>
+</li>
+<li class="heading3" id="i4.6.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.2" href="menus_measure_distance.htm" target="hmcontent"><span class="heading3" id="s4.6.2">Distance</span></a>
+</li>
+<li class="heading3" id="i4.6.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.3" href="menus_measure_perimeter.htm" target="hmcontent"><span class="heading3" id="s4.6.3">Perimeter</span></a>
+</li>
+<li class="heading3" id="i4.6.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.4" href="menus_measure_circumference.htm" target="hmcontent"><span class="heading3" id="s4.6.4">Circumference</span></a>
+</li>
+<li class="heading3" id="i4.6.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.5" href="menus_measure_angle.htm" target="hmcontent"><span class="heading3" id="s4.6.5">Angle</span></a>
+</li>
+<li class="heading3" id="i4.6.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.6" href="menus_measure_area.htm" target="hmcontent"><span class="heading3" id="s4.6.6">Area</span></a>
+</li>
+<li class="heading3" id="i4.6.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.7" href="menus_measure_arcangle.htm" target="hmcontent"><span class="heading3" id="s4.6.7">Arc Angle</span></a>
+</li>
+<li class="heading3" id="i4.6.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.8" href="menus_measure_arclength.htm" target="hmcontent"><span class="heading3" id="s4.6.8">Arc Length</span></a>
+</li>
+<li class="heading3" id="i4.6.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.9" href="menus_measure_radius.htm" target="hmcontent"><span class="heading3" id="s4.6.9">Radius</span></a>
+</li>
+<li class="heading3" id="i4.6.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.10" href="menus_measure_ratio.htm" target="hmcontent"><span class="heading3" id="s4.6.10">Ratio</span></a>
+</li>
+<li class="heading3" id="i4.6.11" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.11" href="menus_measure_valueofpoint.htm" target="hmcontent"><span class="heading3" id="s4.6.11" ondblclick="return dblclicked(this)">Value of Point</span></a>
+<ul id="ul4.6.11" style="list-style-type:none">
+<li class="heading4" id="i4.6.11.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a4.6.11.1" href="shortcuts_howto_slider.htm" target="hmcontent"><span class="heading4" id="s4.6.11.1">How to Construct a Slider</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i4.6.12" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.12" href="menus_measure_coordinates.htm" target="hmcontent"><span class="heading3" id="s4.6.12">Coordinates</span></a>
+</li>
+<li class="heading3" id="i4.6.13" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.13" href="menus_measure_abscissa.htm" target="hmcontent"><span class="heading3" id="s4.6.13">Abscissa (x) / Polar Distance (r)</span></a>
+</li>
+<li class="heading3" id="i4.6.14" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.14" href="menus_measure_ordinate.htm" target="hmcontent"><span class="heading3" id="s4.6.14">Ordinate (y) / Polar Direction (θ)</span></a>
+</li>
+<li class="heading3" id="i4.6.15" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.15" href="menus_measure_coorddist.htm" target="hmcontent"><span class="heading3" id="s4.6.15">Coordinate Distance</span></a>
+</li>
+<li class="heading3" id="i4.6.16" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.16" href="menus_measure_slope.htm" target="hmcontent"><span class="heading3" id="s4.6.16">Slope</span></a>
+</li>
+<li class="heading3" id="i4.6.17" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.6.17" href="menus_measure_equation.htm" target="hmcontent"><span class="heading3" id="s4.6.17">Equation</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.7" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.7" href="menus_number.htm" target="hmcontent"><span class="heading2" id="s4.7" ondblclick="return dblclicked(this)">Number Menu</span></a>
+<ul id="ul4.7" style="list-style-type:none">
+<li class="heading3" id="i4.7.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.1" href="menus_number_newparameter.htm" target="hmcontent"><span class="heading3" id="s4.7.1">New Parameter</span></a>
+</li>
+<li class="heading3" id="i4.7.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.2" href="menus_number_calculate.htm" target="hmcontent"><span class="heading3" id="s4.7.2">Calculate</span></a>
+</li>
+<li class="heading3" id="i4.7.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.3" href="menus_number_tabulate.htm" target="hmcontent"><span class="heading3" id="s4.7.3">Tabulate</span></a>
+</li>
+<li class="heading3" id="i4.7.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.4" href="menus_number_addtabledata.htm" target="hmcontent"><span class="heading3" id="s4.7.4">Add Table Data</span></a>
+</li>
+<li class="heading3" id="i4.7.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.5" href="menus_number_removetbldata.htm" target="hmcontent"><span class="heading3" id="s4.7.5">Remove Table Data</span></a>
+</li>
+<li class="heading3" id="i4.7.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.6" href="menus_graph_newfunction.htm" target="hmcontent"><span class="heading3" id="s4.7.6">New Function</span></a>
+</li>
+<li class="heading3" id="i4.7.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.7" href="menus_graph_derivative.htm" target="hmcontent"><span class="heading3" id="s4.7.7">Define Derivative Function</span></a>
+</li>
+<li class="heading3" id="i4.7.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.7.8" href="menus_number_deffndrawing.htm" target="hmcontent"><span class="heading3" id="s4.7.8">Define Function from Drawing or Picture</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.8" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.8" href="menus_graph.htm" target="hmcontent"><span class="heading2" id="s4.8" ondblclick="return dblclicked(this)">Graph Menu</span></a>
+<ul id="ul4.8" style="list-style-type:none">
+<li class="heading3" id="i4.8.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.1" href="menus_graph_definecoordsys.htm" target="hmcontent"><span class="heading3" id="s4.8.1">Define Coordinate System</span></a>
+</li>
+<li class="heading3" id="i4.8.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.2" href="menus_graph_markcoordsystem.htm" target="hmcontent"><span class="heading3" id="s4.8.2">Mark Coordinate System</span></a>
+</li>
+<li class="heading3" id="i4.8.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.3" href="menus_graph_gridform.htm" target="hmcontent"><span class="heading3" id="s4.8.3">Grid Form</span></a>
+</li>
+<li class="heading3" id="i4.8.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.4" href="menus_graph_showgrid.htm" target="hmcontent"><span class="heading3" id="s4.8.4">Show Grid</span></a>
+</li>
+<li class="heading3" id="i4.8.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.5" href="menus_graph_dotted_grid.htm" target="hmcontent"><span class="heading3" id="s4.8.5">Dotted Grid</span></a>
+</li>
+<li class="heading3" id="i4.8.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.6" href="menus_graph_snappoints.htm" target="hmcontent"><span class="heading3" id="s4.8.6">Snap Points</span></a>
+</li>
+<li class="heading3" id="i4.8.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.7" href="menus_graph_plotvalue.htm" target="hmcontent"><span class="heading3" id="s4.8.7">Plot Value on Axis</span></a>
+</li>
+<li class="heading3" id="i4.8.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.8" href="menus_graph_plotpoints.htm" target="hmcontent"><span class="heading3" id="s4.8.8">Plot Points/Plot as (x, y)/Plot as (r, θ)</span></a>
+</li>
+<li class="heading3" id="i4.8.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.9" href="menus_graph_plottabledata.htm" target="hmcontent"><span class="heading3" id="s4.8.9">Plot Table Data</span></a>
+</li>
+<li class="heading3" id="i4.8.10" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.10" href="menus_graph_plotfunction.htm" target="hmcontent"><span class="heading3" id="s4.8.10">Plot Function/Plot New Function</span></a>
+</li>
+<li class="heading3" id="i4.8.11" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.8.11" href="menus_graph_plotcurve.htm" target="hmcontent"><span class="heading3" id="s4.8.11">Plot Parametric Curve</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.9" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.9" href="menus_window.htm" target="hmcontent"><span class="heading2" id="s4.9">Window Menu</span></a>
+</li>
+<li class="heading2" id="i4.10" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.10" href="menus_help.htm" target="hmcontent"><span class="heading2" id="s4.10" ondblclick="return dblclicked(this)">Help Menu</span></a>
+<ul id="ul4.10" style="list-style-type:none">
+<li class="heading3" id="i4.10.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.10.1" href="license_information.htm" target="hmcontent"><span class="heading3" id="s4.10.1">License Information</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.11" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a4.11" href="menus_context.htm" target="hmcontent"><span class="heading2" id="s4.11" ondblclick="return dblclicked(this)">Context Menu</span></a>
+<ul id="ul4.11" style="list-style-type:none">
+<li class="heading3" id="i4.11.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.11.1" href="menus_context_frontback.htm" target="hmcontent"><span class="heading3" id="s4.11.1">Bring to Front/Send to Back</span></a>
+</li>
+<li class="heading3" id="i4.11.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.11.2" href="increase_decrease_value.htm" target="hmcontent"><span class="heading3" id="s4.11.2">Increase Value/Decrease Value</span></a>
+</li>
+<li class="heading3" id="i4.11.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.11.3" href="increase_res_decrease_res.htm" target="hmcontent"><span class="heading3" id="s4.11.3">Increase Resolution/Decrease Resolution</span></a>
+</li>
+<li class="heading3" id="i4.11.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a4.11.4" href="increase_iter_decrease_iter.htm" target="hmcontent"><span class="heading3" id="s4.11.4">Increase Iterations/Decrease Iterations</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="windows.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Windows</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="windows_docs.htm" target="hmcontent"><span class="heading2" id="s5.1" ondblclick="return dblclicked(this)">Documents</span></a>
+<ul id="ul5.1" style="list-style-type:none">
+<li class="heading3" id="i5.1.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.1" href="windows_docs_docwindows.htm" target="hmcontent"><span class="heading3" id="s5.1.1">Document Windows</span></a>
+</li>
+<li class="heading3" id="i5.1.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.2" href="windows_docs_docoptions.htm" target="hmcontent"><span class="heading3" id="s5.1.2">Document Options and Tool Options</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.2" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="windows_calculator.htm" target="hmcontent"><span class="heading2" id="s5.2" ondblclick="return dblclicked(this)">Calculator</span></a>
+<ul id="ul5.2" style="list-style-type:none">
+<li class="heading3" id="i5.2.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.1" href="windows_calculator_parts.htm" target="hmcontent"><span class="heading3" id="s5.2.1">Parts of the Calculator</span></a>
+</li>
+<li class="heading3" id="i5.2.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.2" href="shortcuts_howto_signum.htm" target="hmcontent"><span class="heading3" id="s5.2.2">How to Use Signum to Construct a Piecewise Function</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.3" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="windows_motctrl.htm" target="hmcontent"><span class="heading2" id="s5.3" ondblclick="return dblclicked(this)">Motion Controller</span></a>
+<ul id="ul5.3" style="list-style-type:none">
+<li class="heading3" id="i5.3.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.1" href="windows_motctrl_parts.htm" target="hmcontent"><span class="heading3" id="s5.3.1">Parts of the Motion Controller</span></a>
+</li>
+<li class="heading3" id="i5.3.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.2" href="windows_motctrl_using.htm" target="hmcontent"><span class="heading3" id="s5.3.2">Using the Motion Controller</span></a>
+</li>
+<li class="heading3" id="i5.3.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.3" href="windows_motctrl_animprinc.htm" target="hmcontent"><span class="heading3" id="s5.3.3">Principles of Animation</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.4" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="windows_txtpal.htm" target="hmcontent"><span class="heading2" id="s5.4" ondblclick="return dblclicked(this)">Text Palette</span></a>
+<ul id="ul5.4" style="list-style-type:none">
+<li class="heading3" id="i5.4.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.1" href="windows_txtpal_using.htm" target="hmcontent"><span class="heading3" id="s5.4.1">Using the Text Palette</span></a>
+</li>
+<li class="heading3" id="i5.4.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.2" href="windows_txtpal_mathnotation.htm" target="hmcontent"><span class="heading3" id="s5.4.2">Using Mathematical Notation in a Caption</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="windows_properties.htm" target="hmcontent"><span class="heading2" id="s5.5">Properties</span></a>
+</li>
+<li class="heading2" id="i5.6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.6" href="windows_prefs.htm" target="hmcontent"><span class="heading2" id="s5.6" ondblclick="return dblclicked(this)">Preferences</span></a>
+<ul id="ul5.6" style="list-style-type:none">
+<li class="heading3" id="i5.6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.6.1" href="windows_prefs_units.htm" target="hmcontent"><span class="heading3" id="s5.6.1">Units Preferences</span></a>
+</li>
+<li class="heading3" id="i5.6.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.6.2" href="windows_prefs_precision.htm" target="hmcontent"><span class="heading3" id="s5.6.2">User Tip: Accuracy vs. Precision</span></a>
+</li>
+<li class="heading3" id="i5.6.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.6.3" href="windows_prefs_color.htm" target="hmcontent"><span class="heading3" id="s5.6.3">Color Preferences</span></a>
+</li>
+<li class="heading3" id="i5.6.4" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.6.4" href="windows_prefs_text.htm" target="hmcontent"><span class="heading3" id="s5.6.4" ondblclick="return dblclicked(this)">Text Preferences</span></a>
+<ul id="ul5.6.4" style="list-style-type:none">
+<li class="heading4" id="i5.6.4.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a5.6.4.1" href="windows_prefs_textstyle.htm" target="hmcontent"><span class="heading4" id="s5.6.4.1">Text Style Preferences</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.6.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.6.5" href="windows_prefs_tools.htm" target="hmcontent"><span class="heading3" id="s5.6.5">Tools Preferences</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.7" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.7" href="windows_advprefs.htm" target="hmcontent"><span class="heading2" id="s5.7" ondblclick="return dblclicked(this)">Advanced Preferences</span></a>
+<ul id="ul5.7" style="list-style-type:none">
+<li class="heading3" id="i5.7.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.7.1" href="windows_advprefs_export.htm" target="hmcontent"><span class="heading3" id="s5.7.1">Export Preferences</span></a>
+</li>
+<li class="heading3" id="i5.7.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.7.2" href="windows_advprefs_sampling.htm" target="hmcontent"><span class="heading3" id="s5.7.2">Sampling Preferences</span></a>
+</li>
+<li class="heading3" id="i5.7.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.7.3" href="windows_advprefs_system.htm" target="hmcontent"><span class="heading3" id="s5.7.3">System Preferences</span></a>
+</li>
+<li class="heading3" id="i5.7.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.7.4" href="windows_advprefs_editclrwin.htm" target="hmcontent"><span class="heading3" id="s5.7.4">Edit the Color Menu for Windows</span></a>
+</li>
+<li class="heading3" id="i5.7.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.7.5" href="windows_advprefs_editclrmac.htm" target="hmcontent"><span class="heading3" id="s5.7.5">Edit the Color Menu for Macintosh</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.8" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.8" href="windows_script.htm" target="hmcontent"><span class="heading2" id="s5.8" ondblclick="return dblclicked(this)">Script View</span></a>
+<ul id="ul5.8" style="list-style-type:none">
+<li class="heading3" id="i5.8.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.8.1" href="windows_script_givenssteps.htm" target="hmcontent"><span class="heading3" id="s5.8.1">Givens and Steps of a Tool</span></a>
+</li>
+<li class="heading3" id="i5.8.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.8.2" href="windows_script_apply.htm" target="hmcontent"><span class="heading3" id="s5.8.2">Apply the Script View Step-by-Step</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.9" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a5.9" href="windows_colorpicker.htm" target="hmcontent"><span class="heading2" id="s5.9" ondblclick="return dblclicked(this)">Color Picker</span></a>
+<ul id="ul5.9" style="list-style-type:none">
+<li class="heading3" id="i5.9.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.9.1" href="windows_colorpicker_mac.htm" target="hmcontent"><span class="heading3" id="s5.9.1">Macintosh Color Picker</span></a>
+</li>
+<li class="heading3" id="i5.9.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a5.9.2" href="windows_colorpicker_win.htm" target="hmcontent"><span class="heading3" id="s5.9.2">Windows Color Picker</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="shortcuts.htm" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Keyboard</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="shortcuts_specialkeys.htm" target="hmcontent"><span class="heading2" id="s6.1">Special Keys</span></a>
+</li>
+<li class="heading2" id="i6.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="caption-editing_keys.htm" target="hmcontent"><span class="heading2" id="s6.2">Caption-Editing Keys</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="whatsnew.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">What's New</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="whatsnew_newfeatures.htm" target="hmcontent"><span class="heading2" id="s7.1">New Features in Version 5</span></a>
+</li>
+<li class="heading2" id="i7.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="whatsnew_v4users_reusework.htm" target="hmcontent"><span class="heading2" id="s7.2">Reusing Your Version 4 Work</span></a>
+</li>
+<li class="heading2" id="i7.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="whatsnew_since500.htm" target="hmcontent"><span class="heading2" id="s7.3">Changes Since Release 5.00</span></a>
+</li>
+<li class="heading2" id="i7.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="whatsnew_sampledocs.htm" target="hmcontent"><span class="heading2" id="s7.4">Sample Documents</span></a>
+</li>
+<li class="heading2" id="i7.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a7.5" href="sketchpad_explorer.htm" target="hmcontent"><span class="heading2" id="s7.5">Sketchpad Explorer</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="app.htm" target="hmcontent"><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Appendix</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="app_constructionsandtechniq.htm" target="hmcontent"><span class="heading2" id="s8.1">Special Constructions and Techniques</span></a>
+</li>
+<li class="heading2" id="i8.2" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href="jsp.htm" target="hmcontent"><span class="heading2" id="s8.2" ondblclick="return dblclicked(this)">JavaSketchpad and Web-Based Dynamic Geometry</span></a>
+<ul id="ul8.2" style="list-style-type:none">
+<li class="heading3" id="i8.2.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.1" href="jsp_weboverview.htm" target="hmcontent"><span class="heading3" id="s8.2.1">Web Publishing Overview</span></a>
+</li>
+<li class="heading3" id="i8.2.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.2" href="jsp_javafolder.htm" target="hmcontent"><span class="heading3" id="s8.2.2">Essential JavaSketchpad Folder Structure</span></a>
+</li>
+<li class="heading3" id="i8.2.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.3" href="jsp_createjava.htm" target="hmcontent"><span class="heading3" id="s8.2.3">Create a JavaSketchpad Web Page</span></a>
+</li>
+<li class="heading3" id="i8.2.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.4" href="jsp_modifyyourpages.htm" target="hmcontent"><span class="heading3" id="s8.2.4">Modify and Publish Your Pages</span></a>
+</li>
+<li class="heading3" id="i8.2.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.5" href="jsp_whatcangowrong.htm" target="hmcontent"><span class="heading3" id="s8.2.5">What Can Go Wrong</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.3" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="adv.htm" target="hmcontent"><span class="heading2" id="s8.3" ondblclick="return dblclicked(this)">Advanced Topics</span></a>
+<ul id="ul8.3" style="list-style-type:none">
+<li class="heading3" id="i8.3.1" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.1" href="adv_text.htm" target="hmcontent"><span class="heading3" id="s8.3.1" ondblclick="return dblclicked(this)">Advanced Text Topics</span></a>
+<ul id="ul8.3.1" style="list-style-type:none">
+<li class="heading4" id="i8.3.1.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.1" href="unicode.htm" target="hmcontent"><span class="heading4" id="s8.3.1.1">Unicode</span></a>
+</li>
+<li class="heading4" id="i8.3.1.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.2" href="adv_text_lossy.htm" target="hmcontent"><span class="heading4" id="s8.3.1.2">Unrecognized Text Format</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.2" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.2" href="adv_tool.htm" target="hmcontent"><span class="heading3" id="s8.3.2" ondblclick="return dblclicked(this)">Advanced Tool Topics</span></a>
+<ul id="ul8.3.2" style="list-style-type:none">
+<li class="heading4" id="i8.3.2.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.2.1" href="adv_tool_missing_given.htm" target="hmcontent"><span class="heading4" id="s8.3.2.1">Use a Custom Tool as a Custom Command</span></a>
+</li>
+<li class="heading4" id="i8.3.2.2" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.2.2" href="adv_tool_alttoolfolders.htm" target="hmcontent"><span class="heading4" id="s8.3.2.2">Alternate Tool Folders</span></a>
+</li>
+<li class="heading4" id="i8.3.2.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.2.3" href="adv_tool_automatch.htm" target="hmcontent"><span class="heading4" id="s8.3.2.3">Automatically Match a Given Object</span></a>
+</li>
+<li class="heading4" id="i8.3.2.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.2.4" href="adv_tool_generatelabels.htm" target="hmcontent"><span class="heading4" id="s8.3.2.4">Generate Specific Labels</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.3" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.3" href="distance_units_across_platform.htm" target="hmcontent"><span class="heading3" id="s8.3.3">Distance Units Across Platforms</span></a>
+</li>
+<li class="heading3" id="i8.3.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.4" href="adv_graphicsexport.htm" target="hmcontent"><span class="heading3" id="s8.3.4">Advanced Graphics Export</span></a>
+</li>
+<li class="heading3" id="i8.3.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.5" href="opening_remote_documents.htm" target="hmcontent"><span class="heading3" id="s8.3.5">Opening Remote Documents</span></a>
+</li>
+<li class="heading3" id="i8.3.6" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.6" href="adv_menustructure.htm" target="hmcontent"><span class="heading3" id="s8.3.6">Sketchpad's Menu Structure</span></a>
+</li>
+<li class="heading3" id="i8.3.7" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.7" href="adv_sketchpadsmath.htm" target="hmcontent"><span class="heading3" id="s8.3.7">Sketchpad's Internal Mathematics</span></a>
+</li>
+<li class="heading3" id="i8.3.8" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.8" href="adv_commandlineflags.htm" target="hmcontent"><span class="heading3" id="s8.3.8">Command-Line Flags for Sketchpad (Windows Version)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.4" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a8.4" href="app_techsupport.htm" target="hmcontent"><span class="heading2" id="s8.4">Technical and Installation Support</span></a>
+</li>
+<li class="heading2" id="i8.5" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a8.5" href="app_license.htm" target="hmcontent"><span class="heading2" id="s8.5">License Agreement</span></a>
+</li>
+<li class="heading2" id="i8.6" data-bg="button_closedbook.gif;button_openbook.gif" style="background:url(button_openbook.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading2" id="a8.6" href="app_credits.htm" target="hmcontent"><span class="heading2" id="s8.6" ondblclick="return dblclicked(this)">Credits</span></a>
+<ul id="ul8.6" style="list-style-type:none">
+<li class="heading3" id="i8.6.1" style="background:url(button_topic.gif) no-repeat;padding-left:34px" onclick="return clicked(this,event)"><a class="heading3" id="a8.6.1" href="lg_public_license.htm" target="hmcontent"><span class="heading3" id="s8.6.1">LG Public License</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('button_topic.gif','button_openbook.gif','button_closedbook.gif');</script>
+<hr size="1" /><p><span style="font-size: 8px">© 2012 KCP Technologies</span></p>
+</div>
+
+<script type="text/javascript">
+document.getElementById("navsearch").style.display="inline";
+</script> 
+</body>
+</html>
+
+
+
+
+
+
+
+

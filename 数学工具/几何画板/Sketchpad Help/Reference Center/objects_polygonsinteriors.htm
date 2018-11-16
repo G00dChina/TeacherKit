@@ -1,0 +1,260 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Polygons and Other Interiors</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Polygons,Interiors,Circle Interiors,Arc Sectors,Arc Segments,Arcs,Arcs Sectors,Arcs Segments,Objects,Objects polygons,Objects circle interiors,Objects arc sectors,Objects arc segments">
+   <meta name="description" content="Polygons and Other Interiors">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_polygonsinteriors.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Polygons and Other Interiors</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Polygons and Other Interiors</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_arcs.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_loci.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Polygons and other interiors are Sketchpad objects that define a region of a plane. Interiors give your sketches substance and color, and allow you to measure the areas and perimeters of figures. Use the perimeter or circumference of an interior as a path on which to construct or animate points</span><span style="font-size: 15px;">.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are four kinds of interiors: polygons, circle interiors, arc sectors, and arc segments.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:bottom;">
+<td style="vertical-align:bottom; height:89px; padding:0px;"><p class="p_Image_Centered_Large"><img src="interior_polygon_zoom60.png" width="109" height="79" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Polygon</span></p>
+</td>
+<td style="vertical-align:bottom; height:89px; padding:0px;"><p class="p_Image_Centered_Large"><img src="interior_circle_zoom60.png" width="79" height="79" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Circle Interior</span></p>
+</td>
+<td style="vertical-align:bottom; height:89px; padding:0px;"><p class="p_Image_Centered_Large"><img src="interior_arc_sector_zoom60.png" width="80" height="79" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Arc Sector Interior</span></p>
+</td>
+<td style="vertical-align:bottom; height:89px; padding:0px;"><p class="p_Image_Centered_Large"><img src="interior_arc_segment_zoom60.png" width="47" height="79" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Arc Segment Interior</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">Polygons and interiors are <a href="objects_cats_paths.htm" class="topiclink">path objects</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can change the <a href="objects_attrib_props.htm" class="topiclink">object properties</a>, <a href="objects_attrib_labelprops.htm" class="topiclink">label properties</a>, and <a href="objects_attrib_display.htm" class="topiclink">display attributes</a> of interiors.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Construct an Interior</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int_poly.htm" class="topiclink">Construct | Polygon Interior</a></span><span class="f_BodyText"> to construct a polygon defined by three or more selected vertex points.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_polygon.htm" class="topiclink">Polygon</a></span><span class="f_BodyText"> tool to construct a polygon. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int_circle.htm" class="topiclink">Construct | Circle Interior</a></span><span class="f_BodyText"> to construct the interior of each selected <a href="objects_circles.htm" class="topiclink">circle</a>.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int_sector.htm" class="topiclink">Construct | Arc Interior | Arc Sector</a></span><span class="f_BodyText"> to construct the sector interior of each selected <a href="objects_arcs.htm" class="topiclink">arc</a>. An arc sector is bounded by the arc and by the radii to the two endpoints of the arc.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_int_segment.htm" class="topiclink">Construct | Arc Interior | Arc Segment</a></span><span class="f_BodyText"> to construct the segment interior of each selected <a href="objects_arcs.htm" class="topiclink">arc</a>. An arc segment is bounded by the arc and by the chord connecting the endpoints of the arc.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Use an Interior</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Construct a point on an interior using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_point.htm" class="topiclink">Point</a></span><span class="f_BodyText"> tool or the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_pointonobj.htm" class="topiclink">Construct | Point on Object</a></span><span class="f_BodyText"> command. Then <a href="windows_motctrl_animprinc.htm" class="topiclink">animate</a> the point around the interior or use the point as the driver for a <a href="objects_loci.htm" class="topiclink">locus</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Attach an independent point to the perimeter or circumference of the interior by using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_splitmerge.htm" class="topiclink">Edit | Merge</a></span><span class="f_BodyText"> command.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Change an interior’s layer using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_context_frontback.htm" class="topiclink">Bring to Front</a></span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_context_frontback.htm" class="topiclink">Send to Back</a></span><span class="f_BodyText"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Change the opacity of an interior using </span><span class="f_BodyText" style="font-weight: bold;"><a href="objects_cats_opacity_props.htm" class="topiclink">Edit | Properties | Opacity</a>.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Use a Polygon</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Use a polygon in the same way as other interiors. In addition, there are some special ways in which you can use or change polygons.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Construct all the segment edges of a selected polygon by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectparents.htm" class="topiclink">Edit | Select Parents</a></span><span class="f_BodyText"> and then choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_segment.htm" class="topiclink">Construct | Segments</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Construct a new polygon and its segment edges at the same time by using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_polygon.htm" class="topiclink">Polygon and Edges</a></span><span class="f_BodyText"> tool.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Construct a polygon’s first intersection with a ray using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_intersect.htm" class="topiclink">Construct | First Intersection</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Crop a picture to a polygon using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_croppicture.htm" class="topiclink">Edit | Crop Picture to Polygon</a>, </span><span class="f_BodyText">so that only the portion of the picture within the polygon is visible.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Create an <a href="angle_markers.htm" class="topiclink">angle marker</a> by pressing the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_marker.htm" class="topiclink">Marker</a></span><span class="f_BodyText"> tool on a vertex and dragging into the interior of the polygon. </span></p><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Polygon Frame: </span><span class="f_BodyText">A polygon can be displayed with or without a frame that shows its perimeter. The frame is an optional display attribute of the polygon. It does not represent the segment edges of the polygon: You cannot select an individual segment edge of the frame or perform any construction or measurement on the frame, except for constructions or measurements that apply to the polygon itself. To construct the midpoint of a segment edge or measure the length of a segment edge of the polygon, you must explicitly construct that segment edge.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="margin:0 auto; border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="polygon_unframed_zoom60.png" width="128" height="77" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Polygon Displayed Without Frame</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="polygon_framed_zoom60.png" width="128" height="77" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Polygon Displayed With Frame</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Show or hide the frame of the polygon using </span><span class="f_BodyText" style="font-weight: bold;"><a href="objects_cats_opacity_props.htm" class="topiclink">Edit | Properties | Opacity</a> </span><span class="f_BodyText">and changing the setting for </span><span class="f_BodyText" style="font-weight: bold;">Frame polygon perimeter.</span></p><p class="p_MarginNote"><span class="f_MarginNote">To show only the frame, first show the frame and then set </span><span class="f_MarginNote" style="font-weight: bold;">Opacity</span><span class="f_MarginNote"> to 0%.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Change the width of the polygon’s frame using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_linestyle.htm" class="topiclink">Display | Line Style</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Determine whether new polygons display their frames by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="windows_prefs_tools.htm" class="topiclink">Edit | Preferences | Tools</a></span><span class="f_BodyText"> and changing the setting for </span><span class="f_BodyText" style="font-weight: bold;">Frame new polygon perimeters.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Measure an Interior</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p><span class="f_BodyText">Use the </span><span class="f_BodyText"><a href="menus_measure.htm" class="topiclink">Measure</a> menu to find</span><span class="f_BodyText">:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_perimeter.htm" class="topiclink">Perimeter</a></span><span class="f_BodyText"> of a polygon or an arc interior.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_circumference.htm" class="topiclink">Circumference</a></span><span class="f_BodyText"> of a circle interior.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_radius.htm" class="topiclink">Radius</a></span><span class="f_BodyText"> of a circle interior or an arc interior.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_arcangle.htm" class="topiclink">Arc Angle</a></span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_arclength.htm" class="topiclink">Arc Length</a></span><span class="f_BodyText"> of an arc interior.</span></p></td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

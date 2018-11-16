@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.hebe.feature"
+      label="XMind Map Editor"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      XMind Map Editor
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2015, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin
+         id="org.xmind.core"
+         download-size="390"
+         install-size="799"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.bouncycastle"
+         download-size="3626"
+         install-size="6794"
+         version="1.5.2"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.core.runtime"
+         download-size="62"
+         install-size="113"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.gef"
+         download-size="484"
+         install-size="1002"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.gef.ui"
+         download-size="315"
+         install-size="637"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.neuquant"
+         download-size="9"
+         install-size="13"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui"
+         download-size="578"
+         install-size="1920"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.fishbone"
+         download-size="92"
+         install-size="228"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.mindmap"
+         download-size="3049"
+         install-size="6326"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.spreadsheet"
+         download-size="159"
+         install-size="390"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.toolkit"
+         download-size="752"
+         install-size="1514"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.resources"
+         download-size="6803"
+         install-size="8411"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.browser"
+         download-size="110"
+         install-size="204"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.core.io"
+         download-size="16"
+         install-size="31"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.imports"
+         download-size="62"
+         install-size="121"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="net.sourceforge.jazzy"
+         download-size="640"
+         install-size="1890"
+         version="0.5.2"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.spelling"
+         download-size="93"
+         install-size="181"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.core.command"
+         download-size="38"
+         install-size="71"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+</feature>

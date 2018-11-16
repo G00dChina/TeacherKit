@@ -1,0 +1,18 @@
+{
+      "kind" : "remix",
+      "shape" : "text",
+      "style" : "basic",
+      "font" : {
+          "name":"Montserrat",
+          "size":64.0,
+          "weight": "Regular",
+          "color-red":1.0,
+          "color-green":1.0,
+          "color-blue":1.0,
+          "tracking":0.0
+      },
+      "word-wrap" : true,
+      "text" : "ABC",
+      "width" : 400,
+      "height" : 250
+}

@@ -1,0 +1,284 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; Advanced Topics &gt; Advanced Graphics Export</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Advanced Topics,Advanced Topics Advanced Graphics Export,Advanced Graphics Export">
+   <meta name="description" content="Advanced Graphics Export">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "adv_graphicsexport.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Advanced Graphics Export</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="adv.htm">Advanced Topics</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Advanced Graphics Export</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="distance_units_across_platform.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="adv.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="opening_remote_documents.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Use Sketchpad to create images to paste into other programs — word processors, illustration programs, page-layout programs, and programs that create web pages. And use Sketchpad to produce illustrations for handouts, tests, and quizzes for your class, to illustrate articles or books about geometry or algebra, or to decorate your personal web site or a web site for your class or school.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">This topic describes several useful tips and techniques that can help you produce attractive, high-quality images for such purposes.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Export Preferences</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Hold the Shift key and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_preferences_adv.htm" class="topiclink">Advanced Preferences</a> | <a href="windows_advprefs_export.htm" class="topiclink">Export</a></span><span class="f_BodyText"> to control several settings that affect graphics export.</span></p>
+<p class="p_BodyText"><span class="f_BodyText_Indented" style="font-weight: bold;">Arrowheads: </span><span class="f_BodyText_Indented">Decide whether to include arrowheads on lines and rays.</span></p>
+<p class="p_BodyText"><span class="f_BodyText_Indented" style="font-weight: bold;">Export Format: </span><span class="f_BodyText_Indented">Export to the clipboard in bitmap format only or in both bitmap and vector formats.</span></p>
+<p class="p_BodyText"><span class="f_BodyText_Indented" style="font-weight: bold;">Bitmap Scale: </span><span class="f_BodyText_Indented">Export bitmaps at 100%, 200%, 400%, or 800%.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Vector Format and Bitmap Format</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When you choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_copy.htm" class="topiclink">Copy</a>,</span><span class="f_BodyText"> </span><span class="f_BodyText_Indented">Sketchpad places a graphic image of the selected objects on the clipboard. The exported graphic on the clipboard can use a </span><span class="f_BodyText_Indented" style="font-style: italic;">vector</span><span class="f_BodyText_Indented"> format or a </span><span class="f_BodyText_Indented" style="font-style: italic;">bitmap</span><span class="f_BodyText_Indented"> format. Sketchpad normally puts both formats on the clipboard, allowing the program into which you are pasting to decide which format to use.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:70%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Bitmap Format: </span><span class="f_BodyText">This format records the pixels that appear on the screen. In bitmap format, lines, circles, and text show stair-step effects (called aliasing); these effects are particularly visible when the graphic is enlarged, or when it's printed on a high-resolution printer. You can reduce the aliasing effect in a bitmap image by changing the scale for clipboard bitmap format. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Screen-capture programs also produce a bitmap format. This format is similar to Sketchpad's bitmap format, but the resulting graphic can also include objects such as window borders, menus, and the pointer. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">On Windows, Sketchpad's bitmap format is DIB (Device-Independent Bitmap). For compatibility with some older programs, Sketchpad also creates a WMF (Windows MetaFile) which contains a DIB.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">On Macintosh, Sketchpad's bitmap format is PICT.</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large"><img src="adv_export_bitmap.png" width="182" height="148" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Bitmap Format Exported at 100% scale</span><br />
+<span class="f_Image_Centered_Large">(Magnified 4x)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:70%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Vector Format:</span><span class="f_BodyText"> This format records information about how to draw objects like segments, circles, and captions, and can produce smooth lines without aliasing. Vector graphics are smoother and more accurate, and are usually the preferred format for word processors, graphics programs, and layout programs.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">On Windows, Sketchpad's vector format is EMF+ (Enhanced MetaFile).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">On Macintosh, Sketchpad's vector format is PDF. Use the Preview program or other graphics software to convert PDF to other formats.</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large"><img src="adv_export_vectorx16_zoom25.png" width="182" height="148" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Vector Format</span><br />
+<span class="f_Image_Centered_Large">(Magnified 4x)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Scaled Bitmap Export</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When you choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_preferences_adv.htm" class="topiclink">Advanced Preferences</a> | <a href="windows_advprefs_export.htm" class="topiclink">Export</a>,</span><span class="f_BodyText"> you can set the scale used for bitmap export to </span><span class="f_BodyText_Indented">100%, 200%, 400%, or 800%. Use these settings to improve the quality of exported bitmap graphics when you're exporting to a program that doesn't recognize vector formats.</span></p>
+<p class="p_BodyText"><span class="f_BodyText_Indented">By using a higher scale, you can reduce the stair-step effect (called </span><span class="f_BodyText_Indented" style="font-style: italic;">aliasing</span><span class="f_BodyText_Indented">) that occurs with bitmaps. Set this to more magnification if you’re copying bitmaps from Sketchpad to paste into a document in a word processor or page layout program that you intend to use for high-quality production. The result will be a larger graphic that includes more pixels. After you paste it into a word processing, page layout, or other application, you can scale it down to produce a higher-quality image of the desired size.</span></p>
+<p class="p_BodyText"><span class="f_BodyText_Indented">For instance, say you want use a 600 dpi printer to print a document containing a small Sketchpad graphic that is 50 pixels wide on the screen, and you'd like the printed graphic to be 0.2 inches wide. If you export the graphic at 100% and look closely at the document, you will be able to see the aliasing.</span></p>
+<p class="p_BodyText"><span class="f_BodyText_Indented">To improve the quality of the printed image, you can determine the appropriate scale for bitmap export. The number of pixels in the printed image will by 600 dpi * 0.2 in = 120 printer dots. Divide the number of desired printer dots by the number of screen pixels: 120 / 50 = 2.4. This corresponds to a scale of a little more than 200%, so you should use the <a href="windows_advprefs_export.htm" class="topiclink">Export Preferences</a> panel to set </span><span class="f_BodyText_Indented" style="font-weight: bold;">Scale for clipboard bitmap export </span><span class="f_BodyText_Indented">to 200%. The images below show magnified views of the printed document using the original export scale of 100% and the calculated scale of 200%.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large"><img src="adv_export_bitmap.png" width="182" height="148" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Bitmap Format Exported at 100%</span><br />
+<span class="f_Image_Centered_Large">(Magnified)</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large"><img src="adv_export_bmpx2.png" width="184" height="150" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Bitmap Format Exported at 200%</span><br />
+<span class="f_Image_Centered_Large">(Magnified)</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Crop Exported Graphics</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Lines and rays extend far beyond the limits of the screen. Depending on the specifics of a sketch, other objects, particularly loci and function plots, may have similar extents. But when you copy such objects, you don’t want an image of infinite size. Accordingly, if an image being copied extends beyond the edges of the window, Sketchpad crops the image to the window dimensions.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use this behavior to control the exact extent of the image copied to the clipboard. Before copying, <a href="windows_docs_docwindows.htm" class="topiclink">resize</a> and <a href="shortcuts_specialkeys.htm" class="topiclink">scroll</a> your sketch window so that it shows the desired portion of the sketch. When you choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_copy.htm" class="topiclink">Copy</a>,</span><span class="f_BodyText"> the clipboard image will be correctly cropped.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Graphics Document Export</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sketchpad normally exports graphics directly to the clipboard, for ease of pasting into word processing and page layout applications. If you like, you can preserve the exported graphic as a separate vector-graphics document on your computer, either using EMF+ (Enhanced Metafile) in Windows or PDF (Portable Document Format) on Macintosh.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Windows: </span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_file.htm" class="topiclink">File</a> | <a href="menus_file_saveas.htm" class="topiclink">Save As</a>.</span><span class="f_BodyText"> In the Save As dialog box, choose </span><span class="f_BodyText" style="font-weight: bold;">Enhanced Metafile (*.emf)</span><span class="f_BodyText"> from the </span><span class="f_BodyText" style="font-weight: bold;">Save as type</span><span class="f_BodyText"> list. Then name your document and click </span><span class="f_BodyText" style="font-weight: bold;">Save.</span><span class="f_BodyText"> The resulting EMF+ document can be imported by many other Windows programs. The exported document includes all objects that appear within the window. Use the edges of the window to crop the exported graphics. Once you've saved the EMF+ document, there are a number of commercial graphics programs that can convert the EMF+ document to other graphics formats such as EPS or PDF. Depending on your printer driver, you may also be able to create a PDF document directly, by printing from Sketchpad and specifying PDF output in the Print dialog box.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If you want to export some but not all of the visible objects, use the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_copy.htm" class="topiclink">Copy</a></span><span class="f_MarginNote"> command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Macintosh: </span><span class="f_BodyText">Select the objects you want to export and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_copy.htm" class="topiclink">Copy</a></span><span class="f_BodyText"> to put a vector format (PDF) image on the clipboard. Then open the Preview application, and choose </span><span class="f_BodyText" style="font-weight: bold;">File | New from Clipboard</span><span class="f_BodyText"> to display the contents of the clipboard in a new PDF document. Save the document, either in its original PDF format or in any of the other formats Preview supports. You can also create PDF and Postscript (PS) documents by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_file.htm" class="topiclink">File</a> | <a href="menus_file_print.htm" class="topiclink">Print</a></span><span class="f_BodyText"> and using the PDF button in the Print dialog box.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Once you've saved a PDF document, there are a number of graphics programs that can convert the PDF document to other graphics formats such as EPS. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Screen Captures</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can create a bitmap graphic of the entire Sketchpad window, including even menus and the cursor, by using the screen capture capabilities built into Windows and Macintosh. </span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Windows:</span><span class="f_BodyText"> Press the Print Screen key to capture the entire screen, or Alt+Print Screen to capture the active window. The result is a bitmap on the clipboard; you can paste this bitmap into any program which recognizes bitmap files. </span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Macintosh:</span><span class="f_BodyText"> Press <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />-Shift-3 to capture the entire screen, or <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />-Shift-4 to capture part of the screen. The result is a picture on your desktop. Use the Preview program to change this picture into any common graphics format.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Hold the Ctrl key while pressing the other keys to put the captured picture on the clipboard instead of the desktop.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">For more capture options on Macintosh, use the </span><span class="f_BodyText">Grab program.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Screen captures are excellent for showing what the entire screen looks like and for including a menu or the cursor in your graphic. But a screen capture does a crude job on Sketchpad constructions. Diagonal lines and circles look jagged and blocky, text is of poor quality, and resizing the graphic may give unexpected results. For better results with Sketchpad constructions, use Sketchpad itself to copy the objects you want by selecting the desired objects and choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_copy.htm" class="topiclink">Copy</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

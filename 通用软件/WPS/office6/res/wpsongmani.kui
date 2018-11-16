@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="wpsongmani" component="wps" name="ongmani">
+	<style name="2013"/>
+	<theme path="themes/ongmaniwps.kuip"/>
+	<attributes path="attributes.kuip"/>
+	<import path="common.kuip"/>
+	<import path="wpscommon.kuip"/>
+	<tips path="tips/wpstips.kuip"/>
+	<libraries>
+		<library path="." name="kinsertshapes"/>
+		<library path="." name="wpsxiede"/>
+	</libraries>
+	<mainwindow tc="mainwindow" caption="@Writer" frameless="1">
+		<commands tc="commands">
+			<KWindowTitleBarButtonCommand visible="0" id="Menu Bar">
+				<command idQ="FileMenu"/>
+				<command idQ="EditMenu"/>
+				<command idQ="ViewMenu"/>
+				<command idQ="InsertMenu"/>
+				<command idQ="FormatMenu"/>
+				<command idQ="ToolsMenu"/>
+				<command idQ="TableMenu"/>
+				<command idQ="WindowMenu"/>
+				<command idQ="HelpMenu"/>
+			</KWindowTitleBarButtonCommand>
+			<KWindowTitleButtonGroupCommand id="sysbuttongroup">
+				<KTitleGroupSeperatorCommand space="7"/>
+				<KRbLogicGroupVisibleToggleCommand iconStick="iconStick;iconStick-hover;iconStick-down" bOnTitleGroup="1" icon="iconHide;iconHide-hover;iconHide-down;iconHide-disable" iconHide="iconHide;iconHide-hover;iconHide-down;iconHide-disable" textExtent="@Show the Toolbar" textStick="@Stick the Toolbar" iconExtent="iconExtent;iconExtent-hover;iconExtent-down;iconExtent-disable" qtspyName="iconHide;iconHide-hover;iconHide-down;iconHide-disable" textHide="@Hide the Toolbar"/>
+				<KTitleGroupSeperatorCommand space="7"/>
+				<KMinButtonCommand icon="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable" text="@Minimize Window" qtspyName="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KMaxButtonCommand customTip2="@Restore Window" icon="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" customTip="@Maximize Window" text="@Maximize Window" iconMax="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" iconRestore="TitleRestoreButton;TitleRestoreButton-hover;TitleRestoreButton-down;TitleRestoreButton-disable" qtspyName="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KCloseButtonCommand icon="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable" text="@Close Window" qtspyName="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable"/>
+			</KWindowTitleButtonGroupCommand>
+			<kxKOSUserLoginQuiteMenuCommand hotKey="T" ksoCmd="KOSUserLoginQuiteMenuCmd" filter="support:WPSCloudLogin=true;support:EnableAccount=true" id="KOSUserLoginQuiteMenuCmd" text="@Sign in" rbHotKey="T"/>
+			<kxKOSUserGiftMenuCommand id="kxKOSUserGiftMenuCmd"/>
+			<KUserCenterCommand id="userCenterCmd" giftCommand="kxKOSUserGiftMenuCmd"/>
+			<kxKOSRechargeCommand hotKey="R" ksoCmd="KOSRechargeCmd" icon="OS_Recharge" id="KOSRechargeCmd" text="@Recharge" rbHotKey="R"/>
+			<kxKOSLogoutCommand hotKey="X" ksoCmd="KOSLogoutCommand" icon="OS_Login" id="KOSLogoutCommand" customTip="KOSLogoutTip" text="@Sign out" rbHotKey="X"/>
+			<KUserCenterMenuCommand id="UserCenterMenuCmd">
+				<KxOpenPersonalCenterCommand icon="OS_ViewUserInfo" id="OpenPersonalCenterCmd" text="@Personal Center"/>
+				<command idQ="KOSLogoutCommand"/>
+			</KUserCenterMenuCommand>
+			<KLayoutWidgetCommand fixedWidth="1"/>
+			<KWpsPackageCommand hotKey="P" ksoCmd="KWpsPackagePlugin" icon="WpsPackage" id="KWpsPackagePlugin" text="@WpsPackagePlugin"/>
+			<KxMinisiteCommand hotKey="M" ksoCmd="MinisitePlugin" aid="100041" icon="minisite;minisite-hover;minisite-down" id="MinisitePlugin" text="@Minisite"/>
+			<KxKsoHomepageCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000059" visible="true" icon="wpshome;wpshome-hover;wpshome-down" id="HomepagePlugin" text="@Online Templates"/>
+			<KWhatNewCommand ksoCmd="WhatNew" filter="lang=zh_CN;category=personal" icon="WhatNew;WhatNew-hover;WhatNew-down" id="WhatNew" text="@What's New"/>
+			<KNewsCommand filter="lang=zh_CN;category=personal" icon="NewsMailer;NewsMailer-hover;NewsMailer-down" id="News" text="@News"/>
+			<KListCommand id="RightCorner" text="@Quick Access Toolbar">
+				<command idQ="News"/>
+				<command idQ="KOSUserLoginQuiteMenuCmd"/>
+				<command idQ="UserCenterMenuCmd"/>
+				<command idQ="userCenterCmd"/>
+				<command idQ="KWpsPackagePlugin"/>
+				<command idQ="MinisitePlugin" filter="lang=zh_CN;category=personal"/>
+				<KxQingCartCommand icon="qingcart;qingcart-hover;qingcart" id="QingCart"/>
+				<command idQ="HomepagePlugin" filter="support:NewFromOlineTemplates/RightCorner=true"/>
+				<command idQ="switchLangDlg"/>
+				<command idQ="switchFaceDlg" filter="oem_SwitchFace!=0"/>
+				<command idQ="UserFeedback" filter="support:FeedbackOnBar=true"/>
+				<command idQ="WhatNew" filter="lang=zh_CN;category=personal"/>
+				<command idQ="MailFeedBack"/>
+				<KxEnterpriseMicroblogCommand ksourl="Product:EnterpriseMicroblogUrl" icon="EnterpriseMicroblog;EnterpriseMicroblog-hover;EnterpriseMicroblog-down" id="EnterpriseMicroblog" text="@WPS After-sale Microblog"/>>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="Options" icon="Options" id="m_rbOptions" dialogHint="1" text="@Options" rbHotKey="T"/>
+			<KxRecentFilePageCommand hotKey="R" ksoCmd="RecentFileList" id="RecentFilePageCMD" text="@Recent Documents" rbFileMenuEmbed="1" rbHotKey="R"/>
+			<KRbFileMenuCommand quitCommand="Exit" recentFileCommand="RecentFilePageCMD" hotKey="F" curentProject="wps" delayloadPath="commands/wps/ongmani/CT_File.kuip" classicCommand="Menu Bar" skinSwitchCommand="switchFaceDlgOnFileMenu" customCommand="m_rbOptions" icon="TabFileButtonIcon-W" newSkinFlash="false" id="CT_File" text="" rbHotKey="F"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="InsertComment" icon="InsertComment" id="InsertCommentInToolBar" customTip="InsertComment" text="@New
+Comment" rbHotKey="C"/>
+			<KxLegacyTriggerCommand hotKey="G" ksoCmd="TrackChanges" idMso="ReviewTrackChanges" icon="TrackChanges" controlType="6" shortcutHint="Ctrl+Shift+E" id="RbTrackChangesToolBar" text="@Track
+Changes"/>
+			<KxLegacyTriggerCommand hotKey="M" ksoCmd="CombineCharacters" icon="CombineCharacters" id="CombineCharactersRainbow" dialogHint="1" text="@Combine Characters"/>
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="TwoLinesInOne" aid="3964" idMso="AsianLayoutTwoLinesInOne" icon="TwoLinesInOne" controlType="0" id="TwoLinesInOne" dialogHint="1" text="@Two Lines in One" rbHotKey="W"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling200" index="200" text="@200%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling150" index="150" text="@150%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling100" index="100" text="@100%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling90" index="90" text="@90%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling80" index="80" text="@80%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling66" index="66" text="@66%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling50" index="50" text="@50%"/>
+			<KxValueCommand ksoCmd="CharacterScalingNumber" id="CharacterScaling33" index="33" text="@33%"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="CharacterScalingMore" id="CharacterScalingMore" dialogHint="1" text="@More"/>
+			<KListCommand icon="CharacterScaling" id="m_CharacterScaling" customTip="m_CharacterScaling" text="@Asian Layout" rbHotKey="AA">
+				<command idQ="CombineCharactersRainbow"/>
+				<command idQ="TwoLinesInOne"/>
+				<KListCommand hotKey="C" icon="CharacterScaling" id="CharacterScalingNumber" text="@Character Scaling" rbFileMenuEmbed="1">
+					<command idQ="CharacterScaling200"/>
+					<command idQ="CharacterScaling150"/>
+					<command idQ="CharacterScaling100"/>
+					<command idQ="CharacterScaling90"/>
+					<command idQ="CharacterScaling80"/>
+					<command idQ="CharacterScaling66"/>
+					<command idQ="CharacterScaling50"/>
+					<command idQ="CharacterScaling33"/>
+					<command idQ="CharacterScalingMore"/>
+				</KListCommand>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="InsertComment" icon="InsertComment" id="InsertCommentInToolBar" customTip="InsertComment" text="@New
+Comment" rbHotKey="C"/>
+			<KxLegacyTriggerCommand hotKey="G" ksoCmd="TrackChanges" idMso="ReviewTrackChanges" icon="TrackChanges" controlType="6" shortcutHint="Ctrl+Shift+E" id="RbTrackChangesToolBar" text="@Track
+Changes"/>
+			<KRbTabWidgetCommand rightCornerCommand="sysbuttongroup" titleVisible="0" fileCommand="CT_File" rightCornerExtentCommand="RightCorner" id="tabwidget" text="@testRbTabWidget" customAttribute="IF(platform!=unix;patent:LogicGroupShowExtensionButton=false){arrowVisible=0}">
+				<KRbTabCommand hotKey="H" delayloadPath="commands/wps/ongmani/CT_Home.kuip" idMso="TabHome" controlType="12" id="CT_Home" text="@Home" rbHotKey="H"/>
+				<KxWpsInsertContext hotKey="N" delayloadPath="commands/wps/ongmani/CT_Insert.kuip" idMso="TabInsert" controlType="12" id="CT_Insert" text="@Insert" rbHotKey="N"/>
+				<KxWpsInsertVmlContext descName="@Insert - Compatibility Mode" hotKey="N" delayloadPath="commands/wps/ongmani/CT_Insert_Vml.kuip" customShortcutEnabled="false" id="CT_Insert_Vml" text="@Insert" rbHotKey="N"/>
+				<KRbTabCommand hotKey="P" delayloadPath="commands/wps/ongmani/CT_PageLayout.kuip" idMso="TabPageLayoutWord" controlType="12" id="CT_PageLayout" text="@Page Layout" rbHotKey="P"/>
+				<KRbTabCommand hotKey="S" delayloadPath="commands/wps/ongmani/CT_References.kuip" idMso="TabReferences" controlType="12" id="CT_References" text="@References" rbHotKey="S"/>
+				<KRbTabCommand hotKey="R" delayloadPath="commands/wps/ongmani/CT_Review.kuip" idMso="TabReviewWord" controlType="12" id="CT_Review" text="@Review" rbHotKey="R"/>
+				<KRbTabCommand hotKey="W" delayloadPath="commands/wps/ongmani/CT_View.kuip" idMso="TabView" controlType="12" id="CT_View" text="@View" rbHotKey="W"/>
+				<KRbTabCommand hotKey="Z" delayloadPath="commands/wps/ongmani/CT_Section.kuip" id="CT_Section" text="@Section" rbHotKey="Z"/>
+				<KxWpsPrintPreviewContext rbContextTableButton="0xb457fc" hotKey="P" delayloadPath="commands/wps/ongmani/CT_PrintPreview.kuip" customShortcutEnabled="false" idMso="TabPrintPreview" controlType="12" id="CT_PrintPreview" visibleAlone="1" text="@Print Preview" rbHotKey="P"/>
+				<KxAddOnsContext hotKey="X" delayloadPath="commands/wps/ongmani/CT_AddOns.kuip" customShortcutEnabled="false" idMso="TabAddIns" controlType="12" id="CT_AddOns" text="@Add-Ins" rbHotKey="X"/>
+				<KxSecurityDocContext hotKey="Y" delayloadPath="commands/wps/ongmani/CT_Security.kuip" id="CT_Security" text="@Security" rbHotKey="Y"/>
+				<KxDevelopToolsContext rbContextTableButton="0xff61f6" hotKey="L" delayloadPath="commands/wps/ongmani/CT_DevelopTools.kuip" idMso="TabDeveloper" controlType="12" id="CT_DevelopTools" text="@Developer" rbHotKey="L"/>
+				<KxWorkspaceContext rbContextTableButton="0x05cbe2" hotKey="K" delayloadPath="commands/wps/ongmani/CT_WorkSpace.kuip" id="CT_WorkSpace" text="@Special Features" rbHotKey="K"/>
+				<KxWpsParagraphContext rbContextTableButton="0xb457fc" hotKey="P" delayloadPath="commands/wps/ongmani/CT_Paragraph.kuip" customShortcutEnabled="false" visibleRaise="1" idMso="GroupParagraph" controlType="16" id="CT_Paragraph" text="@Paragraph Layout" rbHotKey="A"/>
+				<KxWpsTableToolContext rbContextTableButton="0x05e234" hotKey="W" delayloadPath="commands/wps/ongmani/CT_TableTools.kuip" customShortcutEnabled="false" idMso="TabTableToolsLayout" controlType="12" id="CT_TableTools" tabSet="TabSetTableTools" text="@Table Tools" rbHotKey="JL"/>
+				<KxWpsTableStyleContext rbContextTableButton="0x05e234" hotKey="A" delayloadPath="commands/wps/ongmani/CT_Design.kuip" customShortcutEnabled="false" idMso="TabTableToolsDesign" controlType="12" id="CT_Design" text="@Table Style" rbHotKey="JT"/>
+				<KxWpsMailingsContext rbContextTableButton="0xb457fc" hotKey="M" delayloadPath="commands/wps/ongmani/CT_Mailings.kuip" customShortcutEnabled="false" visibleRaise="1" idMso="TabMailings" controlType="12" id="CT_Mailings" text="@Mailings" rbHotKey="M"/>
+				<KxWpsOutlineViewContext rbContextTableButton="0xff61f6" hotKey="U" delayloadPath="commands/wps/ongmani/CT_Outline.kuip" customShortcutEnabled="false" visibleRaise="1" idMso="TabOutlining" controlType="12" id="CT_Outline" text="@Outline" rbHotKey="U"/>
+				<KxWpsHeaderAndFooterContext rbContextTableButton="0x6372ff" hotKey="JH" delayloadPath="commands/wps/ongmani/CT_HeaderFooter.kuip" customShortcutEnabled="false" visibleRaise="1" idMso="TabHeaderAndFooterToolsDesign" controlType="12" id="CT_HeaderFooter" text="@Header and Footer" rbHotKey="JH"/>
+				<KxShapeToolContext rbContextTableButton="0x05cbe2" hotKey="JD" delayloadPath="commands/wps/ongmani/CT_DrawingTools.kuip" customShortcutEnabled="false" id="CT_DrawingTools" text="@Drawing Tools" rbHotKey="JD"/>
+				<KxWpsTextToolContext rbContextTableButton="0x05cbe2" delayloadPath="commands/wps/ongmani/CT_TextTool.kuip" customShortcutEnabled="false" id="CT_TextTool" text="@Text Tool" rbHotKey="JE"/>
+				<KxChartToolContext rbContextTableButton="0x05cbe2" hotKey="JC" delayloadPath="commands/wps/ongmani/CT_ChartTools.kuip" customShortcutEnabled="false" id="CT_ChartTools" text="@Chart Tools" rbHotKey="JC"/>
+				<KxShapeToolContext_Vml descName="@Drawing Tools - Compatibility Mode" rbContextTableButton="0x05cbe2" hotKey="JD" delayloadPath="commands/wps/ongmani/CT_DrawingTools_Vml.kuip" customShortcutEnabled="false" id="CT_DrawingTools_Vml" text="@Drawing Tools" rbHotKey="JD"/>
+				<KxShadowToolContext_Vml descName="@Formats - Compatibility Mode" rbContextTableButton="0x05cbe2" hotKey="JS" delayloadPath="commands/wps/ongmani/CT_shadowDrawingTools.kuip" customShortcutEnabled="false" id="CT_shadowDrawingTools" text="@Formats" rbHotKey="JS"/>
+				<KxPictureToolContext rbContextTableButton="0xdf57fc" hotKey="JP" delayloadPath="commands/wps/ongmani/CT_PictureTools.kuip" customShortcutEnabled="false" idMso="TabPictureToolsFormat" controlType="12" id="CT_PictureTools" text="@Picture Tools" rbHotKey="JP"/>
+				<KxPictureToolContext_Vml descName="@Picture Tools - Compatibility Mode" rbContextTableButton="0xdf57fc" hotKey="JP" delayloadPath="commands/wps/ongmani/CT_PictureTools_Vml.kuip" customShortcutEnabled="false" id="CT_PictureTools_Vml" text="@Picture Tools" rbHotKey="JP"/>
+				<KxWordArtContext rbContextTableButton="0xffd800" hotKey="JW" delayloadPath="commands/wps/ongmani/CT_WordArt.kuip" customShortcutEnabled="false" idMso="TabWordArtToolsFormat" controlType="12" id="CT_WordArt" text="@WordArt" rbHotKey="JW"/>
+				<KxWordArtContext rbContextTableButton="0xffd800" hotKey="JA" delayloadPath="commands/wps/ongmani/CT_WAshadowDrawingTools.kuip" customShortcutEnabled="false" id="CT_WAshadowDrawingTools" text="@Formats" rbHotKey="JA"/>
+			</KRbTabWidgetCommand>
+			<KListCommand id="NoTabPage">
+				<KxNoTabPageButtonCommand ksoCmd="NewBlankFile" icon="NewFileOnNoTabPage" id="NewFileOnNoTabPage" text="@New Blank Document"/>
+				<separator/>
+				<KxKsoNoTabPageHomepageCommand ksoCmd="HomepagePlugin" filter="support:NewFromOlineTemplates/NoTabPage=true" icon="NewFromMoreTemplate" id="NoTabPageHomepagePlugin" text="@New from Other Templates"/>
+				<separator/>
+				<KxNoTabPageButtonCommand ksoCmd="OpenFile" icon="OpenFileOnNoTabPage" id="OpenFileOnNoTabPage" text="@Open"/>
+			</KListCommand>
+			<KxWpsNavigationPaneCommand id="Navigationpane" text="@Navigation Pane">
+				<KxWpsSectionToolboxCommand foldIcon="Fold" unfoldIcon="Unfold" caretMarkIcon="CaretMark" text="@Section Navigation" qtspyName="SectionNavigation"/>
+			</KxWpsNavigationPaneCommand>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="PrintToPDF" aid="80004" filter="support:ExportToPDF=true" icon="ExportToPDF" id="PrintToPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF"/>
+			<KxTouchUiModeCommand filter="support:TouchUiMode=true" icon="TouchUiMode" id="TouchUiMode" customTip="TouchUiMode" text="@Touch Mode"/>
+			<KListCommand id="QAT_Menu" text="@Quick Access Toolbar" qtspyName="qmenu">
+				<command idQ="NewBlankFile"/>
+				<command idQ="OpenFile"/>
+				<command idQ="SaveFile"/>
+				<command idQ="PrintToPDF"/>
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+				<command idQ="PrintPreview"/>
+				<command idQ="TouchUiMode"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+				<KxOptionsDlgTabCommand tabName="opeQat" id="QAT_MoreCommands"/>
+			</KListCommand>
+			<KListCommand id="QAT" qtspyName="QT_Menu">
+				<command idQ="OpenFile"/>
+				<command idQ="SaveFile"/>
+				<command idQ="PrintToPDF"/>
+				<command idQ="Print"/>
+				<command idQ="PrintPreview"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+			</KListCommand>
+			<KxAddTabCommand visible="0" icon="icustSel;icustSel-mos;icustSel-down" id="customTaskpane" defualtHide="TpWpsTableStyle" shortHint="@Settings" text="@Customize Task Window"/>
+			<KProxyCommand targetId="PDF2Word" hotKey="PW" dependOSArch="1" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="kpdf2word" filter="lang=zh_CN;category=personal" icon="PDFToWord" id="ProxyPDF2Word" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+			<KProxyCommand targetId="PDF2WordV2" hotKey="PW" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="kpdf2wordv2" visible="false" icon="PDFToWord" id="ProxyPDF2WordV2" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+			<KProxyCommand targetId="WpsXieDe" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="wpsxiede" autoLoad="true" visible="false" icon="XieDe_Menu" id="ProxyWpsXieDe" text="@Xie De"/>
+			<KProxyCommand targetId="WpsXieDeFileMenu" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="wpsxiede" autoLoad="true" visible="false" icon="XieDe_Menu" id="ProxyWpsXieDeFileMenu" text="@Xie De Menu"/>
+			<KProxyCommand targetId="TextToSpeechOption" hotKey="RL" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="wpsspeaker" filter="support:WPSSpeaker=true" speakingTip="TextSpeech2" icon="TextSpeech" id="ProxyTextToSpeechOption" customTip="TextSpeech" text="@Text Speech" rbHotKey="RL"/>
+			<KProxyCommand targetId="OCRToolCmd" hotKey="PT" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="kocrtool" icon="PictureToText" id="ProxyOCRToolCmd" customTip="PictureToText" text="@Picture to Text" rbHotKey="PT"/>
+			<KProxyCommand targetId="DocumentFix" hotKey="RF" delayloadPath="commands/wps/ongmani/ProxyCommands.kuip" targetModule="kdocumentfix" icon="DocumentFix" id="ProxyDocumentFix" customTip="DocumentFix" text="@Document Fix" rbHotKey="RF"/>
+			<KxLegacyTriggerCommandEx text2="@Format
+Painter" hotKey="FP" ksoCmd="FormatPainter" idMso="FormatPainter" icon="FormatPainter" controlType="6" id="FormatPainter" customTip="FormatPainter" text="@Format 
+Painter" rbHotKey="FP"/>
+			<KxLegacyTriggerCommand hotKey="FG" ksoCmd="GrowFont" idMso="FontSizeIncreaseWord" icon="IncreaseFontSize" controlType="0" shortcutHint="Ctrl+]" id="GrowFontRainbow" customTip="GrowFont" text="@Grow Font" rbHotKey="FG"/>
+			<KxWpsMoreFontColorCommand hotKey="m" ksoCmd="FontColor" idMso="FontColorMoreColorsDialogExcel" icon="MoreColor" controlType="0" id="MoreFontColors" dialogHint="1" text="@More Font Colors"/>
+			<KxWpsSnapColorCommand hotKey="e" ksoCmd="FontColor" forceEnabled="1" icon="SnapperFill" id="SnapFontColors" text="@Snapper" rbHotKey="E"/>
+			<KxWpsFontColorCommand hotKey="FT" ksoCmd="FontColor" idMso="FontColorPicker" icon="ChartFontColor" customTip2="FontColor2" controlType="4" id="FontColor" customTip="FontColor" text="@Text Color" ksoTriggerCmd="RecentFontColor" rbHotKey="FC">
+				<command idQ="MoreFontColors"/>
+				<command idQ="SnapFontColors"/>
+			</KxWpsFontColorCommand>
+			<KxFontSizeComboboxCommand hotKey="FS" horizontalPolicy="Preferred" ksoCmd="FontSize" idMso="FontSize" icon="FontSize" fontSizeList="@5;5.5;6.5;7.5;8;9;10;10.5;11;12;14;16;18;20;22;26;28;36;48;56;72" controlType="2" id="FontSize" customTip="FontSize" verticalPolicy="Preferred" text="@Font Size" rbHotKey="FS"/>
+			<KxLegacyTriggerCommand hotKey="FK" ksoCmd="ShrinkFont" idMso="FontSizeDecreaseWord" icon="DecreaseFontSize" controlType="0" shortcutHint="Ctrl+[" id="ShrinkFontRainbow" customTip="ShrinkFont" text="@Shrink Font" rbHotKey="FK"/>
+			<KxHighlightColorCommand hotKey="h" ksoCmd="HighlightColor" aid="80068" barid="44551" idMso="TextHighlightColorPicker" icon="Highlighter" customTip2="HighlightColor2" controlType="4" id="HighlightColor" customTip="HighlightColor" text="@Highlight" ksoTriggerCmd="RecentHighlightColor" rbHotKey="i"/>
+		</commands>
+		<dock cmd="ClassicalTaskpane"/>
+		<dock cmd="Navigationpane" dockArea="dockArea_left"/>
+		<dock cmd="Clipboardpane" dockArea="dockArea_left"/>
+		<krbtabwidget cmd="tabwidget"/>
+		<KRbQuicktoolCommand cmd="QAT" menu="QAT_Menu"/>
+		<menubar cmd="Menu Bar" delay="1" sysMenuBtn="0"/>
+		<KNoTabPageCommand cmd="NoTabPage"/>
+		<shortcuts>
+			<shortcut cmd="sp_TrackChanges" key="Ctrl+Shift+E"/>
+			<shortcut cmd="sp_Find" key="Ctrl+F"/>
+			<shortcut cmd="sp_Paste" key="Ctrl+V"/>
+			<shortcut cmd="GrowFontRainbow" key="Ctrl+]"/>
+			<shortcut cmd="ShrinkFontRainbow" key="Ctrl+["/>
+			<shortcut cmd="m_rbHyperlink" key="Ctrl+K"/>
+			<shortcut cmd="SeleCTIctAll" key="Ctrl+A"/>
+			<shortcut cmd="TabButtonNewBlankFile" key="Ctrl+N"/>
+			<shortcut cmd="m_rbInsertBookmark" key="Shift+Ctrl+F5"/>
+		</shortcuts>
+	</mainwindow>
+</shell>

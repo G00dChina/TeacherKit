@@ -1,0 +1,206 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Action Buttons &gt; Movement Buttons and Properties</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Move Properties,Movement Buttons,Movement Buttons properties,Movement Buttons creating,Properties,Properties Move,Objects,Objects movement buttons,Action Buttons,Action Buttons Movement">
+   <meta name="description" content="Movement Buttons and Properties">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_btns_moveprops.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Movement Buttons and Properties</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_btns.htm">Action Buttons</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Movement Buttons and Properties</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_btns_animateprops.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_btns.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_btns_presentprops.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">A Movement button moves one or more points or <a href="objects_parameters.htm" class="topiclink">parameters</a> toward defined destinations. </span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Creating and Using a Movement Button</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="movement.png" width="97" height="24" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">To create a Movement button, you must select one or more pairs of objects:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">A pair of points must consist of a point to move and a destination point toward which the first point can move.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">A pair of values must consist of a value to change (which must be a parameter) and a destination value toward which the parameter can change.</span></p><p class="p_BodyText"><span class="f_BodyText">Select one or more such pairs of objects and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_movement.htm" class="topiclink">Edit | Action Buttons | Movement</a></span><span class="f_BodyText"> to create a Movement button.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Press a Movement button once to start the movement. The button remains pressed until all moving points and parameters reach their destinations. You can press the button a second time, while the button is still down, to stop the movement.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can also press the <a href="shortcuts.htm" class="topiclink">Esc</a> key to stop the movement. (You may have to press the Esc key more than once.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">After creating a Movement button, you may want to hide the destination points or values so only the moving points or parameters are visible.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a> | Move</span><span class="f_BodyText"> to set the speed and behavior of the movement.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Move Properties</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">This <a href="menus_edit_properties.htm" class="topiclink">Properties</a> panel appears only for <a href="menus_edit_btns_movement.htm" class="topiclink">Movement</a> <a href="objects_btns.htm" class="topiclink">action buttons</a>. Use it to determine the speed and behavior of the movement.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The panel appears automatically when you choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_btns_movement.htm" class="topiclink">Edit | Action Buttons | Movement</a></span><span class="f_MarginNote"> to create a button. After you’ve created the button, choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a>,</span><span class="f_MarginNote"> or choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Properties</a></span><span class="f_MarginNote"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu, to display the panel again to make further adjustments.</span></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">&nbsp;</span></p>
+<p class="p_Image_Centered_Large"><img src="move_props_zoom75.png" width="266" height="192" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">You can set the movement speed to slow, medium, fast, or instant.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the destination point or value moves while the Movement button is active, you can decide how the moving point will travel. Choose </span><span class="f_BodyText" style="font-weight: bold;">Follow moving destination</span><span class="f_BodyText"> to have the moving point or parameter alter direction as the destination point or value moves, always continuing to move toward that destination. Choose </span><span class="f_BodyText" style="font-weight: bold;">Move toward initial destination</span><span class="f_BodyText"> to have the moving object travel directly to the location or value of the destination at the instant the Movement button was clicked, stopping when it reaches that initial destination.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If the destination is moving, it’s possible that the moving object will never reach the destination and will keep moving forever. You can take advantage of this “perpetual motion” to model kinematic systems.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

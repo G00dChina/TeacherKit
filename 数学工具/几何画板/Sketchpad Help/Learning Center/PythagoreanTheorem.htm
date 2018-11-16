@@ -1,0 +1,378 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Pythagorean Theorem - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Pythagorean Theorem</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-09.gif">Pythagorean Theorem: Iterate a Construction</h1>
+<p>In this tutorial, you&rsquo;ll construct a right triangle and use a custom square tool to investigate squares on the sides of the right triangle.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Set up your Tool Folder for easy access to your own custom tools </li>
+<li>Save sketches with custom tools into the Tool Folder </li>
+<li>Construct the midpoint of a segment </li>
+<li>Construct a circle using <strong>Circle by Center+Point</strong> </li>
+<li>Construct an arc </li>
+<li>Iterate a construction</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x444.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x444.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+<div style="display:none;" id="SketchpadSkills">
+<h3>You will learn these new skills:</h3>
+</div>
+</div>
+<h2>Set Up Your Tool Folder <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x445.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x445.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Sketchpad allows you to designate a Tool Folder&mdash;a repository of Sketchpad documents with custom tools&mdash;that is always available to you.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Custom tool" alt="Custom Tool" width="32" height="32" src="images/toolCustom.gif"></div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>In a new sketch, press and hold the <strong>Custom</strong> tools icon. If <strong>Example Tools</strong> appears in the menu, you or someone else has already designated a Tool Folder and you don&rsquo;t have to do anything else.</p>
+<p>If <strong>Example Tools</strong> does not appear in the menu, choose <strong>Choose Tool Folder</strong> from the menu and designate a folder (or add a new one using <strong>New Folder</strong>) as your Tool Folder. Make sure that <strong>Create Example Tools document in chosen Tool Folder</strong> is checked and click <strong>Choose.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">2.</div>
+<div class="column-3">
+<p>Press and hold the <strong>Custom</strong> tools icon. Without releasing, move the cursor to <strong>Example Tools</strong> in the Tool Folder section of the menu. You will see the eight custom tools that come with Sketchpad. You will use the <strong>Square Given Two Vertices</strong> tool in this tutorial.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> The Tool Folder is the place for you to save sketches containing custom tools that you may want to use regularly. As you turn your complex constructions into custom tools, the Tool Folder allows you to build up your own &ldquo;toolbox&rdquo; of useful custom tools." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-3">
+<p>If you&rsquo;ve completed Tutorial 8&mdash;Square Constructions, you can now save that sketch into your Tool Folder and have easy access to your own custom square tools!</p>
+<p>Now you&rsquo;ll construct a right triangle as you did in Tutorial 2&mdash;Properties of Shapes.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">3.</div>
+<div class="column-3">
+<p>Construct a segment.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">4.</div>
+<div class="column-3">
+<p>Select the segment and one endpoint and choose <strong>Construct | Perpendicular Line.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">5.</div>
+<div class="column-3">
+<p>Construct a point on the perpendicular line.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">6.</div>
+<div class="column-3">
+<p>Select only the line and choose <strong>Display | Hide Perpendicular Line.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Connect the three vertices.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>Apply the drag test&mdash;drag the different parts of your triangle and make sure it behaves like a right triangle.</p>
+</div>
+</div>
+<h2>Use Your Square Tool <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x446.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x446.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll construct squares on each side of your right triangle and investigate their areas.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-9_01" src="Images/tutorial-9_01.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Custom tool" alt="Custom Tool" width="32" height="32" src="images/toolCustom.gif"></div>
+<div class="column-2">9.</div>
+<div style="width:380px;" class="column-3">
+<p>Press and hold the <strong>Custom</strong> tools icon and choose a <strong>Square</strong> tool. Click one vertex of the right triangle and then another. A square appears.</p>
+<p>If the square appears inside the right triangle, choose <strong>Edit | Undo</strong> and then click the two vertices in the opposite order.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">10.</div>
+<div style="width:380px;" class="column-3">
+<p>Construct squares on the other two sides of the right triangle. All three squares should sit on the outside of the triangle.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">11.</div>
+<div style="width:380px;" class="column-3">
+<p>Click in empty space to deselect all objects. Select the three square interiors and choose <strong>Measure | Areas.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll find the sum of the areas of the two smaller squares.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div class="column-3">
+<p>Choose <strong>Number | Calculate</strong> to open Sketchpad&rsquo;s Calculator.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div class="column-3">
+<p>Click one of the two smaller area measurements in the sketch to enter it into the Calculator. Then click the <strong>+</strong> key, click the other smaller area measurement in the sketch, and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">14.</div>
+<div class="column-3">
+<p>Drag the vertices of your right triangle. How does the sum of the areas of the two smaller squares compare to the area of the larger square?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Text tool" alt="Text Tool" width="32" height="32" src="images/toolText.gif"></div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>This property is called the <em>Pythagorean theorem.</em> Use a caption with Hot Text to state this theorem using proper mathematical vocabulary.</p>
+</div>
+</div>
+<h2>Construct a Pythagorean Tree <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x447.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x447.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>To <em>iterate</em> an action is to repeat it some number of times. In geometry, an <em>iteration</em> uses an operation performed on one set of geometric objects to produce a new set of objects that share the same relationship. You&rsquo;ve just constructed squares on the three sides of a right triangle. You&rsquo;re now going to iterate this right-triangle construction to produce a tree-like construction whose branches contain smaller and smaller copies of your triangle and three squares.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Choose <strong>File | Document Options</strong> and add a blank page to your document.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Custom tool" alt="Custom Tool" width="32" height="32" src="images/toolCustom.gif"></div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>Use a custom tool to construct a square <em>ABCD</em> that&rsquo;s controlled by the two bottom points <em>A</em> and <em>B</em> (dragging either point changes the size of the square). Label the vertices.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-9_02" src="Images/tutorial-9_02.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">18.</div>
+<div style="width:440px;" class="column-3">
+<p>Select <span class="segment">CD</span> and choose <strong>Construct | Midpoint.</strong> Label the midpoint <em>E.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div style="width:440px;" class="column-3">
+<p>Select in order points <em>E</em> and <em>C</em> and choose <strong>Construct | Circle by Center+Point.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div style="width:440px;" class="column-3">
+<p>Select in order point <em>C</em>, point <em>D</em>, and the circle. Choose <strong>Construct | Arc on Circle.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">21.</div>
+<div style="width:440px;" class="column-3">
+<p>Select the circle (not the arc) and choose <strong>Display | Hide Circle.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">22.</div>
+<div style="width:440px;" class="column-3">
+<p>Construct a point <em>F</em> anywhere on the arc.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">23.</div>
+<div style="width:440px;" class="column-3">
+<p>Construct sides <em>CF</em> and <em>DF.</em> Why is Δ<em>DFC</em> a right triangle?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">24.</div>
+<div class="column-3">
+<p>Select the arc and point <em>E</em> and hide them.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-9_03" src="Images/tutorial-9_03.gif"><div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">25.</div>
+<div style="width:240px;" class="column-3">
+<p>Select points <em>A</em> and <em>B</em> and choose <strong>Transform | Iterate.</strong> Click, in order, on points <em>D</em> and <em>F</em> to map points <em>A</em> and <em>B</em> to points <em>D</em> and <em>F.</em> In the Structure pop-up menu, choose <strong>Add New Map</strong> and map points <em>A</em> and <em>B</em> to points <em>F</em> and <em>C.</em> Click <strong>Iterate.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">26.</div>
+<div style="width:240px;" class="column-3">
+<p>You should now have squares and right triangles growing off the legs of your original right triangle. Drag point <em>F</em> to wave the tree&rsquo;s branches.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Iteration is a powerful mathematical tool for building many interesting models with Sketchpad. It can be used to construct all kinds of fractals as well as other models such as Riemann sums in calculus." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">27.</div>
+<div style="width:240px;" class="column-3">
+<p>Add branches to the tree by selecting any part of the iterated image and pressing <strong>+</strong> on your keyboard. Press <strong>&ndash;</strong> to remove branches.</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">28.</div>
+<div class="column-3">
+<p>Construct a general triangle and use your custom Square tool to construct squares on all three sides of the triangle. Find the areas of three squares. Compute the sum of two of the areas, and then drag the vertices. What does the triangle look like when the sum is greater than the third area? What does it look like when the sum is less than the third area? How could you use an angle measurement to confirm your observations?</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿[
+    {
+        "Id": 1,
+        "Province": "北京市",
+        "ProvinceId": 110000
+    },
+    {
+        "Id": 2,
+        "Province": "天津市",
+        "ProvinceId": 120000
+    },
+    {
+        "Id": 3,
+        "Province": "河北省",
+        "ProvinceId": 130000
+    },
+    {
+        "Id": 4,
+        "Province": "山西省",
+        "ProvinceId": 140000
+    },
+    {
+        "Id": 5,
+        "Province": "内蒙古自治区",
+        "ProvinceId": 150000
+    },
+    {
+        "Id": 6,
+        "Province": "辽宁省",
+        "ProvinceId": 210000
+    },
+    {
+        "Id": 7,
+        "Province": "吉林省",
+        "ProvinceId": 220000
+    },
+    {
+        "Id": 8,
+        "Province": "黑龙江省",
+        "ProvinceId": 230000
+    },
+    {
+        "Id": 9,
+        "Province": "上海市",
+        "ProvinceId": 310000
+    },
+    {
+        "Id": 10,
+        "Province": "江苏省",
+        "ProvinceId": 320000
+    },
+    {
+        "Id": 11,
+        "Province": "浙江省",
+        "ProvinceId": 330000
+    },
+    {
+        "Id": 12,
+        "Province": "安徽省",
+        "ProvinceId": 340000
+    },
+    {
+        "Id": 13,
+        "Province": "福建省",
+        "ProvinceId": 350000
+    },
+    {
+        "Id": 14,
+        "Province": "江西省",
+        "ProvinceId": 360000
+    },
+    {
+        "Id": 15,
+        "Province": "山东省",
+        "ProvinceId": 370000
+    },
+    {
+        "Id": 16,
+        "Province": "河南省",
+        "ProvinceId": 410000
+    },
+    {
+        "Id": 17,
+        "Province": "湖北省",
+        "ProvinceId": 420000
+    },
+    {
+        "Id": 18,
+        "Province": "湖南省",
+        "ProvinceId": 430000
+    },
+    {
+        "Id": 19,
+        "Province": "广东省",
+        "ProvinceId": 440000
+    },
+    {
+        "Id": 20,
+        "Province": "广西壮族自治区",
+        "ProvinceId": 450000
+    },
+    {
+        "Id": 21,
+        "Province": "海南省",
+        "ProvinceId": 460000
+    },
+    {
+        "Id": 22,
+        "Province": "重庆市",
+        "ProvinceId": 500000
+    },
+    {
+        "Id": 23,
+        "Province": "四川省",
+        "ProvinceId": 510000
+    },
+    {
+        "Id": 24,
+        "Province": "贵州省",
+        "ProvinceId": 520000
+    },
+    {
+        "Id": 25,
+        "Province": "云南省",
+        "ProvinceId": 530000
+    },
+    {
+        "Id": 26,
+        "Province": "西藏自治区",
+        "ProvinceId": 540000
+    },
+    {
+        "Id": 27,
+        "Province": "陕西省",
+        "ProvinceId": 610000
+    },
+    {
+        "Id": 28,
+        "Province": "甘肃省",
+        "ProvinceId": 620000
+    },
+    {
+        "Id": 29,
+        "Province": "青海省",
+        "ProvinceId": 630000
+    },
+    {
+        "Id": 30,
+        "Province": "宁夏回族自治区",
+        "ProvinceId": 640000
+    },
+    {
+        "Id": 31,
+        "Province": "新疆维吾尔自治区",
+        "ProvinceId": 650000
+    },
+    {
+        "Id": 32,
+        "Province": "台湾省",
+        "ProvinceId": 710000
+    },
+    {
+        "Id": 33,
+        "Province": "香港特别行政区",
+        "ProvinceId": 810000
+    },
+    {
+        "Id": 34,
+        "Province": "澳门特别行政区",
+        "ProvinceId": 820000
+    }
+]

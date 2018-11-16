@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_printpreview" component="wps">
+	<commands>
+		<KListCommand id="RB_Print" text="@Print">
+			<KQuickMenuCommand customTip2="Print2" id="RB_PrintMenu" referenceCommand="Print" rbHotKey="P">
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+			</KQuickMenuCommand>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="OnePage" aid="188" faceid="118" icon="OnePage" id="OnePage" customTip="OnePage" text="@One Page" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DoublePages" aid="189" faceid="119" icon="DoublePages" id="DoublePages" customTip="MultiplePages" text="@Multiple Pages" rbHotKey="D"/>
+		<KxWpsZoomCommand space="5" labelText="@Zoom" ksoCmd="ZoomCombo" aid="598" id="PrintPreviewZoomCombo" customTip="PrintPreviewZoomCombo" spaceHint="suitable" text="@Zoom"/>
+		<KListCommand id="RB_PrintShow" text="@Show">
+			<command idQ="OnePage"/>
+			<command idQ="DoublePages"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="PrintPreviewZoomCombo"/>
+			<KxCheckBoxCommand ksoCmd="ViewRuler" id="PrintShowViewRuler" customTip="PrintShowViewRuler" spaceHint="suitable" text="@View Ruler" qtspyName="ViewRuler" rbHotKey="R"/>
+		</KListCommand>
+		<KListCommand id="RB_PP_Close" text="@Close">
+			<KxLegacyTriggerCommand detail="@Close" hotKey="c" ksoCmd="ClosePreview" icon="CloseWindow" id="ClosePreview" customTip="ClosePreview" text="@Close" rbHotKey="C"/>
+		</KListCommand>
+		<KxWpsPrintInfoCommand hookIds="RB_PrintMenu" id="CTP_PrintHook"/>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_PrintPreview">
+			<command idQ="RB_Print"/>
+			<separator/>
+			<command idQ="RB_PrintShow"/>
+			<separator/>
+			<command idQ="RB_PP_Close"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

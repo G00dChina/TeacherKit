@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_tabletool" component="et">
+	<commands>
+		<KListCommand id="RB_Properties" text="@Properties">
+			<KRbLayoutListCommand horizontalSpacing="3" layoutOnly="1" spaceHint="suitable">
+				<KLabelCommand spaceHint="compact" text="@Table Name:"/>
+				<KxLineEditCommand fixedHeight="22" ksoCmd="TableName" fixedWidth="100" customTip="TableName" spaceHint="suitable" text="@Table Name:" qtspyName="TableName" rbHotKey="A"/>
+			</KRbLayoutListCommand>
+			<KxLegacyTriggerCommand ksoCmd="ResizeTable" aid="7765" icon="ResizeTable" customTip="ResizeTable" spaceHint="suitable" text="@Resize Table" qtspyName="ResizeTable" rbHotKey="I"/>
+		</KListCommand>
+		<KListCommand id="RB_Tools" text="@Tools">
+			<KxLegacyTriggerCommand ksoCmd="RepeatWordDelete" icon="DeleteRepeatItems" customTip="RemoveDuplicates" spaceHint="suitable" text="@Remove Duplicates" qtspyName="RepeatWordDelete" rbHotKey="M"/>
+			<KxLegacyTriggerCommand ksoCmd="ConvertToRange" aid="7375" icon="ConvertToRange" customTip="ConvertToRange" spaceHint="suitable" text="@Convert to Range" qtspyName="ConvertToRange" rbHotKey="G"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="r" comtomTip="TableMenuRefresh" ksoCmd="Refresh" aid="459" icon="Refresh" id="Refresh" text="@Refresh Data" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="a" comtomTip="RefreshAll" ksoCmd="RefreshAll" aid="1952" icon="RefreshAll" id="RefreshAll" text="@Refresh All" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="e" comtomTip="PublishToSharePoint" ksoCmd="PublishToSharePoint" aid="3000073" icon="ExportTableToSharePointList" id="PublishToSharePoint" dialogHint="1" text="@Export Table to SharePoint List" rbHotKey="E"/>
+		<KxLegacyTriggerCommand text2="@Edit
+OLE DB Query" hotKey="I" ksoCmd="EditOleDBQuery" aid="1950" showiconAndText="1" icon="EditOleDBQuery" id="EditOleDBQuery" dialogHint="1" customTip="EditOleDBQuery" spaceHint="suitable" text="@Edit Query" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditTextImport" aid="1950" showiconAndText="1" icon="EditOleDBQuery" id="EditTextImport" dialogHint="1" customTip="EditTextImport" spaceHint="suitable" text="@Edit Text Import" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="P" ksoCmd="EDRProperties" aid="1951" showiconAndText="1" icon="EDRProperties" id="EDRProperties" dialogHint="1" customTip="EDRProperties" spaceHint="suitable" text="@Data Range Properties" rbHotKey="P"/>
+		<KListCommand id="RB_Table_Extra_Data" text="@External Data">
+			<KListCommand showIconAndText="1" aid="3000074" barid="40085" icon="TableExtraData" id="RB_Extra_Data_Menu" text="@External Data" rbHotKey="D">
+				<KListCommand hotKey="r" aid="3000075" barid="40086" icon="RefreshAll" id="RefreshAndAll" customTip="TableMenuRefresh" text="@Refresh Data" rbHotKey="A">
+					<command idQ="Refresh"/>
+					<command idQ="RefreshAll"/>
+				</KListCommand>
+				<separator/>
+				<command idQ="EditOleDBQuery"/>
+				<command idQ="EditTextImport"/>
+				<command idQ="EDRProperties"/>
+				<separator/>
+				<command idQ="PublishToSharePoint"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_TableTool">
+			<command idQ="RB_Properties"/>
+			<separator/>
+			<command idQ="RB_Tools"/>
+			<separator/>
+			<command idQ="RB_Table_Extra_Data"/>
+			<separator/>
+			<command idQ="TableStyleOptions" filter="patent:CustomizableTableStyleList=true"/>
+			<separator filter="patent:CustomizableTableStyleList=true"/>
+			<command idQ="TableStyles"/>
+		</subcommand>
+	</subcommands>
+</shell>

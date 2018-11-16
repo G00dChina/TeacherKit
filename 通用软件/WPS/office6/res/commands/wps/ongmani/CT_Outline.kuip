@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_outline" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="PromoteToHighestLevelOnOutlining" icon="rPromoteToHighestLevelOnOutlining" id="rPromoteToHighestLevelOnOutlining" customTip="PromoteToHighestLevelOnOutlining" text="@Promote to Heading 1" rbHotKey="R"/>
+		<KxLegacyTriggerCommand ksoCmd="PromoteOnOutlining" icon="rPromoteOnOutlining" shortcutHint="Ctrl+Alt+Left" id="rPromoteOnOutlining" customTip="PromoteOnOutlining" text="@Promote" rbHotKey="P"/>
+		<KxWpsComboBoxCommand ksoCmd="OutLineLevelComboOnOutlining" filter="lang!=ja_JP,en_US" fixedWidth="128" items="@Level 1;Level 2;Level 3;Level 4;Level 5;Level 6;Level 7;Level 8;Level 9;Body Text" id="OutLineLevelComboOnOutlining" customTip="OutLineLevelComboOnOutlining" text="@Outline Level" rbHotKey="O"/>
+		<KxWpsComboBoxCommand ksoCmd="OutLineLevelComboOnOutlining" filter="lang=en_US" fixedWidth="136" items="@Level 1;Level 2;Level 3;Level 4;Level 5;Level 6;Level 7;Level 8;Level 9;Body Text" id="US_OutLineLevelComboOnOutlining" customTip="OutLineLevelComboOnOutlining" text="@Outline Level" rbHotKey="O"/>
+		<KxWpsComboBoxCommand ksoCmd="OutLineLevelComboOnOutlining" filter="lang=ja_JP" fixedWidth="162" items="@Level 1;Level 2;Level 3;Level 4;Level 5;Level 6;Level 7;Level 8;Level 9;Body Text" id="JP_OutLineLevelComboOnOutlining" customTip="OutLineLevelComboOnOutlining" text="@Outline Level" rbHotKey="O"/>
+		<KxLegacyTriggerCommand ksoCmd="DemoteOnOutlining" icon="rDemoteOnOutlining" shortcutHint="Ctrl+Alt+Right" id="rDemoteOnOutlining" customTip="DemoteOnOutlining" text="@Demote" rbHotKey="M"/>
+		<KxLegacyTriggerCommand ksoCmd="DemoteToLowestLevelOnOutlining" icon="rDemoteToLowestLevelOnOutlining" shortcutHint="Ctrl+Shift+N" id="rDemoteToLowestLevelOnOutlining" customTip="DemoteToLowestLevelOnOutlining" text="@Demote to Body Text" rbHotKey="B"/>
+		<KxLegacyTriggerCommand forceShowIconAndText="1" ksoCmd="RelocateUpOnOutlining" icon="RelocateUpOnOutlining" shortcutHint="Shift+Alt+Up" id="rRelocateUpOnOutlining" customTip="RelocateUpOnOutlining" text="@Up" rbHotKey="U"/>
+		<KxLegacyTriggerCommand forceShowIconAndText="1" ksoCmd="RelocateDownOnOutlining" icon="RelocateDownOnOutlining" shortcutHint="Shift+Alt+Down" id="rRelocateDownOnOutlining" customTip="RelocateDownOnOutlining" text="@Down" rbHotKey="D"/>
+		<KxLegacyTriggerCommand forceShowIconAndText="1" ksoCmd="ExpandOnOutlining" icon="ExpandOnOutlining" shortcutHint="Shift+Alt+=" id="rExpandOnOutlining" customTip="ExpandOnOutlining" text="@Expand" rbHotKey="E"/>
+		<KxLegacyTriggerCommand forceShowIconAndText="1" ksoCmd="CollapseOnOutlining" icon="CollapseOnOutlining" shortcutHint="Shift+Alt+-" id="rCollapseOnOutlining" customTip="CollapseOnOutlining" text="@Collapse" rbHotKey="L"/>
+		<KxWpsComboBoxCommand ksoCmd="ShowLevelOnOutlining" fixedWidth="100" items="@Show Level 1;Show Level 2;Show Level 3;Show Level 4;Show Level 5;Show Level 6;Show Level 7;Show Level 8;Show Level 9;Show All Levels" id="ShowLevelOnOutlining" customTip="ShowLevelOnOutlining" spaceHint="suitable" text="@Show Level" rbHotKey="V"/>
+		<KxLegacyTriggerCommand showIconAndText="3" ksoCmd="UpdateTocOnOutlining" icon="UpdateTocOnOutlining" id="UpdateTocOnOutliningRainbow" customTip="UpdateTocOnOutlining" text="@Update TOC" rbHotKey="A"/>
+		<KxLegacyTriggerCommand ksoCmd="GotoTocOnOutlining" icon="GotoTocOnOutlining" id="GotoTocOnOutlining" customTip="GotoTocOnOutlining" text="@Go to TOC" rbHotKey="G"/>
+		<KListCommand id="RB_Outline_Part">
+			<command idQ="ShowLevelOnOutlining"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxCheckBoxCommand ksoCmd="ShowFirstLineOnOutlining" id="ShowFirstLineOnly" customTip="ShowFirstLineOnly" spaceHint="suitable" text="@Show First Line Only" qtspyName="ShowFirstLineOnOutlining" rbHotKey="F"/>
+			<KxCheckBoxCommand ksoCmd="ShowTextFormateOnOutlining" id="ShowFormatting" customTip="ShowFormatting" spaceHint="suitable" text="@Show Formatting" qtspyName="ShowTextFormateOnOutlining" rbHotKey="T"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="UpdateTocOnOutliningRainbow"/>
+			<command idQ="GotoTocOnOutlining"/>
+		</KListCommand>
+		<KListCommand id="RB_Outline" text="@Outlining Tools" rbFileMenuEmbed="1">
+			<KListCommand vertspace="7" embedHint="1">
+				<command idQ="rPromoteToHighestLevelOnOutlining"/>
+				<command idQ="rPromoteOnOutlining"/>
+				<command idQ="OutLineLevelComboOnOutlining" filter="lang!=ja_JP,en_US"/>
+				<command idQ="US_OutLineLevelComboOnOutlining" filter="lang=en_US"/>
+				<command idQ="JP_OutLineLevelComboOnOutlining" filter="lang=ja_JP"/>
+				<command idQ="rDemoteOnOutlining"/>
+				<command idQ="rDemoteToLowestLevelOnOutlining"/>
+				<separator/>
+				<command idQ="rRelocateUpOnOutlining"/>
+				<command idQ="rRelocateDownOnOutlining"/>
+				<command idQ="rExpandOnOutlining"/>
+				<command idQ="rCollapseOnOutlining"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_OutliningClose" text="@Close" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand ksoCmd="PrintLayoutView" idMso="OutlineViewClose" icon="CloseView" controlType="0" id="OutlineViewClose" customTip="CloseOutlineview" text="@Close" qtspyName="PrintLayoutView" rbHotKey="C"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Outline">
+			<command idQ="RB_Outline"/>
+			<separator/>
+			<command idQ="RB_Outline_Part"/>
+			<separator/>
+			<command idQ="RB_OutliningClose"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

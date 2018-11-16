@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>speech bubble 2.png</Overlay_Filename>
+<Overlay_Name>讲话气泡 2</Overlay_Name>
+<Overlay_XGrow>100</Overlay_XGrow>
+<Overlay_YGrow>100</Overlay_YGrow>
+<Text_Top>70</Text_Top>
+<Text_Left>40</Text_Left>
+<Text_Bottom>75</Text_Bottom>
+<Text_Right>40</Text_Right>
+<Vector_Grow>0</Vector_Grow>
+<CanRotate_90>1</CanRotate_90>
+<CanRotate_180>1</CanRotate_180>
+<CanRotate_270>1</CanRotate_270>
+<CanFlip_X>1</CanFlip_X>
+<CanFlip_X90>1</CanFlip_X90>
+<CanFlip_X180>1</CanFlip_X180>
+<CanFlip_X270>1</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe2b38d</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M293.034,145.595c42.082-36.894-5.446-127.213-66.649-104.228c-1.182-52.757-125.836-55.921-133.402-4.489
+	C60.218,9.104-14.102,50.443,18.017,100.073c-37.486,6.819-12.005,96.522,35.409,85.059c1.759,49.226,109.417,57.418,126.774,31.607
+	c11.421,15.975,1.073,21.754-15.884,32.588c26.134,1.441,35.271-11.328,48.963-35.068
+	C246.046,241.669,324.791,190.501,293.034,145.595z</svg>
+</figure>
+<borderWidth>11.00</borderWidth>
+<seamY>108.70</seamY>
+<shapeWidth>309</shapeWidth>
+<shapeHeight>250</shapeHeight>
+</VectorProps>
+<Style>3</Style>
+</Overlay>

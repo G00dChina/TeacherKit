@@ -1,0 +1,1 @@
+SwitchPlayer( "video1", "video2", "$VideoFileName", "$VideoWidth", "$VideoHeight", "$FetchFileURLVideoObj$#$MediaDirectory", "$ObjectIDName", "$ObjectClassID", "$ObjectCodebase", "$EmbedName", "$EmbedEnableJS", "$EmbedPluginsPage", "$ParamLoop", "$ParamAutoStart", "$ParamController", toc1, toc2 )

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加载失败</title>
+	<style>
+		html,body{background: #f7f7f7;}
+		html,body,div,p,ul,li,span,a{margin: 0; padding: 0;font-family: \5FAE\8F6F\96C5\9ED1,\5b8b\4f53,Tahoma,Arial;font-size: 14px;}
+		.top{position: relative;height: 30px;margin: 20px 30px 100px;background: #93a4bc;color: #fff;padding: 13px 0;}
+		.warnning{width: 208px;height: 30px;line-height: 28px;padding-left: 57px;background: url(img/ui_img8.png) 0 0 no-repeat;margin: 2px auto 0;font-size: 16px;}
+		a.new_btn,a.new_btn:link,a.new_btn:visited{position: absolute;top: 13px;right: 27px;width: 94px;height: 32px;line-height: 32px;background: url(img/ui_img8.png) -9px -62px no-repeat #f7f7f7;color: #8da5c5;padding-left: 31px;text-decoration: none;-webkit-box-shadow: 0 2px 0 #6785b0;box-shadow: 0 2px 0 #6785b0;}
+		a.new_btn:hover{background-color: #f0f3f6;}
+		a.new_btn:active{background-color: #e9edf2;}
+
+		.main{width: 600px;margin: 0 auto;}
+		.renovate_txt{line-height: 36px;font-size: 16px;color: #888888;text-align: center;}
+		a.renovate_link,a.renovate_link:link,a.renovate_link:visited{font-size: 16px;color: #2a79db;text-decoration: none;}
+		a.renovate_link:hover,a.renovate_link:active{text-decoration: underline;}
+		.gray_ask{color: #adadad;margin-top: 40px;line-height: 50px;text-align: center;}
+		.box{width: 598px;height: 318px;background: #fff;border: 1px solid #ddd;-webkit-box-shadow: 0 0 7px #ebebeb;box-shadow: 0 0 7px #ebebeb;}
+		ul{margin:0 20px;padding: 20px 0 50px;border-bottom: 1px solid #ddd;}
+		li{list-style: none;height: 30px;line-height: 30px;font-size: 16px;color: #6b6e74;padding-left: 35px;background: url(img/ui_img8.png) no-repeat;margin: 36px 0 0 106px;}
+		li.logo1{background-position: -20px -100px;}
+		li.logo2{background-position: -20px -140px;}
+		li.logo3{background-position: -20px -170px;}
+		.foot{height: 50px;line-height: 50px;padding: 0 20px;}
+		.checkbox{padding-left: 22px;color: #888;background: url(img/ui_img8.png) no-repeat -40px -240px;cursor: default;}
+		.checked{background-position: -40px -200px;}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<p class="warnning">您的网络可能出现问题了哟！</p>
+		<a id="newDoc" href="http://userparams?mod=template2&act=newdoc" class="new_btn">新建空白文档</a>
+	</div>
+	<div class="main">
+		<p class="renovate_txt">“我的WPS”无法显示，请检查您的网络链接后刷新<br /><a href="javascript:void(0)" class="renovate_link" onclick="openUrl()">刷新</a></p>
+		<p class="gray_ask">在“我的WPS”可以做什么？</p>
+		<div class="box">
+			<ul>
+				<li class="logo1">搜文档：快速搜索到您的本地文档、云文档；</li>
+				<li class="logo2">找记录：展示最近使用文档记录、一键打开；</li>
+				<li class="logo3">挑模板：超多精美办公模板，提升文档品质；</li>
+			</ul>
+			<div class="foot">
+				<p class="checkbox" id="nextSet" onclick="checked_onclick(this);">下次启动直接新建空白文档</p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function openUrl(){
+			var ver=window.homepageapi&&window.homepageapi.GetGUID()?window.homepageapi.GetGUID():"";
+			var channel=window.homepageapi&&window.homepageapi.GetChannelID()?window.homepageapi.GetChannelID():"";
+			location.href="http://home.wps.cn/client/?ver="+ver+"&channel="+channel+"&app=wpp";
+		}
+		var checked=false;
+		var nextSet=document.getElementById("nextSet");
+		var set=function(el){
+			homepageapi.setAutoStartTemplate(!checked);
+		}
+		set();
+		function checked_onclick(el){
+			checked=!checked;
+			if(checked){
+				nextSet.className="checkbox checked";
+			}else{
+				nextSet.className="checkbox";
+			}
+			set(el);
+		}
+	</script>
+</body>
+</html>

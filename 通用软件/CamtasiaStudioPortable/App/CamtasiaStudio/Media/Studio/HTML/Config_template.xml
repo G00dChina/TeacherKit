@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+   <config>
+      <hasPipVideo type="Boolean">$SWFHasPIPVideo</hasPipVideo>
+      <hasPipOverlay type="Boolean">$SWFHasPIPOverlay</hasPipOverlay>
+      <hasToc type="Boolean">$SWFHasTOC</hasToc>
+      <hasAudio type="Boolean">$SWFHasAudio</hasAudio>
+      <mainVidIsFlv type="Boolean">$SWFMainVidIsFLV</mainVidIsFlv>
+      <skinTheme>$SWFSkinTheme</skinTheme>
+      <autoStart type="Boolean">$SWFAutoStart</autoStart>
+      <backgroundColor>$SWFBGColor</backgroundColor>
+      <showLoadingMov type="Boolean">$SWFShowLoadingMOV</showLoadingMov>      
+      <loadingMovPercentToLoad type="Number">$SWFLoadingMovPercentToLoad</loadingMovPercentToLoad>
+      <loadingMovMinDuration type="Number">$SWFLoadingMovMinDuration</loadingMovMinDuration>
+      <controllerColor type="Number">$SWFControllerColor</controllerColor>
+      <showAbout type="Boolean">$SWFShowAbout</showAbout>
+      <aboutBoxText>$SWFAboutBoxText</aboutBoxText>
+      <timeDisplayFormat>$SWFTimeDisplayFormat</timeDisplayFormat>
+      <showDuration type="Boolean">$SWFShowDuration</showDuration>
+      <showElapsedTime type="Boolean">$SWFElapsedTime</showElapsedTime>
+      <timeDisplayFont>$SWFTimeDispFont</timeDisplayFont>
+      <timeDisplayFontColor type="Number">$SWFTimeDispFontColor</timeDisplayFontColor>
+      <okLabel>$OKlabel</okLabel>
+      <localSecurityWarningTitle>$LocalSecurityWarningTitle</localSecurityWarningTitle>
+      <localSecurityWarning>$LocalSecurityWarning</localSecurityWarning>
+      <includeScoreInEmail type="Boolean">$IncludeScoreInEmail</includeScoreInEmail>
+      <rememberQuizAnswers type="Number">0</rememberQuizAnswers>
+      <endAction>$SWFEndAction</endAction>
+      <endActionParam>$SWFEndActionParam</endActionParam>
+      <stopatend type="Boolean" >0</stopatend>
+      <controlsWidth type="Number">$SWFControllerWidth</controlsWidth>
+      <controlsHeight type="Number">$VideoHeightNoController</controlsHeight>
+      <volume type="Number">$SWFInitVolume</volume>
+      <hasCaptions type="Boolean">$HasClosedCaption</hasCaptions>
+      <captionsVisible type="Boolean">$ClosedCaptionsVisible</captionsVisible>
+      <caption>         
+         <font>
+            <type type="String">$CloseCaptionFontType</type>
+            <size type="Number">$ClosedCaptionFontSize</size>
+            <weight type="Boolean">$CloseCaptionFontWeight</weight>
+            <color type="Number">$CloseCaptionFontColor</color>
+            <cpl type="Number">$CloseCaptionCharsPerLine</cpl>
+         </font>
+         <panel>
+            <background>
+               <color type="Number">$CloseCaptionBGColor</color>
+               <alpha type="Number">$ClosedCaptionBGAlpha</alpha>
+            </background>
+            <animation>
+               <speed type="Number">$ClosedCaptionSpeed</speed>
+            </animation>
+         </panel>
+      </caption>
+      <video1>
+         <width type="Number">$ActualVideoWidth</width>
+         <height type="Number">$ActualVideoHeight</height>
+      </video1>
+      <pip>
+         <width type="Number">$PIPVideoWidth</width>
+         <height type="Number">$PIPVideoHeight</height>
+      </pip>
+      <toc>
+         <x type="Number">$SWFTOCXPos</x>
+         <y type="Number">$SWFTOCYPos</y>
+         <width type="Number">$SWFTOCWidth</width>
+         <height type="Number">$SWFTOCHeight</height>
+         <!-- AlternatingRowColors takes precedence over BackgroundColor and RowDepthColors takes precedence over both AlternatingRowColors and BackgroundColor -->
+         <backgroundColor type="Number"></backgroundColor>
+         <!-- accepts a hex value -->
+         <alternatingRowColors>
+            <!-- row alternate color based on the array of color values (row 1 = the value of the first color, row 2 = the value of the second color, row 3 equals the value of the first color, etc. -->
+            <array>
+               <!-- accepts two or more hex colors ( add additional Colors tags if more are needed ) -->
+               <colors type="Number"></colors>
+               <colors type="Number"></colors>
+            </array>
+         </alternatingRowColors>
+         <rowDepthColors>
+            <!-- color is based on the rows depth in the tree hierarchy -->
+            <array>
+               <!-- accepts two or more hex colors colors in the form of 0xFFFFFF ( add additional Colors tags if more are needed ) -->
+               <colors type="Number"></colors>
+               <!-- accepts a hex value -->
+               <colors type="Number"></colors>
+               <!-- accepts a hex value -->
+            </array>
+         </rowDepthColors>
+         <rowRollOverColor type="Number">0xA4A4A4</rowRollOverColor>
+         <!-- color of the row on mouse roll over - ignored if UseRollOver is false -->
+         <rowSelectedColor type="Number">0xC0C0C0</rowSelectedColor>
+         <!-- color of the row when it is the currently active row -->
+         <rowIndentation>10</rowIndentation>
+         <!-- number of pixels each row of a tree is indented -->
+         <borderStyle>solid</borderStyle>
+         <!-- none, inset, outset, solid -->
+         <textColor type="Number">0x000000</textColor>
+         <!-- the font color of tree items -->
+         <fontFamily>_sans</fontFamily>
+         <!-- the name of the font to be used, i.e. Arial, Times New Roman, HelveticaNeueLT Std  -->
+         <fontSize type="Number">12</fontSize>
+         <fontWeight>none</fontWeight>
+         <!-- none, bold -->
+         <textAlign>left</textAlign>
+         <!-- left, right, center -->
+         <textDecoration>none</textDecoration>
+         <!-- none, underline -->
+         <textIndent type="Number">0</textIndent>
+         <textRollOverColor type="Number">0x000000</textRollOverColor>
+         <!-- color of text on mouse roll over - ignored if UseRollOver is false -->
+         <textSelectedColor type="Number">0x000000</textSelectedColor>
+         <!-- color of text when row is selected -->
+         <useRollOver type="Boolean">0</useRollOver>
+         <!-- Use boolean numerical equivalents( 0 = false, 1 = true ) if set to false the rollover colors for the text and row are ignored -->
+         <collapsible type="Boolean">$SWFCollapsableTOC</collapsible>
+         <!-- if false, the collapsible nature of the tree is disabled -->
+         <expanded type="Boolean">1</expanded>
+      </toc>
+      <quiz>
+         <disableFeedback type="Boolean">$QuizDisableFeedback</disableFeedback>
+         <txtQuestionOf>$QuizStrQuestionOf</txtQuestionOf>
+         <txtPrev>$QuizStrPrev</txtPrev>
+         <txtSubmit>$QuizStrSubmit</txtSubmit>
+         <txtNext>$QuizStrNext</txtNext>
+         <txtDone>$QuizStrDone</txtDone>
+         <txtPreview>$QuizStrPreview</txtPreview>
+         <txtSend>$QuizStrSend</txtSend>
+         <txtMainMessage>$QuizStrMainMessage</txtMainMessage>
+         <txtEmailContents>$QuizStrEmailContents</txtEmailContents>
+         <txtEmailTo>$QuizStrEmailTo</txtEmailTo>
+         <txtAnswersSent>$QuizStrAnswersSent</txtAnswersSent>
+         <txtsummary>$QuizStrSummary</txtsummary>
+         <txtScore>$QuizStrScore</txtScore>
+         <txtSummaryTitle>$QuizStrSummaryTitle</txtSummaryTitle>
+      </quiz>
+   </config>
+   <playlist>
+      $PlaylistXML
+   </playlist>   
+   <tocInfo>
+      $TableOfContentsXML
+   </tocInfo>
+</main>

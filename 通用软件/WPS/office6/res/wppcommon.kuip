@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="wppcommon" component="wpp">
+	<libraries>
+		<library path="." filter="lang=zh_CN;category=personal" name="wpponlinetemplate"/>
+		<library path="." name="wpp_extend_api"/>
+		<library path="./addons/shareplay" filter="category=personal,professional" name="shareplay"/>
+		<library path="." filter="support:TrialToolDsmPlugin=true" name="dsm"/>
+		<library path="." filter="feature_16777276!=0" name="acm"/>
+		<library path="./addons/wpppresentationtool" name="wpppresentationtool"/>
+		<library path="./addons/touchkeyboard" name="wpptouchkeyboard"/>
+		<library path="./addons/kprintinfocol" name="kprintinfocol"/>
+		<library path="./addons/konlineshapes" name="konlineshapes"/>
+		<library path="./addons/kwpspackage" name="kwpspackage"/>
+		<library path="./addons/konlinemap" name="konlinemap"/>
+	</libraries>
+	<mainwindow tc="mainwindow">
+		<commands tc="commands">
+			<KComposeListCommand OLEMenuCategory="file" hotKey="f" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30002" barid="40" id="FileMenu" name="File" text="@File"/>
+			<KListCommand OLEMenuCategory="edit" hotKey="e" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30003" barid="41" id="EditMenu" name="Edit" text="@Edit"/>
+			<KListCommand OLEMenuCategory="edit" hotKey="v" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30004" barid="42" id="ViewMenu" name="View" text="@View"/>
+			<KListCommand OLEMenuCategory="edit" hotKey="i" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30005" barid="43" id="InsertMenu" name="Insert" text="@Insert"/>
+			<KListCommand OLEMenuCategory="edit" hotKey="o" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30006" barid="10" id="FormatMenu" name="Format" text="@Format"/>
+			<KListCommand OLEMenuCategory="edit" hotKey="t" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30007" barid="45" id="ToolsMenu" name="Tools" text="@Tools"/>
+			<KListCommand OLEMenuCategory="edit" hotKey="d" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30225" barid="565" id="SlideMenu" name="Slide" text="@Slide Show"/>
+			<KComposeListCommand OLEMenuCategory="window" hotKey="w" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30009" barid="47" id="WindowMenu" name="Window" text="@Window"/>
+			<KListCommand hotKey="y" delayloadPath="commands/wpp/PopupMenu.kuip" id="SecurityMenu" name="Security" text="@Security"/>
+			<KListCommand tc="helpmenu" OLEMenuCategory="help" hotKey="h" delayloadPath="commands/wpp/PopupMenu.kuip" aid="30010" barid="48" icon="Help;Help-hover;Help-down" id="HelpMenu" name="Help" text="@Help" rbHotKey="H"/>
+			<KxFeedbackCommand featureid="16777260" showIconAndText="1" hotKey="b" aid="627" ksourl="Product:UserFeedbackMail" icon="UserFeedback;UserFeedback-hover;UserFeedback-down" id="UserFeedback" text="@User Feedback"/>
+			<KxTabbarQAndACommand filter="category=personal" shortcutHint="Alt+Q" id="TabbarQAndA"/>
+			<KxMailFeedBackCommand filter="platform=win32;category=professional" icon="mailfeedback;mailfeedback-hover;mailfeedback-down" id="MailFeedBack" text="@MailFeedBack"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Slide Background Popup Menu" text="@Slide Background"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40004" id="Chart Area Popup Menu" text="@NewChart ChartArea"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="438" id="Plot Area" text="@NewChart PlotArea"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="1072" id="Format Data Series" text="@NewChart Series"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40007" id="Data Point Popup Menu" text="@NewChart Datapoint"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="447" id="Title Bar (Charting)" text="@NewChart ChartTitle"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40013" id="Data Table Popup Menu" text="@NewChart DataTable"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="1073" id="Format Axis" text="@NewChart Axis"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40010" id="Legend Key Popup Menu" text="@NewChart Legend"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="1074" id="Format Legend Entry" text="@NewChart LegendEntry"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40008" id="Data Label Popup Menu" text="@NewChart DataLabels"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="440" id="Trendline" text="@NewChart TrendLine Label"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40005" id="NewChart TrendLineLabel Menu" text="@NewChart TrendLine Label"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40001" id="Axis Title Popup Menu" text="@NewChart AxisTitle"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40015" id="Up Bars Popup Menu" text="@NewChart UpBar"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40016" id="Down Bars Popup Menu" text="@NewChart DownBar"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40014" id="Error Bars Popup Menu" text="@NewChart ErrorBar"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40012" id="Hi Lo Line Popup Menu" text="@NewChart HighLowLine"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40011" id="Drop Line Popup Menu" text="@NewChart DropLine"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40006" id="Series Line Popup Menu" text="@NewChart SeriesLine"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40003" id="Gridlines Popup Menu" text="@NewChart Gridline"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40002" id="Display Unit Label Popup Menu" text="@NewChart UnitLabel"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="40009" id="Lead Line Popup Menu" text="@NewChart LeadLine"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="54" id="Shapes" text="@Shapes"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Dml Shapes" text="@Shapes Popup Menu"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="235" id="OLE Object" text="@OLE Object"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="232" id="Curve" text="@Curve"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="234" id="Curve Segment" text="@Curve Segment"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Curve Point" text="@Curve Point"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Curve Point For VML" text="@Curve Point"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Motion Path Popup Menu" text="@Motion Path"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Motion Path Segment Popup Menu" text="@Motion Path Segment"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Motion Path Point Popup Menu" text="@Motion Path Point"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Table Cell Popup Menu" text="@Table Cell"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="46" id="Tables Popup Menu" name="Table" text="@Tables"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="1070" id="Notes Pane Popup Menu" name="Notes Pane" text="@Notes Pane"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="None Slide Miniature Popup Menu" text="@Not Slide Miniature"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Slide Miniature Popup Menu" text="@Slide Miniature"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Section Miniature Popup Menu" text="@Section Miniature"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Ruler Popup Menu" text="@Ruler"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Text Edit Popup Menu" text="@Text Editing"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Master Miniature Popup Menu" text="@Master Miniature"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Layout Miniature Popup Menu" text="@Layout Miniature Popup Menu"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Slide Object in Slide Sorter Popup Menu" text="@Slide Object in Slide Sorter"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Paint Brush Popup Menu" text="@Paint Brush"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Eraser Popup Menu" text="@Eraser"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Arrow Options Popup Menu" text="@Arrow Options"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Draw Figure Popup Menu" text="@Draw Shapes"/>
+			<KxWppInkColorCommand delayloadPath="commands/wpp/PopupMenu.kuip" ksoCmd="InkColor" id="Ink Color Popup Menu" text="@Ink Color"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="565" id="Slide Show Popup Menu" name="Slide Show" text="@Slide Show"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="565" id="Reading Show Popup Menu" name="Slide Show" text="@Slide Show"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Slide Show Short Popup Menu" text="@Slide Show Short Popup Menu"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="140" id="Picture Context Menu" name="Picture" text="@Picture"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="139" id="Word Art Context Menu" name="WordArt" text="@WordArt"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="236" id="Connector" text="@Connector"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="238" id="Rotate Mode" text="@Rotate Mode"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" barid="598" id="ActiveX Control" text="@ActiveX Control"/>
+			<KToolBarPopupMenuCommand hotKey="t" aid="30045" barid="3" icon="Toolbars" id="Toolbar List" text="@Toolbars">
+				<KxToolBarToggleViewCommand groups="0;1;3" toolbarName="Standard" aid="92083" qtspyName="Standard"/>
+				<KxToolBarToggleViewCommand groups="0;3" toolbarName="Formatting" aid="92084" qtspyName="Formatting"/>
+				<KxToolBarToggleViewCommand groups="1" toolbarName="Slide Sorter" aid="92085" qtspyName="Slide Sorter"/>
+				<KxToolBarToggleViewCommand groups="0;3" toolbarName="Drawing" aid="92086" qtspyName="Drawing"/>
+				<KxToolBarToggleViewCommand groups="0;3" toolbarName="Symbol" aid="92087" qtspyName="Symbol"/>
+				<KxToolBarToggleViewCommand groups="0;3" toolbarName="Shadow Settings" aid="92088" qtspyName="Shadow Settings"/>
+				<KxToolBarToggleViewCommand groups="0;3" toolbarName="3D Settings" aid="92089" qtspyName="3D Settings"/>
+				<KxToolBarToggleViewCommand groups="0;1;3" toolbarName="ClassicalTaskpane" aid="92090" qtspyName="ClassicalTaskpane"/>
+				<KxControlToolboxToolBarViewCommand groups="0;3" toolbarName="Control Toolbox" aid="92091" qtspyName="Control Toolbox"/>
+				<KxToolBarToggleViewCommand groups="0" toolbarName="Review" aid="92092" qtspyName="Review"/>
+			</KToolBarPopupMenuCommand>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="TabMenu Popup Menu"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="TabBarMenu Popup Menu"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Comment Popup Menu" text="@Comment"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="CompressPictures" aid="6382" faceid="232" idMso="PicturesCompress" icon="CompressPictures" controlType="0" id="CompressPictures" dialogHint="1" text="@Compress Pictures"/>
+			<KxMacroCommand hotKey="v" ksoCmd="VisualBasicEditor" aid="1695" filter="support:VBASupport=true" id="VisualBasicEditor" dialogHint="1" text="@Visual Basic Editor"/>
+			<KxMacroCommand hotKey="m" ksoCmd="RunMacro" aid="186" filter="support:VBASupport=true" id="RunMacro" dialogHint="1" text="@Macros"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="Subscript" aid="92245" faceid="27" icon="Subscript" id="Subscript" customTip="Subscript" text="@Subscript" rbHotKey="9"/>
+			<KxLegacyTriggerCommand hotKey="l" ksoCmd="SelectAll" aid="92116" idMso="SelectAll" icon="SelectAll" controlType="0" id="SelectAll" text="@Select All"/>
+			<KxLegacyTriggerCommand hotKey="b" ksoCmd="Bold" aid="113" faceid="316" idMso="Bold" icon="Bold" controlType="6" id="Bold" customTip="Bold" text="@Bold" rbHotKey="1"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="Copy" aid="19" faceid="331" idMso="Copy" icon="Copy" controlType="0" id="Copy" customTip="Copy" spaceHint="autocompact" text="@Copy" rbHotKey="C"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="FormatAlignCenter" forceVisible="1" aid="122" icon="AlignCenter" id="Center" customTip="FormatAlignCenter" text="@Center" rbHotKey="AC"/>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="Find" aid="92117" faceid="310" idMso="FindDialogExcel" icon="Find" controlType="0" id="Find" dialogHint="1" text="@Find"/>
+			<KxTaskPaneLegacyTriggerCommand hotKey="k" ksoCmd="TaskPane" aid="5746" icon="ViewTaskWindow" id="TaskPane" text="@Task Window"/>
+			<KxLegacyTriggerCommand hotKey="e" ksoCmd="Replace" aid="92118" idMso="ReplaceDialog" icon="Replace" controlType="0" id="Replace" dialogHint="1" text="@Replace"/>
+			<KxLegacyTriggerCommand hotKey="i" ksoCmd="Italic" aid="114" faceid="317" idMso="Italic" icon="Italic" controlType="6" id="Italic" customTip="Italic" text="@Italic" rbHotKey="2"/>
+			<KxLegacyTriggerCommand hotKey="j" ksoCmd="FormatAlignJustify" forceVisible="1" aid="92007" icon="AlignJustify" id="Justify" customTip="Justify" text="@Justify" rbHotKey="AJ"/>
+			<KxLegacyTriggerCommand hotKey="i" ksoCmd="InsertHyperlinkAlwaysVisible" aid="1576" icon="InsertHyperlink" id="HyperlinkAlwaysVisible" dialogHint="1" text="@Hyperlink" rbHotKey="I"/>
+			<KxLegacyTriggerCommand hotKey="l" ksoCmd="FormatAlignLeft" forceVisible="1" aid="120" icon="AlignLeft" id="Left" customTip="FormatAlignLeft" text="@Align Left" rbHotKey="AL"/>
+			<KxWppShortcut_Ctrl_M id="Ctrl_M" text="@New Slide"/>
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewBlankFile" aid="2520" faceid="1" idMso="FileNewBlankDocument" icon="NewFile" controlType="0" id="NewBlankFile" dialogHint="1" text="@New Blank Presentation"/>
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewBlankFile" aid="2520" faceid="1" icon="NewFile" id="NewBlankFile2" dialogHint="1" text="@New"/>
+			<KxOleLegacyTriggerCommand oleCmdExecOpt="2" enabled="false" ksoCmd="NewBlankFile" visible="false" icon="NewFile" id="OleNewFile" text="@New Blank Presentation" wpsIsEanble="false"/>
+			<KxOleLegacyTriggerCommand hotKey="o" ksoCmd="OpenFile" aid="23" faceid="296" icon="OpenFile" id="OpenFile" dialogHint="1" text="@Open" wpsIsEanble="false"/>
+			<KxOleLegacyTriggerCommand hotKey="t" oleCmdExecOpt="2" ksoCmd="PrintDirect" aid="92244" faceid="329" idMso="FilePrintQuick" icon="PrintDirect" controlType="0" id="PrintDirect" customTip="PrintDirect" text="@Print Directly" rbHotKey="R"/>
+			<KxOleLegacyTriggerCommand hotKey="p" oleCmdExecOpt="2" silentCmd="PrintDirect" ksoCmd="Print" aid="2521" faceid="303" idMso="FilePrint" icon="Print" controlType="0" id="Print" dialogHint="1" customTip="Print" text="@Print" rbHotKey="P" wpsIsEanble="true"/>
+			<KxOleLegacyTriggerCommand hotKey="u" ksoCmd="PageSetup" aid="92105" faceid="297" idMso="PageSetupDialog" icon="PageSetup" controlType="0" id="PageSetup" dialogHint="1" text="@Page Setup" rbHotKey="S"/>
+			<KxOleLegacyTriggerCommand hotKey="i" ksoCmd="Properties" aid="92110" faceid="305" idMso="Properties" icon="Properties" controlType="0" id="Properties" dialogHint="1" text="@Properties"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="FormatAlignRight" forceVisible="1" aid="121" icon="AlignRight" id="Right" customTip="FormatAlignRight" text="@Align Right" rbHotKey="AR"/>
+			<KxOleLegacyTriggerCommand hotKey="s" ksoCmd="SaveFile" aid="3" faceid="299" icon="SaveFile" id="SaveFile" text="@Save" wpsIsEanble="false"/>
+			<KxLegacyTriggerCommand ksoCmd="GrowZoom" id="GrowZoom"/>
+			<KxLegacyTriggerCommand ksoCmd="ShrinkZoom" id="ShrinkZoom"/>
+			<KxLegacyTriggerCommand ksoCmd="ResetZoom" id="ResetZoom"/>
+			<KxLegacyTriggerCommand ksoCmd="DecreaseFontSize" aid="404" faceid="19" idMso="FontSizeDecrease" icon="DecreaseFontSize" controlType="0" id="DecreaseFontSize" customTip="DecreaseFontSize" text="@Decrease Font Size" rbHotKey="FK"/>
+			<KxLegacyTriggerCommand ksoCmd="IncreaseFontSize" aid="403" faceid="18" idMso="FontSizeIncrease" icon="IncreaseFontSize" controlType="0" id="IncreaseFontSize" customTip="IncreaseFontSize" text="@Increase Font Size" rbHotKey="FG"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="Superscript" aid="92246" faceid="26" icon="Superscript" id="Superscript" customTip="Superscript" text="@Superscript" rbHotKey="8"/>
+			<KxActivatePreviousSubWindowCommand descName="@Switch to previous window" id="ActivatePreviousSubWindow"/>
+			<KxActivateNextSubWindowCommand descName="@Switch to next window" id="ActivateNextSubWindow"/>
+			<KxLegacyTriggerCommand hotKey="u" ksoCmd="Underline" aid="115" faceid="318" idMso="Underline" icon="Underline" controlType="6" id="Underline" customTip="Underline" text="@Underline" rbHotKey="3"/>
+			<KxLegacyTriggerCommand hotKey="p" ksoCmd="Paste" aid="22" idMso="Paste" icon="Paste" controlType="0" id="Paste" text="@Paste"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="Cut" aid="21" faceid="330" idMso="Cut" icon="Cut" controlType="0" id="Cut" customTip="Cut" spaceHint="autocompact" text="@Cut" rbHotKey="X"/>
+			<KxLegacyTriggerCommand descName="Redo" hotKey="r" ksoCmd="Redo" aid="129" faceid="308" idMso="Redo" icon="Redo" controlType="4" id="Redo" text="@Redo"/>
+			<KxLegacyTriggerCommand descName="Undo" hotKey="u" ksoCmd="Undo" aid="128" faceid="307" icon="Undo" id="Undo" text="@Undo"/>
+			<KHelpDocumentCommand tc="Help" hotKey="h" ksoCmd="Help" aid="92217" faceid="3" icon="Help" id="Help" text="@WPS Presentation Help"/>
+			<KxOleLegacyTriggerCommand hotKey="a" ksoCmd="SaveAs" aid="92104" faceid="300" icon="SaveAs" id="SaveAs" dialogHint="1" text="@Save As"/>
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="SlideShow" aid="1106" faceid="100" icon="SlideShow" id="SlideShow" text="@Slide Show" rbHotKey="B"/>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="CheckSpelling" aid="2" filter="support:SpellCheck=true" faceid="51" icon="SpellCheck" id="CheckSpelling" dialogHint="1" customTip="CheckSpelling" text="@Check Spelling" rbHotKey="S"/>
+			<KxWppSetSpellcheckLanguageCommand hotKey="C" filter="support:SpellCheck=true" icon="SetSpellCheckLng" id="SetSpellcheckLanguageCommand" dialogHint="1" customTip="SetSpellcheckLanguage" text="@Set Language" rbHotKey="L"/>
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="OpenThesaurus" aid="92106" filter="support:SynonymAndThesaurus=true" icon="Thesaurus" controlType="0" shortcutHint="Shift+F7" id="OpenThesaurus" dialogHint="1" customTip="Thesaurus" text="@Thesaurus" rbHotKey="h"/>
+			<KxLegacyTriggerCommand ksoCmd="DecreaseIndent" aid="3508" faceid="113" idMso="IndentDecreaseExcel" icon="DecreaseIndent" controlType="0" id="DecreaseIndent" customTip="DecreaseIndent" text="@Decrease Indent" rbHotKey="AO"/>
+			<KxLegacyTriggerCommand ksoCmd="IncreaseIndent" aid="3507" faceid="112" idMso="IndentIncreaseExcel" icon="IncreaseIndent" controlType="0" id="IncreaseIndent" customTip="IncreaseIndent" text="@Increase Indent" rbHotKey="AI"/>
+			<KxWppBrowserTriggerCommand text2="@From Current
+Slide" hotKey="c" ksoCmd="SlideShowFromCurrent" aid="1076" icon="SlideShow" id="SlideShowFromCurrent" customTip="SlideShowFromCurrent" text="@From Current 
+Slide" rbHotKey="C"/>
+			<KxLegacyTriggerCommand hotKey="D" ksoCmd="ShowHideGrid" aid="7055" faceid="111" icon="FTB_GridSwitch" id="ShowHideGrid" spaceHint="suitable" text="@Show/Hide Grid"/>
+			<KxOleLegacyTriggerCommand hotKey="v" oleCmdExecOpt="1" ksoCmd="PrintPreview" aid="109" faceid="301" idMso="FilePrintPreview" icon="PrintPreview" controlType="0" id="PrintPreview" customTip="PrintPreview" text="@Print Preview" rbHotKey="V" wpsIsEanble="false"/>
+			<KxLegacyTriggerCommand ksoCmd="PrevClose" id="OleExitPreview" text="@Close"/>
+			<KxLegacyTriggerCommand hotKey="x" ksoCmd="Exit" aid="92114" icon="Exit" id="Exit" text="@Exit"/>
+			<KWpsAssistOnlineTemplateCommand hotKey="c" icon="templateonline" id="WpsAssistOnlineTemplate" customTip="WpsAssistOnlineTemplate" text="@More Templates" rbHotKey="C"/>
+			<KWpsAssistMagicCommand hotKey="g" icon="magic" id="WpsAssistMagic" customTip="WpsAssistMagic" text="@Magic" rbHotKey="G"/>
+			<KNewFileOnlineTemplateCommand hotKey="w" icon="TabNewFile" id="NewFileOnlineTemplate" text="@New"/>
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewBlankFile" aid="2520" filter="lang=zh_CN;category=personal" icon="TabNewFile" shortcutHint="Ctrl+N" id="TabButtonNewBlankFile" text="@New"/>
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewBlankFile" aid="2520" filter="lang!=zh_CN|category!=personal" icon="TabNewFile" shortcutHint="Ctrl+N" id="TabButtonNewBlankFile" text="@New"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="NewFileFromDefaultTemplate" aid="92080" icon="WppNewFileFromDefaultTemplate" id="TabButtonDefaultTemplate" text="@New From Default Template"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="TemplatesOnMyComputer" aid="92080" icon="TemplatesOnMyComputer" id="TabButtonTemplatesOnComputer" text="@New from Other Templates"/>
+			<KxKsoNewHomepageCommand hotKey="i" toggle="false" referenceDisable="1" ksoCmd="HomepagePlugin1" aid="92194" icon="wpshome" id="NewFileFromOnlineTemplates" dialogHint="1" text="@New From Online Templates"/>
+			<KxMoreOnlineFontsCommand filter="support:CloudFonts=true" id="MoreOnlineFonts"/>
+			<KxTableBorderTriggerCommand hotKey="b" ksoCmd="BottomBorders" idMso="BorderBottomNoToggle" icon="BottomBorder" controlType="0" id="BottomBorder" index="4" text="@Bottom Border"/>
+			<KxTableBorderTriggerCommand hotKey="p" ksoCmd="TopBorders" idMso="BorderTop" icon="TopBorder" controlType="6" id="TopBorder" index="5" text="@Top Border"/>
+			<KxTableBorderTriggerCommand hotKey="l" ksoCmd="LeftBorders" idMso="BorderLeft" icon="LeftBorder" controlType="6" id="LeftBorder" index="6" text="@Left Border"/>
+			<KxTableBorderTriggerCommand hotKey="r" ksoCmd="RightBorders" idMso="BorderRight" icon="RightBorder" controlType="6" id="RightBorder" index="7" text="@Right Border"/>
+			<KxTableBorderTriggerCommand hotKey="n" ksoCmd="NoBorders" icon="NoBorder" id="NoBorder" index="0" text="@No Border"/>
+			<KxTableBorderTriggerCommand hotKey="a" ksoCmd="AllBorders" idMso="BordersAll" icon="AllBorders" controlType="0" id="AllBorders" index="1" text="@All Borders"/>
+			<KxTableBorderTriggerCommand hotKey="s" ksoCmd="OutsideBorders" idMso="BorderOutside" icon="OutsideBorders" controlType="0" id="OutsideBorders" index="2" text="@Outside Borders"/>
+			<KxTableBorderTriggerCommand hotKey="i" ksoCmd="InsideBorders" icon="CrossBorder" id="CrossBorder" index="3" text="@Inside Border"/>
+			<KxTableBorderTriggerCommand hotKey="h" ksoCmd="InsideHorizontalBorders" icon="HMiddleBorder" id="HMiddleBorder" index="8" text="@Inside Horizontal Border"/>
+			<KxTableBorderTriggerCommand hotKey="v" ksoCmd="InsideVerticalBorders" icon="VMiddleBorder" id="VMiddleBorder" index="9" text="@Inside Vertical Border"/>
+			<KxTableBorderTriggerCommand hotKey="d" ksoCmd="DiagonalDownBorders" icon="downborder" id="DiagonalDownBorder" index="10" text="@Diagonal Down Border"/>
+			<KxTableBorderTriggerCommand hotKey="u" ksoCmd="DiagonalUpBorders" icon="upborder" id="DiagonalUpBorder" index="11" text="@Diagonal Up Border"/>
+			<KTableBorderQuickMenuCommand hotKey="b" icon="OutsideBorders" customTip2="RbTableOutsideBorder2" id="Border" customTip="RbTableOutsideBorder" spaceHint="suitable" text="@Borders" referenceCommand="NoBorder" rbHotKey="BD">
+				<command idQ="NoBorder"/>
+				<command idQ="AllBorders"/>
+				<command idQ="OutsideBorders"/>
+				<command idQ="CrossBorder"/>
+				<separator/>
+				<command idQ="TopBorder"/>
+				<command idQ="BottomBorder"/>
+				<command idQ="LeftBorder"/>
+				<command idQ="RightBorder"/>
+				<separator/>
+				<command idQ="HMiddleBorder"/>
+				<command idQ="VMiddleBorder"/>
+				<command idQ="DiagonalDownBorder"/>
+				<command idQ="DiagonalUpBorder"/>
+			</KTableBorderQuickMenuCommand>
+			<KxLegacyTriggerCommand ksoCmd="DesignBrowse" idMso="ThemeBrowseForThemesPowerPoint" icon="wppimporttemplates" id="DesignBrowse" text="@Import Templates"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="MoreFill" icon="MoreFill" id="MoreFill" dialogHint="1" text="@MoreFill" rbHotKey="O"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="MoreOutline" icon="MoreOutline" id="MoreOutline" dialogHint="1" text="@MoreOutline" rbHotKey="O"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="MoreEffects" icon="MoreEffects" id="MoreEffects" dialogHint="1" text="@MoreEffects" rbHotKey="O"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="MoreFontFill" icon="MoreFontFill" id="MoreFontFill" dialogHint="1" text="@MoreFontFill" rbHotKey="O"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="MoreFontOutline" icon="MoreFontOutline" id="MoreFontOutline" dialogHint="1" text="@MoreFontOutline" rbHotKey="O"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="MoreFontEffects" icon="MoreFontEffects" id="MoreFontEffects" dialogHint="1" text="@MoreFontEffects" rbHotKey="O"/>
+			<KQuickMenuCommand aid="2520" ensureReferToSubCmd="1" id="TabbarButton" referenceCommand="TabButtonNewBlankFile">
+				<command idQ="TabButtonNewBlankFile"/>
+				<command idQ="TabButtonDefaultTemplate" filter="category!=personal"/>
+				<command idQ="TabButtonTemplatesOnComputer" filter="category=personal"/>
+				<command idQ="NewFileFromOnlineTemplates" filter="lang=zh_CN;category=personal"/>
+			</KQuickMenuCommand>
+			<KListCommand visible="false" id="TabBar NewFile">
+				<command idQ="TabbarButton"/>
+			</KListCommand>
+			<KxWppStatusCommand id="statusbar" text="@Status Bar">
+				<KxWppStatusOverrideTextCommand/>
+				<KxWppStatusInfoCommand minimumWidth="350" qtspyName="WppStatusInfo"/>
+				<separator/>
+				<KStatusSpaceCommand space="16"/>
+				<KxWppStatusProgressBarCommand progressWidth="100" minimumWidth="200" contentHeight="24" id="statusProgress" contentWidth="400"/>
+				<KxWppStatusDesignInfoCommand minimumWidth="200"/>
+				<KStatusStrechCommand/>
+				<separator filter="platform=unix"/>
+				<KxAutoBackupStatusCommand needLight="1" detail="@Click to turn on/off AutoBackup" minimumWidth="75" filter="platform=unix"/>
+				<separator filter="platform=unix"/>
+				<KStatusBarBackupSettingCommand minimumWidth="75" ksoCmd="OptionsDlgTab" icon="AutoBackup" customTip="Auto_Backup" text="@Backup Settings"/>
+				<KxWppStatusAutoBackupText qtspyName="WppStatusAutoBackupText"/>
+				<KStatusSpaceCommand space="5" filter="kstyle!=classic"/>
+				<separator/>
+				<KxWppBrowserTriggerCommand tc="status bar" mode="3" ksoCmd="Previous" icon="BrowserPreviousSlide" id="BrowserPreviousSlide" text="@Previous"/>
+				<KStatusSpaceCommand space="5" filter="kstyle!=classic"/>
+				<KxWppBrowserTriggerCommand tc="status bar" mode="3" ksoCmd="ReadingMenu" icon="BrowserReadingMenu" id="BrowserReadingMenu" text="@Menu"/>
+				<KStatusSpaceCommand space="5" filter="kstyle!=classic"/>
+				<KxWppBrowserTriggerCommand tc="status bar" mode="3" ksoCmd="Next" icon="BrowserNextSlide" id="BrowserNextSlide" text="@Next"/>
+				<KStatusSpaceCommand space="10" filter="kstyle!=classic"/>
+				<KNoteViewVisibleCommand detail="@Show/Hide Slide Note" id="NoteViewVisible" text="@Notes"/>
+				<KStatusSpaceCommand space="10" filter="kstyle!=classic"/>
+				<KxWppBrowserTriggerCommand tc="status bar" ksoCmdshift="SlideMaster" mode="3" ksoCmd="Normal" icon="Normal-s;Normal-s-hover;Normal-s-down" id="BrowserSlide" text="@Normal"/>
+				<KStatusSpaceCommand space="5" filter="kstyle!=classic"/>
+				<KxWppBrowserTriggerCommand tc="status bar" mode="3" ksoCmd="SlideSorter" icon="SlideSorter;SlideSorter-hover;SlideSorter-down" id="BrowserSlideSorter" text="@Slide Sorter"/>
+				<KStatusSpaceCommand space="5" filter="kstyle!=classic"/>
+				<KxWppBrowserTriggerCommand tc="status bar" mode="3" ksoCmd="SlideShowReadingFromCurrent" icon="BrowserSlideReadingShow" id="BrowserSlideReadingShow" text="@Reading View"/>
+				<KStatusSpaceCommand space="5" filter="kstyle!=classic"/>
+				<KxWppBrowserTriggerCommand tc="status bar" ksoCmdshift="SetUpShow" mode="3" ksoCmd="SlideShowFromCurrent" icon="FromCurrentSlide-s;FromCurrentSlide-s-hover;FromCurrentSlide-s-down" id="BrowserSlideShow" text="@Slide Show from Current(Shift+F5)"/>
+				<KStatusSpaceCommand space="10" filter="kstyle!=classic"/>
+				<KxWppStatusZoomSliderCommand tooltipSub="@Zoom Out" tooltipSlide="@Zoom" id="ZoomCommand" tooltipTrigger="@Click to adjust Zoom level" tooltipAdd="@Zoom In"/>
+			</KxWppStatusCommand>
+			<KxLegacyTriggerCommand ksoCmd="FromDesignTemplate" icon="FromDesignTemplate" id="FromDesignTemplate" dialogHint="1" text="@New from Default Template"/>
+			<KxMRUCommand ksoCmd="RecentFileList" aid="92112" autoShortCut="1" maxItems="9" id="RecentFileList" text="@Recent File List"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="TemplatesOnMyComputer" aid="92211" icon="TemplatesOnMyComputer" id="TemplatesOnMyComputer" dialogHint="1" text="@New from Other Templates"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="NewFileFromDefaultTemplate" aid="92140" filter="support:NewFromDefaultTemplate=true" faceid="2" icon="WppNewFileFromDefaultTemplate" id="NewFileFromDefaultTemplate" text="@New from Default Template"/>
+			<KxDocumentFixCommand hotKey="f" filter="support:DocumentFix=true" icon="DocumentFix" id="documentFixCmd" customTip="DocumentFix" text="@Document Fix"/>
+			<KScreenGrabCommandEx id="screenGrabEx"/>
+			<KxInsertMapCommand relatedKsoCmd="InsertPictureFromFile" hotKey="j" icon="Map" id="InsertMap" customTip="InsertMap" text="@Map" qtspyName="InsertMap" rbHotKey="M"/>
+			<KxTaskPaneListCommand filter="category=personal" aid="5746" id="ClassicalTaskpane" text="@Task Window">
+				<KxTpWppNewDocCommand newFromDefaultTemplateCmd="NewFileFromDefaultTemplate" openFileCmd="OpenFile" templateOnLineCmd="templateOnLine" recentFileListCmd="RecentFileList" docerEntranceCmd="DocerURLEntrance" newDocCmd="NewBlankFile" alias="TpNewDoc" icon="idocument;idocument-pmos;idocument-pdown;idocument-dis" id="ND_TpNewDoc" shortHint="@New" templatesOnMyComputerCmd="TemplatesOnMyComputer" text="@New Presentation" fromDesignTemplateCmd="FromDesignTemplate" xiutangEntranceCmd="XiuTangURLEntrance"/>
+				<KxTpWppCustomAnimationCommand alias="TpCustomAnimation" icon="icustAn;icustAn-pmos;icustAn-pdown;icustAn-dis" id="TpCustomAnimation" shortHint="@Animation" text="@Custom Animation" qtspyName="icustAn;icustAn-pmos;icustAn-pdown;icustAn-dis"/>
+				<KxTpSlideTransitionCommand alias="TpSlideTransition" icon="iswp;iswp-pmos;iswp-pdown;iswp-dis" id="TpSlideTransition" shortHint="@Switch" text="@Slide Transition" qtspyName="iswp;iswp-pmos;iswp-pdown;iswp-dis"/>
+				<KxTpWPPAutoShapeCommand dynamicShapeCmd="DynamicShape" changeAutoShapeCmd="ChangeAutoShape" filter="support:OnlineShapes=true" icon="ishape;ishape-pmos;ishape-pdown;ishape-dis" alias="TpAutoShape" isEnableOnlineShape="false" id="TpAutoShape" shortHint="@Materials" text="@AutoShapes"/>
+				<separator filter="kstyle=classic"/>
+				<KxTpSlideDesignCommand filter="lang!=zh_CN,zh_TW|category!=personal" alias="TpSlideDesign" icon="ipptdes;ipptdes-pmos;ipptdes-pdown;ipptdes-dis" id="TpSlideDesign" shortHint="@Templates" text="@Slide Design - Design Templates" qtspyName="ipptdes;ipptdes-pmos;ipptdes-pdown;ipptdes-dis"/>
+				<KxWppFormatCommand alias="TpFormatting" icon="property;property-pmos;property-pdown;property-dis" shortHint="@Formatting" qtspyName="TpWppFormatting" text="@Object Formatting"/>
+				<KxTpWppBackupCommand documentFixCmd="documentFixCmd" dataRecoverCmd="dataRecover" alias="TpBackupFile" icon="ibackup;ibackup-pmos;ibackup-pdown;ibackup-dis" shortHint="@Backup" id="TpBackupFile" text="@Backup Management"/>
+				<KxTpQAndACommand screenGrabCmd="screenGrabEx" filter="support:IntranetVersion=false" alias="TpQAndA" icon="iqanda;iqanda-pmos;iqanda-pdown;iqanda-dis" shortHint="@Help" id="TpQAndA" text="@Help And QA"/>
+				<KxTpFeedbackCommand screenGrabCmd="screenGrabEx" filter="support:IntranetVersion=false" alias="TpFeedback" icon="ifeedback;ifeedback-pmos;ifeedback-pdown;ifeedback-dis" shortHint="@Feedback" id="TpFeedback" text="@Feedback and Advice"/>
+				<separator filter="kstyle=classic"/>
+				<KxTpWppClipArtCommand filter="lang=ja_JP" alias="TpClipArt" icon="iclipArt;iclipArt-pmos;iclipArt-pdown;iclipArt-dis" shortHint="@Clip Art" text="@Clip Art" qtspyName="iclipArt;iclipArt-pmos;iclipArt-pdown;iclipArt-dis"/>
+				<KxTpWppTableStyleCommand aid="92009" filter="kstyle=classic" alias="TpTableStyle" icon="itabstyle;itabstyle-pmos;itabstyle-pdown;itabstyle-dis" shortHint="@Style" id="TpWppTableStyle" text="@Table Style"/>
+				<separator filter="kstyle=classic"/>
+				<KxTpColorSchemeCommand filter="kstyle=classic" alias="TpColorScheme" icon="ipal;ipal-pmos;ipal-pdown;ipal-dis" shortHint="@Color Schemes" text="@Slide Design - Color Schemes" qtspyName="ipal;ipal-pmos;ipal-pdown;ipal-dis"/>
+			</KxTaskPaneListCommand>
+			<KxTaskPaneListCommand filter="category!=personal" aid="5746" id="ClassicalTaskpane" text="@Task Window">
+				<KxTpWppNewDocCommand newFromDefaultTemplateCmd="NewFileFromDefaultTemplate" openFileCmd="OpenFile" templateOnLineCmd="templateOnLine" recentFileListCmd="RecentFileList" docerEntranceCmd="DocerURLEntrance" newDocCmd="NewBlankFile" alias="TpNewDoc" icon="idocument;idocument-pmos;idocument-pdown;idocument-dis" id="ND_TpNewDoc" shortHint="@New" templatesOnMyComputerCmd="TemplatesOnMyComputer" text="@New Presentation" fromDesignTemplateCmd="FromDesignTemplate"/>
+				<separator filter="kstyle=classic"/>
+				<KxTpColorSchemeCommand filter="kstyle=classic" alias="TpColorScheme" icon="ipal;ipal-pmos;ipal-pdown;ipal-dis" shortHint="@Color Schemes" text="@Slide Design - Color Schemes" qtspyName="ipal;ipal-pmos;ipal-pdown;ipal-dis"/>
+				<KxTpSlideTransitionCommand alias="TpSlideTransition" icon="iswp;iswp-pmos;iswp-pdown;iswp-dis" id="TpSlideTransition" shortHint="@Switch" text="@Slide Transition" qtspyName="iswp;iswp-pmos;iswp-pdown;iswp-dis"/>
+				<KxTpWPPAutoShapeCommand dynamicShapeCmd="DynamicShape" changeAutoShapeCmd="ChangeAutoShape" filter="support:OnlineShapes=true" icon="ishape;ishape-pmos;ishape-pdown;ishape-dis" alias="TpAutoShape" isEnableOnlineShape="false" id="TpAutoShape" shortHint="@Materials" text="@AutoShapes"/>
+				<KxTpSlideDesignCommand filter="lang!=zh_CN,zh_TW|category!=personal" alias="TpSlideDesign" icon="ipptdes;ipptdes-pmos;ipptdes-pdown;ipptdes-dis" id="TpSlideDesign" shortHint="@Templates" text="@Slide Design - Design Templates" qtspyName="ipptdes;ipptdes-pmos;ipptdes-pdown;ipptdes-dis"/>
+				<KxTpCloudLinkCommand filter="support:CloudStorage=true;lang=zh_CN" alias="CloudLink" icon="icloudlink;icloudlink-pmos;icloudlink-pdown;icloudlink-dis" id="CloudLink" shortHint="@Collaboration" text="@Collaboration"/>
+				<KxTpWppCustomAnimationCommand alias="TpCustomAnimation" icon="icustAn;icustAn-pmos;icustAn-pdown;icustAn-dis" id="TpCustomAnimation" shortHint="@Animation" text="@Custom Animation" qtspyName="icustAn;icustAn-pmos;icustAn-pdown;icustAn-dis"/>
+				<KxTpWppClipArtCommand filter="lang=ja_JP" alias="TpClipArt" icon="iclipArt;iclipArt-pmos;iclipArt-pdown;iclipArt-dis" shortHint="@Clip Art" text="@Clip Art" qtspyName="iclipArt;iclipArt-pmos;iclipArt-pdown;iclipArt-dis"/>
+				<KxTpWppTableStyleCommand aid="92009" filter="kstyle=classic" alias="TpTableStyle" icon="itabstyle;itabstyle-pmos;itabstyle-pdown;itabstyle-dis" shortHint="@Style" id="TpWppTableStyle" text="@Table Style"/>
+				<separator filter="kstyle=classic"/>
+				<KxTpFeedbackCommand screenGrabCmd="screenGrabEx" filter="support:IntranetVersion=false" alias="TpFeedback" icon="ifeedback;ifeedback-pmos;ifeedback-pdown;ifeedback-dis" shortHint="@Feedback" id="TpFeedback" text="@Feedback and Advice"/>
+				<KxTpGoogleDocsCommand filter="lang=jp_JP;oem_GoogleDocs=1" alias="TpGoogleDocs" shortHint="@GoogleDocs" id="TpGoogleDocs" text="@Google Docs"/>
+				<KxWppFormatCommand alias="TpFormatting" icon="property;property-pmos;property-pdown;property-dis" id="TpFormatting" shortHint="@Formatting" qtspyName="TpWppFormatting" text="@Object Formatting"/>
+				<KxTpWppBackupCommand documentFixCmd="documentFixCmd" dataRecoverCmd="dataRecover" alias="TpBackupFile" icon="ibackup;ibackup-pmos;ibackup-pdown;ibackup-dis" shortHint="@Backup" id="TpBackupFile" text="@Backup Management"/>
+			</KxTaskPaneListCommand>
+			<KListCommand id="NoTabPage" text="@No Tab Page">
+				<KxNoTabPageButtonCommand ksoCmd="NewBlankFile" icon="NewFileOnNoTabPage" id="NewFileOnNoTabPage" text="@New Blank Presentation"/>
+				<separator/>
+				<KxNoTabPageButtonCommand ksoCmd="OpenFile" icon="OpenFileOnNoTabPage" id="OpenFileOnNoTabPage" text="@Open"/>
+			</KListCommand>
+			<KxWppBrowserCommand id="BrowseSelect" isBeforeScrollBar="0">
+				<KxWppPrevSlide mode="0" id="Up"/>
+				<KxWppNextSlide mode="2" id="Down"/>
+			</KxWppBrowserCommand>
+			<KxToolbarGroupCommand ksoCmd="ToolbarGroup" visible="false" id="ToolBarGroup"/>
+			<KxHostEventFilterCommand id="mainwindowFirstShowEvent">
+				<KWpsAssistInitCommand filter="support:IntranetVersion=false"/>
+				<KxAuthLuanchCheckCommand/>
+				<KxOfficeSpaceInitCommand id="officeSpaceInit"/>
+				<KxNetAutobackupCommand_WPP filter="support:CloudAutoBackup=true"/>
+				<KxDelayAutoUpdateCommand/>
+				<KxTrialToolInitCommand/>
+				<KxActivePluginInitCommand/>
+				<KxWppMediaBarCommand filter="patent:MediaFloatBar=true"/>
+				<KxWppPlayerMediaBarCommand filter="patent:MediaFloatBar=true"/>
+			</KxHostEventFilterCommand>
+			<KxWppSymbolBarCommand aid="92196" faceid="6" visible="false" id="Symbol" text="@Symbol Toolbar"/>
+			<KFileAssociateCommand id="FileAssociate"/>
+			<KListCommand delayloadPath="commands/wpp/PopupMenu.kuip" id="Auto Backup Popup Menu"/>
+			<KScreenGrabCommand hotKey="S" filter="kstyle!=classic;feature_16777325!=0|category=personal;feature_16777325!=0" shortcutHint="Ctrl+Alt+X" id="ScreenGrab" text="@Screen Grab" rbHotKey="S"/>
+			<KScreenGrabCommandHide hotKey="H" filter="kstyle!=classic;feature_16777325!=0|category=personal;feature_16777325!=0" shortcutHint="Ctrl+Alt+C" id="ScreenGrabHide" text="@Hide Current Window when Grabbing Screen" rbHotKey="H"/>
+			<KScreenGrabMenuCommand filter="kstyle!=classic;feature_16777325!=0|category=personal;feature_16777325!=0" icon="GrabScreenMenu" id="InsertScreenGrab" customTip="ScreenGrab" text="@Screen Grab@Menu" referenceCommand="ScreenGrab" rbHotKey="SC">
+				<command idQ="ScreenGrab"/>
+				<command idQ="ScreenGrabHide"/>
+			</KScreenGrabMenuCommand>
+			<KxWppEncodeCommand id="SlideShowVideoExport"/>
+			<KxWppFormatRangeSaveAsCommand formatRangeType="2" hotKey="v" filter="lang=zh_CN" icon="exporttovideo32" needSlides="true" id="FormatRangeVideo" text="@Video Exporting" isInFileMenu="true" fileFormat="24"/>
+			<KxWppFormatRangeSaveAsCommand formatRangeType="1" hotKey="p" icon="exporttopicture32" needSlides="true" id="FormatRangeImage" text="@Image Exporting" isInFileMenu="true" fileFormat="13"/>
+			<KListCommand filter="lang=zh_CN;category=personal" id="SlideSmartWidget">
+				<KxWppChangeLayoutWebGalleryCommand entrance="quickLayoutBtn" icon="slidepopchange;slidepopchange-hover" id="ChangeLayoutSmartWidget" text="@Change Layout"/>
+				<KxWppNewSlideWebGalleryCommand entrance="quickNewSlideBtn" icon="slidepopadd;slidepopadd_hover;slidepopadd_click;" id="NewSlideSmartWidget" text="@New Slide"/>
+			</KListCommand>
+			<KxWppNewSlideWebGalleryCommand entrance="thumbViewBottom_NewSlide" filter="lang=zh_CN;category=personal" icon="newslidepop;newslidepop_hover;newslidepop_active;" id="NewSlideGalleryOnThumbViewBottom" text="@New Slide"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="g" ksoCmd="FillEffects" idMso="GradientGallery" icon="GradiantFill" controlType="4" id="GradiantFill" text="@Gradient" rbHotKey="G"/>
+			<KxPicOrTextureFillCommand hotKey="t" ksoCmd="FillEffects" fillType="1" icon="TextureFill" id="TextureFill" text="@PicOrTexture" rbHotKey="T">
+				<command idQ="MoreFill"/>
+			</KxPicOrTextureFillCommand>
+			<KxPatternFillCommand hotKey="n" ksoCmd="FillEffects" fillType="1" icon="PatternFill" id="PatternFill" text="@Pattern" rbHotKey="N">
+				<command idQ="MoreFill"/>
+			</KxPatternFillCommand>
+			<KxImagePreviewCommand screenGrabCmd="screenGrabEx" icon="ImagePreview" id="ImagePreview" dialogHint="1" customTip="ImagePreview" text="@Image Previewer"/>
+			<KxAddPicFrameCommand filter="platform=win32;lang=zh_CN;category=personal" icon="PictureFrame" id="AddPicFrame" dialogHint="1" customTip="AddPicFrame" text="@Add Picture Frame"/>
+			<KxWpsAssistNewSlideCommand ksoCmd="NewSlideSpecial" id="NewSlideOnline"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="Font Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="FontSel Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="TextEdit Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="TextEditSel Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="Table Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="Picture Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="TableSel Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="Shapes Floatbar"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="Shapes Floatbar Dml"/>
+			<KxMiniToolBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:MiniToolbar=true" id="Chart Floatbar"/>
+			<KxQuickHelpShapeBarCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:QuickHelpBar=true" id="Shapes QuickBar"/>
+			<KxQuickHelpBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:QuickHelpBar=true" id="Picture QuickBar"/>
+			<KxQuickHelpBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:QuickHelpBar=true" id="PictureCrop QuickBar"/>
+			<KxQuickHelpToolBarCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:QuickHelpBar=true" id="MultipleShapes QuickBar" layoutMethod="right;top;horizontal;horizontal"/>
+			<KxQuickHelpBarListCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="patent:QuickHelpBar=true" id="Chart QuickBar"/>
+			<KxQuickHelpBarListCommand filter="lang=zh_CN;category=personal" id="VirtualDiagram QuickBar">
+				<KxVirtualDiagramGalleryListCommand unCheckedTextColor="#666666" checkedTextColor="#e77937" icon="ChangeDiagram" id="ChangeVirtualDiagram" tabWidth="60" text="@Change Diagram" bAutoFitText="true">
+					<KxWppVirtualDiagramChangeCntCommand id="VirtualDiagramChangeCnt" text="@Change Count"/>
+					<KxWppVirtualDiagramChangeStyleCommand id="VirtualDiagramChangeStyle" text="@Change Style"/>
+				</KxVirtualDiagramGalleryListCommand>
+			</KxQuickHelpBarListCommand>
+			<KxQuickHelpWordArtBarCommand delayloadPath="commands/wpp/PopupMenu.kuip" filter="kstyle!=classic;patent:QuickHelpBar=true" id="WordArt QuickBar"/>
+			<KxLegacyTriggerCommand hotKey="b" ksoCmd="Playback" aid="92184" icon="Playback" id="ShowPlayback" text="@Play Back"/>
+			<KxLegacyTriggerCommand hotKey="a" ksoCmd="Arrowhead" aid="2906" icon="Arrowhead" id="ShowArrow" text="@Arrow"/>
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="WatercolorPen" aid="92179" icon="WatercolorPen" id="ShowWatercolorPen" text="@Watercolor Pen"/>
+			<KxLegacyTriggerCommand tc="Show" hotKey="r" ksoCmd="EraserOne" aid="7884" icon="EraserOne" id="ShowErase" text="@Erase"/>
+			<KxValueCommand hotKey="h" ksoCmd="ArrowType" aid="2913" id="ShowArrowHidden" index="2" text="@Hidden"/>
+			<KxValueCommand hotKey="u" ksoCmd="ArrowType" aid="2912" id="ShowArrowAuto" index="0" text="@Automatic"/>
+			<KxLegacyTriggerCommand hotKey="a" ksoCmd="ShowHideInkMarkup" aid="92190" id="ShowHideInkMarkup" text="@Show / Hide Ink Markup"/>
+			<KxCellPhoneControlCommand hotKey="e" icon="Remote" id="cellphoneControl" customTip="cellphoneControl" text="@CellphoneControl"/>
+			<KPictureFillFromOnlineCommand relatedKsoCmd="FillColor" hotKey="o" icon="onlinepicture" id="FillPictureFromOnline" text="@Online Pictures"/>
+			<KxWppWebPreviewCommand icon="H5Share" id="WebPreview" text="@Web Preview"/>
+			<KxWppPrintInfoCommand hookIds="Print;PrintDirect;PrintPreview" id="hookPrinter"/>
+			<KxLegacyTriggerCommand hotKey="d" ksoCmd="DeleteSlide" aid="2696" faceid="99" icon="DeleteSlide" id="DeleteSlide" text="@Delete Slide"/>
+			<KxListCommand detail="@Insert Picture" hotKey="p" ksoCmd="InsertPictureFromFile" filter="support:InsertPicturesIntoMultiSlides=true" icon="InsertPictureFromFile" customTip2="InsertOnlinePicture" id="Insert_InsertPictureFromFile" customTip="InsertPictureFromFile" text="@Picture" rbHotKey="P">
+				<KxLegacyTriggerCommand detail="@Insert Picture" hotKey="p" ksoCmd="InsertPictureFromFile" icon="InsertPictureFromFile" dialogHint="1" customTip="InsertPictureFromFile" text="@Picture" rbHotKey="P"/>
+				<KxInsertPicturesToMultiSlide hotKey="S" icon="InsertPicturesToMultiSlide" dialogHint="1" text="@Insert Picture To Multiple Slides"/>
+				<KOCRToolCommand icon="PictureToText" id="OCRToolCmd" text="@Picture to Text"/>
+			</KxListCommand>
+			<KxLegacyTriggerCommand hotKey="p" ksoCmd="PictureCrop" aid="551" hideMiniToolBar="1" faceid="229" icon="PictureCropTool" id="PictureCropPopup" customTip="PictureCrop" text="@Crop" rbHotKey="V"/>
+			<KxLegacyTriggerCommand hotKey="k" ksoCmd="Background" aid="1706" icon="Background" id="BackDrop" dialogHint="1" text="@Background" rbHotKey="B"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="CustomAnimation" aid="730" faceid="41" icon="CustomAnimation" id="CustomAnimation" dialogHint="1" text="@Custom Animation" rbHotKey="C"/>
+			<KxRbFileMenuPopupPaneCommand title="@Save a Copy of the Document" hotKey="a" ksoCmd="SaveAs" infoId="4" idMso="FileSaveAsMenu" icon="SaveAs" controlType="15" id="RbFileMenuSaveAsMenu" text="@Save As" rbHotKey="A">
+				<KxWppFileMenuFormatSaveAsCommand icon="SaveAsDps" id="RbFileMenuSaveAsDps" text="@WPS Presentation File" qtspyName="SaveAsDps" fileFormat="1"/>
+				<KxWppFileMenuFormatSaveAsCommand icon="SaveAsDpt" id="RbFileMenuSaveAsDpt" text="@WPS Presentation Template" qtspyName="SaveAsDpt" fileFormat="2"/>
+				<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPpt" text="@Microsoft PowerPoint Presentation" qtspyName="SaveAsPptx" fileFormat="6"/>
+				<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPpt" id="RbFileMenuSaveAsPpt" text="@Microsoft PowerPoint 97-2003 Presentation" qtspyName="SaveAsPpt" fileFormat="3"/>
+				<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPot" id="RbFileMenuSaveAsPot" text="@Microsoft PowerPoint 97-2003 Presentation Template" qtspyName="SaveAsPot" fileFormat="4"/>
+				<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPps" id="RbFileMenuSaveAsPps" text="@Microsoft PowerPoint 97-2003 Show" qtspyName="SaveAsPps" fileFormat="5"/>
+				<command idQ="FormatRangeVideo"/>
+				<command idQ="FormatRangeImage"/>
+				<KxFileMenuLegacyTriggerCommand hotKey="f" ksoCmd="PrintToPDF" filter="support:ExportToPDF=true" icon="ExportToPDF" id="RbFileMenuExportToPDF" text="@Export to PDF" qtspyName="PrintToPDF"/>
+				<KWPP2WPSCommand hotKey="h" filter="platform=win32;category=personal;lang=zh_CN;support:WPP2WPS=true" visible="@true" icon="wpp2doc" id="RbFileMenuPpt2Doc" text="@Transfer to WPS Writer Document" isInFileMenu="true" qtspyName="wpp2doc"/>
+				<KxFileMenuLegacyTriggerCommand hotKey="m" ksoCmd="SaveAs" icon="SaveAsOtherFormat" id="RbFileMenuSaveAsOtherFormat" text="@Other Formats" qtspyName="SaveAs"/>
+			</KxRbFileMenuPopupPaneCommand>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="SaveasPicture" aid="5736" id="SaveAsPIC" dialogHint="1" text="@Save as Picture"/>
+			<KxLegacyTriggerCommand hotKey="j" ksoCmd="ChangePicture" aid="92165" faceid="247" icon="ChangePicture" id="ChangePicture" dialogHint="1" text="@Change Picture"/>
+			<KxQingActiveCodeCommand forcevisible="0" showIconAndText="0" aid="100040" id="EnterActivationCode"/>
+		</commands>
+		<popupmenu cmd="Slide Background Popup Menu"/>
+		<popupmenu cmd="Shapes"/>
+		<popupmenu cmd="Dml Shapes"/>
+		<popupmenu cmd="OLE Object"/>
+		<popupmenu cmd="Curve"/>
+		<popupmenu cmd="Curve Segment"/>
+		<popupmenu cmd="Curve Point"/>
+		<popupmenu cmd="Curve Point For VML"/>
+		<popupmenu cmd="Motion Path Popup Menu"/>
+		<popupmenu cmd="Motion Path Segment Popup Menu"/>
+		<popupmenu cmd="Motion Path Point Popup Menu"/>
+		<popupmenu cmd="Table Cell Popup Menu"/>
+		<popupmenu cmd="Tables Popup Menu"/>
+		<popupmenu cmd="Notes Pane Popup Menu"/>
+		<popupmenu cmd="None Slide Miniature Popup Menu"/>
+		<popupmenu cmd="Slide Miniature Popup Menu"/>
+		<popupmenu cmd="Section Miniature Popup Menu"/>
+		<popupmenu cmd="Ruler Popup Menu"/>
+		<popupmenu cmd="Text Edit Popup Menu"/>
+		<popupmenu cmd="Master Miniature Popup Menu"/>
+		<popupmenu cmd="Layout Miniature Popup Menu"/>
+		<popupmenu cmd="Slide Object in Slide Sorter Popup Menu"/>
+		<popupmenu cmd="Paint Brush Popup Menu"/>
+		<popupmenu cmd="Eraser Popup Menu"/>
+		<popupmenu cmd="Arrow Options Popup Menu"/>
+		<popupmenu cmd="Draw Figure Popup Menu"/>
+		<popupmenu cmd="Ink Color Popup Menu"/>
+		<popupmenu cmd="Slide Show Popup Menu"/>
+		<popupmenu cmd="Reading Show Popup Menu"/>
+		<popupmenu cmd="Slide Show Short Popup Menu"/>
+		<popupmenu cmd="Picture Context Menu"/>
+		<popupmenu cmd="Word Art Context Menu"/>
+		<popupmenu cmd="Connector"/>
+		<popupmenu cmd="Rotate Mode"/>
+		<popupmenu cmd="ActiveX Control"/>
+		<popupmenu cmd="Toolbar List"/>
+		<popupmenu cmd="TabBar NewFile"/>
+		<popupmenu cmd="Auto Backup Popup Menu"/>
+		<minitoolbar cmd="Font Floatbar"/>
+		<minitoolbar cmd="FontSel Floatbar"/>
+		<minitoolbar cmd="TextEdit Floatbar"/>
+		<minitoolbar cmd="TextEditSel Floatbar"/>
+		<minitoolbar cmd="Table Floatbar"/>
+		<minitoolbar cmd="Picture Floatbar"/>
+		<minitoolbar cmd="Shapes Floatbar"/>
+		<minitoolbar cmd="Shapes Floatbar Dml"/>
+		<minitoolbar cmd="Shapes QuickBar"/>
+		<minitoolbar cmd="TableSel Floatbar"/>
+		<minitoolbar cmd="Chart Floatbar"/>
+		<quickhelpbar cmd="Shapes QuickBar"/>
+		<quickhelpbar cmd="Picture QuickBar"/>
+		<quickhelpbar cmd="PictureCrop QuickBar"/>
+		<quickhelpbar cmd="MultipleShapes QuickBar"/>
+		<quickhelpbar cmd="Chart QuickBar"/>
+		<quickhelpbar cmd="VirtualDiagram QuickBar"/>
+		<quickhelpbar cmd="WordArt QuickBar"/>
+		<quickhelpbar cmd="WordArt Font QuickBar"/>
+		<minitoolbar cmd="TableSel Floatbar"/>
+		<statusbar cmd="statusbar"/>
+		<KRbTabBarNewButton cmd="TabbarButton"/>
+		<shortcuts>
+			<shortcut cmd="VisualBasicEditor" key="Alt+F11"/>
+			<shortcut cmd="RunMacro" key="Alt+F8"/>
+			<shortcut cmd="Subscript" key="Ctrl+="/>
+			<shortcut cmd="SelectAll" key="Ctrl+A"/>
+			<shortcut cmd="Bold" key="Ctrl+B"/>
+			<shortcut cmd="Copy" key="Ctrl+Ins"/>
+			<shortcut cmd="Copy" key="Ctrl+C"/>
+			<shortcut cmd="Center" key="Ctrl+E"/>
+			<shortcut cmd="Find" key="Ctrl+F"/>
+			<shortcut cmd="TaskPane" key="Ctrl+F1"/>
+			<shortcut cmd="Replace" key="Ctrl+H"/>
+			<shortcut cmd="Italic" key="Ctrl+I"/>
+			<shortcut cmd="Justify" key="Ctrl+J"/>
+			<shortcut cmd="HyperlinkAlwaysVisible" key="Ctrl+K"/>
+			<shortcut cmd="Left" key="Ctrl+L"/>
+			<shortcut cmd="Ctrl_M" key="Ctrl+M"/>
+			<shortcut cmd="NewBlankFile" key="Ctrl+N"/>
+			<shortcut cmd="OpenFile" key="Ctrl+O"/>
+			<shortcut cmd="Print" key="Ctrl+P"/>
+			<shortcut cmd="Right" key="Ctrl+R"/>
+			<shortcut cmd="SaveFile" key="Ctrl+S"/>
+			<shortcut cmd="DecreaseFontSize" key="Ctrl+Shift+,"/>
+			<shortcut cmd="IncreaseFontSize" key="Ctrl+Shift+."/>
+			<shortcut cmd="Superscript" key="Ctrl+Shift+="/>
+			<shortcut cmd="ActivatePreviousSubWindow" key="Ctrl+Shift+Tab"/>
+			<shortcut cmd="ActivateNextSubWindow" key="Ctrl+Tab"/>
+			<shortcut cmd="Underline" key="Ctrl+U"/>
+			<shortcut cmd="Paste" key="Shift+Ins"/>
+			<shortcut cmd="Paste" key="Ctrl+V"/>
+			<shortcut cmd="Cut" key="Shift+Del"/>
+			<shortcut cmd="Cut" key="Ctrl+X"/>
+			<shortcut cmd="Redo" key="Ctrl+Y"/>
+			<shortcut cmd="Undo" key="Ctrl+Z"/>
+			<shortcut cmd="DecreaseFontSize" key="Ctrl+["/>
+			<shortcut cmd="IncreaseFontSize" key="Ctrl+]"/>
+			<shortcut cmd="ResetZoom" key="Ctrl+0"/>
+			<shortcut cmd="SaveAs" key="F12"/>
+			<shortcut cmd="SlideShow" key="F5"/>
+			<shortcut cmd="CheckSpelling" key="F7"/>
+			<shortcut cmd="OpenThesaurus" key="Shift+F7"/>
+			<shortcut cmd="DecreaseIndent" key="Shift+Alt+Left"/>
+			<shortcut cmd="IncreaseIndent" key="Shift+Alt+Right"/>
+			<shortcut cmd="SlideShowFromCurrent" key="Shift+F5"/>
+			<shortcut cmd="ShowHideGrid" key="Shift+F9"/>
+			<shortcut cmd="ScreenGrab" key="Ctrl+Alt+X"/>
+			<shortcut cmd="ScreenGrabHide" key="Ctrl+Alt+C"/>
+			<shortcut cmd="TabbarQAndA" key="Alt+Q"/>
+		</shortcuts>
+	</mainwindow>
+	<showfullwindow>
+		<shortcuts>
+			<shortcut cmd="ShowPlayback" key="Ctrl+L"/>
+			<shortcut cmd="ShowArrow" key="Ctrl+A"/>
+			<shortcut cmd="ShowWatercolorPen" key="Ctrl+P"/>
+			<shortcut cmd="ShowErase" key="Ctrl+E"/>
+			<shortcut cmd="ShowArrowHidden" key="Ctrl+H"/>
+			<shortcut cmd="ShowArrowAuto" key="Ctrl+U"/>
+			<shortcut cmd="ShowHideInkMarkup" key="Ctrl+M"/>
+		</shortcuts>
+	</showfullwindow>
+</shell>

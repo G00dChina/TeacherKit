@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+   <config>
+      <hasToc type="Boolean">$SWFHasTOC</hasToc>
+      <hasAudio type="Boolean">$SWFHasAudio</hasAudio>
+      <hasAbout type="Boolean">$SWFShowAbout</hasAbout>
+      <hasFullscreen type="Boolean">$SWFHasFullscreen</hasFullscreen>
+      <hasPipOverlay type="Boolean">$SWFHasPIPOverlay</hasPipOverlay>
+      <startText>$StartText</startText>
+      <startLogo>$SWFStartLogo</startLogo>
+      <endLogo>$SWFEndLogo</endLogo>
+      <about>
+         <title>$SWFAboutTitle</title>
+         $AboutTitleColor
+         $AboutBackgroundColor
+         $AboutBackgroundTransparency
+         <logo>$SWFAboutTitleLogo</logo>
+         <width>$AboutBoxWidth</width>
+         <height>$AboutBoxHeight</height>
+         <tabSelected>$AboutTabSelected</tabSelected>
+         <aboutMedia>$SWFAboutLogo</aboutMedia>
+         <aboutText><![CDATA[$SWFAboutBoxText]]></aboutText>
+         <infoText>$SWFAboutBoxInfoText</infoText>
+      </about>
+      <accessibility>
+         <startbutton>Begin Video</startbutton>
+         <playbutton>Play Toggle</playbutton>
+         <progressbutton>Progress bar Indicator</progressbutton>
+         <audiobutton>Audio Toggle</audiobutton>
+         <tocbutton>Table of Contents Toggle</tocbutton>
+         <volumeslider>Audio Indicator</volumeslider>
+         <fsbutton>Fullscreen Toggle</fsbutton>
+         <ccbutton>Closed Caption Toggle</ccbutton>
+         <infobutton>Information</infobutton>
+         <volumebutton>Volume Control</volumebutton>
+         <exitquizbutton>Exit Quiz</exitquizbutton>
+         <exitfeedbackbutton>Exit Question Feedback</exitfeedbackbutton>
+         <exitsummarybutton>Exit Question Feedback</exitsummarybutton>
+         <exitpreviewbutton>Exit Preview</exitpreviewbutton>
+         <infowindow>info window</infowindow>
+         <infoaboutbutton>about</infoaboutbutton>
+         <infoinfobutton>info</infoinfobutton>
+         <infoexitbutton>info window Exit</infoexitbutton>
+         <replaybutton>Replay Video </replaybutton>
+         <tocexitbutton>Table of Contents Exit</tocexitbutton>
+         <tocwindow>Table of Contents Window</tocwindow>
+      </accessibility>
+      <localSecurityWarning>
+         <title>$LocalSecurityWarningTitle</title>
+         <message>$LocalSecurityWarning</message>
+      </localSecurityWarning>
+      <includeScoreInEmail type="Boolean">$IncludeScoreInEmail</includeScoreInEmail>
+      <rememberQuizAnswers type="Number">0</rememberQuizAnswers>
+      <endAction>$SWFEndAction</endAction>
+      <endActionParam>$SWFEndActionParam</endActionParam>
+      <endActionTarget>$SWFEndActionTarget</endActionTarget>
+      <volume type="Number">$SWFInitVolume</volume>
+      <brandedContextMenu type="Boolean">$SWFBrandContextMenu</brandedContextMenu>
+      <hasCaptions type="Boolean">$HasClosedCaption</hasCaptions>
+      <captionsVisible type="Boolean">$ClosedCaptionsVisible</captionsVisible>
+      <caption>         
+         <font>
+            <type type="String">$CloseCaptionFontType</type>
+            <size type="Number">$ClosedCaptionFontSize</size>
+            <weight type="Boolean">$CloseCaptionFontWeight</weight>
+            <color type="Number">$CloseCaptionFontColor</color>
+            <cpl type="Number">$CloseCaptionCharsPerLine</cpl>
+         </font>
+         <panel>
+            <background>
+               <color type="Number">$CloseCaptionBGColor</color>
+               <alpha type="Number">$ClosedCaptionBGAlpha</alpha>
+            </background>
+         </panel>
+      </caption>
+      <video1>
+         <width type="Number">$ActualVideoWidth</width>
+         <height type="Number">$ActualVideoHeight</height>
+      </video1>
+      <toc>
+         <type type="Number">$SWFTOCType</type>
+         <title>$TOCTitle</title>
+         $TOCTitleColor
+         <media>$SWFTocLogo</media>
+         <x type="Number">$SWFTOCXPos</x>
+         <y type="Number">$SWFTOCYPos</y>
+         <width type="Number">$SWFTOCWidth</width>
+         <height type="Number">$VideoHeight</height>
+         <transparent type="Boolean">$TOCTranparency</transparent>
+         <horizontalScroll type="Number">0</horizontalScroll>
+         <backgroundColor type="Number">$TOCBackgroundColor</backgroundColor>
+         <alternatingRowColors>
+            <array>
+               <colors type="Number">$TOCAltRowColorOne</colors>
+               <colors type="Number">$TOCAltRowColorTwo</colors>
+            </array></alternatingRowColors>
+         <rowDepthColors>
+            <array>
+               <colors type="Number"></colors>
+               <colors type="Number"></colors>
+            </array>
+         </rowDepthColors>
+         <rowRollOverColor type="Number">0xA4A4A4</rowRollOverColor>
+         <rowSelectedColor type="Number">0xC0C0C0</rowSelectedColor>
+         <rowIndentation>10</rowIndentation>
+         <borderStyle>inset</borderStyle>    
+         <textColor type="Number">0xFFFFFF</textColor>
+         <fontFamily>Arial</fontFamily>
+         <fontSize type="Number">12</fontSize>
+         <fontWeight>none</fontWeight>
+         <textAlign>left</textAlign>
+         <textDecoration>none</textDecoration>
+         <textIndent type="Number">0</textIndent>
+         <textRollOverColor type="Number">0xFFFFFF</textRollOverColor>
+         <textSelectedColor type="Number">0x000000</textSelectedColor>
+         <useRollOver type="Boolean">0</useRollOver>
+         <collapsible type="Boolean">$SWFCollapsableTOC</collapsible>
+         <expanded type="Boolean">1</expanded>
+      </toc>
+      <quiz>
+         <disableFeedback type="Boolean">$QuizDisableFeedback</disableFeedback>
+         <txtQuestionOf>$QuizStrQuestionOf</txtQuestionOf>
+         <txtPrev>$QuizStrPrev</txtPrev>
+         <txtSubmit>$QuizStrSubmit</txtSubmit>
+         <txtNext>$QuizStrNext</txtNext>
+         <txtDone>$QuizStrDone</txtDone>
+         <txtPreview>$QuizStrPreview</txtPreview>
+         <txtSend>$QuizStrSend</txtSend>
+         <txtMainMessage>$QuizStrMainMessage</txtMainMessage>
+         <txtEmailContents>$QuizStrEmailContents</txtEmailContents>
+         <txtEmailTo>$QuizStrEmailTo</txtEmailTo>
+         <txtAnswersSent>$QuizStrAnswersSent</txtAnswersSent>
+         <txtsummary>$QuizStrSummary</txtsummary>
+         <txtScore>$QuizStrScore</txtScore>
+         <txtSummaryTitle>$QuizStrSummaryTitle</txtSummaryTitle>
+      </quiz>
+   </config>
+   <playlist>
+      $PlaylistXML
+   </playlist>   
+   <tocInfo>
+      $TableOfContentsXML
+   </tocInfo>
+</main>

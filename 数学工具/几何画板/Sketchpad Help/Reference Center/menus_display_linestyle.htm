@@ -1,0 +1,190 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Display Menu &gt; Line Style</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Display Menu,Display Menu Line Style,Line Style Command">
+   <meta name="description" content="Line Style">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_display_linestyle.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Line Style</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_display.htm">Display Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Line Style</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_display_pointstyle.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_display.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_display_color.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Selection prerequisite:</span><span class="f_BodyText" style="font-style: italic;"> One or more objects, at least one of which must be a <a href="objects_cats_straight.htm" class="topiclink">straight object</a>, <a href="objects_circles.htm" class="topiclink">circle</a>, <a href="objects_arcs.htm" class="topiclink">arc</a>, framed <a href="objects_polygonsinteriors.htm" class="topiclink">polygon</a>, continuous <a href="objects_functionplots.htm" class="topiclink">function plot</a> or <a href="objects_loci.htm" class="topiclink">point locus</a>, an <a href="objects_iter.htm" class="topiclink">iterated image</a> of such an object, a <a href="objects_markers.htm" class="topiclink">tickmark</a>, or an <a href="objects_markers.htm" class="topiclink">angle marker</a></span></p>
+<p class="p_BodyText"><span class="f_BodyText">This <a href="menus_display.htm" class="topiclink">Display</a> menu command sets the line style of each selected object.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Line style includes both width (Hairline, Thin, Medium, Thick) and pattern (Solid, Dashed, Dotted).</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:164px; padding:0px;"><p style="margin: 3px 0px 0px 0px;"><img src="menu_display_linestyle.png" width="139" height="172" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:227px; padding:0px;"><p style="margin: 3px 0px 0px 0px;"><img src="line_style_examples.png" width="341" height="138" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">When all selected objects share a common line style, a checkmark appears in the submenu next to that style.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you change the selected object’s line style, Sketchpad remembers your chosen style for future similar objects in the current sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To change an object’s line style without changing the setting for future objects, hold down the Shift key while choosing the command. (You can also uncheck </span><span class="f_BodyText" style="font-weight: bold;">Update automatically when restyling existing objects</span><span class="f_BodyText"> in <a href="windows_prefs_text.htm" class="topiclink">Text Preferences</a> to preserve the default line style.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For <a href="objects_markers.htm" class="topiclink">tick marks, angle markers</a>, and <a href="objects_polygonsinteriors.htm" class="topiclink">framed polygons</a> you can set the line width, but you cannot set a pattern.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You cannot change the width of coordinate grid lines; they are always Hairline width. (But you can choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_dotted_grid.htm" class="topiclink">Graph | Dotted Grid</a></span><span class="f_BodyText"> to change the coordinate grid to appear as a dotted grid instead of as hairlines.)</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_attrib_display.htm" class="topiclink">Object Display Attributes</a> </span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_graph_dotted_grid.htm" class="topiclink">Dotted Grid command</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

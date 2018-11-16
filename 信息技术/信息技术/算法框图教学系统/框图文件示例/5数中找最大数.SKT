@@ -1,0 +1,197 @@
+字号 16
+类名  0sfktBegin1
+属性  186  36 100  45F
+结束
+类名 10sfktEnd1
+属性  192 662 100  51F
+结束
+类名  1sfktshuru09421788
+属性  140  81 192  57F
+可见 T
+方向 1
+内容 a1,a2,a3,a4,a5
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32 a\i0 1,\i a\i0 2,\i a\i0 3,\i a\i0 4,\i a\i0 5
+\par }
+
+结束
+类名  2sfktchuli41632489
+属性  199 138  74  60F
+可见 T
+方向 1
+内容 b=a1
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs32   \i b\i0 =\i a\i0 1
+\par }
+
+结束
+类名  3sfktPanduan72464046
+属性  170 205 131  82F
+是否 31
+可见 T
+方向 1
+内容 b<a2
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32 b\i0 <\i a\i0 2
+\par }
+
+结束
+类名  5sfktLiner22855250
+属性  301 241  33  14F
+可见 T
+结束
+类名  2sfktchuli43815279
+属性  304 248  60  61F
+可见 T
+方向 1
+内容 b=a2
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  b\i0 =\i a\i0 2
+\par }
+
+结束
+类名  8sfktLined71602913
+属性  163 248  14  61F
+可见 T
+结束
+类名  6sfktLinel93813665
+属性  237 302  97  14F
+可见 T
+结束
+类名  5sfktLiner91656415
+属性  170 302  67  14F
+可见 T
+结束
+类名  3sfktPanduan54368002
+属性  176 310 121  70F
+是否 31
+可见 T
+方向 1
+内容 b<a3
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32 b\i0 <\i a\i0 3
+\par }
+
+结束
+类名  2sfktchuli77550544
+属性  302 347  65  61F
+可见 T
+方向 1
+内容 b=a3
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  b\i0 =\i a\i0 3
+\par }
+
+结束
+类名  8sfktLined40552725
+属性  169 347  14  59F
+可见 T
+结束
+类名  6sfktLinel79442386
+属性  238 401  96  14F
+可见 T
+结束
+类名  5sfktLiner79260361
+属性  176 399  60  14F
+可见 T
+结束
+类名  3sfktPanduan52848643
+属性  169 408 134  77F
+是否 31
+可见 T
+方向 1
+内容 b<a4
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  b\i0 <\i a\i0 4
+\par }
+
+结束
+类名  5sfktLiner09826509
+属性  296 340  38  14F
+可见 T
+结束
+类名  2sfktchuli46727421
+属性  305 448  59  58F
+可见 T
+方向 1
+内容 b=a4
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  b\i0 =\i a\i0 4
+\par }
+
+结束
+类名  6sfktLinel12290978
+属性  243 499  91  14F
+可见 T
+结束
+类名  3sfktPanduan57377052
+属性  180 506 125  75F
+是否 31
+可见 T
+方向 1
+内容 b<a5
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32 b\i0 <\i a\i0 5
+\par }
+
+结束
+类名  8sfktLined91371026
+属性  162 448  14  60F
+可见 T
+结束
+类名  5sfktLiner03518298
+属性  169 501  71  14F
+可见 T
+结束
+类名  2sfktchuli51215752
+属性  305 545  66  60F
+可见 T
+方向 1
+内容 b=a5
+显示
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  b\i0 =\i a\i0 5
+\par }
+
+结束
+类名  6sfktLinel01701647
+属性  242 598  96  14F
+可见 T
+结束
+类名  8sfktLined31419465
+属性  173 545  14  58F
+可见 T
+结束
+类名  5sfktLiner11878659
+属性  180 596  60  14F
+可见 T
+结束
+类名  4sfktshuru89958501
+属性  177 605 130  57F
+可见 T
+方向 1
+内容 "MAX=";b
+显示
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29 "MAX=";b                                                                                                                                                                                                
+\par }
+
+结束
+类名  5sfktLiner51865545
+属性  305 538  33  14F
+可见 T
+结束
+类名  5sfktLiner64804318
+属性  302 441  33  14F
+可见 T
+结束
+完成

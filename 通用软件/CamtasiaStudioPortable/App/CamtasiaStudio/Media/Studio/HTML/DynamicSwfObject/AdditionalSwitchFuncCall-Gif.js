@@ -1,0 +1,1 @@
+SwitchPlayer( "video1", "video2", "$VideoFileName", "$VideoWidth", "$VideoHeight", "$FetchFileURLVideoObj$#$MediaDirectory", toc1, toc2 )

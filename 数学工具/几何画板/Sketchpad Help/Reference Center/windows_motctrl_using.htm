@@ -1,0 +1,235 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Motion Controller &gt; Using the Motion Controller</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Motion Controller,Motion Controller starting an animation,Motion Controller selecting a moving object,Motion Controller stopping a moving object,Motion Controller reversing a moving object,Motion Controller changing the speed of an object">
+   <meta name="description" content="Using the Motion Controller">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_motctrl_using.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Using the Motion Controller</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_motctrl.htm">Motion Controller</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Using the Motion Controller</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_motctrl_parts.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_motctrl.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_motctrl_animprinc.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">There are many different animation-related tasks you can accomplish using the <a href="windows_motctrl.htm" class="topiclink">Motion Controller</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also use <a href="menus_edit_btns_animation.htm" class="topiclink">Animation</a> buttons and <a href="menus_edit_btns_movement.htm" class="topiclink">Movement</a> buttons to move objects automatically.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Start an Animation</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Select one or more objects to animate. The objects must be <a href="windows_motctrl_animprinc.htm" class="topiclink">geometric objects or parameters</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Click the <a href="windows_motctrl_parts.htm" class="topiclink">Animate button</a> in the Motion Controller. Each selected object begins moving.</span></p><p class="p_MarginNote"><span class="f_MarginNote">The only objects you can’t animate are captions, calculations, functions, action buttons, measurements, and pictures. (Except for action buttons, each of these objects can be <a href="menus_edit_splitmerge.htm" class="topiclink">attached</a> to a point, and the point can be animated.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The Animate button has the same effect as the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_animate.htm" class="topiclink">Display | Animate</a></span><span class="f_BodyText"> command.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Select a Moving Object</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To modify the motion of a particular moving object, you must select the object to make it the target of the Motion Controller. If the object were not moving, you would simply click it with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool to select it — but it’s not always so easy to click a moving object.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You may be able to select the desired moving object with a mouse click if it’s moving slowly or with <a href="tools_arrow_selectdeselect.htm" class="topiclink">a selection rectangle</a> if there aren’t any other objects near it. If not, follow these steps.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Press and hold on the Target menu to show the list of target objects.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">If the object you want appears on the list, choose it. The object is selected, and you’re done.</span></p><p class="p_BodyText_Indented"><span class="f_BodyText_Indented">If the object is not an independent point, a point on path, or a parameter, the object is moved by moving its parents, and it doesn’t appear on the list. In this case, continue with steps 3 through 5.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Click the Pause button in the Motion Controller.</span></p><p class="p_BodyText_Indented"><span class="f_BodyText_Indented">Motion stops.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">Select the object.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Click the Pause button again to release the button and restart the motion. </span></p><p class="p_BodyText_Indented"><span class="f_BodyText_Indented">The object remains selected and is listed as the target object.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Stop a Moving Object</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can stop the motion of a single object while leaving other objects in motion.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Select the moving object as described in the previous section.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Click the Stop button in the Motion Controller. The selected object stops moving.</span></p><p class="p_MarginNote"><span class="f_MarginNote">Clicking Stop with nothing selected stops all moving objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The Stop button has the same effect as the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_stopanimation.htm" class="topiclink">Display | Stop Animation</a></span><span class="f_BodyText"> command.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Reverse the Direction of a Moving Object</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can reverse the direction of any moving object as long as it’s not animating randomly.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Select the moving object as described above.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Click the Reverse button in the Motion Controller. The selected object reverses its direction.</span></p><p class="p_MarginNote"><span class="f_MarginNote">Clicking Reverse with nothing selected reverses the direction of all moving objects.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Set, Increase, or Decrease the Speed of a Moving Object</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can change the speed of any moving object.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Select the moving object by clicking the Target button and choosing the object from the pop-up menu.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Set a new speed by either typing a new speed into the Motion Controller’s speed control or by clicking the up or down arrows of the speed control.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">The selected object moves at the new speed.</span></p><p class="p_MarginNote"><span class="f_MarginNote">When you have several objects moving at different speeds and you want to make all of them go faster or slower, use the speed arrows rather than typing a specific speed.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The up and down arrows have the same effect as the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_incdecspeed.htm" class="topiclink">Display | Increase Speed</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_incdecspeed.htm" class="topiclink">Display | Decrease Speed</a></span><span class="f_BodyText"> commands.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_animprinc.htm" class="topiclink">Principles of Animation</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_parts.htm" class="topiclink">Parts of the Motion Controller</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

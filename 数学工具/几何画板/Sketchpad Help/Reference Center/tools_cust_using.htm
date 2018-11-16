@@ -1,0 +1,223 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Tools &gt; Custom Tools &gt; Use a Custom Tool</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Custom Tools,Custom Tools using,Custom Tools given objects and steps,Custom Tools matching given objects,Custom Tools as commands">
+   <meta name="description" content="Use a Custom Tool">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tools_cust_using.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Use a Custom Tool</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="tools.htm">Tools</a> &gt; <a href="tools_cust.htm">Custom Tools</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Use a Custom Tool</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="tools_cust_menu.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="tools_cust.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="tools_cust_making.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_FlushRight_Narrative"><img src="custom_example_tools_zoom75.png" width="173" height="118" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Custom tools are easy to use, even before you learn how to make one yourself. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">In this example, you'll first set up a Tool Folder in which to store documents that contain custom tools. (When you set up the Tool Folder, it will contain an example document that comes with Sketchpad, but later on you can add your own documents, with your own tools, to this folder.) </span></p>
+<p class="p_BodyText"><span class="f_BodyText">After you've set up the Tool Folder, you'll actually use a tool. In this example, you'll use a tool that constructs a square.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Press and hold the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tools icon in the <a href="tools.htm" class="topiclink">Toolbox</a> until the <a href="tools_cust_menu.htm" class="topiclink">Custom Tools menu</a> appears. From this menu, choose the command </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_cust_toolfolder.htm" class="topiclink">Choose Tool Folder</a>.</span><span class="f_BodyText"> </span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">With the dialog box that appears, navigate to a folder in which to store your custom tools. Use an existing folder, or create a new one.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Make sure there's a check next to </span><span class="f_BodyText" style="font-weight: bold;">Create Example Tools document in chosen Tool Folder.</span><span class="f_BodyText"> Then click </span><span class="f_BodyText" style="font-weight: bold;">Choose.</span><span class="f_BodyText"> A dialog box appears to indicate that the Example Tools document has been created. (If you see an error message, make sure that you have write access to the folder you've chosen.)</span></p><p class="p_BodyText"><span class="f_BodyText">Now that you've chosen a Tool Folder, tools in this folder will be available every time you start Sketchpad (until you change or reset the Tool Folder). You don't need to repeat steps 1</span><span class="f_BodyText">–</span><span class="f_BodyText">3 each time you want to use a tool.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">Press and hold the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tools icon again. This time, from the <a href="tools_cust_menu.htm" class="topiclink">Custom Tools menu</a> choose </span><span class="f_BodyText" style="font-weight: bold;">Example Tools | Square Given Two Vertices.</span><span class="f_BodyText"> This custom tool is now your active tool.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Click the </span><span class="f_BodyText" style="font-weight: bold;">Square Given Two Vertices</span><span class="f_BodyText"> tool in two different places in the sketch. A square appears. (Instead of clicking twice, you can press and drag if you like.)</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">6.</span><span class="f_BodyText">Continue using the custom tool to make lots of squares. You can click in empty space, on existing points, on paths, or on intersections just as you can with the</span><span class="f_BodyText" style="font-weight: bold;"> <a href="tools_point.htm" class="topiclink">Point</a>, <a href="tools_compass.htm" class="topiclink">Compass</a>,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_straight.htm" class="topiclink">Straightedge</a></span><span class="f_BodyText"> tools.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">7.</span><span class="f_BodyText">When you’re finished making squares, click any other tool in the <a href="tools.htm" class="topiclink">Toolbox</a>, or press the <a href="shortcuts.htm" class="topiclink">Esc</a> key.</span></p><p class="p_BodyText"><span class="f_BodyText">To resume making squares, click the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tool icon again. You don’t need to press and hold to choose from the Custom Tools menu the next time — just click the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tool icon to activate it. Press and hold the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tool icon in the Toolbox only when you want to switch to a different custom tool from the menu.</span></p>
+<p class="p_Image_Centered_Large"><img src="custom_squares_zoom60.png" width="152" height="117" alt="" style="border:none" /></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Givens and Results of a Tool</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Each time you click as you use a tool, you specify a given object — an object that is used to determine the rest of the objects the tool produces. The objects produced by the tool (that depend on the given objects) are the results of the tool.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The </span><span class="f_BodyText" style="font-weight: bold;">Square</span><span class="f_BodyText"> tool has two givens — two adjacent vertices of the square. The remaining vertices, the sides, and the square itself are the tool’s results.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Think of the various objects and relationships that make up a tool as a <a href="objects_attrib_relations.htm" class="topiclink">family tree</a>. In this family tree, the givens are the ultimate ancestors — objects that have children but no parents. The other objects — those that have parents — are the results of the tool. The <a href="windows_script.htm" class="topiclink">Script View</a> shows lists <a href="windows_script_givenssteps.htm" class="topiclink">the givens and the results</a> of the currently chosen custom tool.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Matching Given Objects</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Tools can use as their givens various kinds of objects: points, straight objects, circles, measurements, functions, and so forth. When you use a tool, a message appears on Sketchpad’s <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> at the bottom of the window describing what kind of given object you need to match next. (In Windows, the status line appears at the bottom-left of the window frame. On Mac, the status line appears at the bottom-right corner of the sketch.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For example, if a tool uses a point, a segment, and a distance measurement as its three givens, the status line first says “1. Match Point…” to indicate what object you must match first. After you match the point, the status line says “2. Match Segment…” to indicate that you must next specify a segment. And finally, it says “3. Match Distance Measurement…” when it’s time for you to click on a distance measurement as the last given object.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can always match a given by clicking a sketch object of the correct kind. For some givens — points, straight objects, circles, and polygons — you can also match the given by constructing it.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the <a href="windows_script.htm" class="topiclink">Script View</a> is showing, you can see its given objects highlighted as you match them.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If a given object for a tool is a point, you can specify it in either of two ways.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To specify an existing point, click it in the sketch. The point you click on is used as the given.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To construct a new point, click somewhere else in the sketch — in empty space, on a path, or at an intersection. The point you construct is used as the given.</span></p><p class="p_BodyText"><span class="f_BodyText">If a given object for a tool is a circle, a straight object, or a polygon, you can specify it in either of two ways.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To specify an existing object of the correct kind, click it in the sketch. The object you click on is used as the given.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To construct a new object, click twice (or press and drag) in the sketch to construct a circle or straight object, or click at least three times for a polygon. If you’re constructing a circle given, the first point is the center and the second point is the radius point. If you’re constructing a straight object, the two points are the two determining points of the straight object. If you’re constructing a polygon, click each vertex and then click again on the first vertex to signal the end of the polygon.</span></p><p class="p_BodyText"><span class="f_BodyText">If the given for a tool is any other kind of object, you must click on a matching object in the sketch. If no object of the correct kind exists in the sketch, you must create such an object before you can use the tool.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If a given tool object in the tool always matches the same sketch object, you can make this match occur <a href="adv_tool_automatch.htm" class="topiclink">automatically</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Use a Custom Tool as a Command</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Use any <a href="adv_tool_missing_given.htm" class="topiclink">custom tool as a command</a> by selecting appropriate objects as prerequisites and holding the Alt key (Windows) or </span><img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" /><span class="f_BodyText">key (Mac) while you choose the tool from the Custom Tools menu.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_cust_making.htm" class="topiclink">Make a Custom Tool</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_cust_toolfolder.htm" class="topiclink">The Tool Folder</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool.htm" class="topiclink">Advanced Tool Topics</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool_missing_given.htm" class="topiclink">Use a Custom Tool as a Custom Command</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

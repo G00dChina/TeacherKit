@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:fontScheme name="Verve" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:majorFont>
+      <a:latin typeface="Century Gothic"/>
+      <a:ea typeface=""/>
+      <a:cs typeface=""/>
+      <a:font script="Jpan" typeface="HGｺﾞｼｯｸM"/>
+      <a:font script="Hang" typeface="HY중고딕"/>
+      <a:font script="Hans" typeface="幼圆"/>
+      <a:font script="Hant" typeface="微軟正黑體"/>
+      <a:font script="Arab" typeface="Tahoma"/>
+      <a:font script="Hebr" typeface="Gisha"/>
+      <a:font script="Thai" typeface="DilleniaUPC"/>
+      <a:font script="Ethi" typeface="Nyala"/>
+      <a:font script="Beng" typeface="Vrinda"/>
+      <a:font script="Gujr" typeface="Shruti"/>
+      <a:font script="Khmr" typeface="DaunPenh"/>
+      <a:font script="Knda" typeface="Tunga"/>
+      <a:font script="Guru" typeface="Raavi"/>
+      <a:font script="Cans" typeface="Euphemia"/>
+      <a:font script="Cher" typeface="Plantagenet Cherokee"/>
+      <a:font script="Yiii" typeface="Microsoft Yi Baiti"/>
+      <a:font script="Tibt" typeface="Microsoft Himalaya"/>
+      <a:font script="Thaa" typeface="MV Boli"/>
+      <a:font script="Deva" typeface="Mangal"/>
+      <a:font script="Telu" typeface="Gautami"/>
+      <a:font script="Taml" typeface="Latha"/>
+      <a:font script="Syrc" typeface="Estrangelo Edessa"/>
+      <a:font script="Orya" typeface="Kalinga"/>
+      <a:font script="Mlym" typeface="Kartika"/>
+      <a:font script="Laoo" typeface="DokChampa"/>
+      <a:font script="Sinh" typeface="Iskoola Pota"/>
+      <a:font script="Mong" typeface="Mongolian Baiti"/>
+      <a:font script="Viet" typeface="Tahoma"/>
+      <a:font script="Uigh" typeface="Microsoft Uighur"/>
+      <a:font script="Geor" typeface="Sylfaen"/>
+   </a:majorFont>
+   <a:minorFont>
+      <a:latin typeface="Century Gothic"/>
+      <a:ea typeface=""/>
+      <a:cs typeface=""/>
+      <a:font script="Jpan" typeface="ＭＳ ゴシック"/>
+      <a:font script="Hang" typeface="HY중고딕"/>
+      <a:font script="Hans" typeface="幼圆"/>
+      <a:font script="Hant" typeface="微軟正黑體"/>
+      <a:font script="Arab" typeface="Tahoma"/>
+      <a:font script="Hebr" typeface="Gisha"/>
+      <a:font script="Thai" typeface="DilleniaUPC"/>
+      <a:font script="Ethi" typeface="Nyala"/>
+      <a:font script="Beng" typeface="Vrinda"/>
+      <a:font script="Gujr" typeface="Shruti"/>
+      <a:font script="Khmr" typeface="DaunPenh"/>
+      <a:font script="Knda" typeface="Tunga"/>
+      <a:font script="Guru" typeface="Raavi"/>
+      <a:font script="Cans" typeface="Euphemia"/>
+      <a:font script="Cher" typeface="Plantagenet Cherokee"/>
+      <a:font script="Yiii" typeface="Microsoft Yi Baiti"/>
+      <a:font script="Tibt" typeface="Microsoft Himalaya"/>
+      <a:font script="Thaa" typeface="MV Boli"/>
+      <a:font script="Deva" typeface="Mangal"/>
+      <a:font script="Telu" typeface="Gautami"/>
+      <a:font script="Taml" typeface="Latha"/>
+      <a:font script="Syrc" typeface="Estrangelo Edessa"/>
+      <a:font script="Orya" typeface="Kalinga"/>
+      <a:font script="Mlym" typeface="Kartika"/>
+      <a:font script="Laoo" typeface="DokChampa"/>
+      <a:font script="Sinh" typeface="Iskoola Pota"/>
+      <a:font script="Mong" typeface="Mongolian Baiti"/>
+      <a:font script="Viet" typeface="Verdana"/>
+      <a:font script="Uigh" typeface="Microsoft Uighur"/>
+      <a:font script="Geor" typeface="Sylfaen"/>
+   </a:minorFont>
+</a:fontScheme>
+

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_design" component="et">
+	<commands>
+		<KxKsoTableStyleOptionListCommand id="RB_TableStyleOption" text="@Table Style Options"/>
+		<KListCommand id="RB_TableStyle" text="@Table Styles">
+			<KxKsoTableStyleCommand galleryWidth="675" embedHint="1" id="TableStyleGallery" galleryHeight="100" qtspyName="TableStyleGallery"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxClearTableStyleCommand hotKey="C" idMso="ClearMenu" icon="ClearTableStyle" controlType="15" id="RB_ClearTableStyle" customTip="ClearTableStyle" text="@Clear
+Table Style" rbHotKey="C"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Design">
+			<command idQ="RB_TableStyleOption" filter="patent:CustomizableTableStyleList=true"/>
+			<separator filter="patent:CustomizableTableStyleList=true"/>
+			<command idQ="RB_TableStyle"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

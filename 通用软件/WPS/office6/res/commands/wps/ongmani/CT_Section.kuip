@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_section" component="wps">
+	<commands>
+		<KxWpsPageOrientationCommand bLikePopuMenu="1" hotKey="O" ksoCmd="PageSetup" idMso="PageOrientationGallery" icon="Orientation" controlType="4" id="PageOrientation" customTip="PageOrientation" text="@Orientation" rbHotKey="O"/>
+		<KxValueCommand hotKey="O" ksoCmd="ColumnsPalette" icon="ColumnsOne" id="ColumnsOne" index="65536" text="@One"/>
+		<KxValueCommand hotKey="W" ksoCmd="ColumnsPalette" icon="ColumnsTwo" id="ColumnsTwo" index="131072" text="@Two"/>
+		<KxValueCommand hotKey="T" ksoCmd="ColumnsPalette" icon="ColumnsThree" id="ColumnsThree" index="196608" text="@Three"/>
+		<KxLegacyTriggerCommand hotKey="C" ksoCmd="Columns" icon="ColumnsMore" id="ColumnsMore" dialogHint="1" text="@More Columns"/>
+		<KListCommand icon="Columns" id="sectionm_ColumnsPalette" customTip="m_ColumnsPalette" text="@Columns" rbHotKey="J">
+			<command idQ="ColumnsOne"/>
+			<command idQ="ColumnsTwo"/>
+			<command idQ="ColumnsThree"/>
+			<command idQ="ColumnsMore"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertNextPageSectionBreak" aid="80017" icon="InsertNextPageSectionBreak" id="InsertNextPageSectionBreak" text="@Next Page Section Break" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="O" ksoCmd="InsertContinuousSectionBreak" aid="80018" icon="InsertContinuousSectionBreak" id="RbInsertContinuousSectionBreak" text="@Continuous Section Break"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="InsertEvenPageSectionBreak" aid="80019" icon="InsertEvenPageSectionBreak" id="InsertEvenPageSectionBreak" text="@Even Page Section Break" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="InsertOddPageSectionBreak" aid="80020" icon="InsertOddPageSectionBreak" id="RbInsertOddPageSectionBreak" text="@Odd Page Section Break"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeaderFooter" icon="HeaderFooter" id="m_HeaderAndFooter" customTip="HeaderFooter" text="@Header and
+Footer" rbHotKey="H"/>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Section">
+			<KListCommand id="RB_Navigation" text="@Navigation Pane">
+				<KxWpsShowHideNavigationPaneCommand detail="@Show/Hide Section Navigation" hotKey="S" icon="SectionNavigation" id="NavigationPane" customTip="NavigationPane" text="@Section
+Navigation" qtspyName="SectionNavigation" rbHotKey="S"/>
+			</KListCommand>
+			<separator/>
+			<KxListCommand ksoCmd="PageSetup" id="RB_PageSetupInSectionTab" customTip="PageSetup" text="@Page Setup" rbFileMenuEmbed="1" qtspyName="PageSetup">
+				<command idQ="PageOrientation"/>
+				<command idQ="sectionm_ColumnsPalette"/>
+			</KxListCommand>
+			<separator/>
+			<KListCommand id="RB_CoverAndTOC" text="@Cover and TOC">
+				<KxCoverSectionGalleryCommand hotKey="C" galleryWidth="315" filter="support:SampleCoverPage=true" idMso="CoverPageInsertGallery" icon="Cover" controlType="4" id="CoverPageInsertGallery" customTip="CoverPages" galleryHeight="510" text="@Cover
+Pages" qtspyName="Cover" rbHotKey="C"/>
+				<KxWpsContentsGalleryCommand hotKey="T" galleryWidth="315" idMso="ContentsAndIndex" icon="TableContents" controlType="4" id="ContentsAndIndex" customTip="TableContents" galleryHeight="510" text="@Contents
+Page" qtspyName="TableContents" rbHotKey="T"/>
+			</KListCommand>
+			<separator/>
+			<KListCommand id="SectionManagement" text="@Section Management">
+				<KxListCommand hotKey="B" ksoCmd="InsertNextPageSectionBreak" icon="SectionBreaks" customTip2="SplitSection2" id="InsertSectionBreak" customTip="SplitSection" text="@Split
+Section" qtspyName="InsertNextPageSectionBreak" rbHotKey="B">
+					<command idQ="InsertNextPageSectionBreak"/>
+					<command idQ="RbInsertContinuousSectionBreak"/>
+					<command idQ="InsertEvenPageSectionBreak"/>
+					<command idQ="RbInsertOddPageSectionBreak"/>
+				</KxListCommand>
+				<KxWpsInsertSectionCommand hotKey="F" icon="InsertSectionBefore" insertBefore="true" id="InsertSectionBefore" customTip="InsertSectionBefore" spaceHint="suitable" text="@Insert Section Before" rbHotKey="F"/>
+				<KxWpsInsertSectionCommand hotKey="L" icon="InsertSectionAfter" insertBefore="false" id="InsertSectionAfter" customTip="InsertSectionAfter" spaceHint="suitable" text="@Insert Section After" rbHotKey="L"/>
+				<KxWpsDeleteSectionCommand hotKey="D" icon="DeleteSection" id="DeleteSection" customTip="DeleteSection" text="@Delete
+Section" rbHotKey="D"/>
+			</KListCommand>
+			<separator/>
+			<KListCommand id="RB_PageNumber" text="@Page
+Number">
+				<KxWpsHeaderFooterPageNumCommand hotKey="N" idMso="PageNumber" icon="PageNumber" controlType="0" id="PageNumberInSectionTab" customTip="PageNumber" text="@Page
+Number" qtspyName="PageNumber" rbHotKey="NU"/>
+				<KxWpsPageNumFormatCommand hotKey="NF" numberStyleList="0;57;37;38;14;28;1;2;3;4;30;31;10;20;21;5;6;7" galleryWidth="250" icon="PageNumberFormat" id="PageNumberFormat" customTip="PageNumberFormat" text="@Page Number
+Format" rbHotKey="NF"/>
+				<KLayoutWidgetCommand fixedWidth="3"/>
+				<KxWpsPageDifferCommand firstPageDiffer="true" hotKey="A" idMso="HeaderFooterDifferentFirstPageWord" controlType="1" id="FirstPageIsDifferent" customTip="FirstPageIsDifferent" spaceHint="suitable" text="@Different First Page" qtspyName="HeaderFooterDifferentFirstPageWord" rbHotKey="A"/>
+				<KxWpsRestartPageNumCommand idMso="NumberingRestart" controlType="0" id="RestartPageNumber" customTip="RestartPageNumber" spaceHint="suitable" text="@Restart Page Number" qtspyName="NumberingRestart"/>
+				<KLayoutWidgetCommand fixedWidth="5"/>
+				<KxWpsShowFirstPageNumCommand idMso="BlogHomePage" controlType="0" id="ShowFirstPageNumber" customTip="ShowFirstPageNumber" spaceHint="suitable" text="@Show First Page Number" qtspyName="BlogHomePage"/>
+				<KxWpsPageNumStartCommand detail="@Page Number Start" lineEditName="@Page Number Start:" fixedLineEditHeight="20" idMso="PageNumberStart" fixedLineEditWidth="42" controlType="0" id="PageNumberStart" customTip="PageNumberStart" spaceHint="suitable"/>
+			</KListCommand>
+			<separator/>
+			<KxWpsBookFormatDlgCommand id="RB_HeaderAndFooterSetting" customTip="HeaderAndFooterSetting" text="@Header and
+Footer">
+				<command idQ="m_HeaderAndFooter"/>
+				<KxWpsShowHeaderLineCommand bLikePopuMenu="1" hotKey="W" idMso="HeaderLine" icon="HeaderLine" controlType="0" id="ShowHeaderLineFor2013" customTip="HeaderLine" text="@Show
+Header Line" qtspyName="HeaderLine" rbHotKey="I">
+					<KxWpsHeaderLineColorCommand hotKey="C" id="HeaderLineColorFor2013" text="@Header Line Color" rbHotKey="C">
+						<KxWpsHeaderLineMoreColorCommand hotKey="M" id="HeaderLineMoreColorFor2013" dialogHint="1" text="@More Colors" rbHotKey="M"/>
+					</KxWpsHeaderLineColorCommand>
+				</KxWpsShowHeaderLineCommand>
+				<KLayoutWidgetCommand fixedWidth="3"/>
+				<KxWpsHFLinkToPreviousCommand idMso="HeaderLinkToPrevious" linkedType="0" controlType="1" id="HeaderLinkToPrevious" customTip="HeaderLinkToPrevious" spaceHint="suitable" text="@Link to Previous Header"/>
+				<KxWpsHFLinkToPreviousCommand isHeader="false" idMso="FooterLinkToPrevious" linkedType="0" controlType="1" id="FooterLinkToPrevious" customTip="FooterLinkToPrevious" spaceHint="suitable" text="@Link to Previous Footer"/>
+			</KxWpsBookFormatDlgCommand>
+			<separator/>
+			<KListCommand id="RB_LocateSection" text="@Locate Section">
+				<KListCommand embedHint="1">
+					<KRbLayoutListCommand>
+						<KxWpsSectionListCommand comboBoxWidth="88" detail="@Locate to Section" galleryWidth="150" id="LocateToSection" customTip="LocateToSection" spaceHint="suitable" galleryHeight="200" qtspyName="LocateToSection"/>
+					</KRbLayoutListCommand>
+					<KxWpsIterateSectionCommand isForward="false" hotKey="A" icon="PromoteToHighestLevelOnOutlining" id="FirstSection" customTip="FirstSection" toBeginOrEnd="true" text="@First Section" qtspyName="PromoteToHighestLevelOnOutlining" rbHotKey="A"/>
+					<KxWpsIterateSectionCommand isForward="false" hotKey="P" icon="PromoteOnOutlining" id="PreviousSection" customTip="PreviousSection" text="@Previous Section" qtspyName="PromoteOnOutlining" rbHotKey="P"/>
+					<KxWpsIterateSectionCommand isForward="true" hotKey="M" icon="DemoteOnOutlining" id="NextSection" customTip="NextSection" text="@Next Section" qtspyName="DemoteOnOutlining" rbHotKey="M"/>
+					<KxWpsIterateSectionCommand isForward="true" hotKey="E" icon="DemoteToLowestLevelOnOutlining" id="LastSection" customTip="LastSection" toBeginOrEnd="true" text="@Last Section" qtspyName="DemoteToLowestLevelOnOutlining" rbHotKey="E"/>
+				</KListCommand>
+			</KListCommand>
+			<separator/>
+			<KListCommand filter="patent:LogicGroupShowExtensionButton=false" id="DetailedSettings_Section">
+				<KListCommand icon="DetailedSettings" customTip="DetailedSettings_Section" text="@Settings" qtspyName="DetailedSettings">
+					<command idQ="PageSetup"/>
+					<KxWpsBookFormatDlgTriggerCommand text="@Header and Footer"/>
+				</KListCommand>
+			</KListCommand>
+		</subcommand>
+	</subcommands>
+</shell>

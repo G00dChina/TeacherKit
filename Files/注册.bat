@@ -1,0 +1,1 @@
+regasm CoreAudio.dll /tlb:CoreAudio.tlb /codebase

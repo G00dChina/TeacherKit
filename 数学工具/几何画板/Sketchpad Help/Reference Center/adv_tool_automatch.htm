@@ -1,0 +1,185 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; Advanced Topics &gt; Advanced Tool Topics &gt; Automatically Match a Given Object</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Advanced Topics,Advanced Topics automatically matching a given object,Custom Tools,Custom Tools automatically matching a given object,Automatically match sketch object">
+   <meta name="description" content="Automatically Match a Given Object">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "adv_tool_automatch.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Automatically Match a Given Object</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="adv.htm">Advanced Topics</a> &gt; <a href="adv_tool.htm">Advanced Tool Topics</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Automatically Match a Given Object</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="adv_tool_alttoolfolders.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="adv_tool.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="adv_tool_generatelabels.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">When you create a custom tool, there may be a particular given object that you would like to always match to the same object in your sketch. Normally you must match that given object each time you use the tool, even though you’re matching it to the same object each time.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To save the trouble of clicking the object each time and to make the tool easier to use, you can specify that the given object should be automatically matched to the same sketch object each time the tool is used. For example, suppose you create a tool that constructs one segment on a Poincaré disk model of the hyperbolic plane. Such a tool might have three given objects: a circle defining the Poincaré disk and two points defining the segment’s endpoints. Since you’d like to use the same tool repeatedly to construct multiple segments on the same Poincaré disk, it’s inconvenient to have to match the given circle to the same Poincaré disk each time you use the tool. You can change your tool to automatically match this given circle to the appropriate circle in your sketch, resulting in a tool that requires you to match only two points each time you use it. Since the Poincaré disk circle is matched automatically, this tool will always create segments on the same Poincaré disk.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To match a given object automatically:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Open the <a href="windows_properties.htm" class="topiclink">Properties dialog box</a> for the sketch object you want to match automatically. Use the <a href="objects_attrib_labelprops.htm" class="topiclink">Label panel</a> to assign a distinctive label to the object.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-style: italic;">Show Script View</span><span class="f_BodyText"> from the <a href="tools_cust_menu.htm" class="topiclink">Custom Tools menu</a> to show the <a href="windows_script.htm" class="topiclink">Script View</a> for the tool containing the given object to be matched automatically.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Double-click the <a href="windows_script_givenssteps.htm" class="topiclink">given object</a> in the object list to open the Properties dialog box.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">On the <a href="objects_attrib_labelprops.htm" class="topiclink">Label panel</a>, assign the same label to the script object that you assigned to the sketch object.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Check the </span><span class="f_BodyText" style="font-weight: bold;">Automatically match sketch object</span><span class="f_BodyText"> checkbox and close the Properties dialog box.</span></p><p class="p_BodyText"><span class="f_BodyText">When you use the tool, it will automatically match the tool’s given object to the sketch object with the same label. Provided the appropriate checkbox is checked in Label Properties, a tool containing a given point labeled </span><span class="f_BodyText" style="font-style: italic;">Center</span><span class="f_BodyText"> will automatically match the point labeled </span><span class="f_BodyText" style="font-style: italic;">Center</span><span class="f_BodyText"> in your sketch. If no object in the sketch has a matching label, the tool will require you to match the given object manually.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If all the given objects for a tool match automatically, the tool completes its construction as soon as you choose the tool. The active tool is then changed back to the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Selection Arrow</a></span><span class="f_MarginNote"> tool.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When a given object in a tool is set to match automatically, it appears in the </span><span class="f_BodyText" style="font-style: italic;">Assuming</span><span class="f_BodyText"> section of the script view, rather than the </span><span class="f_BodyText" style="font-style: italic;">Given</span><span class="f_BodyText"> section.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">(If a new tool has a coordinate system as one of its given objects, the coordinate system is automatically placed in the </span><span class="f_BodyText" style="font-style: italic;">Assuming</span><span class="f_BodyText"> section of the script view, and the checkbox in the Label Properties dialog panel is </span><span class="f_BodyText" style="font-weight: bold;">Automatically match marked coordinate system.</span><span class="f_BodyText">)</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_attrib_labelprops.htm" class="topiclink">Label Properties</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_display_showhidelabel.htm" class="topiclink">Show/Hide Labels</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_script.htm" class="topiclink">Script View</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_cust.htm" class="topiclink">Custom Tools</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_cust_menu.htm" class="topiclink">Custom Tools Menu</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_script_givenssteps.htm" class="topiclink">Givens and Steps of a Tool</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_cust_using.htm" class="topiclink">Use a Custom Tool</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool_generatelabels.htm" class="topiclink">Generate Specific Labels</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

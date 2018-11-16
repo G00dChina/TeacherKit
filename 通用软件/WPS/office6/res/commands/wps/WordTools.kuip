@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="wordtools" component="wps">
+	<libraries>
+		<library path="." name="wpswordtool"/>
+	</libraries>
+	<subcommands>
+		<subcommand id="WordTools">
+			<KRearrangeParagraphCommand hotKey="R" aid="92038" icon="RearrangeParagraphs" id="RearrangeParagraphs" text="@Rearrange Paragraphs"/>
+			<KSmartRearrangeCommand hotKey="F" aid="92039" icon="SmartRearrange" id="SmartRearrange" text="@Smart Rearrange"/>
+			<KToBlankParagraphSplitModeCommand hotKey="M" aid="92040" icon="ToBlankParagraphSplitMode" id="ToBlankParagraphSplitMode" text="@Change to Blank Paragraph Split Mode"/>
+			<separator/>
+			<KDeleteBlankParagraphCommand hotKey="E" aid="92041" icon="DeleteBlankParagraph" id="DeleteBlankParagraph" text="@Delete Blank Paragraph"/>
+			<KDeletePrefixSpacesCommand hotKey="P" aid="92042" icon="DeletePrefixSpaces" id="DeletePrefixSpaces" text="@Delete Spaces before First-line Indent"/>
+			<KDeleteSpacesCommand hotKey="W" aid="92043" icon="DeleteSpaces" id="DeleteSpaces" text="@Delete Spaces"/>
+			<KDeleteSoftReturnCommand hotKey="S" aid="92044" icon="DeleteSoftReturn" id="DeleteSoftReturn" text="@Delete Soft Return"/>
+			<KConvertSoftReturnCommand hotKey="B" aid="92045" icon="CovertSoftReturnToReturn" id="CovertSoftReturnToReturn" text="@Convert Soft Return to Return"/>
+			<separator/>
+			<KInsertParagraphIndCommand hotKey="I" aid="92046" icon="ParagraphIndent2Spaces" id="ParagraphIndent2Spaces" text="@Indent Paragraph by 2 Characters"/>
+			<KParagraphInd2SpacesCommand hotKey="C" aid="92047" icon="InsertParagraphIndent" id="InsertParagraphIndent" text="@Convert Paragraph Indent to Space"/>
+			<KInsertBlankParagraphsCommand hotKey="A" aid="92048" icon="InsertBlankParagraphs" id="InsertBlankParagraphs" text="@Insert Blank Paragraphs"/>
+		</subcommand>
+	</subcommands>
+</shell>

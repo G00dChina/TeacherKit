@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Urban" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="424456"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="DEDEDE"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="53548A"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="438086"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="A04DA3"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="C4652D"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="8B5D3D"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="5C92B5"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="67AFBD"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="C2A874"/>
+   </a:folHlink>
+</a:clrScheme>
+

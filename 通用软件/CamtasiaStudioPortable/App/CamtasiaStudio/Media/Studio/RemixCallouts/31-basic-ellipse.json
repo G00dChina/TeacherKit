@@ -1,0 +1,12 @@
+{
+      "kind" : "remix",
+      "shape" : "shape-ellipse",
+      "style" : "basic",
+      "width" : 350,
+      "height" : 180,
+      "fill-color": "FFFFFF",
+      "fill-style": "solid",
+      "stroke-style" : "solid",
+      "stroke-width": 6.0,
+      "stroke-color": "632289"
+}

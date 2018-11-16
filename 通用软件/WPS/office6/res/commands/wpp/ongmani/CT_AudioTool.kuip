@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_audiotool" component="wpp">
+	<commands>
+		<KListCommand id="RB_AudioPlay">
+			<KxWppMediaPlayCommand icon="MediaPlay" text="@Media play" rbHotKey="P"/>
+		</KListCommand>
+		<KxWppVolListCommand id="RB_AudioVol">
+			<KListCommand icon="MediaVol" customTip="MediaVol" text="@Media vol" qtspyName="MediaVol" rbHotKey="V">
+				<KxWppMediaVolCommand index="3" text="@Hight" qtspyName="MediaVolHight"/>
+				<KxWppMediaVolCommand index="2" text="@Mid" qtspyName="MediaVolMid"/>
+				<KxWppMediaVolCommand index="1" text="@Low" qtspyName="MediaVolLow"/>
+				<KxWppMediaVolCommand index="0" text="@Mute" qtspyName="MediaVolMute"/>
+			</KListCommand>
+		</KxWppVolListCommand>
+		<KListCommand id="RB_AudioTrim">
+			<KxLegacyTriggerCommand ksoCmd="TrimSound" icon="AudioTrim" customTip="AudioTrim" text="@Trim Sound"/>
+		</KListCommand>
+		<KListCommand id="RB_AudioFade">
+			<KxMediaFadeInSpinBoxCommand icon="fadeIn" embedHint="1" id="AudioFadeIn" spaceHint="suitable" customTip="AudioFadeIn" text="@Fade In"/>
+			<KxMediaFadeOutSpinBoxCommand icon="fadeOut" embedHint="1" id="AudioFadeOut" spaceHint="suitable" customTip="AudioFadeOut" text="@Fade Out"/>
+		</KListCommand>
+		<KxWppAudioPlayAcrossPageCommand embedHint="1" id="PlayAudioAcrossPageLineEdit" spaceHint="suitable" customTip="AudioAcrossPage"/>
+		<KxWppAudioAcrossPageRadioCommand id="PlayAudioCurPage" index="1" customTip="AudioCurPage" text="@Play current page"/>
+		<KxWppAudioAcrossPageRadioCommand id="PlayAudioAcrossPage" index="2" customTip="AudioAcrossPage" text="@Play across page:"/>
+		<KxListCommand id="RB_AudioPlaySetting">
+			<KxWppNoTriggerCommand icon="VideoStart" customTip="AudioBegin" spaceHint="suitable" text="@Begin" qtspyName="MediaStartModeLabel"/>
+			<KxWppMediaStartModeCommand customTip="AudioBegin" spaceHint="suitable" text="@Auto" qtspyName="MediaStartMode" rbHotKey="U"/>
+			<KLayoutWidgetCommand fixedWidth="6"/>
+			<KRbLayoutListCommand layoutName="vbox" layoutOnly="1" spaceHint="suitable" spacing="8">
+				<command idQ="PlayAudioCurPage"/>
+				<command idQ="PlayAudioAcrossPage"/>
+			</KRbLayoutListCommand>
+			<KLayoutWidgetCommand fixedWidth="1"/>
+			<KxWppMediaLoopCommand spaceHint="suitable" customTip="LoopAudio" text="@Loop until stopped" qtspyName="LoopMedia" rbHotKey="L"/>
+			<command idQ="PlayAudioAcrossPageLineEdit"/>
+			<KLayoutWidgetCommand fixedWidth="6"/>
+			<KxWppMediaHideCommand customTip="HideAudio" spaceHint="suitable" text="@Hidden when play" qtspyName="HideMedia"/>
+			<KxWppMediaRewindCommand customTip="RewindAudio" spaceHint="suitable" text="@Rewind movie when done playing" qtspyName="RewindMedia"/>
+		</KxListCommand>
+		<KxListCommand id="RB_BackgroundMusic">
+			<KxWppBackgroundMusicCommand icon="BackgroundMusic" customTip="BackgroundMusic" text="@Set background music"/>
+		</KxListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_AudioTool">
+			<command idQ="RB_AudioPlay"/>
+			<separator/>
+			<command idQ="RB_AudioVol"/>
+			<separator/>
+			<command idQ="RB_AudioTrim"/>
+			<separator/>
+			<command idQ="RB_AudioFade"/>
+			<separator/>
+			<command idQ="RB_AudioPlaySetting"/>
+			<separator/>
+			<command idQ="RB_BackgroundMusic"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

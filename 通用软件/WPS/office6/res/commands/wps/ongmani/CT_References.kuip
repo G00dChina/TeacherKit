@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_references" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="InsertIndexTables" idMso="TableOfContentsDialog" icon="TableOfContents" controlType="0" id="InsertIndexTablesToolBar" customTip="InsertIndexTables" text="@Insert TOC" rbHotKey="T"/>
+		<KListCommand icon="AddText" id="m_tocLevel" customTip="m_tocLevel" text="@TOC Level" rbHotKey="A">
+			<KxIndexCommand hotKey="1" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel1" index="0" text="@Level 1" qtspyName="Level1"/>
+			<KxIndexCommand hotKey="2" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel2" index="1" text="@Level 2" qtspyName="Level2"/>
+			<KxIndexCommand hotKey="3" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel3" index="2" text="@Level 3" qtspyName="Level3"/>
+			<KxIndexCommand hotKey="4" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel4" index="3" text="@Level 4" qtspyName="Level4"/>
+			<KxIndexCommand hotKey="5" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel5" index="4" text="@Level 5" qtspyName="Level5"/>
+			<KxIndexCommand hotKey="6" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel6" index="5" text="@Level 6" qtspyName="Level6"/>
+			<KxIndexCommand hotKey="7" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel7" index="6" text="@Level 7" qtspyName="Level7"/>
+			<KxIndexCommand hotKey="8" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel8" index="7" text="@Level 8" qtspyName="Level8"/>
+			<KxIndexCommand hotKey="9" ksoCmd="OutLineLevelComboOnOutlining" id="TOCLevel9" index="8" text="@Level 9" qtspyName="Level9"/>
+			<KxIndexCommand hotKey="B" ksoCmd="OutLineLevelComboOnOutlining" id="TOCNormal" index="9" text="@Body Text" qtspyName="BodyText"/>
+		</KListCommand>
+		<KListCommand id="RB_Table_Of_Contents" text="@Table of Contents" rbFileMenuEmbed="1">
+			<command idQ="InsertIndexTablesToolBar"/>
+			<command idQ="UpdateTocRainbow"/>
+			<command idQ="m_tocLevel"/>
+		</KListCommand>
+		<KxListCommand ksoCmd="InsertFootnote" id="RB_Footnotes" customTip="InsertFootnote" text="@Footnotes and Endnotes" rbFileMenuEmbed="1" rbHotKey="Q">
+			<KxLegacyTriggerCommand text2="@Insert Footnote" ksoCmd="InsertTheFootnote" idMso="FootnoteInsert" icon="insertthefootnote" controlType="0" id="FootnoteInsert" customTip="InsertTheFootnote" text="@Insert Footnote" qtspyName="InsertTheFootnote" rbHotKey="F"/>
+			<KxLegacyTriggerCommand text2="@Previous Footnote" ksoCmd="GotoPrevFootnote" idMso="FootnotePreviousWord" icon="gotoprevfootnote" controlType="0" id="FootnotePreviousWord" customTip="GotoPrevFootnote" text="@Previous Footnote" qtspyName="GotoPrevFootnote" rbHotKey="OP"/>
+			<KxLegacyTriggerCommand text2="@Next Footnote" ksoCmd="GotoNextFootnote" idMso="FootnoteNextWord" icon="gotonextfootnote" controlType="0" id="FootnoteNextWord" customTip="GotoNextFootnote" text="@Next Footnote" qtspyName="GotoNextFootnote" rbHotKey="ON"/>
+			<separator/>
+			<KxLegacyTriggerCommand text2="@Insert Endnote" ksoCmd="InsertTheEndnote" idMso="EndnoteInsertWord" icon="inserttheendnote" controlType="0" id="EndnoteInsertWord" customTip="InsertTheEndnote" text="@Insert Endnote" qtspyName="InsertTheEndnote" rbHotKey="E"/>
+			<KxLegacyTriggerCommand text2="@Previous Endnote" ksoCmd="GotoPrevEndnote" idMso="EndnotePreviousWord" icon="gotoprevendnote" controlType="0" id="EndnotePreviousWord" customTip="GotoPrevEndnote" spaceHint="suitable" text="@Previous Endnote" qtspyName="GotoPrevEndnote" rbHotKey="OV"/>
+			<KxLegacyTriggerCommand text2="@Next Endnote" ksoCmd="GotoNextEndnote" idMso="EndnoteNextWord" icon="gotonextendnote" controlType="0" id="EndnoteNextWord" customTip="GotoNextEndnote" spaceHint="suitable" text="@Next Endnote" qtspyName="GotoNextEndnote" rbHotKey="OX"/>
+			<separator/>
+			<KxWpsShowFootnoteSeparatorCommand detail="@Show Or Hide Footnote/Endnote Separator" icon="FootnoteSeparator" id="ShowOrHideNoteSeparatorInReferenceTab" customTip="Separator" text="@Footnote/Endnote Separator" qtspyName="FootnoteSeparator" rbHotKey="S"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand ksoCmd="InsertCaption" idMso="CaptionInsert" icon="InsertCaption" controlType="0" id="InsertCaptionToolBar" customTip="InsertCaption" text="@Caption" rbHotKey="P"/>
+		<KxLegacyTriggerCommand ksoCmd="CrossReference" idMso="CrossReferenceInsert" icon="CrossReference" controlType="0" id="R_CrossReferenceRainbow" customTip="CrossReference" text="@Cross-reference" rbHotKey="RF"/>
+		<KListCommand idMso="GroupCaptions" controlType="16" id="RB_Captions" text="@Caption" rbFileMenuEmbed="1">
+			<command idQ="InsertCaptionToolBar"/>
+			<command idQ="R_CrossReferenceRainbow"/>
+		</KListCommand>
+		<KListCommand id="RB_ShowMailingsContext" text="@Mailings">
+			<KxWpsShowMailingsContextCommand hotKey="M" icon="Mail" id="ShowMailingsContext" customTip="Mail" text="@Mail Merge" rbHotKey="M"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="InsertFootnote" aid="3365" idMso="FootnoteEndnoteDialog" icon="Footnote" controlType="0" id="InsertFootnote" dialogHint="1" text="@Footnote/Endnote"/>
+		<KListCommand id="DetailedSettings_References">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_References" text="@Settings" qtspyName="DetailedSettings">
+				<command idQ="InsertFootnote"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_References">
+			<command idQ="RB_Table_Of_Contents"/>
+			<separator/>
+			<command idQ="RB_Footnotes"/>
+			<separator/>
+			<command idQ="RB_Captions"/>
+			<separator/>
+			<command idQ="RB_ShowMailingsContext"/>
+			<separator/>
+			<command idQ="DetailedSettings_References" filter="patent:LogicGroupShowExtensionButton=false"/>
+		</subcommand>
+	</subcommands>
+</shell>

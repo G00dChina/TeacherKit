@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_view" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="Normal" aid="876" faceid="28" icon="Normal" id="Normal" customTip="Normal" text="@Normal" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SlideSorter" aid="968" faceid="29" icon="OldSlideSorter" id="SlideSorter" customTip="SlideSorter" text="@Slide 
+Sorter" rbHotKey="I"/>
+		<KxLegacyTriggerCommand ksoCmd="SlideShowReading" icon="ReadingView" id="SlideShowReading" customTip="ReadingView" text="@Reading View"/>
+		<KxLegacyTriggerCommand ksoCmd="NotesPage" icon="NotesPage" id="NotesPage" customTip="NotesPageView" text="@Notes Page"/>
+		<KListCommand id="RB_PresView" text="@Presentation View" rbFileMenuEmbed="1">
+			<command idQ="Normal"/>
+			<command idQ="SlideSorter"/>
+			<command idQ="NotesPage"/>
+			<command idQ="SlideShowReading"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SlideMaster" aid="971" faceid="30" icon="SlideMaster" id="SlideMaster" customTip="SlideMaster" text="@Slide 
+Master" rbHotKey="M"/>
+		<KxLegacyTriggerCommand ksoCmd="NotesMaster" icon="NotesMaster" id="NotesMaster" customTip="NotesMaster" spaceHint="suitable" text="@Notes Master"/>
+		<KxLegacyTriggerCommand ksoCmd="HandoutMaster" icon="HandoutMaster" id="HandoutMaster" customTip="HandoutMaster" spaceHint="suitable" text="@Handout Master"/>
+		<KListCommand id="RB_MasterView" text="@Master View" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="SlideMaster" aid="971" faceid="30" icon="SlideMaster" id="SlideMasterInViewTab" customTip="SlideMaster" text="@Slide 
+Master" qtspyName="SlideMaster" rbHotKey="M"/>
+			<command idQ="HandoutMaster"/>
+			<command idQ="NotesMaster"/>
+		</KListCommand>
+		<KListCommand id="RB_Show" text="@Show" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="i" ksoCmd="GridGuides" icon="GridGuides" id="GridGuidesInViewTab" customTip="GridGuides" text="@Grid and
+Guides" qtspyName="GridGuides" rbHotKey="X"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxCheckBoxCommand ksoCmd="ShowHideGrid" id="ShowOrHideGrid" customTip="ShowHideGrid" spaceHint="suitable" text="@View Gridlines" qtspyName="ShowHideGrid" rbHotKey="G"/>
+			<KxTaskPaneCheckBoxCommand hotKey="k" ksoCmd="TaskPane" id="ShowOrHideTaskPane" customTip="TaskPane" spaceHint="suitable" text="@Task Window" qtspyName="TaskPane" rbHotKey="K"/>
+			<KRbLayoutListCommand topSpace="1" layoutName="vbox" verticalSpacing="8" layoutOnly="1" bottomSpace="1" spaceHint="loose" rightSpace="0" leftSpace="2">
+				<KxCheckBoxCommand hotKey="r" ksoCmd="Ruler" id="ShowOrHideRuler" customTip="Ruler" spaceHint="suitable" text="@Ruler" qtspyName="Ruler" rbHotKey="R"/>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KListCommand id="RB_Zoom" text="@Zoom" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="z" ksoCmd="Zoom" icon="Zoom" id="ZoomInViewTab" customTip="Zoom" text="@Zoom" qtspyName="Zoom" rbHotKey="Q"/>
+			<KxWppZoomFitCommand icon="ZoomFit" id="ZoomFitInViewTab" customTip="ZoomFit" text="@Fit to
+Window" qtspyName="ZoomFit" rbHotKey="F"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewWindow" aid="620" idMso="WindowNew" icon="NewWindow" controlType="0" id="rNewWindow" customTip="NewWindow" text="@New
+Window" rbHotKey="N"/>
+		<KxCurrentFileMRUCommand autoShortCut="1" id="CurrentFileList" text="Current File List"/>
+		<KxCurrentFileMRUCommand autoShortCut="1" id="CurrentFileList" text="Current File List"/>
+		<KListCommand id="RB_Window" text="@Window" rbFileMenuEmbed="1">
+			<KListCommand icon="WindowReset" id="ArrangeAll" customTip="ArrangeAll" text="@Arrange
+All" qtspyName="WindowReset" rbHotKey="A">
+				<KxHorzTileCommand hotKey="O" icon="HorizontalTile" id="HorizontalTileInViewTab" text="@Tile Horizontal" qtspyName="HorizontalTile"/>
+				<KxVertTileCommand hotKey="V" icon="VerticalTile" id="VerticalTileInViewTab" text="@Vertical" qtspyName="VerticalTile"/>
+				<KxCascadeCommand hotKey="C" icon="Cascade" id="CascadeInViewTab" text="@Cascade" qtspyName="Cascade"/>
+			</KListCommand>
+			<command idQ="rNewWindow"/>
+		</KListCommand>
+		<KxMacroListCommand ksoCmd="RunMacro" filter="platform=win32;support:VBASupport=true" idMso="GroupMacros" icon="Macros" customTip2="sp_Macros2" controlType="16" shortcutHint="Alt+F8" id="sp_Macros" customTip="sp_Macros" text="@Macros" rbHotKey="PM">
+			<KxMacroCommand hotKey="v" ksoCmd="RunMacro" icon="Macros" shortcutHint="Alt+F8" id="MacrosInViewTab" dialogHint="1" text="@Macros" qtspyName="RunMacro" rbHotKey="PM"/>
+			<KxMacroCommand hotKey="s" ksoCmd="Security" icon="Security" id="MacrosSecurity" dialogHint="1" text="@Security" qtspyName="Security" rbHotKey="AS"/>
+			<KxMacroCommand hotKey="b" ksoCmd="VisualBasicEditor" icon="VisualBasicEditor" shortcutHint="Alt+F11" id="VisualBasicEditorInViewTab" dialogHint="1" text="@Visual Basic Editor" qtspyName="VisualBasicEditor" rbHotKey="V"/>
+		</KxMacroListCommand>
+		<KxDevelopToolsTriggerCommand icon="DeveloperTools" id="DeveloperTools" customTip="DevelopmentTools" text="@Developer" rbHotKey="D"/>
+		<KListCommand ksoCmd="RunMacro" id="RB_Macros" text="@Macros" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand ksoCmd="COMAddIns" filter="lang=en_US;category=professional" icon="ComAddin" id="RB_COMAddIns" customTip="COMAddIns" text="@COM
+Add-Ins" rbHotKey="J"/>
+			<command idQ="sp_Macros"/>
+			<command idQ="DeveloperTools"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_View">
+			<command idQ="RB_PresView"/>
+			<separator/>
+			<command idQ="RB_MasterView"/>
+			<separator/>
+			<command idQ="RB_Show"/>
+			<separator/>
+			<command idQ="RB_Zoom"/>
+			<separator/>
+			<command idQ="RB_Window"/>
+			<separator/>
+			<command idQ="RB_Macros" filter="platform=win32"/>
+			<separator filter="platform=win32"/>
+		</subcommand>
+	</subcommands>
+</shell>

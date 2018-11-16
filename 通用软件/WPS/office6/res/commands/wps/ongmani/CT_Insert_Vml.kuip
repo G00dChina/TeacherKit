@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_insert_vml" component="wps">
+	<libraries>
+		<library path="./addons/kocrtool" filter="support:OCRTool=true" name="kocrtool"/>
+	</libraries>
+	<commands>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="InsertPageBreak" aid="85" icon="InsertPageBreak" id="InsertPageBreak" customTip="InsertPageBreak" text="@Page 
+Break"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="InsertTextWrappingBreak" aid="87" icon="InsertTextWrappingBreak" id="InsertTextWrappingBreak" text="@Text Wrapping Break"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertNextPageSectionBreak" aid="88" icon="InsertNextPageSectionBreak" id="InsertNextPageSectionBreak" text="@Next Page Section Break"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="InsertContinuousSectionBreak" aid="89" icon="InsertContinuousSectionBreak" id="InsertContinuousSectionBreak" text="@Continuous Section Break"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="InsertEvenPageSectionBreak" aid="90" icon="InsertEvenPageSectionBreak" id="InsertEvenPageSectionBreak" text="@Even Page Section Break"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="InsertOddPageSectionBreak" aid="91" icon="InsertOddPageSectionBreak" id="InsertOddPageSectionBreak" text="@Odd Page Section Break"/>
+		<KxWpsBreaksListCommand icon="InsertBreaks" id="InsertBreaks" customTip="m_Breaks" text="@Breaks" rbHotKey="B">
+			<command idQ="InsertPageBreak"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="InsertColumnBreak" icon="rbColumns" text="@Column Break" qtspyName="InsertColumnBreak"/>
+			<command idQ="InsertTextWrappingBreak"/>
+			<separator/>
+			<command idQ="InsertNextPageSectionBreak"/>
+			<command idQ="InsertContinuousSectionBreak"/>
+			<command idQ="InsertEvenPageSectionBreak"/>
+			<command idQ="InsertOddPageSectionBreak"/>
+		</KxWpsBreaksListCommand>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="InsertVerticalBlankPage" aid="92019" icon="InsertVerticalBlankPage" id="InsertVerticalBlankPage" text="@Vertical"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="InsertHorizonBlankPage" aid="92020" icon="InsertHorizonBlankPage" id="InsertHorizonBlankPage" text="@Horizontal"/>
+		<KxListCommand ksoCmd="InsertBlankPage" icon="InsertBlankPage" customTip2="InsertBlankPage2" id="InsertBlankPage" customTip="InsertBlankPage" text="@Blank Page" rbHotKey="NP">
+			<command idQ="InsertVerticalBlankPage"/>
+			<command idQ="InsertHorizonBlankPage"/>
+		</KxListCommand>
+		<KListCommand id="RB_Pages_Vml" text="@Pages" rbFileMenuEmbed="1">
+			<command idQ="InsertBreaks"/>
+			<command idQ="InsertBlankPage"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="InsertTable" idMso="TableInsertDialogWord" icon="InsertTable" id="InsertTableInToolbar" text="@Insert Table" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="DrawTable" aid="192" faceid="120" icon="DrawTable" id="DrawTableInToolbar" customTip="DrawTable" spaceHint="suitable" text="@Draw Table" rbHotKey="DR"/>
+		<KxLegacyTriggerCommand ksoCmd="ConvertTexttoTable" idMso="ConvertTextToTable" icon="ConvertTexttoTable" controlType="0" id="ConvertTexttoTableRainbow" dialogHint="1" text="@Convert Text to Table" rbHotKey="V"/>
+		<KxLegacyTriggerCommand ksoCmd="ConvertTabletoText" icon="ConvertTabletoText" id="ConvertTabletoTextRainbow" dialogHint="1" text="@Convert Table to Text"/>
+		<KxGalleryTableCommand detail="@Table" ksoCmd="InsertTablePalette" idMso="TableInsertGallery" icon="InsertTable" controlType="4" id="Table" customTip="Table" text="@Table" rbHotKey="T">
+			<command idQ="InsertTableInToolbar"/>
+			<command idQ="DrawTableInToolbar"/>
+			<command idQ="ConvertTexttoTableRainbow"/>
+			<command idQ="ConvertTabletoTextRainbow"/>
+		</KxGalleryTableCommand>
+		<KListCommand id="RB_Tables_Vml" text="@Tables" rbFileMenuEmbed="1">
+			<command idQ="Table"/>
+		</KListCommand>
+		<KxListCommand detail="@Insert Picture" ksoCmd="InsertPictureFromFile" icon="InsertPictureFromFile" customTip2="InsertPictureFromFile2" id="m_rInsertPicture" customTip="InsertPictureFromFile" text="@Picture" rbHotKey="P">
+			<KxLegacyTriggerCommand detail="@Insert Picture" hotKey="p" ksoCmd="InsertPictureFromFile" idMso="PictureInsertFromFile" icon="InsertPictureFromFile" controlType="0" dialogHint="1" text="@From File" qtspyName="InsertPictureFromFile" rbHotKey="P"/>
+			<KxLegacyTriggerCommand detail="@From Scanner" hotKey="s" ksoCmd="InsertPictureFromScan" filter="platform=win32" icon="InsertPictureFromScan" dialogHint="1" text="@From Scanner" qtspyName="InsertPictureFromScan" rbHotKey="S"/>
+			<KOCRToolCommand hotKey="o" icon="PictureToText" id="OCRToolCmd" dialogHint="1" text="@Picture to Text" rbHotKey="O"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand detail="@Insert Clip Art" ksoCmd="InsertClipArt" filter="lang=ja_JP" icon="InsertClipArt" id="m_rInsertClipArt" customTip="InsertClipArt" text="@Clip Art" rbHotKey="F"/>
+		<KxGalleryShapesCommand detail="@AutoShape" ksoCmd="DynamicShape" galleryWidth="416" triggerAble="0" idMso="ShapesInsertGallery" icon="Shapes" controlType="4" id="Shape" customTip="Shapes" text="@Shapes" rbHotKey="SH">
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertCanvas" aid="2619" idMso="InsertCanvas" icon="InsertCanvas" controlType="0" id="InsertCanvas" text="@New Drawing Canvas" rbHotKey="N"/>
+		</KxGalleryShapesCommand>
+		<KxChangeChartTypeCommand ksoCmd="InsertChart" idMso="ChartInsert" icon="InsertChart" controlType="0" id="InsertChartRainbow" customTip="InsertChart" text="@Chart" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="M" ksoCmd="InsertTextboxMultiLine" aid="1207" faceid="39" icon="InsertTextboxMultiLine" id="RbInsertTextboxMultiLine" text="@Multi-line Text"/>
+		<KxListCommand ksoCmd="WpsInsertTextboxHorizontal" idMso="TextBoxDrawMenu" icon="InsertTextboxHorizontal" customTip2="TextBox2" controlType="15" id="m_TextBox" customTip="TextBox" text="@Text Box" rbHotKey="X">
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="WpsInsertTextboxHorizontal" icon="InsertTextboxHorizontal" id="InsertTextboxHorizontal" text="@Horizontal" rbHotKey="D"/>
+			<KxLegacyTriggerCommand hotKey="v" ksoCmd="WpsInsertTextboxVertical" icon="InsertTextboxVertical" id="InsertTextboxVertical" text="@Vertical" rbHotKey="V"/>
+			<command idQ="RbInsertTextboxMultiLine"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand detail="@WordArt" ksoCmd="InsertWordArt" icon="InsertWordArt" id="m_WordArt" customTip="InsertWordArt" text="@WordArt" rbHotKey="W"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DropCap" aid="289" faceid="65" idMso="DropCapOptionsDialog" icon="DropCap" controlType="0" id="sDropCap" dialogHint="1" customTip="DropCap" spaceHint="suitable" text="@Drop Cap" rbHotKey="RC"/>
+		<KxLegacyTriggerCommand hotKey="J" ksoCmd="InsertObject" filter="platform=win32" icon="InsertObject" id="RbInsertObjectToolBar" dialogHint="1" text="@Object"/>
+		<KxLegacyTriggerCommand hotKey="F" ksoCmd="InsertFile" icon="InsertFile" id="RbInsertFileToolBar" dialogHint="1" text="@Insert Text from File"/>
+		<KxListCommand ksoCmd="InsertObject" filter="platform=win32" idMso="OleObjectInsertMenu" icon="InsertObject" customTip2="InsertObject2" controlType="5" id="sp_InsertObject" customTip="InsertObject" spaceHint="suitable" text="@Object" rbHotKey="J">
+			<command idQ="RbInsertObjectToolBar"/>
+			<command idQ="RbInsertFileToolBar"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand ksoCmd="InsertFile" filter="category=personal,professional;platform=unix" icon="InsertFile" id="sp_InsertFile" customTip="InsertFile" text="@File" rbHotKey="F"/>
+		<KxWpsInsertFileObjectCommand hotKey="Z" aid="92034" filter="platform=win32" icon="InsertFileObject" id="InsertFileObject" dialogHint="1" customTip="InsertFileObject" spaceHint="suitable" text="@File Object" rbHotKey="NF"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="InsertComment" icon="InsertComment" id="m_InsertCommentInToolBar" customTip="InsertComment" text="@Comment" rbHotKey="L"/>
+		<KxWpsEnvelopesCommand ksoCmd="InsertEnvelopes" filter="support:InsertEnvelopes=true" icon="Envelopes" id="InsertEnvelopes" customTip="InsertEnvelopes" text="@Envelopes"/>
+		<KListCommand id="RB_InsertComments_Vml" text="@Comment" rbFileMenuEmbed="1">
+			<command idQ="m_InsertCommentInToolBar"/>
+			<command idQ="InsertEnvelopes"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeaderFooter" icon="HeaderFooter" id="m_HeaderAndFooter" customTip="HeaderFooter" text="@Header and 
+Footer" rbHotKey="H"/>
+		<KxWpsHeaderFooterPageNumCommand idMso="PageNumber" icon="PageNumber" controlType="0" id="m_InsertPageNumbers" customTip="PageNumber" text="@Page
+Number" rbHotKey="NU" isIncludeInsideOutside="true"/>
+		<KListCommand id="RB_HeaderFooter_Vml" text="@Header and 
+Footer" rbFileMenuEmbed="1">
+			<command idQ="m_HeaderAndFooter"/>
+			<command idQ="m_InsertPageNumbers"/>
+			<KxWpsWaterMarkGalleryCommand galleryWidth="318" idMso="WatermarkGallery" icon="WaterMark" controlType="4" customTip="WaterMark" galleryHeight="465" text="@Watermark" qtspyName="WaterMark" rbHotKey="G">
+				<KxWpsInsertWaterMarkCommand hotKey="w" icon="WaterMark" commandMark="0" dialogHint="1" text="@Insert Watermark" qtspyName="WaterMark" rbHotKey="W"/>
+				<KxWpsDeleteWaterMarkCommand hotKey="r" icon="deleteWaterMark" commandMark="0" text="@Remove Watermark" qtspyName="deleteWaterMark" rbHotKey="R"/>
+			</KxWpsWaterMarkGalleryCommand>
+		</KListCommand>
+		<KListCommand id="RB_Links_Vml" text="@Links" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand ksoCmd="InsertHyperlink" forceVisible="1" idMso="HyperlinkInsert" icon="InsertHyperlink" controlType="0" id="m_rbHyperlink" customTip="InsertHyperlink" text="@Hyperlink" rbHotKey="I"/>
+			<KxLegacyTriggerCommand ksoCmd="CrossReference" idMso="CrossReferenceInsert" icon="CrossReference" controlType="0" id="CrossReferenceRainbow" customTip="CrossReference" spaceHint="suitable" text="@Cross-reference" rbHotKey="RF"/>
+			<KxLegacyTriggerCommand ksoCmd="InsertBookmark" idMso="BookmarkInsert" icon="InsertBookmark" controlType="0" id="m_rbInsertBookmark" customTip="InsertBookmark" spaceHint="suitable" text="@Bookmark" rbHotKey="K"/>
+		</KListCommand>
+		<KxWpsGallerySymbolCommand text2="@Symbol" ksoCmd="InsertSymbol" idMso="SymbolInsertGallery" icon="InsertSymbol" controlType="4" id="m_Symbols" customTip="InsertSymbol" text="@Symbol" rbHotKey="U">
+			<KxLegacyTriggerCommand hotKey="M" ksoCmd="InsertSymbol" icon="OtherSymbol" dialogHint="1" text="@More Symbols" qtspyName="InsertSymbol" rbHotKey="M"/>
+		</KxWpsGallerySymbolCommand>
+		<KListCommand id="RB_Form_Vml" text="@Forms">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="2" leftSpace="2">
+					<KxLegacyTriggerCommand ksoCmd="TextOnFormField" icon="TextOnFormField" id="TextFormFieldVml" text="@Text Form Field" rbHotKey="NE"/>
+					<KxLegacyTriggerCommand ksoCmd="CheckboxOnFormField" icon="CheckboxOnFormField" id="CheckboxFormFieldVml" text="@Check Box Form Field" rbHotKey="NH"/>
+					<KxLegacyTriggerCommand ksoCmd="DropdownOnFormField" icon="DropdownOnFormField" id="DropdownFormFieldVml" text="@Drop-Down Form Field" rbHotKey="NC"/>
+					<KxLegacyTriggerCommand ksoCmd="FormFieldOption" icon="FormFieldOption" id="FormFieldOptionInInsertTabVml" dialogHint="1" text="@Form Field Options" rbHotKey="NO"/>
+				</KRbLayoutListCommand>
+				<separator/>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="2" leftSpace="2">
+					<KxLegacyTriggerCommand ksoCmd="FormFieldShading" idMso="FieldShading" icon="FormFieldShading" controlType="6" text="@Form Field Shading" qtspyName="FormFieldShading" rbHotKey="NS"/>
+					<KxLegacyTriggerCommand ksoCmd="FormFieldReset" icon="FormFieldReset" id="FormFieldResetInInsertTabVml" text="@Reset Form Fields" rbHotKey="NR"/>
+					<KxLegacyTriggerCommand ksoCmd="FormFieldProtection" icon="FormFieldProtection" id="FormFieldProtectionInInsertTabVml" text="@Protect Form" rbHotKey="NF"/>
+				</KRbLayoutListCommand>
+				<separator/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_Illustrations_Vml" text="@Illustrations" rbFileMenuEmbed="1">
+			<command idQ="Table"/>
+			<command idQ="m_rInsertPicture"/>
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" aid="100056" icon="onlinepicture" customTip="InsertOnlinePictureFromFile" text="@Online Pictures" qtspyName="onlinepicture" rbHotKey="SI"/>
+			<command idQ="InsertMap"/>
+			<command idQ="m_rInsertClipArt" filter="lang=ja_JP"/>
+			<command idQ="InsertScreenGrab"/>
+			<command idQ="Shape"/>
+			<command idQ="InsertChartRainbow"/>
+			<separator/>
+			<command idQ="m_TextBox"/>
+			<command idQ="m_WordArt"/>
+			<separator/>
+			<command idQ="m_Symbols"/>
+			<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" aid="80022" showiconAndText="1" filter="support:EquationEditor=true" icon="EquationEditor" dialogHint="1" customTip="KingsoftEquationEditor" text="@Equation" qtspyName="KingsoftEquationEditor" rbHotKey="E"/>
+			<KxLegacyTriggerCommand ksoCmd="InsertNumber" showiconAndText="1" icon="InsertNumber" customTip="InsertNumber" spaceHint="suitable" text="@Insert Number" qtspyName="InsertNumber" rbHotKey="SN"/>
+			<command idQ="sDropCap"/>
+			<command idQ="sp_InsertFile" filter="platform=unix"/>
+			<command idQ="sp_InsertObject" filter="platform=win32"/>
+			<command idQ="InsertFileObject"/>
+			<KxLegacyTriggerCommand showIconAndText="1" ksoCmd="InsertDateTime" idMso="DateAndTimeInsert" icon="InsertDateTime" controlType="0" id="InsertDateTimeToolBar" customTip="InsertDateTime" spaceHint="suitable" text="@Date and Time" rbHotKey="D"/>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="InsertField" aid="772" idMso="FieldInsert" icon="Field" controlType="0" id="InsertField" dialogHint="1" customTip="InsertField" spaceHint="suitable" text="@Fields" rbHotKey="QF"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Insert_Vml">
+			<command idQ="RB_Pages_Vml"/>
+			<separator/>
+			<command idQ="RB_Illustrations_Vml"/>
+			<separator/>
+			<command idQ="RB_InsertComments_Vml"/>
+			<separator/>
+			<command idQ="RB_HeaderFooter_Vml"/>
+			<separator/>
+			<command idQ="RB_Links_Vml"/>
+			<separator/>
+			<command idQ="RB_Form_Vml"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

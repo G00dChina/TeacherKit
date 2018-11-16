@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_insert" component="et">
+	<commands>
+		<KxLegacyTriggerCommandEx hotKey="h" ksoCmd="InsertTextboxHorizontal" idMso="TextBoxInsertHorizontal" icon="InsertTextboxHorizontal" controlType="6" id="InsertTextboxHorizontal" text="@Horizontal" rbHotKey="H"/>
+		<KxLegacyTriggerCommandEx hotKey="v" ksoCmd="InsertTextboxVertical" idMso="TextBoxInsertVertical" icon="InsertTextboxVertical" controlType="6" id="InsertTextboxVertical" text="@Vertical" rbHotKey="V"/>
+		<KxListCommand ksoCmd="InsertTextboxHorizontal" idMso="TextBoxInsertMenu" icon="InsertTextboxHorizontal" customTip2="InsertTextboxHorizontal2" controlType="5" id="sp_TextBox" customTip="InsertTextboxHorizontal" text="@Text Box" rbHotKey="X">
+			<command idQ="InsertTextboxHorizontal"/>
+			<command idQ="InsertTextboxVertical"/>
+		</KxListCommand>
+		<KListCommand id="RB_InsertTable" text="@Tables" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="p" ksoCmd="PivotTableWizard" idMso="PivotTableReport" icon="PivotTableWizard" id="PivotTableWizardInInsertTab" customTip="PivotTable" text="@PivotTable" qtspyName="PivotTableWizard" rbHotKey="V"/>
+			<command idQ="InsertTable"/>
+		</KListCommand>
+		<KListCommand hotKey="k" ksoCmd="InsertNewChart" icon="InsertChart" id="RB_Chars" text="@Chart" rbFileMenuEmbed="1" rbHotKey="k">
+			<KxChangeChartTypeCommand hotKey="r" ksoCmd="InsertNewChart" icon="InsertChart" id="ChartInInsertTab" customTip="Chart" text="@InsertNewChart" qtspyName="InsertNewChart" rbHotKey="r"/>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="autocompact" rightSpace="0" leftSpace="0">
+				<KxChartTypeGalleryCommand hotKey="c" ksoCmd="InsertNewChart" icon="icon_chart_Column" type="Column" customTip="ChartColumn" spaceHint="autocompact" qtspyName="ChartColumn" rbHotKey="c"/>
+				<KxChartTypeGalleryCommand hotKey="b" ksoCmd="InsertNewChart" icon="icon_chart_Bar" type="Bar" customTip="ChartBar" spaceHint="autocompact" qtspyName="ChartBar" rbHotKey="b"/>
+				<KxChartTypeGalleryCommand hotKey="n" ksoCmd="InsertNewChart" icon="icon_chart_Line" type="Line" customTip="ChartLine" spaceHint="autocompact" qtspyName="ChartLine" rbHotKey="n"/>
+				<KxChartTypeGalleryCommand hotKey="o" ksoCmd="InsertNewChart" icon="icon_chart_Radar" type="Radar" customTip="ChartRadar" spaceHint="autocompact" qtspyName="ChartRadar" rbHotKey="o"/>
+			</KRbLayoutListCommand>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="autocompact" rightSpace="0" leftSpace="0">
+				<KxChartTypeGalleryCommand hotKey="a" ksoCmd="InsertNewChart" icon="icon_chart_Area" type="Area" customTip="ChartArea" spaceHint="autocompact" qtspyName="ChartArea" rbHotKey="a"/>
+				<KxChartTypeGalleryCommand hotKey="sd" ksoCmd="InsertNewChart" icon="icon_chart_Combination" type="Combination" customTip="ChartCombination" spaceHint="autocompact" qtspyName="ChartCombination" rbHotKey="sd"/>
+				<KxChartTypeGalleryCommand hotKey="q" ksoCmd="InsertNewChart" icon="icon_chart_Pie" type="Pie" customTip="ChartPie" spaceHint="autocompact" qtspyName="ChartPie" rbHotKey="q"/>
+				<KxChartTypeGalleryCommand hotKey="d" ksoCmd="InsertNewChart" icon="icon_chart_Scatter" type="Scatter" customTip="ChartScatter" spaceHint="autocompact" qtspyName="ChartScatter" rbHotKey="d"/>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KListCommand id="RB_Illustrations" text="@Illustrations" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="InsertPictureFromFile" idMso="PictureInsertFromFile" icon="InsertPictureFromFile" id="InsertPictureInInsertTab" customTip="InsertPictureFromFile" text="@Picture" qtspyName="InsertPictureFromFile" rbHotKey="P"/>
+			<command idQ="InsertMap"/>
+			<command idQ="InsertScreenGrab"/>
+			<KxGalleryShapesCommand ksoCmd="DynamicShape" galleryWidth="416" tpShapeCmd="TpAutoShape" triggerAble="0" idMso="ShapesInsertGallery" icon="Shapes" controlType="4" id="Shape" customTip="DynamicShape" text="@Shapes" rbHotKey="SH"/>
+			<KxLegacyTriggerCommand detail="@Insert Clip Art" hotKey="c" ksoCmd="InsertClipArt" filter="lang=ja_JP" icon="InsertClipArt" id="InsertClipArtInInsertTab" customTip="InsertClipArt" text="@Clip Art" rbHotKey="F"/>
+			<separator/>
+			<command idQ="sp_TextBox"/>
+			<KxWordArtInsertCommand hotKey="w" ksoCmd="InsertWordArt" galleryWidth="492" icon="InsertWordArt" id="InsertWordArtInInsertTab" customTip="InsertWordArt" text="@WordArt" qtspyName="InsertWordArt" rbHotKey="W"/>
+			<separator/>
+			<KxEtGallerySymbolCommand ksoCmd="InsertSymbol" filter="lang!=ja_JP,en_US" icon="InsertSymbol" id="InsertSymbolInInsertTab" customTip="InsertSymbol" text="@Symbol" qtspyName="InsertSymbol" rbHotKey="U">
+				<command idQ="rMoreSymbols"/>
+			</KxEtGallerySymbolCommand>
+			<KxEtGallerySymbolCommand ksoCmd="InsertSymbol" filter="lang=ja_JP,en_US" icon="InsertSymbol" id="InsertSymbolInInsertTab" customTip="InsertSymbol" text="@Symbol" rbHotKey="U">
+				<command idQ="rMoreSymbols"/>
+			</KxEtGallerySymbolCommand>
+			<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" filter="lang!=ja_JP,en_US;support:EquationEditor=true" icon="EquationEditor" id="KingsoftEquationEditorInInsertTab" customTip="EquationEditor" text="@Equation" qtspyName="KingsoftEquationEditor" rbHotKey="E"/>
+			<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" filter="lang=ja_JP,en_US;support:EquationEditor=true" icon="EquationEditor" id="KingsoftEquationEditorInInsertTab" customTip="EquationEditor" text="@Equation" rbHotKey="E"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeaderFooter" idMso="HeaderFooterInsert" icon="HeaderFooter" controlType="0" customTip="HeaderFooter" spaceHint="suitable" text="@Header and Footer" qtspyName="HeaderFooter" rbHotKey="H"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="Camera" forceVisible="1" idMso="Camera" icon="Camera" controlType="0" id="CameraInInsertTab" customTip="Camera" spaceHint="suitable" text="@Camera" qtspyName="Camera" rbHotKey="G"/>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="InsertObject" filter="platform=win32" idMso="OleObjectctInsert" icon="InsertObject" controlType="0" id="OleObjectctInsert" customTip="InsertObject" spaceHint="suitable" text="@Object" qtspyName="InsertObject" rbHotKey="J"/>
+			<KxEtInsertFileObjectCommand hotKey="Z" aid="92003" filter="platform=win32" icon="InsertFileObject" id="InsertFileObject" dialogHint="1" customTip="InsertFileObject" spaceHint="suitable" text="@File Object" rbHotKey="SF"/>
+		</KListCommand>
+		<KxListCommand id="RB_Links" text="@Links" rbFileMenuEmbed="1">
+			<KxPropComposeCommand hotKey="i" ksoCmd="InsertOrEditHyperlink" forceVisible="1" idMso="HyperlinkInsert" icon="InsertHyperlink" controlType="0" shortcutHint="Ctrl+K" customTip="Hyperlink" text="@Hyperlink" qtspyName="InsertOrEditHyperlink" rbHotKey="I"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="InsertSymbol" icon="InsertSymbol" id="rMoreSymbols" dialogHint="1" text="@More Symbols" rbHotKey="M"/>
+		<KListCommand id="RB_Hyperlink" rbFileMenuEmbed="1">
+			<KxPropComposeCommand hotKey="i" ksoCmd="InsertOrEditHyperlink" forceVisible="1" icon="InsertHyperlink" shortcutHint="Ctrl+K" id="InsertOrEditHyperlinkInInsertTab" customTip="Hyperlink" text="@Hyperlink" qtspyName="InsertOrEditHyperlink" rbHotKey="I"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="FTB_Property" aid="222" icon="FTB_Property" id="FTB_Property" customTip="FTB_Property" spaceHint="suitable" text="@Control 
+Properties" rbHotKey="K"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_Label" aid="476" idMso="ActiveXLabel" icon="FTB_Label" controlType="0" id="FTB_Label" spaceHint="compact" text="@Label" rbHotKey="FL"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_GroupBox" aid="467" idMso="FormControlGroupBox" icon="FTB_GroupBox" controlType="0" id="FTB_GroupBox" spaceHint="compact" text="@Group Box" rbHotKey="FZ"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_CommandButton" aid="282" idMso="ActiveXButton" icon="FTB_CommandButton" controlType="0" id="FTB_CommandButton" spaceHint="compact" text="@Button" rbHotKey="FB"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_CheckBox" aid="220" idMso="FormControlCheckBox" icon="FTB_Checkbox" controlType="0" id="FTB_CheckBox" spaceHint="compact" text="@Check Box" rbHotKey="FK"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_OptionButton" aid="446" icon="FTB_OptionButton" id="FTB_OptionButton" spaceHint="compact" text="@Option Button" rbHotKey="FO"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_ListBox" aid="448" idMso="ActiveXListBox" icon="FTB_ListBox" controlType="0" id="FTB_ListBox" spaceHint="compact" text="@List Box" rbHotKey="FS"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_ComboBox" aid="221" idMso="ActiveXComboBox" icon="FTB_ComboBox" controlType="0" id="FTB_ComboBox" spaceHint="compact" text="@Combo Box" rbHotKey="FM"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_ScrollBar" aid="447" idMso="ActiveXScrollBar" icon="FTB_ScrollBar" controlType="0" id="FTB_ScrollBar" spaceHint="compact" text="@Scroll Bar" rbHotKey="FA"/>
+		<KxLegacyTriggerCommandEx ksoCmd="FTB_SpinButton" aid="468" idMso="ActiveXSpinButton" icon="FTB_SpinButton" controlType="0" id="FTB_SpinButton" spaceHint="compact" text="@Spinner" rbHotKey="FN"/>
+		<KListCommand id="RB_FormsToolbox" text="@Forms">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="FTB_Label"/>
+					<command idQ="FTB_GroupBox"/>
+					<command idQ="FTB_CommandButton"/>
+					<command idQ="FTB_CheckBox"/>
+					<command idQ="FTB_OptionButton"/>
+				</KRbLayoutListCommand>
+				<separator/>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="FTB_ListBox"/>
+					<command idQ="FTB_ComboBox"/>
+					<command idQ="FTB_ScrollBar"/>
+					<command idQ="FTB_SpinButton"/>
+				</KRbLayoutListCommand>
+				<separator/>
+			</KListCommand>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="FTB_Property"/>
+			<KxLegacyTriggerCommand ksoCmd="FTB_EditCode" idMso="CodeEdit" icon="FTB_EditCode" controlType="0" id="CodeEdit" customTip="FTB_EditCode" spaceHint="suitable" text="@Edit Code" qtspyName="FTB_EditCode" rbHotKey="M"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Group" aid="164" idMso="ObjectsGroup" icon="Group" controlType="0" id="Group" text="@Group" rbHotKey="G"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="UnGroup" aid="165" idMso="ObjectsUngroup" icon="UnGroup" controlType="0" id="UnGroup" text="@Ungroup" rbHotKey="U"/>
+		<KListCommand idMso="ObjectsGroupMenu" icon="Group" controlType="15" id="m_Group" customTip="Group" text="@Group" rbHotKey="AG">
+			<command idQ="Group"/>
+			<command idQ="UnGroup"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="FreeRotate" aid="688" idMso="ObjectRotateFree" icon="FreeRotate" controlType="0" id="FreeRotate" text="@Free Rotate" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="RotateLeft" aid="199" idMso="ObjectRotateLeft90" icon="RotateLeft" controlType="0" id="RotateLeft" text="@Rotate Left 90°" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RotateRight" aid="198" idMso="ObjectRotateRight90" icon="RotateRight" controlType="0" id="RotateRight" text="@Rotate Right 90°" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="FlipHorizontal" aid="196" idMso="ObjectFlipHorizontal" icon="FlipHorizontal" controlType="0" id="FlipHorizontal" text="@Flip Horizontal" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="FlipVertical" aid="197" idMso="ObjectFlipVertical" icon="FlipVertical" controlType="0" id="FlipVertical" text="@Flip Vertical" rbHotKey="V"/>
+		<KListCommand icon="RotateRight" id="m_Rotate" customTip="RotateRight" text="@Rotate" rbHotKey="AY">
+			<command idQ="RotateLeft"/>
+			<command idQ="RotateRight"/>
+			<separator/>
+			<command idQ="FlipHorizontal"/>
+			<command idQ="FlipVertical"/>
+		</KListCommand>
+		<KListCommand idMso="GroupArrange" controlType="16" id="RB_Arrange" text="@Arrange" rbFileMenuEmbed="1">
+			<command idQ="sp_BringForward"/>
+			<command idQ="sp_SendBackward"/>
+			<command idQ="m_Align"/>
+			<command idQ="m_Group"/>
+			<command idQ="m_Rotate"/>
+		</KListCommand>
+		<KxObjectSelectCommand hotKey="J" ksoCmd="ObjectSelect" icon="ObjectSelect" id="ObjectSelect_insert" customTip="ObjectSelect" text="@Selection 
+Pane" rbHotKey="AB"/>
+		<KListCommand id="RB_ObjectSelect">
+			<command idQ="ObjectSelect_insert"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Insert">
+			<command idQ="RB_InsertTable"/>
+			<separator/>
+			<command idQ="RB_Chars"/>
+			<separator/>
+			<command idQ="RB_Illustrations"/>
+			<separator/>
+			<command idQ="RB_Hyperlink"/>
+			<separator/>
+			<command idQ="RB_FormsToolbox"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

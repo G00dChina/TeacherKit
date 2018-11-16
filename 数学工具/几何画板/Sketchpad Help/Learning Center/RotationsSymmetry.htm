@@ -1,0 +1,379 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rotations and Symmetry - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Rotations and Symmetry</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-06.gif">Rotations and Symmetry: Make a Kaleidoscope</h1>
+<p>You can see beautiful symmetric patterns when you look into a kaleidoscope. A traditional kaleidoscope uses mirrors to create reflected images, but in this tutorial, you&rsquo;ll make your own &ldquo;kaleidoscope&rdquo; by rotating a picture and then animating the result.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Paste a picture into Sketchpad</li>
+<li>Construct concentric circles</li>
+<li>Attach a picture to points</li>
+<li>Rotate a picture</li>
+<li>Animate a construction using the Motion Controller</li>
+<li>Paste a replacement picture onto an existing picture</li>
+<li>Animate a construction by building an animation button</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x431.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x431.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+</div>
+<h2>Use the Picture Gallery <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x432.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x432.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You can drag or paste pictures into Sketchpad and then use them as part of your mathematical investigations.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>Open a new sketch and choose <strong>Help | Picture Gallery.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">2.</div>
+<div class="column-3">
+<p>Find a picture that interests you. Drag and drop the picture into your sketch&mdash;click the picture, drag it into your sketch, and release.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">3.</div>
+<div class="column-3">
+<p>Another method is to right-click (or Control-click) the picture and choose <strong>Copy Image</strong> in the pop-up menu. Then click your sketch to make it active and choose <strong>Edit | Paste Picture.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">4.</div>
+<div class="column-3">
+<p>Experiment with resizing your picture by dragging the corners. Also try dragging the corners as you hold the Shift key.</p>
+</div>
+</div>
+<h2>Construct Points on Paths <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x433.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x433.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>To build a kaleidoscope, you&rsquo;ll first construct two concentric circles, with a moveable point on each one.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Compass tool" alt="Compass Tool" width="32" height="32" src="images/toolCompass.gif"></div>
+<div class="column-2">5.</div>
+<div class="column-3">
+<p>Construct a circle. Then construct a second, larger circle with the same center by first clicking the existing center (the point will be highlighted).</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">6.</div>
+<div class="column-3">
+<p>Construct a point on each circle. Make sure the circle is highlighted when you click.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Use the drag test to verify that your new points stay on the circles. If not, use <strong>Edit | Undo</strong> and try again.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> The point is called a <em>child</em> of the circle, because it is defined by the circle. Conversely, the circle is called the <em>parent</em> of the point. Each circle is also a child of its center and radius point." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-3">
+<p>The new points are defined to be on the circles, which means that each circle defines the path its point can move along.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Text tool" alt="Text Tool" width="32" height="32" src="images/toolText.gif"></div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>Label the center <em>A,</em> the two radius points <em>B</em> and <em>C,</em> and the two points on the circles <em>D</em> and <em>E.</em> You can double-click a label to change it.</p>
+</div>
+</div>
+<h2>Attach and Rotate a Picture <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x434.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x434.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll add the picture to your kaleidoscope so that opposite corners of the picture are attached to the points on the circles. Then you&rsquo;ll rotate your picture several times to make multiple copies of the picture.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-6_01" src="Images/tutorial-6_01.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">9.</div>
+<div style="width:360px;" class="column-3">
+<p>Click in empty space to deselect everything. Then select your picture and choose <strong>Edit | Copy.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">10.</div>
+<div style="width:360px;" class="column-3">
+<p>Click in empty space to deselect everything. Then select points <em>D</em> and <em>E</em> and choose <strong>Edit | Paste Picture.</strong> Opposite corners of the picture are now attached to the two points.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">11.</div>
+<div style="width:360px;" class="column-3">
+<p>Drag each point one at a time to explore the effect it has on your model.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> The mathematics of rotation and dilation require a center. You must tell Sketchpad what center you want, or it will automatically choose one for you." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">12.</div>
+<div style="width:360px;" class="column-3">
+<p>Select point <em>A</em> and choose <strong>Transform | Mark Center.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div style="width:360px;" class="column-3">
+<p>Select the picture attached to the points and choose <strong>Transform | Rotate.</strong> In the dialog box, enter 60 for the angle, and then click <strong>Rotate.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">14.</div>
+<div class="column-3">
+<p>If you kept rotating by 60&deg;, how many pictures would the kaleidoscope contain before the pictures overlap?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>With the new picture still selected, rotate it by 60&deg; as well. Rotate each new image by 60&deg; until you have six pictures.</p>
+</div>
+</div>
+<h2>Animate Your Kaleidoscope <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x435.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x435.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now that your kaleidoscope is complete, it&rsquo;s time to set it in motion! Sketchpad allows you to animate your constructions, maintaining all of the mathematical relationships that you built into your model.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Click in empty space to deselect everything. Select points <em>D</em> and <em>E</em> and choose <strong>Display | Animate Points.</strong>
+</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-6_02" src="Images/tutorial-6_02.gif"><div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">17.</div>
+<div style="width:300px;" class="column-3">
+<p>On the Motion Controller, click the arrow buttons to change the speed of your kaleidoscope and press Pause (<img style="margin:0 2 -2 2" alt="Pause Button" width="12" height="12" src="images/tutorial-6_03.gif">) to temporarily stop motion. (If you press Stop and drag parts of your model, points <em>D</em> and <em>E</em> will no longer be active targets and will need to be selected again.)</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">18.</div>
+<div style="width:300px;" class="column-3">
+<p>Change the look of your kaleidoscope by dragging any of the points in your model. Press Pause again to set the kaleidoscope back in motion.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div class="column-3">
+<p>Press Pause to stop the motion. Select all the circles and points and choose <strong>Display | Hide Objects.</strong> (To see the hidden objects again at any time, choose <strong>Display | Show All Hidden.</strong>)</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div class="column-3">
+<p>Open the Picture Gallery again and find another picture that interests you. Drag and drop (or copy and paste) the picture into a blank area of your sketch.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">21.</div>
+<div class="column-3">
+<p>Select the new picture and choose <strong>Edit | Copy.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">22.</div>
+<div class="column-3">
+<p>Select one of the original pictures in your kaleidoscope and choose <strong>Edit | Paste Replacement Picture.</strong> Every picture is replaced.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">23.</div>
+<div class="column-3">
+<p>Press Pause to set your new kaleidoscope back in motion.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Not only can animations create an attractive result, but they can reveal important mathematical properties of a model that are not apparent from viewing a static picture." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">24.</div>
+<div class="column-3">
+<p>Explain how your kaleidoscope works. How do the speeds of the moving points compare? Why do the pictures become distorted?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">25.</div>
+<div class="column-3">
+<p>Press Stop and close the Motion Controller.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You can make a button that will automatically animate your kaleidoscope, but first you need to unhide the points that drive the animation.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">26.</div>
+<div class="column-3">
+<p>Choose <strong>Display | Show All Hidden.</strong> Click only on points <em>D</em> and <em>E</em> to deselect them, and then choose <strong>Display | Hide Objects.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">27.</div>
+<div class="column-3">
+<p>Select points <em>D</em> and <em>E,</em> choose <strong>Edit | Action Buttons | Animation,</strong> and click <strong>OK</strong> in the dialog box that appears. An Animation button is created. Press the button set the kaleidoscope in motion. Press the button again to stop the animation.</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">28.</div>
+<div class="column-3">
+<p>Make a new kaleidoscope starting from scratch. This time, rotate your picture by either 30&deg; or 45&deg;. What other angles could you use?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">29.</div>
+<div class="column-3">
+<p>If you have your own digital photograph or image available, drag or paste it into your sketch. Use this picture in your kaleidoscope.</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

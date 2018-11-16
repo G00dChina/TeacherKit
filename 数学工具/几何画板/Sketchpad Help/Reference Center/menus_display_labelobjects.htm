@@ -1,0 +1,265 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Display Menu &gt; Label Object</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Display Menu,Display Menu Label Object,Label Object Command,Label Object Command,Label Object Command label multiple objects,Label Object Command reset next labels,Labels,Labels resetting next &nbsp;labels,Labels editing,Labels labelling multiple objects,Objects,Objects labelling,Dialog Boxes,Dialog Boxes Label Multiple Objects,Reset Next Labels command">
+   <meta name="description" content="Label Object">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_display_labelobjects.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Label Object</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_display.htm">Display Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Label Object</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_display_showhidelabel.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_display.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_display_trace.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">This </span><span class="f_BodyText"><a href="menus_display.htm" class="topiclink">Display</a> </span><span class="f_BodyText">menu command allows you to create or edit the label of one or more selected objects. </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The keyboard shortcut for</span><span class="f_MarginNote" style="font-weight: bold;"> Label Object</span><span class="f_MarginNote"> is Alt+/ (Windows) or <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" /> / (Mac).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you have selected a single object, the Label Objects command opens the <a href="windows_properties.htm" class="topiclink">Properties</a> dialog box for that object and displays the <a href="objects_attrib_labelprops.htm" class="topiclink">Label panel</a>, where you can type a new label.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you have selected more than one object, this command allows you to label all the selected objects, in a sequence.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you hold the Shift key with no objects selected, the command becomes </span><span class="f_BodyText" style="font-weight: bold;">Reset Next Labels</span><span class="f_BodyText"> and allows you to reset the next labels that will used for all objects.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Label Multiple Objects</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">If more than one object is selected, this command displays the Label Multiple Objects dialog box.</span></p>
+<p class="p_Image_Centered_Large"><img src="menu_display_label_zoom60.png" width="187" height="124" alt="" style="border:none" /></p>
+<p class="p_ExpandableNote"><img id="TOGGLE0186A2_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Shortcut</a></span></p>
+<div id="TOGGLE0186A2" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 24px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">If an object in your sketch already has the desired first label, you can select that object first, and then select the other objects to be relabeled. When you choose the </span><span class="f_ExpandableNoteSection" style="font-weight: bold;">Label</span><span class="f_ExpandableNoteSection"> command, you won’t have to type anything into the dialog box.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">First Label:</span><span class="f_BodyText"> Type the label you want to assign to the first of the selected objects. Sketchpad will create a sequence of labels to use for the remaining selected objects. The sequence is produced by varying the last element of the first label. The last element can be a letter, a number, or a subscript (indicated by a letter or number enclosed in square brackets).</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Show labels for all selected objects:</span><span class="f_BodyText"> </span><span class="f_BodyText">If some of the selected objects aren’t already showing their labels, use this checkbox to determine whether or not the labels will be shown when you dismiss the dialog box.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Here are some examples of the labels Sketchpad will create, depending on what you type as the first label:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Type This:</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">To Produce This Sequence:</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">P</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">P, Q, R, S, T, …</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">d</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">d, e, f, g, h, …</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">1</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">1, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">2, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">3, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">4, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">5, …</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText">[1]</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">2</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">3</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">4</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">5</span><span class="f_BodyText">, …</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">98</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">98, </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">99, </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">100, </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">101, </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">102, …</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">W</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">W, X, Y, Z</span><span class="f_BodyText">1</span><span class="f_BodyText" style="font-style: italic;">, Z</span><span class="f_BodyText">2,</span><span class="f_BodyText" style="font-style: italic;"> …</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">1-</span><span class="f_BodyText" style="font-style: italic;">a</span></p>
+</td>
+<td style="vertical-align:top; width:221px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">1-</span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText">, 1-</span><span class="f_BodyText" style="font-style: italic;">b</span><span class="f_BodyText">, 1-</span><span class="f_BodyText" style="font-style: italic;">c</span><span class="f_BodyText">, 1-</span><span class="f_BodyText" style="font-style: italic;">d</span><span class="f_BodyText">, 1-</span><span class="f_BodyText" style="font-style: italic;">e</span><span class="f_BodyText">, …</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">If you want to produce a sequence of labels in which the element that varies is not the last element of the label, use a <a href="adv_text.htm" class="topiclink">custom label sequence</a> starting with an equal sign and using &quot;{...}&quot; immediately following the element that should be varied. For instance, type =A{...}1 to generate </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">D</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText">, and so forth.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Reset Next Labels</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The </span><span class="f_BodyText" style="font-weight: bold;">Reset Next Labels</span><span class="f_BodyText"> command appears when you hold the Shift key, and have no objects selected.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose this command to reset the labels that will be used by newly-labeled objects. If you choose this command, the next point will be labeled </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">, the next straight object will be labeled </span><span class="f_BodyText" style="font-style: italic;">j,</span><span class="f_BodyText"> and so forth. Resetting labels may result in duplication of labels. For instance, if your sketch already has labeled points when you choose this command, subsequently labeling additional points may result in two points labeled </span><span class="f_BodyText" style="font-style: italic;">A,</span><span class="f_BodyText"> two points labeled </span><span class="f_BodyText" style="font-style: italic;">B,</span><span class="f_BodyText"> and so forth.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

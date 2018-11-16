@@ -1,0 +1,229 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Context Menu</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Menus,Menus Context">
+   <meta name="description" content="Context Menu">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_context.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Context Menu</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Context Menu</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="license_information.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_context_frontback.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Context menus provide a convenient shortcut to many of the menu commands that apply to a specific window or object. (Context menus do not appear in the main menu; they appear only when you request them.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To display a Context menu:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Windows:</span><span class="f_BodyText"> Right-click in a sketch window, sketch object, tool object, or information balloon.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Mac:</span><span class="f_BodyText"> Hold down the Ctrl key while you click in a sketch window, sketch object, tool object, or information balloon.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are four different windows or objects that have Context menus:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText" style="font-weight: bold;">The Sketch: </span><span class="f_BodyText">Click empty space in the sketch window to change <a href="menus_edit_preferences.htm" class="topiclink">preferences</a> or to use commands that apply to the entire sketch.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText" style="font-weight: bold;">A Sketch Object: </span><span class="f_BodyText">Click a sketch object to change the object's <a href="menus_edit_properties.htm" class="topiclink">properties</a> or attributes or to use commands that apply to that object.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText" style="font-weight: bold;">A Tool Object: </span><span class="f_BodyText">Click a given object or a step in the <a href="windows_script.htm" class="topiclink">Script View</a> to change the object's <a href="menus_edit_properties.htm" class="topiclink">properties</a> or attributes.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText" style="font-weight: bold;">An Information Balloon:</span><span class="f_BodyText"> Click an <a href="tools_objectinformation.htm" class="topiclink">information balloon</a> to display the object's <a href="menus_edit_properties.htm" class="topiclink">Properties</a>, to change the size of the balloon's text, or to control whether the balloon displays parents, children, or both.</span></p><p class="p_BodyText"><span class="f_BodyText">Context menus show only available commands.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For information on any of the commands in the Context menu, refer to that specific topic in the <a href="menus.htm" class="topiclink">Menu Reference</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Sketch Context Menu</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="menu_context_sketch_zoom75.png" width="170" height="350" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p><span class="f_BodyText">Right-click (or Ctrl-click) empty space in the sketch to change the sketch <a href="menus_edit_preferences.htm" class="topiclink">preferences</a> or to use commands that apply to the entire sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When the Context menu for a sketch appears, if there’s room on the screen, the menu appears in such a position that <a href="menus_edit_preferences.htm" class="topiclink">Preferences</a> is directly under the mouse,making &nbsp;it especially easy to choose this command.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Sketch Object Context Menu</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="menu_context_object_zoom75.png" width="153" height="301" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p><span class="f_BodyText">Right-click (or Ctrl-click) a sketch object to change the object's <a href="menus_edit_properties.htm" class="topiclink">properties</a> or attributes or to use commands that apply to that object. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">When the Context menu for a sketch object appears, if there’s room on the screen, the menu appears in such a position that <a href="menus_edit_properties.htm" class="topiclink">Properties</a> is directly under the mouse, making it especially easy to choose this command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are several commands that appear only in the Context menu for certain sketch objects; these commands don’t appear in any other menu.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_context_frontback.htm" class="topiclink">Bring to Front</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_context_frontback.htm" class="topiclink">Send to Back</a></span><span class="f_BodyText"> allow you to change the layer of <a href="objects_cats_layered.htm" class="topiclink">layered objects</a> such as pictures, polygons and other interiors, and loci and iterations of these objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="increase_decrease_value.htm" class="topiclink">Increase Value</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="increase_decrease_value.htm" class="topiclink">Decrease Value</a></span><span class="f_BodyText"> allow you to increase or decrease the value of a <a href="objects_parameters.htm" class="topiclink">parameter</a>. The value changes by the Keyboard Adjustment amount set in <a href="objects_parameters_props.htm" class="topiclink">Parameter Properties</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="increase_res_decrease_res.htm" class="topiclink">Increase Resolution</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="increase_res_decrease_res.htm" class="topiclink">Decrease Resolution</a></span><span class="f_BodyText"> allow you to increase or decrease the resolution of a <a href="objects_cats_plots.htm" class="topiclink">plotted object</a> (a locus, a function plot, a sampled path, or a sampled transformed picture).</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="increase_iter_decrease_iter.htm" class="topiclink">Increase Iterations</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="increase_iter_decrease_iter.htm" class="topiclink">Decrease Iterations</a></span><span class="f_BodyText"> allow you to increase or decrease the depth of an <a href="objects_iter.htm" class="topiclink">iteration</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Tool Object Context Menu</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="menu_context_toolobj_zoom75.png" width="121" height="134" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p><span class="f_BodyText">Right-click (or Ctrl-click) a given object or a step in the <a href="windows_script.htm" class="topiclink">Script View</a> to change the object's <a href="menus_edit_properties.htm" class="topiclink">properties</a> or attributes, or to print the script view.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Information Balloon Context Menu</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="menu_context_balloon_zoom75.png" width="140" height="140" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p><span class="f_BodyText">Right-click (or Ctrl-click) an <a href="tools_objectinformation.htm" class="topiclink">information balloon</a> to display the object's <a href="menus_edit_properties.htm" class="topiclink">Properties</a>, to control whether the balloon displays parents, children, or both, and to change the size of the balloon's text.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

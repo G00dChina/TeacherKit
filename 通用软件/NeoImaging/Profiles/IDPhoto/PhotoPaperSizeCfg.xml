@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<SizeList>
+		<Item>
+			<Height>3.5</Height>
+			<Name>5寸/3R相纸</Name>
+			<Width>5</Width>
+		</Item>
+		<Item>
+			<Height>4</Height>
+			<Name>6寸/4R相纸</Name>
+			<Width>6</Width>
+		</Item>
+		<Item>
+			<Height>5</Height>
+			<Name>7寸/5R相纸</Name>
+			<Width>7</Width>
+		</Item>
+		<Item>
+			<Height>6</Height>
+			<Name>8寸/6R相纸</Name>
+			<Width>8</Width>
+		</Item>
+		<Item>
+			<Height>8</Height>
+			<Name>10寸/8R相纸</Name>
+			<Width>10</Width>
+		</Item>
+		<Item>
+			<Height>11.7</Height>
+			<Name>A4相纸</Name>
+			<Width>8.3</Width>
+		</Item>
+		<Item>
+			<Height>5.8</Height>
+			<Name>A6相纸</Name>
+			<Width>4.1</Width>
+		</Item>
+	</SizeList>
+</Config>

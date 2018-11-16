@@ -1,0 +1,352 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Twist and Shrink - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Twist and Shrink</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-10.gif">Twist and Shrink: Rotate and Dilate a Picture</h1>
+<p>In this tutorial, you&rsquo;ll rotate a picture by a marked angle and dilate a picture by a marked scale factor. Then you&rsquo;ll combine both transformations into a single two-step transformation that rotates a picture and dilates the result. By repeating this process, you&rsquo;ll create a dramatic result.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Rotate by a marked angle</li>
+<li>Construct a point on a segment</li>
+<li>Measure the value of a point on a segment</li>
+<li>Mark a scale factor</li>
+<li>Dilate by a marked scale factor</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x448.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x448.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+<div style="display:none;" id="SketchpadSkills">
+<h3>You will learn these new skills:</h3>
+</div>
+</div>
+<h2>Rotate a Picture <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x449.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x449.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You&rsquo;ll begin by picking a picture, measuring an angle, and rotating the picture.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>In a new sketch, choose <strong>Help | Picture Gallery.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">2.</div>
+<div class="column-3">
+<p>Find a picture that interests you and drag it into your sketch (or copy and paste it into your sketch).</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-10_01" src="Images/tutorial-10_01.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">3.</div>
+<div style="width:400;" class="column-3">
+<p>Construct two segments that share a common endpoint.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">4.</div>
+<div style="width:400;" class="column-3">
+<p>Click, drag, and release to form a selection rectangle around the vertex of the angle. Choose <strong>Measure | Angle.</strong> The points are automatically labeled.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">5.</div>
+<div style="width:400;" class="column-3">
+<p>Select point <em>B</em> (the vertex) and choose <strong>Transform | Mark Center.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">6.</div>
+<div style="width:400;" class="column-3">
+<p>Select your picture and choose <strong>Transform | Rotate.</strong> With the dialog box open, click the angle measurement in the sketch. Then click <strong>Rotate.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Drag points <em>A</em> and <em>C.</em> What type of motion makes the rotated picture move? What type of motion keeps it nearly steady? Why?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>How many degrees do you need to rotate the picture to turn it upside down?</p>
+</div>
+</div>
+<h2>Dilate a Picture <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x450.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x450.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>To dilate your picture, you&rsquo;ll measure the position of a point along a segment and mark it as a scale factor.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-10_02" src="Images/tutorial-10_02.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">9.</div>
+<div style="width:320px;" class="column-3">
+<p>Construct a segment.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">10.</div>
+<div style="width:320px;" class="column-3">
+<p>Construct a point on the segment.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">11.</div>
+<div style="width:320px;" class="column-3">
+<p>Select the point on the segment and choose <strong>Measure | Value of Point.</strong> (The points are automatically labeled.) Drag point <em>F</em> back and forth.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>The <strong>Value of Point</strong> command measures the position of point <em>F</em> along a segment where the endpoints are defined as 0 and 1.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div class="column-3">
+<p>Click in empty space to deselect all objects. Select the measurement <em>F</em> on <span class="segment">DE</span> and choose <strong>Transform | Mark Scale Factor.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div class="column-3">
+<p>Select your original picture and choose <strong>Transform | Dilate.</strong> In the dialog box, click <strong>Dilate.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Marking angles and scale factors allows you to control other objects in your sketch (like the picture). You can vary the angle of rotation or scale factor and immediately see the results on the object you&rsquo;ve transformed." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">14.</div>
+<div class="column-3">
+<p>Drag point <em>F</em> along the segment. What effect does moving point <em>F</em> have on the dilated image? What happens as point <em>F</em> approaches either endpoint?</p>
+</div>
+</div>
+<h2>Define a Custom Transformation <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x451.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x451.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll combine the rotation and the dilation into a single transformation that will allow you to both rotate the picture and dilate the rotated image.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>Delete all pictures except the original picture.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Construct a point and label it <em>G.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>Select point <em>G,</em> choose <strong>Transform | Rotate,</strong> and then click <strong>Rotate.</strong> Label the rotated point <em>G</em>&prime;.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">18.</div>
+<div class="column-3">
+<p>Select point <em>G</em>&prime;, choose <strong>Transform | Dilate,</strong> and then click <strong>Dilate.</strong> Label the dilated point <em>G</em>&prime;&prime;.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> A custom transformation is always defined by an example that involves two points: a pre-image point and an image point." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">19.</div>
+<div class="column-3">
+<p>Select points <em>G</em> and <em>G</em>&prime;&prime; and choose <strong>Transform | Define Custom Transform.</strong> Name your transformation <em>Twist and Shrink</em> and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div class="column-3">
+<p>Select points <em>G,</em><em>G</em>&prime;, and <em>G</em>&prime;&prime; and choose <strong>Display | Hide Points.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">21.</div>
+<div class="column-3">
+<p>Select the picture and choose <strong>Transform | Twist and Shrink.</strong> With the newest picture selected, choose <strong>Transform | Twist and Shrink</strong> again. If you keep repeating this transformation, what do you predict the result will look like?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">22.</div>
+<div class="column-3">
+<p>Apply <strong>Transform | Twist and Shrink</strong> again and again to create at least 30 transformed pictures. Use the keyboard shortcut for this transformation (displayed in the Transform menu) to speed the process.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">23.</div>
+<div class="column-3">
+<p>Drag points in your sketch to change the angle and scale factor of your custom transformation. Look for combinations of angles and scale factors that make interesting spirals.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">24.</div>
+<div class="column-3">
+<p>Drag point <em>A</em> to make <img style="margin-right:2px;" alt="anlge" width="12" height="12" src="Images/angle.gif"><em>ABC</em> smaller and smaller. Explain why the transformed pictures wind their way towards point <em>B.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">25.</div>
+<div class="column-3">
+<p>What combinations of angles and scale factors make straight lines of images appear to come out from point <em>B?</em> Can you explain why?</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">26.</div>
+<div class="column-3">
+<p>Open the Picture Gallery, find a new picture, and copy it. Then select any picture in your spiral and choose <strong>Edit | Paste Replacement Picture</strong> to create a new spiral.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">27.</div>
+<div class="column-3">
+<p>If you use a point on a ray instead of a point on a segment, the value of the point can be any positive number. If you use a point on a line, the value of the point can be any positive or negative number. Change your model so that a point on a line determines the scale factor. What happens when the scale factor is greater than 1 or less than 0?</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_developtools" component="et">
+	<commands>
+		<KListCommand ksoCmd="RunMacro" filter="support:VBASupport=true" id="RB_DC_Macros" text="@Macros" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="RunMacro" icon="Macros" shortcutHint="Alt+F8" id="RunMacroInDevelopToolTab" customTip="Macros" text="@Macros" qtspyName="RunMacro" rbHotKey="PM"/>
+			<KxRecordMacroCommand hotKey="R" ksoCmd="RecordMacro" forceVisible="1" idMso="MacroRecord" icon="RecordMacro" controlType="0" id="MacroRecordInDevelopToolsTab" customTip="RecordMacro" text="@Record Macro" qtspyName="RecordMacro" rbHotKey="RM"/>
+			<KxLegacyTriggerCommand hotKey="u" ksoCmd="RelativeReference" forceVisible="1" idMso="MacroRelativeReferences" icon="RelativeRefrence" controlType="6" id="MacroRelativeReferences" customTip="RelativeReference" text="@Relative References" qtspyName="RelativeReference" rbHotKey="U"/>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="Security" idMso="MacroSecurity" icon="Security" controlType="0" id="MacroSecurityInDevelopToolsTab" dialogHint="1" customTip="Security" text="@Security" qtspyName="Security" rbHotKey="AS"/>
+			<KxLegacyTriggerCommand hotKey="v" ksoCmd="VisualBasicEditor" idMso="VisualBasic" icon="VisualBasicEditor" controlType="0" shortcutHint="Alt+F11" id="VisualBasicInDevelopToolsTab" customTip="VisualBasicEditor" text="@Visual Basic
+Editor" qtspyName="VisualBasicEditor" rbHotKey="V"/>
+		</KListCommand>
+		<KListCommand tc="Add-Ins" id="RB_ComAddins" text="@Add-Ins" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="l" ksoCmd="LoadMacro" filter="support:VBASupport=true" icon="LoadMacro" id="LoadMacroInDevelopToolTab" customTip="LoadMacro" text="@Add-Ins" qtspyName="LoadMacro" rbHotKey="PN"/>
+			<KxLegacyTriggerCommand tc="COMAddIns" ksoCmd="COMAddIns" idMso="ComAddInsDialog" icon="ComAddin" controlType="0" id="RB_COMAddIns" customTip="ComAddin" text="@COM 
+Add-Ins" rbHotKey="J"/>
+		</KListCommand>
+		<KListCommand filter="support:VBASupport=true" id="RB_ControlToolbox" text="@Control Toolbox">
+			<KRbDesignModeCommand enterText="@Design Mode" ksoCmd="CTB_DesignMode" idMso="DesignMode" icon="CTB_DesignMode" controlType="6" id="DesignMode" exitText="@Exit
+Design Mode" customTip="CTB_DesignMode" text="@Design Mode" qtspyName="CTB_DesignMode" rbHotKey="DM"/>
+			<KxLegacyTriggerCommand showIconAndText="1" hotKey="i" ksoCmd="CTB_Property" idMso="ControlProperties" icon="FTB_Property" controlType="0" id="ControlProperties" customTip="CTB_Property" text="@Control 
+Properties" qtspyName="CTB_Property" rbHotKey="L"/>
+			<KxLegacyTriggerCommand showIconAndText="1" hotKey="v" ksoCmd="CTB_ViewCode" idMso="ViewCode" icon="CTB_ViewCode" controlType="0" id="ViewCode" customTip="CTB_ViewCode" text="@View Code" qtspyName="CTB_ViewCode" rbHotKey="W"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_Checkbox" idMso="ActiveXCheckBox" icon="CTB_Checkbox" controlType="0" id="ActiveXCheckBox" spaceHint="compact" text="@Check Box" qtspyName="CTB_Checkbox" rbHotKey="IC"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_TextBox" idMso="ActiveXTextBox" icon="CTB_TextBox" controlType="0" id="ActiveXTextBox" spaceHint="compact" text="@Text Box" qtspyName="CTB_TextBox" rbHotKey="IT"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_CommandButton" idMso="ActiveXButton" icon="CTB_CommandButton" controlType="0" id="ActiveXButton" spaceHint="compact" text="@Command Button" qtspyName="CTB_CommandButton" rbHotKey="IB"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_OptionButton" icon="CTB_OptionButton" id="OptionButton" spaceHint="compact" text="@Option Button" qtspyName="CTB_OptionButton" rbHotKey="IO"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_ListBox" idMso="ActiveXListBox" icon="CTB_ListBox" controlType="0" id="ActiveXListBox" spaceHint="compact" text="@List Box" qtspyName="CTB_ListBox" rbHotKey="IL"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_ComboBox" idMso="ActiveXComboBox" icon="CTB_ComboBox" controlType="0" id="ActiveXComboBox" spaceHint="compact" text="@Combo Box" qtspyName="CTB_ComboBox" rbHotKey="IX"/>
+				</KRbLayoutListCommand>
+				<separator/>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_ToggleButton" idMso="ActiveXToggleButton" icon="CTB_ToggleButton" controlType="0" id="ActiveXToggleButton" spaceHint="compact" text="@Toggle Button" qtspyName="CTB_ToggleButton" rbHotKey="IG"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_SpinButton" idMso="ActiveXSpinButton" icon="CTB_SpinButton" controlType="0" id="ActiveXSpinButton" spaceHint="compact" text="@Spin Button" qtspyName="CTB_SpinButton" rbHotKey="IN"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_ScrollBar" idMso="ActiveXScrollBar" icon="CTB_ScrollBar" controlType="0" id="ActiveXScrollBar" spaceHint="compact" text="@Scroll Bar" qtspyName="CTB_ScrollBar" rbHotKey="IS"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_Label" idMso="ActiveXLabel" icon="CTB_Label" controlType="0" id="ActiveXLabel" spaceHint="compact" text="@Label" qtspyName="CTB_Label" rbHotKey="IA"/>
+					<KxLegacyTriggerCommandEx ksoCmd="CTB_Image" idMso="ActiveXImage" icon="CTB_InsertPictureFromFile" controlType="0" id="ActiveXImage" spaceHint="compact" text="@Image" qtspyName="CTB_Image" rbHotKey="II"/>
+					<KxListCommand disableTrigger="true" hideArrowHint="true" ksoCmd="CTB_MoreControls" idMso="MoreControlsDialog" icon="CTB_MoreControls" controlType="0" id="MoreControlsDialog" customTip="CTB_MoreControls" spaceHint="compact" text="@More Controls" qtspyName="CTB_MoreControls" rbHotKey="IM">
+						<KxControlsListCommand customShortcutEnabled="false" ksoCmd="CTB_ControlsList" id="ControlList" text="@Control List" qtspyName="CTB_ControlsList"/>
+					</KxListCommand>
+				</KRbLayoutListCommand>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_DevelopTools">
+			<command idQ="RB_DC_Macros"/>
+			<separator/>
+			<command idQ="RB_ComAddins"/>
+			<separator/>
+			<command idQ="RB_ControlToolbox"/>
+			<separator/>
+			<KRbLogicGroupCommand id="RB_CloseDevelopToolTab" text="@Close">
+				<KxCloseDevelopToolsCommand customShortcutEnabled="false" icon="CloseWindow" id="CloseDevelopTools" customTip="CloseDevelopmentTools" text="@Close" rbHotKey="C"/>
+			</KRbLogicGroupCommand>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

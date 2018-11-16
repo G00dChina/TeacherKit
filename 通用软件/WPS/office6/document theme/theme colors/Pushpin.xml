@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Pushpin" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="465E9C"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="CCDDEA"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="FDA023"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="AA2B1E"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="71685C"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="64A73B"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="EB5605"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="B9CA1A"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="D83E2C"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="ED7D27"/>
+   </a:folHlink>
+</a:clrScheme>
+

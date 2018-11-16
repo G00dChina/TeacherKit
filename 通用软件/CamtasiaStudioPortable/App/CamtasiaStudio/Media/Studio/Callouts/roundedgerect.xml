@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>roundedgerect.png</Overlay_Filename>
+<Overlay_Name>矩形标注</Overlay_Name>
+<Overlay_XGrow>88</Overlay_XGrow>
+<Overlay_YGrow>58</Overlay_YGrow>
+<Text_Top>10</Text_Top>
+<Text_Left>10</Text_Left>
+<Text_Bottom>45</Text_Bottom>
+<Text_Right>10</Text_Right>
+<Vector_Grow>1</Vector_Grow>
+<CanRotate_90>1</CanRotate_90>
+<CanRotate_180>1</CanRotate_180>
+<CanRotate_270>1</CanRotate_270>
+<CanFlip_X>1</CanFlip_X>
+<CanFlip_X90>1</CanFlip_X90>
+<CanFlip_X180>1</CanFlip_X180>
+<CanFlip_X270>1</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<VectorProps>
+<figure>
+<svg>M2.00,13.00 2.41,9.89 3.61,7.00 5.51,4.51 8.00,2.61 10.89,1.41 14.00,1.00 159.00,1.00 162.11,1.41 165.00,2.61 167.49,4.51 169.39,7.00 170.59,9.89 171.00,13.00 171.00,119.00 170.59,122.11 169.39,125.00 167.49,127.49 165.00,129.39 162.11,130.59 159.00,131.00 84,131 33,170 51,131 14.00,131.00 10.89,130.59 8.00,129.39 5.51,127.49 3.61,125.00 2.41,122.11 2.00,119.00Z</svg>
+</figure>
+<borderWidth>3.00</borderWidth>
+<seamY>-1</seamY>
+<shapeWidth>176</shapeWidth>
+<shapeHeight>175</shapeHeight>
+</VectorProps>
+</Overlay>

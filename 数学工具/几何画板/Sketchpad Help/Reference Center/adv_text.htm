@@ -1,0 +1,241 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; Advanced Topics &gt; Advanced Text Topics</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Align Text Objects,Text Objects,Text Objects aligning,Advanced Topics,Advanced Topics Advanced Text Topics,Advanced Topics aligning text objects,Advanced Topics iterating text,Advanced Topics labeling objects with a custom sequence">
+   <meta name="description" content="Advanced Text Topics">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "adv_text.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Advanced Text Topics</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="adv.htm">Advanced Topics</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Advanced Text Topics</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="adv.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="adv.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="unicode.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">There are several advanced features you can use in connection with Sketchpad’s <a href="objects_cats_text.htm" class="topiclink">text objects</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Hot Text in Captions</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">While you're editing a caption, click an object in the sketch to insert a <a href="hot_text.htm" class="topiclink">Hot Text</a> link showing its label or value.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Unicode</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sketchpad fully supports <a href="unicode.htm" class="topiclink">Unicode</a>, allowing you to insert a wide variety of mathematical symbols and to use multiple languages in captions and labels.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Align Text Objects</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sketchpad’s text-alignment shortcut allows you to line up selected text objects so that their left sides are aligned and they are spaced evenly beneath the first selected object.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When a sketch contains a number of text objects (captions, measurements, parameters, calculations, functions, and action buttons), you can line them up neatly to improve the appearance of the sketch. In the following examples, the aligned arrangement on the right looks neater than the unaligned arrangement on the left.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:50%; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large"><img src="unaligned_text_zoom60.png" width="168" height="98" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:50%; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large"><img src="aligned_text_zoom60.png" width="168" height="98" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">To align text objects, select them in the order in which you want them to appear, from top to bottom. Then hold down the Shift key and press the Enter key. The first selected object remains in its original position, and the remaining selected objects line up below the first.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To increase the spacing between the newly-aligned objects, make sure they are still selected. Then hold the Shift key and press Enter again. Each time you press Enter, a small amount of space is added between the objects. Continue holding Shift and pressing Enter until you have the vertical spacing you want.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If you accidentally create too much space, continue holding the Shift key and pressing the Enter key until the objects return to their minimum spacing.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Label Objects with a Custom Sequence</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sketchpad allows you to modify the behavior of the <a href="menus_display_labelobjects.htm" class="topiclink">Label Multiple Objects</a> dialog box by creating your own custom sequences.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display.htm" class="topiclink">Display</a> | <a href="menus_display_labelobjects.htm" class="topiclink">Label Objects</a></span><span class="f_BodyText"> command to label several objects, Sketchpad normally generates a sequence of labels by changing only the ending of whatever you type as the first label. Thus if you type </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText"> as the first label, Sketchpad generates a sequence in which all the labels start with </span><span class="f_BodyText" style="font-style: italic;">A,</span><span class="f_BodyText"> but with different numbers following the </span><span class="f_BodyText" style="font-style: italic;">A: A</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">1</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">2</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText" style="font-size: 9px; vertical-align: sub;">3</span><span class="f_BodyText">, and so forth. Similarly, if you type </span><span class="f_BodyText" style="font-style: italic;">123a</span><span class="f_BodyText"> as the first label, only the endings change: </span><span class="f_BodyText" style="font-style: italic;">123a</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">123b</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">123c</span><span class="f_BodyText">, and so forth.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">To type a subscript such as the 1 in A</span><span class="f_MarginNote" style="font-size: 8px; vertical-align: sub;">1</span><span class="f_MarginNote">, enclose the subscript in square brackets: &quot;A[1].&quot;</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To generate a sequence in which the changing portion is not at the end, select the objects to label and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_labelobjects.htm" class="topiclink">Display | Label Objects</a>.</span><span class="f_BodyText"> In the <a href="menus_display_labelobjects.htm" class="topiclink">Label Multiple Objects</a> dialog box, define a custom sequence by entering a special first label. This special custom sequence label must begin with an equal sign (“=”), and contain “{...}” immediately following the part of the label that should change over the sequence.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For instance, you can type “=P{...}1” to generate the sequence starting with </span><span class="f_BodyText" style="font-style: italic;">P1</span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-style: italic;">Q1,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">R1</span><span class="f_BodyText">. Similarly, type “=A{...}[x]” to generate a sequence that begins with </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText" style="font-size: 9px; font-style: italic; vertical-align: sub;">x</span><span class="f_BodyText" style="font-style: italic;">, B</span><span class="f_BodyText" style="font-size: 9px; font-style: italic; vertical-align: sub;">x</span><span class="f_BodyText" style="font-style: italic;">,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText" style="font-size: 9px; font-style: italic; vertical-align: sub;">x</span><span class="f_BodyText" style="font-style: italic;">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Iterate Text Attached to a Point</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When text affected by an <a href="objects_iter.htm" class="topiclink">iteration</a> is <a href="menus_edit_splitmerge.htm" class="topiclink">attached</a> to a point that's also affected by the iteration, the text is iterated along with the point.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="unicode.htm" class="topiclink">Unicode</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_text_lossy.htm" class="topiclink">Unrecognized Text Format</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

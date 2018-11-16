@@ -1,0 +1,1361 @@
+Manifest-Version: 1.0
+Built-By: so
+Eclipse-BundleShape: dir
+Bundle-Name: %pluginName
+Bundle-Localization: fragment_resources
+Created-By: Apache Maven 3.3.3
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: %providerName
+Fragment-Host: org.xmind.ui
+Build-Jdk: 1.7.0_75
+Bundle-Version: 3.6.0.201511090408
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.xmind.ui.resources;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: markers/flag_gray.png
+SHA-256-Digest: bvuE63pRsNaRCgJ14jbfw4HAbTHXBgRFh+EA5jh/s5w=
+
+Name: markers/star_yellow@32.png
+SHA-256-Digest: Ta8MOTyRjxz2y4zdNl2reTZbkI+ocS3BeXsy/bTM3/M=
+
+Name: markers/arrow_refresh@24.png
+SHA-256-Digest: dPoFDxSXAaEOfJHE4X7LDYJlD0homoyPLkOJJbJdRMc=
+
+Name: markers/c_simbol_information@24.png
+SHA-256-Digest: 3FRqro21mvN6xh53AEGuKl4vXbD+MTBeRRNB9/z53hY=
+
+Name: markers/c_simbol_right@24.png
+SHA-256-Digest: GKKc3M5cpf42f6XJ3gEjHfjr6xS8KZM1b2BvTv6Jxoc=
+
+Name: markers/emotion_cry@16.png
+SHA-256-Digest: M3+mcI8BqEVp5PXdMx4St+IRtBf8vzP7bd8j8hWSfQE=
+
+Name: markers/star_blue@32.png
+SHA-256-Digest: bRdKsx3PcvWXUZx+rNdFrpiVSpTqgQ5sXIfG7Krjkl0=
+
+Name: markers/progress_start@24.png
+SHA-256-Digest: CFEa5jP56E8FfXnm7eU4yE9QIBb9W6IuU/1EIjNwYVg=
+
+Name: markers/month_jan@24.png
+SHA-256-Digest: 8Jkxtv3xSAmyTtO7g+RbJtMgwN59O6DcpRcRLFGZ4js=
+
+Name: markers/symbol_pause@24.png
+SHA-256-Digest: qfYLykJd8O9EPSuJzLbc7pb740XFumvh8wtljTi8zm0=
+
+Name: markers/other_exclamation.png
+SHA-256-Digest: fci/T6lcGJ5+/RdB0N5MJ3ZmV2Ef8mhQMnHwJQrklNg=
+
+Name: markers/star_orange@16.png
+SHA-256-Digest: 2+7BKkj8GRpxbOsypOairgWvjsJ5xoZTtXsWjXefl4U=
+
+Name: markers/month_nov@16.png
+SHA-256-Digest: 3QqFKrRiaTstnVgI+nzx/HQJuJr59NKJLH69pjRA2xw=
+
+Name: markers/month_sep@16.png
+SHA-256-Digest: Xel4/E1/G9KC43UKHePU5/GvDBrz1erVFhB/oaFFiGU=
+
+Name: markers/week_fri@24.png
+SHA-256-Digest: jDrJo/65UDQkvTEBQFnKQ8pCRpO0/udCh/4ks838j1Y=
+
+Name: markers/month_jul@16.png
+SHA-256-Digest: RON3+TwG2W42buhroBNZoA+oblKa8r9eCoQlQHICIoo=
+
+Name: markers/symbol_question@16.png
+SHA-256-Digest: 3folQ5CsHjSRjZMXewK/vvjnAGBG7t+PCZmJartF+Fs=
+
+Name: markers/star_green@16.png
+SHA-256-Digest: LZ5ROyh/iWXJGlacTZp8B+Q1WIBQQD7ngEBYApFUKLo=
+
+Name: markers/week_thu@24.png
+SHA-256-Digest: tQO0vZrigfDf3rebU3DydGjmfefXEJwtrKP6lMB62kQ=
+
+Name: markers/week_wed@16.png
+SHA-256-Digest: 2sP43TaYAz8DRsXIYHpn5bemFrf9BMgbUG2UOhwtYVc=
+
+Name: wallpaper/wall019.png
+SHA-256-Digest: YdmKwoUMl+KREMrU/z5Dg1MxxrX9536cehJaMVoRBIU=
+
+Name: markers/priority_8@24.png
+SHA-256-Digest: iczn43ZgPC0SERpcOq/fKHQJY86eatSZtY20X+bFVUQ=
+
+Name: markers/emotion_laugh@16.png
+SHA-256-Digest: /rrKkSWsdkForIrOQ5CTmTG57PLBsb2F29LnmKcJ2HI=
+
+Name: wallpaper/wallpaper/w5.png
+SHA-256-Digest: CTjQwvDE7k4FcXbXjersn31WHTy3ieygzIpaJQ+DHKU=
+
+Name: markers/other_person2.png
+SHA-256-Digest: eY67P4Cv53SOrABa3Q9Fo/8bWfOv18zJsFtj7tz7L5s=
+
+Name: markers/star_red@24.png
+SHA-256-Digest: aTYoHftEPGnpDZt37Q6y4m8zO8I8+UF78P9TK4jvZtY=
+
+Name: markers/star_red@16.png
+SHA-256-Digest: Lux+GA9IxYj+JiLruWzwuTmxtqOG+t3swWfhKFw50rk=
+
+Name: markers/emotion_surprise@24.png
+SHA-256-Digest: ERSJQb5ziTGN2jimrYedPIkq3g0fijEinV3OgVawCR4=
+
+Name: markers/c_simbol_pause@16.png
+SHA-256-Digest: w1SGQ/FhDW0n9v1Px9QPCfbfWFhyEEjRRJQefI1CYzU=
+
+Name: markers/progress_half.png
+SHA-256-Digest: 5I8z2YIzuDFT6ZpsLRUgh9xgWckVbFWuiOHtbsg+kJw=
+
+Name: wallpaper/new_wall009.png
+SHA-256-Digest: D7K0+Zpk+XH+it82u5999Vt28NiHgmPC1CGx19dMuOY=
+
+Name: markers/c_simbol_minus@32.png
+SHA-256-Digest: HwgQUWAseCqUqw14iEUX+yeEiG4/JlgYqo30NDHwt4g=
+
+Name: markers/people_yellow@24.png
+SHA-256-Digest: D1VUuh+e6PJ4MBBJQGJ7M51M7oJNrlXIdWJFsB+NE6s=
+
+Name: markers/c_simbol_right@16.png
+SHA-256-Digest: G71Z+Unrwt/4lninBCsMTauDQ2n/y3eESzY+fr6WA7A=
+
+Name: markers/priority_1@16.png
+SHA-256-Digest: dDCJqmVGDfFDcqqypFX00yCqWjDe1pFpoZkNVo2vwKk=
+
+Name: markers/month_jun@32.png
+SHA-256-Digest: 8cQV3E++RJikbHoa50moxJyE32RQTCNGEgJJ7RjPZL0=
+
+Name: markers/star_purple@32.png
+SHA-256-Digest: mDBPq8k+fDVsqwzV2Fkr36ojQNelNQZENZtLtAZVYN0=
+
+Name: wallpaper/pattern/p12.png
+SHA-256-Digest: V07wDjMQQaqmvUBEeZXI8ZHtpSzZzcyJDutm6ZF7FDc=
+
+Name: wallpaper/wall010.png
+SHA-256-Digest: da4bOebGBiy4DcNiOcN2yAlGV4zP5t9rxfxFBHUd78U=
+
+Name: templates/Weight-loss Program.xmt
+SHA-256-Digest: kV/dLn39d/MCki68D0eGN4ILaiFMORLpVmkKFt4ORKQ=
+
+Name: markers/emotion_smile.png
+SHA-256-Digest: qb25DIqNwzan3vQQPCkVB84qTnyHs/msqpyS0g+giX0=
+
+Name: wallpaper/new_wall001.png
+SHA-256-Digest: ZLz+84k9/UzsYPHT/wFqVNAm64HpCs4tNrHKp5Qyaoc=
+
+Name: markers/star_purple@16.png
+SHA-256-Digest: 5MuZJnBQlOLTRP2Ou0jmZBumfAfKt+ZAjBJFguTd9jc=
+
+Name: markers/c_simbol_information@32.png
+SHA-256-Digest: zqeGaINYqnpYU5C2ZW13gy3DtCayIGn32AB22OSoM6A=
+
+Name: markers/flag_orange@32.png
+SHA-256-Digest: KOGOWzQ6uBsvJO/FHVzjOoXUI5J01IImUrLRzXiz1i4=
+
+Name: markers/flag_yellow@24.png
+SHA-256-Digest: o6WatRWoyw3cdwzKQyoIqLyZwUZslUv7hTb7rFsVry8=
+
+Name: wallpaper/new_wall008.png
+SHA-256-Digest: WNrNNhTaWr95d9MzkIOursBf5rP1UaT4eAOpDBaRjdU=
+
+Name: wallpaper/wallpaper/w1.png
+SHA-256-Digest: LNF0pk4HTXo1xkY1uCaT8aKyAdtEYvIOjTekHkr38zA=
+
+Name: wallpaper/wall028.png
+SHA-256-Digest: wjKQdQeX9DoKx/ruLkWBikudEngy1nPp0caRhODs2go=
+
+Name: markers/arrow_down_left@32.png
+SHA-256-Digest: ciuZyYy6Bi0FxCuKGFB5sZNPW1GproK08+BaqDyJdyU=
+
+Name: markers/priority_4@24.png
+SHA-256-Digest: bt2T9XlYe037gBZpi4I3E61LeJuQ/79/PVzNTCA8JYQ=
+
+Name: markers/priority_6@32.png
+SHA-256-Digest: +/704MdIVb18rsXGcCmLkuZ7FBxHX5zD807FxhPnlwk=
+
+Name: markers/progress_pause@16.png
+SHA-256-Digest: JewNA0y9dWeJ0wzP2ihhJCYtiIIF7fSxDYGDObOFfpA=
+
+Name: markers/c_simbol_exclamation@16.png
+SHA-256-Digest: 0r5JlS2AdaJYAoa2DdtrT83eNhMhxRJBa2ceRVwxuHw=
+
+Name: markers/arrow_up_left@24.png
+SHA-256-Digest: 2IafRpt5kw8578EQg7Ay0JQJBAzaxz+fDMihlIbjK9U=
+
+Name: templates/Short Meeting.xmt
+SHA-256-Digest: 3qxEPHMwT8p5CDq0+4kVJ0ALE2K5Pvzy+yC1o04R/Bk=
+
+Name: markers/people_red@24.png
+SHA-256-Digest: dZZ1tbdDl68Y2XsP86gn2gl0xmwZIc6IRmZ9VxzpPAI=
+
+Name: markers/c_simbol_plus@24.png
+SHA-256-Digest: QS687vYI6Ls2/zNW1ABTQHy7iw8n5CJW7wFA6VeewNo=
+
+Name: markers/symbol_plus@32.png
+SHA-256-Digest: YFwZnb2CoNMEhFmPr3IQ8wFmcDrCSw8RCI0+qM7fGG4=
+
+Name: markers/symbol_question@32.png
+SHA-256-Digest: 8dRF5YpMY8OIDbOlH9SlpiaB5kj7v4KnDzouRQBqXvE=
+
+Name: markers/progress_postponed.png
+SHA-256-Digest: Xp1UV0MOJlW4m2digIovisX0kfyXLwIUrH2myPvu5eA=
+
+Name: markers/symbol_wrong@32.png
+SHA-256-Digest: E1p1KRd6M7hTckNMqxV7eZczYtqRKFp4yzWnpfAZK4M=
+
+Name: markers/month_sep@24.png
+SHA-256-Digest: oRfQC/YYUq24RMi/oZ7EtPihTLOeHLL5kNDQElYW84E=
+
+Name: markers/emotion_surprise@32.png
+SHA-256-Digest: hHxAdwy7GIJk59fybayyaSWW39UzjG1PQLDaxJqV5e8=
+
+Name: markers/priority_3@16.png
+SHA-256-Digest: ANBdMZMJ5hizkiEWfYpu4+e56DNnlc3Sx7q9+HgQjjM=
+
+Name: markers/arrow_down@24.png
+SHA-256-Digest: RlGPru1rpU3dXTUpe9JGWDmmOPSuMVWShYO6nLBnGfs=
+
+Name: markers/flag_purple@32.png
+SHA-256-Digest: ALgsMfgfB/A2LH5MGaI6NgpwCR4LopFpsRYQIdf7IhU=
+
+Name: markers/other_chat.png
+SHA-256-Digest: w2OEnbL9r3qL7NyvEb5doj0bOxw5X0dLLzUe67zi1MM=
+
+Name: markers/flag_purple@16.png
+SHA-256-Digest: zNIofAekf7OUFhj51uJTjN8+kO0sLTtdbtw3Zmiw9yk=
+
+Name: templates/Weekly Plan.xmt
+SHA-256-Digest: +0j4VLd369FWCLUlkHLO6zWp24crdNuO3yMQbllaolI=
+
+Name: markers/symbol_question@24.png
+SHA-256-Digest: +t0gELRQ+OgJAyLtB+aBZ3dwf9mzD3YMWox2iK/Pev4=
+
+Name: markers/symbol_minus@32.png
+SHA-256-Digest: Vr5tPPp6+Stu6l4x+ZIBasl5HR+FV4MhB8sOspAiGKI=
+
+Name: markers/star_red_half.png
+SHA-256-Digest: ffHAx2FMAw22QKhNtWjSM+rXMJVZdr7dtS8ii/CAt0M=
+
+Name: markers/priority_4@32.png
+SHA-256-Digest: V7AsE5HKmkdczTMYqsl02ujiNDzI/mMrgAPqhPKkzgI=
+
+Name: wallpaper/wall030.png
+SHA-256-Digest: dkDrF5wzS9JytASU8SAr1nqXfzwQ5KgVO6+H2xcMLYc=
+
+Name: markers/flag_red@32.png
+SHA-256-Digest: /d/LGI8kaKlyQpuiMnbQt1D99gRXYEK6WTPuvLrljp0=
+
+Name: markers/month_oct@16.png
+SHA-256-Digest: ANghDWQ4fBCUZjYKONuVUPAVevA4c9o8Ec1kln5kVEc=
+
+Name: markers/priority_3@24.png
+SHA-256-Digest: 3WgEoNxANsnz5/+cD8dar1XXz4uYkwiEO2qPnY7f3F8=
+
+Name: markers/month_jul@32.png
+SHA-256-Digest: rGFQB/b6ZO8T8wR0OOUCllUlHc3NLo/4IziC4xySuQE=
+
+Name: wallpaper/13nbfks65iuumejlh1mdsbpjbv.png
+SHA-256-Digest: vFSTX0oezvB1i9xvY1aOiHRnhoTn1LOKU28LR6heMew=
+
+Name: markers/progress_1q@24.png
+SHA-256-Digest: Cl6BkV3GW5+J12xN46D4xlkKFoZChKkQA9ZhMGevciI=
+
+Name: markers/priority_1.png
+SHA-256-Digest: ZIUKuRzUxZEtFANnDgunceXaPJGQgMXFBVR4Uey0Afk=
+
+Name: META-INF/maven/org.xmind.cathy.plugins/org.xmind.ui.resources/po
+ m.xml
+SHA-256-Digest: qTgqtPxN8eyQFY+S2T6X56mwtWYE/kl52yoTMOtpO00=
+
+Name: markers/month_jun@24.png
+SHA-256-Digest: r8i0uIInoj01olNZFThlAP7EtJJ08+aTPpUdZe6847A=
+
+Name: wallpaper/pattern/p16.png
+SHA-256-Digest: HSL8+OS+Gk0Vmmx510uANqflhmXnYV/wsS3/og0Yu+g=
+
+Name: wallpaper/wall008.png
+SHA-256-Digest: qCyEXjy3TzZL7QKEYSv05Tp/3gbFDilXNQZs/ZDEHeM=
+
+Name: META-INF/maven/org.xmind.cathy.plugins/org.xmind.ui.resources/po
+ m.properties
+SHA-256-Digest: mPc2N2YTc0P3uZGtMIc2Kfio9eZsqaUDQdBt4JbpTfw=
+
+Name: markers/c_simbol_question@32.png
+SHA-256-Digest: /Py1zf29hsDdm+rXxL7rpWgfgVSw8eGZ10lIi+9QjKQ=
+
+Name: markers/flag_purple.png
+SHA-256-Digest: y0SXfmIrELLquFl9peuOY5wMXkMamxmHxNfyAjhcFew=
+
+Name: markers/flag_blue@16.png
+SHA-256-Digest: ljHdA9N9XKkJPD0XD2Bk73snFH2mkp2/aQCtN3UsbfI=
+
+Name: templates/Flow Chart.xmt
+SHA-256-Digest: FyhVbez88xEgg00f6b90eFpaWeI5sN5Bt0OiWkFUnlg=
+
+Name: markers/month_mar@16.png
+SHA-256-Digest: SUKp5SkKmVLEjL++bt50h/bbhsMe8omCsSVukmBkfC8=
+
+Name: markers/other_email.png
+SHA-256-Digest: q3conZPgD7oR9LGDDqbgBMx4SaKXSJDjE4mQ4VCUhvA=
+
+Name: wallpaper/wall022.png
+SHA-256-Digest: 9VCSLZ+bvCVZh4FzpU5hh5NzammNqT5N62Z24TGOVjs=
+
+Name: markers/emotion_smile@16.png
+SHA-256-Digest: /rtCBU0pRJvadRWg1XpJrN4hx9udMNARuwCEUeN8LhE=
+
+Name: markers/c_simbol_wrong@32.png
+SHA-256-Digest: A78zSdSDZrb3RwPAI9qHpzjUf3Vkqxkz6Jkdc5G12Pc=
+
+Name: markers/month_aug@32.png
+SHA-256-Digest: Z7K8mppNY3nlqCqYef8rtF18QolR9iMl4CTB6J/6q9A=
+
+Name: markers/people_yellow@16.png
+SHA-256-Digest: jx2GojVb5iCv5BtIHSR2ZrXl4uIheSxQwzwwEkUYMR0=
+
+Name: wallpaper/new_wall003.png
+SHA-256-Digest: JcCGoJIk8N29ZNb8dab4bVjSFjXsnEETxuTjLbQ8LNo=
+
+Name: markers/progress_3q.png
+SHA-256-Digest: 21M3ZN+uAlt0vhiAAvnNZubO5ePYaTYXT+ibSbC9u1k=
+
+Name: templates/Negotiation of Sale.xmt
+SHA-256-Digest: 0sFP5u6AH/s1husWGckovUWhbo5UEr+JdWDGC2GUvNk=
+
+Name: markers/symbol_exclamation@32.png
+SHA-256-Digest: 2GkKqPdy0AlIhfiIfGQxImgh/IrEK8P0ISzygjt35SI=
+
+Name: markers/month_jul@24.png
+SHA-256-Digest: QrdEzSkAS66lO00VvBiRKGsGdtNRVGLCpE4HSHVYFNE=
+
+Name: markers/other_person1.png
+SHA-256-Digest: wVeps7K6KAwiucN+TYATmufjNASg3pxZo1wfN+gFoFA=
+
+Name: markers/week_fri@16.png
+SHA-256-Digest: 8/OuOIf5f8jdwZ10LHnJpCW/C07oT0XJXaQNUb+OrSs=
+
+Name: wallpaper/wallpaper/w6.jpg
+SHA-256-Digest: lt0PnSesRKlTQxp85Cb3lkJo4SwnHq+x2/5z+jw1OH8=
+
+Name: markers/week_wed@24.png
+SHA-256-Digest: HeI7xWrxjCMSVGFGusLkl7JV1gv5Ts0B/xxrSTqgLtw=
+
+Name: markers/progress_half@16.png
+SHA-256-Digest: 8LZi8d2D0EKyIWgXmuKlibGQs+iT4p7ikNEWDOHWzaw=
+
+Name: styles/themes.xml
+SHA-256-Digest: FCJnGJmIMonUCbaa/pjjaJPMai/I/uOENJ24Sf9GwjM=
+
+Name: markers/month_may@32.png
+SHA-256-Digest: tAasKkMl8Js0L+ZDUW/AgcaQPtKmzBRqD1TQgVcoAms=
+
+Name: markers/people_blue@16.png
+SHA-256-Digest: JWfFue3ahEfjydZsQGpsVXlB5L4f6OG7AbPnQNteWdA=
+
+Name: markers/arrow_down_left@16.png
+SHA-256-Digest: C1PoE1GlNGWIDonT2VsrWxzzsTwg5cDRRKFy8fH6v6Q=
+
+Name: markers/flag_orange@24.png
+SHA-256-Digest: EIZxWambHSmD/7fXAjcYAtiZLTN0Z/RnfDPgFf7bY/I=
+
+Name: markers/star_blue@24.png
+SHA-256-Digest: scDzPijIELEl7d+OsyMuU/xGymScD2DIPcIiKLH7vX4=
+
+Name: markers/month_dec@32.png
+SHA-256-Digest: bnCQsN64GvSIcGJzMup7qqlkeCgngAgGoQFUZMbLDAk=
+
+Name: markers/emotion_boring@32.png
+SHA-256-Digest: 7FFHPUSSZzTgTaq5MOJc0CPLw8p4M9n+uG4Bcv4B7SY=
+
+Name: markers/priority_3@32.png
+SHA-256-Digest: BxgNKbB/8qxz/7UciabUzAB8eQjwooFWZoHrvbkcHSc=
+
+Name: markers/progress_done1.png
+SHA-256-Digest: 2lgQt6Q5jlmshplyEDhBziRiTqhaz6H4paoFSxJiFFw=
+
+Name: markers/week_mon@16.png
+SHA-256-Digest: KgzaVtqHop72BQu5k9JX9BlOUYop9SOtbu1kO8TTua8=
+
+Name: wallpaper/wall009.png
+SHA-256-Digest: rvvj1EY/89Gcognad6dAk2zpPbvzBGESQ5rz9LFx4ik=
+
+Name: markers/flag_yellow@32.png
+SHA-256-Digest: 8nww/T/qLqUnK+ZYq7KJ7fqk2rnyguGAqQZX1SGFgaw=
+
+Name: markers/symbol_plus@24.png
+SHA-256-Digest: 5JgrnAHKDA3wzkYEH/AT9KvMAavoU3rmwyyAd88JpdQ=
+
+Name: templates/Make a Decision.xmt
+SHA-256-Digest: sTx7vFoOXyX/f/70Ai+kA6fJC9VRaHWvqWdvZwNBSXE=
+
+Name: markers/star_yellow.png
+SHA-256-Digest: ZB7kYD0hYfLdqIOlfgBP/mIXpP+PiWTgmhQ5NqCm9dw=
+
+Name: markers/star_blue.png
+SHA-256-Digest: qgCiJtKo5SHvYME4WEM1lUhcNm2tmraKYXETbo++7EE=
+
+Name: styles/themes.properties
+SHA-256-Digest: ROBoj5kYkWSSvyW6KgMI85NjMUnhhlLHufC8IhhwV3w=
+
+Name: markers/people_blue@32.png
+SHA-256-Digest: /t++5islzBAfPmceAhDOhPdQZWM9LkwaMNRCfNkQbgs=
+
+Name: markers/month_mar@24.png
+SHA-256-Digest: EYI551JWVcIFyKVeBp7E78fvVYJfb+i2M6LAluBA+N0=
+
+Name: markers/month_aug@24.png
+SHA-256-Digest: dIfnOMVnygS0GlkA7jm9GrAbUE5TBxHnIlT+4F5lJsk=
+
+Name: markers/flag_orange@16.png
+SHA-256-Digest: oVSmxokYZ+2DW94gTGpDFs5u7smGftRiF3abcfP19lo=
+
+Name: markers/symbol_information@24.png
+SHA-256-Digest: YhZQApZgkx2P5LFujmrU3c5b6w8Rnzv0ZLd0HSo5NjQ=
+
+Name: markers/flag_gray@16.png
+SHA-256-Digest: wMywAu5j2vbJIe97q2FC83hm+/Zlsjt6cGXYjYtCUnU=
+
+Name: wallpaper/wall006.png
+SHA-256-Digest: P0UTrLDjrGaqDrPdnFEKvGisiVVmxwcrrz5J1p8MBIM=
+
+Name: markers/priority_2.png
+SHA-256-Digest: Af9ITI6bLBBA3AcEy7HE5ZCdUxQ71f9RqU7sM3k44n0=
+
+Name: markers/marker-16.png
+SHA-256-Digest: d+4Qq8+GD4/tn4ES8BFHXKzkvW3HkHWw5tO7OEGDCbM=
+
+Name: markers/star_orange@24.png
+SHA-256-Digest: WWdoQk1omAecbGHL4O5SFaMDguRHdt51aEiPCInNsKQ=
+
+Name: markers/priority_7@16.png
+SHA-256-Digest: TRNzvj/odT5xDVxxoR8n9cAQR+N3kolzdbNlKzQ1d1o=
+
+Name: markers/people_gray@32.png
+SHA-256-Digest: ushkfe2QGDbB+pZ6Lj6mH6ZPMaqKf74Flr43sOpYLaE=
+
+Name: wallpaper/wall018.png
+SHA-256-Digest: 6yYoV13ol+xa+G58cVyu60862WdDAU8qUnEpj95CqRA=
+
+Name: markers/month_nov@32.png
+SHA-256-Digest: ZMCxpwBV87ghi2fVEfZBjNKsvnGleVc2Ci6G1n73RH0=
+
+Name: markers/people_green@16.png
+SHA-256-Digest: /bwaPenqqtcSB+1Xd6M2s8izpTgTj4XPUy3LLYk9bSg=
+
+Name: markers/priority_6@24.png
+SHA-256-Digest: gbiPJgufgrQ7rBrR5MzeV930Jtc3F3S8MjFbjHJ/Bfo=
+
+Name: markers/emotion_boring@16.png
+SHA-256-Digest: AmcIxsUY+8ICfWcC+19V5f2CMvEb4yPKbhUAKuRQEZY=
+
+Name: markers/symbol_information@32.png
+SHA-256-Digest: VlZcc2P8sCaWF+6XeJ5fM+Vnnbqh45+POhoHzQBOgFQ=
+
+Name: wallpaper/new_wall006.png
+SHA-256-Digest: aIcfVJgnEw3wSVlA7l7wI1gBZtEuEJRjB+W/aq8KtEI=
+
+Name: markers/flag_blue@24.png
+SHA-256-Digest: 0yR6RSFte7JJGTnkhRNLZmC7oRQnlR5aRTPRZua8raI=
+
+Name: markers/priority_2@32.png
+SHA-256-Digest: 6QIP9U1t+OHtnsZRUhJOLSgBXobSKj+smvud+Kh3Alw=
+
+Name: markers/arrow_up@16.png
+SHA-256-Digest: cJNXJ9JCLGRcc66A8qXsqwQ9vxFLyh8i9ucZoMRos1k=
+
+Name: templates/Projects Dashboard.xmt
+SHA-256-Digest: RNxr7Kj5WJN3fLh30TIfF4Dw/lYl2z/P6TqbYo6Tovg=
+
+Name: markers/symbol_wrong@16.png
+SHA-256-Digest: k3PTMA+QmFrOhKYSml4SxWTTVSpyTq26ojWDjlbuh4I=
+
+Name: markers/month_mar@32.png
+SHA-256-Digest: Ldp2g3p990NMW5AwivxHKJRgYgZkaQtRz9d6EqDcsSc=
+
+Name: markers/month_jun@16.png
+SHA-256-Digest: rNKtGhB8SynbkYkteIddCBzC1dEYDAHZdN4OZz/PK2M=
+
+Name: markers/markerSheet.properties
+SHA-256-Digest: W4ruKEm0Q3juldZBBPxcrDhA47kak81FrQvVNdj42SU=
+
+Name: markers/people_gray@16.png
+SHA-256-Digest: S8U5ClyTIHuD1O94kSHghGpeoblaRAlZU+uKgUcoRYg=
+
+Name: markers/week_thu@16.png
+SHA-256-Digest: 2fj/nhxO12d0o8ZBqnSFP1PGhJN9WREz//I1XrNsaNg=
+
+Name: markers/star_green_half.png
+SHA-256-Digest: 3hyRdM8oDG30OX9wtp7+Cl7jmc8tV0AbxUOhGvamcok=
+
+Name: wallpaper/wallpaper/w4.png
+SHA-256-Digest: utjJev63yABX/R6raRxbIV8W0FnUdTh0G6y3caeD2Pc=
+
+Name: markers/c_simbol_exclamation@32.png
+SHA-256-Digest: zAoGu97846UnnF6vSFiO3JC9FgoUPXvGPT67VgICPv0=
+
+Name: wallpaper/wall015.png
+SHA-256-Digest: TVi2++pARqV0Tqd/ilzy1w4ZHaGs0i7Rj2bb1TBgsLk=
+
+Name: markers/other_lock.png
+SHA-256-Digest: KUvHlukl7HdRnWSZsWLWsJel0ls+UQr3o8k0IEOB3Rk=
+
+Name: markers/other_phone2.png
+SHA-256-Digest: KM1G2wCJFzl9CzG1WQfwcvO19/wCyyYc87EQvdqF6gY=
+
+Name: markers/c_simbol_wrong@24.png
+SHA-256-Digest: MsyfEMWlCOjPqDnkZ0c2P/RiNqioWCuYLp1vjHENj5A=
+
+Name: markers/priority_1@32.png
+SHA-256-Digest: +d1ETSyD+wUJPvzptDKRG+rZJ9gXKadjebKccQwTV7M=
+
+Name: wallpaper/pattern/p3.png
+SHA-256-Digest: u+9IF1JHGc38wgxLWVaH055l0I6b56WJAUeT52b/6+Y=
+
+Name: wallpaper/wall003.png
+SHA-256-Digest: pIf/AnyFDi5AYytIM4wjpKe9r6/UoY6vsHYrLf52H1Q=
+
+Name: markers/star_red.png
+SHA-256-Digest: BejqiAfsRS6pJumr6mc8suMgWKGcHPV39iG/mO/kJPs=
+
+Name: markers/emotion_cry@24.png
+SHA-256-Digest: w6EahHhXhOSyNJFQvYxckdR+WCUuPp7+g3QjjlPQsp8=
+
+Name: templates/Org Employees.xmt
+SHA-256-Digest: wBLgasf8QB8cPCua0Zil9v5gTtIXFbUJX747bjQ5w5U=
+
+Name: markers/people_orange@24.png
+SHA-256-Digest: 1OaZ2bGMZ688E+F6ycLkePHnOu9StdnsvMiiNEfdMms=
+
+Name: markers/star_orange@32.png
+SHA-256-Digest: KvI8Yivu9NeThY2KA4L9lW187TRQnbaDwQBZcNJShbU=
+
+Name: markers/symbol_right@24.png
+SHA-256-Digest: kEWOdEvdF57Qx8rB86GztjtZOuzKNFTOnJ89LVhrlTE=
+
+Name: wallpaper/pattern/p7.png
+SHA-256-Digest: uPhUu0xfmJRXkEfwUcTj4f/iNSrCiZrOEUPXtENGLLU=
+
+Name: markers/month_apr@16.png
+SHA-256-Digest: f0u8uQxw9HLVe2D+fd/JQUptjLn/YUHQhJSj/35QfI8=
+
+Name: markers/symbol_exclamation@16.png
+SHA-256-Digest: ZCXZhcS143Rb8sUYmbBq8sn8SaCNNEjEUs4gvM0CdOA=
+
+Name: wallpaper/pattern/p15.png
+SHA-256-Digest: mV7p7zOf1xN0HHu44/IfC4Li70EPr1ohW7yybs97LSY=
+
+Name: wallpaper/pattern/p6.png
+SHA-256-Digest: NW9AhbVO06NtdBghgqQfKwk96ugUevjx8jRT+/HhlRA=
+
+Name: markers/flag_green.png
+SHA-256-Digest: KQb7VRVwVqQ9ic2ogze+oed49CjGSzZlbMlNkgtC+0Y=
+
+Name: markers/c_simbol_minus@16.png
+SHA-256-Digest: 4iXPrP5m4WkN2Jbp5h9HPzcYj3kOnEyqUZCAwgMZpNk=
+
+Name: wallpaper/pattern/p4.png
+SHA-256-Digest: ijDyYRqls3MrqzhNTzwN9nUfNMRNe1W9p4nVUkPnK8w=
+
+Name: markers/star_yellow@16.png
+SHA-256-Digest: tyk+CuwYZZ+JyxIrRCdGCCodmscyQk1u78dj5lvNcsM=
+
+Name: markers/priority_4@16.png
+SHA-256-Digest: A4Fa6uwlxHp7lycupk95hEPclJZvq59R93nkOb/Ry3w=
+
+Name: wallpaper/pattern/p14.png
+SHA-256-Digest: bK3kCVprAzIqp/i4QMFBjekLI0lvdiUPPCP0VShfWis=
+
+Name: wallpaper/pattern/p5.png
+SHA-256-Digest: DNzejIf1grJ1JUUDn/Z2yh35Ip7djz7g1ULfbUZUdL4=
+
+Name: markers/progress_half@24.png
+SHA-256-Digest: V6W5vOnRhJYWplF4Ypn6lqL2XRvdUcCDdxrTNtTbf2w=
+
+Name: markers/priority_7@32.png
+SHA-256-Digest: qvUS9x3LzWP/atNPk1XSEf281PY5pPdlU5m1Clytol4=
+
+Name: markers/month_oct@24.png
+SHA-256-Digest: oOOjqRmXIJI3bNFj31lJhE+HUbB3qnuXM5KtgO5EcQg=
+
+Name: markers/flag_green@32.png
+SHA-256-Digest: snLwFcZttHlxmHgMQK7KIKEyu747eGkEoMx9yKC7pTc=
+
+Name: markers/star_green@24.png
+SHA-256-Digest: vYNp6/BfG10NIBCx0fdgTGALlvPYSVs92G+xrwDPhZM=
+
+Name: markers/c_simbol_wrong@16.png
+SHA-256-Digest: 9QxloYqBxAyMbGvZQhrTmP3OsIrx2nihBGciUFjzcxM=
+
+Name: markers/progress_start@16.png
+SHA-256-Digest: Qyw+86AgqLMVHEzWYPRpztQ//Wj0cVNpUqKyOA2sCZA=
+
+Name: markers/people_red@32.png
+SHA-256-Digest: TRh4aqk2i6vsWmaUxVwAwq3u4BIpOBnKTl8r7E+PVL4=
+
+Name: markers/progress_done.png
+SHA-256-Digest: huNYHLtL2CeXWyvCqzhnQXkZYY5v7ca/a3g0km0dbEA=
+
+Name: markers/symbol_exclamation@24.png
+SHA-256-Digest: CyTSHTtbgCpez+ZwpmbesMC8wka8jNtzuxtRNZCU99s=
+
+Name: markers/emotion_angry.png
+SHA-256-Digest: A6dKWBRieHtYbBuXszFVYC8s3skTsDeiXskJCp954D8=
+
+Name: markers/arrow_down@16.png
+SHA-256-Digest: tAUBY2ifn7FKiJ5U8rytY9xbwZOkdPsAKepIzDQEWHk=
+
+Name: markers/progress_half@32.png
+SHA-256-Digest: cBLsWww0Tad5kIgtSnDG83aDHFkVbFWPT/8is4c/5W4=
+
+Name: markers/symbol_right@32.png
+SHA-256-Digest: lVBkVjKd3BeUk+nI3iSjWsutFWI8PDnbFWQCgUqmojA=
+
+Name: markers/emotion_surprise@16.png
+SHA-256-Digest: S3mGFhCdwijYZMIjMthFB8kfoSb2K+nqlXVfhEOfQMY=
+
+Name: markers/other_phone.png
+SHA-256-Digest: KD/O6x6GuNCbdoQvO6CkgP7zMJ6kliRYlqtFk7L9cXM=
+
+Name: wallpaper/wall025.png
+SHA-256-Digest: VLSHRsUeeqHcn37/0ZfgKvd/XeH7RoWslQyblAci+zo=
+
+Name: markers/week_sun@24.png
+SHA-256-Digest: kTPRPxaDoMJYOK60kvIrFoeRpvYUdstwJb1Y2I9/dCI=
+
+Name: markers/star_blue_half.png
+SHA-256-Digest: yRTEC11/uv0d8wohcWb0PKsEZ9EugpoMSbw3Ok7hrAc=
+
+Name: wallpaper/new_wall002.png
+SHA-256-Digest: OtL7qbmoZdPofL71hjcA50fmbkl888ouh99NiCHDT8Q=
+
+Name: markers/symbol_pause@16.png
+SHA-256-Digest: rP82swHh2g5cqq2VGuLI7guDO8gjniaCbyIGun52JS0=
+
+Name: markers/progress_3o@24.png
+SHA-256-Digest: ISi8bziQfH6OiahdaXYoQBlobyktmzDfqUje1/8ijJs=
+
+Name: markers/priority_2@24.png
+SHA-256-Digest: YeM94JrHNDTrJEH5MoUyj8+bAI1ZEcEv4vs7iXAcybI=
+
+Name: templates/Cause and Effect.xmt
+SHA-256-Digest: pcx1bMaetaSnCHoO+0jRz34u9962rJBCbmi23N1bexw=
+
+Name: markers/other_yes.png
+SHA-256-Digest: ZPozN+4fdqHDB683HSBFsse90tQWE9upbY3WY5tkFvU=
+
+Name: wallpaper/wall005.png
+SHA-256-Digest: eNJOrESdi3iAlSi49toULvQgng7H3uNTyYWsVolrFiE=
+
+Name: templates/templates.xml
+SHA-256-Digest: 16IRIbA5zAXI+f2id5GYKEp0IyP9taV/bQrXkaavLNY=
+
+Name: markers/emotion_boring.png
+SHA-256-Digest: vSQX48OFkvnXvfGEL7gWgJgvwCjaUZkjjqyzpBF/Lr4=
+
+Name: markers/week_mon@24.png
+SHA-256-Digest: EzUYdSf9dvLO8/dAl9HUjyKCL+rAW+RWh17lveXLijU=
+
+Name: styles/styles.xml
+SHA-256-Digest: qHWglkgDLYTbUm14V3o8y1UBIxlPx/GtAOYUtmE/mUg=
+
+Name: markers/symbol_plus@16.png
+SHA-256-Digest: CnsJxiVsAuo7kB0zUBSfF1hsUBYdoCxBGMoPKYqB0n0=
+
+Name: markers/flag_green@16.png
+SHA-256-Digest: jDA1pDieAfqacPGwicR6yA1gUmX7C4Ms0icPHvEw0nY=
+
+Name: markers/progress_7o@16.png
+SHA-256-Digest: Rhx+02nigreEI8Xbt6lm9Gad8ZzOtR3wwlJCIIUAenA=
+
+Name: markers/flag_red@16.png
+SHA-256-Digest: M3g5qryI44W7eoTvV8iByTq23H8GdGkNbVH6+N5bGH0=
+
+Name: markers/arrow_up_right@32.png
+SHA-256-Digest: pyCTJaVnuaa7tiMy4rBTy2rHjgdl7Nui9MLh4ltjqCQ=
+
+Name: markers/arrow_down_right@32.png
+SHA-256-Digest: TAdDBIZDlX98iiux/rdQfRHxlCWzqEU8DiHzT6GNKRI=
+
+Name: wallpaper/wall027.png
+SHA-256-Digest: agKzYcIg/qPG3+kmsWphjYi7GOlPfcdMhOKiq/qLoJs=
+
+Name: markers/symbol_minus@24.png
+SHA-256-Digest: 4rxajZbLl93ujAdU2OWMh1pIVR91dKNW1+kTKOYTlNA=
+
+Name: wallpaper/pattern/p1.png
+SHA-256-Digest: KH8vNLs7b/0fuybMHzKKUb4YUTQe3BK/VkKJoxMnJLQ=
+
+Name: wallpaper/1ajkkqfsu79gtbd788th0bagii.png
+SHA-256-Digest: ck4HVw4Z2lnkTGLGOB93ukx74ydwEXQ+sewAnKClkfw=
+
+Name: templates/Timeline.xmt
+SHA-256-Digest: 5Jj5KmpFMnAVNJeuJO+2RhfsG8Yv4YTZ9VMhVLe8p/I=
+
+Name: markers/star_green.png
+SHA-256-Digest: mjXFD6So5gPRnEEXFpeEhuH57he2A5QQHBpGTMqddoE=
+
+Name: markers/symbol_information@16.png
+SHA-256-Digest: GBqENP0XghuJ3aKA2lO/XV0A2Ng+TTMnjZIxcpAbLnw=
+
+Name: wallpaper/wallpaper/w11.png
+SHA-256-Digest: J7wUgUkSfgfs/8BarSOohYJYn3xAzDpEigCg/qgpBp0=
+
+Name: markers/week_sat@16.png
+SHA-256-Digest: /mX6kVpmvNDus1ySVz5kw32uNUYJ1bqHqCxafWJ8Jbo=
+
+Name: markers/star_gray@16.png
+SHA-256-Digest: KhcGfLXy2GrtE1DtFJBV/GPS5o26T5bxQl+1kctIQ9U=
+
+Name: wallpaper/new_wall004.png
+SHA-256-Digest: UR7jY6M/VgprH0bcAA5Ns8Css8Z6vNFZUO0MTm036bM=
+
+Name: wallpaper/wallpaper/w2.png
+SHA-256-Digest: xEqR4/0BfQ9lSTm2fUhn+chE2Ip2HtJncIHo5ud1Ct0=
+
+Name: markers/people_blue@24.png
+SHA-256-Digest: IGiDOmH3TBXmMf5L2X1/YA6am86kXEPGVR82wPWdjtg=
+
+Name: markers/c_simbol_pause@24.png
+SHA-256-Digest: hSEnFw61NzuC2LXRioHm17vrZVNj8RyflW0Weg9NM1Y=
+
+Name: wallpaper/pattern/p18.png
+SHA-256-Digest: kT5rIwPFUWFkJC2y3YJUhStcNu1V5tQwjcKHXeda5Fw=
+
+Name: markers/priority_5.png
+SHA-256-Digest: z3SsnowFnwLCNz5mOxztscePPrfKkZusjgtgplqmoeA=
+
+Name: markers/priority_9@24.png
+SHA-256-Digest: 05LTxFg1fcQqnTj7q2WZr9ws6yGLtEBofkdM/THQTNM=
+
+Name: markers/other_calendar.png
+SHA-256-Digest: EdR2lFJ//hE5YS4ZjVRSxyVa65SvqUP8DB2WZsMmdjU=
+
+Name: markers/other_businesscard.png
+SHA-256-Digest: beyd0f9kYIXidPFwwNACMk8kfeSgIP3gf1rby/9/SWs=
+
+Name: markers/priority_8@32.png
+SHA-256-Digest: WuA00g6qecG2Rs76CVajsEHajyvI72boR6h8HaktOd8=
+
+Name: markers/month_may@16.png
+SHA-256-Digest: 6EyTnNs2HyEpKg79ePd21xVectSkCMD/Ce9lMUmgKIg=
+
+Name: markers/priority_7@24.png
+SHA-256-Digest: llupJ2fVc8v2st57a/zRNNdqYovkRT7tHsc6UtUPcNc=
+
+Name: markers/people_yellow@32.png
+SHA-256-Digest: GANJkFsiLZknEVg3mXOojo1SEK68HYfhQR55XeOV/1M=
+
+Name: markers/flag_purple@24.png
+SHA-256-Digest: D45P5Lig0wMMWAv92AMtfUtQJEU7sHqg/9kwqtEKQdI=
+
+Name: markers/month_oct@32.png
+SHA-256-Digest: /kwfieJS7eN4g9QEjXwpG62a5/RfC3oU4d2H8byk1Gs=
+
+Name: markers/week_tue@32.png
+SHA-256-Digest: rfbwWTyG/Bbi8JQgbYnsGPiekLJmWVxPVtt1zc9HS1s=
+
+Name: wallpaper/3a4piundnj5sv8ck9veaajc0d2.png
+SHA-256-Digest: /5pJhYz/B+T+BV9HcSLcPn8wL5WRGRXeGecmYVRBXpA=
+
+Name: markers/people_purple@32.png
+SHA-256-Digest: T4V/GA08m7p5RE8oPHNrWT0gOkD9Psna7lu8RSef4p0=
+
+Name: markers/priority_6.png
+SHA-256-Digest: 9hxz4BzO5vapb6v+Wu08iQbj1D0z1kgVQalhBnwAtEc=
+
+Name: markers/other_question.png
+SHA-256-Digest: hjqPHsXSuyQxS/8QU3yZz4j5RHJ0xyRXIbE6wQIE3Fw=
+
+Name: markers/star_red@32.png
+SHA-256-Digest: jXHSyd7P9aYWm2wpwMS6fOUu5zUMxQqEsxXmJP8cBBA=
+
+Name: markers/arrow_right@24.png
+SHA-256-Digest: /k78G/mZe2URYbspC2B5wZ51Z5Chl5r28vFLIBrrEMk=
+
+Name: templates/Project Status Report.xmt
+SHA-256-Digest: QgXJyMcEBUN8qxIi/6rDStrRxRVZScPv3vF9k936590=
+
+Name: templates/To Do List.xmt
+SHA-256-Digest: Sfeq5RFqSxOHXvdPjjUPmC1BMCrSze73ZBliVEvZojA=
+
+Name: markers/emotion_smile@24.png
+SHA-256-Digest: z9rTsKnQLak1o7cxrZSBQ3n/XyOyp/KbPhFFhkhpRDE=
+
+Name: markers/progress_done@24.png
+SHA-256-Digest: XD4vVjl24FAm0fxIPMsKMdOGRgpHllUkawmNPAdvudk=
+
+Name: markers/progress_1o@32.png
+SHA-256-Digest: wZC73aCLgnREFf2eyeOLbrlKtsJRgMXo51HigZGzlfE=
+
+Name: templates/Personal Management.xmt
+SHA-256-Digest: AsnCX4uT1FSdtgX1VTVGTzeITiqpkOGoD7bBFgaoDvM=
+
+Name: markers/week_sat@32.png
+SHA-256-Digest: TyehS27eS2b/cBH13HgiizmwnCPNuzfOwX1Bed+wdcM=
+
+Name: wallpaper/1hdjldh6fren63lcb0ib8e4274.jpg
+SHA-256-Digest: 3cIjSXICJ+wcG3IJXxCXTagnaGRZ8nbh6Tg5n6vOR2E=
+
+Name: markers/flag_blue.png
+SHA-256-Digest: vWQiDDAJdN/gnJhSPCApFShNQVL8RknvmrXkC4Z8gBg=
+
+Name: wallpaper/wall021.png
+SHA-256-Digest: aXCG/EBXwknhv7sY1IayTQDFiwG/81dPvS6ApOcPBy8=
+
+Name: markers/arrow_down_right@24.png
+SHA-256-Digest: RFlMiaiac9CJg1OhxQHYh/p1GFCWh3LQihku9IFy7iw=
+
+Name: wallpaper/wall020.png
+SHA-256-Digest: uqPKICiQMhdsxGA/0debPlRSIxgblpS601bH+USTG78=
+
+Name: markers/c_simbol_question@16.png
+SHA-256-Digest: LbSUGtddG7yiO4jYAsLSz9lgZ27uMIDR13bq0pFwYpM=
+
+Name: markers/week_thu@32.png
+SHA-256-Digest: XrmPVrvW3PUpNu860e94bTlU0frvjJmnp8DXY+V3npY=
+
+Name: wallpaper/wall029.png
+SHA-256-Digest: HJnokk9FGgViefYH8AYzk6I2sACjdDVCm9p+AuTZJ5o=
+
+Name: markers/emotion_cry.png
+SHA-256-Digest: mv48E8OzQtJmUGoFHDMJs6k76CyVMle2RKZ9g65+jdI=
+
+Name: templates/SWOT Analysis.xmt
+SHA-256-Digest: HRcpdHLGf84fZTIURkGujCcs5PWh05nGgomY6DVvwo8=
+
+Name: markers/arrow_up@32.png
+SHA-256-Digest: v48chOrZPwsjZ0i+iThijDb/yZ+TCYxDxJMn5xfNRvA=
+
+Name: markers/emotion_laugh@32.png
+SHA-256-Digest: em4yOny65UiaupZQoU80vC9KhF6TfPvbfIbFUTz+k5M=
+
+Name: markers/progress_5o@32.png
+SHA-256-Digest: MG36RKQrg6xrGK5wpxhOL0mdWGYvBute90KV1JZUIsA=
+
+Name: markers/other_print.png
+SHA-256-Digest: m1pXPcmkEgDbUHK1BUDm06ZdovHwYc1lb0RmqrTT4TI=
+
+Name: markers/flag_yellow.png
+SHA-256-Digest: t4aoU9Bg1074Dha1qHMT006+n3SXB16lLIOybJZotnw=
+
+Name: markers/priority_5@24.png
+SHA-256-Digest: PrmC7aSyKBjL1YLtsMV8xCef9wcpeMZWKNgum7gHiIA=
+
+Name: markers/priority_9@32.png
+SHA-256-Digest: IfZgN8P1aiukR879C2c7yY0nkt50Xydic4z/7cW3ZVU=
+
+Name: markers/priority_4.png
+SHA-256-Digest: XlQSoBh47g7Y8gQzgGzAEiBh0PtiS/uw011lM/ghxZ8=
+
+Name: markers/c_simbol_exclamation@24.png
+SHA-256-Digest: Pn4L6fTXMNJGWI21f2UWgLp7gvUpBuepVI9wBSYR3mI=
+
+Name: markers/progress_1q.png
+SHA-256-Digest: EFXjA29uzxKhctcTiAh6+a4pFxB30/8eZ77xTu6T/os=
+
+Name: markers/c_simbol_right@32.png
+SHA-256-Digest: BtBkWMMY1aFmGYloqQ4ouUn6K+4EzIPKrHrtOyRqEvk=
+
+Name: markers/priority_5@16.png
+SHA-256-Digest: fjLOrFaSq7HHbgej6ob/D7ZpDYLA2rUFtKko5BWwQy8=
+
+Name: markers/people_green@24.png
+SHA-256-Digest: VIEOIPAmaRvOEwdmYUnziieI6cVC8BZ7fHvIRUP0wMQ=
+
+Name: templates/Meeting Management.xmt
+SHA-256-Digest: cTzN0sv5evduaofgjXxfKvzawT4Xlf+IXjnncIyLM/8=
+
+Name: markers/emotion_angry@24.png
+SHA-256-Digest: NHhi4qDXLFT3DusUA9PtCliKb/cqXeDWcnG7n8AHSME=
+
+Name: markers/progress_3o@32.png
+SHA-256-Digest: ihKWxEyrmTeWzNDuEN/8yrVK6wqvIpBZAlOvXNBzDR8=
+
+Name: about.html
+SHA-256-Digest: zIP/do0RthmafXjThr5FKRgwokiG8oPXBVIhy6B3atk=
+
+Name: markers/arrow_down_right@16.png
+SHA-256-Digest: ZeqNUwiTtu4EXH1OoHIwqIl6o5+h0A68ttkhFEARa5c=
+
+Name: markers/progress_start.png
+SHA-256-Digest: 4b93c4RuYDQOJqz9BIN3aWyNsqTHoCSJm9svQ7DiU+U=
+
+Name: wallpaper/wallpaper/w7.jpg
+SHA-256-Digest: 3cIjSXICJ+wcG3IJXxCXTagnaGRZ8nbh6Tg5n6vOR2E=
+
+Name: wallpaper/pattern/p9.png
+SHA-256-Digest: LxoeC6cO1u5Cq7sn2aUPfEyd/G8m6yoPP+rBPA6bD2U=
+
+Name: markers/people_orange@16.png
+SHA-256-Digest: qnPzLidiwT7T01FnA8/Nzqwf4MszJSJICwkPAdlZlWg=
+
+Name: markers/month_apr@32.png
+SHA-256-Digest: u4OHg69gVus25AA2XFMB8FAcwcdxJk3l9IJf7dTVTXE=
+
+Name: markers/emotion_smile@32.png
+SHA-256-Digest: ju/VUkhKIXIeIwPpKfIxUte9Z/XWnqzh+szIOjvAuPc=
+
+Name: markers/star_purple_half.png
+SHA-256-Digest: H/i0T+lcHsqESNkdNtxHkIzh5LILYrp70rUfSGBK3e0=
+
+Name: wallpaper/wall012.png
+SHA-256-Digest: KEnDEHVQ56e0Qo6NMvaoPdsPeqeXnHXzEUyjshUq68M=
+
+Name: markers/other_social.png
+SHA-256-Digest: FsdJRkG6C2+Fvrx+yaHD4F1bYktYsWvlVKWYIJsLzTI=
+
+Name: wallpaper/wall023.png
+SHA-256-Digest: JFzyYKolcNYzVeabBKBAsHI7n3zFUMoM2LlaOMBjfPQ=
+
+Name: markers/arrow_up_right@24.png
+SHA-256-Digest: XiAAlTedEVPxLIdqbEz/ZtNqJVVQL78sybyPa54zP2s=
+
+Name: markers/priority_3.png
+SHA-256-Digest: ZpA2NFyOmcgXMi55ayJZRzve3O+vbJ3iQcM4JSpp+zA=
+
+Name: markers/arrow_up_left@16.png
+SHA-256-Digest: YPm/E9r+XES8aLpJ6JbrIcSCEeuc1GIyrYK4AhrsztE=
+
+Name: wallpaper/wall024.png
+SHA-256-Digest: oxU6KqR3h2l/W8gSiepm7j7zDDEYisIN8y+tDqqcHuc=
+
+Name: markers/star_yellow_half.png
+SHA-256-Digest: u0awAvr74Bosps/NAtojiEK/f4Wn9YcKtJ3vOhRodUc=
+
+Name: markers/other_note.png
+SHA-256-Digest: tRfNgbZJ8IWJBfIEMjazhV8VidYj0LyXGXIRH1BbntU=
+
+Name: wallpaper/wallpaper/w13.png
+SHA-256-Digest: Ny8TCNRpW/o9R0wD2NSYrOdI67FSOLegIbS4u18vGDY=
+
+Name: wallpaper/wall004.png
+SHA-256-Digest: 9S08dcin1yJu+3Epm1VAysNvaVUhMX6bE0uq34Tl8fU=
+
+Name: markers/priority_2@16.png
+SHA-256-Digest: PkSZz7NXrhkB8aDdh8BfWIrjEsD+YdjT+XBgZQdb/4A=
+
+Name: markers/symbol_pause@32.png
+SHA-256-Digest: 9qtcjUPSM3H8GMnHSuOeE/+r+riPZ6MLJgIuO7dpY8w=
+
+Name: markers/emotion_boring@24.png
+SHA-256-Digest: nsr7CtVU2fkLo45hZ1voKrtA+OKVOoisu5n1jX/tjQ0=
+
+Name: markers/flag_red@24.png
+SHA-256-Digest: vsGwh4oFboroAEdiYDNEb2D06o/KkhAlCbfrtVQfZ9Q=
+
+Name: wallpaper/wallpaper/w8.jpg
+SHA-256-Digest: fpNBDUyD+XtTsQJvBdbMVD2CgVB8TtgC8GvIdm6vzvo=
+
+Name: markers/emotion_surprise.png
+SHA-256-Digest: XPCoxGBVgBgD3hpZKRf0qPJxMkMZwVzstrN2STRL+98=
+
+Name: wallpaper/0blprld1cennpngtiieoo5cj48.png
+SHA-256-Digest: uPhUu0xfmJRXkEfwUcTj4f/iNSrCiZrOEUPXtENGLLU=
+
+Name: wallpaper/wallpaper/w9.png
+SHA-256-Digest: cxiBB/SLvuBtouGlXRABbaqkIMS6oQrP7iuFgxCRWkM=
+
+Name: wallpaper/pattern/p13.png
+SHA-256-Digest: /5pJhYz/B+T+BV9HcSLcPn8wL5WRGRXeGecmYVRBXpA=
+
+Name: markers/c_simbol_minus@24.png
+SHA-256-Digest: M9N5zn4rPulbwaKJTR3W2barrXR6OIkofIgbO2FyF40=
+
+Name: markers/month_dec@16.png
+SHA-256-Digest: eXXO2+IiSQLpJyCZuPYwwiN7W0FS4PUlnF1xTMGVFuc=
+
+Name: markers/c_simbol_information@16.png
+SHA-256-Digest: +ZezmWh9WhxtkYXLjQ5OYdePWZZ4UL7PJVXPnpTZ3TY=
+
+Name: markers/arrow_refresh@16.png
+SHA-256-Digest: cas5/8vJu4oKNhLk7ZScR4QsAKDabUBjesp49t2h+20=
+
+Name: markers/week_sat@24.png
+SHA-256-Digest: 6CpydSOVhTTknr8qW9364/vmP4UEC8j4C8j9OHsTrk8=
+
+Name: markers/month_jan@32.png
+SHA-256-Digest: 9sDdOHT3+l4yIRufzERNFzy1bP0GG3aOnjTfiMRClaI=
+
+Name: markers/star_gray.png
+SHA-256-Digest: VBhzNfr0Sh4S7Iv70Y7xu5FBywX0seePnpwRN1taq5I=
+
+Name: wallpaper/wall016.png
+SHA-256-Digest: GkjP+Cca2/vY6GEUojlGlcH82kptTUXG8iyTJmsf05Y=
+
+Name: markers/priority_6@16.png
+SHA-256-Digest: avAHQwxcc68+FBQyjSvcsXiilzgyBenpgPuhV68siSc=
+
+Name: markers/month_feb@16.png
+SHA-256-Digest: eZ8eS8rv6lccGG/bf4+6a/qwXvYb3gNH9hBe30vUWRM=
+
+Name: markers/arrow_left@16.png
+SHA-256-Digest: rtDctzFLq33v9BG3xvcjEyFDJNCg8uq2rwHzsomdxPE=
+
+Name: markers/arrow_refresh@32.png
+SHA-256-Digest: 0infXrKLObQo/nIqtCsRql0x3tFpy8Z4IPfq44TbxV4=
+
+Name: templates/Travel Plan.xmt
+SHA-256-Digest: VYfOXo0hzkxBnkEtR5p3vOWsx8c4VqSiHBC+9yUfez0=
+
+Name: markers/month_sep@32.png
+SHA-256-Digest: FfK8CukRDH2f3Xafvc3vZi/mBZPiPRPL9dBvl+m+ADc=
+
+Name: wallpaper/wallpaper/w16.png
+SHA-256-Digest: OcmmeG5V6SLn23VlU+IzgUeV95vLaYyEp0Pd/d/vFy4=
+
+Name: markers/progress_3q@16.png
+SHA-256-Digest: x+16FtTpyRZCUsKW2ya7nlNMFlwbtNsXV0krXa22Jl8=
+
+Name: markers/c_simbol_plus@16.png
+SHA-256-Digest: Tsohzn4WNjy5wxWwFzW41OiLKZBxb++NAuYMwGpcZKU=
+
+Name: wallpaper/pattern/p11.png
+SHA-256-Digest: sp/i3eSN+4YGeYUxb2OGSFdObif31AHH9/LuHMcFmGU=
+
+Name: markers/priority_9@16.png
+SHA-256-Digest: ygRuNGH9SnjYJ3VxxAc55OyIFBD0B8frD7K6oobXUCk=
+
+Name: wallpaper/wallpaper/w15.png
+SHA-256-Digest: LyvfqoCDmc0rZa9f8fg9cb9hMmsxnIM5I6HrlXqomj4=
+
+Name: wallpaper/pattern/p10.png
+SHA-256-Digest: XRBPk2cieWzAaeTXvDS/baSo3cpSdHbakIZQ+Lw+k94=
+
+Name: markers/progress_1o@24.png
+SHA-256-Digest: OSPhgTn8NtVG72nMWTb9vgoHLNNb9eCciqu6s2r+SUE=
+
+Name: markers/symbol_right@16.png
+SHA-256-Digest: iUkMaSR94WY4U50XjuUBD7kb0rMH/qmtisXz4OzHsNU=
+
+Name: markers/other_no.png
+SHA-256-Digest: xwVEUH1D0sbQxK0z5rwJacsopRrnD+qKgM1fu4svRVI=
+
+Name: markers/arrow_left@24.png
+SHA-256-Digest: tZ2dJG8jEF5J/VNN7S71jIkBvhm0INIPYDWTIYAAbxg=
+
+Name: markers/c_simbol_question@24.png
+SHA-256-Digest: WGEimglaH3ix5HqoV53Ge3mrtCfU5BLDZdby8ExsShM=
+
+Name: markers/progress_pause.png
+SHA-256-Digest: Dk+mbL5SjOD+8LijpaQp28qWEnlmkMNHqkfSpzBWGaA=
+
+Name: markers/star_blue@16.png
+SHA-256-Digest: komX2fySG3+tkrssQNSgWeSDUxUI5fiRQwyzv7wMD88=
+
+Name: wallpaper/wall013.png
+SHA-256-Digest: Wmg1B/lvgJYVkesaGecU+niT+tQif3uVGFYPSrxRy4M=
+
+Name: markers/progress_3o@16.png
+SHA-256-Digest: jGnHVzHBwXZTbjF+5rfkYXQojQxyx5VbvsELWCrg+yc=
+
+Name: wallpaper/wall001.png
+SHA-256-Digest: 8XkjGqGRagX4XpoQfqZI6ysT+V3xd8TOI2WsHTz3ugc=
+
+Name: markers/star_gray@24.png
+SHA-256-Digest: otPZqNA1JldgGG/Q5iSgBu37nGJY3PYE0BPVe8Xnbjs=
+
+Name: wallpaper/wallpaper/w10.png
+SHA-256-Digest: iojEmjgb2HGKtCs/0aagsD18Lwh2F50TPPwg/EYKi2U=
+
+Name: markers/flag_red.png
+SHA-256-Digest: v2jFhndzn1/G7QbtqHUPcEx/iwp4F9Go+zC1sSbvefM=
+
+Name: markers/week_fri@32.png
+SHA-256-Digest: ROmvIySYpBvECJWV8HbXzUCuMuKq8gCX+eFlxLExR6A=
+
+Name: templates/Marketing.xmt
+SHA-256-Digest: UPbOY3Guu4F9dG/fuwhl6potO+LgyS7N6RX/fx+JAlo=
+
+Name: markers/star_yellow@24.png
+SHA-256-Digest: kB4OnTlTHXlGv85m87qDZB8LrqJhTjvBZrCh8Ag1qa4=
+
+Name: markers/priority_5@32.png
+SHA-256-Digest: vKvS37cruca/q7HLqQmtU4xsR51kVvJl+3wSUBJGGbY=
+
+Name: wallpaper/0bq0f5gfipor6kpheuimvgdsct.png
+SHA-256-Digest: XRBPk2cieWzAaeTXvDS/baSo3cpSdHbakIZQ+Lw+k94=
+
+Name: markers/flag_green@24.png
+SHA-256-Digest: x2o17aIuvovAoVikuy32Aue0ZjaczI/DBDkqKf0kYOM=
+
+Name: markers/symbol_minus@16.png
+SHA-256-Digest: WROXc8jJzoZAthnnsQaY6Sriln0d9ddalUkqaY/s5+c=
+
+Name: markers/progress_5o@24.png
+SHA-256-Digest: EFMMnMKthovhStJByuzvGDBn3a3spXOuFb14MXw+Zq0=
+
+Name: markers/people_purple@24.png
+SHA-256-Digest: ZsvJtqzzQpI2XuU/yMNMYILGrJeoLSS8FcYThPXCh18=
+
+Name: markers/symbol_wrong@24.png
+SHA-256-Digest: +Ne7MBAZSj1D1ZUksNVKTd2J+i1lFZ/42boHy44q/sY=
+
+Name: wallpaper/3eoo54itkbbt6osro6m0qtohoh.png
+SHA-256-Digest: 9vQqpmHLU+zUuKJ9h3WxATctYvI+ATZApmf1tsuA01g=
+
+Name: markers/arrow_up_left@32.png
+SHA-256-Digest: 0xSmiZeoZ2nFRcPx8sbsYXQy3hsMXnzmKQ3jS153mPk=
+
+Name: templates/Preparation for a Conversation.xmt
+SHA-256-Digest: k013HUQYHOpWqJEIoE4Ij1dNwX2ZU4DQOdcdhX2GOiY=
+
+Name: markers/month_may@24.png
+SHA-256-Digest: fseG4Ib+tGeFFvXfN9VmETRxCoaIid26/+DYKVXuUog=
+
+Name: markers/progress_done@32.png
+SHA-256-Digest: pKSITqFQ7vZylT+NRFZ95sIIsoqRDng3Q5o1JDAl/mU=
+
+Name: markers/star_purple@24.png
+SHA-256-Digest: iut3R4jiBrJMYX/A+MrWqZOQLGkVzRWXG/RYb82KjqY=
+
+Name: markers/priority_1@24.png
+SHA-256-Digest: 0T4YSkLiFm44ZJxRaYYi/9+7caynUAC6BLjT4If9d7c=
+
+Name: templates/templates.properties
+SHA-256-Digest: czN6BbWUua0Ng/j8PYrf4snba/SpQ9ptnqh8Cmd3lhM=
+
+Name: wallpaper/pattern/p17.png
+SHA-256-Digest: AHpN6IaCa6BHKDZ94rErAtS6JEiF7gHj+K1bmK/OoZo=
+
+Name: fragment_resources.properties
+SHA-256-Digest: iOJCajqD0/KmVHhcn+CapTdJl4niKb/45xrL1+5YHw4=
+
+Name: markers/people_orange@32.png
+SHA-256-Digest: JRVE96H8esmSGaW0y2oa20zTZ05fN0niEnbrehhqclM=
+
+Name: markers/progress_3q@24.png
+SHA-256-Digest: SSQYEswEcq7DJz3xNvLVBiq204T944a/RgagGRNhbt8=
+
+Name: markers/arrow_down_left@24.png
+SHA-256-Digest: aeZpAOlC2HGj+/0m+W9nuEDlerVCq8GpIJkagNV9KlM=
+
+Name: markers/month_feb@24.png
+SHA-256-Digest: 2exRQLqJ9aQUIPrJlZnjIUw2GBTfE2mTYgW2LFx5bKM=
+
+Name: wallpaper/wall007.png
+SHA-256-Digest: qX2jFtM/Pps3xosa9o0SRk5+PzXYvSgE/1PyeydxI/k=
+
+Name: wallpaper/1t6e6lub2d37a5rau9fbvgat7d.png
+SHA-256-Digest: J7wUgUkSfgfs/8BarSOohYJYn3xAzDpEigCg/qgpBp0=
+
+Name: templates/Org Chart.xmt
+SHA-256-Digest: s8pjDDowp3qNr2VIa/k/zMom5jzW5FIZxmB8Y4rupWQ=
+
+Name: markers/people_purple@16.png
+SHA-256-Digest: SLwH5hTKXqfwtHwZ/EUBrvRvl4XQ2qTlIQsMA+bCXE8=
+
+Name: markers/other_bomb.png
+SHA-256-Digest: 0rEMVk00zmZqJQFv5QjhTlJkxrGsqCqunFgZbl9qX7Q=
+
+Name: markers/flag_gray@24.png
+SHA-256-Digest: mBMBzn6fUxFvczLy3V6Lay8AO7DlvrIkQqu75CIQMDI=
+
+Name: markers/arrow_up_right@16.png
+SHA-256-Digest: 9GFspguOVoo9ikgm4SWS3EioIczYms06BVp37nRn8Ac=
+
+Name: markers/progress_7o@24.png
+SHA-256-Digest: zMTqhn3+Sz/CeZoIpnquZufxbFQ7hsI2Jk/W+uKoGE8=
+
+Name: styles/styles.properties
+SHA-256-Digest: pLoskllq0R1HQywhaKHtKDCiTMs//cLpP4VH1W9zgrI=
+
+Name: markers/progress_pause@24.png
+SHA-256-Digest: scStcOrQypxPKXwvViRA+rKG3+o+IrmdJGOWRMkVez8=
+
+Name: wallpaper/new_wall007.png
+SHA-256-Digest: RvnJSJZnBdk42Byi3FzFzPqxDOuB2KLI011gt7xyUg0=
+
+Name: markers/arrow_up@24.png
+SHA-256-Digest: xsesDYqlR8V9CcGr4vheuLInmyY2uuYbPYezD//a3so=
+
+Name: markers/flag_blue@32.png
+SHA-256-Digest: pTm8Cr98u+La71iBiHbDNhW3ywOtXYLuIgCEB7JzbUI=
+
+Name: markers/other_clock.png
+SHA-256-Digest: n917kDWaYxeWdHdodkbzFwPsl4x2Bk7nvJSt7BGPLjI=
+
+Name: markers/progress_1o@16.png
+SHA-256-Digest: CgZH3bFT5Mp4HME1rXPoziq7ipesdKvpyvvC3lfVfbk=
+
+Name: markers/emotion_laugh@24.png
+SHA-256-Digest: djrb+0RNnxXieZZO3OV5oIA5lOW9CbACiRC2TCWMWRQ=
+
+Name: wallpaper/1f8ptb5pjn9ujj4vefr246j8qd.png
+SHA-256-Digest: P0UTrLDjrGaqDrPdnFEKvGisiVVmxwcrrz5J1p8MBIM=
+
+Name: markers/c_simbol_plus@32.png
+SHA-256-Digest: 3GixKuRcX7GZd0zWSY1uAaW7caSElpXtIrfgLkYjyFc=
+
+Name: markers/week_mon@32.png
+SHA-256-Digest: KwwVx8KWd5W1aDcJJJsS8aks72t9qU6pe+//gOQ2nv4=
+
+Name: markers/flag_gray@32.png
+SHA-256-Digest: 3oOfj69b7oJkP95IWsmpXfp7WkCBvEjL2gDZREUGNdI=
+
+Name: markers/week_sun@32.png
+SHA-256-Digest: wW7mqxutB828qLcEiVQwqgxOBToKbID2hxee37nXMB4=
+
+Name: markers/progress_3q@32.png
+SHA-256-Digest: ogpkP2GvoLx178p6UxfKcWGzBhx5JN5oLkbVSA/YOpY=
+
+Name: wallpaper/wallpaper/w3.png
+SHA-256-Digest: V6cOLwqxFYqRucippVC6oUYW9nwC1or8byRaQMcm9Xk=
+
+Name: markers/month_feb@32.png
+SHA-256-Digest: cQDk1RzV5RWQCztVMSSkvdQ8vZ6hm2qA0YDj6agTunE=
+
+Name: markers/emotion_cry@32.png
+SHA-256-Digest: 7qOstFER7GtSJYDXXm0oWqJ918cU6zAcaPih1xVJkB0=
+
+Name: markers/progress_7o@32.png
+SHA-256-Digest: PRZQfsNITo035FceN0ZC/c/u7fTuDpVKcqF9t37Gv6g=
+
+Name: markers/people_gray@24.png
+SHA-256-Digest: NX1Pi9FWVDzRtxvqftp07vmFLp/qdn1kt8gWcHsyaDE=
+
+Name: markers/week_wed@32.png
+SHA-256-Digest: D5jFrWX2mvOWQlB+LOzJZajywNZ/MrUmyCQtLEjD9dM=
+
+Name: markers/progress_1q@32.png
+SHA-256-Digest: CpNsV1XkASO7IAaFqGa8t+XLFhajnzxhJhJneHCm2jM=
+
+Name: markers/markerSheet.xml
+SHA-256-Digest: vIe3U0PCmpITegzU9omglUXx7sSMu96nta19s8SV6S8=
+
+Name: wallpaper/wallpaper/w12.png
+SHA-256-Digest: vFSTX0oezvB1i9xvY1aOiHRnhoTn1LOKU28LR6heMew=
+
+Name: markers/flag_yellow@16.png
+SHA-256-Digest: Wzh4gnXm5cx2+JGLbF44EF18vLMoElQz7NlIqvZ14hk=
+
+Name: markers/emotion_angry@32.png
+SHA-256-Digest: zW2+kKX4KA+Gvzq2cS494gwvxns6/ri/oE7+H4mVXKs=
+
+Name: markers/month_dec@24.png
+SHA-256-Digest: 95yQ9WDe1Jw3RxSeIaT5lFaU2zHL3pexag1phuXP+WE=
+
+Name: markers/emotion_angry@16.png
+SHA-256-Digest: K3dSLbPufHaedwg1FgnsonhY36wlK5MnZjw0/tSRhys=
+
+Name: markers/progress_start@32.png
+SHA-256-Digest: Sj5N5UN5zHo2DvK+KYstWYkDJnV7059MOmsbUUsvKgY=
+
+Name: wallpaper/wall026.png
+SHA-256-Digest: M4+GC9X/U6pe6+0l/a+tGxxER6rhd1b6psQ5XSTrud0=
+
+Name: markers/progress_cancel.png
+SHA-256-Digest: jHSWijccbl0WRAJY7DVe7HGk67uvWfOKo0IemE24sfo=
+
+Name: markers/month_jan@16.png
+SHA-256-Digest: BF5eNJJ+nJwaU7dY96+kHEOe3Y/hD8rVc9jim8vL86s=
+
+Name: wallpaper/pattern/p8.png
+SHA-256-Digest: ZtpPbcc3c0589+p/ikaHIrY4AeHzf4Y06/uAaRXEcUU=
+
+Name: markers/other_unlock.png
+SHA-256-Digest: hCBMMvp7t5mCgtOWmCTLjIdZdh2wph9vHAl+WMdhfdQ=
+
+Name: markers/progress_5o@16.png
+SHA-256-Digest: Ww+eSnce+NEBVIiXjwLo3qIQa9r3XEFwIW7FH001Ssc=
+
+Name: markers/star_purple.png
+SHA-256-Digest: PLbr+AbP1QoQ9OVUG8GqjwKqY3yi4hSXFt1g0LLnpG0=
+
+Name: markers/priority_8@16.png
+SHA-256-Digest: cA6Qsxat0A3OZJYJ0mXHMNL14BfvSUTowafqKKRELzM=
+
+Name: markers/arrow_right@32.png
+SHA-256-Digest: We4JyLZYRPZcN3wr319D11tMo3bdp18hfrW18ICABgA=
+
+Name: markers/arrow_left@32.png
+SHA-256-Digest: IHCusjELUvH57gTdw8VXy4k3D2MMcU4MsEW8kEf0z+A=
+
+Name: markers/emotion_laugh.png
+SHA-256-Digest: LX/SHw8W6IdNJNbMwJGT1zbUTiTb/lTt5iq/vyqjmI8=
+
+Name: wallpaper/wall014.png
+SHA-256-Digest: Lyw6amZ+6OAc/fGYp7sBkhoSZfXcsgnpzbuZDuNCJzQ=
+
+Name: markers/month_nov@24.png
+SHA-256-Digest: S8qKr7rYRBxpYykvBpIYWBwhGP+Y643vfQrk+NNrLbg=
+
+Name: wallpaper/wallpaper/w14.png
+SHA-256-Digest: NRVayz/9HIryy9Yyum5T9pnIg/a5TvvcCQDj4MrDFoI=
+
+Name: markers/other_coffee.png
+SHA-256-Digest: GgDMKTovZ9rzZU9PJAzVx7uJXCNANvk7EA1esGJd8Z0=
+
+Name: markers/star_gray@32.png
+SHA-256-Digest: yfFf3QjOW7shsdv4sKIojwVxa3DnbLqRha/yoIIat08=
+
+Name: wallpaper/wall017.png
+SHA-256-Digest: C5gXHxCv8Ms16nwh884KE9DgbDWjnl7Nxfz7cMruIv0=
+
+Name: wallpaper/new_wall005.png
+SHA-256-Digest: D25TDoYRJegQGdn8NEHWLt1Y6NZaHAm7HmbPDR5734o=
+
+Name: markers/progress_done@16.png
+SHA-256-Digest: 4i9JIw+Ti08syzOG68et27FLpkYlTQZYk1bu+Sc18VI=
+
+Name: styles/defaultStyles.xml
+SHA-256-Digest: NvTLeyyuwjpbHMI2kQ41XKsdYao338oyW4ed2R/gNVM=
+
+Name: markers/month_apr@24.png
+SHA-256-Digest: aV3ByF2Xd35EOzDvF+U6xx8TBtzEGZRPK4m9OTkLxHs=
+
+Name: markers/week_sun@16.png
+SHA-256-Digest: U+2WQZqgRPHnv3UpyegM4x9aEaacVKbetbCFdmYibf0=
+
+Name: markers/progress_1q@16.png
+SHA-256-Digest: 4a+rsYZTM1Zs6sTCUSBbf5yhX2htQQaAOimTiJowUR0=
+
+Name: markers/other_buble.png
+SHA-256-Digest: LUh66yJhj3RlrzI456OCFLpZEwToOLX2fD/Pn1TalUM=
+
+Name: wallpaper/wall011.png
+SHA-256-Digest: QQUcfanM/iVV8x9J7THe0DD9qXHHQRwObBpV/K+hkK8=
+
+Name: wallpaper/pattern/p2.png
+SHA-256-Digest: 1q3NPB4Lq6uSSNJAkaUeG2u863qCvMaHpA3dVZo5wsg=
+
+Name: wallpaper/wall002.png
+SHA-256-Digest: ck4HVw4Z2lnkTGLGOB93ukx74ydwEXQ+sewAnKClkfw=
+
+Name: markers/c_simbol_pause@32.png
+SHA-256-Digest: rDIUmGllHIvCUzL4fdr/C73MBpK8F27i4Yl6Z0aVuT4=
+
+Name: markers/week_tue@24.png
+SHA-256-Digest: f19BWnTu4w2itH2MRvxH/C82FeuMsZpuDO1wm0gExS8=
+
+Name: wallpaper/pattern/p20.png
+SHA-256-Digest: 9vQqpmHLU+zUuKJ9h3WxATctYvI+ATZApmf1tsuA01g=
+
+Name: markers/arrow_right@16.png
+SHA-256-Digest: 2VJ2Tlx348XMS1KzJeMTsWZZwACqGXbeI/3GLlfLwQs=
+
+Name: markers/star_gray_half.png
+SHA-256-Digest: kMHtomHkCIo1QM0QD7BcA8AMFCmin89kQSCKjjLUwrE=
+
+Name: markers/people_green@32.png
+SHA-256-Digest: vwOzzj6oeqqsGV5Z1HVdYN8YAe3rL3iA4pDVYoi37SU=
+
+Name: templates/Project Plan.xmt
+SHA-256-Digest: v2lhqxSnxdqqEjlyVD6I2FqFQjVhA6K7D5GuHlVTg18=
+
+Name: markers/week_tue@16.png
+SHA-256-Digest: tiN/ziJrG8z1d8DQpjctX2JdQSGzAfHlUhnz6zcPmxU=
+
+Name: markers/progress_pause@32.png
+SHA-256-Digest: w4NGEHGNPJuLFo4Xr2LlHGvRz+t1njxcmZuwdTqMCsc=
+
+Name: markers/arrow_down@32.png
+SHA-256-Digest: EgnvrJ2AQiE36Vuq6ApEtMs09pv8A0oFQSTR36SXCn4=
+
+Name: markers/people_red@16.png
+SHA-256-Digest: YHlh7b137AGnVgyRJc5jt8aUywTeXwIx2fFCn2NhQwk=
+
+Name: wallpaper/pattern/p19.png
+SHA-256-Digest: 605ZOH7CF/1S44cNNpAvL1uPqOj+4Ym3cx4ncPZwy/k=
+
+Name: markers/star_green@32.png
+SHA-256-Digest: opRPt7/4/7unib4flMwklSljTEuVfrzGDMoWaQ4yW1s=
+
+Name: markers/month_aug@16.png
+SHA-256-Digest: fWtUaUUZXj7LpzeYk5lR04x402p9W+5cTLkjNyq/BIc=
+

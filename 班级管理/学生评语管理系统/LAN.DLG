@@ -1,0 +1,33 @@
+[Info]
+Language=Chinese(Simplified)
+Translator=Wu Lianmin
+Codepage=936
+MultiByte=1
+Version=7.0
+[Language]
+;Dialog Title
+DlgTip=提示
+DlgDebug=调试
+DlgInfo=信息
+DlgQuery=确认
+DlgWarning=警告
+DlgError=错误
+DlgAbout=关于
+ReadOnly=只读
+ReadWrite=读写
+
+Expired=已过期
+UnRegistered=未注册
+PrinterNotInstalled=打印机未安装
+ErrorLoadingLanguage=加载语言文件 %s 错误!
+ErrorLoadingDll=无法加载动态链接库 %s !
+
+;Homepage
+HomePage=http://www.voguewind.com
+DatabaseEngineAddress=http://voguewind.com/bbs/dispbbs.asp?boardID=9&ID=56&page=1
+ForumAddress=http://voguewind.com/bbs
+UpdateInfoUrl=http://www.voguewind.com/update.txt
+
+;Database
+ADONotInstalled=文档库引擎未安装。为运行此系统您必须安装文档库引擎。
+DownLoadADO=是否访问主页并下载文档库引擎？

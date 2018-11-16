@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_home" component="et">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="U" ksoCmd="PasteAsPicture" idMso="PasteAsPicture" icon="PasteAsPicture" controlType="0" id="RbPasteAsPicture" text="@Paste as Picture"/>
+		<KxLegacyTriggerCommand hotKey="y" ksoCmd="PasteAsUnformattedText" forceVisible="1" aid="92000" icon="ExpandPasteText" id="PasteAsUnformattedText" text="@Paste as Unformatted Text"/>
+		<KxLegacyTriggerCommand hotKey="K" ksoCmd="Paste" icon="Paste" id="PasteAsFormattedText" text="@Paste as Formatted Text"/>
+		<KxEtPasteListCommand hotKey="p" ksoCmd="Paste" idMso="PasteMenu" icon="Paste" customTip2="sp_Paste2" controlType="5" shortcutHint="Ctrl+V" id="sp_Paste" customTip="sp_Paste" text="@Paste" rbHotKey="V">
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="Formulas" idMso="PasteFormulas" icon="PasteFormulas" controlType="0" id="PasteFormulas" text="@Formulas" qtspyName="Formulas" rbHotKey="F"/>
+			<KxLegacyTriggerCommand hotKey="b" ksoCmd="NoBorders" idMso="PasteNoBorders" icon="PasteNoBorders" controlType="0" id="PasteNoBorders" text="@No Border" qtspyName="NoBorders" rbHotKey="B"/>
+			<KxLegacyTriggerCommand hotKey="v" ksoCmd="Values" forceVisible="1" idMso="PasteValues" icon="PasteValues" controlType="0" id="PasteValues" text="@Values" qtspyName="Values" rbHotKey="V"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="Transpose" idMso="PasteTranspose" icon="PasteTranspose" controlType="0" id="PasteTranspose" text="@Transpose" qtspyName="Transpose" rbHotKey="T"/>
+			<separator/>
+			<command idQ="PasteAsFormattedText"/>
+			<command idQ="RbPasteAsPicture"/>
+			<command idQ="PasteAsUnformattedText"/>
+			<command idQ="PasteSpecial"/>
+		</KxEtPasteListCommand>
+		<KxEtCutLegacyTriggerCommand hotKey="t" ksoCmd="Cut" idMso="Cut" icon="Cut" controlType="0" shortcutHint="Ctrl+X" id="rCut" customTip="Cut" spaceHint="autocompact" text="@Cut" rbHotKey="X"/>
+		<KxEtCopyLegacyTriggerCommand hotKey="c" ksoCmd="Copy" idMso="Copy" icon="Copy" controlType="0" shortcutHint="Ctrl+C" id="rCopy" customTip="Copy" spaceHint="autocompact" text="@Copy" rbHotKey="c"/>
+		<KClipboardGroupCommand id="RB_Clipboard" refcommand="rCopy"/>
+		<KxClipboardGroupCommandWrapper id="RB_ClipboardWrapper" refcommand="RB_Clipboard" customTip="RB_Clipboard" text="@Clipboard" rbFileMenuEmbed="1">
+			<command idQ="sp_Paste"/>
+			<command idQ="rCut"/>
+			<command idQ="rCopy"/>
+			<command idQ="rFormatPainter"/>
+		</KxClipboardGroupCommandWrapper>
+		<KxEtFontComboboxCommand hotKey="f" minimumWidth="120" horizontalPolicy="Expanding" ksoCmd="FontName" aid="603" idMso="Font" icon="FontName" controlType="2" id="FontName" customTip="FontName" verticalPolicy="Preferred" text="@Font" rbHotKey="FF"/>
+		<KxFontSizeComboboxCommand hotKey="f" horizontalPolicy="Preferred" ksoCmd="FontSize" aid="604" idMso="FontSize" icon="FontSize" fontSizeList="6;8;9;10;11;12;14;16;18;20;22;24;26;28;36;48;72" controlType="2" id="FontSize" customTip="FontSize" verticalPolicy="Preferred" text="@Font Size" rbHotKey="FS"/>
+		<KxLegacyTriggerCommand hotKey="FG" ksoCmd="IncreaseFontSize" aid="135" idMso="FontSizeIncrease" icon="IncreaseFontSize" controlType="0" id="GrowFont" customTip="GrowFont" text="@Increase Font Size" rbHotKey="FG"/>
+		<KxLegacyTriggerCommand hotKey="FK" ksoCmd="DecreaseFontSize" aid="136" idMso="FontSizeDecrease" icon="DecreaseFontSize" controlType="0" id="ShrinkFont" customTip="ShrinkFont" text="@Decrease Font Size" rbHotKey="FK"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="Bold" aid="113" faceid="283" idMso="Bold" icon="Bold" controlType="6" id="Bold" customTip="Bold" text="@Bold" rbHotKey="1"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="Italic" aid="114" faceid="284" idMso="Italic" icon="Italic" controlType="6" id="Italic" customTip="Italic" text="@Italic" rbHotKey="2"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="Underline" aid="115" faceid="285" idMso="Underline" icon="Underline" controlType="6" id="Underline" customTip="Underline" text="@Underline" rbHotKey="3"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DecreaseIndent" aid="132" faceid="46" idMso="IndentDecreaseExcel" icon="DecreaseIndent" controlType="0" id="RB_DecreaseIndent" customTip="DecreaseIndent" spaceHint="suitable" text="@Decrease Indent" rbHotKey="5"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="IncreaseIndent" aid="131" faceid="47" idMso="IndentIncreaseExcel" icon="IncreaseIndent" controlType="0" id="RB_IncreaseIndent" customTip="IncreaseIndent" spaceHint="suitable" text="@Increase Indent" rbHotKey="6"/>
+		<KxValueCommand hotKey="a" ksoCmd="TextAngle" icon="TextOrientationAnticlockwise" id="TextAngleAnticlockwise" index="45" text="@Angle Counterclockwise"/>
+		<KxValueCommand hotKey="c" ksoCmd="TextAngle" icon="TextOrientationClockwise" id="TextAngleClockwise" index="-45" text="@Angle Clockwise"/>
+		<KxValueCommand hotKey="v" ksoCmd="TextOrientation" idMso="TextOrientationVertical" icon="TextOrientationVertical" controlType="6" id="TextOrientationVertical" index="-4166" text="@Vertical Text "/>
+		<KxValueCommand hotKey="u" ksoCmd="TextOrientation" idMso="TextOrientationRotateUp" icon="TextOrientationUpward" controlType="6" id="TextOrientationUpward" index="-4171" text="@Rotate Text Up"/>
+		<KxValueCommand hotKey="d" ksoCmd="TextOrientation" idMso="TextOrientationRotateDown" icon="TextOrientationDownward" controlType="6" id="TextOrientationDownward" index="-4170" text="@Rotate Text Down"/>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="DrawBorder" aid="1522" faceid="69" idMso="BorderDrawLine" icon="DrawBorder" controlType="6" id="RbDrawBorder" customTip="DrawBorder" spaceHint="compact" text="@Draw Border" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="DrawGrid" aid="1523" faceid="70" idMso="BorderDrawGrid" icon="DrawGrid" controlType="6" id="DrawGrid" customTip="DrawGrid" text="@Draw Border Grid" rbHotKey="G"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="EraserForDrawBorder" aid="1524" faceid="71" idMso="BorderErase" icon="EraserForDrawBorder" controlType="6" id="EraserForDrawBorder" customTip="Eraseborder" text="@Erase Border" rbHotKey="E"/>
+		<KxEtRbBorderLineStyleCommand hotKey="Y" column="1" ksoCmd="BorderLineStyleCombo" idMso="BorderStyle" icon="TableBorderStyle" controlType="3" id="rBorderStyle" spaceHint="compact" text="@Line Style"/>
+		<KQuickMenuCommand id="sp_RbDrawBorder" referenceCommand="RbDrawBorder" rbHotKey="Q">
+			<command idQ="RbDrawBorder"/>
+			<command idQ="DrawGrid"/>
+			<command idQ="EraserForDrawBorder"/>
+			<KxEtCellBorderThemeCommand hotKey="I" ksoCmd="BorderLineColor" icon="LineColor" id="BorderLineColor" text="@Line Color">
+				<KxEtMoreColorThemeCommand hotKey="m" colorUsage="CellBorderColor" icon="MoreColor" id="MoreCellBorderColors" dialogHint="1" text="@More Border Colors" rbHotKey="M"/>
+			</KxEtCellBorderThemeCommand>
+			<command idQ="rBorderStyle"/>
+		</KQuickMenuCommand>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="ClearAll" aid="802" idMso="ClearAll" icon="ClearAll" controlType="0" id="RbClearAll" text="@All" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="ClearFormats" aid="24" idMso="ClearFormats" icon="ClearFormats" controlType="0" id="RbClearFormats" text="@Formats" rbHotKey="F"/>
+		<KxOleLegacyTriggerCommand hotKey="c" ksoCmd="ClearContents" aid="652" idMso="ClearContents" icon="ClearContents" controlType="0" id="RbClearContents" text="@Contents" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="ClearComments" aid="803" idMso="ClearComments" icon="ClearComments" controlType="0" id="RbClearComments" text="@Comments" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="ClearSeries" aid="871" icon="ClearSeries" id="RbClearSeries" text="@Series" rbHotKey="S"/>
+		<KListCommand embedHint="1" id="tb_Font">
+			<KRbLayoutListCommand horizontalSpacing="3" layoutOnly="1">
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<command idQ="FontName"/>
+					<command idQ="FontSize"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="GrowFont"/>
+					<command idQ="ShrinkFont"/>
+				</KRbLayoutListCommand>
+			</KRbLayoutListCommand>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+				<command idQ="Bold"/>
+				<command idQ="Italic"/>
+				<command idQ="Underline"/>
+				<separator/>
+				<command idQ="sp_DrawBorder"/>
+				<command idQ="sp_RbDrawBorder"/>
+				<separator/>
+				<KxEtFillThemeCommand ksoCmd="CellFillColor" forceVisible="1" icon="TableShadingColor" customTip2="FillColor2" customTip="FillColor" text="@Fill Color" qtspyName="CellFillColor" ksoTriggerCmd="RecentCellFillColor" rbHotKey="H">
+					<KxEtMoreColorThemeCommand hotKey="m" colorUsage="FillColor" icon="MoreColor" id="MoreCellFillColors" dialogHint="1" text="@More Fill Colors" rbHotKey="M"/>
+					<command idQ="MoreFill"/>
+				</KxEtFillThemeCommand>
+				<KxEtFontThemeCommand ksoCmd="FontColor" icon="ChartFontColor" customTip2="FontColor2" customTip="FontColor" text="@Font Color" qtspyName="FontColor" ksoTriggerCmd="RecentFontColor" rbHotKey="FC">
+					<KxEtMoreColorThemeCommand hotKey="m" colorUsage="FontColor" icon="MoreColor" id="MoreCellFontColors" dialogHint="1" text="@More Font Colors" rbHotKey="M"/>
+					<command idQ="MoreFontFill"/>
+				</KxEtFontThemeCommand>
+				<separator/>
+				<KListCommand icon="ClearFormat" id="m_Clear" customTip="Clear" text="@Clear" rbHotKey="E">
+					<command idQ="RbClearAll"/>
+					<command idQ="RbClearFormats"/>
+					<command idQ="RbClearContents"/>
+					<command idQ="RbClearComments"/>
+					<command idQ="RbClearSeries"/>
+				</KListCommand>
+			</KRbLayoutListCommand>
+		</KListCommand>
+		<KxIndexListCommand hotKey="f" ksoCmd="FormatFonts" forceVisible="1" icon="FormatCells" id="RB_Font" index="2" customTip="FontFormatCells" text="@Font" rbFileMenuEmbed="1" rbHotKey="FN">
+			<command idQ="tb_Font"/>
+		</KxIndexListCommand>
+		<KxIndexListCommand hotKey="m" ksoCmd="FormatBorder" forceVisible="1" icon="OtherBorders" id="RB_Border" index="3" customTip="OtherBorders" text="@More Borders" rbFileMenuEmbed="1" rbHotKey="M">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand spaceHint="compact">
+					<command idQ="RbDrawBorder"/>
+					<command idQ="sp_DrawBorder"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand spaceHint="compact">
+					<command idQ="rBorderStyle"/>
+					<KxEtCellBorderThemeCommand hotKey="I" ksoCmd="BorderLineColor" idMso="BorderColorPickerExcel" icon="LineColor" controlType="4" id="BorderLineColor" spaceHint="compact" text="@Line Color"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+		</KxIndexListCommand>
+		<KxValueCommand ksoCmd="BaseLine" idMso="AlignTopExcel" icon="VAlignTop" controlType="6" id="VAlignTop" index="-4160" customTip="VAlignTop" spaceHint="suitable" text="@Align Top" rbHotKey="AT"/>
+		<KxValueCommand ksoCmd="BaseLine" idMso="AlignBottomExcel" icon="VAlignBottom" controlType="6" id="VAlignBottom" index="-4107" customTip="VAlignBottom" spaceHint="suitable" text="@Align Bottom" rbHotKey="AB"/>
+		<KxValueCommand ksoCmd="FormatAlignRight" aid="831" faceid="39" idMso="AlignRight" icon="AlignRight" controlType="6" id="rAlignRight" index="-4152" customTip="AlignRight" spaceHint="suitable" text="@Align Right" rbHotKey="AR"/>
+		<KxValueCommand ksoCmd="FormatAlignJustify" idMso="AlignJustify" icon="AlignJustify" controlType="6" id="rAlignJustify" index="-4130" customTip="AlignJustify" spaceHint="suitable" text="@Align Justify" rbHotKey="AJ"/>
+		<KxValueCommand ksoCmd="FormatAlignDistributed" idMso="AlignDistributed" icon="AlignDistributed" controlType="6" id="rAlignDistributed" index="-4117" customTip="AlignDistributed" spaceHint="suitable" text="@Align Distributed" rbHotKey="AD"/>
+		<KxLegacyTriggerCommand text2="@Join and
+Center" hotKey="j" ksoCmd="MergeCenter" aid="832" faceid="40" idMso="MergeCenter" icon="MergeCenter" controlType="6" id="MergeCenter" customTip="MergeCenter" text="@Merge and Center"/>
+		<KxIndexListCommand tc="Alignment" hotKey="f" ksoCmd="FormatAlignment" forceVisible="1" icon="FormatCells" id="RB_Alignment" index="1" customTip="AlignmentFormatCells" text="@Alignment" rbFileMenuEmbed="1">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="VAlignTop"/>
+					<command idQ="VAlignCenter"/>
+					<command idQ="VAlignBottom"/>
+					<separator/>
+					<command idQ="RB_DecreaseIndent"/>
+					<command idQ="RB_IncreaseIndent"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="rAlignLeft"/>
+					<command idQ="rAlignCenter"/>
+					<command idQ="rAlignRight"/>
+					<command idQ="rAlignJustify"/>
+					<command idQ="rAlignDistributed"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="sp_Merge"/>
+			<command idQ="rnRecentLineWrap"/>
+		</KxIndexListCommand>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="Currency" forceVisible="1" icon="Currency" id="Currency" customTip="Currency" text="@Currency" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="Accounting" forceVisible="1" icon="Accounting" id="Accounting" customTip="Accounting" text="@Accounting" rbHotKey="A"/>
+		<KQuickMenuCommand id="QuickNumberFormat" spaceHint="suitable" referenceCommand="Currency" rbHotKey="AN">
+			<command idQ="Currency"/>
+			<command idQ="Accounting"/>
+		</KQuickMenuCommand>
+		<KListCommand embedHint="1" id="tb_Number">
+			<KxEtNumberComboboxCommand hotKey="n" ksoCmd="PercentStyle" aid="13137" idMso="NumberFormatGallery" icon="FormatAsTable" controlType="2" customTip="NumberFormatGallery" text="@Format as Table"/>
+			<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="2" leftSpace="2">
+				<command idQ="QuickNumberFormat"/>
+				<KxLegacyTriggerCommand hotKey="p" ksoCmd="PercentStyle" forceVisible="1" idMso="PercentStyle" icon="PercentStyle" controlType="0" id="PercentStyleInHomeTab" customTip="PercentStyle" text="@Percent Style" qtspyName="PercentStyle" rbHotKey="p"/>
+				<KxLegacyTriggerCommand hotKey="c" ksoCmd="CommaStyle" forceVisible="1" idMso="CommaStyle" icon="CommaStyle" controlType="0" id="CommaStyleInHomeTab" customTip="CommaStyle" text="@Comma Style" qtspyName="CommaStyle" rbHotKey="K"/>
+				<separator/>
+				<KxLegacyTriggerCommand hotKey="i" ksoCmd="IncreaseDecimal" forceVisible="1" idMso="DecimalsIncrease" icon="IncreaseDecimal" controlType="0" id="IncreaseDecimalInHomeTab" customTip="IncreaseDecimal" text="@Increase Decimal" qtspyName="IncreaseDecimal" rbHotKey="0"/>
+				<KxLegacyTriggerCommand hotKey="d" ksoCmd="DecreaseDecimal" forceVisible="1" idMso="DecimalsDecrease" icon="DecreaseDecimal" controlType="0" id="DecreaseDecimalInHomeTab" customTip="DecreaseDecimal" text="@Decrease Decimal" qtspyName="DecreaseDecimal" rbHotKey="9"/>
+				<KLayoutWidgetCommand fixedWidth="6"/>
+				<KxLegacyTriggerCommand hotKey="ap" ksoCmd="Scientific" forceVisible="1" idMso="Scientific" icon="Scientific" controlType="0" customTip="Scientific" text="@Scientific" qtspyName="Scientific" rbHotKey="ap"/>
+			</KRbLayoutListCommand>
+			<separator/>
+		</KListCommand>
+		<KxIndexListCommand hotKey="f" ksoCmd="FormatNumber" forceVisible="1" icon="FormatCells" id="RB_Number" customTip="NumberFormatCells" text="@Number" rbFileMenuEmbed="1" rbHotKey="FM">
+			<command idQ="tb_Number"/>
+		</KxIndexListCommand>
+		<KxEtCellStyleCommand hotKey="j" column="1" ksoCmd="CellStyle" forceVisible="1" galleryWidth="430" icon="Format" id="CellStyleGallery" customTip="CellStyleGallery" text="@Cell Style" rbHotKey="J">
+			<KxStyleAddLegacyTriggerCommand id="addCellStyle"/>
+			<KxStyleMergeLegacyTriggerCommand ksoCmd="CellStyle" id="mergeStyle"/>
+		</KxEtCellStyleCommand>
+		<KxLegacyTriggerCommand hotKey="Y" ksoCmd="AutoFilterAgain" aid="1407" faceid="64" icon="AutoFilterAgain" id="RbAutoFilterAgain" text="@Reapply"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="AdvancedFilter" aid="1376" idMso="AdvancedFilterDialog" icon="AdvancedFilter" controlType="6" id="AdvancedFilter" dialogHint="1" text="@Advanced Filter" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="C" ksoCmd="ShowAll" aid="819" icon="ShowAll" id="RbShowAll" text="@Show All"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SortAscending" aid="826" faceid="35" icon="SortAscending" id="SortAscending" text="@Ascending" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="SortDescending" aid="827" faceid="36" icon="SortDescending" id="SortDescending" text="@Descending" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="U" ksoCmd="DataSort" aid="817" faceid="35" icon="CustomSort" id="CustomDataSort" dialogHint="1" text="@Custom Sort"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="ConvertTextToNumber" aid="80021" icon="ConvertTextToNumber" id="ConvertTextToNumber" text="@Convert Text to Number" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="ConvertTextToHyperlink" aid="80022" icon="ConvertTextToHyperlink" id="ConvertTextToHyperlink" text="@Convert Text to Hyperlink" rbHotKey="V"/>
+		<KxLegacyTriggerCommand showIconAndText="1" hotKey="d" ksoCmd="ConditionalFormat" idMso="ConditionalFormattingMenu" icon="ConditionalFormatting" controlType="15" id="rConditionalFormat" dialogHint="1" customTip="ConditionalFormat" text="@Conditional Formatting" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="LockCell" aid="868" faceid="56" idMso="Lock" icon="LockCell" controlType="6" id="LockCell" text="@Lock Cell" rbHotKey="L"/>
+		<KxLegacyTriggerCommand tc="SetFormatCells" hotKey="e" ksoCmd="FormatCells" aid="804" faceid="32" idMso="FormatCellsDialog" icon="FormatCells" controlType="0" id="FormatCells" dialogHint="1" text="@Format Cells" rbHotKey="E"/>
+		<KListCommand showIconAndText="1" icon="Format" id="m_Format" customTip="m_Format" text="@Format" rbHotKey="O">
+			<command idQ="ConvertTextToNumber"/>
+			<command idQ="ConvertTextToHyperlink"/>
+			<separator/>
+			<command idQ="CellStyleGallery"/>
+			<separator/>
+			<command idQ="LockCell"/>
+			<separator/>
+			<KListCommand hotKey="c" icon="ClearFormat" id="m_Clear" customTip="Clear" text="@Clear" rbHotKey="E">
+				<command idQ="RbClearAll"/>
+				<command idQ="RbClearFormats"/>
+				<command idQ="RbClearContents"/>
+				<command idQ="RbClearComments"/>
+				<command idQ="RbClearSeries"/>
+			</KListCommand>
+			<separator/>
+			<command idQ="FormatCells"/>
+			<separator/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="H" ksoCmd="RowsHeight" aid="807" faceid="8" idMso="RowHeight" icon="RowsHeight" controlType="0" id="RowsHeight" dialogHint="1" text="@Row Height"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="AutoFit" aid="809" idMso="RowHeightAutoFit" icon="AutoFitRows" controlType="0" id="AutoFit" text="@AutoFit Row Height" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="ColumnWidth" aid="813" faceid="9" idMso="ColumnWidth" icon="ColumnWidth" controlType="0" id="ColumnWidth" dialogHint="1" text="@Column Width" rbHotKey="W"/>
+		<KxLegacyTriggerCommand hotKey="I" ksoCmd="AutoFitSelection" aid="814" idMso="ColumnWidthAutoFit" icon="CellAutoFitSelection" controlType="0" id="CellAutoFitSelection" text="@AutoFit Column Width"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="StandardWidth" icon="StandardWidth" id="rStandardWidth" dialogHint="1" text="@Standard Width" rbHotKey="D"/>
+		<KxLegacyTriggerCommand descName="@Insert Cell (Entire Row/Entire Column)" hotKey="I" ksoCmd="InsertCells" icon="InsertCells" id="rInsertCells" text="@Insert Cell"/>
+		<KxLegacyTriggerCommand descName="@Insert Cells Dialog" hotKey="I" ksoCmd="InsertCellsDialog" icon="InsertCells" id="rInsertCellsDialog" dialogHint="1" text="@Insert Cells"/>
+		<KxLegacyTriggerCommand descName="@Insert Copied Cells (Entire Row/Entire Column)" hotKey="e" ksoCmd="InsertCopiedCells" aid="80013" id="InsertCopiedCells" text="@Insert Copied Cells" rbHotKey="E"/>
+		<KxLegacyTriggerCommand descName="@Insert Copied Cells Dialog" hotKey="e" ksoCmd="InsertCopiedCellsDialog" aid="80014" id="InsertCopiedCellsDialog" dialogHint="1" text="@Insert Copied Cells" rbHotKey="I"/>
+		<KxLegacyTriggerCommand descName="@Insert Cut Cells (Entire Row/Entire Column)" hotKey="e" ksoCmd="InsertCutCells" aid="80015" id="InsertCutCells" text="@Insert Cut Cells" rbHotKey="E"/>
+		<KxLegacyTriggerCommand descName="@Insert Cut Cells Dialog" hotKey="e" ksoCmd="InsertCutCellsDialog" aid="80016" id="InsertCutCellsDialog" dialogHint="1" text="@Insert Cut Cells" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="InsertRows" idMso="SheetRowsInsert" icon="InsertRows" id="rInsertRows" text="@Insert Rows" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="InsertColumns" idMso="SheetColumnsInsert" icon="InsertColumns" controlType="0" id="rInsertColumns" text="@Insert Columns" rbHotKey="C"/>
+		<KListCommand detail="@Insert Cells" showIconAndText="1" hotKey="e" ksoCmd="InsertRange" idMso="CellsInsertDialog" icon="InsertCells" customTip2="InsertRange2" controlType="0" id="sp_InsertCellsDialog" customTip="InsertRange" spaceHint="autocompact" text="@Insert Cell" rbHotKey="I">
+			<command idQ="rInsertCells"/>
+			<command idQ="rInsertCellsDialog"/>
+			<command idQ="InsertCopiedCells"/>
+			<command idQ="InsertCopiedCellsDialog"/>
+			<command idQ="InsertCutCells"/>
+			<command idQ="InsertCutCellsDialog"/>
+			<separator/>
+			<command idQ="rInsertRows"/>
+			<command idQ="rInsertColumns"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="Delete" icon="DeleteCells" id="rDelete" text="@Delete Cells" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="D" ksoCmd="DeleteCells" idMso="CellsDeleteSmart" icon="DeleteCells" controlType="0" id="rDeleteCells" dialogHint="1" text="@Delete Cells"/>
+		<KxPropComposeCommand hotKey="r" ksoCmd="DeleteRowsInWorkgroup" forceVisible="1" icon="DeleteRows" id="rDeleteRows" text="@Delete Rows" rbHotKey="R"/>
+		<KxPropComposeCommand hotKey="c" ksoCmd="DeleteColumnsInWorkgroup" forceVisible="1" icon="DeleteColumns" id="rDeleteColumns" text="@Delete Columns" rbHotKey="C"/>
+		<KListCommand detail="@Cells" showIconAndText="1" hotKey="c" ksoCmd="DeleteRange" idMso="CellsDeleteSmart" icon="DeleteCells" customTip2="DeleteRange2" controlType="0" id="sp_DeleteCells" customTip="DeleteRange" spaceHint="autocompact" text="@Delete Cells" rbHotKey="D">
+			<command idQ="rDelete"/>
+			<command idQ="rDeleteCells"/>
+			<separator/>
+			<command idQ="rDeleteRows"/>
+			<command idQ="rDeleteColumns"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand idMso="CellStylesGallery" icon="CellStylesGallery" controlType="5" id="CellStylesGallery"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="FillDown" aid="796" faceid="29" idMso="FillDown" icon="FillDown" controlType="0" id="FillDown" text="@Down" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="FillRight" aid="797" idMso="FillRight" icon="FillRight" controlType="0" id="FillRight" text="@Right" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="FillUp" aid="798" faceid="30" idMso="FillUp" icon="FillUp" controlType="0" id="FillUp" text="@Up" rbHotKey="U"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="FillLeft" aid="799" idMso="FillLeft" icon="FillLeft" controlType="0" id="FillLeft" text="@Left" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="AcrossSheets" aid="801" id="AcrossSheets" dialogHint="1" text="@Across Sheets" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="FillSeries" aid="870" idMso="FillSeries" controlType="0" id="FillSeries" dialogHint="1" text="@Series@Fill" rbHotKey="S"/>
+		<KxLegacyTriggerCommand cnotrolType="0" hotKey="R" ksoCmd="HideRow" idMso="RowsHide" id="rHideRow" text="@Hide Rows" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="C" ksoCmd="HideColumn" id="rHideColumn" text="@Hide Columns" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="O" ksoCmd="UnhideRows" idMso="RowsUnhide" controlType="0" id="rUnhideRows" text="@Unhide Rows" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="UnhideColumns" id="rUnhideColumns" text="@Unhide Columns" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="InsertSheet" idMso="SheetInsert" icon="InsertSheet" controlType="0" id="rInsertSheet" dialogHint="1" text="@Insert Sheet" rbHotKey="S"/>
+		<KxProtectSheetCommand secondText="@Unprotect Sheet" hotKey="p" ksoCmd="ProtectSheet" aid="893" faceid="52" idMso="SheetProtect" icon="ProtectSheet" controlType="0" id="ProtectSheet" dialogHint="1" customTip="ProtectSheet" text="@Protect Sheet" rbHotKey="P"/>
+		<KxEtTabSheetRenameCommand hotKey="r" ksoCmd="RenameSheet" aid="883" idMso="SheetRename" icon="RenameSheet" controlType="0" id="RenameSheet" text="@Rename" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoveCopySheet" aid="875" icon="MoveCopySheet" id="MoveCopySheet" dialogHint="1" text="@Move or Copy Sheet" rbHotKey="M"/>
+		<KxEtShtTabThemeCommand hotKey="T" ksoCmd="TabColor" aid="5747" icon="TabColor" id="TabColor" text="@Tab Color" ksoTriggerCmd="" rbHotKey="T">
+			<KxEtMoreColorThemeCommand hotKey="m" colorUsage="TableColor" icon="MoreColor" id="MoreTabColors" dialogHint="1" text="@More Font Colors" rbHotKey="M"/>
+		</KxEtShtTabThemeCommand>
+		<KxLegacyTriggerCommand hotKey="S" ksoCmd="HideSheet" idMso="SheetHide" controlType="0" id="rHideSheet" text="@Hide Sheet" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="UnhideSheets" idMso="SheetUnhide" controlType="0" id="rUnhideSheets" text="@Unhide Sheet" rbHotKey="H"/>
+		<KxOleLegacyTriggerCommand hotKey="f" ksoCmd="Find" aid="592" faceid="277" idMso="FindDialogExcel" icon="Find" controlType="0" id="Find" dialogHint="1" text="@Find" rbHotKey="F"/>
+		<KxLegacyTriggerCommand hotKey="S" ksoCmd="GoTo" aid="25" idMso="GoTo" icon="GoTo" controlType="0" id="RbGoTo" dialogHint="1" text="@Go to"/>
+		<KxLegacyTriggerCommand hotKey="O" ksoCmd="SelectObjects" aid="380" faceid="128" idMso="ObjectsSelect" icon="SelectObjects" controlType="6" id="SelectObjects" text="@Select Objects" rbHotKey="O"/>
+		<KxObjectSelectCommand hotKey="J" ksoCmd="ObjectSelect" icon="ObjectSelect" id="HomeObjectSelect" customTip="ObjectSelect" text="@Selection Pane" rbHotKey="AB"/>
+		<KListCommand icon="Find" id="m_Find_Select" customTip="Find" text="@Find and Replace" rbHotKey="FD">
+			<command idQ="Find"/>
+			<command idQ="RbReplace"/>
+			<command idQ="RbGoTo"/>
+			<separator/>
+			<command idQ="SelectObjects"/>
+			<command idQ="HomeObjectSelect"/>
+		</KListCommand>
+		<KListCommand idMso="GroupEditing" controlType="16" id="RB_Editing" text="@Editing" rbFileMenuEmbed="1">
+			<KxEtGallerySymbolCommand ksoCmd="InsertSymbol" icon="InsertSymbol" id="InsertSymbolInHomeTab" customTip="InsertSymbol" text="@Symbol" rbHotKey="AU">
+				<KxLegacyTriggerCommand hotKey="m" ksoCmd="InsertSymbol" icon="InsertSymbol" id="rMoreSymbols" dialogHint="1" text="@More Symbols" rbHotKey="M"/>
+			</KxEtGallerySymbolCommand>
+			<command idQ="sp_AutoSum"/>
+			<KxListCommand ksoCmd="AutoFilter" icon="AutoFilter" id="AutoFilterInHomeTab" customTip="AutoFilter" text="@AutoFilter" qtspyName="AutoFilter" rbHotKey="L">
+				<command idQ="AutoFilter"/>
+				<command idQ="RbAutoFilterAgain"/>
+				<command idQ="AdvancedFilter"/>
+				<command idQ="RbShowAll"/>
+			</KxListCommand>
+			<KxListCommand ksoCmd="SortAscending" icon="DataSort" id="m_Sort_Filter" customTip="SortAndFilter" text="@Sort" rbHotKey="S">
+				<command idQ="SortAscending"/>
+				<command idQ="SortDescending"/>
+				<command idQ="CustomDataSort"/>
+			</KxListCommand>
+			<command idQ="m_Format"/>
+			<KResolution1280ListCommand visibleUnder1280="true" icon="RowsAndColumn" id="RowAndColumn" textOver1280="@Rows and 
+Columns" textUnder1280="@Rows and 
+Columns" visibleOver1280="true" customTip="RowsAndColumn" spaceHint="autoiconsize" text="@Rows and 
+Columns" qtspyName="RowsAndColumn" rbHotKey="RC">
+				<command idQ="RowsHeight"/>
+				<command idQ="AutoFit"/>
+				<separator/>
+				<command idQ="ColumnWidth"/>
+				<command idQ="CellAutoFitSelection"/>
+				<command idQ="rStandardWidth"/>
+				<separator/>
+				<command idQ="sp_InsertCellsDialog"/>
+				<command idQ="sp_DeleteCells"/>
+				<separator/>
+				<KListCommand hotKey="f" showiconAndText="1" idMso="FillMenu" icon="FillDown" controlType="15" id="m_Fill" customTip="Fill" spaceHint="autocompact" text="@Fill" rbHotKey="FI">
+					<command idQ="FillDown"/>
+					<command idQ="FillRight"/>
+					<command idQ="FillUp"/>
+					<command idQ="FillLeft"/>
+					<command idQ="AcrossSheets"/>
+					<command idQ="FillSeries"/>
+				</KListCommand>
+				<separator/>
+				<KListCommand hotKey="U" idMso="HideAndUnhideMenu" icon="RowsandColumnsHideUnhide" controlType="15" id="m_Hide_Unhide" text="@Hide and Unhide">
+					<command idQ="rHideRow"/>
+					<command idQ="rHideColumn"/>
+					<separator/>
+					<command idQ="rUnhideRows"/>
+					<command idQ="rUnhideColumns"/>
+				</KListCommand>
+			</KResolution1280ListCommand>
+			<KListCommand icon="WorkSheet" id="WorkSheetInHomeTab" customTip="WorkSheet" spaceHint="autoiconsize" text="@Worksheet" qtspyName="WorkSheet" rbHotKey="RS">
+				<command idQ="rInsertSheet"/>
+				<KxLegacyTriggerCommand hotKey="D" ksoCmd="DeleteSheet" idMso="SheetDelete" icon="DeleteSheet" controlType="0" id="DeleteSheetInHomeTab" text="@Delete Sheet" qtspyName="DeleteSheet"/>
+				<separator/>
+				<command idQ="ProtectSheet"/>
+				<separator/>
+				<command idQ="RenameSheet"/>
+				<command idQ="MoveCopySheet"/>
+				<command idQ="TabColor"/>
+				<separator/>
+				<KListCommand hotKey="U" idMso="HideAndUnhideMenu" icon="HideSheet" controlType="15" id="m_Hide_Unhide" text="@Hide and Unhide">
+					<command idQ="rHideSheet"/>
+					<command idQ="rUnhideSheets"/>
+				</KListCommand>
+			</KListCommand>
+			<KxLegacyTriggerStateCommand textB="@Unfreeze" hotKey="af" icon1="FreezePanes" ksoCmd="FreezePanes" forceVisible="1" icon2="FreezePanes" idMso="FreezePanes" controlType="0" id="rFreezeAndUnfreeze" customTip="FreezePanes" ksoCmd2="UnFreezePanes" rbHotKey="AF" textA="@Freeze"/>
+			<command idQ="m_Find_Select"/>
+		</KListCommand>
+		<KListCommand id="DetailedSettings_Home">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_Home" text="@Settings" qtspyName="DetailedSettings">
+				<command idQ="FormatCells"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_FormatAsTable">
+			<KxEtTableStyleCommand column="1" ksoCmd="FormatAsTable" forceVisible="1" galleryWidth="510" icon="FormatAsTable" formatAsTable="1" id="TableStyleGallery" customTip="FormatAsTable" text="@Format as Table">
+				<KxLegacyTriggerCommand hotKey="N" ksoCmd="NewTableStyle" filter="patent:CustomizableTableStyleList=true" icon="NewTableStyle" id="NewTableStyle" dialogHint="1" customTip="New Table Style" text="@New Table Style"/>
+			</KxEtTableStyleCommand>
+		</KListCommand>
+		<KListCommand id="RB_ConditionalFormatting" qtspyName="RB_ConditionalFormatting">
+			<KListCommand icon="CFConditionalFormatting" customTip="ConditionalFormatting" text="@Conditional Formatting" qtspyName="CFConditionalFormatting">
+				<KListCommand hotKey="H" icon="CFHighLightCellsRules" id="CFHighLightCellsRules" text="@Highlight Cells Rules" qtspyName="CFHighLightCellsRules">
+					<KxEtConditionFormatTriggerCommand hotKey="G" ksoCmd="CFTraditionalRules" subType="0" icon="CFGreaterThan" type="1" id="CFGreaterThan" dialogHint="1" text="@Greater Than" qtspyName="CFGreaterThan"/>
+					<KxEtConditionFormatTriggerCommand hotKey="L" ksoCmd="CFTraditionalRules" subType="1" icon="CFLessThan" type="1" id="CFLessThan" dialogHint="1" text="@Less Than" qtspyName="CFLessThan"/>
+					<KxEtConditionFormatTriggerCommand hotKey="B" ksoCmd="CFTraditionalRules" subType="0" icon="CFBetween" type="2" id="CFBetween" dialogHint="1" text="@Between" qtspyName="CFBetween"/>
+					<KxEtConditionFormatTriggerCommand hotKey="E" ksoCmd="CFTraditionalRules" subType="2" icon="CFEqualTo" type="1" id="CFEqualTo" dialogHint="1" text="@Equal To" qtspyName="CFEqualTo"/>
+					<KxEtConditionFormatTriggerCommand hotKey="T" ksoCmd="CFTraditionalRules" subType="3" icon="CFTextThatContains" type="1" id="CFTextThatContains" dialogHint="1" text="@Text that Contains" qtspyName="CFTextThatContains"/>
+					<KxEtConditionFormatTriggerCommand hotKey="A" ksoCmd="CFTraditionalRules" subType="0" icon="CFADataOccurring" type="3" id="CFADataOccurring" dialogHint="1" text="@A Date Occurring" qtspyName="CFADataOccurring"/>
+					<KxEtConditionFormatTriggerCommand hotKey="D" ksoCmd="CFTraditionalRules" subType="1" icon="CFDuplicateValues" type="3" id="CFDuplicateValues" dialogHint="1" text="@Duplicate Value" qtspyName="CFDuplicateValues"/>
+					<separator/>
+					<KxEtConditionFormatTriggerCommand hotKey="M" ksoCmd="CFNewRule" subType="0" type="1" id="CFMoreRules" dialogHint="1" text="@More Rules" qtspyName="CFNewRule1"/>
+				</KListCommand>
+				<KListCommand hotKey="T" icon="CFTopBottomRules" id="CFTopBottomRules" text="@Top/Bottom Rules" qtspyName="CFTopBottomRules">
+					<KxEtConditionFormatTriggerCommand hotKey="T" ksoCmd="CFTraditionalRules" subType="0" icon="CFTop10Items" type="4" id="CFTop10Items" dialogHint="1" text="@Top 10 Items" qtspyName="CFTop10Items"/>
+					<KxEtConditionFormatTriggerCommand hotKey="P" ksoCmd="CFTraditionalRules" subType="1" icon="CFTop10Percent" type="4" id="CFTop10Percent" dialogHint="1" text="@Top 10%" qtspyName="CFTop10Percent"/>
+					<KxEtConditionFormatTriggerCommand hotKey="B" ksoCmd="CFTraditionalRules" subType="2" icon="CFBottom10Items" type="4" id="CFBottom10Items" dialogHint="1" text="@Bottom 10 Items" qtspyName="CFBottom10Items"/>
+					<KxEtConditionFormatTriggerCommand hotKey="O" ksoCmd="CFTraditionalRules" subType="3" icon="CFBottom10Percent" type="4" id="CFBottom10Percent" dialogHint="1" text="@Bottom 10%" qtspyName="CFBottom10Percent"/>
+					<KxEtConditionFormatTriggerCommand hotKey="A" ksoCmd="CFTraditionalRules" subType="0" icon="CFAboveAverage" type="5" id="CFAboveAverage" dialogHint="1" text="@Above Average" qtspyName="CFAboveAverage"/>
+					<KxEtConditionFormatTriggerCommand hotKey="V" ksoCmd="CFTraditionalRules" subType="1" icon="CFBelowAverage" type="5" id="CFBelowAverage" dialogHint="1" text="@Below Average" qtspyName="CFBelowAverage"/>
+					<separator/>
+					<KxEtConditionFormatTriggerCommand hotKey="M" ksoCmd="CFNewRule" subType="0" type="2" id="CFMoreRules" dialogHint="1" text="@More Rules" qtspyName="CFNewRule2"/>
+				</KListCommand>
+				<separator/>
+				<KxEtCondFmtCommand hotKey="D" ksoCmd="CFDataBars" icon="CFDataBars" id="CFDataBars" cfType="0" text="@Data Bars" qtspyName="CFDataBars">
+					<KxEtConditionFormatTriggerCommand hotKey="M" ksoCmd="CFNewRule" subType="2" type="0" id="CFMoreRules" dialogHint="1" text="@More Rules" qtspyName="CFNewRule3"/>
+				</KxEtCondFmtCommand>
+				<KxEtCondFmtCommand hotKey="S" ksoCmd="CFColorScales" icon="CFColorScales" id="CFColorScales" cfType="1" text="@Color Scales" qtspyName="CFColorScales">
+					<KxEtConditionFormatTriggerCommand hotKey="M" ksoCmd="CFNewRule" subType="0" type="0" id="CFMoreRules" dialogHint="1" text="@More Rules" qtspyName="CFNewRule4"/>
+				</KxEtCondFmtCommand>
+				<KxEtCondFmtCommand hotKey="I" ksoCmd="CFIconSets" icon="CFIconSets" id="CFIconSets" cfType="2" text="@IconSets" qtspyName="CFIconSets">
+					<KxEtConditionFormatTriggerCommand hotKey="M" ksoCmd="CFNewRule" subType="3" type="0" id="CFMoreRules" dialogHint="1" text="@More Rules" qtspyName="CFNewRule5"/>
+				</KxEtCondFmtCommand>
+				<separator/>
+				<KxEtConditionFormatTriggerCommand hotKey="N" ksoCmd="CFNewRule" subType="0" icon="CFNewRule" type="0" id="CFNewRule" dialogHint="1" text="@New Rule" qtspyName="CFNewRule"/>
+				<KListCommand hotKey="C" icon="CFClearRules" text="@Clear Rules" qtspyName="CFClearRules">
+					<KxLegacyTriggerCommand hotKey="S" ksoCmd="CFClearSelectedCell" icon="CFClearSelectedCell" id="CFClearSelectedCell" text="@Clear Rules from Selected Cells" qtspyName="CFClearSelectedCell"/>
+					<KxLegacyTriggerCommand hotKey="E" ksoCmd="CFClearEntireSheet" icon="CFClearEntireSheet" id="CFClearEntireSheet" text="@Clear Rules from Entire Sheet" qtspyName="CFClearEntireSheet"/>
+					<KxLegacyTriggerCommand hotKey="T" ksoCmd="CFClearThisTable" icon="CFClearThisTable" id="CFClearThisTable" text="@Clear Rules from This Table" qtspyName="CFClearThisTable"/>
+				</KListCommand>
+				<KxLegacyTriggerCommand hotKey="R" ksoCmd="CFManageRules" icon="CFManageRules" id="CFManageRules" dialogHint="1" text="@Manage Rules" qtspyName="CFManageRules"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_CellStyle" text="@Cell Style">
+			<KxEtCellStyleCommand column="1" ksoCmd="CellStyle" forceVisible="1" galleryWidth="430" icon="Format" id="CellStyleGallery" customTip="CellStyleGallery" text="@Cell Style" rbHotKey="J">
+				<KxStyleAddLegacyTriggerCommand id="addCellStyle"/>
+				<KxStyleMergeLegacyTriggerCommand ksoCmd="CellStyle" id="mergeStyle"/>
+			</KxEtCellStyleCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Home">
+			<command idQ="RB_ClipboardWrapper"/>
+			<separator/>
+			<command idQ="RB_Font"/>
+			<separator/>
+			<command idQ="RB_Alignment"/>
+			<separator/>
+			<command idQ="RB_Number"/>
+			<separator/>
+			<command idQ="RB_ConditionalFormatting"/>
+			<command idQ="RB_FormatAsTable"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="RB_Editing"/>
+			<separator/>
+			<command idQ="DetailedSettings_Home" filter="patent:LogicGroupShowExtensionButton=false"/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,192 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Measure Menu &gt; Value of Point &gt; How to Construct a Slider</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Special Constructions and Techniques,Special Constructions and Techniques Construct a Slider,Sliders,Measure Menu,Measure Menu Value of Point,Value of Point Command">
+   <meta name="description" content="How to Construct a Slider">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "shortcuts_howto_slider.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to Construct a Slider</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_measure.htm">Measure Menu</a> &gt; <a href="menus_measure_valueofpoint.htm">Value of Point</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">How to Construct a Slider</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_measure_valueofpoint.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_measure_valueofpoint.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_measure_coordinates.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Often it is useful to construct a slider for controlling a numeric value. For example, if you wanted to create a <a href="menus_graph.htm" class="topiclink">graph</a> of the line </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> = </span><span class="f_BodyText" style="font-style: italic;">mx</span><span class="f_BodyText"> + </span><span class="f_BodyText" style="font-style: italic;">b</span><span class="f_BodyText"> in which you can slide a point back and forth to control the values of </span><span class="f_BodyText" style="font-style: italic;">m</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">b,</span><span class="f_BodyText"> you might want to set up sliders for </span><span class="f_BodyText" style="font-style: italic;">m</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">b.</span><span class="f_BodyText"> To make a slider for </span><span class="f_BodyText" style="font-style: italic;">m:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_straight.htm" class="topiclink">Line</a></span><span class="f_BodyText"> tool to construct a line. Label the two resulting points </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText">.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_point.htm" class="topiclink">Point</a></span><span class="f_BodyText"> tool to construct point </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> on the line.</span></p></td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="hmfile_hash_b8792402.png" width="86" height="44" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Select point </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure.htm" class="topiclink">Measure</a> | <a href="menus_measure_valueofpoint.htm" class="topiclink">Value of Point</a>.</span><span class="f_BodyText"> </span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText"><a href="tools_arrow_selectdeselect.htm" class="topiclink">Select</a> and <a href="menus_display_hideobjects.htm" class="topiclink">hide</a> the line and point </span><span class="f_BodyText" style="font-style: italic;">B,</span><span class="f_BodyText"> leaving only two points and the measured ratio.</span></p></td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="hmfile_hash_83507cc0.png" width="86" height="44" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p class="p_Image_FlushRight_Narrative"><span class="f_Image_FlushRight_Narrative">&nbsp;</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Construct a <a href="tools_straight.htm" class="topiclink">segment</a> connecting </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">C.</span><span class="f_BodyText"> </span></p></td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="hmfile_hash_1d615f3f.png" width="86" height="44" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">6.</span><span class="f_BodyText">Double-click the measured ratio with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_text.htm" class="topiclink">Text</a></span><span class="f_BodyText"> tool, and set its label to </span><span class="f_BodyText" style="font-style: italic;">m.</span><span class="f_BodyText"> Hide point </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText">, and change the label of point </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> to </span><span class="f_BodyText" style="font-style: italic;">m</span><span class="f_BodyText"> to match the label of the value.</span></p><p class="p_BodyText"><span class="f_BodyText">Your basic slider is complete. As you drag point </span><span class="f_BodyText" style="font-style: italic;">m,</span><span class="f_BodyText"> the value changes accordingly.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can vary this construction for a number of purposes.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">For positive values, use a ray instead of a line in step 1.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">For values between 0 and 1, use a segment instead of a line in step 1.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">For a different scale, change the distance from </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> to </span><span class="f_BodyText" style="font-style: italic;">B,</span><span class="f_BodyText"> or multiply the slider value by some scaling factor.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">For integer values, use the <a href="windows_calculator.htm" class="topiclink">Calculator</a> to round the value of the slider.</span></p><p class="p_MarginNote"><span class="f_MarginNote">You can also create a numeric value (a <a href="objects_parameters.htm" class="topiclink">parameter</a>) directly, using the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_graph.htm" class="topiclink">Graph</a> | <a href="menus_number_newparameter.htm" class="topiclink">New Parameter</a></span><span class="f_MarginNote"> command. The advantage of the slider described here is that sliding the control point back and forth provides a powerful, visual way to change the value.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

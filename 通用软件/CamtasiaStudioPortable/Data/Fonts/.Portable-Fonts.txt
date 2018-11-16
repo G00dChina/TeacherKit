@@ -1,0 +1,2 @@
+• Font(s) added in here are available for usage during runtime.
+• Supported: .fon, .fnt, .ttf, .ttc, .fot, .otf, .mmm.

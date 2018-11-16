@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.proxycommands" component="wpp">
+	<modules>
+		<module name="shareplay">
+			<KxCellPhoneControlCommand hotKey="C" icon="Remote" id="cellphoneControl" customTip="cellphoneControl" text="@Cellphone Control" rbHotKey="C"/>
+			<KxCellPhoneControlExCommand hotKey="C" icon="Remote" id="cellphoneControlAmi" customTip="cellphoneControl" text="@Cellphone Control" rbHotKey="C"/>
+		</module>
+		<module name="wpsspeaker">
+			<KxWppBridgeSpeakListCommand hotKey="RL" customShortcutEnabled="false" speakingTip="TextSpeech2" icon="TextSpeech" id="TextToSpeechOption" customTip="TextSpeech" text="@Text Speech" rbHotKey="RL">
+				<KxWppBridgeSpeakAllCommand hotKey="a" customShortcutEnabled="false" icon="TextSpeechAll" id="TextToSpeechAll" allSlideMode="1" text="@Full-Text Speech" rbHotKey="A"/>
+				<KxWppBridgeSpeakAllCommand hotKey="b" customShortcutEnabled="false" icon="TextSpeechCurrent" id="TextToSpeechSlide" allSlideMode="0" text="@Current Slide Speech" rbHotKey="B"/>
+				<KxWppBridgeSpeakSelectionCommand hotKey="s" customShortcutEnabled="false" icon="TextSpeechSelect" id="TextToSpeechSelect" text="@Selection Speech" rbHotKey="S"/>
+				<separator/>
+				<KxWppSpeakToolBarCommand hotKey="d" customShortcutEnabled="false" id="TextToSpeechToolBar" text="@Show Toolbar" rbHotKey="D"/>
+			</KxWppBridgeSpeakListCommand>
+		</module>
+		<module name="kocrtool">
+			<KOCRToolCommand hotKey="PT" icon="PictureToText" id="OCRToolCmd" customTip="PictureToText" text="@Picture to Text" rbHotKey="PT"/>
+		</module>
+		<module name="kdocumentfix">
+			<KDocumentFixCommand hotKey="RF" icon="DocumentFix" id="DocumentFix" customTip="DocumentFix" text="@Document Fix" rbHotKey="RF"/>
+		</module>
+		<module name="kpdf2word">
+			<KPDF2WordCommand hotKey="PW" icon="PDFToWord" id="PDF2Word" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+		</module>
+		<module name="kpdf2wordv2">
+			<KPDF2WordV2Command hotKey="PW" icon="PDFToWord" id="PDF2WordV2" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+		</module>
+		<module name="konlinefonts">
+			<KxWppOlFontQhbCommand ksoCmd="FontName" icon="OnlineFonts" id="OnlineFonts" customTip="OnlineFonts" text="@Online Fonts"/>
+		</module>
+	</modules>
+	<proxycommands>
+		<proxycommand targetId="cellphoneControlAmi" id="ProxycellphoneControlAmi"/>
+		<proxycommand targetId="TextToSpeechOption" id="ProxyTextToSpeechOption"/>
+		<proxycommand targetId="OCRToolCmd" id="ProxyOCRToolCmd"/>
+		<proxycommand targetId="DocumentFix" id="ProxyDocumentFix"/>
+		<proxycommand targetId="PDF2Word" id="ProxyPDF2Word"/>
+		<proxycommand targetId="PDF2WordV2" visible="false" id="ProxyPDF2WordV2"/>
+		<proxycommand targetId="OnlineFonts" visible="false" id="ProxyOnlineFonts"/>
+	</proxycommands>
+</shell>

@@ -1,0 +1,210 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; Advanced Topics &gt; Advanced Text Topics &gt; Unicode</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Advanced Topics,Advanced Topics Unicode,Unicode,Labels,Labels Unicode,Captions,Captions Unicode">
+   <meta name="description" content="Unicode">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "unicode.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Unicode</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="adv.htm">Advanced Topics</a> &gt; <a href="adv_text.htm">Advanced Text Topics</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Unicode</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="adv_text.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="adv_text.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="adv_text_lossy.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Sketchpad fully supports Unicode, so you can use Unicode characters and mathematical symbols in <a href="objects_captions.htm" class="topiclink">captions</a>, <a href="objects_attrib_labels.htm" class="topiclink">labels</a>, and names of <a href="tools_cust.htm" class="topiclink">custom tools</a> and <a href="menus_trans_custdefine.htm" class="topiclink">custom transformations</a>. You can write in multiple alphabets, such as живая математика, in Russian, or 动感几何, in Chinese. Use Unicode to write mathematical symbols, such as </span><img src="caption_math_symbols.png" width="111" height="16" alt="" style="border:none" /><span class="f_BodyText">.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Depending on your operating system and the fonts installed on your computer, not all Unicode characters can be displayed in all fonts. You may have to experiment to find a font that includes the particular Unicode characters you want to use.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Many Unicode characters cannot be typed directly, so you’ll need to use other methods to enter these characters.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you're editing a caption, you can insert a variety of Unicode characters using the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a>. Press the Symbolic Notation button to show the mathematical notation choices. Then use the <a href="windows_txtpal_mathnotation.htm" class="topiclink">symbol buttons</a> on the right to enter various mathematical symbols and Greek letters.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you're editing a label, you can insert certain Unicode characters using special codes, such as {angle} to enter the </span><img src="angle.png" width="11" height="9" alt="" style="border:none" /><span class="f_BodyText"> symbol. See <a href="objects_attrib_labelprops.htm" class="topiclink">Subscripts, Symbols, Greek Letters, and Unicode</a> for the list of codes you can use in labels.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you want to type in a different language, it’s most convenient to set your keyboard to switch between languages, so that you can type to enter the desired Unicode characters in either language.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you want to enter other mathematical symbols or special characters, it may be most convenient to use your operating system’s method for viewing and inserting Unicode characters from a table or palette.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Set Your Keyboard to Type in a Different Language</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Both Windows and Macintosh have methods for changing your keyboard so you can type in a variety of languages. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you’re using Windows Vista or Windows XP, choose </span><span class="f_BodyText" style="font-weight: bold;">Start | Control Panel | Regional and Language Options.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you’re using Mac OS X, choose </span><span class="f_BodyText" style="font-weight: bold;">System Preferences | International.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Insert Unicode in a Caption or Label (Windows)</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Open the Character Map by choosing </span><span class="f_BodyText" style="font-weight: bold;">Start | All Programs | Accessories | System Tools | Character Map.</span><span class="f_BodyText"> </span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">In the Character Map, choose a font from the pop-up menu.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Highlight the character you want to insert into the document.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">Click </span><span class="f_BodyText" style="font-weight: bold;">Select</span><span class="f_BodyText">, and then click </span><span class="f_BodyText" style="font-weight: bold;">Copy.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Return to your Sketchpad document and position your cursor where you want the special character to appear.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">6.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_paste.htm" class="topiclink">Paste</a>. </span></p><p class="p_BodyText"><span class="f_BodyText">In Windows XP, support for Unicode characters is limited: many fonts are missing important Unicode characters. If you enter a Unicode character not supported by the current font, it will appear as a square. Windows Vista has much better Unicode support in default fonts.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Insert Unicode in a Caption or Label (Macintosh)</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Set up your Macintosh to display the </span><span class="f_BodyText">Character Palette</span><span class="f_BodyText"> in the Input menu. Open </span><span class="f_BodyText" style="font-weight: bold;">System Preferences.</span><span class="f_BodyText"> In OSX 10.5</span><span class="f_BodyText" style="font-weight: bold;">,</span><span class="f_BodyText"> click the International icon, go to the </span><span class="f_BodyText">Input Menu</span><span class="f_BodyText"> panel, and check the box for</span><span class="f_BodyText" style="font-weight: bold;"> Character Palette.</span><span class="f_BodyText"> In OSX 10.6, click the Language &amp; Text icon, go to the Input Sources panel, and check the box for </span><span class="f_BodyText" style="font-weight: bold;">Keyboard &amp; Character Viewer.</span><span class="f_BodyText"> In either case, also check </span><span class="f_BodyText" style="font-weight: bold;">Show input menu in menu bar.</span><span class="f_BodyText"> (You only need to do this once.) The </span><span class="f_BodyText">Input</span><span class="f_BodyText"> menu icon appears on the right side of your menu bar.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;">Show Character Palette</span><span class="f_BodyText"> (OSX 10.5) or </span><span class="f_BodyText" style="font-weight: bold;">Show Character Viewer</span><span class="f_BodyText"> (OSX 10.6) </span><span class="f_BodyText">from the Input menu on the menu bar. (If the Input menu does not appear, you may be using an application whose menu bar is too long to allow the Input menu to show. In this case switch to the Finder, which has a short menu bar, and then choose </span><span class="f_BodyText" style="font-weight: bold;">Show Character Palette</span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;">Show Character Viewer</span><span class="f_BodyText"> from the Input menu.)</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">In Sketchpad, click in the label or caption where you want to enter the special symbol.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">In the Character Palette or Viewer, double-click the Unicode character or symbol that you want to insert into your Sketchpad document.</span></p></td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

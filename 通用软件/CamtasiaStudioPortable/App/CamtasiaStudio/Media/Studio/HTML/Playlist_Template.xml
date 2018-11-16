@@ -1,0 +1,24 @@
+﻿            <video1>
+               <duration type="Number">$VideoDuration</duration>
+               <uri>$FetchFileURLVideoObj$#$MediaDirectoryForSWF$#$VideoFileName</uri>
+               <frameRate type="Number">$VideoFPS</frameRate>
+               <keyframeRate type="Number">$VideoKeyframeRate</keyframeRate>
+               <blendingMode>$SWFVideoBlendingMode</blendingMode>
+               <isFlv type="Boolean">$SWFMainVidIsFLV</isFlv>
+            </video1>
+            <pip>
+               <duration type="Number">$PIPVideoDuration</duration>
+               <frameRate type="Number">$PIPVideoFPS</frameRate>
+               <keyframeRate type="Number">$PIPKeyframeRate</keyframeRate>
+               <uri>$FetchFileURLVideoObj$#$PIPVideoFileName</uri>   
+            </pip>
+            <hasPipVideo type="Boolean">$SWFHasPIPVideo</hasPipVideo>
+            <hotspotInfo>
+               $HotspotXML
+            </hotspotInfo>
+            <quizInfo>
+               $QuizXML
+            </quizInfo>
+            <captionInfo>
+               $ClosedCaptionArray
+            </captionInfo>

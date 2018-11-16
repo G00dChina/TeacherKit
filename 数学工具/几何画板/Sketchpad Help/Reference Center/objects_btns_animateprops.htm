@@ -1,0 +1,216 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Action Buttons &gt; Animation Buttons and Properties</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Animation Buttons,Animation Buttons properties,Animation Buttons creating,Animate Properties,Properties,Properties Animate,Objects,Objects animation buttons,Action Buttons,Action Buttons Animation">
+   <meta name="description" content="Animation Buttons and Properties">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_btns_animateprops.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Animation Buttons and Properties</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_btns.htm">Action Buttons</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Animation Buttons and Properties</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_btns_hideshowprops.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_btns.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_btns_moveprops.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">An <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a> animates one or more geometric objects or <a href="objects_parameters.htm" class="topiclink">parameters</a>. </span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Creating and Using an Animation Button</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="animation.png" width="113" height="24" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Use Animation buttons to automate motion in your sketch. Use an Animation button to move a point along its path, to move an independent point randomly in the plane, or to vary a parameter.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Select one or more objects and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_animation.htm" class="topiclink">Edit | Action Buttons | Animation</a></span><span class="f_BodyText"> to create an Animation button.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">How the button animates each selected object depends on the nature of the object:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Independent points animate freely in the plane. </span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Points on <a href="objects_cats_paths.htm" class="topiclink">path objects</a> animate along their paths.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Other geometric objects animate the points on which they depend.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Parameters animate by changing their numeric value.</span></p><p class="p_BodyText"><span class="f_BodyText">You may want to familiarize yourself with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_animate.htm" class="topiclink">Display | Animate</a></span><span class="f_BodyText"> command before creating action buttons to perform animations for you.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Press an Animation button once to start the animation. The button remains pressed until the animation is finished. You can press the button a second time, while the button is still pressed, to stop the animation.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can also press the <a href="shortcuts.htm" class="topiclink">Esc</a> key to stop the animation. (You may have to press the Esc key more than once.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a> | Animate</span><span class="f_BodyText"> to set the animation speed and direction and to set the domain for parameter animation.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Animate Properties</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">This <a href="menus_edit_properties.htm" class="topiclink">Properties</a> panel appears only for <a href="menus_edit_btns_animation.htm" class="topiclink">Animation</a> <a href="objects_btns.htm" class="topiclink">action buttons</a>. Use it to determine how each animated object moves.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The panel appears automatically when you choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_animation.htm" class="topiclink">Edit | Action Buttons | Animation</a></span><span class="f_BodyText"> to create a button. After you’ve created the button, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a>,</span><span class="f_BodyText"> or choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Properties</a></span><span class="f_BodyText"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu, to display the panel again to make further adjustments.</span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:309px;padding:0px 0px 0px 0px"><img src="animate_props_point_zoom75.png" width="309" height="291" style="border:none" alt="Animate Properties for a Point" /><p style="text-align:center"><span class="f_Image_Centered_Large">Animate Properties for a Point</span></p></div></div>
+<p><span class="f_Image_Centered_Large"> &nbsp; &nbsp; </span></p>
+<div><div style="width:310px;padding:0px"><img src="animate_props_param_zoom75.png" width="310" height="291" style="border:none" alt="Animate Properties for a Parameter" /><p style="text-align:center"><span class="f_Image_Centered_Large">Animate Properties for a Parameter</span></p></div></div>
+<p class="p_Image_Centered_Large" style="text-align: left;"><span class="f_BodyText">The list at the top describes the motion of each animated object. If the button animates an object that can move only by moving its <a href="objects_attrib_relations.htm" class="topiclink">parents</a>, the list shows the parents rather than the object itself. (For instance, if you animate the segment connecting point </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> and point </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText">, the list shows </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText"> rather than the segment.) When you highlight an object in the list, the details of that object’s animation settings appear in the lower part of the panel, and you can modify the settings to change how the animation works.</span></p>
+<p class="p_Image_Centered_Large" style="text-align: left;"><span class="f_BodyText" style="font-weight: bold;">Direction:</span><span class="f_BodyText"> For <a href="objects_parameters.htm" class="topiclink">parameters</a> and for points that are animated on <a href="objects_cats_paths.htm" class="topiclink">paths</a>, you can set the direction of the motion. The available choices depend on the kind of path and the kind of objects. For instance, if the path is a circle or circle interior, the first two choices are </span><span class="f_BodyText" style="font-weight: bold;">counter-clockwise</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">clockwise.</span><span class="f_BodyText"> If the path is a straight object, arc, or polygon, the first two choices are </span><span class="f_BodyText" style="font-weight: bold;">forward</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">backward</span><span class="f_BodyText">. If the animated object is a parameter, the first two choices are </span><span class="f_BodyText" style="font-weight: bold;">increasing</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">decreasing</span><span class="f_BodyText">.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Animating points or parameters randomly is particularly useful for investigations in probability, statistics, and chaos.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you choose </span><span class="f_BodyText" style="font-weight: bold;">random</span><span class="f_BodyText"> direction for a point on a path, the point moves to a new randomly chosen position on its path each time it moves. Similarly, if you choose </span><span class="f_BodyText" style="font-weight: bold;">random</span><span class="f_BodyText"> direction for a parameter, the parameter takes on a new random value within its domain each time it moves.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Once Only: </span><span class="f_BodyText">For a parameter or a point on a path which is moving randomly, check </span><span class="f_BodyText" style="font-weight: bold;">Once only</span><span class="f_BodyText"> to stop the animation after it generates a single new random position or value. For points on paths that aren’t moving randomly, check </span><span class="f_BodyText" style="font-weight: bold;">Once only</span><span class="f_BodyText"> to stop the animation when the point returns to its starting position. For parameters which aren’t moving randomly, check </span><span class="f_BodyText" style="font-weight: bold;">Once only</span><span class="f_BodyText"> to stop the animation when the parameter returns to its starting value.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The </span><span class="f_MarginNote" style="font-weight: bold;">Once only</span><span class="f_MarginNote"> check box is not available when a point or parameter is moving bidirectionally.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Speed:</span><span class="f_BodyText"> This portion of the dialog box appears only for points, and allows you to set the speed of an animated point to slow, medium, fast, or some other desired value.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Change Value:</span><span class="f_BodyText"> This portion of the dialog box appears only for parameters, and allows you to determine how a parameter’s value changes. You can determine whether the value changes </span><span class="f_BodyText">continuously</span><span class="f_BodyText"> or </span><span class="f_BodyText">discretely</span><span class="f_BodyText"> (jumping by an increment you set each time the value changes). You can determine how quickly the value changes, and the domain within which the value can vary.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The rate at which a parameter changes its value is not exact. Sketchpad tries to change the value at the designated rate, but if your computer is busy with other tasks, the parameter may change more slowly than the rate set here.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_animprinc.htm" class="topiclink">Principles of Animation</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

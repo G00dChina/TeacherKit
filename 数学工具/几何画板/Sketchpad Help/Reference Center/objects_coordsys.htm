@@ -1,0 +1,225 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Coordinate Systems and Axes</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Coordinate Systems,Coordinate Systems creating,Coordinate Systems modifying,Coordinate Systems modifying,Coordinate Systems using,Axes,Objects,Objects coordinate systems,Objects axes">
+   <meta name="description" content="Coordinate Systems and Axes">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_coordsys.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Coordinate Systems and Axes</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Coordinate Systems and Axes</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_tables_props.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_coordsys_multiple.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">A coordinate system allows you to measure coordinates, distances, slopes, and equations on the plane and to plot points and functions.</span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:120px;padding:0px 0px 0px 0px"><img src="coord_sys_zoom60.png" width="120" height="120" style="border:none" alt="Square" /><p style="text-align:center"><span class="f_Image_Centered_Large">Square</span></p></div></div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large"> &nbsp;  </span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:120px;padding:0px 0px 0px 0px"><img src="coord_sys_rect_zoom60.png" width="120" height="120" style="border:none" alt="Rectangular" /><p style="text-align:center"><span class="f_Image_Centered_Large">Rectangular</span></p></div></div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large"> &nbsp;  </span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:120px;padding:0px 0px 0px 0px"><img src="coord_sys_polar_zoom60.png" width="120" height="120" style="border:none" alt="Polar" /><p style="text-align:center"><span class="f_Image_Centered_Large">Polar</span></p></div></div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large"> &nbsp;  </span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:172px;padding:0px 0px 0px 0px"><img src="coord_sys_trig_zoom60.png" width="172" height="120" style="border:none" alt="Square with Trigonometric Axis" /><p style="text-align:center"><span class="f_Image_Centered_Large">Square with Trigonometric Axis</span></p></div></div>
+<p class="p_BodyText"><span class="f_BodyText">A coordinate system is defined by its origin, grid form, and the scale of its axes.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Origin: </span><span class="f_BodyText_Indented">The origin is either a selected point or, if no point is selected when the coordinate system is constructed, a new point in the center of the screen.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Grid Form: </span><span class="f_BodyText_Indented">Coordinate systems are either square (with the same scale on both axes) or rectangular (with different scales on the horizontal and vertical axes). The grid appears in either rectangular or polar form, and the axes can be measured either in decimal numbers or in multiples and fractions of </span><span style="font-style: italic;">π</span><span class="f_BodyText_Indented">. </span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Scale: </span><span class="f_BodyText_Indented">The scale of a square coordinate system is determined by a unit point or by a distance measurement in the sketch. The scale of a rectangular coordinate system is determined by two unit points (one for each axis) or by two distance measurements in the sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">A coordinate system has a horizontal and a vertical axis. The axes behave as <a href="objects_segmentsrayslines.htm" class="topiclink">lines</a> for most purposes.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Sketchpad’s analytic measurements (</span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_coordinates.htm" class="topiclink">Coordinates</a>,</span><span class="f_BodyText"> </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_coorddist.htm" class="topiclink">Coordinate Distance</a>,</span><span class="f_BodyText"> </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_slope.htm" class="topiclink">Slope</a>, </span><span class="f_BodyText">and</span><span class="f_BodyText" style="font-weight: bold;"> <a href="menus_measure_equation.htm" class="topiclink">Equation</a></span><span class="f_BodyText">)</span><span class="f_BodyText" style="font-weight: bold;"> </span><span class="f_BodyText">and plotting commands (</span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotvalue.htm" class="topiclink">Plot Value on Axis</a>,</span><span class="f_BodyText"> </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotpoints.htm" class="topiclink">Plot Points</a>, <a href="menus_graph_plotpoints.htm" class="topiclink">Plot as (x, y)</a>, <a href="menus_graph_plotpoints.htm" class="topiclink">Plot Table Data</a>,</span><span class="f_BodyText"> </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Plot New Function</a>, </span><span class="f_BodyText">and</span><span class="f_BodyText" style="font-weight: bold;"> <a href="menus_graph_plotcurve.htm" class="topiclink">Plot Parametric Curve</a></span><span class="f_BodyText">)</span><span class="f_BodyText" style="font-weight: bold;"> </span><span class="f_BodyText">are defined in reference to a coordinate system. If your sketch does not yet contain a coordinate system, any of these commands except </span><span class="f_BodyText" style="font-weight: bold;">Plot Value on Axis</span><span class="f_BodyText"> will create one for you.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can define <a href="objects_coordsys_multiple.htm" class="topiclink">more than one coordinate system</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Create a Coordinate System</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">There are two ways to create a coordinate system.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_definecoordsys.htm" class="topiclink">Graph | Define Coordinate System</a></span><span class="f_BodyText">. Depending on the objects you’ve selected, there are <a href="menus_graph_definecoordsys.htm" class="topiclink">several ways</a> this command constructs the coordinate system.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Measure or plot a quantity that requires a coordinate system, such as </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_coordinates.htm" class="topiclink">Coordinates</a>, <a href="menus_measure_coorddist.htm" class="topiclink">Coordinate Distance</a>, <a href="menus_measure_slope.htm" class="topiclink">Slope</a>, <a href="menus_measure_equation.htm" class="topiclink">Equation</a>, <a href="menus_graph_plotpoints.htm" class="topiclink">Plot Points</a>, </span><span class="f_BodyText">or </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Plot New Function</a>.</span><span class="f_BodyText"> If you don’t already have a coordinate system, any of these commands will create one</span><span style="font-size: 15px;">.</span></p><p class="p_BodyText"><span class="f_BodyText">The default coordinate system is a square system with its origin at the center of your sketch window and a unit point at (1, 0).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can define <a href="objects_coordsys_multiple.htm" class="topiclink">multiple coordinate systems</a>, though there’s seldom a need to do so.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Modify a Coordinate System</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the grid form, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph.htm" class="topiclink">Graph</a> | <a href="menus_graph_gridform.htm" class="topiclink">Grid Form</a></span><span class="f_BodyText"> and choose a polar, square, or rectangular grid. On a polar grid, coordinates are measured and points are plotted in polar (</span><span class="f_BodyText" style="font-style: italic;">r, </span><span class="f_BodyText" style="font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial'; font-style: italic;">&theta;</span><span class="f_BodyText">) coordinates; on a square or rectangular grid, coordinates are measured and points are plotted in rectangular (</span><span class="f_BodyText" style="font-style: italic;">x, y</span><span class="f_BodyText">) coordinates.</span></p><p class="p_MarginNote"><span class="f_MarginNote">Depending on how the coordinate system was defined, some of the Grid Form commands may not be available.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the horizontal axis of a square or rectangular grid between showing decimal numbers and showing multiples and fractions of </span><span style="font-style: italic;">π</span><span class="f_BodyText">, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_gridform.htm" class="topiclink">Graph | Grid Form</a> | Trigonometric Axis.</span></p><p class="p_MarginNote"><span class="f_MarginNote">If your angle units are degrees when you choose </span><span class="f_MarginNote" style="font-weight: bold;">Trigonometric Axis,</span><span class="f_MarginNote"> Sketchpad asks whether you want to switch your angle units to radians.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can also change an axis individually by selecting it and choosing </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_properties.htm" class="topiclink">Properties</a> | <a href="objects_coordsys_axisprops.htm" class="topiclink">Axis</a>.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change both axes of a polar grid between showing decimal numbers and showing multiples and fractions </span><span class="f_BodyText">of </span><span style="font-style: italic;">π</span><span class="f_BodyText">, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_gridform.htm" class="topiclink">Graph | Grid Form</a> | Trigonometric Axis.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To hide or show grid lines, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_showgrid.htm" class="topiclink">Graph | Hide Grid</a></span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_showgrid.htm" class="topiclink">Graph | Show Grid</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the grid to show dot paper rather than grid lines, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_dotted_grid.htm" class="topiclink">Graph | Dotted Grid</a>.</span><span class="f_BodyText"> </span><span class="f_BodyText">(To use a coordinate system as a geoboard, see <a href="shortcuts_howto_geoboard.htm" class="topiclink">How to Construct a Geoboard</a>.)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the color of the grid lines, select the grid by clicking a grid intersection and choose a color from the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_color.htm" class="topiclink">Display | Color</a></span><span class="f_BodyText"> submenu.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the appearance of tick numbers, select the axis and choose the desired font, size, or style from the </span><span class="f_BodyText"><a href="windows_txtpal.htm" class="topiclink">Text Palette</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To make points snap to integer coordinate positions when dragged, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph.htm" class="topiclink">Graph</a> | <a href="menus_graph_snappoints.htm" class="topiclink">Snap Points</a></span><span class="f_BodyText">.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Use a Coordinate System</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the scale of a coordinate system, drag the unit point. Square coordinate systems have one unit point, and rectangular coordinate systems have two.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change the scale of a coordinate system, press and drag any axis tick number with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool.</span></p><p class="p_MarginNote"><span class="f_MarginNote">The scale of a coordinate system may be defined by an object in the sketch; such a coordinate system doesn’t have a unit point and cannot be scaled by dragging axis tick numbers.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">If you have more than one coordinate system, make one of them active by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_markcoordsystem.htm" class="topiclink">Graph | Mark Coordinate System</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To plot a point on the coordinate system, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotpoints.htm" class="topiclink">Graph | Plot Points</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To plot two measured values on the coordinate system, select them and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotpoints.htm" class="topiclink">Graph | Plot as (x, y)</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To plot a point on an axis, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotvalue.htm" class="topiclink">Graph | Plot Value on Axis</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To plot a new <a href="objects_functions.htm" class="topiclink">function</a> on the coordinate system, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Graph | Plot New Function</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To plot an existing <a href="objects_functions.htm" class="topiclink">function</a> on the coordinate system, select the function and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Graph | Plot Function</a>.</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_coordsys_multiple.htm" class="topiclink">Multiple Coordinate Systems</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_coordsys_axisprops.htm" class="topiclink">Axis Properties</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="shortcuts_howto_geoboard.htm" class="topiclink">How to Construct a Geoboard</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

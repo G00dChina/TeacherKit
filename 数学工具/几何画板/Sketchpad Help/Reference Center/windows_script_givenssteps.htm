@@ -1,0 +1,219 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Script View &gt; Givens and Steps of a Tool</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Custom Tools,Custom Tools given objects and steps,Custom Tools properties of given objects and steps,Script View,Script View given objects and steps,Script View Properties of given objects and steps">
+   <meta name="description" content="Givens and Steps of a Tool">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_script_givenssteps.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Givens and Steps of a Tool</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_script.htm">Script View</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Givens and Steps of a Tool</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_script.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_script.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_script_apply.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The Script View’s Object List describes, in a step-by-step fashion, all of the objects and constructed relationships that make up the <a href="tools_cust.htm" class="topiclink">custom tool</a>. The object list is divided into two major sections: Givens and Steps.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="win_scrptview_list_zoom75.png" width="321" height="164" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Given Objects</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The Given section shows all the given objects for the tool — all the objects that don’t depend on any other objects in the tool. When using the tool in a sketch, these are the objects that you “match” in a sketch by clicking the tool. Given objects are listed in the order in which you must match them, which by default is the order chosen by the tool’s author when the tool was created.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can change the order of given objects by dragging individual given objects up or down in Script View.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">In some tools, the Given section may be divided into two parts, labeled </span><span class="f_BodyText" style="font-weight: bold;">Assuming</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;">Given</span><span class="f_BodyText" style="font-weight: bold;">.</span><span class="f_BodyText"> The </span><span class="f_BodyText" style="font-weight: bold;">Assuming</span><span class="f_BodyText"> part contains assumed objects — given objects that are automatically matched to sketch objects having the same label when the tool is used in a sketch. The </span><span class="f_BodyText" style="font-weight: bold;">Given</span><span class="f_BodyText"> part contains the remaining given objects — the given objects that must be matched explicitly.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">To change an object to be assumed, double-click the object and check </span><span class="f_MarginNote" style="font-weight: bold;">Automatically Match Sketch Object</span><span class="f_MarginNote"> in the <a href="objects_attrib_labelprops.htm" class="topiclink">Label panel</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Assumed objects don’t need to be matched explicitly when you use the tool, unless the sketch does not contain objects to match with the same label. (By default, a tool’s given objects are explicit, as opposed to assumed. But when you use a tool repeatedly in the same sketch, you may find it convenient to change some explicitly given objects into assumed objects.) For more information about assumed objects, see <a href="adv_tool_automatch.htm" class="topiclink">Automatically Match a Given Object</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Steps</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The Steps section shows all the objects that will be created from the tool’s given objects. These include the tool’s intermediate objects (which are not displayed when the tool is used in a sketch), and the tool’s final results (which are displayed). Unlike given objects, a tool’s steps cannot be reordered: they are determined by the tool’s construction.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The script step for an intermediate object describes it as “hidden.” To change the visibility of a tool object, double-click it and check or uncheck the </span><span class="f_MarginNote" style="font-weight: bold;">Hidden</span><span class="f_MarginNote"> checkbox in the <a href="objects_attrib_props.htm" class="topiclink">Object Properties</a> panel.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Working with the Object List</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can double-click any object in the Object List to change its properties. When you double-click, the <a href="menus_edit_properties.htm" class="topiclink">Properties</a> dialog box appears. Use the various panels to make any desired changes to the properties. You can also use the </span><span class="f_BodyText"><a href="objects_attrib_relations.htm" class="topiclink">Parents and Children</a></span><span class="f_BodyText"> pop-up menus on the Object panel to view and change the properties of the parents or children of the object.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can right-click (Windows) or Ctrl-click (Macintosh) any object in the list to display a <a href="menus_context.htm" class="topiclink">Context</a> menu for the clicked object. Use this Context menu to change the <a href="menus_display_color.htm" class="topiclink">color</a>, <a href="menus_display_pointstyle.htm" class="topiclink">point style</a>, <a href="menus_display_linestyle.htm" class="topiclink">line style</a>, or <a href="menus_display_trace.htm" class="topiclink">tracing</a> for the object on which you click. The Context menu also allows you to <a href="windows_script.htm" class="topiclink">print the script</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="adv_tool.htm" class="topiclink">Advanced Tool Topics</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+Arctime是一款全新概念的跨平台字幕制作软件，可以运行在Mac、Windows、Linux系统上。独创字幕块和多轨道概念，在时间线上拖动鼠标、调整字幕块即可轻松完成字幕创建工作。 Arctime支持导入SRT、ASS、LRC等常用格式字幕，可导出多种常用字幕格式，并且可以导出适用于FCP7、FCPX、PR、Edius、AVID、达芬奇的软字幕格式。 另外，ArcTime还支持将视频片段输出为GIF动图、批量截图以及多张截图拼接的功能，可大大加速碎片化内容的生产效率。
+
+最新的自动断句和语音识别功能配合，可以快速将音频转换（听写）为文本，大大减少打字时间，提高字幕的制作效率，是影视工作者、自媒体人、在线教育从业者的一大利器。
+
+面向译者，Arctime还提供了强大的翻译辅助模块，以及批量机器翻译功能，可以迅速完成语言的转换，只需少量人工校对即可交付。
+
+如需交付视频，仅需从菜单中选择“视频转码”，即可轻松完成字幕压制工作。支持输出标准MP4、HEVC/H.265编码的MP4。Pro版可输出ProRes、DNxHD等专业格式。还可导出内嵌CC的MP4视频、带有透明通道的纯字幕MOV等。
+
+Arctime is a cross-platform subtitle software which can run on Windows, MacOS and Linux. We introduced a unique block subtitle module and multi-track feature in order to allow the user maximum flexibility. The program introduces a completely new method of visually creating and editing subtitles by simply clicking and dragging in the timeline. Arctime can import SRT, ASS and LRC subtitle file types, and export many other subtitle formats as well. Exporting editable subtitle data to NLEs such as AVID, FCP7, FCPX, Premiere, Edius, Davinci is also supported.
+ 
+For video delivery, Arctime can export standard MP4 (with embedded or burned subtitles), MP4 with HEVC/H.265, ProRes, and DNxHD files. It can also export an MP4 with closed-captions, or a MOV file with an alpha channel that only contains the subtitle images.
+ 
+Arctime can export animated images such as GIF files, and it allows you to create multiple frame grabs, then stitches them together. With the help of automatic audio segmentation and VAD technology, audio data can be quickly transcribed into text, saving a significant amount of time. For translation, Arctime also comes equipped with a powerful CAT tool and batch machine translation ability, thus only minor post editing work is needed. These special functions can dramatically speed up content production.
+ 
+Arctime uses its own file format to save a project. When you reopen the project, everything reloads back to the workspace. Projects can be a collaborative effort by simply exchanging project files.
+
+官方网站：arctime.cn
+Official website: arctime.cn
+

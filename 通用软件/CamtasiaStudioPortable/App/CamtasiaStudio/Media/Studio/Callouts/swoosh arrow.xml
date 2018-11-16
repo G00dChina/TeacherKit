@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>swoosh arrow.png</Overlay_Filename>
+<Overlay_Name>流线箭头</Overlay_Name>
+<Text_Top>-1</Text_Top>
+<Text_Left>-1</Text_Left>
+<Text_Bottom>-1</Text_Bottom>
+<Text_Right>-1</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xff017b34</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M156.931,178.621c0,0,54.603-67.273,146.396-89.312C211.533,67.274,156.931,0,156.931,0l16.09,58.325c-308.422,24.032-121.263,199.289-68.007,227.646c-32.325-39.135-97.62-151.323,68.007-165.691l-16.09,58.332V178.621z</svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>89.31</seamY>
+<shapeWidth>304</shapeWidth>
+<shapeHeight>286</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

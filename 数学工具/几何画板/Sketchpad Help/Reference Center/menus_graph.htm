@@ -1,0 +1,184 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Graph Menu</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Graph Menu,Menus,Menus Graph">
+   <meta name="description" content="Graph Menu">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_graph.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Graph Menu</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Graph Menu</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_number_deffndrawing.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_graph_definecoordsys.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">The Graph menu allows you to create and manipulate <a href="objects_coordsys.htm" class="topiclink">coordinate systems</a>, to show or hide the grid of a coordinate system, to make points snap to integer coordinates, to plot a single value on an axis or other path, to plot points or table data on a coordinate system, and to construct a function plot or parametric plot on a coordinate system.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">This menu offers a variety of commands that serve as a foundation for investigations and activities in analytic geometry and algebra.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use commands on the <a href="menus_measure.htm" class="topiclink">Measure</a> menu to measure various quantities on the coordinate plane, including <a href="menus_measure_coordinates.htm" class="topiclink">coordinates</a> of points, <a href="menus_measure_coorddist.htm" class="topiclink">coordinate distances</a> between points, <a href="menus_measure_slope.htm" class="topiclink">slopes</a> of straight objects, and <a href="menus_measure_equation.htm" class="topiclink">equations</a> of lines and circles.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use commands on the <a href="menus_number.htm" class="topiclink">Number</a> menu to create a <a href="menus_number_newparameter.htm" class="topiclink">parameter</a>, <a href="menus_number_calculate.htm" class="topiclink">calculation</a>, or <a href="menus_number_tabulate.htm" class="topiclink">table</a>, and to define a function <a href="menus_graph_newfunction.htm" class="topiclink">symbolically</a>, as a <a href="menus_graph_derivative.htm" class="topiclink">derivative</a>, or <a href="menus_number_deffndrawing.htm" class="topiclink">graphically</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:300px; padding:0px;"><p style="margin: 14px 0px 0px 0px;"><map name="map9" id="map9"><area shape="rect" coords="1,266,261,288" href="menus_graph_plotcurve.htm" alt="" /><area shape="rect" coords="1,244,261,266" href="menus_graph_plotfunction.htm" alt="" /><area shape="rect" coords="1,215,261,237" href="menus_graph_plottabledata.htm" alt="" /><area shape="rect" coords="1,193,261,215" href="menus_graph_plotpoints.htm" alt="" /><area shape="rect" coords="1,171,261,193" href="menus_graph_plotvalue.htm" alt="" /><area shape="rect" coords="1,140,261,162" href="menus_graph_snappoints.htm" alt="" /><area shape="rect" coords="1,118,261,140" href="menus_graph_dotted_grid.htm" alt="" /><area shape="rect" coords="0,96,260,118" href="menus_graph_showgrid.htm" alt="" /><area shape="rect" coords="1,67,261,89" href="menus_graph_gridform.htm" alt="" /><area shape="rect" coords="1,45,261,67" href="menus_graph_markcoordsystem.htm" alt="" /><area shape="rect" coords="1,23,261,45" href="menus_graph_definecoordsys.htm" alt="" /></map><img src="menu_graph.png" width="266" height="295" alt="" style="border:none" usemap="#map9" /></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click the name of any command in the menu to see detailed information about that command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

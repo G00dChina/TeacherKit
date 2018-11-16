@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.meggy.feature"
+      label="XMind Pro"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd."
+      plugin="org.xmind.meggy">
+
+   <description url="http://www.xmind.net/">
+      XMind Pro
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2012, XMind Ltd. All rights reserved.
+   </copyright>
+
+   <license url="http://www.xmind.net/license/xpla/">
+      XMIND PRO SOFTWARE LICENSE AGREEMENT
+
+Nov 6, 2008
+
+XMIND, LTD. (&quot;LICENSOR&quot;) LICENSES THE ATTACHED SOFTWARE TO YOU (&quot;LICENSEE&quot;)
+ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF THE TERMS IN THIS LICENSE
+AGREEMENT (THE &quot;LICENSE&quot;). IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE
+AGREEMENT, DO NOT INSTALL, COPY OR USE THE SOFTWARE.
+
+License Terms
+
+The software that accompanies this License, including the clip art, images,
+templates and samples (collectively, the &quot;Software&quot;), is the property of
+Licensor or its licensors, and is protected by copyright and other
+intellectual property law.
+
+1) Licensor grants Licensee the non-exclusive, non-transferable right and
+license to install and use the Software in accordance with the then-current
+XMind registration, download and subscription terms specified on the XMind
+website at www.xmind.net/www.xmind.org, and the terms of this License.
+
+2) Licensee may use the clip art, images, templates and samples in the
+Software only in combination with the Software.
+
+3) Licensee may permit the Software to be accessed through Licensee&apos;s
+internal electronic network provided that each person accessing the
+Software through the network must have a corresponding paid subscription
+designated for that person.
+
+4) Licensee may not rent, lease, copy, distribute, license, assign or
+otherwise transfer the Software to any other party.
+
+5) Licensee may not reverse engineer, decompile, or disassemble the
+Software.
+
+6) Licensor warrants that the Software will perform substantially as
+described in its documentation for a period of sixty (60) days from
+purchase of a subscription. Licensor does not warrant that operation
+of the Software will be uninterrupted or that the Software will be
+error-free.
+
+Licensee&apos;s sole remedy under the Software warranty is for Licensor, at
+Licensor&apos;s option, to either: a) repair or replace the Software that
+does not meet the foregoing warranty if a timely claim is made within
+the warranty period, or b) issue a full refund of the subscription price
+paid.
+
+To the extent permitted by applicable law, the foregoing limited
+warranty is in lieu of all other warranties or conditions, express or
+implied, and Licensor disclaims any and all implied warranties or
+conditions, including any implied warranty of title, non-infringement,
+merchantability or fitness for a particular purpose, regardless of whether
+Licensor knows or has reason to know of Licensee&apos;s particular needs.
+
+7) In no event will Licensor be liable to Licensee for any damages
+connected with or resulting from this License or Licensee&apos;s use of the
+Software.
+
+8) Licensee agrees to defend and indemnify Licensor, and hold Licensor
+harmless from and against any and all claims which a third party may
+assert against Licensor by reason of or as a consequence of Licensee&apos;s
+use of the Software.
+
+9) Licensor has the right to terminate this License and Licensee&apos;s right
+to use the Software upon any material breach by Licensee.
+
+10) This License is the entire and exclusive agreement between Licensor
+and Licensee regarding this Software. This License agreement replaces and
+supersedes all prior negotiations, dealings, and agreements between
+Licensor and Licensee regarding this Software.
+   </license>
+
+   <plugin
+         id="org.xmind.core.audio"
+         download-size="39"
+         install-size="67"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.meggy"
+         download-size="148"
+         install-size="242"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.audionotes"
+         download-size="105"
+         install-size="175"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.mapshot"
+         download-size="45"
+         install-size="87"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.mindmap.merging"
+         download-size="31"
+         install-size="58"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.presentation"
+         download-size="126"
+         install-size="224"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.taskinfo"
+         download-size="223"
+         install-size="447"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.gantt"
+         download-size="527"
+         install-size="1056"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.mindmap.filtering"
+         download-size="79"
+         install-size="153"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.gallery"
+         download-size="59"
+         install-size="110"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.search"
+         download-size="78"
+         install-size="144"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.gallery.resources"
+         download-size="137"
+         install-size="142"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.xmind.ui.exports"
+         download-size="65"
+         install-size="261"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.lame.win32"
+         os="win32"
+         download-size="433"
+         install-size="603"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="net.xmind.verify"
+         download-size="154"
+         install-size="305"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.lame.macosx"
+         os="macosx"
+         download-size="378"
+         install-size="880"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="true"/>
+
+   <plugin
+         id="org.apache.tools.zip"
+         download-size="35"
+         install-size="82"
+         version="1.9.6"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.brainstorm"
+         download-size="452"
+         install-size="734"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.core.audio.mp3player"
+         download-size="12"
+         install-size="18"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="javazoom.jlayer"
+         download-size="145"
+         install-size="304"
+         version="1.0.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.mindmap.styleeditor"
+         download-size="139"
+         install-size="291"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.aspose"
+         download-size="25019"
+         install-size="27917"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.freehep.graphicsio"
+         download-size="258"
+         install-size="555"
+         version="2.1.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.exports.vector"
+         download-size="63"
+         install-size="126"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.exports.outline"
+         download-size="6897"
+         install-size="7625"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="de.erichseifert.vectorgraphics2d"
+         download-size="36"
+         install-size="72"
+         version="0.9.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.ideafactory"
+         download-size="41"
+         install-size="79"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.menus.pro"
+         download-size="12"
+         install-size="28"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.index"
+         download-size="69"
+         install-size="129"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.xmindresource"
+         download-size="65"
+         install-size="130"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.gantt.exports.vector"
+         download-size="61"
+         install-size="125"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+</feature>

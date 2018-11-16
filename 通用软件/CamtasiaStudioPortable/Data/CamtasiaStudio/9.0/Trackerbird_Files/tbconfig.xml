@@ -1,0 +1,921 @@
+<?xml xml version="1.0" encoding="utf-8"?>
+<!--Product Configuration File-->
+<ConfigurationObj xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CallHomeUrl>http://analytics09.techsmith.com</CallHomeUrl>
+	<PrivacyMode>0</PrivacyMode>
+	<FileSizeThresholdKB>1024</FileSizeThresholdKB>
+	<LogFull>0</LogFull>
+	<SystemInfoCheckTimeThreshold>24</SystemInfoCheckTimeThreshold>
+	<LastSystemInfoCheck/>
+	<ProductInfoSectionChange>0</ProductInfoSectionChange>
+	<LicenseInfoSectionChange>0</LicenseInfoSectionChange>
+	<FTFlag>1</FTFlag>
+	<ETFlag>8184</ETFlag>
+	<SEQ>1</SEQ>
+	<LastVerCheck/>
+	<VerCheckTimeThreshold>30</VerCheckTimeThreshold>
+	<LastKeyCheck/>
+	<KeyCheckTimeThreshold>5</KeyCheckTimeThreshold>
+	<CustomTextThreshold>4096</CustomTextThreshold>
+	<LastMessageCheck/>
+	<MessageCheckTimeThreshold>1</MessageCheckTimeThreshold>
+	<LastSync>2018-11-3 12:3:27.289</LastSync>
+	<LastSyncSuccess/>
+	<SyncTimeThreshold>30</SyncTimeThreshold>
+	<ProdEdition>Normal</ProdEdition>
+	<TypeOfKey>1</TypeOfKey>
+	<KeyExpired>0</KeyExpired>
+	<KeyActivated>1</KeyActivated>
+	<KeyBlacklisted>0</KeyBlacklisted>
+	<KeyWhitelisted>0</KeyWhitelisted>
+	<ServerPublicKey>2eAoOFN+N8Ely8qnTT8ODkcnZitwuLSiL+wgs45yutxa1160RvReHwAHvvmXtTuU3AQnVC2GxsFQxRw5u4EMLdOWElyfBw7WwqEdplwQQPPS/i2+BapLxN/HqQtHoMeeO4fa2fLx/PqO4pYX5JAJFTIXVBdUpel7zp4KaabIcJs=</ServerPublicKey>
+	<ClientPublicKey>2Lce/KpWBTmHNY/y978mSyBCMQJc42wL4bsiCNVxi9O4yF/aWWuZa+ybyrt9JEGEeoecvrSzOlTTePWZCBoHJ6yxJd5Q+w9yE4VjiThej4ubM+U2rR1ohLaAO97HlaD1mFEcihy73PQ0jSNNwGMpnWMXJwnTItwapQGDhQQxFrE=</ClientPublicKey>
+	<ClientPrivateKey>MIICXgIBAAKBgQDYtx78qlYFOYc1j/L3vyZLIEIxAlzjbAvhuyII1XGL07jIX9pZ
+a5lr7JvKu30kQYR6h5y+tLM6VNN49ZkIGgcnrLEl3lD7D3IThWOJOF6Pi5sz5Tat
+HWiEtoA73seVoPWYURyKHLvc9DSNI03AYymdYxcnCdMi3BqlAYOFBDEWsQIDAQAB
+AoGAWm/IwZ3/ubxxHTwOI68kNtOma7dVth4/sxqZsGAKO1TGVvAROaG6a5xYwziM
+l5WzyEJRehAEf0Io4eBz1TqvYu0FO5u96SVLSj6PE3dncIKm9Nyne3uQKyNFKO30
+I4sLfMOZw7x1tN8GERmjmAmKE63ffksJp3nktIFb0DQfADECQQD9U+IAmp7blgWI
+NBqtWTobJuQzZq0ccQ67ZT4tY34qHILjr40awbhh3A4rOldnZ5+n52bD2tUIiy/V
+3VZ0ZwMVAkEA2wBdoFl3vT1JTs5FCyODRHJBrRw9auJDHKQqxaCyODBHR9Q9nv7D
+ixnrgbS48IFiDEslzTOPecqmUmOka5JcLQJBAJp9MGOL5/skB2Wj2O0EcDIkyqAq
+KsIglIpl2MBXX5aQ4qW15oh9wVM0nxNvtePixvPfY8VnS+m08Ewtek7sj20CQQDF
+MMUc1rIsIPzbCnu8ldNiVAay2pSqouSO63rfy9vtH/tuv7pkaTylCUe22IUVeUpR
+i3CUHfL4VPIBiVrIyVZZAkEAjxI43MMsMWz3jvTb1S/B8sA9rjTCayTiIkmvZ7G7
+zBbCpp4ZzYASCyvZ7I7IZhhMnxtqT76evEYja2bIoGjVrA==
+</ClientPrivateKey>
+	<FingerPrint>OANBMFZUMENEZJNENNNdYgOYYUNAZdNZNMYANVZUMIZU</FingerPrint>
+	<LegacyFingerPrint>NjQ1NmY0OGI5ZTg4ZGNmZWMxYzlmMzc0NDM3YWFjOWE=</LegacyFingerPrint>
+	<ProdBuildNum>2546</ProdBuildNum>
+	<ProdVer>9.1.1</ProdVer>
+	<DebugEnabled>0</DebugEnabled>
+	<ProductLanguage>ENU</ProductLanguage>
+	<ClientID>167D87BAC68CD95E</ClientID>
+	<FeatureListLimit>1000</FeatureListLimit>
+	<CustomFiltersLimit>20</CustomFiltersLimit>
+	<CustomFilterList>
+		<CustomFilter>
+			<Name>C01</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C02</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C03</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C04</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C05</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C06</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C07</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C08</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C09</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C10</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C11</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C12</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C13</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C14</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C15</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C16</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C17</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C18</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C19</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+		<CustomFilter>
+			<Name>C20</Name>
+			<Value/>
+			<Sent>false</Sent>
+		</CustomFilter>
+	</CustomFilterList>
+	<FeatureList>
+		<Feature>
+			<Category>Launch</Category>
+			<Name>Editor</Name>
+			<Sent>false</Sent>
+		</Feature>
+		<Feature>
+			<Category>Preview Renderer</Category>
+			<Name>D3D11</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>D3D11 Driver Type</Category>
+			<Name>Hardware</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Imported Media</Category>
+			<Name>Local</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>New Project Started</Category>
+			<Name>New Project From Import</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Switched to Behaviors Tool</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Minutes Before User First Production</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Scorm Production</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Transitio</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Transition Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Decreased</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Decreased Clip Speed Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Increased</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Increased Clip Speed Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Effects</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Effect Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Animations</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Animation Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Legacy Ca</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Legacy Callout Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Remix Cal</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Remix Callout Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Recordings</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Recording Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Images</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Image Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Quizzes</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Quiz Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Captions</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Caption Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Produced Behavior Per Media Count</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Audio</Category>
+			<Name>M4A Production</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>Local</Name>
+			<Sent>true</Sent>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>All[Engagement]</Name>
+			<Sent>true</Sent>
+		</Feature>
+	</FeatureList>
+	<FeatureWhitelist>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Quizzes</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Dlg open count</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Drifting Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Recorder Actions</Category>
+			<Name>Recording Stopped</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Durations</Category>
+			<Name>5 or less</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Dlg exit with wmark</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Produce without wmark</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Media</Category>
+			<Name>Plain Mov</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>Relay</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Produced Device Frame</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Total Duration of Produced Device Frame</Name>
+		</Feature>
+		<Feature>
+			<Category>Guided Creation</Category>
+			<Name>Relaunched Shotlist From Timeline</Name>
+		</Feature>
+		<Feature>
+			<Category>Launch</Category>
+			<Name>录像机</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Increased</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Media</Category>
+			<Name>Fuse</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Transitio</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>During Behavior Type</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Fade Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Dlg exit cancel</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Created</Category>
+			<Name>from PPT File Size</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>GoogleDrive</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>Vimeo</Name>
+		</Feature>
+		<Feature>
+			<Category>Audio</Category>
+			<Name>Save As M4A</Name>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Dlg open online</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Produced Device Frame with ZoomPan Or O</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Images</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Edited Multiple Behavior Properties</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>O365</Name>
+		</Feature>
+		<Feature>
+			<Category>Marketing Campaigns</Category>
+			<Name>Marketing Message Dismissed</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Total Duration of Device Frames in Seco</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Added Non-Default Device Frame</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Device Fr</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Device Frame Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Preview Renderer</Category>
+			<Name>GL_CPU</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Produce with wmark</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Image Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Switched to Behaviors Tool</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Legacy Callout Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Remix Callout Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Quiz Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Out Behavior Type</Name>
+		</Feature>
+		<Feature>
+			<Category>Audio</Category>
+			<Name>Save As WAV</Name>
+		</Feature>
+		<Feature>
+			<Category>Guided Creation</Category>
+			<Name>Launched Shotlist From Help Menu</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Produce count</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Decreased Clip Speed Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Lines Of Text</Name>
+		</Feature>
+		<Feature>
+			<Category>New Project Started</Category>
+			<Name>New Project From Import</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Opened Effects Drawer</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Dlg exit without wmark</Name>
+		</Feature>
+		<Feature>
+			<Category>Recorder Actions</Category>
+			<Name>Recording Deleted</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Zipped Project</Category>
+			<Name>Other</Name>
+		</Feature>
+		<Feature>
+			<Category>Renderer Info In CSRL</Category>
+			<Name>Renderer Driver Type For Previe</Name>
+		</Feature>
+		<Feature>
+			<Category>CSRL Renderer</Category>
+			<Name>Renderer For Preview</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Decreased</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Dlg open online</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Created</Category>
+			<Name>from Recorder</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Increased Clip Speed Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Shifting Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>YouTube</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Loops Property Changed</Name>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Dlg open count</Name>
+		</Feature>
+		<Feature>
+			<Category>Renderer Used In CSRL</Category>
+			<Name>Renderer For Editing Preview</Name>
+		</Feature>
+		<Feature>
+			<Category>Renderer Used In CSRL</Category>
+			<Name>Renderer Driver Type For Editin</Name>
+		</Feature>
+		<Feature>
+			<Category>Renderer Info In CSRL</Category>
+			<Name>Renderer For Editing Preview</Name>
+		</Feature>
+		<Feature>
+			<Category>Preview Renderer</Category>
+			<Name>GDI</Name>
+		</Feature>
+		<Feature>
+			<Category>Launch</Category>
+			<Name>Editor</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Created</Category>
+			<Name>from Recorder File Size</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Remix Cal</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Caption Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Durations</Category>
+			<Name>10 to 15</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Style Set to None</Name>
+		</Feature>
+		<Feature>
+			<Category>YouTube Productions</Category>
+			<Name>Percetange of YouTube uploads wit</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Media</Category>
+			<Name>Google Drive</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Added Device Frames</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Produced Device Frame with Animation</Name>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Dlg exit with wmark</Name>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Produce count</Name>
+		</Feature>
+		<Feature>
+			<Category>Launch</Category>
+			<Name>Recorder</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Scorm Production</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Legacy Ca</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Recording Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Durations</Category>
+			<Name>5 to 10</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Created</Category>
+			<Name>from PPT</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Pulsating Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Movement Property Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>ScreenCast</Name>
+		</Feature>
+		<Feature>
+			<Category>Audio</Category>
+			<Name>M4A Production</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Zipped Project</Category>
+			<Name>Mac</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Total Number of Produced Device Frames</Name>
+		</Feature>
+		<Feature>
+			<Category>Recorder Actions</Category>
+			<Name>Recording Paused</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Produced Non-Default Device Frame</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Percentage of Produced Video Containing</Name>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Produce with wmark</Name>
+		</Feature>
+		<Feature>
+			<Category>Renderer Used In CSRL</Category>
+			<Name>Renderer Used For Editing Previ</Name>
+		</Feature>
+		<Feature>
+			<Category>D3D11 Driver Type</Category>
+			<Name>Warp</Name>
+		</Feature>
+		<Feature>
+			<Category>CSRL Renderer</Category>
+			<Name>Renderer Driver Type</Name>
+		</Feature>
+		<Feature>
+			<Category>LibZip</Category>
+			<Name>Exported LibZip</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Sliding Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>LibZip</Category>
+			<Name>Imported LibZip</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Effect Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Animations</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Animation Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>All[Engagement]</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Zipped Project</Category>
+			<Name>Windows</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Removed Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>D3D11 Driver Type</Category>
+			<Name>Hardware</Name>
+		</Feature>
+		<Feature>
+			<Category>Preview Renderer</Category>
+			<Name>GL_GPU</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Produced Behavior Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Reveal Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Type Property Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Out Behavior Style Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Average Device Frame Duration In Second</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Produced Device Frame Usage Assumption </Name>
+		</Feature>
+		<Feature>
+			<Category>Preview Renderer</Category>
+			<Name>D3D11</Name>
+		</Feature>
+		<Feature>
+			<Category>Imported Media</Category>
+			<Name>Local</Name>
+		</Feature>
+		<Feature>
+			<Category/>
+			<Name>Minutes Before User First Production</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Pop Up Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Direction Property Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>In Behavior Style Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Durations</Category>
+			<Name>20 or more</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Produced Device Frame Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Renderer Used In CSRL</Category>
+			<Name>Renderer Driver Type Used For E</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Captions</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>In Behavior Type</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Opened Behaviors Properties Tab</Name>
+		</Feature>
+		<Feature>
+			<Category>Trec</Category>
+			<Name>Mac Trec</Name>
+		</Feature>
+		<Feature>
+			<Category>Recording Durations</Category>
+			<Name>15 to 20</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Added Device Frame</Name>
+		</Feature>
+		<Feature>
+			<Category>Guided Creation</Category>
+			<Name>Relaunched Shotlist From Help Menu</Name>
+		</Feature>
+		<Feature>
+			<Category>D3D11 Device Type</Category>
+			<Name>Hardware</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Recordings</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Produced Behavior Per Media Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Produce Location</Category>
+			<Name>Local</Name>
+		</Feature>
+		<Feature>
+			<Category>New Project Started</Category>
+			<Name>New Project From Recording</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Behavior Other Property Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Voice Narration Used</Name>
+		</Feature>
+		<Feature>
+			<Category>Device Frames</Category>
+			<Name>Average Device Frame Duration</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Produced Transition Count</Name>
+		</Feature>
+		<Feature>
+			<Category>Feature Use</Category>
+			<Name>Percentage of Productions with Effects</Name>
+		</Feature>
+		<Feature>
+			<Category>Trec</Category>
+			<Name>Windows Trec</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Jump and Fall Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Scale Behavior</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>During Behavior Style Changed</Name>
+		</Feature>
+		<Feature>
+			<Category>Trial Watermark</Category>
+			<Name>Dlg open offline</Name>
+		</Feature>
+		<Feature>
+			<Category>Guided Creation</Category>
+			<Name>Launched Shotlist From Welcome Window</Name>
+		</Feature>
+		<Feature>
+			<Category>Theming</Category>
+			<Name>Theme Created</Name>
+		</Feature>
+		<Feature>
+			<Category>Behaviors</Category>
+			<Name>Added Explode Behavior</Name>
+		</Feature>
+	</FeatureWhitelist>
+</ConfigurationObj>
+

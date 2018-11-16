@@ -1,0 +1,369 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Functions &gt; Using Functions</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Functions,Functions editing,Functions derivative,Functions tracing,Functions family of,Functions transforming,Functions composite,Functions parametric,Functions in calculations">
+   <meta name="description" content="Using Functions">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "using_functions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Using Functions</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_functions.htm">Functions</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Using Functions</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_functions.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_functions.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_functions_ddfprops.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Once you've defined a function, you can use it in many ways: you can plot it, use it in a calculation or to define another function, edit it, differentiate it, trace its family, construct its family, transform it symbolically, transform its plot with a custom transformation, use it to define a composite function or a parametric plot, or create a sound button.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Plot a Function</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To define a new function and plot it immediately on the marked coordinate system, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Graph | Plot New Function</a></span><span class="f_BodyText"> to open </span><span class="f_BodyText">Sketchpad’s <a href="windows_calculator.htm" class="topiclink">Calculator</a>. Use it to define the function. When you close the Calculator, the function is plotted in the form that was set in the Calculator’s <a href="windows_calculator_parts.htm" class="topiclink">Equation pop-up menu</a>. The <a href="objects_functionplots.htm" class="topiclink">function plot</a> can take any of four possible forms.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:70px; padding:5px; border:solid 1px #808080;"><p style="text-align: center; line-height: 1.50;"><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> = </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">)</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_MarginNote" style="margin: 3px 24px 0px 0px;"><span class="f_MarginNote">This is the default form.  </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:70px; padding:5px; border:solid 1px #808080;"><p style="text-align: center; line-height: 1.50;"><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> = </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText">)</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_MarginNote" style="margin: 3px 24px 0px 0px;"><span class="f_MarginNote">Use this form to plot the </span><span class="f_MarginNote" style="font-style: italic;">y</span><span class="f_MarginNote"> = </span><span class="f_MarginNote" style="font-style: italic;">f</span><span class="f_MarginNote">(</span><span class="f_MarginNote" style="font-style: italic;">x</span><span class="f_MarginNote">) function with the axes reversed.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:70px; padding:5px; border:solid 1px #808080;"><p style="text-align: center; line-height: 1.50;"><span class="f_BodyText" style="font-style: italic;">r</span><span class="f_BodyText"> = </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">θ</span><span class="f_BodyText">)</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_MarginNote" style="margin: 3px 24px 0px 0px;"><span class="f_MarginNote">You’ll normally use the last two forms with a <a href="menus_graph_gridform.htm" class="topiclink">polar grid.</a> </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:70px; padding:5px; border:solid 1px #808080;"><p style="text-align: center; line-height: 1.50;"><span class="f_BodyText" style="font-style: italic;">θ</span><span class="f_BodyText"> = </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">r</span><span class="f_BodyText">)</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_MarginNote" style="margin: 3px 24px 0px 0px;"><span class="f_MarginNote">Use this form to graph </span><span class="f_MarginNote" style="font-style: italic;">θ</span><span class="f_MarginNote"> as a function of </span><span class="f_MarginNote" style="font-style: italic;">r</span><span class="f_MarginNote"> with a <a href="menus_graph_gridform.htm" class="topiclink">polar grid.</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">To plot one or more existing functions on the marked coordinate system, select every function you want to plot and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph.htm" class="topiclink">Graph</a> | <a href="menus_graph_plotfunction.htm" class="topiclink">Plot Function</a>.</span><span class="f_BodyText"> Each function is plotted in the form that was set in the &nbsp;Calculator’s <a href="windows_calculator_parts.htm" class="topiclink">Equation pop-up menu</a> at the time you defined that function.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Use a Function in a Calculation or Function Definition</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: -17px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Once you’ve defined a function, you can use it in later calculations and function definitions. To use an existing function in a calculation or in a new function definition, click the function in the sketch to enter it into the <a href="windows_calculator.htm" class="topiclink">Calculator</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the Calculator is hiding the function in the sketch, you may have to move the Calculator out of the way first.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also enter functions from the <a href="windows_calculator_parts.htm" class="topiclink">Function pop-up menu</a> in the Calculator. This menu includes many predefined functions, along with every selected user-defined function in your sketch. </span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="function_eval_zoom75.png" width="166" height="40" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Edit a Symbolic Function</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can edit a symbolically defined function to change its definition or how it’s plotted. Editing a function is useful, for example, if you’ve plotted the graph of </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> = 2·sin(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">), and you want to change the function to </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> = 3·sin(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) in order to see how the two graphs differ. Instead of changing the constant to 3, you can insert a new parameter, allowing you to investigate the plots of the family of functions </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> = </span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText">·sin(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To edit a function, select that function, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_editdefinition.htm" class="topiclink">Edit | Edit Function</a>, </span><span class="f_BodyText">and use the </span><span class="f_BodyText"><a href="windows_calculator.htm" class="topiclink">Calculator</a></span><span class="f_BodyText"> to change the definition.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can also right-click (Win) or Ctrl-click (Mac) the function and choose </span><span class="f_MarginNote" style="font-weight: bold;">Edit Function</span><span class="f_MarginNote"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you edit a function, you can redefine it in any way you want — introducing new parameters and existing parameters, measurements and calculations — provided you don’t create a circular definition. (A circular definition is one that uses a calculation that depends on the function you’re editing. For instance, if you’ve defined a function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText"> and used it to calculate </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(3) in your sketch, you cannot later edit function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText"> so that it uses the calculation of </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(3) in its definition.)</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Choose a new equation form while editing a function to change how that function is plotted. For instance, to plot a function </span><span class="f_MarginNote" style="font-style: italic;">f</span><span class="f_MarginNote"> as a polar function, use the Equation pop-up menu to change the form from </span><span class="f_MarginNote" style="font-style: italic;">y</span><span class="f_MarginNote"> = </span><span class="f_MarginNote" style="font-style: italic;">f</span><span class="f_MarginNote">(</span><span class="f_MarginNote" style="font-style: italic;">x</span><span class="f_MarginNote">) to </span><span class="f_MarginNote" style="font-style: italic;">r</span><span class="f_MarginNote"> = </span><span class="f_MarginNote" style="font-style: italic;">f</span><span class="f_MarginNote">(</span><span class="f_MarginNote" style="font-style: italic;">θ</span><span class="f_MarginNote">).</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Differentiate a Function</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="function_derivative_zoom75.png" width="154" height="40" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">To create the derivative of a function with respect to its independent variable, select the function, then choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_derivative.htm" class="topiclink">Number | Define Derivative Function</a>.</span><span class="f_BodyText"> The result is a derivative function that can be plotted or evaluated like any other function.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Trace a Family of Functions</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Use <a href="objects_parameters.htm" class="topiclink">parameters</a> or <a href="shortcuts_howto_slider.htm" class="topiclink">sliders</a> in a function definition to investigate families of functions.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">After you define the function and plot its graph, you can change or animate the parameter or slider, and observe or <a href="menus_display_trace.htm" class="topiclink">trace</a> the family of functions.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">While you’re using the function <a href="windows_calculator.htm" class="topiclink">Calculator</a> to enter or edit a function, you can create a new parameter or use an existing parameter or other measurement from your sketch. When the value of this parameter or measurement changes, the definition of the function changes. For example, if you create parameter </span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText"> while you’re specifying the function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = </span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText">·sin (</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">), you can investigate the behavior and plots of this entire family of functions, including functions such as </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = –1·sin(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) and </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = 3·sin (</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) by varying the parameter </span><span class="f_BodyText" style="font-style: italic;">a.</span><span class="f_BodyText"> Similarly, use three parameters as you define the function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = </span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText">·</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText" style="font-size: 9px; vertical-align: super;">2</span><span class="f_BodyText"> + </span><span class="f_BodyText" style="font-style: italic;">b</span><span class="f_BodyText">·</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> + </span><span class="f_BodyText" style="font-style: italic;">c</span><span class="f_BodyText"> to investigate how changing each parameter’s value affects the function plot.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">With the <a href="windows_calculator.htm" class="topiclink">Calculator</a> open add a new parameter to the function definition by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_number_newparameter.htm" class="topiclink">Number | New Parameter</a></span><span class="f_BodyText"> from the Calculator’s Values pop-up menu. Insert an existing parameter by clicking on it in the sketch.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Construct a Family of Functions</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="locus_family_fns_zoom60.png" width="138" height="81" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">When you use a <a href="objects_parameters.htm" class="topiclink">parameter</a> or <a href="shortcuts_howto_slider.htm" class="topiclink">slider</a> in a function definition, you can construct the family of functions.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You must first plot the function itself. Then select both the function plot and the parameter or slider used in the function definition and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_construct_locus.htm" class="topiclink">Construct | Family of Functions</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Transform a Function Symbolically</a></span></td></tr></table></div><div id="TOGGLE0186A7" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Once you’ve defined a function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) — for example, </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText" style="font-size: 9px; vertical-align: super;">2 </span><span class="f_BodyText">— you can define and plot other functions that are transformations of </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">). Transformations of </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) include such functions as these:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:173px; padding:0px;"><p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-style: italic;">g</span><span class="f_BodyText_Indented">(</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented">) = 2</span><span class="f_BodyText">·</span><span class="f_BodyText_Indented" style="font-style: italic;">f</span><span class="f_BodyText_Indented">(</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented">)</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">vertical stretch</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:173px; padding:0px;"><p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-style: italic;">h</span><span class="f_BodyText_Indented">(</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented">) = </span><span class="f_BodyText_Indented" style="font-style: italic;">f</span><span class="f_BodyText_Indented">(–</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented">)</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">reflection across </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText">-axis</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:173px; padding:0px;"><p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-style: italic;">j</span><span class="f_BodyText_Indented">(</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented">) = –3</span><span class="f_BodyText">·</span><span class="f_BodyText_Indented" style="font-style: italic;">f</span><span class="f_BodyText_Indented">(2</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented"> + 5) – 1</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">horizontal shrink (1/2) and translate left (5), followed by vertical reflection (</span><span class="f_BodyText_Indented">–),</span><span class="f_BodyText"> stretch, (</span><span class="f_BodyText_Indented">3)</span><span class="f_BodyText">, and translate down (</span><span class="f_BodyText_Indented">–</span><span class="f_BodyText">1)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:173px; padding:0px;"><p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-style: italic;">k</span><span class="f_BodyText_Indented">(</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented">) = </span><span class="f_BodyText_Indented" style="font-style: italic;">f</span><span class="f_BodyText_Indented">(</span><span class="f_BodyText_Indented" style="font-style: italic;">x</span><span class="f_BodyText_Indented"> – </span><span class="f_BodyText_Indented" style="font-style: italic;">h</span><span class="f_BodyText_Indented">) + </span><span class="f_BodyText_Indented" style="font-style: italic;">k</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">translate right by </span><span class="f_BodyText" style="font-style: italic;">h</span><span class="f_BodyText"> and up by </span><span class="f_BodyText" style="font-style: italic;">k</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">To define a function that is a transformation of </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">), choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_newfunction.htm" class="topiclink">Number | New Function</a>.</span><span class="f_BodyText"> Define the new function as you normally would, inserting the original function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText"> wherever you want by clicking it in the sketch.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Custom Transform a Function Plot</a></span></td></tr></table></div><div id="TOGGLE0186A8" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Once you’ve plotted a function, you can define a <a href="menus_trans_custdefine.htm" class="topiclink">custom transformation</a> and apply the transformation to the function plot. For instance, if you define a custom transformation to do a vertical stretch, you can apply the transformation to a function plot.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">In this example, point </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText"> is plotted at (</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText" style="font-size: 9px; font-style: italic; vertical-align: sub;">A</span><span class="f_BodyText" style="font-style: italic;">, k·y</span><span class="f_BodyText" style="font-size: 9px; font-style: italic; vertical-align: sub;">A</span><span class="f_BodyText">), and points </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText"> are used to define a custom transformation. This custom transformation is a vertical stretch by the factor </span><span class="f_BodyText" style="font-style: italic;">k</span><span class="f_BodyText">.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When the custom transformation is applied to the plot of </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) (in blue), the result is the vertically stretched red plot. Because the vertical stretch depends on parameter </span><span class="f_BodyText" style="font-style: italic;">k,</span><span class="f_BodyText"> you can use this construction to explore a variety of vertical stretches of the blue function plot. </span></p>
+</td>
+<td style="vertical-align:top; width:240px; padding:0px;"><p class="p_Image_Centered_Large"><img src="function_cust_trans_zoom60.png" width="231" height="199" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Define a Composite Function</a></span></td></tr></table></div><div id="TOGGLE0186A9" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="function_composition_zoom75.png" width="87" height="80" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">Composite functions </span><span class="f_BodyText">are functions of functions. For instance, </span><span class="f_BodyText" style="font-style: italic;">h</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">)) is called the </span><span class="f_BodyText" style="font-style: italic;">composition</span><span class="f_BodyText"> of functions </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">f,</span><span class="f_BodyText"> and can be thought of as follows: “First evaluate function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText"> at the input value. Then use this result as the input for function </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText">. The result of evaluating </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText"> is the output of the composite function </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">)).”</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To compose two functions </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">, first define each function separately. Then choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_newfunction.htm" class="topiclink">Number | New Function</a></span><span class="f_BodyText"> and use the function <a href="windows_calculator.htm" class="topiclink">Calculator</a> to define the composite function </span><span class="f_BodyText" style="font-style: italic;">h</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">). Click the functions </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText"> in the sketch to enter them into the Calculator.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If the Calculator is hiding </span><span class="f_MarginNote" style="font-style: italic;">f</span><span class="f_MarginNote"> or </span><span class="f_MarginNote" style="font-style: italic;">g</span><span class="f_MarginNote"> in the sketch, you may have to move the Calculator out of the way first.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Define a Parametric Plot</a></span></td></tr></table></div><div id="TOGGLE0186AA" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="parametric_curve_zoom60.png" width="196" height="103" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">To create a <a href="object_parametriccurve.htm" class="topiclink">parametric plot</a>, define one function to represent the </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> value of a point and a second function to represent the </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> value. As the independent variable changes, the set of points determined by the values of the two functions defines the parametric plot.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">In this example, given any value of </span><span class="f_BodyText" style="font-style: italic;">θ</span><span class="f_BodyText">, the values of the two functions </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">θ</span><span class="f_BodyText">) and </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">θ</span><span class="f_BodyText">) determine a point.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To construct the parametric plot, select these two defining functions and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotcurve.htm" class="topiclink">Graph | Plot Parametric Curve</a>. </span><span class="f_BodyText">The resulting plot is in the shape of an ellipse.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Create a Sound Button</a></span></td></tr></table></div><div id="TOGGLE0186AB" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 8px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="sound_zoom60.png" width="100" height="44" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">To create a <a href="sound_buttons.htm" class="topiclink">Sound button</a>, define a mathematical function to describes air pressure over time. (The volume is determined by the amplitude of the function, and the pitch is determined by its period.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Then select the function and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_sound.htm" class="topiclink">Edit | Action Buttons | Sound</a></span><span class="f_BodyText"> to create the button. (You can also select two functions to play a sound in stereo.)</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

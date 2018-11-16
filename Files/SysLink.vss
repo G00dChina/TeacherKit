@@ -1,0 +1,79 @@
++系统链接
+我的电脑||*Explorer.exe /n,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}||>Explorer.exe
+我的文档||*Explorer.exe /n,::{450D8FBA-AD25-11D0-98A8-0800361B1103}||#System\MyDocument
+控制面板||*rundll32.exe shell32.dll,Control_RunDLL||#System\ControlPanel
+回收站||*Explorer.exe /n,::{645FF040-5081-101B-9F08-00AA002F954E}||#System\Recycle
+Internet Explorer||#IE||SS:\Program Files\Internet Explorer\iexplore.exe
+网上邻居||*Explorer.exe /n,::{208D2C60-3AEA-1069-A2D7-08002B30309D}||#System\NetWork
+资源管理器||Explorer.scf||>explorer.scf
+打印机和传真||*Explorer.exe /n,::{2227A280-3AEA-1069-A2DE-08002B30309D}||#System\Printer
+注册表编辑器||*Regedit.exe||>Regedit.exe
+命令提示符||cmd.exe||%systempath%\cmd.exe
+文件夹选项||#FolderOption||#System\MyDocument
++系统操作
+关闭计算机||#ShutDown||#System\ShutDown
+重启计算机||#ReBoot||#System\ReBoot
+注销计算机||#LogOut||#System\LogOut
+锁定计算机||#LockMe||#System\LockMe
+待机||#Suspend||#System\Suspend
+休眠||#Dormancy||#System\Suspend
+断开所有拨号网络||#Hangup||#System\Hangup
+屏幕保护||#ScreenSavers||#System\ScreenSavers
+打开光驱||#OpenCDRom||#System\CDRom
+关闭光驱||#CloseCDRom||#System\CDRom
+打开/关闭光驱||#OCCDRom||#System\CDRom
+打开并延迟关闭光驱||#O-CCDRom||#System\CDRom
+隐藏/显示桌面图标||#S-HDeskTop||#System\DeskTop
+隐藏/显示任务栏||#S-HTaskBar||#System\TaskBar
+关闭显示器||#MonitorOff||#System\Monitor
+清空回收站||#EmptyRecycle||#System\Recycle
+清空IE地址栏记录||#ClearIEUrl||#System\Recycle
+清空IE历史记录||#ClearIEHistory||#System\Recycle
+清空Cookies||#ClearCookies||#System\Recycle
+清空历史文档||#ClearRecent||#System\Recycle
+清空某目录||#ClearFolder||#System\Recycle
+控制程序内存||#SetProcessMemory||#System\Powercfg
+结束程序进程||#KillProgram||#System\KillProgram
+关闭当前窗口||#CloseActWindow||#System\KillProgram
+结束当前窗口进程||#KillActWindowProc||#System\KillProgram
+最小化当前窗体到托盘||#MinToTray||#System\TaskBar
+隐藏/显示窗口||#ShowWindow||#System\Program
+隐藏/显示当前窗口||#ShowActWindow||#System\Program
+切换置顶当前窗口||#TopActWindow||#System\Program
++音量控制
+音量增加||>1+||#System\MMSYS
+音量减少||>1-||#System\MMSYS
+静音切换||>1*||#System\Mute
+音量增加(波形)||>2+||#System\MMSYS
+音量减少(波形)||>2-||#System\MMSYS
+静音切换(波形)||>2*||#System\Mute
+音量增加(软件合成)||>3+||#System\MMSYS
+音量减少(软件合成)||>3-||#System\MMSYS
+静音切换(软件合成)||>3*||#System\Mute
+音量增加(麦克风)||>4+||#System\MMSYS
+音量减少(麦克风)||>4-||#System\MMSYS
+静音切换(麦克风)||>4*||#System\Mute
+音量增加(线路输入)||>5+||#System\MMSYS
+音量减少(线路输入)||>5-||#System\MMSYS
+静音切换(线路输入)||>5*||#System\Mute
+音量增加(CD 唱机)||>6+||#System\MMSYS
+音量减少(CD 唱机)||>6-||#System\MMSYS
+静音切换(CD 唱机)||>6*||#System\Mute
++控制面板
+添加或删除程序||?appwiz.cpl||#System\appwiz
+Internet 选项||?inetcpl.cpl||#System\inetcpl
+用户帐户||?nusrmgr.cpl||#System\nusrmgr
+区域和语言选项||?intl.cpl||#System\intl
+电话和调制解调器选项||?telephon.cpl||#System\telephon
+辅助功能选项||?access.cpl||#System\access
+电源选项||?powercfg.cpl||#System\powercfg
+游戏控制器||?joy.cpl||#System\joy
+网络连接||?ncpa.cpl||#System\intl
+显示||?desk.cpl||#System\desk
+系统||?sysdm.cpl||#System\sysdm
+添加硬件||?hdwwiz.cpl||#System\hdwwiz
+鼠标||?main.cpl||#System\mouse
+键盘||?main.cpl @1,,1||#System\keyboard
+声音和音频设备||?MMSYS.CPL||#System\MMSYS
+音量控制||>0||#System\MMSYS
+日期和时间||?timedate.cpl||#System\timedate

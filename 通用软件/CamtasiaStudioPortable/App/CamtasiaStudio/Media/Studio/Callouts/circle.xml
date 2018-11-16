@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>circle.png</Overlay_Filename>
+<Overlay_Name>圈</Overlay_Name>
+<Text_Top>40</Text_Top>
+<Text_Left>45</Text_Left>
+<Text_Bottom>40</Text_Bottom>
+<Text_Right>45</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M128,0c70.691,0,128,57.308,128,128c0,70.691-57.309,128-128,128C57.308,256,0,198.691,0,128
+	C0,57.308,57.308,0,128,0z</svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>-1</seamY>
+<shapeWidth>256</shapeWidth>
+<shapeHeight>256</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

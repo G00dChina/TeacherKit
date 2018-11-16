@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_charttools" component="wpp">
+	<commands>
+		<KxChartAddUpDownBarCommand hotKey="u" iconHeight="32" aid="6050" icon="ChartUpDownBar" id="AddUpDownBar" iconWidth="32" text="@AddUpDownBar">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartUpDownBar_0" index="0" text="@None" qtspyName="ChartUpDownBar_0"/>
+			<KxChartAddElmentItemCommand hotKey="u" icon="ChartUpDownBar_1" index="1" text="@AddUpDownBar" qtspyName="ChartUpDownBar_1"/>
+		</KxChartAddUpDownBarCommand>
+		<KxChartAddTrendLineCommand hotKey="t" iconHeight="32" aid="6050" icon="ChartTrendline" id="AddTrendLine" iconWidth="32" text="@AddTrendLine">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartTrendline_0" index="0" text="@None" qtspyName="ChartTrendline_0"/>
+			<KxChartAddElmentItemCommand hotKey="l" icon="ChartTrendline_1" index="1" text="@Linear" qtspyName="ChartTrendline_1"/>
+			<KxChartAddElmentItemCommand hotKey="e" icon="ChartTrendline_2" index="2" text="@Exponential" qtspyName="ChartTrendline_2"/>
+			<KxChartAddElmentItemCommand hotKey="f" icon="ChartTrendline_3" index="3" text="@Linear Forecast" qtspyName="ChartTrendline_3"/>
+			<KxChartAddElmentItemCommand hotKey="a" icon="ChartTrendline_4" index="4" text="@Moving Average" qtspyName="ChartTrendline_4"/>
+		</KxChartAddTrendLineCommand>
+		<KxChartAddChartLinesCommand hotKey="i" iconHeight="32" aid="6050" icon="ChartLines" id="AddChartLines" iconWidth="32" text="@AddChartLines">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartLines_0" index="0" text="@None" qtspyName="ChartLines_0"/>
+			<KxChartAddElmentItemCommand hotKey="d" icon="ChartLines_1" index="1" text="@DropLines" qtspyName="ChartLines_1"/>
+			<KxChartAddElmentItemCommand hotKey="h" icon="ChartLines_2" index="2" text="@HighLowLines" qtspyName="ChartLines_2"/>
+			<KxChartAddElmentItemCommand hotKey="s" icon="ChartLines_3" index="3" text="@SeriesLines" qtspyName="ChartLines_3"/>
+			<KxChartAddElmentItemCommand hotKey="l" icon="ChartLines_4" index="4" text="@DropLinesAndHighLowLines" qtspyName="ChartLines_4"/>
+		</KxChartAddChartLinesCommand>
+		<KxChartAddLegendCommand hotKey="l" iconHeight="32" aid="6050" icon="ChartLegend" id="AddLegend" iconWidth="32" text="@AddLegend">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartLegend_0" index="0" text="@None" qtspyName="ChartLegend_0"/>
+			<KxChartAddElmentItemCommand hotKey="r" icon="ChartLegend_1" index="1" text="@Right" qtspyName="ChartLegend_1"/>
+			<KxChartAddElmentItemCommand hotKey="t" icon="ChartLegend_2" index="2" text="@Top" qtspyName="ChartLegend_2"/>
+			<KxChartAddElmentItemCommand hotKey="l" icon="ChartLegend_3" index="3" text="@Left" qtspyName="ChartLegend_3"/>
+			<KxChartAddElmentItemCommand hotKey="b" icon="ChartLegend_4" index="4" text="@Bottom" qtspyName="ChartLegend_4"/>
+		</KxChartAddLegendCommand>
+		<KxChartAddGridLineCommand hotKey="g" iconHeight="32" aid="6050" icon="ChartGridline" id="AddGridLine" iconWidth="32" text="@AddGridLine">
+			<KxChartAddElmentItemCommand hotKey="h" icon="ChartGridline_0" index="0" text="@PrimaryMajorHorizontal" qtspyName="ChartGridline_0"/>
+			<KxChartAddElmentItemCommand hotKey="v" icon="ChartGridline_1" index="1" text="@PrimaryMajorVertical" qtspyName="ChartGridline_1"/>
+			<KxChartAddElmentItemCommand hotKey="z" icon="ChartGridline_2" index="2" text="@PrimaryMinorHorizontal" qtspyName="ChartGridline_2"/>
+			<KxChartAddElmentItemCommand hotKey="m" icon="ChartGridline_3" index="3" text="@PrimaryMinorVertial" qtspyName="ChartGridline_3"/>
+			<KxChartAddElmentItemCommand hotKey="s" icon="ChartGridline_0" index="4" text="@SecondaryMajorHorizontal" qtspyName="ChartGridline_0"/>
+			<KxChartAddElmentItemCommand hotKey="e" icon="ChartGridline_1" index="5" text="@SecondaryMajorVertical" qtspyName="ChartGridline_1"/>
+			<KxChartAddElmentItemCommand hotKey="y" icon="ChartGridline_2" index="6" text="@SecondaryMinorHorizontal" qtspyName="ChartGridline_2"/>
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartGridline_3" index="7" text="@SecondaryMinorVertial" qtspyName="ChartGridline_3"/>
+		</KxChartAddGridLineCommand>
+		<KxChartAddErrorBarCommand hotKey="e" iconHeight="32" aid="6050" icon="ChartErrorBar" id="AddErrorBar" iconWidth="32" text="@AddErrorBar">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartErrorBar_0" index="0" text="@None" qtspyName="ChartErrorBar_0"/>
+			<KxChartAddElmentItemCommand hotKey="s" icon="ChartErrorBar_1" index="1" text="@StandardError" qtspyName="ChartErrorBar_1"/>
+			<KxChartAddElmentItemCommand hotKey="p" icon="ChartErrorBar_2" index="2" text="@Percentage" qtspyName="ChartErrorBar_2"/>
+			<KxChartAddElmentItemCommand hotKey="d" icon="ChartErrorBar_3" index="3" text="@StandardDeviation" qtspyName="ChartErrorBar_3"/>
+		</KxChartAddErrorBarCommand>
+		<KxChartAddDataTableCommand hotKey="b" iconHeight="32" aid="6050" icon="ChartDataTable" id="AddDataTable" iconWidth="32" text="@AddDataTable">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartDataTable_0" index="0" text="@None" qtspyName="ChartDataTable_0"/>
+			<KxChartAddElmentItemCommand hotKey="w" icon="ChartDataTable_1" index="1" text="@WithLegendKeys" qtspyName="ChartDataTable_1"/>
+			<KxChartAddElmentItemCommand hotKey="l" icon="ChartDataTable_2" index="2" text="@NoLegendKeys" qtspyName="ChartDataTable_2"/>
+		</KxChartAddDataTableCommand>
+		<KxChartAddDataLabelCommand hotKey="d" iconHeight="32" aid="6050" icon="ChartDatalabel" id="AddDataLabels" iconWidth="32" text="@AddDataLabels">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartDatalabel_Bar_0" index="0" text="@None" qtspyName="ChartDatalabel_Bar_0"/>
+			<KxChartAddElmentItemCommand hotKey="c" icon="ChartDatalabel_Bar_1" index="1" text="@Center" qtspyName="ChartDatalabel_Bar_1"/>
+			<KxChartAddElmentItemCommand hotKey="e" icon="ChartDatalabel_Bar_2" index="2" text="@InsideEnd" qtspyName="ChartDatalabel_Bar_2"/>
+			<KxChartAddElmentItemCommand hotKey="b" icon="ChartDatalabel_Bar_3" index="3" text="@InsideBase" qtspyName="ChartDatalabel_Bar_3"/>
+			<KxChartAddElmentItemCommand hotKey="o" icon="ChartDatalabel_Bar_4" index="4" text="@OutsideEnd" qtspyName="ChartDatalabel_Bar_4"/>
+			<KxChartAddElmentItemCommand hotKey="l" icon="ChartDatalabel_Line_2" index="5" text="@Left" qtspyName="ChartDatalabel_Line_2"/>
+			<KxChartAddElmentItemCommand hotKey="r" icon="ChartDatalabel_Line_3" index="6" text="@Right" qtspyName="ChartDatalabel_Line_3"/>
+			<KxChartAddElmentItemCommand hotKey="a" icon="ChartDatalabel_Line_4" index="7" text="@Above" qtspyName="ChartDatalabel_Line_4"/>
+			<KxChartAddElmentItemCommand hotKey="w" icon="ChartDatalabel_Line_5" index="8" text="@Below" qtspyName="ChartDatalabel_Line_5"/>
+			<KxChartAddElmentItemCommand hotKey="f" icon="ChartDatalabel_Pie_3" index="9" text="@BestFit" qtspyName="ChartDatalabel_Pie_3"/>
+			<KxChartAddElmentItemCommand hotKey="u" icon="ChartDatalabel_Bar_5" index="10" text="@DataCallout" qtspyName="ChartDatalabel_Bar_5"/>
+			<KxChartAddElmentItemCommand hotKey="s" icon="ChartDatalabel_Bar_1" index="11" text="@Show" qtspyName="ChartDatalabel_Bar_1"/>
+		</KxChartAddDataLabelCommand>
+		<KxChartAddChartTitleCommand hotKey="c" iconHeight="32" aid="6050" icon="ChartChartTitle" id="AddChartTitle" iconWidth="32" text="@AddChartTitle">
+			<KxChartAddElmentItemCommand hotKey="n" icon="ChartChartTitle_0" index="0" text="@None" qtspyName="ChartChartTitle_0"/>
+			<KxChartAddElmentItemCommand hotKey="a" icon="ChartChartTitle_1" index="1" text="@AboveChart" qtspyName="ChartChartTitle_1"/>
+			<KxChartAddElmentItemCommand hotKey="c" icon="ChartChartTitle_2" index="2" text="@CenteredOverlay" qtspyName="ChartChartTitle_2"/>
+		</KxChartAddChartTitleCommand>
+		<KxChartAddAxisTitleCommand hotKey="a" iconHeight="32" aid="6050" icon="ChartAxisTitle" id="AddAxisTitle" iconWidth="32" text="@AddAxisTitle">
+			<KxChartAddElmentItemCommand hotKey="h" icon="ChartAxisTitle_0" index="0" text="@PrimaryHorizontalAxis" qtspyName="ChartAxisTitle_0"/>
+			<KxChartAddElmentItemCommand hotKey="v" icon="ChartAxisTitle_1" index="1" text="@PrimaryVerticalAxis" qtspyName="ChartAxisTitle_1"/>
+			<KxChartAddElmentItemCommand hotKey="z" icon="ChartAxisTitle_2" index="2" text="@SecondaryHorizontalAxis" qtspyName="ChartAxisTitle_2"/>
+			<KxChartAddElmentItemCommand hotKey="y" icon="ChartAxisTitle_3" index="3" text="@SecondaryVerticalAxis" qtspyName="ChartAxisTitle_3"/>
+		</KxChartAddAxisTitleCommand>
+		<KxChartAddAxisCommand hotKey="x" iconHeight="32" aid="6050" icon="ChartAxis" id="AddAxis" iconWidth="32" text="@AddAxis">
+			<KxChartAddElmentItemCommand hotKey="h" icon="ChartAxis_0" index="0" text="@PrimaryHorizontalAxis" qtspyName="ChartAxis_0"/>
+			<KxChartAddElmentItemCommand hotKey="v" icon="ChartAxis_1" index="1" text="@PrimaryVerticalAxis" qtspyName="ChartAxis_1"/>
+			<KxChartAddElmentItemCommand hotKey="z" icon="ChartAxis_2" index="2" text="@SecondaryHorizontalAxis" qtspyName="ChartAxis_2"/>
+			<KxChartAddElmentItemCommand hotKey="y" icon="ChartAxis_3" index="3" text="@SecondaryVerticalAxis" qtspyName="ChartAxis_3"/>
+		</KxChartAddAxisCommand>
+		<KxIndexListCommand id="RB_CC_AddChartElements" text="@layoutSection" rbHotKey="O">
+			<KxWppChartAddElementsCommand ksoCmd="AddChartElements" icon="AddChartElement" id="AddChartElements" customTip="AddChartElements" text="@AddChartElements" rbHotKey="A">
+				<command idQ="AddAxis"/>
+				<command idQ="AddAxisTitle"/>
+				<command idQ="AddChartTitle"/>
+				<command idQ="AddDataLabels"/>
+				<command idQ="AddDataTable"/>
+				<command idQ="AddErrorBar"/>
+				<command idQ="AddGridLine"/>
+				<command idQ="AddLegend"/>
+				<command idQ="AddChartLines"/>
+				<command idQ="AddTrendLine"/>
+				<command idQ="AddUpDownBar"/>
+			</KxWppChartAddElementsCommand>
+			<KxWppSpeedLayoutCommand ksoCmd="SpeedLayout" galleryWidth="180" icon="QuickLayout" id="SpeedLayout" customTip="SpeedLayout" text="@speedLayout" rbHotKey="L"/>
+		</KxIndexListCommand>
+		<KListCommand id="RB_CC_ChartStyle" text="@ChartStyle">
+			<KxWppChangeColorCommand ksoCmd="ChangeColor" galleryWidth="180" icon="ChangeColor" id="ChangeChartColor" customTip="ChangeColor" galleryHeight="320" text="@changeColor" rbHotKey="H"/>
+			<KxWppChartStyleCommand ksoCmd="ChartStyles" galleryWidth="360" embedHint="1" id="ChartStyles" bHotKey="H" columnNumber="8" rbHotKey="S"/>
+		</KListCommand>
+		<KxChartRPCTriggerCommand ksoCmd="ChooseChartDataSource" icon="ChartSourceData" id="ChooseDataSource" customTip="ChooseDataSource" text="@Select Data" rbHotKey="D"/>
+		<KxChartRPCTriggerCommand ksoCmd="EditChartDataSource" icon="ChartEditData" id="EditDataSource" text="@Edit Data" rbHotKey="E"/>
+		<KListCommand id="RB_CC_EditDataSource" text="@DataSection" rbFileMenuEmbed="1">
+			<command idQ="SwitchRowCol"/>
+			<command idQ="ChooseDataSource"/>
+			<command idQ="EditDataSource"/>
+		</KListCommand>
+		<KListCommand id="RB_CC_ChangeChartType" text="@TypeSection" rbFileMenuEmbed="1">
+			<KxWppChangeChartTypeCommand ksoCmd="ChangeChartType" icon="ChangeChartType" id="ChangeChartType" customTip="ChangeChartType" text="@ChangeChartType" rbHotKey="C"/>
+		</KListCommand>
+		<KListCommand id="RB_CC_ChartSelect" text="@Current Selection">
+			<KRbLayoutListCommand layoutName="vbox" layoutOnly="1">
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<KChartElementCommand hotKey="c" aid="1622" id="ChartElements" comboboxHint="1" customTip="ChartElements" text="@Chart Elements"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="4" isShowText="1" layoutOnly="1">
+					<KxWppChartFormatCommand hotKey="f" ksoCmd="FormatChartElement" aid="917" icon="FormatChartElement" id="FormatChartElement" customTip="ChartElementFormat" text="@Format@Chart Element Format"/>
+					<KxLegacyTriggerCommand hotKey="a" ksoCmd="ResetToFitStyle" aid="100082" icon="ResetToFitStyle" id="ResetToFitStyle" customTip="ResetToFitStyle" text="@Reset Style"/>
+				</KRbLayoutListCommand>
+			</KRbLayoutListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_ChartTools">
+			<command idQ="RB_CC_AddChartElements"/>
+			<separator filter="lang!=jp_JP"/>
+			<command idQ="RB_CC_ChartStyle"/>
+			<separator filter="lang!=jp_JP"/>
+			<command idQ="RB_CC_EditDataSource"/>
+			<separator filter="lang!=jp_JP"/>
+			<command idQ="RB_CC_ChangeChartType"/>
+			<separator filter="lang!=jp_JP"/>
+			<command idQ="RB_CC_ChartSelect"/>
+		</subcommand>
+	</subcommands>
+</shell>

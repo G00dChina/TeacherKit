@@ -1,0 +1,181 @@
+/* CSS Document */
+#CsEmdPlr a {
+	font-size:small;
+	text-decoration:none;
+	padding:5px 5px 5px 2px;
+	color:black;
+	display:block;
+	margin:0;
+	width:175px;
+}
+
+#CsEmdPlr a:hover {
+	border-top:1px solid #666;
+	border-bottom:1px solid #666;
+	padding:4px 5px 4px 2px;
+}
+
+#CsEmdPlr a.notdisplayed:link 
+{
+	font-size: small;
+	text-decoration: underline;
+	padding: 3px; 
+	border: 0;     
+	color: white;
+	display:inline;
+}
+
+#CsEmdPlr a.notdisplayed:visited
+{
+	font-size: small;
+	text-decoration: underline;
+	padding: 3px; 
+	border: 0;     
+	color: white;
+	display:inline;      
+}
+
+#CsEmdPlr a.notdisplayed:hover 
+{
+	font-size: small;
+	text-decoration: underline;
+	padding: 3px;   
+	border: 0;
+	background-color: transparent;
+	display:inline;
+}
+
+#CsEmdPlr div.contentWrapper {
+	border-width: 0;
+	padding: 0;
+	margin: 0 -1px 0 -1px;
+}
+
+#CsEmdPlr div.contentWrapper_left {
+	margin: -1px -2px 0 -1px;
+}
+
+#CsEmdPlr div.content {
+	border:1px solid #ccc;
+	padding: 0;
+	margin: 0;
+	color: #000;
+}
+
+#CsEmdPlr div.content_left {
+	border-right:1px solid #fff;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #fff;
+	padding: 0;
+	margin: 0;
+	color: #000;
+	text-align: left;
+}
+
+#CsEmdPlr img.borderTL, #CsEmdPlr img.borderTR {
+	border-width: 0; 
+	padding: 0; 
+	width: 24px; 
+	height: 24px; 
+  margin: -1px 0 0 0;
+}
+
+#CsEmdPlr img.borderTL, #CsEmdPlr img.borderBL {
+  clear: both; 
+	float: left;
+}
+
+#CsEmdPlr img.borderTR, #CsEmdPlr img.borderBR {
+	clear: right; 
+	float: right;
+}
+
+#CsEmdPlr img.borderBL, #CsEmdPlr img.borderBR {
+	border-width: 0; 
+	padding: 0; 
+	width: 49px; 
+	height: 49px; 
+	margin: -1px 0 0 0;                          
+}
+
+#CsEmdPlr h3 {
+	font-size:small;
+	font-weight:bold;
+	color:#444;
+	margin:4px 0 3px 6px;
+	padding:0;
+}
+
+#CsEmdPlr #indexlinks p {
+	text-indent:6px;
+	color:#000;
+	margin: -1px 0 0 0;
+	vertical-align:middle;
+	font-size:small;
+	padding: 0;
+}
+
+#CsEmdPlr {
+  border: 0;
+	text-align: $Align;
+	padding: 0;
+	margin: 11px auto auto auto;
+	width:$TOCAndVideoWidth$#px;
+	font-family: Arial, san-serif;
+}
+
+#CsEmdPlr td.top_center_clr {
+  vertical-align: top;
+	background-image: url($FetchFileURLHTMLIMAGEFILE$#$SCOnlyMediaDirectory$#images/top_center_clr.gif);
+}
+
+#CsEmdPlr td.top_center {
+	vertical-align: top;
+	background-image: url($FetchFileURLHTMLIMAGEFILE$#$SCOnlyMediaDirectory$#images/top_center.jpg);
+	height: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+#CsEmdPlr td.bottom_center {
+	background-image: url($FetchFileURLHTMLIMAGEFILE$#$SCOnlyMediaDirectory$#images/bottom_center.jpg);
+	padding: 0;
+	margin: 0;
+}
+
+#CsEmdPlr td.bottom_center img {
+  margin:-1px -.5px 0 -.5px;
+}
+
+#CsEmdPlr td {
+   vertical-align: top;
+}
+
+#CsEmdPlr #indexlinks {
+	overflow:auto;
+	width:$TOCWidth$#px;
+	height:$TOCHeight$#px;
+	margin-top:23px;
+	margin-left:0;
+	padding:0;
+	border:0;
+	background-color:#fff;
+	border-left:1px solid #ccc;
+	border-right:0;
+	margin-bottom:-1px;
+}
+
+#menuBottom {
+  margin:0 -1px 0 -1px;
+  background-image: url($FetchFileURLHTMLIMAGEFILE$#$SCOnlyMediaDirectory$#images/bottom_center_left.jpg);
+  height: 24px;
+  padding:0;
+  width:101%;
+  border-left:1px solid #ccc;
+}
+
+#CsEmdPlr #menuBottom img {
+  width:100%;
+  height:24px;
+  border-right:1px solid #ccc;
+}

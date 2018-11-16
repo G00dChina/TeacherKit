@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>curvyarrow.png</Overlay_Filename>
+<Overlay_Name>弯曲箭头</Overlay_Name>
+<Overlay_XGrow>88</Overlay_XGrow>
+<Overlay_YGrow>69</Overlay_YGrow>
+<Text_Top>-1</Text_Top>
+<Text_Left>-1</Text_Left>
+<Text_Bottom>-1</Text_Bottom>
+<Text_Right>-1</Text_Right>
+<Vector_Grow>0</Vector_Grow>
+<CanRotate_90>0</CanRotate_90>
+<CanRotate_180>0</CanRotate_180>
+<CanRotate_270>0</CanRotate_270>
+<CanFlip_X>0</CanFlip_X>
+<CanFlip_X90>0</CanFlip_X90>
+<CanFlip_X180>0</CanFlip_X180>
+<CanFlip_X270>0</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe2b38d</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M244.477,87.765c0,0-4.207,16.697-7.242,27.91c-4.103,15.141,5.095,16.486,13.58,10.617
+	c8.607-5.948,87.187-61.53,87.187-61.53S259.422,9.173,250.814,3.228c-8.486-5.866-17.684-4.524-13.582,10.62
+	c3.037,11.209,7.242,27.91,7.242,27.91s-11.067,0-21.26,0c-53.255,0-38.436,57.946-61.13,57.946
+	c-27.004,0-4.166-82.437-73.633-82.437c-53.719,0-45.849,40.24-62.52,40.24c-11.112,0-25.934,0-25.934,0v46.148h25.934
+	c49.517,0,38.555-40.236,62.52-40.236c20.456,0,7.188,22.878,21.512,49.376c11.062,20.458,30.09,36.96,52.121,36.96
+	c41.884,0,50.446-32.675,60.321-57.689C226.023,82.912,244.477,87.765,244.477,87.765</svg>
+</figure>
+<borderWidth>11.00</borderWidth>
+<seamY>64.76</seamY>
+<shapeWidth>338</shapeWidth>
+<shapeHeight>150</shapeHeight>
+</VectorProps>
+<Style>3</Style>
+</Overlay>

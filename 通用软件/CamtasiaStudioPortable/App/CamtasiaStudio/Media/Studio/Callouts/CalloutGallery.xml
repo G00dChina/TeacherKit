@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CalloutGallery version="1.0.1">
+
+  <Group name="形状与文本">
+    <Overlay type="standard" file="pointy arrow.xml"></Overlay>
+    <Overlay type="standard" file="CS8_arrow double sided.xml"></Overlay>
+    <Overlay type="standard" file="wide arrow.xml"></Overlay>
+    <Overlay type="standard" file="circle.xml"></Overlay>
+    <Overlay type="standard" file="roundedrectangle.xml"></Overlay>
+
+    <Overlay type="standard" file="speech bubble 1.xml"></Overlay>
+    <Overlay type="standard" file="speech bubble 3.xml"></Overlay>
+    <Overlay type="standard" file="thought bubble.xml"></Overlay>
+    <Overlay type="standard" file="pointycircle.xml"></Overlay>
+    <Overlay type="standard" file="CS8_octagon.xml"></Overlay>
+
+    <Overlay type="standard" file="droppin.xml"></Overlay>
+    <Overlay type="standard" file="wedge.xml"></Overlay>
+    <Overlay type="standard" file="burst.xml"></Overlay>
+    <Overlay type="standard" file="CS8_seal.xml"></Overlay>
+    <Overlay type="simple" file="rectanglewithtext.xml"></Overlay>
+  </Group>
+
+  <Group name="形状">
+    <Overlay type="standard" file="roundedarrow.xml"></Overlay>
+    <Overlay type="standard" file="swoosh arrow.xml"></Overlay>
+    <Overlay type="line"     file="line.xml"></Overlay>
+    <Overlay type="line"     file="line 2.xml"></Overlay>
+    <Overlay type="line"     file="line 3.xml"></Overlay>
+  </Group>
+
+  <Group name="特殊">
+    <Overlay type="blur" file="blur_100x100.xml"></Overlay>
+    <Overlay type="spotlight" file="ReverseHighlight_100x100.xml"></Overlay>
+    <Overlay type="highlighter" file="highlighter_100x100.xml"></Overlay>
+    <Overlay type="transtext" file="trans_100x100.xml"></Overlay>
+    <Overlay type="flashhotspot" file="Hotspot_100x100.xml"></Overlay>
+    <Overlay type="pixelate"  file="pixelate_100x100.xml"></Overlay>
+    <Overlay type="keystroke" file="Keystroke_Traditional_100x100.xml"></Overlay>
+    <Overlay type="keystroke" file="Keystroke_Gray_100x100.xml"></Overlay>
+    <Overlay type="keystroke" file="Keystroke_Clear_100x100.xml"></Overlay>
+    <Overlay type="keystroke" file="Keystroke_WhiteOutline_100x100.xml"></Overlay>
+  </Group>
+
+</CalloutGallery>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- saved from url=(0025)http://www.techsmith.com/ -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        $VideoMetaData
+        <title>$HTMLTitle</title>
+        <script type="text/javascript" src="swfobject.js"></script>
+        $CamJSInclude
+        $SCORMIncludeJS
+        <style type="text/css">
+            /* CSS Document */
+            #cs_flashBody
+            {
+                background-color: #ffffff;
+                font: .8em/1.3em verdana,arial,helvetica,sans-serif;
+                text-align: center;
+            }
+
+            #cs_noexpressUpdate
+            {
+                margin: 0 auto;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: x-small;
+                color: #003300;
+                text-align: left;
+                background-image: url($FetchFileURLHTMLIMAGEFILE$#$MediaDirectory$#$SWFNotFoundImageName);
+                background-repeat: no-repeat;
+                width: 210px; 
+                height: 200px;	
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body id="cs_flashBody" $OnLoadParams>
+        <div id="flashcontent">	   		
+            <div id="cs_noexpressUpdate">
+                <p>$JavaScriptEnabledNeedLatestFlash</p>
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8">
+
+        function detectIE()
+        // Returns the version of Internet Explorer or a -1
+        // (indicating the use of another browser).
+        {
+           var rv = false;
+           var path = ( document.location.href );
+           if (navigator.appName == 'Microsoft Internet Explorer' && path.indexOf("http") == 0 )
+           {
+              rv = true;
+           }
+           return rv;
+        }
+
+        function runOnServer() //if runs on a server or local firefox
+        {
+           var rv = false;
+           var path = ( document.location.href );
+           if ( path.indexOf("http") == 0 || navigator.appName != 'Microsoft Internet Explorer' )
+           {
+              rv = true;
+           }
+           return rv;
+        }
+
+        function mediaLocation()
+        {
+           var path = ( document.location.href );
+           var baseindex = path.lastIndexOf("/");
+           var basex = path.substring( 0 , baseindex+1 );
+           if( runOnServer()==true )
+              basex = encodeURI(basex);
+           basex = basex.split("%25").join("%");
+           return basex;
+        }
+
+        var req = swfobject.hasFlashPlayerVersion("$PlayerVersion");
+        var bookmark = args.movie ? args.movie : 0;
+
+        if( runOnServer() == true )
+        {
+           var flashvars = { csConfigFile: encodeURIComponent(mediaLocation()+encodeURI("$FlashConfig")), csColor: "$SWFBGColor", $SWFcsLoadingKeyword csFilesetBookmark: bookmark }; 
+           flashvars.contentpath = mediaLocation(); 
+           if ( flashvars.csPreloader )
+           {
+              flashvars.csPreloader  =  encodeURIComponent(mediaLocation()+encodeURI(flashvars.csPreloader))
+           }
+        }
+        else
+        {
+           var flashvars = { csConfigFile: "$FlashConfig", csColor: "$SWFBGColor", $SWFcsLoadingKeyword csFilesetBookmark: bookmark }; 
+           //flashvars.contentpath = mediaLocation(); 
+        }
+ 
+        var params = {}; 
+        params.quality = "best"; 
+        params.bgcolor = "$SWFBGColor";
+        params.allowscriptaccess = "always"; 
+
+        var attributes = {}; 
+        attributes.id      = "csPlayer"; 
+        attributes.name    = "csPlayer"; 
+        attributes.classid = "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000";
+
+        if( runOnServer() == true )
+           attributes.data  = mediaLocation() + encodeURI("$FlashController");
+        else
+           attributes.data  = "$FlashController";
+
+        if ( req )
+        {
+           if( runOnServer() == true )
+              swfobject.embedSWF( attributes.data , "flashcontent", "$Width", "$Height", "$PlayerVersion", null, flashvars, params, attributes);
+           else
+              swfobject.embedSWF( "$FlashController", "flashcontent", "$Width", "$Height", "$PlayerVersion", null, flashvars, params, attributes);  
+        }
+
+        </script>
+        <!-- Users looking for simple object / embed tags can copy and paste the needed tags below.
+        <div id="media">
+            <object id="csSWF" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="$Width" height="$Height" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version==8">
+                <param name="src" value="$FlashController#"/>
+                <param name="bgcolor" value="$SWFBGColor"/>
+                <param name="quality" value="best"/>
+                <param name="allowScriptAccess" value="always"/>
+                <param name="flashVars" value="csConfigFile=$FlashConfig&csColor=$SWFBGColor"/>
+                <embed name="csSWF" src="$FlashController" width="$Width" height="$Height" bgcolor="$SWFBGColor" quality="best" allowScriptAccess="always" flashVars="csConfigFile=$FlashConfig&csColor=$SWFBGColor" pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+            </object>
+        </div>
+        -->
+    </body>
+</html>

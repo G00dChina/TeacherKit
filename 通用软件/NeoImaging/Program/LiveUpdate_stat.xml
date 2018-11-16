@@ -1,0 +1,21 @@
+<config>
+    <server>
+		<tcp  host="down2.stat.xunlei.com" port="80"/>
+		<http host="down2.stat.xunlei.com" port="9091" url="/dc/stat_batch" />
+    </server>
+    <priority>
+        <level id="1" reporttime="0" net="http"/>
+        <level id="2" reporttime="300" net="http"/>
+        <level id="3" reporttime="-1" net="http"/>
+        <level id="4" reporttime="-2"/>
+    </priority>
+    <stat>
+        <item index="1" key="queryupdate" priority="1"/>
+        <item index="2" key="startdownload" priority="1"/>
+        <item index="3" key="downloadsuccess" priority="1"/>
+        <item index="4" key="downloadfailed" priority="1"/>
+        <item index="5" key="installsuccess" priority="1"/>
+        <item index="6" key="installfail" priority="1"/>
+    </stat>
+</config>
+

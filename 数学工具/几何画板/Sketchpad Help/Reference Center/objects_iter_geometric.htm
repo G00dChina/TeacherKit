@@ -1,0 +1,278 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Iterations and Iterated Images &gt; A Geometric Iteration</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Iterations,Iterations geometric">
+   <meta name="description" content="A Geometric Iteration">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_iter_geometric.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">A Geometric Iteration</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_iter.htm">Iterations and Iterated Images</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">A Geometric Iteration</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_iter.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_iter.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_iter_numeric.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">When you create an iteration, it can be a geometric iteration (based on independent points), a <a href="objects_iter_numeric.htm" class="topiclink">numeric iteration</a> (based on parameters), or a combination of the two. Here’s an example of using a &nbsp;geometric iteration to create an iterated midpoint triangle.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To define a Sketchpad iteration, create the pre-image and then specify how its defining points or parameters should be mapped to produce the first iteration image. Sketchpad handles the iteration from there.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For instance, here are the pre-image and the first three images for the midpoint triangle iteration.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table class="framed" style="margin:0 auto; border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><img src="mid_tri_iter0.png" width="92" height="88" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><span class="f_Image_Centered_Large">Pre-Image</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><img src="mid_tri_iter1.png" width="88" height="92" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><span class="f_ImageCaption">First Image</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><img src="mid_tri_iter2.png" width="87" height="93" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><span class="f_Image_Centered_Large">Second Image</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><img src="mid_tri_iter3.png" width="86" height="91" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large" style="margin: 0px 5px 0px 5px;"><span class="f_Image_Centered_Large">Third Image</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The first image repeats the pre-image construction, but starting from midpoints </span><span class="f_BodyText" style="font-style: italic;">D, E,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">F.</span><span class="f_BodyText"> The map that defines this iteration is shown on the right.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Follow the steps below to construct this iterated midpoint triangle.</span></p>
+</td>
+<td style="vertical-align:middle; width:117px; background-color:#ccffff; padding:0px;"><p class="p_BodyText" style="text-align: center;"><span class="f_BodyText" style="font-style: italic;">A</span><img src="single_arrow_ccffff.png" width="19" height="11" alt="" style="border:none" /><span class="f_BodyText" style="font-style: italic;">D</span></p>
+<p class="p_BodyText" style="text-align: center;"><span class="f_BodyText" style="font-style: italic;">B</span><img src="single_arrow_ccffff.png" width="19" height="11" alt="" style="border:none" /><span class="f_BodyText" style="font-style: italic;">E</span></p>
+<p class="p_BodyText" style="text-align: center;"><span class="f_BodyText" style="font-style: italic;">C</span><img src="single_arrow_ccffff.png" width="19" height="11" alt="" style="border:none" /><span class="f_BodyText" style="font-style: italic;">F</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table class="framed" style="margin:0 auto; border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Construct the pre-image triangle exactly as shown above. </span></p><p class="p_ExpandableNote"><img id="TOGGLE0186A1_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A1" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">Don’t construct more objects than necessary in the pre-image. In this example, the pre-image construction includes three sides of the triangle and the three midpoints </span><span class="f_ExpandableNoteSection" style="font-style: italic;">D, E,</span><span class="f_ExpandableNoteSection"> and </span><span class="f_ExpandableNoteSection" style="font-style: italic;">F.</span><span class="f_ExpandableNoteSection"> Segments </span><span class="f_ExpandableNoteSection" style="font-style: italic;">DE, EF,</span><span class="f_ExpandableNoteSection"> and </span><span class="f_ExpandableNoteSection" style="font-style: italic;">DF</span><span class="f_ExpandableNoteSection"> will be constructed as part of the first image. If you also constructed these segments as part of the pre-image, they &nbsp;would be constructed again, resulting in unnecessary duplicated segments. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Select the independent seed points </span><span class="f_BodyText" style="font-style: italic;">A, B,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> that define the pre-image.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Transform | Iterate</a>.</span><span class="f_BodyText"> The Iterate dialog box appears with the left column filled in.</span></p><p class="p_ExpandableNote"><img id="TOGGLE0186A2_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A2" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">You may need to drag the dialog box out of the way so that you can see your original triangle and its midpoints.</span></p>
+<p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">Use the <a href="menus_trans_iter_usedialog.htm" class="topiclink">Structure and Display pop-up menus</a> to control how the iteration is constructed and displayed.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large" style="text-align: right;"><img src="mid_tri_iter4.png" width="90" height="90" alt="" style="border:none" /><span class="f_Image_FlushRight_Narrative"> &nbsp; &nbsp; </span></p>
+</td>
+<td style="vertical-align:top; width:166px; padding:5px; border:solid 1px #808080;"><p class="p_Image_FlushRight_Narrative"><img src="iter_dialog1_zoom75.png" width="165" height="191" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">Click point </span><span class="f_BodyText" style="font-style: italic;">D</span><span class="f_BodyText"> in the sketch to fill in the top box of the right column. This specifies that point </span><span class="f_BodyText" style="font-style: italic;">D</span><span class="f_BodyText"> should play the same role in the first image that point </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> played in the pre-image,</span></p></td>
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_Image_Centered_Large" style="text-align: right;"><img src="iter_dialog2.png" width="90" height="95" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:166px; padding:5px; border:solid 1px #808080;"><p class="p_Image_FlushRight_Narrative"><img src="iter_dialog3_zoom75.png" width="165" height="191" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">Similarly click points </span><span class="f_BodyText" style="font-style: italic;">E</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">F</span><span class="f_BodyText"> in the sketch to complete the iteration map. As you complete each row of the map, Sketchpad displays the first three partial images based on the part of the map you’ve already completed. </span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">6.</span><span class="f_BodyText">After you complete the entire map, click the </span><span class="f_BodyText" style="font-weight: bold;">Iterate</span><span class="f_BodyText"> button to confirm the iteration rule and construct the iteration images.</span></p></td>
+<td style="vertical-align:top; width:90px; padding:5px; border:solid 1px #808080;"><p class="p_Image_FlushRight_Narrative"><img src="mid_tri_iter5.png" width="90" height="90" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:166px; padding:5px; border:solid 1px #808080;"><p class="p_Image_FlushRight_Narrative"><img src="iter_dialog4_zoom75.png" width="165" height="191" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sketchpad produces an iterated image object for each object affected by your mapping. In this example there are six iterated image objects, one for each vertex of your original triangle and one for each side. You can select and manipulate each iterated image object separately. For example, you could hide or <a href="menus_edit_clear.htm" class="topiclink">clear</a> the three iterated image objects of your original triangle’s vertices, or you could color each of the three iterated image objects of your original triangle’s edges with a different color. </span></p>
+</td>
+<td style="vertical-align:middle; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="mid_tri_iter3.png" width="86" height="91" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">Sketchpad normally displays iterations to a depth of three, showing the first, second, and third iteration image. Use <a href="objects_iter_props.htm" class="topiclink">Iteration Properties</a> to change the depth of the iteration in order to show more or fewer iteration images, or select any of the iterated image objects and press </span><span class="f_BodyText" style="font-weight: bold;">+</span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;">–</span><span class="f_BodyText"> on the keyboard.</span></p>
+<p class="p_ExpandableNote"><img id="TOGGLE0186A3_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A3" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">You can also use a numeric value (a parameter or a calculation) to control the depth of an iteration. After selecting the seed points and/or values, select one additional parameter or calculation, and then hold Shift and choose </span><span class="f_ExpandableNoteSection" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Transform | Iterate to Depth</a>.</span><span class="f_ExpandableNoteSection"> (Notice the change in the command name.) The whole number part of the value you selected last will define the number of iterations. (When you &nbsp;choose </span><span class="f_ExpandableNoteSection" style="font-weight: bold;">Iterate,</span><span class="f_ExpandableNoteSection"> the minimum depth is one; when you choose </span><span class="f_ExpandableNoteSection" style="font-weight: bold;">Iterate to Depth,</span><span class="f_ExpandableNoteSection"> the minimum depth is zero.)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">Use </span><span class="f_BodyText" style="font-weight: bold;">Iterate</span><span class="f_BodyText"> to create fractals such as the <a href="howto_sierpinski.htm" class="topiclink">Sierpiński Gasket</a> by specifying more than one mapping of your pre-image. See <a href="menus_trans_iter_multmaps.htm" class="topiclink">Multiple Iteration Maps</a> for more information.</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_numeric.htm" class="topiclink">A Numeric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_working.htm" class="topiclink">Working with Iterations</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="howto_sierpinski.htm" class="topiclink">How to Construct a Sierpiński Gasket</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_props.htm" class="topiclink">Iteration Properties</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

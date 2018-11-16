@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_workspace" component="et">
+	<libraries/>
+	<commands>
+		<KxAutoVersionCommand text2="@Enable AutoBackup" hotKey="A" ksoCmd="AutoVersionCmd" icon="WS_AutoVersiong" id="AutoVersionCmd" dialogHint="1" customTip="AutoVersion" text="@Enable AutoBackup" rbHotKey="A"/>
+		<KxStopAutoVersionCommand text2="@Disable AutoBackup" hotKey="S" ksoCmd="StopAutoVersionCmd" icon="WS_AutoVersiong" id="StopAutoVersionCmd" dialogHint="1" customTip="StopAutoVersion" text="@Disable AutoBackup" rbHotKey="S"/>
+		<KxMarkVersionCommand text2="@Manual Backup" hotKey="M" ksoCmd="MarkVersionCmd" icon="WS_MarkVersiong" id="MarkVersionCmd" dialogHint="1" customTip="MarkVersion" text="@Manual Backup" rbHotKey="M"/>
+		<KxExplorVersionCommand text2="@View Historical Backup" hotKey="E" ksoCmd="ExplorVersionCmd" icon="WS_ExplorVersiong" id="ExplorVersionCmd" dialogHint="1" customTip="ExplorVersion" text="@View Historical Backup" rbHotKey="E"/>
+		<KxExplorBackupDirCommand text2="@View File Safe" hotKey="S" ksoCmd="ExplorBackupDirCmd" icon="WS_ExplorBackupdir" id="ExplorBackupDirCmd" dialogHint="1" customTip="ExplorBackupDir" text="@View File Safe" rbHotKey="S"/>
+		<kxAutobackupList id="RB_Autobackup" customTip="Autobackup" text="@View File Safe">
+			<KListCommand hotKey="B" icon="WS_AutoVersiong" id="BackupMenuInWorkSpaceTab" customTip="WorkSpace_Backup" text="@File Backup" qtspyName="BackupMenuInWorkSpaceTab" rbHotKey="B">
+				<command idQ="AutoVersionCmd"/>
+				<command idQ="StopAutoVersionCmd"/>
+				<command idQ="MarkVersionCmd"/>
+				<command idQ="ExplorVersionCmd"/>
+			</KListCommand>
+			<command idQ="ExplorBackupDirCmd"/>
+		</kxAutobackupList>
+		<kxKOSCloudInfoCommand hotKey="I" ksoCmd="KOSCloudInfoCmd" icon="OS_CloudInfo" id="KOSCloudInfoCmd" customTip="KOSCloudInformationTip" text="@Guide" rbHotKey="I"/>
+		<kxKOSCloudFeedbackCommand hotKey="F" ksoCmd="KOSCloudFeedbackCmd" icon="OS_CloudFeedback" id="KOSCloudFeedbackCmd" customTip="KOSCloudFeedbackTip" text="@User Feedback" rbHotKey="F"/>
+		<KListCommand id="RB_CloudGuid" customTip="@Help us to improve WPS Office" text="@Help">
+			<KxOpenUrlCommand hotKey="d" referenceDisable="1" filter="support:DocerEntrance=true;lang!=zh_TW" url="http://www.docer.com/?from=wps_func_etsp" icon="DocerURLEntrance" customTip="DocerURLEntranceTip" text="@Docer Entrance" qtspyName="DocerURLEntrance"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="OF" ksoCmd="ExportPDF" aid="80004" filter="support:ExportToPDF=true" icon="ExportToPDF" id="ExportPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF" rbHotKey="OF"/>
+		<KListCommand id="RB_ExportPdf" text="@Export to PDF">
+			<KxLegacyTriggerCommand hotKey="OF" ksoCmd="ExportPDF" aid="80004" icon="ExportToPDF" id="ExportPdfInWorkSpaceTab" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF" qtspyName="ExportPdfInWorkSpaceTab" rbHotKey="OF"/>
+			<command idQ="TextToSpeechOption" proxyCmdId="ProxyTextToSpeechOption"/>
+			<command idQ="DocumentFix" proxyCmdId="ProxyDocumentFix"/>
+		</KListCommand>
+		<KxEtReadingLayoutColorCommand hotKey="r" ksoCmd="ReadingLayout" aid="80012" icon="ReadingLayout" customTip2="ReadingLayout2" id="ReadingLayoutAndColor" customTip="ReadingLayout" text="@Reading Layout" ksoTriggerCmd="RecentReadingLayout">
+			<KxEtMoreColorCommand hotKey="m" ksoCmd="ReadingLayoutMoreColor" aid="2000030" id="ReadingLayoutMoreColorInWorkSpaceTab" dialogHint="1" text="@More Colors" qtspyName="ReadingLayoutMoreColor"/>
+		</KxEtReadingLayoutColorCommand>
+		<KListCommand id="RB_DataTools" text="@Special Features">
+			<command idQ="rDuplicates"/>
+			<command idQ="ReadingLayoutAndColor"/>
+			<command idQ="ProtectEyes"/>
+			<command idQ="NightMode"/>
+			<command idQ="TextToSpeechOption" proxyCmdId="ProxyTextToSpeechOption"/>
+		</KListCommand>
+		<KListCommand id="RB_Donate" text="@Feedback and Support">
+			<KLayoutWidgetCommand filter="support:DonateMoney=true" fixedWidth="3"/>
+			<KxTpDonateMoneyCommand hotKey="M" screenGrabCmd="screenGrabEx" filter="support:DonateMoney=true" alias="TpDonateMoney" icon="DonateMoney" shortHint="@Donate" id="TpDonate" customTip="DonateMoney" text="@Donate" rbHotKey="M"/>
+			<KLayoutWidgetCommand filter="support:DocerEntrance/WorkSpace=true" fixedWidth="5"/>
+			<KxKsoHomepageTriggerCommand hotKey="D" ksoCmd="HomepagePlugin" filter="support:DocerEntrance/WorkSpace=true;support:IntranetVersion=false;support:IntranetVersion=false" icon="wpshome" id="WSKxKsoHomepageTriggerCommand" customTip="DocerHomeEntranceTip" text="@Docer Entrance" qtspyName="HomepagePlugin" rbHotKey="D"/>
+			<KxKsoHomepageTriggerCommand hotKey="D" ksoCmd="HomepagePlugin" filter="support:DocerEntrance/WorkSpace=true;support:IntranetVersion=true" icon="wpshome" id="WSKxKsoHomepageTriggerCommand" customTip="IntranetVersion DocerURLEntranceTip" text="@IntranetVersion Docer Entrance" qtspyName="HomepagePlugin" rbHotKey="D"/>
+		</KListCommand>
+		<KListCommand id="RB_XiuTang" text="@XiuTang">
+			<KxOpenUrlWidthSidCommand hotKey="H" filter="support:XiuTang=true" url="http://s.wps.cn/?from=tese-et" icon="XiuTangH5" id="XiuTang" customTip="XiuTangH5Tip" text="@XiuTang H5" rbHotKey="H"/>
+		</KListCommand>
+		<KListCommand id="RB_DocumentSlimming" text="@RB_Document Slimming">
+			<KxLegacyTriggerCommand hotKey="V" ksoCmd="DocumentSlimming" icon="DocumentSlimming" id="DocumentSlimmingTab" dialogHint="1" customTip="DocumentSlimming" text="@Document Slimming" qtspyName="DocumentSlimmingTab" rbHotKey="V"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_WorkSpace">
+			<command idQ="RB_UserCloud"/>
+			<separator/>
+			<command idQ="RB_Autobackup" filter="support:CloudAutoBackup=true"/>
+			<separator filter="support:CloudAutoBackup=true"/>
+			<command idQ="RB_ExportPdf"/>
+			<separator/>
+			<command idQ="RB_DocumentSlimming"/>
+		</subcommand>
+	</subcommands>
+</shell>

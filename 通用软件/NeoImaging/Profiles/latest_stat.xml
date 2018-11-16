@@ -1,0 +1,101 @@
+<config>
+	<server>
+		<tcp host="down2.stat.xunlei.com" port="80"/>
+		<http host="down2.stat.xunlei.com" port="80" url="/dc/stat_batch"/>
+	</server>
+	<priority>
+		<level id="1" reporttime="0" net="http"/>
+		<level id="2" reporttime="60000" net="http"/>
+		<level id="3" reporttime="-1" net="http"/>
+		<level id="4" reporttime="-2"/>
+	</priority>
+	<stat>
+		<item index="1" key="Online" priority="1"/>
+		<item index="2" key="LoadImage" priority="1"/>
+		<item index="3" key="SaveImage" priority="1"/>
+		<item index="4" key="BatchRotate" priority="1"/>
+		<item index="5" key="BatchResize" priority="1"/>
+		<item index="6" key="BatchRename" priority="1"/>
+		<item index="7" key="SuperBatch" priority="1"/>
+		<item index="8" key="Clip" priority="2"/>
+		<item index="81" key="Rotate" priority="2"/>
+		<item index="82" key="Size" priority="2"/>
+		<item index="83" key="Layer" priority="2"/>
+		<item index="84" key="Word" priority="2"/>
+		<item index="85" key="FreeJigsaw" priority="2"/>
+		<item index="86" key="ModalJigsaw" priority="2"/>
+		<item index="87" key="EasyFrame" priority="2"/>
+		<item index="88" key="HuaYangFrame" priority="2"/>
+		<item index="89" key="MaskFrame" priority="2"/>
+		<item index="810" key="MultiFrame" priority="2"/>
+		<item index="811" key="BasicAdjust" priority="2"/>
+		<item index="812" key="FillLight" priority="2"/>
+		<item index="813" key="ReduceLight" priority="2"/>
+		<item index="814" key="SaveAsTemplate" priority="2"/>
+		<item index="815" key="UseTemplate" priority="2"/>
+		<item index="816" key="ReversalFilm" priority="2"/>
+		<item index="889" key="JointJigsaw" priority="2"/>
+		<item index="890" key="ExtendBorder" priority="2"/>
+		<item index="891" key="EditWndSinaWeibo" priority="2"/>
+		<item index="892" key="EditWndQQWeibo" priority="2"/>
+		<item index="893" key="EditWndQzone" priority="2"/>
+		<item index="894" key="FreeJigsawSinaWeibo" priority="2"/>
+		<item index="895" key="FreeJigsawQQWeibo" priority="2"/>
+		<item index="896" key="FreeJigsawQzone" priority="2"/>
+		<item index="897" key="ModalJigsawSinaWeibo" priority="2"/>
+		<item index="898" key="ModalJigsawQQWeibo" priority="2"/>
+		<item index="899" key="ModalJigsawQzone" priority="2"/>
+		<item index="900" key="JointJigsawSinaWeibo" priority="2"/>
+		<item index="901" key="JointJigsawQQWeibo" priority="2"/>
+		<item index="902" key="JointJigsawQzone" priority="2"/>
+		<item index="903" key="ViewWndSinaWeibo" priority="2"/>
+		<item index="904" key="ViewWndQQWeibo" priority="2"/>
+		<item index="905" key="ViewWndQzone" priority="2"/>
+		<item index="906" key="ClipShortcut" priority="2"/>
+		<item index="907" key="RotateShortcut" priority="2"/>
+		<item index="908" key="SizeShortcut" priority="2"/>
+		<item index="909" key="IDPhoto" priority="2"/>
+		<item index="910" key="QuickUseIDPhoto" priority="2"/>
+		<!-- 7.19加入-->
+		<item index="911" key="CustomToolbar" priority="2"/>
+		<item index="912" key="EasyCutOut" priority="2"/>
+		<item index="913" key="ManualCutOut" priority="2"/>
+		<item index="914" key="ShapeCutout" priority="2"/>
+		<item index="915" key="ColorCutOut" priority="2"/>
+		<item index="916" key="FixActionStep" priority="2"/>
+		<item index="917" key="BatchLoadAction" priority="2"/>
+		<item index="918" key="BatchSaveAsAction" priority="2"/>
+		<item index="919" key="BatchChooseSteps" priority="2"/>
+		<item index="920" key="BatchClip" priority="2"/>
+		<item index="921" key="BatchInsertAction" priority="2"/>
+		<item index="922" key="DRFanZhuanPian" priority="2"/>
+		<item index="923" key="DRHeiBai" priority="2"/>
+		<item index="924" key="DRSuYaRenXiang" priority="2"/>
+		<item index="925" key="DRDanYaSeCai" priority="2"/>
+		<item index="926" key="DRZhenShiSeCai" priority="2"/>
+		<item index="927" key="DRYanLiSeCai" priority="2"/>
+		<item index="928" key="DRNongYuSeCai" priority="2"/>
+		<item index="929" key="DRRenXiangMeiRong" priority="2"/>
+		<item index="930" key="DRRenXiangTuiHuang" priority="2"/>
+		<item index="931" key="DRQuBan" priority="2"/>
+		<item index="932" key="DRQuHongYan" priority="2"/>
+		
+		<item index="933" key="StatMake" priority="2"/>
+		<item index="934" key="StatModel" priority="2"/>
+		<item index="935" key="BaoMingZhao" priority="2"/>
+		<item index="936" key="MultiFrameTool" priority="2"/>
+		<item index="937" key="Painter" priority="2"/>
+		<item index="938" key="StatCalendar" priority="2"/>
+		<item index="939" key="StatCustomCalendar" priority="2"/>
+		
+		
+		<item index="11101" key="TipsClick" priority="1"/>
+		<item index="11102" key="TipsClose" priority="1"/>
+		<item index="11103" key="TipShowTime" priority="1"/>
+		<item index="11104" key="TipsShow" priority="1"/>
+		
+		<item index="12001" key="StatusBarTextLinkAdShow" priority="2"/>
+		<item index="12002" key="StatusBarTextLinkAdClick" priority="1"/>
+		
+	</stat>
+</config>

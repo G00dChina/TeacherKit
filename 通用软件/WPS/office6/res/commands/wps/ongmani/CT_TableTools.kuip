@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_tabletools" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="TableSelection" aid="1501" faceid="146" icon="TableSelection" id="tabletoolsTableSelection" text="@Select Table with Dashed Borders"/>
+		<KListCommand id="RB_Table" text="@Table" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="TableProperties" forceVisible="1" icon="TableProperties" id="TablePropertiesInTableToolTab" customTip="TableProperties" spaceHint="suitable" text="@Table Properties" qtspyName="TableProperties" rbHotKey="O"/>
+			<KxLegacyTriggerCommand hotKey="g" ksoCmd="ShowGridlines" idMso="TableShowGridlines" icon="ShowGridlines" controlType="6" customTip="ShowGridlines" spaceHint="suitable" text="@View Gridlines" qtspyName="ShowGridlines" rbHotKey="TG"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="DrawTable" aid="2059" idMso="TableDrawTable" icon="DrawTable" controlType="6" id="TableTool_DrawTableInToolbar" customTip="DrawTable" text="@Draw Table" rbHotKey="DR"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="TableEraser" idMso="TableEraser" icon="TableEraser" controlType="6" id="TableTool_TableEraser" customTip="TableEraser" text="@Eraser" rbHotKey="TE"/>
+		<KxListCommand ksoCmd="InsertCells" forceVisible="1" id="RB_RowsAndColumns" customTip="InsertCells" text="@Rows and Columns" rbFileMenuEmbed="1" rbHotKey="I">
+			<command idQ="TableTool_DrawTableInToolbar"/>
+			<command idQ="TableTool_TableEraser"/>
+			<separator/>
+			<KListCommand hotKey="d" icon="Delete" id="DeleteInTableToolTab" customTip="Delete" text="@Delete" qtspyName="Delete" rbHotKey="DD">
+				<KxLegacyTriggerCommand hotKey="d" ksoCmd="DeleteCells" idMso="CellsDelete" icon="DeleteCells" controlType="0" id="DeleteCellsInTableToolTab" dialogHint="1" text="@Delete Cells" qtspyName="DeleteCells" rbHotKey="D"/>
+				<KxLegacyTriggerCommand hotKey="c" ksoCmd="DeleteColumns" icon="DeleteColumns" id="DeleteColumnsInTableToolTab" text="@Delete Columns" qtspyName="DeleteColumns" rbHotKey="C"/>
+				<KxLegacyTriggerCommand hotKey="r" ksoCmd="DeleteRows" icon="DeleteRows" id="DeleteRowsInTableToolTab" text="@Delete Rows" qtspyName="DeleteRows" rbHotKey="R"/>
+				<KxLegacyTriggerCommand hotKey="t" ksoCmd="DeleteTable" icon="DeleteTable" id="DeleteTableInTableToolTab" text="@Delete Table" qtspyName="DeleteTable" rbHotKey="T"/>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="a" ksoCmd="InsertRowAbove" icon="InsertRowsAbove" id="InsertRowAboveInTableToolTab" customTip="InsertRowAbove" spaceHint="suitable" text="@Insert Above" qtspyName="InsertRowAbove" rbHotKey="A"/>
+			<KxLegacyTriggerCommand hotKey="b" ksoCmd="InsertRowBelow" icon="InsertRowsBelow" id="InsertRowBelowInTableToolTab" customTip="InsertRowBelow" spaceHint="suitable" text="@Insert Below" qtspyName="InsertRowBelow" rbHotKey="E"/>
+			<KxLegacyTriggerCommand hotKey="l" ksoCmd="InsertColumnLeft" icon="InsertColumnsLeft" id="InsertColumnLeftInTableToolTab" customTip="InsertColumnLeft" spaceHint="suitable" text="@Insert Left" qtspyName="InsertColumnLeft" rbHotKey="L"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="InsertColumnRight" icon="InsertColumnsRight" id="InsertColumnRightInTableToolTab" customTip="InsertColumnRight" spaceHint="suitable" text="@Insert Right" qtspyName="InsertColumnRight" rbHotKey="R"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="MergeCells" aid="222" faceid="131" icon="MergeCells" id="TableToolMergeCells" customTip="MergeCells" text="@Merge Cells" rbHotKey="M"/>
+		<KxLegacyTriggerCommand text2="@Split
+Cells" hotKey="t" ksoCmd="SplitCells" aid="800" faceid="800" idMso="SplitCells" icon="SplitCells" controlType="0" id="SplitCells" dialogHint="1" customTip="SplitCells" spaceHint="suitable" text="@Split Cells" rbHotKey="P"/>
+		<KListCommand id="RB_Merge" text="@Merge" rbFileMenuEmbed="1">
+			<command idQ="TableToolMergeCells"/>
+			<command idQ="SplitCells"/>
+			<KListCommand hotKey="a" icon="SplitTable" id="SplitTableInTableToolTab" customTip="SplitTable" spaceHint="suitable" text="@Split Table" qtspyName="SplitTable" rbHotKey="Q">
+				<KxLegacyTriggerCommand hotKey="r" ksoCmd="SplitTableByRow" icon="SplitTableByRow" id="SplitTableByRowInTableToolTab" text="@Split Table by Row" qtspyName="SplitTableByRow"/>
+				<KxLegacyTriggerCommand hotKey="c" ksoCmd="SplitTableByColumn" icon="SplitTableByColumn" id="SplitTableByColumnInTableToolTab" text="@Split Table by Column" qtspyName="SplitTableByColumn"/>
+			</KListCommand>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="AutoFitWindow" aid="227" faceid="133" icon="AutoFitWindow" id="TableToolAutoFitWindow" customTip="AutoFitWindow" text="@AutoFit to Window" rbHotKey="UW"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="AutoFitContent" aid="3907" icon="AutoFitContent" id="TableToolAutoFitContent" customTip="AutoFitContent" text="@AutoFit to Content" rbHotKey="UC"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="DistributeRows" aid="229" faceid="135" idMso="TableRowsDistribute" icon="DistributeRows" controlType="0" id="DistributeRows" customTip="DistributeRows" spaceHint="suitable" text="@Distribute Rows Evenly" rbHotKey="UR"/>
+		<KxLegacyTriggerCommand hotKey="y" ksoCmd="DistributeColumns" aid="230" faceid="136" idMso="TableColumnsDistribute" icon="DistributeColumns" controlType="0" id="DistributeColumns" customTip="DistributeColumns" spaceHint="suitable" text="@Distribute Columns Evenly" rbHotKey="UC"/>
+		<KxListCommand ksoCmd="TableProperties" forceVisible="1" id="RB_Adjust" customTip="AdjustTableProperties" text="@Adjust" rbFileMenuEmbed="1">
+			<KListCommand icon="AutoFitWindow" id="TableAutoAdjust" customTip="TableAutoAdjust" text="@AutoFit" qtspyName="AutoFitWindow" rbHotKey="F">
+				<command idQ="TableToolAutoFitWindow"/>
+				<command idQ="DistributeRows"/>
+				<command idQ="DistributeColumns"/>
+			</KListCommand>
+		</KxListCommand>
+		<KxWpsTextDirectionCommand detail="@Change Text Direction" ksoCmd="ChangeTextDirection" icon="TextDirection" id="m_TableTextDirection" customTip="ChangeTextDirection" text="@Text Direction" rbHotKey="G">
+			<KxWpsTextDirectionDlgCommand hotKey="x" icon="TextDirection" id="TextDirectionOptionsInTableToolTab" dialogHint="1" text="@Text Direction Options" qtspyName="TextDirection" rbHotKey="X"/>
+		</KxWpsTextDirectionCommand>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="FastCalcSum" aid="1429" icon="AutoSum" id="FastCalcSum" text="@Sum"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="FastCalcAverage" aid="1430" icon="Average" id="FastCalcAverage" text="@Average"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="FastCalcMax" aid="1431" icon="Max" id="FastCalcMax" text="@Max"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="FastCalcMin" aid="1432" icon="Min" id="FastCalcMin" text="@Min"/>
+		<KListCommand id="RB_Data" text="@Data" rbFileMenuEmbed="1">
+			<KListCommand hotKey="f" icon="RecentFastCalc" id="RecentFastCalcInTableToolTab" customTip="RecentFastCalc" spaceHint="suitable" text="@Fast Calculation" qtspyName="RecentFastCalc" rbHotKey="SF">
+				<command idQ="FastCalcSum"/>
+				<command idQ="FastCalcAverage"/>
+				<command idQ="FastCalcMax"/>
+				<command idQ="FastCalcMin"/>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="o" ksoCmd="FieldFormula" icon="Function" id="FormulaInTableToolTab" customTip="FieldFormula" spaceHint="suitable" text="@Formula" qtspyName="FieldFormula" rbHotKey="UL"/>
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeadRowsRepeat" icon="HeadRowsRepeat" id="RepeatHeaderRows" customTip="HeadRowsRepeat" spaceHint="suitable" text="@Repeat Header Rows" qtspyName="HeadRowsRepeat" rbHotKey="J"/>
+			<KxLegacyTriggerCommand hotKey="b" ksoCmd="ConvertTabletoText" icon="ConvertTabletoText" id="ConvertTabletoTextInTableToolTab" customTip="ConvertTabletoText" spaceHint="suitable" text="@Convert Table to Text" qtspyName="ConvertTabletoText" rbHotKey="V"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="TableProperties" aid="233" idMso="TablePropertiesDialog" controlType="0" id="TableProperties" dialogHint="1" text="@Table Properties"/>
+		<KListCommand id="TableSelectMenu">
+			<KListCommand hotKey="s" idMso="TableSelectMenu" icon="TableSelectMenu" controlType="15" id="TableSelectMenu" customTip="TableSelectMenu" text="@Select" qtspyName="TableSelect" rbHotKey="K">
+				<KxLegacyTriggerCommand hotKey="L" ksoCmd="SelectCell" icon="SelectCell" id="SelectCellInTableToolTab" text="@Select Cell" qtspyName="SelectCell" rbHotKey="L"/>
+				<KxLegacyTriggerCommand hotKey="c" ksoCmd="SelectColumn" icon="SelectColumn" id="SelectColumnInTableToolTab" text="@Select Column" qtspyName="SelectColumn" rbHotKey="C"/>
+				<KxLegacyTriggerCommand hotKey="r" ksoCmd="SelectRow" icon="SelectRow" id="SelectRowInTableToolTab" text="@Select Row" qtspyName="SelectRow" rbHotKey="R"/>
+				<KxLegacyTriggerCommand hotKey="t" ksoCmd="SelectTable" icon="SelectTable" id="SelectTableInTableToolTab" text="@Select Table" qtspyName="SelectTable" rbHotKey="T"/>
+				<command idQ="tabletoolsTableSelection"/>
+			</KListCommand>
+		</KListCommand>
+		<KxFontSizeComboboxCommand hotKey="FS" horizontalPolicy="Preferred" ksoCmd="FontSize" icon="FontSize" fontSizeList="@5;5.5;6.5;7.5;8;9;10;10.5;11;12;14;16;18;20;22;26;28;36;48;56;72" id="FontSize" customTip="FontSize" verticalPolicy="Preferred" text="@Font Size" rbHotKey="FS"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Strikethought" icon="Strikethought" id="Strikethought" customTip="Strikethought" text="@Strikethrough" rbHotKey="4"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="EmphasisMark" icon="EmphasisMark" id="EmphasisMark" customTip="EmphasisMark" text="@Emphasis Mark" rbHotKey="M"/>
+		<KxHighlightColorCommand hotKey="h" ksoCmd="HighlightColor" aid="80068" barid="44551" icon="Highlighter" customTip2="HighlightColor2" id="HighlightColor" customTip="HighlightColor" text="@Highlight" ksoTriggerCmd="RecentHighlightColor" rbHotKey="i"/>
+		<KxWpsMoreFontColorCommand hotKey="m" ksoCmd="FontColor" idMso="FontColorMoreColorsDialogExcel" controlType="0" id="MoreFontColors" dialogHint="1" text="@More Font Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="FontColor" icon="SnapperFill" forceEnabled="1" id="SnapFontColors" text="@Snapper" rbHotKey="E"/>
+		<KxWpsFontColorCommand hotKey="FT" ksoCmd="FontColor" idMso="FontColorPicker" icon="ChartFontColor" customTip2="FontColor2" controlType="4" id="FontColor" customTip="FontColor" text="@Font Color" ksoTriggerCmd="RecentFontColor" rbHotKey="FC">
+			<command idQ="MoreFontColors"/>
+			<command idQ="SnapFontColors"/>
+		</KxWpsFontColorCommand>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="Bold" idMso="Bold" icon="Bold" controlType="0" id="Bold" customTip="Bold" text="@Bold" rbHotKey="1"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="Italic" icon="Italic" id="Italic" customTip="Italic" text="@Italic" rbHotKey="2"/>
+		<KxStaticGalleryCommand hotKey="u" column="1" ksoCmd="UnderlinePalette" idMso="Underline" icon="Underline" customTip2="Underline2" controlType="6" id="Underline" customTip="Underline" text="@Underline" ksoTriggerCmd="Underline" rbHotKey="3">
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_0" galleryItemHeight="18" index="0" qtspyName="Underline_0"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_1" galleryItemHeight="18" index="1" qtspyName="Underline_1"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_2" galleryItemHeight="18" index="2" qtspyName="Underline_2"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_3" galleryItemHeight="18" index="3" qtspyName="Underline_3"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_4" galleryItemHeight="18" index="4" qtspyName="Underline_4"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_5" galleryItemHeight="18" index="5" qtspyName="Underline_5"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_6" galleryItemHeight="18" index="6" qtspyName="Underline_6"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="113" icon="Underline_7" galleryItemHeight="18" index="7" qtspyName="Underline_7"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreUnderlines" id="MoreUnderlines" dialogHint="1" text="@More Underlines" rbHotKey="M"/>
+			<KxWpsUnderlineColorCommand hotKey="u" ksoCmd="UnderLineColor" id="UnderLineColor" text="@Underline Color" rbHotKey="U">
+				<KxWpsMoreColorCommand hotKey="m" ksoCmd="UnderLineColor" icon="MoreColor" id="MoreUnderLineColor" dialogHint="1" text="@More UnderLine Colors"/>
+				<KxWpsSnapColorCommand hotKey="e" ksoCmd="UnderLineColor" icon="SnapperFill" forceEnabled="1" id="SnapUnderLineColor" text="@Snapper" rbHotKey="E"/>
+			</KxWpsUnderlineColorCommand>
+		</KxStaticGalleryCommand>
+		<KxValueCommand hotKey="L" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_3" id="CellAlignment_Default" index="3" customTip="AlignCenterJustified" text="@Align Center Justified"/>
+		<KxListCommand ksoCmd="Font" forceVisible="1" icon="Font" horizontalSpacing="4" id="RB_Table_Font" customTip="RB_Font" text="@Font" rbFileMenuEmbed="1" rbHotKey="FN">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1">
+					<KxWpsFontComboBoxCommand hotKey="FF" minimumWidth="90" horizontalPolicy="Expanding" ksoCmd="FontName" icon="FontName" id="FontNameInTableToolTab" customTip="FontName" verticalPolicy="Preferred" text="@Font Name" qtspyName="FontName" rbHotKey="FF"/>
+					<command idQ="FontSize"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="Bold"/>
+					<command idQ="Italic"/>
+					<command idQ="Underline"/>
+					<separator/>
+					<command idQ="FontColor"/>
+					<command idQ="HighlightColor"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KQuickMenuCommandEx icon="AlignStyle" customTip2="AlignStyle2" id="AlignmentInTableToolTab" customTip="AlignStyle" text="@Alignment" referenceCommand="CellAlignment_Default" qtspyName="AlignStyle" rbHotKey="SA">
+				<KxValueCommand hotKey="T" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_0" id="AlignTopJustified" index="0" customTip="AlignTopJustified" text="@Align Top Justified" qtspyName="AlignTopJustified"/>
+				<KxValueCommand hotKey="O" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_1" id="AlignTopCenter" index="1" customTip="AlignTopCenter" text="@Align Top Center" qtspyName="AlignTopCenter"/>
+				<KxValueCommand hotKey="P" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_2" id="AlignTopRight" index="2" customTip="AlignTopRight" text="@Align Top Right" qtspyName="AlignTopRight"/>
+				<separator/>
+				<command idQ="CellAlignment_Default"/>
+				<KxValueCommand hotKey="C" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_4" id="AlignCenterInTableToolTab" index="4" customTip="AlignCenter" text="@Align Center" qtspyName="AlignCenter"/>
+				<KxValueCommand hotKey="R" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_5" id="AlignCenterRight" index="5" customTip="AlignCenterRight" text="@Align Center Right" qtspyName="AlignCenterRight"/>
+				<separator/>
+				<KxValueCommand hotKey="B" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_6" id="AlignBottomJustified" index="6" customTip="AlignBottomJustified" text="@Align Bottom Justified" qtspyName="AlignBottomJustified"/>
+				<KxValueCommand hotKey="U" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_7" id="AlignBottomCenter" index="7" customTip="AlignBottomCenter" text="@Align Bottom Center" qtspyName="AlignBottomCenter"/>
+				<KxValueCommand hotKey="M" ksoCmd="TableCellAlignmentPalette" icon="CellAlignment_8" id="AlignBottomRight" index="8" customTip="AlignBottomRight" text="@Align Bottom Right" qtspyName="AlignBottomRight"/>
+			</KQuickMenuCommandEx>
+			<command idQ="m_TableTextDirection"/>
+		</KxListCommand>
+		<KListCommand id="DetailedSettings_TableTool">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_TableTool" text="@Settings" qtspyName="DetailedSettings">
+				<command idQ="TableProperties"/>
+				<KxLegacyTriggerCommand hotKey="f" ksoCmd="InsertCells" icon="InsertColumnsLeft" dialogHint="1" text="@Rows and Columns" qtspyName="InsertCells"/>
+				<KxLegacyTriggerCommand hotKey="f" ksoCmd="Font" icon="Font" dialogHint="1" text="@Font" qtspyName="Font"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_TableTools">
+			<command idQ="RB_Table"/>
+			<separator/>
+			<command idQ="RB_RowsAndColumns"/>
+			<separator/>
+			<command idQ="RB_Merge"/>
+			<separator/>
+			<command idQ="RB_Adjust"/>
+			<separator/>
+			<command idQ="RB_Table_Font"/>
+			<separator/>
+			<command idQ="RB_Data"/>
+			<separator/>
+			<command idQ="TableSelectMenu"/>
+			<separator/>
+			<command idQ="DetailedSettings_TableTool" filter="patent:LogicGroupShowExtensionButton=false"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

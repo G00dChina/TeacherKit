@@ -1,0 +1,210 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Calculator</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Calculator,Calculator,Calculator inserting a value,Calculator inserting a function,Calculator inserting a new parameter,Dialog Boxes,Dialog Boxes Calculator">
+   <meta name="description" content="Calculator">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_calculator.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Calculator</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Calculator</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_docs_docoptions.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_calculator_parts.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_Centered_Large"><img src="number_menu_calc_zoom75.png" width="320" height="284" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the Calculator to create or edit two kinds of Sketchpad objects: <a href="objects_calculations.htm" class="topiclink">calculations</a> and <a href="objects_functions.htm" class="topiclink">functions</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Calculations:</span><span class="f_BodyText"> Calculations are values generated using numbers, mathematical operations, <a href="objects_functions.htm" class="topiclink">functions</a>, <a href="objects_measurements.htm" class="topiclink">measurements</a>, or <a href="objects_parameters.htm" class="topiclink">parameters</a> from your sketch. These calculations can be used for a wide variety of purposes: to define distances, angles, and scale factors by which objects are transformed; to plot points; and to determine the results of other calculations and functions.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Functions:</span><span class="f_BodyText"> </span><span class="f_BodyText">When you define a function in Sketchpad, you can also use numbers, mathematical operations, measurements, parameters, or other functions from your sketch. Once you’ve defined a function, use it for various purposes: plot it, evaluate it, differentiate it, or use it to define other calculations or functions.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are several different purposes for which you’ll use the Calculator:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To create a new calculation, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_number_calculate.htm" class="topiclink">Number | Calculate</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To create a new function, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_newfunction.htm" class="topiclink">Number | New Function</a>.</span></p><p class="p_MarginNote"><span class="f_MarginNote">Choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Graph | Plot New Function</a></span><span class="f_MarginNote"> to create a new function and plot it immediately.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To edit a calculation, double-click the calculation with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Selection Arrow</a></span><span class="f_BodyText"> tool, or select the calculation and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_editdefinition.htm" class="topiclink">Edit | Edit Calculation</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To edit a function definition, double-click the function with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Selection Arrow</a></span><span class="f_BodyText"> tool, or select the function and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_editdefinition.htm" class="topiclink">Edit | Edit Function</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change a <a href="objects_parameters.htm" class="topiclink">parameter</a> into a calculation, select the parameter, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_editdefinition.htm" class="topiclink">Edit | Edit Parameter</a>,</span><span class="f_BodyText"> and change the expression to something more complicated than just a number.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">To change a calculation into a <a href="objects_parameters.htm" class="topiclink">parameter</a>, edit it so that it consists of one number only, with or without distance or angle units.</span></p><div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Insert a Value or Function from the Sketch</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="backclick_targets.png" width="131" height="49" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">While you’re using the Calculator to define a calculation or a function, you can click existing <a href="objects_cats_values.htm" class="topiclink">values</a> or <a href="objects_functions.htm" class="topiclink">functions</a> in the sketch to insert these objects into your new expression. For instance, if you have a sketch in which you’ve already measured the length of segment </span><span class="f_BodyText" style="font-style: italic;">AB,</span><span class="f_BodyText"> you can insert this length into the Calculator’s expression by clicking on the existing measurement in the sketch. Similarly, if you have a sketch in which you’ve defined a function </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) = </span><span class="f_BodyText" style="font-style: italic;">ax</span><span class="f_BodyText" style="font-size: 9px; vertical-align: super;">2</span><span class="f_BodyText"> + </span><span class="f_BodyText" style="font-style: italic;">bx</span><span class="f_BodyText"> + </span><span class="f_BodyText" style="font-style: italic;">c</span><span class="f_BodyText">, use this function in other calculations and functions by clicking it in the sketch.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can also click a Hot Text link to a value or function to insert that value or function into the Calculator.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If a value or function you want to insert is hidden behind the Calculator itself, drag the Calculator to the side so you can click on the object you want to insert.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Insert a New Parameter</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="calculator_new_param_zoom75.png" width="242" height="285" alt="" style="border:none" /><span class="f_Image_FlushRight_Narrative">  <img src="number_new_param_zoom75.png" width="164" height="124" alt="" style="border:none" /></span></p>
+<p class="p_Image_FlushRight_Narrative"><span class="f_Image_FlushRight_Narrative">&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText">While you’re using the Calculator to define a calculation or a function, you can create a new <a href="objects_parameters.htm" class="topiclink">parameter</a> and insert it into your expression.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;">New Parameter</span><span class="f_BodyText"> from the <a href="windows_calculator_parts.htm" class="topiclink">Values pop-up menu</a>, or use the keyboard shortcut Shift+Ctrl+P (Windows) or Shift-<img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />P (Mac). The New Parameter dialog box appears</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Type the name you want to use for the new parameter. You can also set the initial value of the parameter.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Click </span><span class="f_BodyText" style="font-weight: bold;">OK.</span><span class="f_BodyText"> The parameter is inserted into your expression and added to your sketch.</span></p><p class="p_MarginNote"><span class="f_MarginNote">The result is the same as if you had used </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_number_newparameter.htm" class="topiclink">Number | New Parameter</a></span><span class="f_MarginNote"> to create the parameter before using the Calculator.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_calculator_parts.htm" class="topiclink">Parts of the Calculator</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="shortcuts_howto_signum.htm" class="topiclink">How to Use Signum to Construct a Piecewise Function</a></span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_cats_values.htm" class="topiclink">Measurements, Calculations, and Parameters</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

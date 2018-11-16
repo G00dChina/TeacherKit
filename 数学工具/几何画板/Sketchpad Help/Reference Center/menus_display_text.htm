@@ -1,0 +1,177 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Display Menu &gt; Text</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Display Menu,Display Menu Text,Text Command,Text,Text style,Text size">
+   <meta name="description" content="Text">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_display_text.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Text</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_display.htm">Display Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Text</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_display_color_other.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_display.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_display_hideobjects.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_FlushRight_Narrative"><img src="display_text_menu_zoom75.png" width="413" height="239" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">This </span><span class="f_BodyText"><a href="menus_display.htm" class="topiclink">Display</a> </span><span class="f_BodyText">menu command sets the font and style used for the <a href="tools_arrow_selectdeselect.htm" class="topiclink">selected objects</a>, and increases or decreases the font size.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;">Bold, Italic,</span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;">Underline</span><span class="f_BodyText"> to change the text style for the selected objects, or use keyboard shortcuts for these commands: Ctrl+B, Ctrl+I, or Ctrl+U in Windows, or <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />B, <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />I, or <img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" />U on Mac.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;">Increase Size</span><span class="f_BodyText"> to increase the font size for each selected object to the next-larger standard font size. Choose </span><span class="f_BodyText" style="font-weight: bold;">Decrease Size</span><span class="f_BodyText"> to reduce the font size for each selected object to the next-smaller standard font size.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The keyboard shortcut for </span><span class="f_MarginNote" style="font-weight: bold;">Increase Size</span><span class="f_MarginNote"> is Alt+</span><span class="f_MarginNote" style="font-weight: bold;">&gt;</span><span class="f_MarginNote"> (Windows) or <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" /></span><span class="f_MarginNote" style="font-weight: bold;">&gt;</span><span class="f_MarginNote"> (Mac). The shortcut for </span><span class="f_MarginNote" style="font-weight: bold;">Decrease Size</span><span class="f_MarginNote"> is Alt+</span><span class="f_MarginNote" style="font-weight: bold;">&lt;</span><span class="f_MarginNote"> (Windows) or <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" /></span><span class="f_MarginNote" style="font-weight: bold;">&lt;</span><span class="f_MarginNote"> (Mac).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose a font from the lower part of the menu. Recently-used fonts appear at the top of the font list.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To change an object’s text style, size, or font without changing the setting for future objects, hold down the Shift key while choosing the command. (You can also uncheck </span><span class="f_BodyText" style="font-weight: bold;">Update automatically when restyling existing objects</span><span class="f_BodyText"> in <a href="windows_prefs_text.htm" class="topiclink">Text Preferences</a> to preserve the default style, size, or font.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Alternatively, use the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a> to change the font, style, and size of text.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

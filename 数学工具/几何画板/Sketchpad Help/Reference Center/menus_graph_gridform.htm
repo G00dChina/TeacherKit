@@ -1,0 +1,216 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Graph Menu &gt; Grid Form</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Graph Menu,Graph Menu Grid Form,Grid Form Command,Coordinate Systems,Objects,Objects coordinate systems">
+   <meta name="description" content="Grid Form">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_graph_gridform.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Grid Form</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_graph.htm">Graph Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Grid Form</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_graph_markcoordsystem.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_graph.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_graph_showgrid.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">This <a href="menus_graph.htm" class="topiclink">Graph</a></span><span class="f_BodyText"> </span><span class="f_BodyText">menu command changes the grid appearance and scaling of the <a href="menus_graph_markcoordsystem.htm" class="topiclink">marked</a> <a href="objects_coordsys.htm" class="topiclink">coordinate system</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Sketchpad’s coordinate systems can have several possible forms:</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="grid_form_submenu_zoom75.png" width="213" height="79" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Polar Grid:</span><span class="f_BodyText"> A polar coordinate system has a set of grid lines that are circles (at a constant distance from the origin, or </span><span class="f_BodyText" style="font-style: italic;">r</span><span class="f_BodyText"> value) and a set of grid lines that pass through the origin (at a constant angle from the origin, or </span><span class="f_BodyText" style="font-style: italic;">θ</span><span class="f_BodyText"> value). Any coordinate system can be made polar.</span></p>
+<p class="p_MarginNote" style="margin: 3px 0px 0px 0px;"><span class="f_MarginNote">If the horizontal and vertical axes of a polar coordinate system have different scaling, the constant-distance grid lines appear as ellipses rather than circles.</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><div class="p_Image_Centered_Large" style="margin: 5px 0px 5px 0px;"><div style="margin:0px auto 0px auto;width:120px;padding:0px 0px 0px 0px"><img src="coord_sys_polar_zoom60.png" width="120" height="120" style="border:none" alt="Polar" /><p style="text-align:center"><span class="f_Image_Centered_Large">Polar</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Square Grid:</span><span class="f_BodyText"> A square coordinate system has the same scaling on the horizontal and vertical axes and has grid lines that are horizontal (at a constant </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> value) and vertical (at a constant </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> value). Any coordinate system, except one defined in terms of two different distances, can be made square.</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><div class="p_Image_Centered_Large" style="margin: 5px 0px 5px 0px;"><div style="margin:0px auto 0px auto;width:120px;padding:0px 0px 0px 0px"><img src="coord_sys_zoom60.png" width="120" height="120" style="border:none" alt="Square" /><p style="text-align:center"><span class="f_Image_Centered_Large">Square</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Rectangular Grid:</span><span class="f_BodyText"> A rectangular coordinate system has independent scaling for the horizontal and vertical axes and has grid lines that are horizontal (constant </span><span class="f_BodyText" style="font-style: italic;">y</span><span class="f_BodyText"> value) and vertical (constant </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> value). Any coordinate system, except one defined in terms of a unit circle, can be made rectangular.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><div class="p_Image_Centered_Large" style="margin: 5px 0px 5px 0px;"><div style="margin:0px auto 0px auto;width:120px;padding:0px 0px 0px 0px"><img src="coord_sys_rect_zoom60.png" width="120" height="120" style="border:none" alt="Rectangular" /><p style="text-align:center"><span class="f_Image_Centered_Large">Rectangular</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Trigonometric Axis:</span><span class="f_BodyText"> The horizontal axis is numbered with fractions and multiples of </span><span class="f_BodyText" style="font-style: italic;">π.</span><span class="f_BodyText"> You can use a trigonometric axis on any kind of coordinate system.</span></p>
+<p class="p_BodyText"><span class="f_MarginNote">When you choose trigonometric axes for a polar grid, both axes become trigonometric.</span></p>
+<p class="p_MarginNote" style="margin: 3px 0px 0px 0px;"><span class="f_MarginNote">You can turn trigonometric numbering on or off for any axis by selecting it and choosing </span><span class="f_MarginNote" style="font-weight: bold;"><a href="objects_coordsys_axisprops.htm" class="topiclink">Edit | Properties | Axis</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><div class="p_Image_Centered_Large" style="margin: 5px 0px 5px 0px;"><div style="margin:0px auto 0px auto;width:172px;padding:0px 0px 0px 0px"><img src="coord_sys_trig_zoom60.png" width="172" height="120" style="border:none" alt="Square with Trigonometric Axis" /><p style="text-align:center"><span class="f_Image_Centered_Large">Square with Trigonometric Axis</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">If you choose one of these commands with a sketch that doesn’t yet have a coordinate system, Sketchpad creates a default coordinate system with the chosen form.</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_graph_showgrid.htm" class="topiclink">Show Grid command</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_graph_definecoordsys.htm" class="topiclink">Define Coordinate System command</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_coordsys_multiple.htm" class="topiclink">Multiple Coordinate Systems</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

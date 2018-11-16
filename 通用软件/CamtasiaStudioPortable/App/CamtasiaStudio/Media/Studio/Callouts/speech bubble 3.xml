@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+   <Overlay_Filename>speech bubble 3.png</Overlay_Filename>
+   <Overlay_Name>讲话气泡 3</Overlay_Name>
+   <Text_Top>15</Text_Top>
+   <Text_Left>15</Text_Left>
+   <Text_Bottom>65</Text_Bottom>
+   <Text_Right>15</Text_Right>
+   <Fill_Color>1</Fill_Color>
+   <Border_Color>1</Border_Color>
+   <Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+   <Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+   <VectorProps>
+      <figure>
+         <svg>
+            M 10,0 
+            h 286 
+            c 5.521,0,10,4.477,10,10 
+            v 172 
+            c 0,5.521-4.479,10-10,10 
+            h -20 
+            l -40,50 
+            v -50 
+            H 10 
+            c -5.523,0-10-4.479-10-10 
+            V 10
+            C 0,4.477,4.477,0,10,0 
+            z
+         </svg>
+      </figure>
+      <borderWidth>5.00</borderWidth>
+      <seamY>-1</seamY>
+      <shapeWidth>306</shapeWidth>
+      <shapeHeight>247</shapeHeight>
+   </VectorProps>
+   <Style>5</Style>
+</Overlay>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<Overlay version="1.0.1">
+<Overlay_Filename>droppin.png</Overlay_Filename>
+<Overlay_Name>滴形</Overlay_Name>
+<Text_Top>30</Text_Top>
+<Text_Left>20</Text_Left>
+<Text_Bottom>135</Text_Bottom>
+<Text_Right>20</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+   <svg>
+      M77.88,247.8c-0.023,0-0.056,0-0.08,0v0.023c0,2.209-1.791,4-4,4h-6c-2.209,0-4-1.791-4-4V247.8c-0.024,0-0.057,0-0.08,0
+      C63.72,139.643,0,126.503,0,70.8C0,31.698,31.698,0,70.8,0c39.102,0,70.8,31.698,70.8,70.8C141.6,126.503,77.88,139.643,77.88,247.8 z
+   </svg>
+</figure>
+
+<borderWidth>5.00</borderWidth>
+<seamY>116.00</seamY>
+<shapeWidth>142</shapeWidth>
+<shapeHeight>252</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

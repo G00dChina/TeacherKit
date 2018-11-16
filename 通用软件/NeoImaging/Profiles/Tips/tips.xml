@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tips>
+<tip id="21000036" begintime="2014-04-22 00:00:00" endtime="2014-05-03 23:59:59" width="292" height="200" custom_code="" hasmini="0" hasfavor="0" subcateflag="0">
+    <title>
+        <text><![CDATA[光影动态]]></text>
+        <icon><![CDATA[http://fodder.neoimaging.cn/ad/tip_logo.png]]></icon>
+    </title>
+    <elements>
+        <!--内容标题-->
+        <element id="1" elementtype="1" left="110" top="44" width="170" height="26" halign="center" valign="center" link="1">
+            <font name="default" bold="1" />
+            <color normal="#131111" hover="#a29696" vip="#131111" viphover="#a29696"/>
+            <clickurl command="1" tabtitle="消息" addin="" cmdstr="" cmdparam=""><![CDATA[http://www.36588.com.cn/activity/go_active.do?active_id=41446562&adid=gymss&referfrom=MSG_21000036]]></clickurl>
+            <text><![CDATA[冲印虽易，免费不易]]></text>
+            <opentype>10001</opentype> 
+            <exeregistpathkey><![CDATA[]]></exeregistpathkey>
+            <linkorparam><![CDATA[]]></linkorparam>
+        </element>
+        <!--图片-->
+        <element id="2" elementtype="2" left="22" top="49" width="77" height="84" style="0" >
+            <picurl><![CDATA[http://msg.client.xunlei.com/pics7/21000036.png]]></picurl>
+            <clickurl command="1" tabtitle="消息" addin="" cmdstr="" cmdparam=""><![CDATA[http://www.36588.com.cn/activity/go_active.do?active_id=41446562&adid=gymss&referfrom=MSG_21000036]]></clickurl>
+            <opentype>10001</opentype> 
+            <exeregistpathkey><![CDATA[]]></exeregistpathkey>
+            <linkorparam><![CDATA[]]></linkorparam>
+        </element>
+        <!--内容-->
+        <element id="3" elementtype="1" left="110" top="67" width="162" height="69" halign="left" valign="top" link="1">
+            <clickurl command="1" tabtitle="消息" addin="" cmdstr="" cmdparam=""><![CDATA[http://www.36588.com.cn/activity/go_active.do?active_id=41446562&adid=gymss&referfrom=MSG_21000036]]></clickurl>
+            <text><![CDATA[来世纪开元，掀起冲印史上最强风暴，立享免费冲洗20张照片或18张拍立得！]]></text>
+            <opentype>10001</opentype> 
+            <exeregistpathkey><![CDATA[]]></exeregistpathkey>
+            <linkorparam><![CDATA[]]></linkorparam>
+        </element>
+        <!--按钮-->
+        <element id="4" elementtype="3" left="227" top="166" width="43" height="20" bkg="0" link="1">
+            <caption><![CDATA[查看]]></caption>
+            <clickurl command="1" tabtitle="消息" addin="" cmdstr="" cmdparam=""><![CDATA[http://www.36588.com.cn/activity/go_active.do?active_id=41446562&adid=gymss&referfrom=MSG_21000036]]></clickurl>
+            <icon><![CDATA[http://msg.client.xunlei.com/xml7/view.png]]></icon>
+            <opentype>10001</opentype> 
+            <exeregistpathkey><![CDATA[]]></exeregistpathkey>
+            <linkorparam><![CDATA[]]></linkorparam>
+        </element>
+    </elements>
+</tip>
+</tips>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<MainWndWidth>max</MainWndWidth>
+	<NeoImaging.ImageCutout.AddBkg.Color5.Green>255</NeoImaging.ImageCutout.AddBkg.Color5.Green>
+	<BasicAdjustHistogramIsSelected>false</BasicAdjustHistogramIsSelected>
+	<NeoImaging.ImageCutout.AddBkg.Color5.Red>0</NeoImaging.ImageCutout.AddBkg.Color5.Red>
+	<UseOpenCL>0</UseOpenCL>
+	<LastViewPath>C:\Users\Administrator\Desktop</LastViewPath>
+	<ClipAdjustCommonPercent>
+		<Item2>3 : 2</Item2>
+		<Item4>16 : 9</Item4>
+		<Item3>4 : 3</Item3>
+		<Item1>1 : 1</Item1>
+	</ClipAdjustCommonPercent>
+	<MouseUseType>0</MouseUseType>
+	<ResizeAdjustCommonHeight>
+		<Item2>900</Item2>
+		<Item3>1200</Item3>
+		<Item1>600</Item1>
+	</ResizeAdjustCommonHeight>
+	<NeoImaging.ImageCutout.AddBkg.Color5.Blue>0</NeoImaging.ImageCutout.AddBkg.Color5.Blue>
+	<IsNeedShowSaveCfg>1</IsNeedShowSaveCfg>
+	<SortType>file_name</SortType>
+	<IDPhotoName>8张2寸照--6寸/4R相纸</IDPhotoName>
+	<ImageEditWnd.ToolBar.Share.Bubble.IsShown>1</ImageEditWnd.ToolBar.Share.Bubble.IsShown>
+	<FodderTypeList>
+		<item3>
+			<reqUrl>http://client.fodder.neoimaging.cn/albumInfo/index?type=2</reqUrl>
+			<typeName>花样</typeName>
+			<albumType>2</albumType>
+		</item3>
+		<item5>
+			<reqUrl>http://client.fodder.neoimaging.cn/albumInfo/index?type=4</reqUrl>
+			<typeName>多图</typeName>
+			<albumType>4</albumType>
+		</item5>
+		<item6>
+			<reqUrl>http://client.fodder.neoimaging.cn/font/index</reqUrl>
+			<typeName>字体</typeName>
+			<albumType>11</albumType>
+		</item6>
+		<item7>
+			<reqUrl>http://client.fodder.neoimaging.cn/albumInfo/myAlbum</reqUrl>
+			<needLogin>true</needLogin>
+			<typeName>我的素材</typeName>
+			<albumType>99</albumType>
+		</item7>
+		<item2>
+			<reqUrl>http://client.fodder.neoimaging.cn/albumInfo/index?type=1</reqUrl>
+			<typeName>轻松</typeName>
+			<albumType>1</albumType>
+		</item2>
+		<item4>
+			<reqUrl>http://client.fodder.neoimaging.cn/albumInfo/index?type=3</reqUrl>
+			<typeName>撕边</typeName>
+			<albumType>3</albumType>
+		</item4>
+		<item1>
+			<reqUrl>http://client.fodder.neoimaging.cn/portal</reqUrl>
+			<typeName>全部素材</typeName>
+			<albumType>0</albumType>
+		</item1>
+	</FodderTypeList>
+	<ResizeAdjustCommonWidth>
+		<Item2>1024</Item2>
+		<Item3>1800</Item3>
+		<Item1>800</Item1>
+	</ResizeAdjustCommonWidth>
+	<SaveAsSuffix>1</SaveAsSuffix>
+	<MainWndHeight>max</MainWndHeight>
+</Config>

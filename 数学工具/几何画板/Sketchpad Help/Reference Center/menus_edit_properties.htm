@@ -1,0 +1,299 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Edit Menu &gt; Properties</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Properties Command,Edit Menu,Edit Menu Properties,Dialog Boxes,Dialog Boxes Properties">
+   <meta name="description" content="Properties">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_edit_properties.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Properties</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_edit.htm">Edit Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Properties</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_edit_editdefinition.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_edit.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_edit_preferences.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_Centered_Large"><img src="properties_dialog_zoom75.png" width="260" height="201" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">This <a href="menus_edit.htm" class="topiclink">Edit</a> menu command displays the <a href="windows_properties.htm" class="topiclink">Properties dialog box</a> and allows you to change a variety of properties of a single selected object.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The keyboard shortcut for </span><span class="f_MarginNote" style="font-weight: bold;">Properties</span><span class="f_MarginNote"> is Alt+? (Windows) or <img src="cloverleaf_mn.png" width="10" height="8" alt="" style="border:none" />? (Mac).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are two other ways to view an object’s properties.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Use the <a href="menus_context.htm" class="topiclink">Context</a> menu. In Windows, right-click the object. On a Mac, hold down the Ctrl key while you click the object. The </span><span class="f_BodyText" style="font-weight: bold;">Properties</span><span class="f_BodyText"> command appears in the resulting Context menu (directly under your mouse if possible).</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_objectinformation.htm" class="topiclink">Information</a></span><span class="f_BodyText"> tool. Click the tool on the object, and then click the object’s name in the balloon that appears.</span></p><p class="p_BodyText"><span class="f_BodyText">The Properties dialog box can include these panels:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Panel</span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Objects</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_attrib_props.htm" class="topiclink">Object</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">All objects</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_attrib_labelprops.htm" class="topiclink">Label</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">All objects that can show labels</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_values_props.htm" class="topiclink">Value</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_measurements.htm" class="topiclink">Measurements</a>, <a href="objects_calculations.htm" class="topiclink">calculations</a>, and <a href="objects_parameters.htm" class="topiclink">parameters</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_parameters_props.htm" class="topiclink">Parameter</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_parameters.htm" class="topiclink">Parameters</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_tables_props.htm" class="topiclink">Table</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_tables.htm" class="topiclink">Tables</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_iter_props.htm" class="topiclink">Iteration</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_iter.htm" class="topiclink">Iterations and iterated objects</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_opacity_props.htm" class="topiclink">Opacity </a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_polygonsinteriors.htm" class="topiclink">Polygons</a>, <a href="objects_polygonsinteriors.htm" class="topiclink">circle interiors</a>, <a href="objects_polygonsinteriors.htm" class="topiclink">arc interiors</a>, <a href="objects_pictures.htm" class="topiclink">pictures</a>, <a href="objects_iter.htm" class="topiclink">iterations</a> and <a href="objects_loci.htm" class="topiclink">loci</a> of these objects, and <a href="angle_markers.htm" class="topiclink">angle markers</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_coordsys_axisprops.htm" class="topiclink">Axis</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_coordsys.htm" class="topiclink">Axes</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_functions_ddfprops.htm" class="topiclink">Function</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_functions_ddfprops.htm" class="topiclink">Data-defined functions</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_plot_locprops.htm" class="topiclink">Plot</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_loci.htm" class="topiclink">Loci (including families of functions, families of curves, and families of loci)</a> and <a href="objects_cats_paths.htm" class="topiclink">sampled transformed paths</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_plot_fnprops.htm" class="topiclink">Plot</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_functionplots.htm" class="topiclink">Function plots</a> and <a href="object_parametriccurve.htm" class="topiclink">parametric plots</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cat_plot_sampledpic.htm" class="topiclink">Plot</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="working_with_pictures.htm" class="topiclink">Sampled transformed pictures</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_markers_props.htm" class="topiclink">Marker</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="angle_markers.htm" class="topiclink">Angle markers</a> and <a href="tick_markers.htm" class="topiclink">tick marks</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_hideshowprops.htm" class="topiclink">Hide/Show</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_hideshowprops.htm" class="topiclink">Hide/Show buttons</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_animateprops.htm" class="topiclink">Animate</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_animateprops.htm" class="topiclink">Animation buttons</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_moveprops.htm" class="topiclink">Move</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_moveprops.htm" class="topiclink">Movement buttons</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_presentprops.htm" class="topiclink">Presentation</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_presentprops.htm" class="topiclink">Presentation buttons</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_linkprops.htm" class="topiclink">Link</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_linkprops.htm" class="topiclink">Link buttons</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:146px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_scrollprops.htm" class="topiclink">Scroll</a></span></p>
+</td>
+<td style="vertical-align:top; width:265px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_scrollprops.htm" class="topiclink">Scroll buttons</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

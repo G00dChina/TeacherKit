@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.help.feature"
+      label="XMind Offline Help Contents"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      XMind Offline Help Contents
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2012, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin
+         id="org.xmind.ui.help"
+         download-size="4213"
+         install-size="4704"
+         version="3.6.0.201511090408"
+         unpack="true"/>
+
+</feature>

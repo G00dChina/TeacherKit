@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_mailings" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="OpenDataSource" icon="OpenDataSource" id="RbOpenDataSource" text="@Open Data Source"/>
+		<KxLegacyTriggerCommand hotKey="C" ksoCmd="CloseOnMailMerge" id="RbCloseOnMailMerge" text="@Close Data Source"/>
+		<KxListCommand ksoCmd="OpenDataSource" icon="OpenDataSource" customTip2="OpenDataSource2" id="sp_OpenDataSource" customTip="OpenDataSource" text="@Open Data Source" rbHotKey="R">
+			<command idQ="RbOpenDataSource"/>
+			<command idQ="RbCloseOnMailMerge"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand ksoCmd="MailMergeRecipients" idMso="MailMergeFindRecipient" icon="MailMergeRecipients" controlType="0" id="MailMergeRecipients" customTip="MailMergeRecipients" text="@Mail Merge Recipients" rbHotKey="D"/>
+		<KListCommand id="RB_Start_Mail_Margin" text="@Start Mail Merge" rbFileMenuEmbed="1">
+			<command idQ="sp_OpenDataSource"/>
+			<command idQ="MailMergeRecipients"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="HighlightMergeFields" icon="HighlightMergeFields" id="HighlightMergeFields" customTip="HighlightMergeFields" spaceHint="suitable" text="@Highlight Merge Fields" rbHotKey="H"/>
+		<KListCommand id="RB_Write_Insert_Fields" text="@Write &amp; Insert Fields" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand ksoCmd="InsertMergeFields" icon="InsertMergeFields" id="InsertMergeFieldInMailingTab" customTip="InsertMergeFields" spaceHint="suitable" text="@Insert Merge Field" qtspyName="InsertMergeFields" rbHotKey="I"/>
+			<KxLegacyTriggerCommand ksoCmd="InsertWordField" icon="Field" id="InsertNextFieldInMailingTab" customTip="InsertWordField" spaceHint="suitable" text="@Insert Next Fields" qtspyName="InsertWordField" rbHotKey="N"/>
+			<command idQ="HighlightMergeFields"/>
+			<KxLegacyTriggerCommand ksoCmd="MatchFields" icon="MatchFields" id="MatchFieldInMailingTab" customTip="MatchFields" spaceHint="suitable" text="@Match Fields" qtspyName="MatchFields" rbHotKey="T"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="ViewMergedData" icon="ViewMergedData" id="ViewMergedData" customTip="ViewMergedData" text="@View Merged Data" rbHotKey="P"/>
+		<KxLegacyTriggerCommand ksoCmd="FirstRecord" icon="FirstRecord" id="FirstRecord" customTip="FirstRecord" text="@First Record" rbHotKey="Q"/>
+		<KxLegacyTriggerCommand ksoCmd="PreviousRecord" idMso="MessagePrevious" icon="PreviousRecord" controlType="0" id="RbPreviousRecord" customTip="PreviousRecord" text="@Previous Record" rbHotKey="M"/>
+		<KxLineEditCommand fixedHeight="20" ksoCmd="GotoRecord" fixedWidth="70" idMso="MailMergeGoToRecord" controlType="7" id="GotoRecord" customTip="GotoRecord" spaceHint="suitable" text="@Go to Record" rbHotKey="W"/>
+		<KxLegacyTriggerCommand ksoCmd="NextRecord" idMso="MessageNext" icon="NextRecord" controlType="0" id="RbNextRecord" customTip="NextRecord" text="@Next Record" rbHotKey="X"/>
+		<KxLegacyTriggerCommand ksoCmd="LastRecord" icon="LastRecord" id="LastRecord" customTip="LastRecord" text="@Last Record" rbHotKey="V"/>
+		<KListCommand id="RB_Preview_Result" text="@Preview Results" rbFileMenuEmbed="1">
+			<command idQ="ViewMergedData"/>
+			<command idQ="FirstRecord"/>
+			<command idQ="RbPreviousRecord"/>
+			<command idQ="GotoRecord"/>
+			<KLayoutWidgetCommand spaceHint="suitable"/>
+			<command idQ="RbNextRecord"/>
+			<command idQ="LastRecord"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="MergeToNewDoc" icon="MergeToNewDoc" id="MergeToNewDoc" customTip="MergeToNewDoc" spaceHint="suitable" text="@Merge to New Document" rbHotKey="FE"/>
+		<KxLegacyTriggerCommand text2="@Merge to Different New Document" ksoCmd="MergeToDiffNewDoc" icon="MergeToDiffNewDoc" id="MergeToDiffNewDoc" customTip="MergeToDiffNewDoc" spaceHint="suitable" text="@Merge to Different New Document" rbHotKey="FD"/>
+		<KxLegacyTriggerCommand ksoCmd="MergeToPrinter" idMso="MailMergeMergeToPrinter" icon="MergeToPrinter" controlType="0" id="MergeToPrinter" customTip="MergeToPrinter" spaceHint="suitable" text="@Merge to Printer" rbHotKey="FP"/>
+		<KxLegacyTriggerCommand text2="@Merge to Email" ksoCmd="MergeToEmail" icon="MergeToEmail" id="MergeToEmail" customTip="MergeToEmail" spaceHint="suitable" text="@Merge to Email" rbHotKey="FS"/>
+		<KListCommand id="RB_Finish" text="@Finish" rbFileMenuEmbed="1">
+			<command idQ="MergeToNewDoc"/>
+			<command idQ="MergeToDiffNewDoc"/>
+			<command idQ="MergeToPrinter"/>
+			<command idQ="MergeToEmail"/>
+		</KListCommand>
+		<KListCommand id="RB_CloseMailingsContext" text="@Close">
+			<KxWpsCloseMailingsContextCommand hotKey="C" icon="CloseWindow" id="CloseMailingTab" customTip="CloseMail" text="@Close" qtspyName="CloseWindow" rbHotKey="C"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Mailings">
+			<command idQ="RB_Start_Mail_Margin"/>
+			<separator/>
+			<command idQ="RB_Write_Insert_Fields"/>
+			<separator/>
+			<command idQ="RB_Preview_Result"/>
+			<separator/>
+			<command idQ="RB_Finish"/>
+			<separator/>
+			<command idQ="RB_CloseMailingsContext"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

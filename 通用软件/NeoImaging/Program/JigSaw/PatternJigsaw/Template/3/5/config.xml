@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<Background>
+		<Width>790</Width>
+		<Height>600</Height>
+	</Background>
+	<LayerList>
+		<LayerItem>
+			<Left>10</Left>
+			<Top>10</Top>
+			<Width>250</Width>
+			<Height>580</Height>
+			<Color>
+				<A>255</A>
+				<R>178</R>
+				<G>227</G>
+				<B>255</B>
+			</Color>
+		</LayerItem>
+		<LayerItem>
+			<Left>270</Left>
+			<Top>10</Top>
+			<Width>250</Width>
+			<Height>580</Height>
+			<Color>
+				<A>255</A>
+				<R>217</R>
+				<G>237</G>
+				<B>147</B>
+			</Color>
+		</LayerItem>
+		<LayerItem>
+			<Left>530</Left>
+			<Top>10</Top>
+			<Width>250</Width>
+			<Height>580</Height>
+			<Color>
+				<A>255</A>
+				<R>218</R>
+				<G>207</G>
+				<B>250</B>
+			</Color>
+		</LayerItem>
+	</LayerList>
+</Config>

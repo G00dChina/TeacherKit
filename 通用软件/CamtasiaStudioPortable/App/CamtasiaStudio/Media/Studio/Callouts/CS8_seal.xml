@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>CS8_seal.png</Overlay_Filename>
+<Overlay_Name>密封</Overlay_Name>
+<Text_Top>75</Text_Top>
+<Text_Left>70</Text_Left>
+<Text_Bottom>75</Text_Bottom>
+<Text_Right>75</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+  <figure>
+    <svg>
+      M 154,308
+      l -19.035 -33.814
+      l -28.553, 26.277
+      l -7.655 -38.042
+      l -35.276, 16.168
+      l 4.476   -38.546
+      l -38.545,4.476l16.168-35.275
+	l-38.042-7.654l26.278-28.554L0,154l33.815-19.035L7.537,106.412l38.042-7.655L29.412,63.481l38.545,4.476l-4.476-38.545
+	L98.757,45.58l7.655-38.042l28.553,26.278L154,0l19.035,33.815l28.554-26.278l7.654,38.042l35.275-16.168l-4.476,38.545
+	l38.546-4.476l-16.168,35.276l38.042,7.655l-26.277,28.553L308,154l-33.814,19.035l26.277,28.554l-38.042,7.654l16.168,35.275
+	l-38.546-4.476l4.476,38.546l-35.275-16.168l-7.654,38.042l-28.554-26.277L154,308z
+    </svg>
+  </figure>
+  <borderWidth>5.00</borderWidth>
+  <seamY>118</seamY>
+  <shapeWidth>308</shapeWidth>
+  <shapeHeight>308</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_animation" component="wpp">
+	<commands>
+		<KxSlidePreviewCommand ksoCmd="SlidePreview" icon="SlidePreview" id="SlidePreview" customTip="SlidePreview" text="@Preview" rbHotKey="P"/>
+		<KListCommand id="RB_Preview" text="@Preview" rbFileMenuEmbed="1">
+			<command idQ="SlidePreview"/>
+		</KListCommand>
+		<KListCommand id="RB_Animation" text="@Animation" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="CustomAnimation" icon="CustomAnimation" id="CustomAnimationInAnimationTab" customTip="CustomAnimation" text="@Custom
+Animation" qtspyName="CustomAnimation" rbHotKey="C"/>
+		</KListCommand>
+		<KListCommand id="RB_Transform" text="@Transition" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand ksoCmd="SlideTransition" icon="TransitionEffect" id="TransitionEffects" customTip="TransitionEffect" text="@Transition
+Effects" qtspyName="SlideTransition" rbHotKey="O"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxWppTransCommand embedHint="1" geometryWidth="700" id="TransformGallery" galleryHeight="100" qtspyName="WppTrans" rbHotKey="S"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Animation">
+			<command idQ="RB_Preview"/>
+			<separator/>
+			<command idQ="RB_Animation"/>
+			<separator/>
+			<command idQ="RB_Transform"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

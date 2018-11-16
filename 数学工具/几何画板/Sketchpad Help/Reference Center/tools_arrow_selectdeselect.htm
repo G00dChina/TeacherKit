@@ -1,0 +1,297 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Tools &gt; Arrow Tools &gt; Select and Deselect Objects</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Arrow Tools,Arrow Tools selecting and deselecting,Arrow Tools selecting overlapping objects,Arrow Tools selecting parents and children,Keyboard,Keyboard the Tab key,Magnetism, selection,Selection Magnetism,Selection Rectangle">
+   <meta name="description" content="Select and Deselect Objects">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tools_arrow_selectdeselect.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Select and Deselect Objects</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="tools.htm">Tools</a> &gt; <a href="tools_arrow.htm">Arrow Tools</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Select and Deselect Objects</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="drag_objects.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="tools_arrow.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="tools_arrow_otheractions.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Click the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool in your sketch to select and deselect objects. You can drag selected objects, apply menu commands to them, or manipulate or modify them with the <a href="windows_motctrl.htm" class="topiclink">Motion Controller</a> or the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a>.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">All three </span><span class="f_MarginNote" style="font-weight: bold;">Arrow</span><span class="f_MarginNote"> tools behave identically when you use them to select and deselect objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you drag an object and other objects move unexpectedly, or an expected menu command is not available, check to make sure you have selected the correct objects for the operation you want to perform. If a menu command appears gray and cannot be chosen, it may mean that your current selection is not appropriate for that command. (Check the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> to see the number and kind of objects that are selected.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Selected objects appear outlined, or with special marks, as in the following illustrations.</span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:106px;padding:0px 0px 0px 0px"><img src="objects_deselected_zoom60.png" width="106" height="82" style="border:none" alt="Unselected Objects" /><p style="text-align:center"><span class="f_Image_Centered_Large">Unselected Objects</span></p></div></div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<div class="p_Image_Centered_Large"><div style="margin:0px auto 0px auto;width:106px;padding:0px 0px 0px 0px"><img src="objects_selected_zoom60.png" width="106" height="82" style="border:none" alt="Selected Objects" /><p style="text-align:center"><span class="f_ImageCaption">Selected Objects</span></p></div></div>
+<p class="p_BodyText"><span class="f_BodyText">You can also select objects using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectall.htm" class="topiclink">Edit | Select All</a>, <a href="menus_edit_selectparents.htm" class="topiclink">Edit | Select Parents</a>,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectchildren.htm" class="topiclink">Edit | Select Children</a>. </span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Click with the Selection Arrow tool" title="Click with the Selection Arrow tool" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Click with the Selection Arrow tool" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Select or Deselect a Single Object</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText_Indented">Select an unselected object by positioning the tip of the </span><span class="f_BodyText_Indented" style="font-weight: bold;">Arrow</span><span class="f_BodyText_Indented"> tool over the object and clicking it. (</span><span class="f_BodyText">The pointer flips horizontal when it’s pointing at an object, and the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> describes the object that will be selected by clicking.)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Deselect a single selected object by positioning the tip of the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool over the object and clicking it. </span><span class="f_BodyText_Indented">(</span><span class="f_BodyText">The pointer flips horizontal and the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> describes the object that will be deselected.)</span></p><p class="p_BodyText"><span class="f_BodyText">You can make objects easier to select </span><span class="f_BodyText">by using</span><span class="f_BodyText"> </span><span class="f_BodyText_Indented" style="font-weight: bold;"><a href="windows_prefs_tools.htm" class="topiclink">Edit | Preferences | Tools</a></span><span class="f_BodyText"> to increase </span><span class="f_BodyText" style="font-weight: bold;">Selection magnetism</span><span class="f_BodyText"> </span><span class="f_BodyText_Indented" style="font-weight: bold;">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Click in empty space or press ESC" title="Click in empty space or press ESC" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Click in empty space or press ESC" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Deselect All Objects</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Deselect all objects by clicking in empty space in the sketch. (If you’ve turned on </span><span class="f_BodyText" style="font-weight: bold;">Double-click deselection</span><span class="f_BodyText"> in </span><span class="f_BodyText" style="font-weight: bold;"><a href="windows_prefs_tools.htm" class="topiclink">Edit | Preferences | Tools</a></span><span class="f_BodyText"> you must double-click to deselect all objects.)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Deselect all objects by pressing <a href="shortcuts.htm" class="topiclink">Esc</a> repeatedly.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Click in empty space or press ESC" title="Click in empty space or press ESC" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Click in empty space or press ESC" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Prevent Accidental Deselection</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">On occasion you may try to select an object by clicking it, but accidentally deselect all objects instead. This is particularly frustrating if you are in the middle of selecting a number of objects. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">There are several steps you can take to prevent accidental deselection:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Make sure the pointer has turned horizontal before you click. (The horizontal pointer indicates that you’re pointing at an object.)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Check the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> before you click. (The status line identifies the object you will select or deselect by clicking.)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Increase </span><span class="f_BodyText" style="font-weight: bold;">Selection magnetism</span><span class="f_BodyText"> by choosing</span><span class="f_BodyText"> </span><span class="f_BodyText_Indented" style="font-weight: bold;"><a href="windows_prefs_tools.htm" class="topiclink">Edit | Preferences | Tools</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText_Indented">Increase the thickness of points and path objects (segments, rays, lines, circles, and other paths) by using the  </span><span class="f_BodyText_Indented" style="font-weight: bold;"><a href="menus_display_pointstyle.htm" class="topiclink">Display | Point Style</a></span><span class="f_BodyText_Indented"> and </span><span class="f_BodyText_Indented" style="font-weight: bold;"><a href="menus_display_linestyle.htm" class="topiclink">Display | Line Style</a> </span><span class="f_BodyText_Indented">commands.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText_Indented">Turn on </span><span class="f_BodyText_Indented" style="font-weight: bold;">Double-click deselection</span><span class="f_BodyText_Indented"> by choosing </span><span class="f_BodyText_Indented" style="font-weight: bold;"><a href="windows_prefs_tools.htm" class="topiclink">Edit | Preferences | Tools</a>. </span><span class="f_BodyText">With this setting turned on, you must double-click in empty space to deselect all objects.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Click each object in turn" title="Click each object in turn" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Click each object in turn" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Select Multiple Objects by Clicking</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Select multiple objects by clicking each object in turn.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Surround the objects you want to select" title="Surround the objects you want to select" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Surround the objects you want to select" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Select Multiple Objects with a Selection Rectangle</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Use a selection rectangle to select multiple objects located near each other in a sketch.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Imagine a rectangle that touches or encloses every object you want to select.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Position the tip of the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> in empty space at one corner of this rectangle.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Press and drag diagonally toward the opposite corner. A shaded rectangle appears, and every object that the rectangle touches or encloses is selected. If you want previously selected objects to remain selected, hold down the Shift key while starting to drag the rectangle.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">When all desired objects are selected, release the button. If you started your rectangle in the wrong place to select the desired objects, begin again from step 2.</span></p><p class="p_BodyText"><span class="f_BodyText">A properly positioned selection rectangle is useful for selecting multiple objects for certain commands. For instance, select all three sides of a triangle to construct the three midpoints, or select a straight object and a point to construct a perpendicular.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the Shift key with a selection rectangle to preserve current selections while selecting additional objects.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="hmfile_hash_a2c3ecba.png" width="73" height="69" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">&nbsp;</span></p>
+<p class="p_Image_Centered_Large"><img src="segment_selected.png" width="61" height="47" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Use Edit | Select All" title="Use Edit | Select All" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Use Edit | Select All" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Select Objects Using the Tab Key</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Press Tab with no object selected in a sketch to select a visible object.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Press Tab with one or more selected objects to selects a visible object similar to the most recently selected object.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Press Shift+Tab to add a similar object to the already-selected objects. </span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Use Edit | Select All" title="Use Edit | Select All" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Use Edit | Select All" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Select All Objects, or All Objects of a Specific Type</a></span></td></tr></table></div><div id="TOGGLE0186A7" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Select all objects by using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | <a href="menus_edit_selectall.htm" class="topiclink">Select All</a></span><span class="f_BodyText"> when the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool is active</span><span class="f_BodyText" style="font-weight: bold;">.</span><span class="f_BodyText"> </span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Select all points, segments, rays, lines, circles, polygons, text objects, or angle markers and tick marks by choosing the corresponding tool and then using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectall.htm" class="topiclink">Edit | Select All</a>. </span><span class="f_BodyText">The command changes according to the active tool.</span><span class="f_BodyText"> </span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Click repeatedly until you select the one you want" title="Click repeatedly until you select the one you want" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Click repeatedly until you select the one you want" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Select One of Several Overlapping Objects</a></span></td></tr></table></div><div id="TOGGLE0186A8" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Select one of several overlapping or coincident objects by clicking repeatedly until the desired object is selected.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Here are some helpful tips:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">When you point at overlapping objects, the <a href="windows_docs_docwindows.htm" class="topiclink">status line</a> at the bottom of the Sketchpad window tells you which object you are about to select. If the object described isn’t the one you want to select, try moving the </span><span class="f_BodyText" style="font-weight: bold;">Selection Arrow</span><span class="f_BodyText"> around until the status line describes the desired object.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">If possible, point at a portion of your object that doesn’t overlap other objects. In the following figure, for example, segment </span><span class="f_BodyText" style="font-style: italic;">CD</span><span class="f_BodyText"> has been constructed collinear to line </span><span class="f_BodyText" style="font-style: italic;">AB</span><span class="f_BodyText">. You can select segment </span><span class="f_BodyText" style="font-style: italic;">CD</span><span class="f_BodyText"> by clicking on the segment itself between points </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">D;</span><span class="f_BodyText"> but to select line </span><span class="f_BodyText" style="font-style: italic;">AB,</span><span class="f_BodyText"> it’s easiest to click on the portion of the line outside </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">D.</span></p><p class="p_Image_Centered_Large"><img src="overlapping_straights.png" width="186" height="27" alt="" style="border:none" /></p>
+<p class="p_MarginNote"><span class="f_MarginNote">When you click overlapping objects, Sketchpad always selects points in preference to any other objects and always selects path objects in preference to interiors.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">If clicking selects the wrong object, click again in the same spot. A second click on similar overlapping objects will deselect the first object and select the next one. Keep clicking until you get the object you want.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">If clicking selects an object which isn’t of interest to you and isn’t important to the appearance of the sketch, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_hideobjects.htm" class="topiclink">Display | Hide</a>,</span><span class="f_BodyText"> and then click again in the same spot.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">If all else fails, select a related object, use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a></span><span class="f_BodyText"> command to view <a href="objects_attrib_props.htm" class="topiclink">Object Properties</a>, and select the desired object using the </span><span class="f_BodyText">Parents</span><span class="f_BodyText"> or </span><span class="f_BodyText">Children</span><span class="f_BodyText"> pop-up menu.</span></p><p class="p_BodyText"><span class="f_BodyText">To select more than one object of several located near each other on the screen:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Use a selection rectangle to select all the overlapping objects.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Select the first object, and then hold the Shift key while clicking additional objects.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A9_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Use the Edit menu or Object Properties" title="Use the Edit menu or Object Properties" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Use the Edit menu or Object Properties" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Select the Parents or Children of an Object</a></span></td></tr></table></div><div id="TOGGLE0186A9" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Select <a href="objects_attrib_relations.htm" class="topiclink">related objects</a> by using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectparents.htm" class="topiclink">Edit | Select Parents</a></span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectchildren.htm" class="topiclink">Edit | Select Children</a></span><span class="f_BodyText"> or by navigating to them using the <a href="objects_attrib_props.htm" class="topiclink">Object Properties</a> dialog box. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">The </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectparents.htm" class="topiclink">Select Parents</a></span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectchildren.htm" class="topiclink">Select Children</a></span><span class="f_BodyText"> keyboard shortcuts can be very useful when used together. For instance, if you have one side of a triangle selected, you can quickly select all three sides as follows:</span></p>
+<p class="p_BodyText"><span class="f_BodyText">1. &nbsp;Select the two adjacent vertices using the keyboard shortcut for </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectparents.htm" class="topiclink">Select Parents</a>:</span><span class="f_BodyText"> Alt+Up (Windows) or </span><img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" /><img src="up_arrow.png" width="9" height="12" alt="" style="border:none" /><span class="f_BodyText"> (Mac).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">2. &nbsp;Select all three sides using the keyboard shortcut for </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_selectchildren.htm" class="topiclink">Select Children</a>:</span><span class="f_BodyText"> Alt+Down (Windows) or </span><img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" /><img src="down_arrow.png" width="9" height="12" alt="" style="border:none" /><span class="f_BodyText"> (Mac).</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Thus with one side selected you can quickly select all three sides by holding down the Alt or </span><img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" /><span class="f_BodyText"> key and pressing the up and then down arrow keys. Similarly, with one side selected you can quickly select all three vertices by holding down the Alt or </span><img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" /><span class="f_BodyText"> key and pressing <img src="up_arrow.png" width="9" height="12" alt="" style="border:none" />, <img src="down_arrow.png" width="9" height="12" alt="" style="border:none" />, and <img src="up_arrow.png" width="9" height="12" alt="" style="border:none" />.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AA_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Click the handle, not the body" title="Click the handle, not the body" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Click the handle, not the body" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Select an Action Button</a></span></td></tr></table></div><div id="TOGGLE0186AA" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p><span class="f_BodyText_Indented">Select or deselect an <a href="objects_btns.htm" class="topiclink">action button</a> by clicking its handle, not its </span><span class="f_BodyText">body. (Clicking the body of an action button doesn’t select it, but instead performs the action associated with the button.)</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="handle-body.png" width="97" height="64" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186AB_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="Use the Motion Controller's Target menu" title="Use the Motion Controller's Target menu" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" title="Use the Motion Controller's Target menu" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Select a Moving Point</a></span></td></tr></table></div><div id="TOGGLE0186AB" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Select a moving point by choosing it from the <a href="windows_motctrl.htm" class="topiclink">Motion Controller’s</a> <a href="windows_motctrl_parts.htm" class="topiclink">Target</a> menu.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Alternatively, click the Motion Controller’s <a href="windows_motctrl_parts.htm" class="topiclink">Pause</a> button, select the object, and then click the Pause button again to restart the motion.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

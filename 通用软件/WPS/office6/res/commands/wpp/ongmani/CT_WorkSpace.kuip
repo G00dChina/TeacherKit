@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_workspace" component="wpp">
+	<libraries>
+		<library path="." filter="support:WeiboPlugin=true" name="kweibo"/>
+	</libraries>
+	<commands>
+		<KxAutoVersionCommand text2="@Enable AutoBackup" hotKey="A" ksoCmd="AutoVersionCmd" icon="WS_AutoVersiong" id="AutoVersionCmd" dialogHint="1" customTip="AutoVersion" text="@Enable AutoBackup" rbHotKey="A"/>
+		<KxStopAutoVersionCommand text2="@Disable AutoBackup" hotKey="S" ksoCmd="StopAutoVersionCmd" icon="WS_AutoVersiong" id="StopAutoVersionCmd" dialogHint="1" customTip="StopAutoVersion" text="@Disable AutoBackup" rbHotKey="S"/>
+		<KxMarkVersionCommand text2="@Manual Backup" hotKey="M" ksoCmd="MarkVersionCmd" icon="WS_MarkVersiong" id="MarkVersionCmd" dialogHint="1" customTip="MarkVersion" text="@Manual Backup" rbHotKey="M"/>
+		<KxExplorVersionCommand text2="@View Historical Backup" hotKey="E" ksoCmd="ExplorVersionCmd" icon="WS_ExplorVersiong" id="ExplorVersionCmd" dialogHint="1" customTip="ExplorVersion" text="@View Historical Backup" rbHotKey="E"/>
+		<KxExplorBackupDirCommand text2="@View File Safe" hotKey="S" ksoCmd="ExplorBackupDirCmd" icon="WS_ExplorBackupdir" id="ExplorBackupDirCmd" dialogHint="1" customTip="ExplorBackupDir" text="@View File Safe" rbHotKey="S"/>
+		<kxAutobackupList id="RB_Autobackup" customTip="Autobackup" text="@View File Safe">
+			<KListCommand hotKey="B" icon="WS_AutoVersiong" id="BackupMenuInWorkSpaceTab" customTip="WorkSpace_Backup" text="@File Backup" qtspyName="BackupMenuInWorkSpaceTab" rbHotKey="B">
+				<command idQ="AutoVersionCmd"/>
+				<command idQ="StopAutoVersionCmd"/>
+				<command idQ="MarkVersionCmd"/>
+				<command idQ="ExplorVersionCmd"/>
+			</KListCommand>
+			<command idQ="ExplorBackupDirCmd"/>
+		</kxAutobackupList>
+		<kxKOSCloudInfoCommand hotKey="I" ksoCmd="KOSCloudInfoCmd" icon="OS_CloudInfo" id="KOSCloudInfoCmd" customTip="KOSCloudInformationTip" text="@Guide" rbHotKey="I"/>
+		<kxKOSCloudFeedbackCommand hotKey="F" ksoCmd="KOSCloudFeedbackCmd" icon="OS_CloudFeedback" id="KOSCloudFeedbackCmd" customTip="KOSCloudFeedbackTip" text="@User Feedback" rbHotKey="F"/>
+		<KListCommand id="RB_CloudGuid" customTip="@Help us to improve WPS Office" text="@Help">
+			<KxOpenUrlCommand hotKey="d" referenceDisable="1" filter="support:DocerEntrance=true;lang!=zh_TW" url="http://www.docer.com/?from=wps_func_wppsp" icon="DocerURLEntrance" customTip="DocerURLEntranceTip" text="@Docer Entrance" qtspyName="DocerURLEntrance"/>
+		</KListCommand>
+		<KxWppFormatRangeSaveAsCommand formatRangeType="2" hotKey="OV" icon="exporttovideo32" needSlides="true" id="ExportToVideo" dialogHint="1" customTip="ExportToVideo" text="@Video Exporting" rbHotKey="OV" fileFormat="24"/>
+		<KxWppFormatRangeSaveAsCommand formatRangeType="1" hotKey="OP" icon="exporttopicture32" needSlides="true" id="ExportToImage" dialogHint="1" customTip="ExportToImage" text="@Image Exporting" rbHotKey="OP" fileFormat="13"/>
+		<KxExportWeiboImageCommand text2="@Export as Image" hotKey="X" ksoCmd="ExportWeiboImageCmd" icon="exporttopicture32" id="ExportWeiboImageCmd" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="X"/>
+		<KxLegacyTriggerCommand hotKey="OF" ksoCmd="PrintToPDF" aid="92106" filter="support:ExportToPDF=true" icon="ExportToPDF" id="ExportPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF" rbHotKey="OF"/>
+		<KWPP2WPSCommandRightClick hotKey="OW" aid="92178" filter="platform=win32;category=personal;lang=zh_CN;support:WPP2WPS=true" visible="@true" icon="wpp2doc" id="wpp2doc_tool" dialogHint="1" customTip="wpp2doc" text="@Translate to Document" rbHotKey="OW"/>
+		<KxWeiboCommand text2="@Share to Microblog" hotKey="W" ksoCmd="WeiboCmd" icon="cweibo32" id="WeiboCmd" text="@Share to Microblog" rbHotKey="W"/>
+		<KxOpenWebWeiboCommand text2="@Share to Microblog Webpage" hotKey="O" ksoCmd="OpenWebWeiboCmd" icon="weibowebshare" id="OpenWebWeiboCmd" text="@Share to Microblog Webpage" rbHotKey="O"/>
+		<KxWppWebPreviewListCommand hotKey="L" filter="lang=zh_CN;category=personal" customTip2="H5LinkManager" icon="H5Share" id="WebPreviewList" customTip="WebPreview" text="@Web Preview" rbHotKey="L">
+			<KH5LinkMgrCommand hotKey="m" icon="H5LinkManager" text="@H5 link Manager" qtspyName="H5LinkManager"/>
+		</KxWppWebPreviewListCommand>
+		<KxWeiboListCommand id="RB_WpsWeibo" text="@Laboratory">
+			<command idQ="ExportPDF"/>
+			<command idQ="WebPreviewList"/>
+			<command idQ="ExportToVideo"/>
+			<command idQ="ExportToImage"/>
+			<command idQ="wpp2doc_tool"/>
+			<command idQ="KOSCreateCloudLinkCmd" filter="support:CloudStorage=true"/>
+			<command idQ="OCRToolCmd" proxyCmdId="ProxyOCRToolCmd"/>
+		</KxWeiboListCommand>
+		<KListCommand id="RB_WpsLaboratory" text="@Laboratory">
+			<command idQ="ExportPDF"/>
+			<command idQ="wpp2doc_tool"/>
+		</KListCommand>
+		<KListCommand id="RB_SpecialTool" text="@Special tool">
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KModelEssayCommand hotKey="E" filter="support:ModelEssay=true;support:IntranetVersion=false" icon="ModelEssay" id="ModelEssay" customTip="modelessay" text="@Model Essay" rbHotKey="E"/>
+			<KLayoutWidgetCommand fixedWidth="5"/>
+			<command idQ="TextToSpeechOption" proxyCmdId="ProxyTextToSpeechOption"/>
+			<command idQ="DocumentFix" proxyCmdId="ProxyDocumentFix"/>
+			<command idQ="cellphoneControlAmi" filter="support:CellphoneControl=true;category!=professional" proxyCmdId="ProxycellphoneControlAmi"/>
+			<KxCellPhoneControlExCommand hotKey="e" filter="category=professional" icon="Remote" id="cellphoneControlAmi" customTip="cellphoneControl" text="@Cellphone Control"/>
+			<KxPresentationToolCommand hotKey="T" icon="PresentationTool" id="PresentationTool" customTip="presentationTool" text="@Presentation Tool" rbHotKey="T">
+				<command idQ="ReplaceFont RainBow"/>
+				<KxBatchSetFontCommand hotKey="S" icon="BatchSetFont" dialogHint="1" text="@Bulk Font Setting" qtspyName="BatchSetFont"/>
+				<KxCustomTextFormatCommand hotKey="C" icon="CustomTextFormat" dialogHint="1" text="@Custom Text Format" qtspyName="CustomTextFormat"/>
+				<KxInsertPicturesToMultiSlide hotKey="P" filter="support:InsertPicturesIntoMultiSlides=true" icon="InsertPicturesToMultiSlide" dialogHint="1" text="@Insert Picture To Multiple Slides" qtspyName="InsertPicturesToMultiSlide"/>
+			</KxPresentationToolCommand>
+		</KListCommand>
+		<KListCommand id="RB_Donate" text="@Feedback and Support">
+			<KLayoutWidgetCommand filter="support:DonateMoney=true" fixedWidth="3"/>
+			<KxTpDonateMoneyCommand hotKey="M" screenGrabCmd="screenGrabEx" filter="support:DonateMoney=true" alias="TpDonateMoney" icon="DonateMoney" shortHint="@Donate" id="TpDonate" customTip="DonateMoney" text="@Donate" rbHotKey="M"/>
+			<KLayoutWidgetCommand filter="support:DocerEntrance/WorkSpace=true" fixedWidth="5"/>
+			<KxKsoHomepageTriggerCommand hotKey="D" ksoCmd="HomepagePlugin" filter="support:DocerEntrance/WorkSpace=true;support:IntranetVersion=false" icon="wpshome" id="WSKxKsoHomepageTriggerCommand" customTip="DocerHomeEntranceTip" text="@Docer Entrance" qtspyName="HomepagePlugin" rbHotKey="D"/>
+			<KxKsoHomepageTriggerCommand hotKey="D" ksoCmd="HomepagePlugin" filter="support:DocerEntrance/WorkSpace=true;support:IntranetVersion=true" icon="wpshome" id="WSKxKsoHomepageTriggerCommand" customTip="IntranetVersion DocerURLEntranceTip" text="@IntranetVersion Docer Entrance" qtspyName="HomepagePlugin" rbHotKey="D"/>
+		</KListCommand>
+		<KListCommand id="RB_XiuTang" text="@XiuTang">
+			<KxOpenUrlWidthSidCommand hotKey="H" filter="support:XiuTang=true" url="http://s.wps.cn/?from=tese-wpp" icon="XiuTangH5" id="XiuTang" customTip="XiuTangH5Tip" text="@XiuTang H5" rbHotKey="H"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_WorkSpace">
+			<command idQ="RB_UserCloud"/>
+			<separator/>
+			<command idQ="RB_Autobackup" filter="support:CloudAutoBackup=true"/>
+			<separator filter="support:CloudAutoBackup=true"/>
+			<command idQ="RB_WpsWeibo" filter="support:WeiboPlugin=true"/>
+			<command idQ="RB_WpsLaboratory" filter="support:WeiboPlugin=false"/>
+			<separator/>
+			<command idQ="RB_SpecialTool"/>
+		</subcommand>
+	</subcommands>
+</shell>

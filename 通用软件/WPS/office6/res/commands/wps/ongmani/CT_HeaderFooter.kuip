@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_headerfooter" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="InsertPTab" icon="InsertPTab" id="InsertPTab" customTip="InsertPTab" spaceHint="suitable" text="@Insert Alignment Tab" rbHotKey="T"/>
+		<KxWpsHeaderFooterPageNumCommand icon="PageNumber" id="m_InsertPageNumbers" customTip="PageNumber" text="@Page
+Number" rbHotKey="NU" isIncludeInsideOutside="true"/>
+		<KxPropComposeListCommand tabIndex="2" ksoCmd="PageSetup" id="RB_HeaderFooterTool" customTip="PageSetup" text="@Header and Footer" rbFileMenuEmbed="1">
+			<command idQ="m_InsertPageNumbers"/>
+			<KxWpsShowHeaderLineCommand bLikePopuMenu="1" hotKey="W" icon="HeaderLine" id="HeaderLine" customTip="HeaderLine" text="@Show Header Line" rbHotKey="I">
+				<KxWpsHeaderLineColorCommand hotKey="C" id="HeaderLineColorInHeaderFooterTab" text="@Header Line Color" qtspyName="HeaderLineColor" rbHotKey="C">
+					<KxWpsHeaderLineMoreColorCommand hotKey="M" id="MoreHeaderLineColor" text="@More Colors" qtspyName="MoreColors" rbHotKey="M"/>
+				</KxWpsHeaderLineColorCommand>
+			</KxWpsShowHeaderLineCommand>
+			<KxWpsBookFormatDlgTriggerCommand text2="@Header and Footer
+Options" icon="HeaderFooterOptions" id="HeaderFooterOptions" customTip="HeaderAndFooterSetting" spaceHint="suitable" text="@Header and Footer Options" rbHotKey="H"/>
+			<command idQ="InsertPTab"/>
+		</KxPropComposeListCommand>
+		<KxLegacyTriggerCommand ksoCmd="PageNumberOnHeaderAndFooter" id="PageNumberOnHeaderAndFooter" text="@- Page -"/>
+		<KxLegacyTriggerCommand ksoCmd="PageNumerOfOnHeaderAndFooter" id="PageNumerOfOnHeaderAndFooter" text="@Page X"/>
+		<KxLegacyTriggerCommand ksoCmd="PageCountOnHeaderAndFooter" id="PageCountOnHeaderAndFooter" text="@Total of Y Page"/>
+		<KxLegacyTriggerCommand ksoCmd="PageOfCountOnHeaderAndFooter" id="PageOfCountOnHeaderAndFooter" text="@Page X of Y"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="InsertDateTime" aid="768" idMso="DateAndTimeInsert" icon="InsertDateTime" controlType="0" id="InsertDateTime" dialogHint="1" customTip="InsertDateTime" text="@Date and
+Time" rbHotKey="D"/>
+		<KxListCommand detail="@Insert Picture" ksoCmd="InsertPictureFromFile" icon="InsertPictureFromFile" customTip2="InsertPictureFromFile2" id="m_rInsertPicture" customTip="InsertPictureFromFile" text="@Picture" rbHotKey="P">
+			<KxLegacyTriggerCommand detail="@Insert Picture" hotKey="p" ksoCmd="InsertPictureFromFile" idMso="PictureInsertFromFile" icon="InsertPictureFromFile" controlType="0" dialogHint="1" text="@From File" qtspyName="InsertPictureFromFile" rbHotKey="P"/>
+			<KxLegacyTriggerCommand detail="@From Scanner" hotKey="s" ksoCmd="InsertPictureFromScan" filter="platform=win32" icon="InsertPictureFromScan" id="InsertPictureFromScanInHeaderFooterTab" dialogHint="1" text="@From Scanner" qtspyName="InsertPictureFromScan" rbHotKey="S"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand detail="@Insert Clip Art" ksoCmd="InsertClipArt" aid="100048" filter="lang=ja_JP" icon="InsertClipArt" id="m_rInsertClipArt" customTip="InsertClipArt" text="@Clip Art" rbHotKey="F"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="InsertField" aid="772" idMso="FieldInsert" icon="Field" controlType="0" id="HeaderFooterInsertField" dialogHint="1" customTip="InsertField" text="@Fields" rbHotKey="QF"/>
+		<KListCommand idMso="HeaderFooterInsert" controlType="0" id="RB_InsertHeaderFooter" text="@Insert">
+			<KListCommand icon="InsertAutoText" id="AutoTextMenu" customTip="InsertAutoText" text="@AutoText" qtspyName="InsertAutoText" rbHotKey="A">
+				<command idQ="PageNumberOnHeaderAndFooter"/>
+				<command idQ="PageNumerOfOnHeaderAndFooter"/>
+				<command idQ="PageCountOnHeaderAndFooter"/>
+				<command idQ="PageOfCountOnHeaderAndFooter"/>
+			</KListCommand>
+			<command idQ="InsertDateTime"/>
+			<command idQ="m_rInsertPicture"/>
+			<command idQ="m_rInsertClipArt" filter="lang=ja_JP"/>
+			<command idQ="HeaderFooterInsertField"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PreviousHeader" icon="PreviousHeader" id="PreviousHeader" customTip="PreviousHeader" text="@Previous
+Header" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="NextHeader" icon="NextHeader" id="NextHeader" customTip="NextHeader" text="@Next
+Header" rbHotKey="X"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="LinktoPreviousHeader" icon="LinktoPreviousHeader" id="LinktoPreviousHeader" customTip="LinktoPreviousHeader" text="@Link to
+Previous" rbHotKey="K"/>
+		<KListCommand id="RB_Navigate" text="@Navigation">
+			<KxLegacyTriggerCommand ksoCmd="ShowHeaderOrFooter" icon="ShowHeaderOrFooter" id="SwitchBetweenHeaderAndFooter" customTip="ShowHeaderOrFooter" text="@Switch between
+Header and Footer" qtspyName="ShowHeaderOrFooter" rbHotKey="E"/>
+			<command idQ="PreviousHeader"/>
+			<command idQ="NextHeader"/>
+			<command idQ="LinktoPreviousHeader"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="CloseHeaderAndFooter" icon="CloseHeaderFooter" id="CloseHeaderAndFooter" customTip="CloseHeaderAndFooter" text="@Close" rbHotKey="C"/>
+		<KListCommand id="RB_CloseHeaderFooter" text="@Close" rbFileMenuEmbed="1">
+			<command idQ="CloseHeaderAndFooter"/>
+		</KListCommand>
+		<KListCommand id="DetailedSettings_HFTools">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_HFTools" text="@Settings" qtspyName="DetailedSettings">
+				<KxLegacyTriggerCommand tabIndex="2" hotKey="P" ksoCmd="PageSetup" dialogHint="1" customTip="PageSetup" text="@Page Setup" rbFileMenuEmbed="1" qtspyName="PageSetup"/>
+				<command idQ="FormatObject"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_HeaderFooter">
+			<command idQ="RB_HeaderFooterTool"/>
+			<separator/>
+			<command idQ="RB_InsertHeaderFooter"/>
+			<separator/>
+			<command idQ="RB_Navigate"/>
+			<separator/>
+			<command idQ="DetailedSettings_HFTools" filter="patent:LogicGroupShowExtensionButton=false"/>
+			<separator/>
+			<command idQ="RB_CloseHeaderFooter"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

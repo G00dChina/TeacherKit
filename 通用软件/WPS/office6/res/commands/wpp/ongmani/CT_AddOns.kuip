@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_addons" component="wpp">
+	<commands>
+		<KAddonsListCommand id="RB_AddonsCustomToolbar" text="@Custom Toolbar"/>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_AddOns">
+			<command idQ="RB_AddonsCustomToolbar"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

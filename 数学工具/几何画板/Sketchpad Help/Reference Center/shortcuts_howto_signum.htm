@@ -1,0 +1,195 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Calculator &gt; How to Use Signum to Construct a Piecewise Function</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Special Constructions,Special Constructions Use Signum to Construct a Piecewise Function">
+   <meta name="description" content="How to Use Signum to Construct a Piecewise Function">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "shortcuts_howto_signum.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to Use Signum to Construct a Piecewise Function</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_calculator.htm">Calculator</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">How to Use Signum to Construct a Piecewise Function</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_calculator_parts.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_calculator.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_motctrl.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Sometimes you may want to construct a <a href="objects_functions.htm" class="topiclink">function</a> that behaves one way in part of its domain and differently in another part of its domain. Such functions, called </span><span class="f_BodyText" style="font-style: italic;">piecewise</span><span class="f_BodyText"> functions, are very important in interpolation, in fitting curves to data, and in designing and producing shapes and surfaces in applications such as automobile design. The signum function makes it possible to do this in Sketchpad.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The signum function is useful any time you want a calculation which makes some sort of decision — which performs a different calculation when some value changes.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For instance, you could construct a function whose <a href="objects_functionplots.htm" class="topiclink">plot</a> is in the shape of a cosine wave when </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> &gt; 0, but is parabolic when </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> &lt; 0. Here’s how to do this with the signum function:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-weight:bold; font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_graph_plotfunction.htm" class="topiclink">Graph | Plot New Function</a>.</span></p></td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Enter the cosine-wave part of the function, as shown at right. When </span><span class="f_BodyText" style="font-style: italic;">x &gt; </span><span class="f_BodyText">0, the signum function returns +1, and the value of the multiplier is 1. But when </span><span class="f_BodyText" style="font-style: italic;">x &lt; </span><span class="f_BodyText">0, the signum function returns –1, and the value of the multiplier is 0. This first part of the function will be a cosine wave to the right of the origin, but will always be zero to the left of the origin.</span></p></td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_FlushRight_Narrative"><img src="hmfile_hash_a1806b7d.png" width="140" height="39" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:5px; border:solid 1px #808080;"><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Add the parabola part of the function as shown at right. When </span><span class="f_BodyText" style="font-style: italic;">x &gt; </span><span class="f_BodyText">0, the multiplier will be 0, and when </span><span class="f_BodyText" style="font-style: italic;">x &lt; </span><span class="f_BodyText">0, the multiplier will be 1.</span></p></td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_Image_FlushRight_Narrative"><img src="hmfile_hash_5dff51da.png" width="155" height="39" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">Here’s the result when you click </span><span class="f_BodyText" style="font-style: italic;">OK:</span></p>
+<p class="p_Image_Centered_Large"><img src="hmfile_hash_3d563198.png" width="452" height="159" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">The functions in this example were chosen in such a way that the two functions join continuously and smoothly. Can you construct a different piecewise function in which the join is not continuous, or in which it’s continuous but not smooth?</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Here’s how to use the signum function to solve the general problem of defining a function </span><span class="f_BodyText" style="font-style: italic;">h</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) whose value is </span><span class="f_BodyText" style="font-style: italic;">f</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) for all </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> &lt; </span><span class="f_BodyText" style="font-style: italic;">k</span><span class="f_BodyText"> and is </span><span class="f_BodyText" style="font-style: italic;">g</span><span class="f_BodyText">(</span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText">) for all </span><span class="f_BodyText" style="font-style: italic;">x</span><span class="f_BodyText"> &gt; </span><span class="f_BodyText" style="font-style: italic;">k</span><span class="f_BodyText">:</span></p>
+<p class="p_Image_Centered_Large"><img src="piecewise_fn_bottom_eqn.png" width="350" height="43" alt="" style="border:none" /></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

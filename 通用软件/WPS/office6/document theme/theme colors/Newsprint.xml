@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="NewsPrint" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="303030"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="DEDEE0"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="AD0101"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="726056"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="AC956E"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="808DA9"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="424E5B"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="730E00"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="D26900"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="D89243"/>
+   </a:folHlink>
+</a:clrScheme>
+

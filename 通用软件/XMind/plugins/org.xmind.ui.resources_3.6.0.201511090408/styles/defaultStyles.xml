@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xmap-styles xmlns:fo="http://www.w3.org/1999/XSL/Format"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="urn:xmind:xmap:xmlns:style:2.0">
+	<automatic-styles>
+		<style type="topic" id="centralTopic" name="Central Topic (Default)">
+			<topic-properties fo:font-weight="bold" fo:color="#4c4c4c"
+			fo:font-family="$system$" fo:font-style="normal"
+			fo:font-size="18pt" fo:text-decoration="none" 
+			shape-class="org.xmind.topicShape.roundedRect"
+			shape-corner="8pt" svg:fill="#97cbff" fo:margin-left="22pt" 
+			fo:margin-right="22pt" fo:margin-top="14pt" fo:margin-bottom="14pt"
+			line-class="org.xmind.branchConnection.straight" 
+			line-color="#808080" multi-line-colors="none" line-corner="8pt"
+			line-width="1pt" spacing-major="20pt" spacing-minor="10pt"
+			fo:text-align="center"/>
+		</style>
+		<style type="topic" id="mainTopic" name="Main Topic (Default)">
+			<topic-properties fo:font-weight="normal" fo:color="#303030"
+			fo:font-family="$system$" fo:font-style="normal"
+			fo:font-size="13pt" fo:text-decoration="none" 
+			shape-class="org.xmind.topicShape.roundedRect"
+			shape-corner="5pt" svg:fill="#ffffff" fo:margin-left="6pt"
+			fo:margin-right="6pt" fo:margin-top="6pt" fo:margin-bottom="6pt"
+			line-class="org.xmind.branchConnection.roundedElbow" 
+			line-color="#808080" multi-line-colors="none" line-corner="4pt"
+			line-width="1pt" spacing-major="8pt" spacing-minor="1pt"
+			fo:text-align="left"/>
+		</style>
+		<style type="topic" id="calloutTopic" name="Callout (Default)">
+			<topic-properties fo:font-weight="normal" fo:color="#000000"
+			fo:font-family="Verdana" fo:font-style="normal"
+			fo:font-size="13pt" fo:text-decoration="none"
+			callout-shape-class="org.xmind.calloutTopicShape.balloon.roundedRect"
+			border-line-color="b8860b"
+			shape-corner="5pt" svg:fill="#ffe866" fo:margin-left="6pt"
+			fo:margin-right="6pt" fo:margin-top="6pt" fo:margin-bottom="6pt"
+			line-class="org.xmind.branchConnection.roundedElbow" 
+			line-color="#808080" multi-line-colors="none" line-corner="4pt"
+			line-width="1pt" spacing-major="8pt" spacing-minor="1pt"
+			fo:text-align="left"/>
+		</style>
+		<style type="topic" id="subTopic" name="Subtopic (Default)">
+			<topic-properties fo:font-weight="normal" fo:color="#000000"
+			fo:font-family="$system$" fo:font-style="normal"
+			fo:font-size="10pt" fo:text-decoration="none" 
+			shape-class="org.xmind.topicShape.underline"
+			shape-corner="3pt" svg:fill="#f0f0f0" fo:margin-left="4pt"
+			fo:margin-right="4pt" fo:margin-top="1pt" fo:margin-bottom="1pt"
+			line-class="org.xmind.branchConnection.roundedElbow" 
+			line-color="#808080" multi-line-colors="none" line-corner="4pt"
+			line-width="1pt" spacing-major="8pt" spacing-minor="1pt"
+			fo:text-align="left"/>
+		</style>
+		<style type="topic" id="floatingTopic" name="Floating Topic (Default)">
+			<topic-properties fo:font-weight="normal" fo:color="#303030"
+			fo:font-family="$system$" fo:font-style="normal"
+			fo:font-size="13pt" fo:text-decoration="none" 
+			shape-class="org.xmind.topicShape.roundedRect"
+			shape-corner="8pt" svg:fill="#ffffff" fo:margin-left="6pt"
+			fo:margin-right="6pt" fo:margin-top="6pt" fo:margin-bottom="6pt"
+			line-class="org.xmind.branchConnection.roundedElbow" 
+			line-color="#808080" multi-line-colors="none" line-corner="4pt"
+			line-width="1pt" spacing-major="8pt" spacing-minor="1pt"
+			fo:text-align="left"/>
+		</style>
+		<style type="topic" id="summaryTopic" name="Summary Topic (Default)">
+			<topic-properties fo:font-weight="normal" fo:color="#404040"
+			fo:font-family="$system$" fo:font-style="normal"
+			fo:font-size="9pt" fo:text-decoration="none" 
+			shape-class="org.xmind.topicShape.rect"
+			shape-corner="5pt" svg:fill="#f0f0d0" fo:margin-left="4pt"
+			fo:margin-right="4pt" fo:margin-top="4pt" fo:margin-bottom="4pt"
+			line-class="org.xmind.branchConnection.roundedElbow" 
+			line-color="#808080" multi-line-colors="none" line-corner="4pt"
+			line-width="1pt" spacing-major="8pt" spacing-minor="1pt"
+			fo:text-align="left"/>
+		</style>
+		<style type="boundary" id="boundary" name="Boundary (Default)">
+			<boundary-properties shape-class="org.xmind.boundaryShape.roundedRect"
+			shape-corner="8pt" svg:fill="#ffffff" line-color="#afafaf"
+			line-width="3pt" line-pattern="dash" svg:opacity=".5"
+			fo:font-family="$system$" fo:font-weight="false" fo:color="#707070" 
+			fo:font-style="false" fo:font-size="9pt" fo:text-decoration="none"
+			fo:text-align="left"/>
+		</style>
+		<style type="relationship" id="relationship" name="Relationship (Default)">
+			<relationship-properties shape-class="org.xmind.relationshipShape.curved"
+			line-color="#0068cf" line-width="3pt" line-pattern="dot" 
+			arrow-begin-class="org.xmind.arrowShape.none"
+			arrow-end-class="org.xmind.arrowShape.normal"
+			fo:font-family="$system$" fo:font-weight="false" fo:color="#707070" 
+			fo:font-style="false" fo:font-size="9pt" fo:text-decoration="none"
+			fo:text-align="center"/>
+		</style>
+		<style type="summary" id="summary" name="Summary (Default)">
+			<summary-properties shape-class="org.xmind.summaryShape.curly"
+			line-color="#808080" line-width="2" line-pattern="solid" line-corner="5"/>
+		</style>
+		<style type="map" id="map" name="Map (Default)">
+			<map-properties svg:fill="#f3f4f9" svg:opacity=".6" color-gradient="none"/>
+		</style>
+	</automatic-styles>
+</xmap-styles>

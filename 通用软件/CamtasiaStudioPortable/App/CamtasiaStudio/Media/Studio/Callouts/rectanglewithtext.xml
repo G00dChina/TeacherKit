@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>rectanglewithtext.png</Overlay_Filename>
+<Overlay_Name>矩形</Overlay_Name>
+<Text_Top>15</Text_Top>
+<Text_Left>15</Text_Left>
+<Text_Bottom>15</Text_Bottom>
+<Text_Right>15</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xff9b8531</Initial_Fill_Color>
+<Initial_Border_Color>0xff9b8531</Initial_Border_Color>
+<VectorProps>
+<figure>
+<svg>M0,0h331v240H0V0z</svg>
+</figure>
+<seamY>-1</seamY>
+<shapeWidth>331</shapeWidth>
+<shapeHeight>240</shapeHeight>
+</VectorProps>
+<Style>4</Style>
+<UseDefaultSpec>1</UseDefaultSpec>   
+</Overlay>

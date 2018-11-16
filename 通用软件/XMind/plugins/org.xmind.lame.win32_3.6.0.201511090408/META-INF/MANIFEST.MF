@@ -1,0 +1,99 @@
+Manifest-Version: 1.0
+Built-By: so
+Eclipse-BundleShape: dir
+Bundle-Name: %pluginName
+Bundle-Localization: fragment_lame_win32
+Created-By: Apache Maven 3.3.3
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: %providerName
+Fragment-Host: org.xmind.core.audio
+Build-Jdk: 1.7.0_75
+Bundle-Version: 3.6.0.201511090408
+Eclipse-PlatformFilter: (osgi.os=win32)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.xmind.lame.win32;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: lame-3.97/lame_enc.dll
+SHA-256-Digest: 9z5cAfkvPLOm2pwsci2qnni3+xgr261zFyv+WA6IEYY=
+
+Name: lame-3.97/COPYING
+SHA-256-Digest: 0kWAf5ADKHLRQ410HtIeJJDhF13Iqjr6XdtsjlKbWOU=
+
+Name: lame.properties
+SHA-256-Digest: cRjkaEbyZBmxmEh7lNkHKMCEyuOHV94gj1yCRmfzduA=
+
+Name: lame-3.97/misc/lame4dos.bat
+SHA-256-Digest: h14SIa92Obo64JG6AzaqXlOnVpwvaCQ1d2JyNHWhIYg=
+
+Name: lame-3.97/html/node6.html
+SHA-256-Digest: 2GsKFqDcnvn2FLPqQLZSAKjpno9+xBZREELrlf8LbMU=
+
+Name: lame-3.97/html/id3.html
+SHA-256-Digest: nMsn9G4y+BxXj9XN0kUa7arlQXJ33lUZ1F4EKflA2/c=
+
+Name: lame-3.97/html/basic.html
+SHA-256-Digest: b9djdF2kSAZq9scOkXlHO6J/ROv6SLcdoce0O/YP4Zs=
+
+Name: lame-3.97/misc/lame.bat
+SHA-256-Digest: BuQ1Y/+qeO5bJ9WpTaDOdKbthxZEF5Led1On1gHXwAU=
+
+Name: META-INF/maven/org.xmind.meggy.plugins/org.xmind.lame.win32/pom.
+ xml
+SHA-256-Digest: zi5SCfcD3HDsjlM3Q0fRNnrVjqC2P2+l4NwBzfZqepQ=
+
+Name: lame-3.97/USAGE
+SHA-256-Digest: doZLtp2uQp6LhqiPVSOOI76oVoNPouPOL1PCFt7JOw8=
+
+Name: about.html
+SHA-256-Digest: ubyNDyIZu4fWD9Ye1hNYLzBy2OVDBLEF52x1LGSNREE=
+
+Name: lame-3.97/README
+SHA-256-Digest: WoJPOTs+yN+mjofC9nCqCMoGE6An5673kHSUAR+RNbI=
+
+Name: lame-3.97/html/lame.css
+SHA-256-Digest: UrhBzvYZc+Sl1oKyWenSIHiPirXrrNRizwJ/iX0Yn8I=
+
+Name: lame-3.97/html/modes.html
+SHA-256-Digest: VAaqj+kuH+JBOMastLSAPVW8GtB6G0XAWyhIRnvSXFQ=
+
+Name: lame-3.97/html/contributors.html
+SHA-256-Digest: 4d8vvXRK+pPq713MPSESIj93xjlQtDW4SfvOpjssERU=
+
+Name: lame-3.97/about
+SHA-256-Digest: dqmvw/btNWCSoQiEfhD1nkzstMXGvz2v5pg8XzjfSzU=
+
+Name: lame-3.97/html/presets.html
+SHA-256-Digest: 769VJlX6WxJHDzKUuUd/ABHmv1feuRXMj9XDqSyKlPg=
+
+Name: lame-3.97/LICENSE
+SHA-256-Digest: Zb8L94O2ZNrz+j5+WNIjjybM6189Be8jcfg5FonrKzg=
+
+Name: lame-3.97/lame.exe
+SHA-256-Digest: YCea1iSM9B3Z1ZuhWYRZnUG1s1XBNUuYG0osADHLvRI=
+
+Name: META-INF/maven/org.xmind.meggy.plugins/org.xmind.lame.win32/pom.
+ properties
+SHA-256-Digest: jIwRKl/4K+ecfKTraqVo1aSY4ChUQd5o9iA0XLolalQ=
+
+Name: fragment_lame_win32.properties
+SHA-256-Digest: G6YJpV1k5YE4r5XW9mH8zM+HX7Xp+g4MFUI7j4nhEDA=
+
+Name: lame-3.97/html/examples.html
+SHA-256-Digest: f2S1U/TPDTBZO2BS0EEswnFwg9DDelELIEO/rno4bUw=
+
+Name: lame-3.97/html/switchs.html
+SHA-256-Digest: TOMxXvsmSPuSevlTtt8cesTiTz5f4sdKHgyyUIJBNvw=
+
+Name: lame-3.97/misc/lameGUI.html
+SHA-256-Digest: YXjC8KzcW/xeUhujmhGtfBPF03Y99dfVppwBJjCuUZ4=
+
+Name: lame-3.97/html/history.html
+SHA-256-Digest: ktH8BhNt3uZP+yTsZmNr97r/r4KmDqnxUrUZCGEWRVs=
+
+Name: lame-3.97/misc/Lame.vbs
+SHA-256-Digest: r67B2tY0zBBuDArZmchU/5TGXwCwp/SAtjE3/tuVYLM=
+
+Name: lame-3.97/html/index.html
+SHA-256-Digest: O+6zANbNjXTYw1wXRocm+thWBSUvqotOGBPBPEviiB0=
+

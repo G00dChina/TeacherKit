@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.meggy.nls.feature"
+      label="XMind Pro Native Language Support"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      XMind Pro Native Language Support
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2015, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin id="org.xmind.core.audio.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.meggy.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.audionotes.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mapshot.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.merging.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.presentation.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.taskinfo.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.filtering.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.search.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gallery.resources.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.lame.win32.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.lame.win32.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="net.xmind.verify.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.verify.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.lame.macosx.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.lame.macosx.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.brainstorm.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.audio.mp3player.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.mindmap.styleeditor.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.aspose.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.vector.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.exports.outline.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.ideafactory.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.menus.pro.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.index.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.xmindresource.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.gantt.exports.vector.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+
+</feature>

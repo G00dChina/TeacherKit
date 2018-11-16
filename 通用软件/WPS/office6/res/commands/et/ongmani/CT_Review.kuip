@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_review" component="et">
+	<commands>
+		<KxListCommand hotKey="s" ksoCmd="SpellCheck" forceVisible="1" filter="support:SpellCheck=true" icon="SpellCheck" shortcutHint="F7" id="CheckSpellingToolBar" customTip="SpellCheck" text="@Spell Check" rbHotKey="S">
+			<command idQ="SpellCheck"/>
+			<command idQ="SetSpellcheckLanguageCommand"/>
+		</KxListCommand>
+		<KListCommand id="RB_Proofing" text="@Proofing" rbFileMenuEmbed="1">
+			<command idQ="CheckSpellingToolBar"/>
+			<command idQ="OpenThesaurus"/>
+		</KListCommand>
+		<KxLegacyTriggerCommandEx ksoCmd="TranslateToSimplifiedChinese" idMso="TranslateToSimplifiedChinese" icon="TranslateToSimplifiedChinese" controlType="0" id="rTranslateToSimplifiedChinese" customTip="TranslateToSimplifiedChinese" text="@Translate to Simplified Chinese" rbHotKey="Y1"/>
+		<KxLegacyTriggerCommandEx ksoCmd="TranslateToTraditionalChinese" idMso="TranslateToTraditionalChinese" icon="TranslateToTraditionalChinese" controlType="0" id="rTranslateToTraditionalChinese" customTip="TranslateToTraditionalChinese" text="@Translate to Traditional Chinese" rbHotKey="Y2"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="ChineseTranslation" filter="support:ChineseTranslation=true" icon="ChineseTranslation" id="rChineseTranslation" customTip="ChineseTranslation" text="@Translation" rbHotKey="Y3"/>
+		<KxListCommand ksoCmd="ChineseTranslation" filter="support:ChineseTranslation=true" id="RB_Chinese_Translation" customTip="ChineseTranslation" text="@Chinese Translation" rbFileMenuEmbed="1">
+			<command idQ="rTranslateToSimplifiedChinese"/>
+			<command idQ="rTranslateToTraditionalChinese"/>
+			<command idQ="rChineseTranslation" filter="patent:LogicGroupShowExtensionButton=false"/>
+		</KxListCommand>
+		<KxPropComposeCommand hotKey="m" ksoCmd="Comment" idMso="ReviewNewComment" icon="InsertComment" controlType="0" id="rComment" customTip="InsertComment" text="@New 
+Comment" rbHotKey="C"/>
+		<KxPropComposeCommand hotKey="e" ksoCmd="EditComment" icon="EditComment" id="rEditComment" customTip="EditComment" text="@Edit
+Comment" rbHotKey="T"/>
+		<KxPropComposeCommand hotKey="d" ksoCmd="DeleteComment" forceVisible="1" idMso="ReviewDeleteComment" icon="RejectComment" controlType="0" id="rDeleteComment" customTip="DeleteComment" text="@Delete 
+Comment" rbHotKey="D"/>
+		<KxPropComposeCommand hotKey="v" ksoCmd="PreviousComment" forceVisible="1" idMso="ReviewPreviousComment" icon="PreviousComment" controlType="0" id="rPreviousComment" customTip="PreviousComment" text="@Previous" rbHotKey="V"/>
+		<KxPropComposeCommand hotKey="n" ksoCmd="NextComment" forceVisible="1" idMso="ReviewNextComment" icon="NextComment" controlType="0" id="rNextComment" customTip="NextComment" text="@Next" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="ShowOrHideComment" forceVisible="1" idMso="ReviewShowOrHideComment" icon="ShowOrHideComment" controlType="6" id="rShowOrHideComment" customTip="ShowOrHideComment" spaceHint="autocompact" text="@Show/Hide Comment" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="ShowAllComments" forceVisible="1" idMso="ReviewShowAllComments" icon="ShowAllComments" controlType="6" id="rShowAllComments" customTip="ShowAllComments" spaceHint="autocompact" text="@Show All Comments" rbHotKey="A"/>
+		<KxLegacyTriggerCommand ksoCmd="ResetCommentAnchor" forceVisible="1" icon="ResetCommentAnchor" controlType="6" id="rResetCommentAnchor" customTip="ResetCommentAnchor" spaceHint="autocompact" text="@Reset Comment" rbHotKey="R1"/>
+		<KxLegacyTriggerCommand ksoCmd="ResetAllCommentsAnchor" forceVisible="1" icon="ResetAllCommentsAnchor" controlType="6" id="rResetAllCommentsAnchor" customTip="ResetAllCommentsAnchor" spaceHint="autocompact" text="@Reset All Comments" rbHotKey="R2"/>
+		<KListCommand id="RB_Comments" text="@Comments" rbFileMenuEmbed="1">
+			<command idQ="rComment"/>
+			<command idQ="rEditComment"/>
+			<command idQ="rDeleteComment"/>
+			<command idQ="rPreviousComment"/>
+			<command idQ="rNextComment"/>
+			<command idQ="rShowOrHideComment"/>
+			<command idQ="rShowAllComments"/>
+			<command idQ="rResetCommentAnchor"/>
+			<command idQ="rResetAllCommentsAnchor"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="LockCell" icon="LockCell" id="rLockCell" customTip="LockCell" text="@Lock Cell" rbHotKey="L"/>
+		<KxProtectSheetCommand secondText="@Unprotect 
+Sheet" ksoCmd="ProtectSheet" idMso="SheetProtect" icon="ProtectSheet" controlType="0" id="rProtectSheet" customTip="ProtectSheet" text="@Protect 
+Sheet" rbHotKey="PS"/>
+		<KxBookProtectionCommand secondText="@Unprotect 
+Workbook" ksoCmd="BookProtection" idMso="ReviewRestrictEditing" icon="BookProtection" controlType="6" id="rBookProtection" customTip="BookProtection" text="@Protect
+Workbook" rbHotKey="PW"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="ShareWorkbook" idMso="ReviewShareWorkbook" icon="ShareWorkbook" controlType="0" id="rShareWorkbook" customTip="ShareWorkbook" text="@Share
+Workbook" rbHotKey="W"/>
+		<KxLegacyTriggerCommand ksoCmd="ProtectAndShare" filter="lang!=ja_JP" idMso="ReviewProtectAndShareWorkbook" icon="ProtectAndShare" controlType="0" id="rProtectAndShare" customTip="ProtectAndShare" spaceHint="suitable" text="@Protect and Share Workbook" rbHotKey="O"/>
+		<KxLegacyTriggerCommand ksoCmd="ProtectAndShare" filter="lang=ja_JP" icon="ProtectAndShare" id="JP_rProtectAndShare" customTip="ProtectAndShare" text="@Protect and Share Workbook" rbHotKey="O"/>
+		<KxLegacyTriggerCommand ksoCmd="AllowEditRanges" filter="lang!=ja_JP" idMso="ReviewAllowUsersToEditRanges" icon="AllowEditRanges" controlType="0" id="rAllowEditRanges" customTip="AllowEditRanges" spaceHint="suitable" text="@Allow Users to Edit Ranges" rbHotKey="U"/>
+		<KxLegacyTriggerCommand ksoCmd="AllowEditRanges" filter="lang=ja_JP" icon="AllowEditRanges" id="JP_rAllowEditRanges" customTip="AllowEditRanges" text="@Allow Users to Edit Ranges" rbHotKey="U"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="HighlightChanges" aid="2042" idMso="ReviewHighlightChanges" controlType="0" id="HighlightChanges" dialogHint="1" text="@Highlight Changes" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="a" customShortcutEnabled="false" ksoCmd="AcceptRevision" aid="80058" id="AcceptRevision" text="@Accept Changes" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="r" customShortcutEnabled="false" ksoCmd="RejectRevision" aid="80059" id="RejectRevision" text="@Reject Changes" rbHotKey="C"/>
+		<KListCommand idMso="ReviewTrackChangesMenu" icon="TrackChanges" controlType="15" id="m_Track_Changes" customTip="TrackChanges" text="@Track
+Changes" rbHotKey="G">
+			<command idQ="HighlightChanges"/>
+			<command idQ="AcceptRevision"/>
+			<command idQ="RejectRevision"/>
+		</KListCommand>
+		<KListCommand id="RB_Changes" text="@Changes" rbFileMenuEmbed="1">
+			<command idQ="rLockCell"/>
+			<command idQ="rProtectSheet"/>
+			<command idQ="rBookProtection"/>
+			<command idQ="rShareWorkbook"/>
+			<command idQ="rProtectAndShare" filter="lang!=ja_JP"/>
+			<command idQ="JP_rProtectAndShare" filter="lang=ja_JP"/>
+			<command idQ="rAllowEditRanges" filter="lang!=ja_JP"/>
+			<command idQ="JP_rAllowEditRanges" filter="lang=ja_JP"/>
+			<command idQ="m_Track_Changes"/>
+		</KListCommand>
+		<KListCommand id="RB_Security" text="@Document Security" rbFileMenuEmbed="1">
+			<KxCurUserPermissionCommand filter="support:OnlineSecurityDocument=true" icon="MergeCenter" text="@Check Mine Permission"/>
+			<KxCheckPermissionsCommand filter="support:OnlineSecurityDocument=true" icon="FormatPainter" text="@Check Users Permissions"/>
+			<KxDocPermissionCommand hotKey="p" filter="support:DocPermission=true" icon="DocumentsPremissions" customTip="DocPermission" text="@Document Permissions" rbHotKey="PE"/>
+			<command idQ="HardwareEncryption"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Review">
+			<command idQ="RB_Proofing"/>
+			<separator/>
+			<command idQ="RB_Chinese_Translation" filter="l10n:TCSC_CONVERSION_SUPPORT=true"/>
+			<separator filter="l10n:TCSC_CONVERSION_SUPPORT=true"/>
+			<command idQ="RB_Comments"/>
+			<separator/>
+			<command idQ="RB_Changes"/>
+			<separator filter="support:DocPermission=true"/>
+			<command idQ="RB_Security"/>
+		</subcommand>
+	</subcommands>
+</shell>

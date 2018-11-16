@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_review" component="wpp">
+	<commands>
+		<KxListCommand ksoCmd="CheckSpelling" forceVisible="1" filter="support:SpellCheck=true" icon="SpellCheck" shortcutHint="F7" id="CheckSpellingToolBar" customTip="CheckSpelling" text="@Spell Check" rbHotKey="S">
+			<command idQ="CheckSpelling"/>
+			<command idQ="SetSpellcheckLanguageCommand"/>
+		</KxListCommand>
+		<KListCommand id="RB_Proofing" text="@Proofing" rbFileMenuEmbed="1">
+			<command idQ="CheckSpellingToolBar"/>
+			<command idQ="OpenThesaurus"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EraseMarkupsOnSlide" aid="1154" id="EraseMarkupsOnSlide" text="@Erase Markups on Slide" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="EraseAllMarkups" aid="1155" id="EraseAllMarkups" text="@Erase All Markups" rbHotKey="A"/>
+		<KxLegacyTriggerCommand ksoCmd="ShowHideMark" icon="Markup" id="ShowHideMark" customTip="ShowHideMark" text="@Show/Hide
+Mark" rbHotKey="h"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="NewComment" idMso="ReviewNewComment" icon="InsertComment" controlType="0" id="NewComment" customTip="NewComment" text="@New 
+Comment" rbHotKey="m"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditComment" icon="EditComment" id="EditComment" customTip="EditComment" text="@Edit
+Comment" rbHotKey="e"/>
+		<KxLegacyTriggerCommand ksoCmd="PreComment" idMso="ReviewPreviousComment" icon="PreviousComment" controlType="0" id="PreComment" customTip="PreComment" text="@Previous" rbHotKey="p"/>
+		<KxLegacyTriggerCommand ksoCmd="NextComment" idMso="ReviewNextComment" icon="NextComment" controlType="0" id="NextComment" customTip="NextComment" text="@Next" rbHotKey="n"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="DelSlideComment" icon="DelComment" id="DelSlideComment" text="@Delete 
+Comment" rbHotKey="t"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="DelSlideMark" icon="DeleteSlideMark" id="DelSlideMark" text="@Delete All Mark on the Current Slide" rbHotKey="k"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="DelPresentationMark" icon="DeletePresentationMark" id="DelPresentationMark" text="@Delete All Mark in this Presentation" rbHotKey="n"/>
+		<KListCommand id="RB_Markup" text="@Markup" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="NewComment" icon="InsertComment" id="InsertCommentInReviewTab" customTip="NewComment" text="@New 
+Comment" qtspyName="NewComment" rbHotKey="m"/>
+			<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditComment" icon="EditComment" id="EditCommentInReviewTab" customTip="EditComment" text="@Edit
+Comment" qtspyName="EditComment" rbHotKey="e"/>
+			<KListCommand icon="RejectComment" id="DeleteCommentInReviewTab" customTip="DeleteComment" text="@Delete 
+Comment" qtspyName="RejectComment" rbHotKey="d">
+				<command idQ="DelSlideComment"/>
+				<command idQ="DelSlideMark"/>
+				<command idQ="DelPresentationMark"/>
+			</KListCommand>
+			<command idQ="PreComment"/>
+			<command idQ="NextComment"/>
+			<separator/>
+			<command idQ="ShowHideMark"/>
+		</KListCommand>
+		<KxListCommand ksoCmd="ChineseTranslation" filter="support:ChineseTranslation=true" id="RB_TransToTradChinese" customTip="ChineseTranslation" text="@Chinese Conversion" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="TranslateToSimplifiedChinese" idMso="TranslateToSimplifiedChinese" icon="TranslateToSimplifiedChinese" controlType="0" customTip="SimplifiedChinese" text="@Convert to Simplified Chinese" qtspyName="TranslateToSimplifiedChinese" rbHotKey="OS"/>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="TranslateToTraditionalChinese" icon="TranslateToTraditionalChinese" id="TranslateToTraditionalChinese" customTip="TraditionalChinese" text="@Convert to Traditional Chinese" rbHotKey="OT"/>
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="ChineseTranslation" filter="patent:LogicGroupShowExtensionButton=false" icon="ChineseTranslation" id="SwitchSimplifiedAndTraditionalChinese" customTip="ChineseTranslation" text="@Conversion" qtspyName="ChineseTranslation" rbHotKey="OC"/>
+		</KxListCommand>
+		<KListCommand id="RB_Security" text="@Document Security" rbFileMenuEmbed="1">
+			<KxCurUserPermissionCommand filter="support:OnlineSecurityDocument=true" icon="MergeCenter" text="@Check Mine Permission"/>
+			<KxCheckPermissionsCommand filter="support:OnlineSecurityDocument=true" icon="FormatPainter" text="@Check Users Permissions"/>
+			<KxDocPermissionCommand hotKey="p" filter="support:DocPermission=true" icon="DocumentsPremissions" customTip="DocPermission" text="@Document Permissions" rbHotKey="PE"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Review">
+			<command idQ="RB_Proofing"/>
+			<separator/>
+			<command idQ="RB_TransToTradChinese" filter="l10n:TCSC_CONVERSION_SUPPORT=true"/>
+			<separator filter="l10n:TCSC_CONVERSION_SUPPORT=true"/>
+			<command idQ="RB_Markup"/>
+			<separator filter="support:DocPermission=true"/>
+			<command idQ="RB_Security"/>
+		</subcommand>
+	</subcommands>
+</shell>

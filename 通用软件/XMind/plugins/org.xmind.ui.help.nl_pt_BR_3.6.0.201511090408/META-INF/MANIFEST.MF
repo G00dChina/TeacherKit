@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-Vendor: XMind Ltd.
+Fragment-Host: org.xmind.ui.help
+Build-Jdk: 1.7.0_75
+Built-By: so
+Bundle-Version: 3.6.0.201511090408
+Eclipse-BundleShape: dir
+Bundle-Name: XMind Help Portuguese (Brazilian) Language Support
+Created-By: Apache Maven 3.3.3
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.xmind.ui.help.nl_pt_BR;singleton:=true
+Archiver-Version: Plexus Archiver
+
+Name: about.html
+SHA-256-Digest: zIP/do0RthmafXjThr5FKRgwokiG8oPXBVIhy6B3atk=
+
+Name: plugin_pt_BR.properties
+SHA-256-Digest: +5hlxGCx6wcelqj9q3Hihhp0vLArb+fWMAXpB7OyLAE=
+
+Name: META-INF/maven/org.xmind.help.plugins/org.xmind.ui.help.nl_pt_BR
+ /pom.xml
+SHA-256-Digest: ++0z6/BxU+obAsTYgJRpcJ/a7SEwmgQX9fQ/GOOvw98=
+
+Name: META-INF/maven/org.xmind.help.plugins/org.xmind.ui.help.nl_pt_BR
+ /pom.properties
+SHA-256-Digest: OxM0R9RxSaTb9q/IXAXUIJA6lof8Nxi5Wu0UM0NTzbA=
+

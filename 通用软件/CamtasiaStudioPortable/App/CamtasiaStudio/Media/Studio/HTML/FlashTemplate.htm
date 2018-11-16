@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- saved from url=(0025)http://www.techsmith.com/ -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        $VideoMetaData
+        <title>$HTMLTitle</title>
+        <script type="text/javascript" src="swfobject.js"></script>
+        $CamJSInclude
+        $SCORMIncludeJS
+        <style type="text/css">
+            /* CSS Document */
+            #cs_flashBody
+            {
+                background-color: #ffffff;
+                font: .8em/1.3em verdana,arial,helvetica,sans-serif;
+                text-align: center;
+            }
+
+            #cs_noexpressUpdate
+            {
+                margin: 0 auto;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: x-small;
+                color: #003300;
+                text-align: left;
+                background-image: url($FetchFileURLHTMLIMAGEFILE$#$MediaDirectory$#$SWFNotFoundImageName);
+                background-repeat: no-repeat;
+                width: 210px; 
+                height: 200px;	
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body id="cs_flashBody" $OnLoadParams>
+        <div id="flashcontent">	   		
+            <div id="cs_noexpressUpdate">
+                <p>$JavaScriptEnabledNeedLatestFlash</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var req = swfobject.hasFlashPlayerVersion("$PlayerVersion");
+            var bookmark = args.movie ? args.movie : 0;
+            if ( req )
+            {
+                swfobject.embedSWF( "$FlashController", "flashcontent", "$Width", "$Height", "$PlayerVersion", null, { csConfigFile: "$FlashConfig", csColor: "$SWFBGColor", $SWFcsLoadingKeyword csFilesetBookmark: bookmark }, { bgcolor: "$SWFBGColor", quality: "best", allowscriptaccess: "always" } );
+            }
+        </script>
+        <!-- Users looking for simple object / embed tags can copy and paste the needed tags below.
+        <div id="media">
+            <object id="csSWF" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="$Width" height="$Height" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version==8">
+                <param name="src" value="$FlashController#"/>
+                <param name="bgcolor" value="$SWFBGColor"/>
+                <param name="quality" value="best"/>
+                <param name="allowScriptAccess" value="always"/>
+                <param name="flashVars" value="csConfigFile=$FlashConfig&csColor=$SWFBGColor"/>
+                <embed name="csSWF" src="$FlashController" width="$Width" height="$Height" bgcolor="$SWFBGColor" quality="best" allowScriptAccess="always" flashVars="csConfigFile=$FlashConfig&csColor=$SWFBGColor" pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+            </object>
+        </div>
+        -->
+    </body>
+</html>

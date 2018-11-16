@@ -1,0 +1,222 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Transform Menu</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Menus,Menus Transform,Transform Menu">
+   <meta name="description" content="Transform Menu">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_trans.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Transform Menu</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Transform Menu</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_construct_locus.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_trans_mark.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">The Transform menu applies geometric transformations to figures in your sketches, allowing you to create translations, rotations, dilations, reflections, tessellations, scale models, kaleidoscopes, fractals, and much more. </span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Basic transformations (<a href="menus_trans_translate.htm" class="topiclink">Translate</a>, <a href="menus_trans_rotate.htm" class="topiclink">Rotate</a>, <a href="menus_trans_dilate.htm" class="topiclink">Dilate</a>, and <a href="menus_trans_reflect.htm" class="topiclink">Reflect</a>)</span><span class="f_BodyText"> are called </span><span class="f_BodyText" style="font-style: italic;">similarity transformations</span><span class="f_BodyText"> because they create images that are similar to the pre-images: the image has the same angles as the pre-image, and all distances are changed by the same ratio. To use these transformations, you can either specify fixed distances, angles, and ratios, or use the various </span><span class="f_BodyText" style="font-weight: bold;">Mark</span><span class="f_BodyText"> commands to mark dynamic distances, angles, and ratios in your sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Iterations</span><span class="f_BodyText"> allow you to perform the same transformation repeatedly, transforming a pre-image to form a first image, transforming that first image to create a second image, transforming the second image to create a third image, and so on. You can transform both geometric objects and numeric values, and you can specify the depth of iteration. </span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Custom transformations</span><span class="f_BodyText"> allow you to specify an arbitrary transformation in terms of two points: an independent point and some other point that depends on the independent point. Once you specify such a transformation, you can apply it to a wide variety of objects in your sketch, including other points, path objects, interiors, and even pictures.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 4px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:308px; padding:0px;"><p style="margin: 7px 0px 0px 0px;"><map name="map6" id="map6"><area shape="rect" coords="0,310,272,332" href="menus_trans_custedit.htm" alt="Edit Custom Transforms" title="Edit Custom Transforms" /><area shape="rect" coords="0,288,272,310" href="menus_trans_custdefine.htm" alt="Define Custom Transform" title="Define Custom Transform" /><area shape="rect" coords="0,258,272,280" href="menus_trans_iter.htm" alt="Iterate" title="Iterate" /><area shape="rect" coords="0,227,272,249" href="menus_trans_reflect.htm" alt="Reflect" title="Reflect" /><area shape="rect" coords="0,206,272,228" href="menus_trans_dilate.htm" alt="Dilate" title="Dilate" /><area shape="rect" coords="0,184,272,206" href="menus_trans_rotate.htm" alt="Rotate" title="Rotate" /><area shape="rect" coords="0,162,272,184" href="menus_trans_translate.htm" alt="Translate" title="Translate" /><area shape="rect" coords="0,132,272,154" href="menus_trans_markdistance.htm" alt="Mark Distance" title="Mark Distance" /><area shape="rect" coords="0,110,272,132" href="menus_trans_markvector.htm" alt="Mark Vector" title="Mark Vector" /><area shape="rect" coords="0,88,272,110" href="menus_trans_markratio.htm" alt="Mark Ratio" title="Mark Ratio" /><area shape="rect" coords="0,66,272,88" href="menus_trans_markangle.htm" alt="Mark Angle" title="Mark Angle" /><area shape="rect" coords="0,44,272,66" href="menus_trans_markmirror.htm" alt="Mark Mirror" title="Mark Mirror" /><area shape="rect" coords="0,21,272,43" href="menus_trans_markcenter.htm" alt="Mark Center" title="Mark Center" /></map><img src="menu_transform.png" width="274" height="337" alt="" style="border:none" usemap="#map6" /></p>
+</td>
+<td style="vertical-align:top; width:1009px; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click the name of any command in the menu to see detailed information about that command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Basic Transformations</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="transfrm_rotations_zoom60.png" width="83" height="76" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">When you specify a basic transformation </span><span class="f_BodyText" style="font-weight: bold;">(<a href="menus_trans_translate.htm" class="topiclink">Translate</a>, <a href="menus_trans_rotate.htm" class="topiclink">Rotate</a>, <a href="menus_trans_dilate.htm" class="topiclink">Dilate</a>, and <a href="menus_trans_reflect.htm" class="topiclink">Reflect</a>), </span><span class="f_BodyText">you specify not only the object to be transformed (</span><span class="f_BodyText">the transformational pre-image) but also certain objects or values upon which the transformation is based. For instance, a rotation requires both an angle and a center about which to rotate. The </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_mark.htm" class="topiclink">Mark</a></span><span class="f_BodyText"> commands — </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_markcenter.htm" class="topiclink">Mark Center</a>, <a href="menus_trans_markmirror.htm" class="topiclink">Mark Mirror</a>, <a href="menus_trans_markangle.htm" class="topiclink">Mark Angle</a>, <a href="menus_trans_markratio.htm" class="topiclink">Mark Ratio</a>, <a href="menus_trans_markvector.htm" class="topiclink">Mark Vector</a>,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_markdistance.htm" class="topiclink">Mark Distance</a> </span><span class="f_BodyText">— let you specify objects in your sketch to be used for your transformations.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">These marked objects may be either geometric objects or values. For example, a rotation is defined by a center and an angle. The center is a geometric point about which objects rotate. If the center point moves, then the rotated image changes accordingly. The angle determines how far objects rotate about the center. Rotate by a fixed angle (such as 45°) or by a marked angle (which can be defined by three points, by a marked angle <a href="objects_cats_values.htm" class="topiclink">value</a>, or by an <a href="angle_markers.htm" class="topiclink">angle marker</a>). If a marked angle changes, then the rotated image also changes dynamically.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">In general, follow these steps to construct a basic transformed image of one or more objects:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Mark any objects that determine dynamic aspects of your transformation by selecting the objects and choosing the appropriate </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_mark.htm" class="topiclink">Mark</a></span><span class="f_BodyText"> commands (for example, </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_markcenter.htm" class="topiclink">Mark Center</a></span><span class="f_BodyText"> to mark a selected point as the center of rotation). Most objects can also be marked when the transformation dialog box is open, after you choose the transformation command.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Select the object(s) you want to transform. Mathematically, this is the pre-image of your transformation. (Loci, function plots, iterated images, angle markers and tick marks, and text objects cannot be transformed.)</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Choose the appropriate transformation command from the Transform menu (for example, </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_rotate.htm" class="topiclink">Rotate</a></span><span class="f_BodyText">).</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">4.</span><span class="f_BodyText">In the resulting dialog box, specify any objects or values you want to use in your transformation (for example, click a new center point, or specify the angle by typing 45° or clicking an angle measurement or marker in the sketch).</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">5.</span><span class="f_BodyText">A faint preview image appears in the sketch. Check to make sure it’s what you expect. Then confirm the dialog box to construct the transformed image.</span></p><p class="p_BodyText"><span class="f_BodyText">Once you mark a parameter, Sketchpad remembers that mark even after you change the selections. If you’ve already marked a parameter for one transformation, you don’t need to mark it again to use the same parameter for a second transformation.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Iterations</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="transform_iteration.png" width="173" height="159" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">The </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Iterate</a></span><span class="f_BodyText"> command allows you to create in a single step multiple transformed images such as this spiral, or any figure resulting from a transformation or construction repeated many times. Use iteration to create complex images such as tessellations and fractals. You can iterate not only geometric objects but also numeric values.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Custom Transformations</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="transform_swirl2_zoom50.png" width="128" height="144" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">You can <a href="menus_trans_custdefine.htm" class="topiclink">define</a> and <a href="menus_trans_custedit.htm" class="topiclink">edit</a> custom transformations. These transformations allow you to define as a transformation any construction that involves two points, one of which depends on the other. Your custom transformations are added to the bottom of the Transform menu, making them very easy to use. Custom transformations are very flexible, because they can incorporate any sequence of construction steps that begin with a point and end with another point.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

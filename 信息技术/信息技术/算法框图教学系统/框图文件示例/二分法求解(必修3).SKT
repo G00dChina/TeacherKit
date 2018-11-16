@@ -1,0 +1,118 @@
+字号 16
+类名 11sfktLinex27192271
+属性  277 206 272 287F
+可见 T
+控位  140   0   2 280 264 140
+结束
+类名 11sfktLinex62141410
+属性   33 162 250 292F
+可见 T
+控位  154 285 242   0   2 142
+结束
+类名  0sfktBegin1
+属性  231  36 100  45F
+方向 1
+结束
+类名 10sfktEnd1
+属性  215 554 128  54F
+方向 1
+结束
+类名  2sfktchuli26660526
+属性  221  80 120  87F
+可见 T
+方向 1
+内容    a=0，b=1※   e=0.001※f(x)=2*x^3+3*x-3
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29    a=0\f1\'a3\'acb=1
+\par    e=0.001
+\par f(x)=2*x^3+3*x-3                                                                                                                                                               \f0 
+\par }
+
+结束
+类名  3sfktPanduan47276728
+属性  143 167 277  82F
+是否 32
+可见 T
+方向 1
+内容 f((a+b)/2)=0
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29 f((a+b)/2)=0                                                                                                                                                                                            
+\par }
+
+结束
+类名  3sfktPanduan67261739
+属性   99 249 364  85F
+是否 13
+可见 T
+方向 1
+内容 f(a)*f((a+b)/2)<0
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29 f(a)*f((a+b)/2)<0                                                                                                                                                                                       
+\par }
+
+结束
+类名  2sfktchuli50435918
+属性   37 340 124  65F
+可见 T
+方向 1
+内容    b=(a+b)/2
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29    b=(a+b)/2                                                                                                                                                                                            
+\par }
+
+结束
+类名  2sfktchuli01522855
+属性  396 340 134  64F
+可见 T
+方向 1
+内容     a=(a+b)/2
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29     a=(a+b)/2                                                                                                                                                                                           
+\par }
+
+结束
+类名  5sfktLiner63327915
+属性   99 398 181  14F
+可见 T
+结束
+类名  6sfktLinel20798254
+属性  281 397 182  14F
+可见 T
+结束
+类名  3sfktPanduan78864671
+属性  187 405 185  84F
+是否 21
+可见 T
+方向 1
+内容   b-a<e
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29   b-a<e                                                                                                                                                                                                 
+\par }
+
+结束
+类名  4sfktshuru91866972
+属性  214 489 130  65F
+可见 T
+方向 1
+内容   (a+b)/2
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs29   (a+b)/2                                                                                                                                                                                               
+\par }
+
+结束
+类名  8sfktLined91312062
+属性   92 293  14  47F
+可见 F
+结束
+类名  8sfktLined38531933
+属性  456 291  14  47F
+可见 F
+结束
+完成

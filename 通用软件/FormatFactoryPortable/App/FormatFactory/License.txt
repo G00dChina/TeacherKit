@@ -1,0 +1,27 @@
+Format Factory provides main functions below:
+ All to MP4/3GP/MPG/AVI/WMV/FLV/SWF.
+ All to MP3/WMA/AMR/OGG/AAC/WAV.
+ All to JPG/BMP/PNG/TIF/ICO/GIF/TGA.
+ Rip DVD to video file , Rip Music CD to audio file. 
+ MP4 files support iPod/iPhone/PSP/BlackBerry format.
+ Video,Audio Joiner
+ Supports RMVB,Watermark, AV Mux.
+
+Format Factory's Feature:
+ 1 support converting all popular video,audio,picture formats to others.
+ 2 Repair damaged video and audio file.
+ 3 Reducing Multimedia file size.
+ 4 Support iphone,ipod multimedia file formats.
+ 5 Picture converting supports Zoom,Rotate/Flip,tags.
+ 6 DVD Ripper.
+ 7 Supports 63 languages
+
+The installation package contains IronSource adware, If you uncheck installation options. They will not affect your computer.
+
+This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
+
+Your privacy is important to us. Our software and website will not collect any information in your PC.
+
+Welcome to spread FormatFactory without any modification
+
+You can use this software for any purpose, including commercial applications, and to alter it and redistribute it freely.

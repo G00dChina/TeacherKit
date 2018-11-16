@@ -1,0 +1,617 @@
+﻿<?xml version="1.0"?>
+
+<Keystroke version="1.0.0">
+
+  <Name>透明按键</Name>
+  <Preview>KP_Clear.png</Preview>
+  <PreviewWithBand>KP_Clear_band.png</PreviewWithBand>
+  <Thumb>Keystroke_Clear.png</Thumb>
+  <ThumbDialog>Keystroke_Clear32.png</ThumbDialog>
+
+  <KeystrokeImages>
+    <KeystrokeImage_Object>
+      <Name>Small</Name>
+      <File>SmallKey.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>600</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>600</Width>
+      </TextArea>
+
+      <FileWithBand></FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>Medium</Name>
+      <File>MediumKey.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>900</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>900</Width>
+      </TextArea>
+
+      <FileWithBand></FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>Large</Name>
+      <File>LargeKey.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>1200</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>1200</Width>
+      </TextArea>
+
+      <FileWithBand></FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>LeftKey</Name>
+      <File>leftBlack.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>1200</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>1200</Width>
+      </TextArea>
+
+      <FileWithBand>leftWhite.png</FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>RightKey</Name>
+      <File>rightBlack.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>1200</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>1200</Width>
+      </TextArea>
+
+      <FileWithBand>rightWhite.png</FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>UpKey</Name>
+      <File>upBlack.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>1200</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>1200</Width>
+      </TextArea>
+
+      <FileWithBand>upWhite.png</FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>DownKey</Name>
+      <File>downBlack.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>1200</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>1200</Width>
+      </TextArea>
+
+      <FileWithBand>downWhite.png</FileWithBand>
+    </KeystrokeImage_Object>
+
+    <KeystrokeImage_Object>
+      <Name>WinKey</Name>
+      <File>winBlack.png</File>
+      <ScaleArea>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Height>600</Height>
+        <Width>1200</Width>
+      </ScaleArea>
+
+      <TextArea>
+        <Top>70</Top>
+        <Left>0</Left>
+        <Height>460</Height>
+        <Width>1200</Width>
+      </TextArea>
+
+      <FileWithBand>winWhite.png</FileWithBand>
+    </KeystrokeImage_Object>
+
+  </KeystrokeImages>
+
+  <KeystrokeFonts>
+    <Font_Object>
+      <Name>Reduced</Name>
+      <Scale>.35</Scale>
+    </Font_Object>
+
+    <Font_Object>
+      <Name>SlightReduce</Name>
+      <Scale>.80</Scale>
+    </Font_Object>
+
+    <Font_Object>
+      <Name>FunctionKeys</Name>
+      <Scale>.85</Scale>
+    </Font_Object>
+
+    <Font_Object>
+      <Name>ControlKeys</Name>
+      <Scale>.90</Scale>
+    </Font_Object>
+
+    <Font_Object>
+      <Name>ExtraSmall</Name>
+      <Scale>.30</Scale>
+    </Font_Object>
+  </KeystrokeFonts>
+
+  <LineCounts>
+    <Line_Object>
+      <Name>TwoLines</Name>
+      <Lines>2</Lines>
+    </Line_Object>
+  </LineCounts>
+
+  <TextColor>0x00000000</TextColor>
+  <TextColorWithBand>0x00FFFFFF</TextColorWithBand>
+
+  <Seperation_Information>
+    <BetweenEveryKey>1</BetweenEveryKey>
+    <File>plusBlack.png</File>
+    <FileWithBand>plusWhite.png</FileWithBand>
+  </Seperation_Information>
+
+  <DefaultFontBindings>
+    <MediumFontBinding>SlightReduce</MediumFontBinding>
+    <SmallFontBinding>Reduced</SmallFontBinding>
+    <ExtraSmallFontBinding>ExtraSmall</ExtraSmallFontBinding>
+  </DefaultFontBindings>
+
+  <KeyBindings>
+    <SmallKeyBinding>Small</SmallKeyBinding>
+    <MediumKeyBinding>Medium</MediumKeyBinding>
+    <LargeKeyBinding>Large</LargeKeyBinding>
+
+    <InitialBindings>
+
+      <Binding_Object>
+        <Key>Win</Key>
+        <Bind>WinKey</Bind>
+        <Text></Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Left</Key>
+        <Bind>LeftKey</Bind>
+        <Text></Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Right</Key>
+        <Bind>RightKey</Bind>
+        <Text></Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Up</Key>
+        <Bind>UpKey</Bind>
+        <Text></Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Down</Key>
+        <Bind>DownKey</Bind>
+        <Text></Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Esc</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Shift</Key>
+        <Bind>Large</Bind>
+        <Font>ControlKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Ctrl</Key>
+        <Bind>Medium</Bind>
+        <Font>ControlKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Home</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>End</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Alt</Key>
+        <Bind>Medium</Bind>
+        <Font>ControlKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Tab</Key>
+        <Bind>Medium</Bind>
+        <Font>ControlKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Enter</Key>
+        <Bind>Large</Bind>
+        <Font>SlightReduce</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Backspace</Key>
+        <Bind>Large</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Print Screen</Key>
+        <Font>Reduced</Font>
+        <Lines>TwoLines</Lines>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Pause</Key>
+        <Bind>Large</Bind>
+        <Font>SlightReduce</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Scroll lock</Key>
+        <Bind>Large</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Space</Key>
+        <Bind>Large</Bind>
+        <Font>SlightReduce</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Caps lock</Key>
+        <Bind>Large</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Page up</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+        <Lines>TwoLines</Lines>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Page down</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+        <Lines>TwoLines</Lines>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num lock</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+        <Lines>TwoLines</Lines>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Insert</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Delete</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num del</Key>
+        <Bind>Small</Bind>
+        <Font>Reduced</Font>
+        <Text>Delete</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num +</Key>
+        <Bind>Large</Bind>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num -</Key>
+        <Text>-</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num *</Key>
+        <Text>*</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num del</Key>
+        <Bind>Medium</Bind>
+        <Text>Del</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 0</Key>
+        <Text>0</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 1</Key>
+        <Text>1</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 2</Key>
+        <Text>2</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 3</Key>
+        <Text>3</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num *</Key>
+        <Text>*</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 4</Key>
+        <Text>4</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 5</Key>
+        <Text>5</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 6</Key>
+        <Text>6</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 7</Key>
+        <Text>7</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 8</Key>
+        <Text>8</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>Num 9</Key>
+        <Text>9</Text>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F1</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F2</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F3</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F4</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F5</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F6</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F7</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F8</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F9</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F10</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F11</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F12</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F13</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F14</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F15</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F16</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F17</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F18</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F19</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F20</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F21</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F22</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F23</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>F24</Key>
+        <Bind>Medium</Bind>
+        <Font>FunctionKeys</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>[</Key>
+        <Font>SlightReduce</Font>
+      </Binding_Object>
+
+      <Binding_Object>
+        <Key>]</Key>
+        <Font>SlightReduce</Font>
+      </Binding_Object>
+
+    </InitialBindings>
+  </KeyBindings>
+
+</Keystroke>

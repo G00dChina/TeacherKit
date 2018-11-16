@@ -1,0 +1,416 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+   <title>What's New &gt; Changes Since Release 5.00</title>
+
+   <meta name="generator" content="Help & Manual">
+
+   <meta name="keywords" content="">
+
+   <meta name="description" content="Changes Since Release 5.00">
+
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <link type="text/css" href="styles.css" rel="stylesheet">
+
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <script type="text/javascript" src="nsh.js"></script>
+
+
+
+<script type="text/javascript">   
+
+// Toggle Toggler 
+
+
+
+var toggleCount=false;
+
+var switchState;
+
+
+
+function toggleToggles() {
+
+
+
+    if (!toggleCount) {
+
+     toggleCount = true;
+
+     HMToggleExpandAll(true);
+
+     switchState = true;
+
+     }
+
+   
+
+     else if (switchState) {
+
+        HMToggleExpandAll(false);
+
+        switchState = false;
+
+        }
+
+        
+
+     else  {
+
+        HMToggleExpandAll(true);
+
+        switchState = true;
+
+        } 
+
+    }
+
+</script>
+
+   
+
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+
+<style type="text/css" media="screen"> 
+
+html, body { margin:0; 
+
+   padding:0; 
+
+   overflow: hidden; 
+
+   background: #FFFFFF; 
+
+  }
+
+ 
+
+div#printheader { 
+
+   display: none;
+
+   padding-bottom: 10px;
+
+   }
+
+   #idheader { 
+
+      width:100%; 
+
+      height:auto; 
+
+      padding: 0; 
+
+      margin: 0; 
+
+} 
+
+    #idheaderbg  {
+
+    background: #6F6F6F; 
+
+}
+
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+
+   #callout-table a {text-decoration: none; color: blue;}
+
+   #callout-table a:visited {text-decoration: none; color: blue;}
+
+   #overview-table a {text-decoration: none; color: black;}
+
+   #overview-table a:visited {text-decoration: none; color: black;}
+
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+
+   </style>
+
+<!--[if lt IE 7]>
+
+<style type="text/css">
+
+  #idcontent {padding: 0px;} 
+
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+
+</style> 
+
+<![endif]-->
+
+<noscript>
+
+<style type="text/css">
+
+html, body { overflow: auto; }
+
+</style> 
+
+</noscript>
+
+<style type="text/css" media="print">
+
+span.f_Heading1 { color: black; }
+
+#idheader, #printheader img { display:none; }
+
+#printheader { display: block; margin-top: 20px; }
+
+#idcontent { margin-top: 10px; }
+
+</style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+
+   <script type="text/javascript" src="helpman_settings.js"></script>
+
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+
+
+   <script type="text/javascript">
+
+     HMSyncTOC("index.html", "whatsnew_since500.htm");
+
+   </script>
+
+   <script type="text/javascript" src="highlight.js"></script>
+
+   <script type="text/javascript">
+
+     $(document).ready(function(){highlight();});
+
+   </script>
+
+</head>
+
+<body>
+
+<!--ZOOMSTOP-->
+
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Changes Since Release 5.00</span></h1>
+
+</div> 
+
+<div id="idheader">
+
+<div id="idheaderbg">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+
+
+  <tr valign="bottom">
+
+    <td align="left" valign="bottom" class="topichead">
+
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+
+   
+
+   <a href="whatsnew.htm">What's New</a>&nbsp;&gt;</p>
+
+   <h1 class="p_Heading1"><span class="f_Heading1">Changes Since Release 5.00</span></h1>
+
+
+
+    </td>
+
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+
+    
+
+     <a href="whatsnew_v4users_reusework.htm"
+
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+
+        ></a><a href="whatsnew.htm"
+
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+
+        ></a><a href="whatsnew_sampledocs.htm"
+
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+
+        ></a>
+
+    </td>
+
+  </tr>
+
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+
+</table>
+
+</div>
+
+
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+
+  
+
+
+
+</div>  
+
+
+
+
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+
+<!--ZOOMRESTART-->
+
+<p class="p_BodyText"><span class="f_BodyText">Several new features have been added to Sketchpad Version 5 since its initial release. The most important new features are described below. Each time you update to the latest version of Sketchpad, look at this page to see what new features are available.</span></p>
+
+<p class="p_BodyText"><span class="f_BodyText">A more detailed list of changes from one version of Sketchpad to another, including minor improvements and bug fixes, is available on the Web at <a href="http://www.keypress.com/sketchpad/produpdates.html" target="_top" class="weblink">http://www.keypress.com/sketchpad/produpdates.html.</a></span></p>
+
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+
+<p style="margin: 14px 0px 0px 0px;"><span style="font-size: 16px; font-weight: bold;">Sketchpad 5.05 (July 2012)</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">The new </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_file.htm" class="topiclink">File</a> | <a href="menus_file_open_sketchexchange.htm" class="topiclink">Sketchpad Sketch Exchange</a></span><span class="f_BodyText"> command provides direct access to collections of sketches from <a href="http://sketchexchange.keypress.com/" target="_blank" class="weblink" title="http://sketchexchange.keypress.com/">Sketchpad Sketch Exchange™</a>.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">Status line messages (in the lower corner of the window) are now more relevant and informative.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">Sketchpad is now compatible with Mac OS X Mountain Lion.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">Sketchpad is now code-signed for Windows Authenticode and Macintosh Gatekeeper verification.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">This release also incorporates various bug fixes.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">&nbsp;</span></p>
+
+<p style="margin: 14px 0px 0px 0px;"><span style="font-size: 16px; font-weight: bold;">Sketchpad 5.04 (December 2011)</span></p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="font-weight: bold;"><a href="objects_parameters.htm" class="topiclink">Parameters</a>:</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">You can flick or drag parameters up or down to change their values.</span></p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="font-weight: bold;"><a href="tools_marker.htm" class="topiclink">Marker Tool</a>: </span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">To erase ink while creating a drawing, hold the <a href="shortcuts_specialkeys.htm" class="topiclink">Shift</a> key and move over the ink you want to erase. To help identify what ink is erasable, a purple rectangle indicates the bounds of the current ink session, and everything else in the rectangle appears faded. You cannot erase ink that has already been turned into a drawing.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">To erase when using a SMART Board, you can also use the eraser (or your open hand with a board that can recognize hand gestures) with no need to hold the Shift key. </span></p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="font-weight: bold;">SMART Board support:</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">You can use SMART Board pen colors with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_marker.htm" class="topiclink">Marker</a></span><span class="f_BodyText"> tool, and <a href="drag_objects.htm" class="topiclink">drag multiple objects</a> independently on multi-touch-capable boards.</span></p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="font-weight: bold;">Sketchpad Explorer:</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">Use <a href="http://itunes.apple.com/us/app/sketchpad-explorer/id452811793?ls=1&amp;mt=8" target="_blank" class="weblink">Sketchpad Explorer</a> to view and manipulate any Sketchpad document on the iPad. Sketchpad Explorer is available from the App store.</span></p>
+
+<p style="margin: 19px 0px 0px 24px;">This release also incorporates various bug fixes and performance improvements.</p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+
+<p style="margin: 14px 0px 0px 0px;"><span style="font-size: 16px; font-weight: bold;">Sketchpad 5.03 (December 2010)</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">This release improves stability and performance.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">&nbsp;</span></p>
+
+<p style="margin: 14px 0px 0px 0px;"><span style="font-size: 16px; font-weight: bold;">Sketchpad 5.02 (October 2010)</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">This release provides improved license support for various registration and installation scenarios.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">&nbsp;</span></p>
+
+<p style="margin: 14px 0px 0px 0px;"><span style="font-size: 16px; font-weight: bold;">Sketchpad 5.01 (May 2010)</span></p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="font-weight: bold;"><a href="shortcuts_specialkeys.htm" class="topiclink">Special keys:</a></span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">While editing a parameter's value in an edit frame, press Tab to advance to the next editable parameter value.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">With no object selected, press Tab to select a visible object.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">With one or more &nbsp;objects selected, press Tab to select a visible object similar to the most recently selected object.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">With one or more objects selected, press Shift+Tab to add a similar object to the selection.</span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">With a single selected action button, press Enter to activate the button. Press Enter a second time to stop the action.</span></p>
+
+<p style="margin: 19px 0px 0px 24px;"><span style="font-weight: bold;"><a href="hot_text.htm" class="topiclink">Hot Text:</a></span></p>
+
+<p class="p_BodyText" style="margin: 7px 0px 0px 48px;"><span class="f_BodyText">You can insert an icon of a picture into a Hot Text caption.</span></p>
+
+<p>&nbsp;</p>
+
+<p style="margin: 7px 0px 0px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+
+
+
+<!--ZOOMSTOP-->
+
+</div></div>
+
+<script type="text/javascript">
+
+
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+
+{
+
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+
+    else nsrInit();
+
+ } 
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

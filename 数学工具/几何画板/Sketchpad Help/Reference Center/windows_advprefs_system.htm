@@ -1,0 +1,189 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Advanced Preferences &gt; System Preferences</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Advanced Preferences,Advanced Preferences System,System Preferences,Preferences,Preferences System (Advanced),Accelerated Graphics,Animation,Animation default speed,Screen Resolution,Resolution of the Screen,Graphics Acceleration,Color Submenu,Color Submenu editing the colors,Display,Display Color,Preferences,Preferences resetting">
+   <meta name="description" content="System Preferences">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_advprefs_system.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">System Preferences</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_advprefs.htm">Advanced Preferences</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">System Preferences</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_advprefs_sampling.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_advprefs.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_advprefs_editclrwin.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_Centered_Large"><img src="win_advpref_winsys_zoom75.png" width="260" height="224" alt="" style="border:none" /><span class="f_Image_Centered_Large">  </span><img src="win_advpref_macsys_zoom65.png" width="277" height="229" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Hold the Shift key, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_preferences_adv.htm" class="topiclink">Edit | Advanced Preferences</a>,</span><span class="f_BodyText"> and click the </span><span class="f_BodyText">System</span><span class="f_BodyText"> tab to </span><span class="f_BodyText">open this panel. </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Holding the Shift key changes the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_preferences.htm" class="topiclink">Preferences</a></span><span class="f_MarginNote"> command to </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_preferences_adv.htm" class="topiclink">Advanced Preferences</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The settings on this panel correlate Sketchpad’s behavior with your particular computer, allow you to edit Sketchpad’s <a href="menus_display_color.htm" class="topiclink">color</a> menu, and allow you to change all <a href="menus_edit_preferences.htm" class="topiclink">preferences</a> back to their original values.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Ideal medium speed:</span><span class="f_BodyText_Indented"> This value sets the approximate speed represented by a value of 1.0 in the <a href="windows_motctrl.htm" class="topiclink">Motion Controller</a>, or “medium” speed for a <a href="objects_btns_moveprops.htm" class="topiclink">Movement button</a>. You should modify the speed only if your computer is consistently too fast or too slow for your tastes when animating objects at a speed of 1.0 in the Motion Controller.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">This value is “ideal” in the sense that Sketchpad attempts to reach it. If you’re animating a particularly complex sketch or have a slower computer, animations may be slower than this.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Screen resolution:</span><span class="f_BodyText_Indented"> This value sets the correspondence between the pixels on your computer screen and real-world length units. The normal value is 96 pixels/inch (37.795 pix/cm) for Windows computers and 72 pixels/inch (28.346 pix/cm) for Macintosh. You should modify this value only if it’s absolutely necessary that on-screen distances match Sketchpad’s measured distances. Changing this value may result in discrepancies when you paste Sketchpad pictures into other applications, which assume your screen resolution is fixed at 96 or 72 pixels/inch.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Graphics acceleration:</span><span class="f_BodyText_Indented"> (This option may not available on some older computers). This setting determines the speed of the graphics displayed in your sketches. When it’s enabled, Sketchpads uses available graphics software and hardware to optimize the speed of drawing on the screen.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If some objects are drawn incorrectly, try turning graphics acceleration off. If doing so eliminates the problem, first try to solve the problem by updating your computer’s graphics software and/or firmware. If that fails, leave graphics acceleration turned off.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Language override for GSP3/GSP4 documents:</span><span class="f_BodyText_Indented"> If a Sketchpad 3 or Sketchpad 4 document was created in a different language, text may not appear correctly in Sketchpad 5, because older documents contain no information about the language in which they were created. (If Sketchpad is able to detect this situation, a <a href="adv_text_lossy.htm" class="topiclink">dialog box</a> appears describing the problem.) To preserve the original text when you open such a document, use this pop-up menu to set the appropriate language override. Remember to set it back to your normal language when you’re finished.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Edit Color Menu:</span><span class="f_BodyText_Indented"> This button displays either the <a href="windows_advprefs_editclrmac.htm" class="topiclink">Macintosh Color Picker</a> or the Windows <a href="windows_advprefs_editclrwin.htm" class="topiclink">Edit Color Menu</a> dialog box. These dialog boxes allow you to change the colors in the <a href="menus_display_color.htm" class="topiclink">Color</a> menu. Use this feature to add your favorite shades of magenta, teal, or chartreuse. If you create a sketch with a dark or black background, you may want to add white to the Color menu.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented" style="font-weight: bold;">Reset All Preferences:</span><span class="f_BodyText_Indented"> This button allows you to reset all Sketchpad preferences to their original values. Use it with care: you’ll lose all the preferences values you’ve set in any other way.</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl.htm" class="topiclink">Motion Controller</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_edit_btns_animation.htm" class="topiclink">Animation Button</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_edit_btns_movement.htm" class="topiclink">Movement Button</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_display_color.htm" class="topiclink">Color</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_colorpicker.htm" class="topiclink">Color Picker</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_advprefs_editclrwin.htm" class="topiclink">Edit the Color Menu in Windows</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_advprefs_editclrmac.htm" class="topiclink">Edit the Color Menu on Macintosh</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

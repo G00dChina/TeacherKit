@@ -1,0 +1,75 @@
+字号 20
+类名 11sfktLinex11474984
+属性  133 317 100  64F
+可见 F
+控位    0   0  93  57  46  57
+结束
+类名 11sfktLinex48730018
+属性  224 174  99 150F
+可见 T
+控位   90 143   0   0  90  71
+结束
+类名  0sfktBegin1
+属性  176  37 100  45F
+结束
+类名 10sfktEnd1
+属性  179 438 100  51F
+结束
+类名  2sfktchuli21054727
+属性  158 177 136  99F
+可见 T
+方向 1
+内容      i=i+1※     S=S+i
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs40      \i i\i0 =\i i\i0 +1
+\par      \i S\i0 =\i S\i0 +\i i
+\par }
+
+结束
+类名  3sfktPanduan35576388
+属性  136 276 180  80F
+是否 13
+可见 T
+方向 1
+内容  i=10
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs40  \i i\i0 =10
+\par }
+
+结束
+类名  4sfktshuru75102204
+属性  139 376 180  64F
+可见 T
+方向 1
+内容   "S=" ; S
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs40   "\i S\i0 =" ; \i S
+\par }
+
+结束
+类名  2sfktchuli98005652
+属性  164  81 125  96F
+可见 T
+方向 1
+内容       i=0※      S=0
+显示
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs40       \i i\i0 =0
+\par       \i S\i0 =0
+\par }
+
+结束
+完成
+i S\i0 =0
+\par }
+
+结束
+完成
+i S\i0 =0
+\par }
+
+结束
+完成

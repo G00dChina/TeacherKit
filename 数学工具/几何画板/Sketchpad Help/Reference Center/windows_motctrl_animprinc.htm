@@ -1,0 +1,320 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Motion Controller &gt; Principles of Animation</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Motion Controller,Animation,Animation animating an independent point,Animation animating a point on a path,Animation animating a parameter,Animation direction of motion,Animation speed of motion">
+   <meta name="description" content="Principles of Animation">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_motctrl_animprinc.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Principles of Animation</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a> &gt; <a href="windows_motctrl.htm">Motion Controller</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Principles of Animation</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="windows_motctrl_using.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows_motctrl.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_txtpal.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Just about every object you can create in Sketchpad can be animated. To animate an object, you can choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_animate.htm" class="topiclink">Display | Animate</a>,</span><span class="f_BodyText"> use the <a href="windows_motctrl.htm" class="topiclink">Motion Controller</a>, or create an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation action button</a>. Of these three methods, action buttons give you the most control of the details of motion.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The only objects you can’t animate are captions, calculations, functions, action buttons, measurements, and pictures. (Except for action buttons, each of these objects can be <a href="menus_edit_splitmerge.htm" class="topiclink">attached</a> to a point, and the point can be animated.)</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can also move an object automatically by creating a <a href="menus_edit_btns_movement.htm" class="topiclink">Movement action button</a>.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">How Objects Move</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Different objects in Sketchpad move in different ways.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">An independent <a href="objects_points.htm" class="topiclink">point</a> moves randomly on the plane.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">A <a href="menus_construct_pointonobj.htm" class="topiclink">point on path</a> moves along its <a href="objects_cats_paths.htm" class="topiclink">path</a>. If the path is an interior (polygon, circle interior, or arc interior), the point moves along the perimeter of the interior.</span></p><p class="p_MarginNote"><span class="f_MarginNote">For open paths (straight objects, arcs, and some point loci) default direction is bidirectional. For circles and circle interiors, it’s counter-clockwise, and for other closed paths it’s forward (based on the order of the parent objects). You can change the direction using the Motion Controller or the properties of the Animation button.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">A <a href="objects_parameters.htm" class="topiclink">parameter</a> changes its value.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Any other object moves by moving its <a href="objects_attrib_relations.htm" class="topiclink">parent objects</a>.</span></p><p class="p_Image_FlushRight_Narrative"><img src="animate_example_tri_zoom75.png" width="155" height="119" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">If you animate this triangle interior, it moves its parent objects (vertices</span><span class="f_BodyText" style="font-style: italic;"> A, B,</span><span class="f_BodyText"> and </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText">). Vertex </span><span class="f_BodyText" style="font-style: italic;">A</span><span class="f_BodyText"> (an independent point) moves randomly on the plane, vertex </span><span class="f_BodyText" style="font-style: italic;">B</span><span class="f_BodyText"> (a point on a segment) moves bidirectionally along its path, and point </span><span class="f_BodyText" style="font-style: italic;">C</span><span class="f_BodyText"> (an intersection) moves the intersecting segments, which in turn move their endpoints. Thus your ability to animate any geometric object is ultimately based on animating independent points and points constructed on paths. All other objects are animated indirectly — by animating their parents.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Except for parameters, non-geometric objects (action buttons, measurements, calculations, functions, and captions) cannot be animated (unless they are <a href="menus_edit_splitmerge.htm" class="topiclink">merged</a> to a point). A parameter is like an independent point in the sense that its value, like the position of an independent point, does not depend on other objects. Sketchpad animates a parameter by changing its value.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Because independent points, points on paths, and parameters are the only objects that can be animated independently of their parents, these are the only objects that Sketchpad directly animates, and they are normally the only objects that appear in the Motion Controller’s </span><span class="f_BodyText" style="font-style: italic;"><a href="windows_motctrl_parts.htm" class="topiclink">Target</a></span><span class="f_BodyText"> pop-up menu. </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Other objects can be listed as the Motion Controller target if they are selected. For example, if you select the interior of </span><img src="triangle.png" width="11" height="10" alt="" style="border:none" /><span class="f_MarginNote" style="font-style: italic;">ABC,</span><span class="f_MarginNote"> the triangle will be listed as the target. Even though the triangle is listed as the target, any motion changes you make will directly affect points </span><span class="f_MarginNote" style="font-style: italic;">A, B,</span><span class="f_MarginNote"> and </span><span class="f_MarginNote" style="font-style: italic;">C</span><span class="f_MarginNote"> and will affect the triangle indirectly.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Animation of an Independent Point</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">An independent point is animated by moving it randomly on the plane. The animation speed determines how far it’s likely to move in each random step. You cannot control the direction for an independent point. To specify the starting animation speed explicitly or to make the motion occur one time only, create an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a> and use the <a href="objects_btns_animateprops.htm" class="topiclink">Animate Properties</a> panel.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote"><a href="menus_edit_splitmerge.htm" class="topiclink">Merge</a> the independent point to a <a href="objects_cats_paths.htm" class="topiclink">path</a> if you want it to move in a specific direction.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Animation of a Point on Path</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">A point on path is animated by moving along its path. If the path is closed (for example, a circle, a polygon, an arc sector, or an arc segment) the animation proceeds around and around the path. If the path is a segment or an arc, the animation proceeds bidirectionally — back and forth along the path. If the path is infinite, as with a line or a ray, Sketchpad animates the point bidirectionally and tries to use the portion of the path that’s visible in the window. To specify the direction or speed explicitly or to make the point travel its path only once, create an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a> and use the <a href="objects_btns_animateprops.htm" class="topiclink">Animate Properties</a> panel.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">To designate a specific portion of a line or ray as the domain for an animating point, construct a segment collinear with the line or ray and <a href="menus_edit_splitmerge.htm" class="topiclink">merge</a> the point to the segment.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Animation of a Parameter</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">A <a href="objects_parameters.htm" class="topiclink">parameter</a> is animated by changing its value within its domain. The default domain, direction, and speed of a parameter’s variation depends on the units of the parameter, as shown in this table.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The speed listed here is a maximum. A parameter may change more slowly if your computer is busy with many tasks.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="margin:0 auto; border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Units</span></p>
+</td>
+<td style="vertical-align:top; width:116px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Domain</span></p>
+</td>
+<td style="vertical-align:top; width:89px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Direction</span></p>
+</td>
+<td style="vertical-align:top; width:101px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic; font-weight: bold;">Speed</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">None</span></p>
+</td>
+<td style="vertical-align:top; width:116px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">–100 to 100 units</span></p>
+</td>
+<td style="vertical-align:top; width:89px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Bidirectional</span></p>
+</td>
+<td style="vertical-align:top; width:101px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">1 unit/sec</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Degrees</span></p>
+</td>
+<td style="vertical-align:top; width:116px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">0° to 360°</span></p>
+</td>
+<td style="vertical-align:top; width:89px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Increasing</span></p>
+</td>
+<td style="vertical-align:top; width:101px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">45°/sec</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Radians</span></p>
+</td>
+<td style="vertical-align:top; width:116px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">0 to 2π</span></p>
+</td>
+<td style="vertical-align:top; width:89px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Increasing</span></p>
+</td>
+<td style="vertical-align:top; width:101px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-style: italic;">π</span><span class="f_BodyText">/4 radians/sec</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Inches</span></p>
+</td>
+<td style="vertical-align:top; width:116px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">0 to 100 inches</span></p>
+</td>
+<td style="vertical-align:top; width:89px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Bidirectional</span></p>
+</td>
+<td style="vertical-align:top; width:101px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">1 inch/sec</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:81px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">cm</span></p>
+</td>
+<td style="vertical-align:top; width:116px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">0 to 100 cm</span></p>
+</td>
+<td style="vertical-align:top; width:89px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Bidirectional</span></p>
+</td>
+<td style="vertical-align:top; width:101px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">1 cm/sec</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To specify the direction, domain, or speed explicitly, choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="objects_parameters_props.htm" class="topiclink">Edit | Properties | Parameter</a> </span><span class="f_BodyText">or create an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a> and use <a href="objects_btns_animateprops.htm" class="topiclink">Animate Properties</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Motion Direction</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">The possible directions in which you can animate an object depends on the kind of object. When you start an animation using </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_animate.htm" class="topiclink">Animate</a></span><span class="f_BodyText"> or the <a href="windows_motctrl.htm" class="topiclink">Motion Controller</a>, Sketchpad uses the most common direction for the objects you animate. To access more advanced direction choices, create an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a>.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">A point on a path can move forward, backward, bidirectionally, or randomly. (If the path is a circle, the choices are counter-clockwise and clockwise instead of forward and backward.) If you specify random motion on a path, each time the point is moved it’s given a brand-new random position somewhere on the path.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">An independent point always moves randomly. Each time it moves, its new position depends both on its previous position and on its location within the window. A point moving slowly takes only small steps from its previous position, whereas a point moving quickly takes larger steps. If the point is near an edge of the window or outside the window, it’s more likely to move toward the center of the window than away from it. In this way,randomly moving independent points usually remain visible.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">A parameter has a domain within which it is animated and can increase in value, decrease in value, change bidirectionally, or change randomly within that domain. To set the default domain for a parameter, use the <a href="objects_parameters_props.htm" class="topiclink">Parameter Properties</a> panel. To set a parameter’s domain and direction for an Animation button, use the <a href="objects_btns_animateprops.htm" class="topiclink">Animate Properties</a> panel. </span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Motion Speed</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Use the <a href="windows_motctrl.htm" class="topiclink">Motion Controller,</a> the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_incdecspeed.htm" class="topiclink">Increase/Decrease Speed</a></span><span class="f_BodyText"> commands, or an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a> to set the speed of an animating object relative to the medium speed for that object.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can set the ideal medium speed for points using <a href="windows_advprefs_system.htm" class="topiclink">System Preferences</a>.The actual motion speed depends both on this setting and on your computer. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">The Motion Controller displays medium speed as speed 1.0. Sketchpad attempts to keep this speed constant, but if your sketch is complex or your computer is busy with other tasks, medium speed may be slightly slower than requested in System Preferences.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Once-Only Motion</a></span></td></tr></table></div><div id="TOGGLE0186A7" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When you create an <a href="menus_edit_btns_animation.htm" class="topiclink">Animation button</a>, you can specify that an object moves one time only. If the object is moving randomly, this means that one press of the button causes the object to move one time to a new random position. If the object is not moving randomly, once-only motion means that the object will stop once it returns to its starting position.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_using.htm" class="topiclink">Using the Motion Controller</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_parts.htm" class="topiclink">Parts of the Motion Controller</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

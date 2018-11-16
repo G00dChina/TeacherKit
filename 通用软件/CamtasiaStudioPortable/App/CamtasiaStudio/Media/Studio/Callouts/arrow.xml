@@ -1,0 +1,81 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>arrow.png</Overlay_Filename>
+<Overlay_Name>箭头</Overlay_Name>
+<Overlay_XGrow>100</Overlay_XGrow>
+<Overlay_YGrow>100</Overlay_YGrow>
+<Text_Top>80</Text_Top>
+<Text_Left>15</Text_Left>
+<Text_Bottom>80</Text_Bottom>
+<Text_Right>75</Text_Right>
+<Vector_Grow>0</Vector_Grow>
+<CanRotate_90>1</CanRotate_90>
+<CanRotate_180>1</CanRotate_180>
+<CanRotate_270>1</CanRotate_270>
+<CanFlip_X>0</CanFlip_X>
+<CanFlip_X90>0</CanFlip_X90>
+<CanFlip_X180>0</CanFlip_X180>
+<CanFlip_X270>0</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe2b38d</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+  <figure>
+    <svg>M8,68 180,68 180,8 339,125 180,244 180,183 8,183z</svg>
+  </figure>
+  <borderWidth>11.00</borderWidth>
+  <seamY>125.00</seamY>
+  <textBoundaries>P0 P0 I0:1:2:3 P6</textBoundaries>
+  <reshapers>
+    <reshapers_Object>
+      <pointIndex>1</pointIndex>
+      <constrainLeftA>0.00</constrainLeftA>
+      <constrainLeftB>8.00</constrainLeftB>
+      <constrainTopA>0.00</constrainTopA>
+      <constrainTopB>8.00</constrainTopB>
+      <constrainRightA>1.00</constrainRightA>
+      <constrainRightB>-25.00</constrainRightB>
+      <constrainBottomA>0.50</constrainBottomA>
+      <constrainBottomB>-10.00</constrainBottomB>
+      <dependencies>
+        <dependencies_Object>
+          <pointIndex>0</pointIndex>
+          <axisX>0.00</axisX>
+          <axisY>1.00</axisY>
+        </dependencies_Object>
+        <dependencies_Object>
+          <pointIndex>2</pointIndex>
+          <axisX>1.00</axisX>
+          <axisY>0.00</axisY>
+        </dependencies_Object>
+        <dependencies_Object>
+          <pointIndex>4</pointIndex>
+          <axisX>1.00</axisX>
+          <axisY>0.00</axisY>
+        </dependencies_Object>
+        <dependencies_Object>
+          <pointIndex>5</pointIndex>
+          <axisX>1.00</axisX>
+          <axisY>0.00</axisY>
+        </dependencies_Object>
+        <dependencies_Object>
+          <pointIndex>5</pointIndex>
+          <axisX>0.00</axisX>
+          <axisY>-1.00</axisY>
+        </dependencies_Object>
+        <dependencies_Object>
+          <pointIndex>6</pointIndex>
+          <axisX>0.00</axisX>
+          <axisY>-1.00</axisY>
+        </dependencies_Object>
+      </dependencies>
+    </reshapers_Object>
+  </reshapers>
+  <shapeWidth>346</shapeWidth>
+  <shapeHeight>252</shapeHeight>
+</VectorProps>
+<Style>3</Style> 
+</Overlay>

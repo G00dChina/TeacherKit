@@ -1,0 +1,270 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Tools &gt; Text Tool</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Text Tool,Tools,Tools Text,Show or Hide a Label,Position or Change a Label,Create a Caption,Edit a Caption,Resize a Caption,Labels,Labels showing,Labels hiding,Labels positioning,Labels editing,Objects,Objects labelling,Captions,Captions resizing,Captions editing,Captions creating">
+   <meta name="description" content="Text Tool">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tools_text.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Text Tool</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="tools.htm">Tools</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Text Tool</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="tools_polygon.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="tools.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="tools_marker.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><img src="text_tool.png" width="40" height="40" alt="" style="border:none" /><span class="f_ImageCaption"> </span><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool to create, show, hide, and edit labels; to create, edit, and resize captions; and to change the text displayed with measurements, calculations, and parameters.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Text plays an important role in Sketchpad. <a href="objects_attrib_labels.htm" class="topiclink">Labels</a> allow you to communicate with others about specific objects in your sketch, and provide a correspondence between measurements and the objects they measure. <a href="objects_captions.htm" class="topiclink">Captions</a> allow you to identify and describe both your sketch as a whole and individual parts of your sketch. <a href="objects_measurements.htm" class="topiclink">Measurements</a>, <a href="objects_calculations.htm" class="topiclink">calculations</a>, <a href="objects_parameters.htm" class="topiclink">parameters</a> and <a href="objects_functions.htm" class="topiclink">functions</a> display important mathematical information in text form. The </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool allows you to show, hide, edit and reposition labels of objects, to edit captions, and to modify the text displayed with measurements, calculations, parameters, and functions.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool has five possible appearances when you move the mouse over the sketch. These appearances depend on what it’s pointing at and indicate the effect of using the tool.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:24px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="text_filled_hand.png" width="12" height="16" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:1000px; padding:5px; border:solid 1px #808080;"><div style="text-align: left; text-indent: 0px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSub-Subhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Show or Hide a Label</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p><span class="f_BodyText">When you point the </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool at an object that has a label to show or hide, the pointer appears as a filled hand.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Click to show the object’s label.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Click again to hide the object’s label.</span></p><p class="p_BodyText"><span class="f_BodyText">You can also show and hide labels using an object’s <a href="objects_attrib_labelprops.htm" class="topiclink">Label Properties</a> or by selecting one or more objects and choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_showhidelabel.htm" class="topiclink">Display | Show/Hide Labels</a></span><span class="f_BodyText">. And you can show and change labels for several objects at once by selecting them and choosing  </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_labelobjects.htm" class="topiclink">Display | Label Objects</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Sketchpad has a <a href="objects_attrib_labels.htm" class="topiclink">default labels</a> for each kind of object. For instance, the labels of points start with </span><span class="f_BodyText" style="font-style: italic;">A, B, </span><span class="f_BodyText">and</span><span class="f_BodyText" style="font-style: italic;"> C.</span></p>
+<p class="p_ExpandableNote"><img id="TOGGLE0186A2_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A2" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 24px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">Objects like points and circles can either show or not show a label. Some other objects — like action buttons or parameters — always show their label. And still other objects — like captions and pictures — never show a label.</span></p>
+<p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">By default, objects are labeled automatically when you measure them. (Use </span><span class="f_ExpandableNoteSection" style="font-weight: bold;"><a href="windows_prefs_text.htm" class="topiclink">Edit | Preferences | Text</a></span><span class="f_ExpandableNoteSection"> to turn off this feature.) You can also change Text Preferences so that all new points are labeled when they’re created.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:24px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="text_labeled_hand.png" width="12" height="16" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:1000px; padding:5px; border:solid 1px #808080;"><div style="text-align: left; text-indent: 0px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSub-Subhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Position or Change a Label</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When you point the </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool at an object’s label or at a measurement, parameter, calculation, or function, the tool appears as a labeled hand.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Double-click to change the label. (Double-clicking is the same as selecting the object and choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_labelobjects.htm" class="topiclink">Display | Label</a>.</span><span class="f_BodyText">)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Press and drag to reposition the label of an object.</span></p><p class="p_BodyText"><span class="f_BodyText">You can also change the font, size, style, and color of selected objects’ labels with the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a> or by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_text.htm" class="topiclink">Display | Text</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_labelobjects.htm" class="topiclink">Display | Label</a></span><span class="f_BodyText"> to change the labels of several selected objects at once.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:24px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="text_open_hand.png" width="12" height="16" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:1000px; padding:5px; border:solid 1px #808080;"><div style="text-align: left; text-indent: 0px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSub-Subhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Create a Caption</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p><span class="f_BodyText">When you point the </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool at an empty place in the sketch, the tool appears as an open hand.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Press and drag to create a new caption.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Begin typing your new caption.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">When you finish typing your caption, press the <a href="shortcuts.htm" class="topiclink">Esc</a> key or click anywhere outside the caption.</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:24px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="text_i_beam.png" width="11" height="16" alt="" style="border:none" /><span class="f_BodyText"> </span></p>
+</td>
+<td style="vertical-align:top; width:1000px; padding:5px; border:solid 1px #808080;"><div style="text-align: left; text-indent: 0px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSub-Subhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Edit a Caption</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When you point the </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool at a <a href="objects_captions.htm" class="topiclink">caption</a>, the tool appears as an I-beam.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Click to place an insertion point and begin editing the caption. While you're editing:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Use various <a href="caption-editing_keys.htm" class="topiclink">caption-editing keyboard shortcuts</a> to select text or move the insertion point.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Press and drag to select a block of text to format or replace.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Double-click to select the word under the cursor.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Double-click and drag to select text word by word.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Click an object in the sketch to insert the object’s label or value as <a href="objects_captions.htm" class="topiclink">Hot Text</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Drag the caption’s resize handle to resize the caption and reflow its contents.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Hold the Alt key (Windows) or Option key (Macintosh) while pressing one of the arrow keys to set the text alignment for the caption. Use the left arrow for left alignment, the right arrow for right alignment, and either the up or down arrow for centered alignment.</span></p><p class="p_BodyText"><span class="f_BodyText">When you create a caption, by default Sketchpad displays the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a>. You can change the font, size, style, or color of selected caption text by using this palette or by using text commands in the <a href="menus_display.htm" class="topiclink">Display</a> menu. The Text Palette also contains <a href="windows_txtpal_mathnotation.htm" class="topiclink">symbolic notation tools</a> for adding mathematical text to your caption. (You can turn off automatic display of the Text Palette using </span><span class="f_BodyText" style="font-weight: bold;"><a href="windows_prefs_text.htm" class="topiclink">Edit | Preferences | Text</a>, </span><span class="f_BodyText">and instead use </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_textpalette.htm" class="topiclink">Display | Show Text Palette</a></span><span class="f_BodyText"> to summon the Text Palette as needed.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To finish editing, press the <a href="shortcuts.htm" class="topiclink">Esc</a> key or click anywhere outside the caption.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:24px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText" style="text-align: center;"><img src="text_resize_arrow.png" width="11" height="20" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:1000px; padding:5px; border:solid 1px #808080;"><div style="text-align: left; text-indent: 0px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSub-Subhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Resize a Caption</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">When you point the </span><span class="f_BodyText" style="font-weight: bold;">Text</span><span class="f_BodyText"> tool at a <a href="objects_captions.htm" class="topiclink">caption’s</a> resize handle, the tool appears as an arrow. A caption’s resize handle is displayed at the lower-right corner of the caption whenever the caption is selected or being edited.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Press and drag the handle to resize the caption and reflow the text.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

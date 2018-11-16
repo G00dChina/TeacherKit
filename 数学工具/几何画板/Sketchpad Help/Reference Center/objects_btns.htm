@@ -1,0 +1,291 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Action Buttons</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Action Buttons,Action Buttons,Action Buttons keyboard shortcuts for,Action Buttons prerequisites for,Objects,Objects action buttons,Keyboard,Keyboard the Enter key">
+   <meta name="description" content="Action Buttons">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_btns.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Action Buttons</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Action Buttons</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_markers_props.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_btns_hideshowprops.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Action buttons are objects you create in your sketch that you can press to perform a variety of actions: hiding or showing objects, moving or animating objects, linking to a different page in your document or to a web site, scrolling the sketch window to a particular position, playing a sound, or making a presentation. Use action buttons to conveniently repeat frequent actions or to help explain the mathematics of your sketch to others.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Button Type and Properties</span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Command</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Prerequisites</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Action</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_hideshowprops.htm" class="topiclink">Hide/Show Buttons and Properties</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_hideshow.htm" class="topiclink">Hide/Show</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more objects</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Hide or show the selected objects</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_animateprops.htm" class="topiclink">Animation Buttons and Properties</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_animation.htm" class="topiclink">Animation</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more geometric objects or parameters</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Animate the selected objects</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_moveprops.htm" class="topiclink">Movement Buttons and Properties</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_movement.htm" class="topiclink">Movement</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more pairs of points or values. The first object of each pair must be free to move or vary. (In other words, the first object can be a point that's free to move or a parameter.)</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Move or vary the first object of each pair toward the second object of the pair</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_presentprops.htm" class="topiclink">Presentation Buttons and Properties</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_present.htm" class="topiclink">Presentation</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more action buttons</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Present the action buttons simultaneously or sequentially</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="sound_buttons.htm" class="topiclink">Sound Buttons</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_sound.htm" class="topiclink">Sound</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or two functions</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Make a sound defined by the function(s)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_linkprops.htm" class="topiclink">Link Buttons and Properties</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_link.htm" class="topiclink">Link</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">None</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Link to another page, another sketch, or a location on the Internet</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:124px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_scrollprops.htm" class="topiclink">Scroll Buttons and Properties</a></span></p>
+</td>
+<td style="vertical-align:top; width:77px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText"><a href="menus_edit_btns_scroll.htm" class="topiclink">Scroll</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One point</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Scroll the window based on the location of the point</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Using Action Buttons</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">To create an action button, choose a command from the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns.htm" class="topiclink">Edit | Action Buttons</a></span><span class="f_BodyText"> submenu. Once you’ve created an action button, you can do several things with it.</span></p>
+<p class="p_Image_FlushRight_Narrative"><img src="handle-body.png" width="97" height="64" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Start the button’s action by pressing the button body (not the handle) with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool. (If a button stays down after you press it, this indicates that its action is still continuing. Click the button a second time to stop its action.)</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Start the button’s action by selecting it and pressing the Enter key. Press Enter a second time to stop its action.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Select the button by clicking the handle (not the body) with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool. Once the button is selected, you can hide it, <a href="menus_edit_clear.htm" class="topiclink">clear</a> it, and perform other actions on it.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Change the button’s font, size, style, and color by first clicking the handle to select it and then using the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a>.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Move the button to a different position by using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool to drag the button’s handle.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Change the button’s label by double-clicking it with the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_text.htm" class="topiclink">Text</a></span><span class="f_BodyText"> tool.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Change the button’s properties by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a></span><span class="f_BodyText"> or by choosing </span><span class="f_BodyText" style="font-weight: bold;">Properties</span><span class="f_BodyText"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Action Button Keyboard Shortcuts</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can create a keyboard shortcut for an action button, so that it performs its action when you press a key on the keyboard. In the button’s label, insert an ampersand symbol (&amp;) before the letter that you want to use as the shortcut. That letter will then be underlined to indicate the keyboard shortcut. For example if you label an animation button </span><span class="f_BodyText" style="font-style: italic;">Animate &amp;Point,</span><span class="f_BodyText"> the </span><span class="f_BodyText" style="font-style: italic; text-decoration: underline;">P</span><span class="f_BodyText"> will be underlined, so that the button appears as </span><span class="f_BodyText" style="font-style: italic;">Animate </span><span class="f_BodyText" style="font-style: italic; text-decoration: underline;">P</span><span class="f_BodyText" style="font-style: italic;">oint</span><span class="f_BodyText">. On the keyboard, </span><span class="f_BodyText" style="font-style: italic;">P</span><span class="f_BodyText"> will be the shortcut key.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To perform the button’s action, press the shortcut key on your keyboard. To stop the action, press the shortcut key a second time.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The keyboard shortcut works only when the action button is visible. </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If several action buttons have the same keyboard shortcut, then pressing the key starts all of their actions. </span></p>
+<p class="p_ExpandableNote"><img id="TOGGLE0186A3_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A3" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 24px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_MarginNote" style="margin: 3px 24px 0px 8px;"><span class="f_MarginNote">Keyboard shortcuts are not case-sensitive unless there are separate buttons with uppercase and lowercase shortcuts for the same letter. For instance, if a sketch has a single button labeled </span><span class="f_MarginNote" style="font-style: italic;">Animate </span><span class="f_MarginNote" style="font-style: italic; text-decoration: underline;">P</span><span class="f_MarginNote" style="font-style: italic;">oint,</span><span class="f_MarginNote"> you can start the action by pressing either “P” or “p.” If a sketch has buttons labeled </span><span class="f_MarginNote" style="font-style: italic;">Animate </span><span class="f_MarginNote" style="font-style: italic; text-decoration: underline;">P</span><span class="f_MarginNote" style="font-style: italic;">oint</span><span class="f_MarginNote"> and </span><span class="f_MarginNote" style="font-style: italic;">Hide all </span><span class="f_MarginNote" style="font-style: italic; text-decoration: underline;">p</span><span class="f_MarginNote" style="font-style: italic;">oints,</span><span class="f_MarginNote"> pressing “P” activates the former, and pressing “p” activates the latter.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

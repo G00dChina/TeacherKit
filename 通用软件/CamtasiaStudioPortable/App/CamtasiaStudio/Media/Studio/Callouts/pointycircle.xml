@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>pointycircle.png</Overlay_Filename>
+<Overlay_Name>尖圆</Overlay_Name>
+<Text_Top>45</Text_Top>
+<Text_Left>45</Text_Left>
+<Text_Bottom>40</Text_Bottom>
+<Text_Right>40</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+<figure>
+  <svg>
+     M 128,0
+     c 70,0,128,57,128,128
+     L 256 256
+     L 128 256
+     C 57,256,0,198,0,128
+     C 0,57,57,0,128,0
+     z
+   </svg>
+</figure>
+<borderWidth>5.00</borderWidth>
+<seamY>-1</seamY>
+<shapeWidth>256</shapeWidth>
+<shapeHeight>256</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

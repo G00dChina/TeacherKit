@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.share.localnetwork.nls.feature"
+      label="Sharing Support For Local Network Native Language Support"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      Sharing Support For Local Network Native Language Support
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2015, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.sharing.localnetwork.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.ui.sharing.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="macosx"/>
+   <plugin id="org.xmind.ui.sharing.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false" os="win32"/>
+   <plugin id="org.xmind.core.command.remote.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.command.remote.lan.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+
+</feature>

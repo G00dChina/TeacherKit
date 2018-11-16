@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="etongmani" component="et" name="rainbow">
+	<style name="2013"/>
+	<theme path="themes/ongmaniet.kuip"/>
+	<attributes path="attributes.kuip"/>
+	<import path="common.kuip"/>
+	<import path="etcommon.kuip"/>
+	<tips path="tips/ettips.kuip"/>
+	<mainwindow tc="mainwindow" caption="@Spreadsheets" frameless="1">
+		<commands tc="commands">
+			<KWindowTitleBarButtonCommand visible="0" id="Worksheet Menu Bar">
+				<command idQ="FileMenu"/>
+				<command idQ="EditMenu"/>
+				<command idQ="ViewMenu"/>
+				<command idQ="InsertMenu"/>
+				<command idQ="FormatMenu"/>
+				<command idQ="ToolsMenu"/>
+				<command idQ="DataMenu"/>
+				<command idQ="ChartMenu"/>
+				<command idQ="WindowMenu"/>
+				<command idQ="HelpMenu"/>
+			</KWindowTitleBarButtonCommand>
+			<KWindowTitleButtonGroupCommand id="sysbuttongroup">
+				<KTitleGroupSeperatorCommand space="7"/>
+				<KRbLogicGroupVisibleToggleCommand iconStick="iconStick;iconStick-hover;iconStick-down" bOnTitleGroup="1" icon="iconHide;iconHide-hover;iconHide-down;iconHide-disable" iconHide="iconHide;iconHide-hover;iconHide-down;iconHide-disable" textExtent="@Show Toolbar" textStick="@Pin the Toolbar" text="@Show/Hide Toolbar" iconExtent="iconExtent;iconExtent-hover;iconExtent-down;iconExtent-disable" qtspyName="iconHide;iconHide-hover;iconHide-down;iconHide-disable" textHide="@Hide Toolbar"/>
+				<KTitleGroupSeperatorCommand space="7"/>
+				<KMinButtonCommand icon="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable" text="@Minimize Window" qtspyName="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KMaxButtonCommand customTip2="@Restore Window" icon="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" customTip="@Maximize Window" text="@Maximize Window" iconMax="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" iconRestore="TitleRestoreButton;TitleRestoreButton-hover;TitleRestoreButton-down;TitleRestoreButton-disable" qtspyName="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KCloseButtonCommand icon="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable" text="@Close Window" qtspyName="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable"/>
+			</KWindowTitleButtonGroupCommand>
+			<kxKOSUserLoginQuiteMenuCommand hotKey="T" ksoCmd="KOSUserLoginQuiteMenuCmd" filter="support:WPSCloudLogin=true;support:EnableAccount=true" id="KOSUserLoginQuiteMenuCmd" text="@Sign in" rbHotKey="T"/>
+			<kxKOSUserGiftMenuCommand id="kxKOSUserGiftMenuCmd"/>
+			<KUserCenterCommand id="userCenterCmd" giftCommand="kxKOSUserGiftMenuCmd"/>
+			<kxKOSRechargeCommand hotKey="R" ksoCmd="KOSRechargeCmd" icon="OS_Recharge" id="KOSRechargeCmd" text="@Recharge" rbHotKey="R"/>
+			<kxKOSLogoutCommand hotKey="X" ksoCmd="KOSLogoutCommand" icon="OS_Login" id="KOSLogoutCommand" customTip="KOSLogoutTip" text="@Sign out" rbHotKey="X"/>
+			<KUserCenterMenuCommand id="UserCenterMenuCmd">
+				<KxOpenPersonalCenterCommand icon="OS_ViewUserInfo" id="OpenPersonalCenterCmd" text="@Personal Center"/>
+				<command idQ="KOSLogoutCommand"/>
+			</KUserCenterMenuCommand>
+			<KxKsoHomepageCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000022" visible="true" icon="wpshome;wpshome-hover;wpshome-down" id="HomepagePlugin" text="@Online Templates"/>
+			<KWpsPackageCommand hotKey="P" ksoCmd="KWpsPackagePlugin" icon="WpsPackage" id="KWpsPackagePlugin" text="@WpsPackagePlugin"/>
+			<KxMinisiteCommand hotKey="M" ksoCmd="MinisitePlugin" aid="40040" icon="minisite;minisite-hover;minisite-down" id="MinisitePlugin" text="@Minisite"/>
+			<KWhatNewCommand ksoCmd="WhatNew" filter="lang=zh_CN;category=personal" icon="WhatNew;WhatNew-hover;WhatNew-down" id="WhatNew" text="@What's New"/>
+			<KNewsCommand filter="lang=zh_CN;category=personal" icon="NewsMailer;NewsMailer-hover;NewsMailer-down" id="News" text="@News"/>
+			<KListCommand id="RightCorner" text="@Popup Menu">
+				<command idQ="News"/>
+				<command idQ="KOSUserLoginQuiteMenuCmd"/>
+				<command idQ="UserCenterMenuCmd"/>
+				<command idQ="userCenterCmd"/>
+				<command idQ="KWpsPackagePlugin"/>
+				<command idQ="MinisitePlugin" filter="lang=zh_CN;category=personal"/>
+				<KxQingCartCommand icon="qingcart;qingcart-hover;qingcart" id="QingCart"/>
+				<command idQ="HomepagePlugin" filter="support:NewFromOlineTemplates/RightCorner=true"/>
+				<command idQ="switchLangDlg"/>
+				<command idQ="switchFaceDlg" filter="oem_SwitchFace!=0"/>
+				<command idQ="UserFeedback" filter="support:FeedbackOnBar=true"/>
+				<command idQ="WhatNew" filter="lang=zh_CN;category=personal"/>
+				<command idQ="MailFeedBack"/>
+				<KxEnterpriseMicroblogCommand ksourl="Product:EnterpriseMicroblogUrl" icon="EnterpriseMicroblog;EnterpriseMicroblog-hover;EnterpriseMicroblog-down" id="EnterpriseMicroblog" text="@WPS After-sale Microblog"/>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="Options" icon="Options" id="m_rbOptions" dialogHint="1" text="@Options" rbHotKey="T"/>
+			<KxRecentFilePageCommand hotKey="R" ksoCmd="RecentFileList" id="RecentFilePageCMD" text="@Recently used files" rbFileMenuEmbed="1"/>
+			<KRbFileMenuCommand quitCommand="Exit" recentFileCommand="RecentFilePageCMD" hotKey="F" curentProject="et" delayloadPath="commands/et/ongmani/CT_File.kuip" classicCommand="Worksheet Menu Bar" skinSwitchCommand="switchFaceDlgOnFileMenu" customCommand="m_rbOptions" icon="TabFileButtonIcon-S" newSkinFlash="false" id="CT_File" text="" rbHotKey="F"/>
+			<KRbTabWidgetCommand rightCornerCommand="sysbuttongroup" titleVisible="0" fileCommand="CT_File" rightCornerExtentCommand="RightCorner" id="tabwidget" text="@test Rb Tab Widget" customAttribute="IF(platform!=unix;patent:LogicGroupShowExtensionButton=false){arrowVisible=0}">
+				<KListCommand hotKey="H" delayloadPath="commands/et/ongmani/CT_Home.kuip" idMso="TabHome" controlType="12" id="CT_Home" text="@Home" rbHotKey="h"/>
+				<KListCommand hotKey="N" delayloadPath="commands/et/ongmani/CT_Insert.kuip" idMso="TabInsert" controlType="12" id="CT_Insert" text="@Insert" rbHotKey="N"/>
+				<KListCommand hotKey="P" delayloadPath="commands/et/ongmani/CT_Layout.kuip" idMso="TabPageLayoutExcel" controlType="12" id="CT_Layout" text="@Page Layout" rbHotKey="P"/>
+				<KListCommand hotKey="M" delayloadPath="commands/et/ongmani/CT_Formulas.kuip" idMso="TabFormulas" controlType="12" id="CT_Formulas" text="@Formulas" rbHotKey="M"/>
+				<KListCommand hotKey="A" delayloadPath="commands/et/ongmani/CT_Data.kuip" idMso="TabData" controlType="12" id="CT_Data" text="@Data" rbHotKey="A"/>
+				<KListCommand hotKey="R" delayloadPath="commands/et/ongmani/CT_Review.kuip" idMso="TabReview" controlType="12" id="CT_Review" text="@Review" rbHotKey="R"/>
+				<KListCommand hotKey="W" delayloadPath="commands/et/ongmani/CT_View.kuip" idMso="TabView" controlType="12" id="CT_View" text="@View" rbHotKey="W"/>
+				<KxEtPrintPreviewContext rbContextTableButton="0xb457fc" delayloadPath="commands/et/ongmani/CT_PrintPreview.kuip" customShortcutEnabled="false" visibleRaise="1" idMso="TabPrintPreview" controlType="12" id="CT_PrintPreview" visibleAlone="1" text="@Print Preview" rbHotKey="P"/>
+				<KxAddOnsContext hotKey="X" delayloadPath="commands/et/ongmani/CT_AddOns.kuip" customShortcutEnabled="false" idMso="TabAddIns" controlType="12" id="CT_AddOns" text="@Add-Ins" rbHotKey="X"/>
+				<KxSecurityDocContext hotKey="Y" delayloadPath="commands/et/ongmani/CT_Security.kuip" id="CT_Security" text="@Security" rbHotKey="Y"/>
+				<KxDevelopToolsContext rbContextTableButton="0xff61f6" delayloadPath="commands/et/ongmani/CT_DevelopTools.kuip" idMso="TabDeveloper" controlType="12" id="CT_DevelopTools" text="@Developer" rbHotKey="L"/>
+				<KxWorkspaceContext rbContextTableButton="0x05cbe2" hotKey="K" delayloadPath="commands/et/ongmani/CT_WorkSpace.kuip" id="CT_WorkSpace" text="@Special Features" rbHotKey="K"/>
+				<KxShapeToolContext rbContextTableButton="0x05cbe2" delayloadPath="commands/et/ongmani/CT_DrawingTools.kuip" customShortcutEnabled="false" id="CT_DrawingTools" text="@Drawing Tools" rbHotKey="JD"/>
+				<KxShapeToolContext_Vml descName="@Drawing Tools - Compatibility Mode" rbContextTableButton="0x05cbe2" delayloadPath="commands/et/ongmani/CT_DrawingTools_Vml.kuip" customShortcutEnabled="false" id="CT_DrawingTools_Vml" text="@Drawing Tools" rbHotKey="JD"/>
+				<KxTextToolContext rbContextTableButton="0x05cbe2" delayloadPath="commands/et/ongmani/CT_TextTool.kuip" customShortcutEnabled="false" id="CT_TextTool" text="@Text Tool" rbHotKey="JE"/>
+				<KxShapeToolContext_Vml descName="@Formats - Compatibility Mode" rbContextTableButton="0x05cbe2" delayloadPath="commands/et/ongmani/CT_shadowDrawingTools_Vml.kuip" customShortcutEnabled="false" id="CT_shadowDrawingTools_Vml" text="@Formats" rbHotKey="JS"/>
+				<KxPictureToolContext rbContextTableButton="0xdf57fc" delayloadPath="commands/et/ongmani/CT_PictureTool.kuip" customShortcutEnabled="false" idMso="TabPictureToolsFormat" controlType="12" id="CT_PictureTool" text="@Picture Tools" rbHotKey="JP"/>
+				<KxPictureToolContext_Vml descName="@Picture Tools - Compatibility Mode" rbContextTableButton="0xdf57fc" delayloadPath="commands/et/ongmani/CT_PictureTool_Vml.kuip" customShortcutEnabled="false" id="CT_PictureTool_Vml" text="@Picture Tools" rbHotKey="JP"/>
+				<KxWordArtContext rbContextTableButton="0xffd800" delayloadPath="commands/et/ongmani/CT_WordArt.kuip" customShortcutEnabled="false" id="CT_WordArt" text="@WordArt" rbHotKey="JW"/>
+				<KxWordArtContext rbContextTableButton="0xffd800" delayloadPath="commands/et/ongmani/CT_WAshadowDrawingTools.kuip" customShortcutEnabled="false" id="CT_WAshadowDrawingTools" text="@Formats" rbHotKey="JA"/>
+				<KxChartToolContext rbContextTableButton="0x9cff00" delayloadPath="commands/et/ongmani/CT_ChartTools.kuip" customShortcutEnabled="false" id="CT_ChartTools" text="@Chart Tools" rbHotKey="JC"/>
+				<KxEtPivotTableToolContext rbContextTableButton="0x0591e2" delayloadPath="commands/et/ongmani/CT_PivotTableTools.kuip" customShortcutEnabled="false" id="CT_PivotTableTools" text="@PivotTable Tools" rbHotKey="JT"/>
+				<KxEtTableToolContext rbContextTableButton="0x0591e2" delayloadPath="commands/et/ongmani/CT_TableTool.kuip" customShortcutEnabled="false" id="CT_TableTool" text="@Table Tools" rbHotKey="JT"/>
+			</KRbTabWidgetCommand>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="ExportPDF" aid="80004" filter="support:ExportToPDF=true" icon="ExportToPDF" id="PrintToPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF"/>
+			<KxTouchUiModeCommand filter="support:TouchUiMode=true" icon="TouchUiMode" id="TouchUiMode" customTip="TouchUiMode" text="@Touch Mode"/>
+			<KListCommand id="QAT_Menu" text="@Recent Documents" qtspyName="qmenu">
+				<command idQ="NewBlankFile"/>
+				<command idQ="OpenFile"/>
+				<command idQ="SaveFile"/>
+				<command idQ="PrintToPDF"/>
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+				<command idQ="PrintPreview"/>
+				<command idQ="TouchUiMode"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+				<KxOptionsDlgTabCommand ksoCmd="OptionsDlgTab" tabName="opeQat" id="QAT_MoreCommands"/>
+			</KListCommand>
+			<KListCommand id="QAT" qtspyName="quicktoolbarcommmand">
+				<command idQ="OpenFile"/>
+				<command idQ="SaveFile"/>
+				<command idQ="PrintToPDF"/>
+				<command idQ="Print"/>
+				<command idQ="PrintPreview"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+			</KListCommand>
+			<KxAddTabCommand visible="0" icon="icustSel;icustSel-emos;icustSel-edown" id="customTaskpane" defualtHide="TpEtTableStyle" shortHint="@Setting" text="@Custom task window"/>
+			<KProxyCommand targetId="TextToSpeechOption" hotKey="RL" delayloadPath="commands/et/ongmani/ProxyCommands.kuip" customShortcutEnabled="false" targetModule="wpsspeaker" speakingTip="TextSpeech2" icon="TextSpeech" id="ProxyTextToSpeechOption" customTip="TextSpeech" text="@Text Speech" rbHotKey="RL"/>
+			<KProxyCommand targetId="DocumentFix" hotKey="RF" delayloadPath="commands/et/ongmani/ProxyCommands.kuip" targetModule="kdocumentfix" icon="DocumentFix" id="ProxyDocumentFix" customTip="DocumentFix" text="@Document Fix" rbHotKey="RF"/>
+			<KProxyCommand targetId="PDF2Word" hotKey="PW" dependOSArch="1" delayloadPath="commands/et/ongmani/ProxyCommands.kuip" targetModule="kpdf2word" icon="PDFToWord" id="ProxyPDF2Word" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+			<KProxyCommand targetId="PDF2WordV2" hotKey="PW" delayloadPath="commands/et/ongmani/ProxyCommands.kuip" targetModule="kpdf2wordv2" visible="false" icon="PDFToWord" id="ProxyPDF2WordV2" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+			<KProxyCommand targetId="OCRToolCmd" hotKey="PT" delayloadPath="commands/et/ongmani/ProxyCommands.kuip" targetModule="kocrtool" icon="PictureToText" id="ProxyOCRToolCmd" customTip="PictureToText" text="@Picture to Text" rbHotKey="PT"/>
+			<KxLegacyTriggerCommand hotKey="A" ksoCmd="MergeColumns" aid="1237" faceid="59" icon="MergeColumns" id="RbMergeColumns" customTip="MergeColumns" text="@Merge Across"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MergeSelection" aid="1236" faceid="58" idMso="MergeCells" icon="MergeSelection" controlType="0" id="MergeSelection" customTip="MergeSelection" text="@Merge Cells" rbHotKey="M"/>
+			<KxLegacyTriggerCommand hotKey="e" ksoCmd="ColumnsCenter" aid="1238" faceid="60" icon="ColumnsCenter" id="ColumnsCenter" customTip="ColumnsCenter" text="@Center Across" rbHotKey="E"/>
+			<KxLegacyTriggerCommand hotKey="u" ksoCmd="MergeCancel" icon="MergeCancel" id="MergeCancel" customTip="MergeCancel" text="@Unmerge Cells"/>
+			<KxListCommand text2="@Join and
+Center" hotKey="M" ksoCmd="MergeCenter" idMso="MergeCenterMenu" customTip2="MergeCenter2" icon="MergeCenter" controlType="5" id="sp_Merge" customTip="MergeCenter" spaceHint="autoiconsize" text="@Merge and Center" rbHotKey="M">
+				<KxLegacyTriggerCommand text2="@Join and
+Center" hotKey="C" ksoCmd="MergeCenter" aid="832" faceid="40" icon="MergeCenter" id="RbMergeCenter" customTip="MergeCenter" text="@Merge and Center"/>
+				<command idQ="RbMergeColumns"/>
+				<command idQ="MergeSelection"/>
+				<command idQ="ColumnsCenter"/>
+				<command idQ="MergeCancel"/>
+			</KxListCommand>
+			<KxValueCommand hotKey="N" ksoCmd="BordersPalette" idMso="BorderNone" icon="NoBorder" controlType="0" id="NoBorder" index="0" customTip="NoBorder" text="@No Border" rbHotKey="N"/>
+			<KxValueCommand hotKey="A" ksoCmd="BordersPalette" aid="1013" idMso="BordersAll" icon="AllBorders" controlType="0" id="AllBorders" index="1" customTip="AllBorders" text="@All Borders" rbHotKey="A"/>
+			<KxValueCommand hotKey="s" ksoCmd="BordersPalette" aid="1012" idMso="BorderOutside" icon="OutsideBorders" controlType="0" id="OutsideBorders" index="2" customTip="OutsideBorders" text="@Outside Borders" rbHotKey="S"/>
+			<KxValueCommand hotKey="T" ksoCmd="BordersPalette" icon="ThickBoxBorder" id="ThickBoxBorder" index="3" customTip="ThickBoxBorder" text="@Thick Box Border" rbHotKey="T"/>
+			<KxValueCommand hotKey="O" ksoCmd="BordersPalette" idMso="BorderBottom" icon="BottomBorder" controlType="0" id="ButtomBorder" index="4" customTip="BottomBorder" text="@Bottom Border" rbHotKey="O"/>
+			<KxValueCommand hotKey="P" ksoCmd="BordersPalette" idMso="BorderTop" icon="TopBorder" controlType="0" id="TopBorder" index="12" customTip="TopBorder" text="@Top Border" rbHotKey="P"/>
+			<KxValueCommand hotKey="L" ksoCmd="BordersPalette" idMso="BorderLeft" icon="LeftBorder" controlType="0" id="LeftBorder" index="7" customTip="LeftBorder" text="@Left Border" rbHotKey="L"/>
+			<KxValueCommand hotKey="R" ksoCmd="BordersPalette" idMso="BorderRight" icon="RightBorder" controlType="0" id="RightBorder" index="11" customTip="RightBorder" text="@Right Border" rbHotKey="R"/>
+			<KxValueCommand hotKey="B" ksoCmd="BordersPalette" idMso="BorderDoubleBottom" icon="BottomDoubleBorder" controlType="0" id="BottomDoubleBorder" index="5" customTip="BottomDoubleBorder" text="@Bottom Double Border" rbHotKey="B"/>
+			<KxValueCommand hotKey="H" ksoCmd="BordersPalette" idMso="BorderThickBottom" icon="ThickBottomBorder" controlType="0" id="ThickBottomBorder" index="6" customTip="ThickBottomBorder" text="@Thick Bottom Border" rbHotKey="H"/>
+			<KxValueCommand hotKey="d" ksoCmd="BordersPalette" idMso="BorderTopAndBottom" icon="TopAndBottomBorder" controlType="0" id="TopAndBottomBorder" index="8" customTip="TopAndBottomBorder" text="@Top and Bottom Border" rbHotKey="D"/>
+			<KxValueCommand hotKey="c" ksoCmd="BordersPalette" idMso="BorderTopAndThickBottom" icon="TopAndThickBottomBorder" controlType="0" id="TopAndThickBottomBorder" index="10" customTip="TopAndThickBottomBorder" text="@Top and Thick Bottom Border" rbHotKey="C"/>
+			<KxValueCommand hotKey="u" ksoCmd="BordersPalette" idMso="BorderTopAndDoubleBottom" icon="TopAndDoubleBottomBorder" controlType="0" id="TopAndDloubleBottomBorder" index="9" customTip="TopAndDloubleBottomBorder" text="@Top and Double Bottom Border" rbHotKey="U"/>
+			<KxPropComposeCommand tabIndex="3" hotKey="m" ksoCmd="MoreBorders" forceVisible="1" idMso="BordersMoreDialog" icon="OtherBorders" controlType="0" id="OtherDrawBorders" dialogHint="1" customTip="OtherBorders" text="@More Borders" rbHotKey="M"/>
+			<KQuickMenuCommand id="sp_DrawBorder" spaceHint="compact" referenceCommand="AllBorders" rbHotKey="B">
+				<command idQ="NoBorder"/>
+				<command idQ="AllBorders"/>
+				<command idQ="OutsideBorders"/>
+				<command idQ="ThickBoxBorder"/>
+				<separator/>
+				<command idQ="ButtomBorder"/>
+				<command idQ="TopBorder"/>
+				<command idQ="LeftBorder"/>
+				<command idQ="RightBorder"/>
+				<separator/>
+				<command idQ="BottomDoubleBorder"/>
+				<command idQ="ThickBottomBorder"/>
+				<command idQ="TopAndBottomBorder"/>
+				<command idQ="TopAndThickBottomBorder"/>
+				<command idQ="TopAndDloubleBottomBorder"/>
+				<separator/>
+				<command idQ="OtherDrawBorders"/>
+			</KQuickMenuCommand>
+			<KxValueCommand ksoCmd="FormatAlignCenter" aid="830" faceid="38" idMso="AlignCenter" icon="AlignCenter" controlType="6" id="rAlignCenter" index="-4108" customTip="AlignCenter" spaceHint="suitable" text="@Center" rbHotKey="AC"/>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="Sum" idMso="AutoSum" icon="AutoSum" controlType="0" id="rSum" customTip="AutoSum" text="@Sum" rbHotKey="S"/>
+			<KxLegacyTriggerCommand hotKey="a" ksoCmd="Average" aid="842" idMso="AutoSumAverage" icon="Average" controlType="0" id="Average" customTip="Average" text="@Average" rbHotKey="A"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="Count" aid="843" idMso="AutoSumCount" icon="Count" controlType="0" id="Count" customTip="Count" text="@Count" rbHotKey="C"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="Max" aid="844" idMso="AutoSumMax" icon="Max" controlType="0" id="Max" customTip="Max" text="@Max" rbHotKey="M"/>
+			<KxLegacyTriggerCommand hotKey="i" ksoCmd="Min" aid="845" idMso="AutoSumMin" icon="Min" controlType="0" id="Min" customTip="Min" text="@Min" rbHotKey="I"/>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="Morefunctions" aid="846" idMso="AutoSumMoreFunctions" icon="MoreFunctions" controlType="0" id="Morefunctions" dialogHint="1" customTip="Morefunctions" text="@More Functions" rbHotKey="F"/>
+			<KResolution1280XListCommand ksoCmd="AutoSum" visibleUnder1280="true" icon="AutoSum" customTip2="sp_AutoSum2" id="sp_AutoSum" textUnder1280="@Sum" textOver1280="@AutoSum" visibleOver1280="true" customTip="sp_AutoSum" text="@AutoSum" rbHotKey="U">
+				<command idQ="rSum"/>
+				<command idQ="Average"/>
+				<command idQ="Count"/>
+				<command idQ="Max"/>
+				<command idQ="Min"/>
+				<separator/>
+				<command idQ="Morefunctions"/>
+			</KResolution1280XListCommand>
+			<KxLegacyTriggerCommandEx ksoCmd="FormatPainter" idMso="FormatPainter" icon="FormatPainter" controlType="6" id="rFormatPainter" customTip="FormatPainter" text="@Format 
+Painter" rbHotKey="FP"/>
+			<KxValueCommand ksoCmd="FormatAlignLeft" aid="829" faceid="37" idMso="AlignLeft" icon="AlignLeft" controlType="6" id="rAlignLeft" index="-4131" customTip="AlignLeft" spaceHint="suitable" text="@Align Left" rbHotKey="AL"/>
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="RecentLineWrap" icon="LineWrap2" id="rnRecentLineWrap" customTip="RecentLineWrap" spaceHint="autoiconsize" text="@Wrap Text" rbHotKey="W"/>
+			<KxValueCommand ksoCmd="BaseLine" idMso="AlignMiddleExcel" icon="VAlignCenter" controlType="6" id="VAlignCenter" index="-4108" customTip="VAlignCenter" spaceHint="suitable" text="@Vertical Center" rbHotKey="AX"/>
+		</commands>
+		<dock cmd="ClassicalTaskpane"/>
+		<dock cmd="Clipboardpane" dockArea="dockArea_left"/>
+		<krbtabwidget cmd="tabwidget"/>
+		<KRbQuicktoolCommand cmd="QAT" menu="QAT_Menu"/>
+		<menubar cmd="Worksheet Menu Bar" delay="1" sysMenuBtn="0"/>
+		<KNoTabPageCommand cmd="NoTabPage"/>
+		<shortcuts>
+			<shortcut cmd="TabButtonNewBlankFile" key="Ctrl+N"/>
+			<shortcut cmd="rRunMacro" key="Alt+F8"/>
+			<shortcut cmd="rVisualBasicEditor" key="Alt+F11"/>
+		</shortcuts>
+	</mainwindow>
+</shell>

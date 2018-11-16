@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>CS8_octagon.png</Overlay_Filename>
+<Overlay_Name>八角形</Overlay_Name>
+<Text_Top>60</Text_Top>
+<Text_Left>40</Text_Left>
+<Text_Bottom>60</Text_Bottom>
+<Text_Right>40</Text_Right>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<Initial_Fill_Color>0xffe05f00</Initial_Fill_Color>
+<Initial_Border_Color>0xffd7d7d7</Initial_Border_Color>
+<VectorProps>
+  <figure>
+    <svg>
+      M 306,216.074
+      l -89.501,89.501
+      H 89.926
+      L 0.425,216.074
+      V 89.501
+      L 89.926,0
+      h 126.573
+      L 306,89.501
+      V 216.074
+      z
+    </svg>
+  </figure>
+  <borderWidth>5.00</borderWidth>
+  <seamY>118</seamY>
+  <shapeWidth>306</shapeWidth>
+  <shapeHeight>306</shapeHeight>
+</VectorProps>
+<Style>5</Style>
+</Overlay>

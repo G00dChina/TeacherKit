@@ -1,0 +1,183 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Iterations and Iterated Images &gt; Iteration Properties</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Iterations,Iterations properties of,Iterations randomize points on paths,Properties,Properties Iteration,Randomize Iterated Points">
+   <meta name="description" content="Iteration Properties">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_iter_props.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Iteration Properties</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_iter.htm">Iterations and Iterated Images</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Iteration Properties</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="howto_sierpinski.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_iter.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_measurements.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_Centered_Large"><img src="iter_properties_zoom75.png" width="260" height="187" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText"><a href="objects_iter.htm" class="topiclink">Iteration rules and iterated images</a> have an Iteration <a href="menus_edit_properties.htm" class="topiclink">Properties</a> panel. Use this panel to set the number of iterations, to specify whether the iterations display all levels or only the final iteration, and to determine how random points in the iteration behave.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">To open this dialog box, select any iterated image and choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a>,</span><span class="f_MarginNote"> or choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Properties</a></span><span class="f_MarginNote"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Number of iterations:</span><span class="f_BodyText"> This number determines how many times the iteration is repeated. The minimum value you can use is 1; the maximum value depends on the iteration and is smaller for complex iterations that involve more than a single map. If the number of iterations — the iteration depth — was <a href="objects_iter_working.htm" class="topiclink">defined by a measurement or calculated value</a> when the iteration was first created, the current depth is displayed here but cannot be edited.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can adjust the number of iterations without going to Properties by selecting an iterated image and pressing the </span><span class="f_MarginNote" style="font-weight: bold;">+</span><span class="f_MarginNote"> or </span><span class="f_MarginNote" style="font-weight: bold;">–</span><span class="f_MarginNote"> key while your sketch window is active.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Use the <a href="windows_advprefs_sampling.htm" class="topiclink">Sampling</a> panel of <a href="menus_edit_preferences_adv.htm" class="topiclink">Advanced Preferences</a> to change the maximum depth allowed for iterations.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Display as:</span><span class="f_BodyText"> Set this to </span><span class="f_BodyText" style="font-weight: bold;">Full orbit (all iterations)</span><span class="f_BodyText"> to display all the iterated images (the images for every level of the iteration). Set this to </span><span class="f_BodyText" style="font-weight: bold;">Final iteration only</span><span class="f_BodyText"> to display only the images at the final level, as set by the </span><span class="f_BodyText" style="font-weight: bold;">Number of iterations.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Move iterated points on objects:</span><span class="f_BodyText"> This choice appears only for iterations in which one or more of the pre-image points is a <a href="menus_construct_pointonobj.htm" class="topiclink">point on a path</a>. It determines how iterated images of such points behave. Set this to </span><span class="f_BodyText" style="font-weight: bold;">Same locations relative to original</span><span class="f_BodyText"> in order to have each iterated image appear in the same relative location on its path as the first image does on its original path. Set this to </span><span class="f_BodyText" style="font-weight: bold;">Random locations on iterated paths</span><span class="f_BodyText"> to have each iterated image appear at a random location on its path. When you’ve set this to </span><span class="f_BodyText" style="font-weight: bold;">Random locations on iterated paths,</span><span class="f_BodyText"> the </span><span class="f_BodyText" style="font-weight: bold;">Randomize Now</span><span class="f_BodyText"> button is enabled; you can click this button to assign each image point on the path a new random position.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can randomize an iteration without going to Properties by selecting an iterated image and pressing the </span><span class="f_MarginNote" style="font-weight: bold;">!</span><span class="f_MarginNote"> key while your sketch window is active.</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_geometric.htm" class="topiclink">A Geometric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_numeric.htm" class="topiclink">A Numeric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_working.htm" class="topiclink">Working with Iterations</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="howto_sierpinski.htm" class="topiclink">How to Construct a Sierpiński Gasket</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

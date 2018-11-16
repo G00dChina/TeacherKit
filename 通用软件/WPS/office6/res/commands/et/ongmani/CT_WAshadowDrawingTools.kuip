@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_washadowdrawingtools" component="et">
+	<commands>
+		<KxStaticGalleryItemCommand galleryItemWidth="108" ksoCmd="NoShadow" id="NoShadow" galleryItemHeight="24" forceLine="true" text="@No Shadow"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SemitransparentShadow" aid="1859" idMso="ShadowSemitransparentClassic" controlType="0" id="SemitransparentShadow" text="@Semitransparent Shadow"/>
+		<KxEtShadowThemeCommand ksoCmd="ShadowColor" icon="ShadowColor" customTip2="ShadowColor2" id="rShadowColor" customTip="ShadowColor" text="@Shadow Color" ksoTriggerCmd="RecentShadowColor" rbHotKey="SC">
+			<KxEtMoreColorThemeCommand hotKey="m" ksoCmd="ShadowColor" icon="MoreColor" id="MoreShadowColors_washadow" dialogHint="1" text="@More Shadow Colors"/>
+			<KxEtSnapColorCommand hotKey="e" ksoCmd="ShadowColor" icon="SnapperFill" forceEnabled="1" id="SnapShadowColors_washadow" text="@Snapper" rbHotKey="E"/>
+			<command idQ="SemitransparentShadow"/>
+		</KxEtShadowThemeCommand>
+		<KRbDonotShowHotKeyCommand id="NULL" spaceHint="compact" rbHotKey=""/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowLeft" icon="NudgeShadowLeft" id="rNudgeShadowLeft" customTip="NudgeShadowLeft" spaceHint="compact" text="@Nudge Shadow Left" rbHotKey="2"/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowUp" icon="NudgeShadowUp" id="rNudgeShadowUp" customTip="NudgeShadowUp" spaceHint="compact" text="@Nudge Shadow Up" rbHotKey="1"/>
+		<KxLegacyTriggerCommand text2="@Shadow
+On/Off" ksoCmd="ShadowOnOff" aid="2175" idMso="ShadowOnOrOffClassic" icon="ShadowOnOff" controlType="0" id="ShadowOnOff" customTip="ShadowOnOff" text="@Shadow
+On/Off" rbHotKey="z"/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowDown" icon="NudgeShadowDown" id="rNudgeShadowDown" customTip="NudgeShadowDown" spaceHint="compact" text="@Nudge Shadow Down" rbHotKey="4"/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowRight" icon="NudgeShadowRight" id="rNudgeShadowRight" customTip="NudgeShadowRight" spaceHint="compact" text="@Nudge Shadow Right" rbHotKey="3"/>
+		<KListCommand id="RB_DC_ShadowSettings" text="@Shadow 
+Effects">
+			<command idQ="ShadowOnOff"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxShadowStaticGalleryCommand column="4" ksoCmd="ShadowPalette" icon="ShadowStyleMenu" id="Shadow_Rainbow" customTip="ShadowPalette" text="@Shadow 
+Effects" rbHotKey="SS">
+				<command idQ="NoShadow"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_0" galleryItemHeight="24" index="0" qtspyName="ShadowStyle_0"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_1" galleryItemHeight="24" index="1" qtspyName="ShadowStyle_1"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_2" galleryItemHeight="24" index="2" qtspyName="ShadowStyle_2"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_3" galleryItemHeight="24" index="3" qtspyName="ShadowStyle_3"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_4" galleryItemHeight="24" index="4" qtspyName="ShadowStyle_4"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_5" galleryItemHeight="24" index="5" qtspyName="ShadowStyle_5"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_6" galleryItemHeight="24" index="6" qtspyName="ShadowStyle_6"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_7" galleryItemHeight="24" index="7" qtspyName="ShadowStyle_7"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_8" galleryItemHeight="24" index="8" qtspyName="ShadowStyle_8"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_9" galleryItemHeight="24" index="9" qtspyName="ShadowStyle_9"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_10" galleryItemHeight="24" index="10" qtspyName="ShadowStyle_10"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_11" galleryItemHeight="24" index="11" qtspyName="ShadowStyle_11"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_12" galleryItemHeight="24" index="12" qtspyName="ShadowStyle_12"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_13" galleryItemHeight="24" index="13" qtspyName="ShadowStyle_13"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_14" galleryItemHeight="24" index="14" qtspyName="ShadowStyle_14"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_15" galleryItemHeight="24" index="15" qtspyName="ShadowStyle_15"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_16" galleryItemHeight="24" index="16" qtspyName="ShadowStyle_16"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_17" galleryItemHeight="24" index="17" qtspyName="ShadowStyle_17"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_18" galleryItemHeight="24" index="18" qtspyName="ShadowStyle_18"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="ShadowStyle_19" galleryItemHeight="24" index="19" qtspyName="ShadowStyle_19"/>
+			</KxShadowStaticGalleryCommand>
+			<command idQ="rShadowColor"/>
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="rNudgeShadowUp"/>
+					<command idQ="rNudgeShadowDown"/>
+				</KRbLayoutListCommand>
+				<separator/>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="rNudgeShadowLeft"/>
+					<command idQ="rNudgeShadowRight"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+		</KListCommand>
+		<KxStaticGalleryItemCommand galleryItemWidth="108" ksoCmd="No3DStyle" id="No3DStyle" galleryItemHeight="24" forceLine="true" text="@No 3-D"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltLeft" icon="3DTiltLeft" id="r3DTiltLeft" customTip="3DTiltLeft" spaceHint="compact" text="@Tilt Left" rbHotKey="6"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltUp" idMso="_3DTiltUpClassic" icon="3DTiltUp" controlType="0" id="r3DTiltUp" customTip="3DTiltUp" spaceHint="compact" text="@Tilt Up" rbHotKey="5"/>
+		<KxLegacyTriggerCommand ksoCmd="3DOnOff" aid="1374" idMso="_3DEffectsOnOffClassic" icon="3DOnOff" controlType="0" id="3DOnOff" customTip="3DOnOff" text="@3-D
+On/Off" rbHotKey="y"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltDown" icon="3DTiltDown" id="r3DTiltDown" customTip="3DTiltDown" spaceHint="compact" text="@Tilt Down" rbHotKey="8"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltRight" icon="3DTiltRight" id="r3DTiltRight" customTip="3DTiltRight" text="@Tilt Right" rbHotKey="7"/>
+		<KListCommand icon="3DDepthMenu" id="r3DDepthMenu" customTip="3DDepthMenu" text="@Depth" rbHotKey="DD">
+			<KxValueCommand hotKey="0" ksoCmd="3DDepth" icon="3DDepth_0" index="0" text="@0 pt" qtspyName="3DDepth"/>
+			<KxValueCommand hotKey="3" ksoCmd="3DDepth" icon="3DDepth_36" index="36" text="@36 pt" qtspyName="3DDepth"/>
+			<KxValueCommand hotKey="7" ksoCmd="3DDepth" icon="3DDepth_72" index="72" text="@72 pt" qtspyName="3DDepth"/>
+			<KxValueCommand hotKey="1" ksoCmd="3DDepth" icon="3DDepth_144" index="144" text="@144 pt" qtspyName="3DDepth"/>
+			<KxValueCommand hotKey="2" ksoCmd="3DDepth" icon="3DDepth_288" index="288" text="@288 pt" qtspyName="3DDepth"/>
+			<KxLegacyTriggerCommand hotKey="i" ksoCmd="3DDepthInfinity" icon="3DDepth_0" text="@Infinity" qtspyName="3DDepthInfinity"/>
+			<KxInputDialogCommand hotKey="C" ksoCmd="3DDepthCustom" dialogHint="1" text="@Custom" qtspyName="3DDepthCustom"/>
+		</KListCommand>
+		<KxValueCommand hotKey="p" ksoCmd="3DDirctionType" aid="1390" idMso="_3DExtrusionPerspectiveClassic" icon="3DPerspective" controlType="0" id="3DPerspective" index="0" text="@Perspective"/>
+		<KxValueCommand hotKey="a" ksoCmd="3DDirctionType" aid="1391" idMso="_3DExtrusionParallelClassic" icon="3DParallel" controlType="0" id="3DParallel" index="1" text="@Parallel"/>
+		<KxStaticGalleryCommand column="3" ksoCmd="3DDirectionPalette" icon="3DDirection" id="rGallery3DDirectionPalette" customTip="Direction" text="@Direction" rbHotKey="DI">
+			<KxStaticGalleryItemCommand icon="3DDirection_0" index="0" qtspyName="3DDirection_0"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_1" index="1" qtspyName="3DDirection_1"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_2" index="2" qtspyName="3DDirection_2"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_3" index="3" qtspyName="3DDirection_3"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_4" index="4" qtspyName="3DDirection_4"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_5" index="5" qtspyName="3DDirection_5"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_6" index="6" qtspyName="3DDirection_6"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_7" index="7" qtspyName="3DDirection_7"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_8" index="8" qtspyName="3DDirection_8"/>
+			<separator/>
+			<command idQ="3DPerspective"/>
+			<command idQ="3DParallel"/>
+		</KxStaticGalleryCommand>
+		<KxEt3DThemeCommand ksoCmd="3DColor" icon="3DColor" customTip2="3DColor2" id="r3DColorCommand" customTip="3DColor" text="@Color" ksoTriggerCmd="Recent3DColor" rbHotKey="DC">
+			<KxEtMoreColorThemeCommand hotKey="m" ksoCmd="3DColor" icon="MoreColor" id="More3DColors_washadow" dialogHint="1" text="@More 3-D Colors"/>
+			<KxEtSnapColorCommand hotKey="e" ksoCmd="3DColor" icon="SnapperFill" forceEnabled="1" id="Snap3DColors" text="@Snapper" rbHotKey="E"/>
+		</KxEt3DThemeCommand>
+		<KxValueCommand hotKey="b" ksoCmd="3DLightingType" aid="1392" idMso="_3DLightingFlatClassic" icon="3DLightingBright" controlType="0" id="3DLightingBright" index="0" text="@Bright"/>
+		<KxValueCommand hotKey="n" ksoCmd="3DLightingType" aid="1393" idMso="_3DLightingNormalClassic" icon="3DLightingNormal" controlType="0" id="3DLightingNormal" index="1" text="@Normal"/>
+		<KxValueCommand hotKey="d" ksoCmd="3DLightingType" aid="1394" idMso="_3DLightingDimClassic" icon="3DLightingDim" controlType="0" id="3DLightingDim" index="2" text="@Dim"/>
+		<KxStaticGalleryCommand column="3" ksoCmd="3DLightingPalette" icon="3DLightingMenu" id="rGallery3DLightingPalette" customTip="Lighting" text="@Lighting" rbHotKey="DL">
+			<KxStaticGalleryItemCommand icon="3DLighting_0" index="0" qtspyName="3DLighting_0"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_1" index="1" qtspyName="3DLighting_1"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_2" index="2" qtspyName="3DLighting_2"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_3" index="3" qtspyName="3DLighting_3"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_4" index="4" qtspyName="3DLighting_4"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_5" index="5" qtspyName="3DLighting_5"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_6" index="6" qtspyName="3DLighting_6"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_7" index="7" qtspyName="3DLighting_7"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_8" index="8" qtspyName="3DLighting_8"/>
+			<command idQ="3DLightingBright"/>
+			<command idQ="3DLightingNormal"/>
+			<command idQ="3DLightingDim"/>
+		</KxStaticGalleryCommand>
+		<KListCommand icon="3DSurfaceMenu" id="r3DSurfaceMenu" customTip="3DSurfaceMenu" text="@Surface" rbHotKey="DU">
+			<KxValueCommand hotKey="w" ksoCmd="3DSurfaceType" icon="3DSurfaceWireFrame" id="3DSurfaceWireFrame" index="0" text="@Wire Frame"/>
+			<KxValueCommand hotKey="m" ksoCmd="3DSurfaceType" icon="3DSurfaceMatte" id="3DSurfaceMatte" index="1" text="@Matte"/>
+			<KxValueCommand hotKey="p" ksoCmd="3DSurfaceType" icon="3DSurfacePlastic" id="3DSurfacePlastic" index="2" text="@Plastic"/>
+			<KxValueCommand hotKey="t" ksoCmd="3DSurfaceType" icon="3DSurfaceMetal" id="3DSurfaceMetal" index="3" text="@Metal"/>
+		</KListCommand>
+		<KListCommand id="RB_DC_3DSettings" text="@3-D
+Effects">
+			<command idQ="3DOnOff"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxStaticGalleryCommand column="4" ksoCmd="3DStylePalette" icon="3DStyleMenu" id="Gallery3DStyle_Rainbow" customTip="3DStylePalette" text="@3-D
+Effects" rbHotKey="DS">
+				<command idQ="No3DStyle"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_0" galleryItemHeight="24" index="0" qtspyName="3DStyle_0"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_1" galleryItemHeight="24" index="1" qtspyName="3DStyle_1"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_2" galleryItemHeight="24" index="2" qtspyName="3DStyle_2"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_3" galleryItemHeight="24" index="3" qtspyName="3DStyle_3"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_4" galleryItemHeight="24" index="4" qtspyName="3DStyle_4"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_5" galleryItemHeight="24" index="5" qtspyName="3DStyle_5"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_6" galleryItemHeight="24" index="6" qtspyName="3DStyle_6"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_7" galleryItemHeight="24" index="7" qtspyName="3DStyle_7"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_8" galleryItemHeight="24" index="8" qtspyName="3DStyle_8"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_9" galleryItemHeight="24" index="9" qtspyName="3DStyle_9"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_10" galleryItemHeight="24" index="10" qtspyName="3DStyle_10"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_11" galleryItemHeight="24" index="11" qtspyName="3DStyle_11"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_12" galleryItemHeight="24" index="12" qtspyName="3DStyle_12"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_13" galleryItemHeight="24" index="13" qtspyName="3DStyle_13"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_14" galleryItemHeight="24" index="14" qtspyName="3DStyle_14"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_15" galleryItemHeight="24" index="15" qtspyName="3DStyle_15"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_16" galleryItemHeight="24" index="16" qtspyName="3DStyle_16"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_17" galleryItemHeight="24" index="17" qtspyName="3DStyle_17"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_18" galleryItemHeight="24" index="18" qtspyName="3DStyle_18"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" icon="3DStyle_19" galleryItemHeight="24" index="19" qtspyName="3DStyle_19"/>
+			</KxStaticGalleryCommand>
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="r3DTiltUp"/>
+					<command idQ="r3DTiltDown"/>
+				</KRbLayoutListCommand>
+				<separator/>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="r3DTiltLeft"/>
+					<command idQ="r3DTiltRight"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="r3DDepthMenu"/>
+			<command idQ="rGallery3DDirectionPalette"/>
+			<command idQ="r3DColorCommand"/>
+			<command idQ="rGallery3DLightingPalette"/>
+			<command idQ="r3DSurfaceMenu"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_WAshadowDrawingTools">
+			<command idQ="RB_DC_ShadowSettings"/>
+			<separator/>
+			<command idQ="RB_DC_3DSettings"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CombineFormula>
+<Functions>
+	<func name="个人年终奖所得税（2011-09-01之后）" type="功能分类1" file="/function1.xml"/>
+	<func name="计算个人所得税（2011-09-01之后）" type="功能分类1" file="/function1.xml"/>
+	<func name="计算个人所得税（2011-09-01之前）" type="功能分类1" file="/function1.xml"/>
+	<func name="提取身份证生日" type="功能分类1" file="/function2.xml"/>
+	<func name="提取身份证性别" type="功能分类1" file="/function2.xml"/>
+	<func name="多条件求和" type="功能分类2" file="/function3.xml"/>
+	<func name="查找其他表格数据" type="功能分类3" file="/function4.xml"/>
+</Functions>
+
+<Function id="1" name="个人年终奖所得税（2011-09-01之后）" version="1.0.0.0" author="WPS"  desc="个人计算年终奖扣税" image="/mui/zh_CN/resource/combineformula/combineformula8.png" >
+
+<distribution  rows="2">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="年终奖(税前)" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(输入数值)" refer="relative" enable="true"/>
+</params>
+<params counts="2">
+    <param id="3" name="param2_text" type="statictext" text="当月工资(税前)" refer="abs" enable="true"/>
+    <param id="4" name="param2_range" type="rangetool" text="3500" refer="abs" enable="true"/>
+</params>
+</distribution>
+
+<expression>
+     <subexpression delete = "false">=([param1_range]+MIN(3500,[param2_range])-3500)*LOOKUP(([param1_range]+MIN(3500,[param2_range])-3500)/12,{0,1500.01,4500.01,9000.01,35000.01,55000.01,80000.01},{0.03,0.10,0.20,0.25,0.30,0.35,0.45})-LOOKUP(([param1_range]+MIN(3500,[param2_range])-3500)/12,{0,1500.01,4500.01,9000.01,35000.01,55000.01,80000.01},{0,105,555,1005,2755,5505,13505}) </subexpression>
+</expression>
+</Function>
+
+<Function id="2" name="计算个人所得税（2011-09-01之后）" version="1.0.0.0" author="WPS"  desc="计算工资扣税" image="/mui/zh_CN/resource/combineformula/combineformula5.png" >
+
+<distribution  rows="3">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="税前工薪收入" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(输入数值)" refer="relative" enable="true"/>
+</params>
+<params counts="2">
+    <param id="3" name="param2_text" type="statictext" text="三险一金比例" refer="abs" enable="true"/>
+    <param id="4" name="param2_range" type="rangetool" text="23%" refer="abs" enable="true"/>
+</params>
+<params counts="2">
+    <param id="5" name="param3_text" type="statictext" text="免征额" refer="abs" enable="true"/>
+    <param id="6" name="param3_range" type="rangetool" text="3500" refer="abs" enable="true"/>
+</params>
+</distribution>
+
+<expression>
+     <subexpression delete = "false">=ROUND(MAX(([param1_range]*(1-[param2_range])-[param3_range])*{0.03,0.1,0.2,0.25,0.3,0.35,0.45}-{0,105,555,1005,2755,5505,13505},0),2) </subexpression>
+</expression>
+</Function>
+
+
+<Function id="3" name="计算个人所得税（2011-09-01之前）" version="1.0.0.0" author="WPS"  desc="计算工资扣税" image="/mui/zh_CN/resource/combineformula/combineformula1.png" >
+
+<distribution  rows="3">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="税前工薪收入" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(输入数值)" refer="relative" enable="true"/>
+</params>
+<params counts="2">
+    <param id="3" name="param2_text" type="statictext" text="三险一金比例" refer="abs" enable="true"/>
+    <param id="4" name="param2_range" type="rangetool" text="23%" refer="abs" enable="true"/>
+</params>
+<params counts="2">
+    <param id="5" name="param3_text" type="statictext" text="免征额" refer="abs" enable="true"/>
+    <param id="6" name="param3_range" type="rangetool" text="2000" refer="abs" enable="true"/>
+</params>
+</distribution>
+
+<expression>
+     <subexpression delete = "false">=ROUND(MAX(([param1_range]*(1-[param2_range])-[param3_range])*{0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45}-{0,25,125,375,1375,3375,6375,10375,15375},0),2) </subexpression>
+</expression>
+</Function>
+
+
+<Function id="4" name="提取身份证生日"  version="1.0.0.0" author="WPS"  desc="提取身份证生日" image="/mui/zh_CN/resource/combineformula/combineformula2.png" >
+<distribution  rows="1">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="身份证号码" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(选择单元格)" refer="relative" enable="true"/>
+</params>
+</distribution>
+
+<expression>
+    <subexpression delete = "false">=DATE(MID([param1_range],7,VLOOKUP(LEN([param1_range]),{15,2;18,4},2,0)),MID([param1_range],VLOOKUP(LEN([param1_range]),{15,9;18,11},2,0),2),MID([param1_range],VLOOKUP(LEN([param1_range]),{15,11;18,13},2,0),2))</subexpression>
+</expression>
+</Function>
+
+
+<Function id="5" name="提取身份证性别"  version="1.0.0.0" author="WPS"  desc="提取身份证性别" image="/mui/zh_CN/resource/combineformula/combineformula2.png" >
+<distribution  rows="1">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="身份证号码" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(选择单元格)" refer="relative" enable="true"/>
+</params>
+</distribution>
+
+<expression>
+    <subexpression delete = "false">=IF(OR(LEN([param1_range])=15,LEN([param1_range])=18),IF(MOD(MID([param1_range],15,3)*1,2),"男","女"),#N/A)</subexpression>
+</expression>
+</Function>
+
+
+<Function id="6" name="多条件求和"  version="1.0.0.0" author="WPS"  desc="多条件求和" image="/mui/zh_CN/resource/combineformula/combineformula3.png" >
+<operatorsmap counts = "6"> 
+<operator  context = "=">等于</operator>
+<operator  context = "&gt;">大于</operator>
+<operator  context = "&lt;">小于</operator>
+<operator  context = "&gt;=">不小于</operator>
+<operator  context = "&lt;=">不大于</operator>
+<operator  context = "&lt;&gt;">不等于</operator>
+</operatorsmap>
+<distribution  rows="11">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="待求和区域" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(选择单列区域)" refer="abs" enable="true"/>
+</params>
+<params counts="4">
+   <param id="3" name="param2_text"  type="statictext" text="条件1" refer="relative" enable="true"/>
+   <param id="4" name="param2_range" type="rangetool" text="(查询区域)" refer="abs" enable="true"/>
+   <param id="5" name="param2_operator" type="combobox" text="" count="6" refer="relative" enable="true">
+           <operator>不等于</operator>
+           <operator>大于</operator>
+           <operator>小于</operator>
+           <operator>不大于</operator>
+           <operator>不小于</operator>
+           <operator>等于</operator>
+   </param>
+   <param id="6" name="param2_range2" type="rangetool" text="(查询条件)" refer="relative" enable="true"/>
+</params>
+<params counts="4">
+   <param id="7" name="param3_text"  type="statictext" text="(并且) 条件2" refer="relative" enable="true"/>
+   <param id="8" name="param3_range" type="rangetool" text="" refer="abs" enable="true"/>
+   <param id="9" name="param3_operator" type="combobox" text="" count="6" refer="relative" enable="true">
+           <operator>不等于</operator>
+           <operator>大于</operator>
+           <operator>小于</operator>
+           <operator>不大于</operator>
+           <operator>不小于</operator>
+           <operator>等于</operator>
+   </param>
+   <param id="10" name="param3_range2" type="rangetool" text="" refer="relative" enable="true"/>
+</params>
+<params counts="4">
+   <param id="11" name="param4_text"  type="statictext" text="(并且) 条件3" refer="relative" enable="true"/>
+   <param id="12" name="param4_range" type="rangetool" text="" refer="abs" enable="true"/>
+   <param id="13" name="param4_operator" type="combobox" text="" count="6" refer="relative" enable="true">
+           <operator>不等于</operator>
+           <operator>大于</operator>
+           <operator>小于</operator>
+           <operator>不大于</operator>
+           <operator>不小于</operator>
+           <operator>等于</operator>
+   </param>
+   <param id="14" name="param4_range2" type="rangetool" text="" refer="relative" enable="true"/>
+</params>
+<params counts="4">
+   <param id="15" name="param5_text"  type="statictext" text="(并且) 条件4" refer="relative" enable="true"/>
+   <param id="16" name="param5_range" type="rangetool" text="" refer="abs" enable="true"/>
+   <param id="17" name="param5_operator" type="combobox" text="" count="6" refer="relative" enable="true">
+           <operator>不等于</operator>
+           <operator>大于</operator>
+           <operator>小于</operator>
+           <operator>不大于</operator>
+           <operator>不小于</operator>
+           <operator>等于</operator>
+   </param>
+   <param id="18" name="param5_range2" type="rangetool" text="" refer="relative" enable="true"/>
+</params>
+<params counts="4">
+   <param id="19" name="param6_text"  type="statictext" text="(并且) 条件5" refer="relative" enable="true"/>
+   <param id="20" name="param6_range" type="rangetool" text="" refer="abs" enable="true"/>
+   <param id="21" name="param6_operator" type="combobox" text="" count="6" refer="relative" enable="true">
+           <operator>不等于</operator>
+           <operator>大于</operator>
+           <operator>小于</operator>
+           <operator>不大于</operator>
+           <operator>不小于</operator>
+           <operator>等于</operator>
+   </param>
+   <param id="22" name="param6_range2" type="rangetool" text="" refer="relative" enable="true"/>
+</params>
+
+</distribution>
+<expression>
+    <subexpression delete = "false">=SUMPRODUCT([param1_range],1</subexpression>
+    <subexpression delete = "true">*(OFFSET([param1_range],0,SUM(COLUMN([param2_range])-COLUMN([param1_range]))) [param2_operator] [param2_range2])</subexpression>
+    <subexpression delete = "true">*(OFFSET([param1_range],0,SUM(COLUMN([param3_range])-COLUMN([param1_range]))) [param3_operator] [param3_range2])</subexpression>
+    <subexpression delete = "true">*(OFFSET([param1_range],0,SUM(COLUMN([param4_range])-COLUMN([param1_range]))) [param4_operator] [param4_range2])</subexpression>
+    <subexpression delete = "true">*(OFFSET([param1_range],0,SUM(COLUMN([param5_range])-COLUMN([param1_range]))) [param5_operator] [param5_range2])</subexpression>
+    <subexpression delete = "true">*(OFFSET([param1_range],0,SUM(COLUMN([param6_range])-COLUMN([param1_range]))) [param6_operator] [param6_range2])</subexpression>
+    <subexpression delete = "false">) </subexpression>
+</expression>
+</Function>
+
+<Function id="7" name="引用其他表格数据"  version="1.0.0.0" author="WPS"  desc="引用其他表格数据" image="/mui/zh_CN/resource/combineformula/combineformula4.png" >
+<distribution  rows="3">
+<params  counts="2">
+    <param id="1" name="param1_text"  type="statictext" text="要引用的列表" refer="abs" enable="true"/>
+    <param id="2" name="param1_range" type="rangetool" text="(选择区域)" refer="abs" enable="true"/>
+</params>
+<params  counts="2">
+    <param id="3" name="param2_text"  type="statictext" text="查询条件" refer="abs" enable="true"/>
+    <param id="4" name="param2_range" type="rangetool" text="(选择单元格)" refer="relative" enable="true"/>
+</params>
+<params counts="2">
+    <param id="5" name="param3_text"  type="statictext" text="返回哪列内容" refer="abs" enable="true"/>
+    <param id="6" name="param3_range" type="rangetool" text="(选择列)" refer="abs" enable="true"/>
+</params>
+</distribution>
+
+<expression>
+	<subexpression delete = "false">=VLOOKUP([param2_range],[param1_range],COLUMN([param3_range])-COLUMN([param1_range])+1,0) </subexpression>
+</expression>
+</Function>
+
+</CombineFormula>

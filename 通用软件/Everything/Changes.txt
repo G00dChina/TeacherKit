@@ -1,0 +1,298 @@
+Tuesday, 25 October 2016: Version 1.4.1.782b
+	fixed an issue with namepartdupe:
+	fixed exclude hidden files
+	fixed a dual display search history positioning issue
+	fixed an issue with file:
+	fixed an issue with indexing hidden or system folders/files
+	fixed an issue when re-indexing an existing NTFS/ReFS index when "Include Only" is set.
+	added shell: function support.
+	added millisecond support to time format
+
+Sunday, 16 October 2016: Version 1.4.1.773b
+	fixed a login issue with ETP connections
+	improved Chinese localization
+
+Friday, 14 October 2016: Version 1.4.1.771b
+	fixed a display issue with the installer
+
+Friday, 14 October 2016: Version 1.4.1.770b
+	fixed a display issue with tooltips
+	fixed a crash when closing Everything
+	fixed an issue when excluding hidden files and changing the attributes of a file
+	fixed an issue when searching content in empty files
+	fixed a selection issue in full row select mode
+	fixed a display issue with dates
+	fixed an issue with previous navigation searches
+	fixed a hang when installing over a running instance
+	fixed a blocking issues with search as your type disabled
+	fixed a crash when displaying thumbnails
+	fixed an indexing issue with small refs volumes
+	fixed an issue when selecting with ctrl in full row select mode
+	fixed an issue when searching for a \path\
+	fixed a crash when cutting an item multiple times
+	added perl compatible regex
+	added option to never show thumbnails, always icons
+	added iso 8601 syntax for dates and time
+	added option to disable recent changes
+	added new Everything icon
+	improved search term highlighting
+	improved database blocking
+	improved indexes updating
+	improved advanced search
+	improved multi-file renaming
+	improved folder index monitoring
+	
+Tuesday, 24 November 2015: Version 1.4.0.713b
+	fixed an issue with indexing deleted attributes in ReFS volumes
+	fixed an issue with indexing very large ReFS volumes
+	fixed an issue with indexing subst volumes
+	fixed an issue with inline renaming and focus wrapping
+	added option to remember search in bookmarks
+	added option to remember view in bookmarks
+	improved unicode normalization
+	improved open path command
+	improved tooltips
+
+Wednesday, 28 October 2015: Version 1.4.0.709b
+	fixed an issue with indexing large ReFS volumes
+	fixed an issue with recent changes not working for modified files
+	fixed an issue when displaying result list tooltips
+	fixed a display issue when performing an action while in thumbnail view
+	fixed an issue with updating recent changes in a folder index
+	fixed an issue with updating folder information in a folder update
+	fixed an issue when reindexing was not using existing folder and file list indexes
+	fixed a rendering issue when preview was enabled
+	fixed a RTL text layout issue in thumbnail view
+	fixed an issue with access denied install service option not using instance name
+	added show_detailed_listview_tooltips ini option
+	added ctrl_mouse_wheel_action ini option
+	added statusbar_selected_item_format ini option
+	added -searchfilelist <filename> command line option
+	added remove offline volumes option
+	improved support for device removal requests
+	improved detection of an out of date Everything service
+	improved support for massive mft fragments
+
+Sunday, 11 October 2015: Version 1.4.0.705b
+	fixed an issue when saving a refs index
+	fixed an issue with multiple service instances
+
+Sunday, 11 October 2015: Version 1.4.0.704b
+	fixed an issue with displaying wrong sizes
+	fixed an issue with displaying corrupt file names
+	fixed an issue with missing sizes and dates
+	fixed an issue with unnecessary accessing floppy disks
+	fixed an issue when renaming multi-files with non-ascii chararcters
+	fixed a localization issue with some values in the config file
+	fixed an issue with indexing substituted volumes
+	fixed an crash after performing an IPC query
+	fixed an issue with install command line options not working if Everything was already running
+	added thumbnail load priority ui option
+	added service name customization by changing the instance name
+	improved preview support for images on xp
+	improved inherited options when creating a new window
+	improved -update -exit
+
+Friday, 2 October 2015: Version 1.4.0.703b
+	fixed an issue with Everything.db being stored in the wrong location
+	fixed an issue with MSAA and SysListView32 emulation
+	improved debug console support
+
+Wednesday, 30 September 2015: Version 1.4.0.702b
+	added option to index size, dates and attributes
+	added option to enable fast sorting of size, dates, attributes, path and extension
+	added thumbnail view
+	added preview pane
+	added REFS support
+	improved NTFS indexing
+	improved indexing performance
+	added advanced searching
+	added multi-file renaming
+	added content searching
+	improved re-indexing performance when the existing indexes are up to date
+	added search history organizer
+	added show total size in status bar option
+	added single click open option
+	added full row select option
+	improved IPC
+
+Wednesday, 6 August 2014: Version 1.3.4.686
+	added MIT license
+	added installer localization
+	added run as admin option
+	added wildcards anywhere option
+	added run date column/sort/search
+	added support for accessible MSAA
+	added etp connection history
+	added recent changes
+	added run history
+	added home page
+	added x64 build
+	added always ontop option
+	added %APPDATA% option
+	added Everything service option
+	added search history option
+	added the option to cancel locked queries after one second
+	added context menu customization
+	added tooltips for hidden items
+	added option to not compress database
+	added custom filters
+	added hotkey option to toggle search window
+	added filelists
+	added folder indexing
+	added optional diacritical mark matching
+	added bookmarks
+	added new search functions and macros
+	improved performance when renaming/deleting folders
+	improved ETP/FTP server
+	improved HTTP server
+	fixed many bugs
+
+Friday, 13 March 2009: Version 1.2.1.371
+	added title customization
+	added NOT operator (!)
+	added special case wildcards
+	added authentication support for QTWeb
+	added the option to exclude hidden and system files
+	added a basic text export option
+	added search only mode for HTTP/FTP servers
+	added shortcut keys for search options
+	added special case wildcards
+	added utf8 support for the FTP server
+	added keyboard shortcut Ctrl + Enter to open path
+	added extension and type columns
+	added support for external file managers via the ini file
+	added exclude paths to etp/ftp/http servers
+	added unicode support
+	added multiple language support
+	added removable NTFS volume support
+	added exclude folder filter
+	added option to check media on removable volumes (floppy drives are disabled by default)
+	added custom icon support
+	added optional http server user name and password
+	added option to use FTP links for ETP connections
+	added option to choose which drives are included in the installer
+	added fullscreen mode (F11)
+	added portability
+	improved rendering performance
+	improved search parsing
+	improved multiple instances option
+	improved command line parsing
+	improved option window navigation with keyboard
+	improved tooltip help for some items
+	improved searching performance with wildcards by upto 5 times
+	improved searching performance by upto 30%
+	improved ETP/FTP/HTTP performance
+	improved text rendering output and performance
+	improved rendering performance when updating the UI due to a large amount of changes to the file system.
+	improved memory usage when database is unload by clearing icon and file info cache
+	improved volume management
+	improved sorting performance
+	improved ftp command LIST
+	fixed an issue with HTTP url parsing
+	fixed default icons for windows 7 beta
+	fixed user handle leak in context menus
+	fixed a problem with cut/copy/paste
+	fixed cut with files and folders in different folders
+	fixed start menus for Vista
+	fixed opening a folder that had the same name as an executable
+	fixed the FTP REST position
+	fixed unicode IPC queries
+	fixed sorting by descending size 
+	fixed characters being displayed incorrectly with the HTTP server 
+	fixed copying files and folders in different folders.
+	fixed drag drop shortcuts
+	fixed an issue when searching for wildcards with match path enabled
+	fixed delete for files and folders in different folders
+	fixed an issue with long file names
+	fixed the folder and file selection after sorting and changing search parameters
+	fixed folder and file renaming using invalid destination
+	fixed mouse wheel scrolling using the wrong number of lines to scroll
+	fixed icons for files with the extension lnk and url
+	fixed show shell context menus toggle in options window
+	fixed a problem with menus blocking after a search was started
+	fixed -filename command line option using the wrong path
+	fixed new windows inheriting old windows settings
+	fixed horizontal scroll bar using wrong width
+	fixed a gdi leak when closing a window
+	fixed the default large icon
+
+Monday, 29 September 2008: Version 1.1.4.301
+	added -search <text> command line option
+	improved status of servers under the tool menu
+	changed configuration file to Everything.ini
+	fixed a bug that prevented hotkeys from being unregistered
+
+Friday, 26 September 2008: Version 1.1.4.299
+	added optional new window hotkey
+	fixed a bug that prevented the listview being drawn for the first time
+
+Thursday, 25 September 2008: Version 1.1.4.298
+	improved about dialog
+
+Monday, 15 September 2008: Version 1.1.4.297
+	fixed an issue when loading icon and file information cache of visible items when multiple windows were open
+
+Saturday, 13 September 2008: Version 1.1.4.296
+	fixed an issue with loading visible icon and file information cache
+	added Unicode support to IPC
+	improved support for Windows 95/98
+	fixed a problem where the listview was not getting drawn when shown
+
+Thursday, 4 September 2008: Version 1.1.4.293
+	improved support for corrupt NTFS volumes
+	improved support for removable NTFS volumes
+	added Everything IPC
+	improved icon cache
+	added optional icon cache size
+	fixed USN Journal deletion
+	added database compression
+	improved database loading speed
+	fixed a focus issue when opening Everything from a folder context menu
+	removed uxtheme dependency
+	added page up / page down from edit will now change focus to the list control
+	removed annoying popups
+
+Saturday, 2 August 2008: Version 1.1.3.279
+	fixed a crash when opening a context menu on a compressed or encrypted file
+	rewrote file info cache
+	rewrote icon cache
+	removed all technical messages and moved them into ErrorLog.txt
+	fixed a memory leak when closing a context menu
+	added quick launch shortcut option to installer and options menu
+
+Friday, 6 June 2008: Version 1.1.2.235
+	fixed a handle leak when watching drives for changes
+	fixed a memory leak when refreshing icons and file information
+
+Tuesday, 29 April 2008: Version 1.1.1.229
+	added better support for corrupt ntfs drives
+
+Tuesday, 4 March 2008: Version 1.1.0.225
+	added wildcards
+	added regex
+	added highlighted search terms
+	added customizable text size
+	added support for Windows Vista SP1
+	added help index
+	added version information to everything.exe header
+	added version information to installer exe header
+	added descriptions to installer packages
+
+Saturday, 23 February 2008: Version 1.0.4.45
+	fixed a crash when rebuilding the database that had a query with a selection
+
+Saturday, 23 February 2008: Version 1.0.3.43
+	added support for removable drives
+
+Friday, 22 February 2008: Version 1.0.2.31
+	added start menu shortcuts to options
+	added desktop shortcuts to options
+	added option to merge settings using Merge.c
+
+Thursday, 21 February 2008: Version 1.0.1.16
+	fixed a bug with reading version.c
+
+Wednesday, 20 February 2008: Version 1.0.0.0
+	First official release
+	new home at http://www.voidtools.com

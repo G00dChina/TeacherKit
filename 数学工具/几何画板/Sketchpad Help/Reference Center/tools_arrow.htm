@@ -1,0 +1,232 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Tools &gt; Arrow Tools</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Arrow Tools,Translate Arrow Tool,Rotate Arrow Tool,Dilate Arrow Tool,Tools,Tools Arrow,Tools Translate Arrow,Tools Rotate Arrow,Tools Dilate Arrow">
+   <meta name="description" content="Arrow Tools">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "tools_arrow.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Arrow Tools</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="tools.htm">Tools</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Arrow Tools</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="tools.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="tools.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="drag_objects.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><img src="arrow_tool_pullout.png" width="124" height="40" alt="" style="border:none" /><span class="f_BodyText"> Use the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tools to drag objects, to <a href="tools_arrow_selectdeselect.htm" class="topiclink">select and deselect objects</a>, and to perform <a href="tools_arrow_otheractions.htm" class="topiclink">other arrow actions</a>.</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span class="f_BodyText" style="font-weight: bold;"><a href="drag_objects.htm" class="topiclink">Drag Objects:</a></span><span class="f_BodyText"> Dragging objects with the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool is at the heart of Sketchpad’s Dynamic Geometry capabilities. You drag objects to investigate mathematical relationships, to explore variations, to test conjectures, and to discover new properties.</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow_selectdeselect.htm" class="topiclink">Select and Deselect Objects:</a></span><span class="f_BodyText"> Many of Sketchpad’s menu commands act on selected objects. By selecting objects, you focus the software’s attention on one or a handful of the many objects that make up a sketch. For example, you’ll use selection to identify the objects to be transformed by the Transform menu or the objects to be measured by the Measure menu.</span></p>
+<p style="margin: 14px 0px 0px 0px;"><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow_otheractions.htm" class="topiclink">Perform Other Arrow Actions:</a></span><span class="f_BodyText"> In addition to dragging and selecting, use the </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool for several other purposes, such as constructing points of intersection, pressing action buttons, and resizing coordinate systems, function plots, pictures, and loci.</span></p>
+<p style="margin: 7px 0px 0px 0px;"><span class="f_BodyText">There are three </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tools: the </span><span class="f_BodyText" style="font-weight: bold;">Translate Arrow</span><span class="f_BodyText"> tool, the </span><span class="f_BodyText" style="font-weight: bold;">Rotate Arrow</span><span class="f_BodyText"> tool, and the </span><span class="f_BodyText" style="font-weight: bold;">Dilate Arrow</span><span class="f_BodyText"> tool. These three tools behave identically when you use them to select objects; it’s only their dragging behavior that differs.</span></p>
+<h2 class="p_Heading2"><span class="f_BodyText">To change from one </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool to another, press and hold the icon in the Toolbox until a menu pops out. Choose a different variation of the tool from this menu to make it the active </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool.</span></h2>
+<p class="p_BodyText"><span class="f_BodyText">If an </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool is already active, you can switch to a different Arrow tool by holding the Shift key and pressing either the right or left arrow key.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Translate Arrow Tool</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Drag selected objects with the </span><span class="f_BodyText" style="font-weight: bold;">Translate Arrow</span><span class="f_BodyText"> tool to translate them — that is, to slide them by any distance in any direction without turning or changing size or shape. This is the default </span><span class="f_BodyText" style="font-weight: bold;">Arrow</span><span class="f_BodyText"> tool.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;">Translate Arrow</span><span class="f_BodyText"> tool to select and deselect objects, press action buttons, and construct points of intersection just like the other </span><span class="f_BodyText" style="font-weight: bold;">Selection Arrow</span><span class="f_BodyText"> tools.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you want to construct a translated image of an object instead of translating the original object itself, use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_translate.htm" class="topiclink">Transform | Translate</a></span><span class="f_BodyText"> command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you translate an independent point that determines a single straight object, hold the <a href="shortcuts_specialkeys.htm" class="topiclink">Shift</a> key to constrain the straight object to be horizontal, vertical, or at a multiple of 15</span><span class="f_MarginNote">°</span><span class="f_BodyText">.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="translate_arrow.png" width="40" height="40" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Rotate Arrow Tool</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Drag selected objects with the </span><span class="f_BodyText" style="font-weight: bold;">Rotate Arrow</span><span class="f_BodyText"> tool to rotate them — that is, to turn them around a center point by any desired angle without changing their distance from the center, their size, or their shape.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The center point used for rotation is the point you marked most recently using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_markcenter.htm" class="topiclink">Transform | Mark Center</a></span><span class="f_BodyText"> command. If you haven’t marked a center point, Sketchpad automatically marks the point nearest to the center of the screen.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also mark a point as the center of rotation by double-clicking it with an </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;">Rotate Arrow</span><span class="f_BodyText"> tool to select and deselect objects, press action buttons, and construct points of intersection just like the other </span><span class="f_BodyText" style="font-weight: bold;">Selection Arrow</span><span class="f_BodyText"> tools.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you want to construct a rotated image of an object instead of rotating the original object itself, use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_rotate.htm" class="topiclink">Transform | Rotate</a></span><span class="f_BodyText"> command.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="rotate_arrow.png" width="40" height="40" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Dilate Arrow Tool</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:90%; height:86px; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Drag selected objects with this tool to dilate them — that is, to stretch or shrink them farther from or closer to a center point by any desired amount without changing their direction from the center or their shape.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The center point used for dilation is the point you marked most recently using the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_markcenter.htm" class="topiclink">Transform | Mark Center</a></span><span class="f_BodyText"> command. If you haven’t marked a center point, Sketchpad automatically marks the point nearest to the center of the screen.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also mark a point as the center of dilation by double-clicking it with an </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;">Dilate Arrow</span><span class="f_BodyText"> tool to select and deselect objects, press action buttons, and construct points of intersection just like the other </span><span class="f_BodyText" style="font-weight: bold;">Selection Arrow</span><span class="f_BodyText"> tools. You can also use the </span><span class="f_BodyText" style="font-weight: bold;">Dilate Arrow</span><span class="f_BodyText"> tool to <a href="howto_zoom.htm" class="topiclink">zoom in and out</a> on a sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you want to construct a dilated image of an object instead of dilating the original object itself, use the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_dilate.htm" class="topiclink">Transform | Dilate</a></span><span class="f_BodyText"> command.</span></p>
+</td>
+<td style="vertical-align:top; height:86px; padding:0px;"><p class="p_Image_Centered_Large"><img src="dilate_arrow.png" width="40" height="40" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="drag_objects.htm" class="topiclink">Drag Objects</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_arrow_selectdeselect.htm" class="topiclink">Select and Deselect Objects</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="tools_arrow_otheractions.htm" class="topiclink">Other Arrow Actions</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="howto_zoom.htm" class="topiclink">How to Zoom In and Out on a Sketch</a></span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

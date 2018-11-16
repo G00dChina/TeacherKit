@@ -1,0 +1,104 @@
+×ÖºÅ 16
+ÀàÃû 11sfktLinex75783046
+ÊôĞÔ  197 145 397  68F
+¿É¼û T
+¿ØÎ»  389  30   2   2 195  60
+½áÊø
+ÀàÃû 11sfktLinex71739209
+ÊôĞÔ  364  85  68  23F
+¿É¼û F
+¿ØÎ»    2  15  60   2  31   2
+½áÊø
+ÀàÃû  0sfktBegin1
+ÊôĞÔ   25 127  75  30F
+·½Ïò 2
+½áÊø
+ÀàÃû 10sfktEnd1
+ÊôĞÔ  744 127  64  30F
+·½Ïò 2
+½áÊø
+ÀàÃû  2sfktchuli37389166
+ÊôĞÔ  423  76  99  27F
+¿É¼û T
+·½Ïò 2
+ÄÚÈİ S=2*i+1
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32  S\i0 =2\i i\i0 +1
+\par }
+
+½áÊø
+ÀàÃû  2sfktchuli04745923
+ÊôĞÔ  100 129 100  27F
+¿É¼û T
+·½Ïò 2
+ÄÚÈİ i=1,S=0
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32 i\i0 =1,\i S\i0 =0
+\par }
+
+½áÊø
+ÀàÃû  3sfktPanduan22015947
+ÊôĞÔ  291 103 154  78T
+ÊÇ·ñ 34
+¿É¼û T
+·½Ïò 2
+ÄÚÈİ i%2=1
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs28 i\i0\f1\'ca\'c7\'c6\'e6\'ca\'fd
+\par }
+
+½áÊø
+ÀàÃû  2sfktchuli52036021
+ÊôĞÔ  199 128  93  29F
+¿É¼û T
+·½Ïò 2
+ÄÚÈİ i=i+1
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs32   i\i0 =\i i\i0 +1
+\par }
+
+½áÊø
+ÀàÃû  2sfktchuli10469958
+ÊôĞÔ  444 129  74  26F
+¿É¼û F
+·½Ïò 2
+ÄÚÈİ S=2*i
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs28  S\i0 =2\i i
+\par }
+
+½áÊø
+ÀàÃû  3sfktPanduan74999930
+ÊôĞÔ  518 107 140  70F
+ÊÇ·ñ 23
+¿É¼û T
+·½Ïò 2
+ÄÚÈİ S<10
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\i\f0\fs28  S\i0 <10
+\par }
+
+½áÊø
+ÀàÃû  4sfktshuru62265012
+ÊôĞÔ  658 129  86  27F
+¿É¼û T
+·½Ïò 2
+ÄÚÈİ Êä³öi
+ÏÔÊ¾
+{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\lang2052\f0\fs28   \u36755?\u20986?\i i
+\par }
+
+½áÊø
+ÀàÃû  8sfktLined48023636
+ÊôĞÔ  515  89  14  50F
+¿É¼û T
+½áÊø
+Íê³É
+É

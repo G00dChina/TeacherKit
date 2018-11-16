@@ -1,0 +1,238 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 13px;
+ font-family: Arial;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_BodyText /* BodyText */
+{
+}
+span.f_BodyText_Indented /* BodyText_Indented */
+{
+}
+span.f_CodeExample /* Code Example */
+{
+ font-family: 'Courier New';
+ color: #003300;
+}
+span.f_CollapsibleSubhead /* Collapsible Subhead */
+{
+ font-size: 16px;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.f_CollapsibleSub-Subhead /* Collapsible Sub-Subhead */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.f_Comment /* Comment */
+{
+ color: #00ff00;
+}
+span.f_ExpandableNote /* Expandable Note */
+{
+}
+span.f_ExpandableNoteSection /* Expandable Note Section */
+{
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 19px;
+ font-weight: bold;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 16px;
+ font-weight: bold;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 15px;
+ font-weight: bold;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 11px;
+}
+span.f_Image_Centered_Large /* Image_Centered_Large */
+{
+ font-size: 11px;
+}
+span.f_Image_FlushRight_Narrative /* Image_FlushRight_Narrative */
+{
+ font-size: 11px;
+}
+span.f_LicenseBullet /* License Bullet */
+{
+}
+span.f_LinkList_Header /* LinkList_Header */
+{
+ font-size: 11px;
+ font-style: italic;
+ color: #333399;
+}
+span.f_LinkList_ListElement /* LinkList_List Element */
+{
+ font-size: 11px;
+ font-style: italic;
+ color: #333399;
+}
+span.f_MarginNote /* MarginNote */
+{
+}
+span.f_MarginNote2 /* MarginNote2 */
+{
+}
+span.f_MenuCommandList /* MenuCommandList */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.p_BodyText /* BodyText */
+{
+ margin: 7px 0px 0px 0px;
+}
+.p_BodyText_Indented /* BodyText_Indented */
+{
+ margin: 7px 0px 0px 24px;
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+ margin: 10px 0px 10px 24px;
+}
+.p_CollapsibleSubhead /* Collapsible Subhead */
+{
+ text-indent: -18px;
+ border-color: #008080;
+ border-style: solid;
+ border-width: 1px;
+ background: #effaf5;
+ padding: 2px 2px 2px 2px;
+ margin: 6px -2px -2px 16px;
+}
+.p_CollapsibleSub-Subhead /* Collapsible Sub-Subhead */
+{
+ text-indent: -18px;
+ background: #effaf5;
+ padding: 2px 2px 2px 2px;
+ margin: 6px -2px -2px 16px;
+}
+.p_Comment /* Comment */
+{
+}
+.p_ExpandableNote /* Expandable Note */
+{
+ margin: 3px 24px 0px 1px;
+}
+.p_ExpandableNoteSection /* Expandable Note Section */
+{
+ margin: 3px 0px 0px 9px;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.p_Heading2 /* Heading2 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.p_Heading3 /* Heading3 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_Image_Centered_Large /* Image_Centered_Large */
+{
+ text-align: center;
+ margin: 5px 5px 5px 5px;
+}
+.p_Image_FlushRight_Narrative /* Image_FlushRight_Narrative */
+{
+ text-align: right;
+ margin: 5px 5px 5px 5px;
+}
+.p_LicenseBullet /* License Bullet */
+{
+ margin: 7px 0px 0px 0px;
+}
+.p_LinkList_Header /* LinkList_Header */
+{
+ margin: 7px 0px 0px 0px;
+}
+.p_LinkList_ListElement /* LinkList_List Element */
+{
+ margin: 1px 0px 0px 12px;
+}
+.p_MarginNote /* MarginNote */
+{
+ margin: 3px 24px 0px 38px;
+}
+.p_MarginNote2 /* MarginNote2 */
+{
+ background: #ffffc4;
+ margin: 3px 24px 0px 38px;
+}
+.p_MenuCommandList /* MenuCommandList */
+{
+ margin: 0px 0px 0px 18px;
+}
+.p_Notes /* Notes */
+{
+}
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 3px;
+  border:1px solid #FF0000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}

@@ -1,0 +1,86 @@
+[2018-03-26 15:43:49.239] [I] ***************************************************************
+[2018-03-26 15:43:49.239] [I] Snipaste 1.16.2 x86 (Qt 5.9.0)
+[2018-03-26 15:43:49.239] [I] OS: Windows 10 (10.0) [10.0.16299]
+[2018-03-26 15:43:49.239] [I] Cores: 8
+[2018-03-26 15:43:49.239] [I] Elevated: false
+[2018-03-26 15:43:49.239] [I] Log level: 2
+[2018-03-26 15:43:49.239] [I] Application dir: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste
+[2018-03-26 15:43:49.239] [I] Config: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/config.ini
+[2018-03-26 15:43:49.239] [I] Library paths: (C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste)
+[2018-03-26 15:43:49.239] [I] Screen scale: 1.5
+[2018-03-26 15:43:49.241] [I] Retina factor: 1
+[2018-03-26 15:43:49.241] [I] Screens: 1
+[2018-03-26 15:43:49.241] [I]     QRect(0, 0, 1920 x 1080), DPI = 144 , DPR = 1
+[2018-03-26 15:43:49.241] [I] About to import settings from: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/config.ini
+[2018-03-26 15:43:49.244] [I] Settings imported
+[2018-03-26 15:43:49.248] [I] Breakpad initialized
+[2018-03-26 15:43:49.250] [I] Process priority: 1
+[2018-03-26 15:43:49.250] [I] Initializing Snipaste...
+[2018-03-26 15:43:49.720] [I] Prefetch...
+[2018-03-26 15:43:49.721] [I] About to apply settings...
+[2018-03-26 15:43:49.740] [I] Image writer plugins loaded: 15 ms
+[2018-03-26 15:43:49.782] [I] Image reader plugins loaded: 47 ms
+[2018-03-26 15:43:49.892] [I] Settings applied
+[2018-03-26 15:43:49.943] [I] Log level set to: 2
+[2018-03-26 15:43:50.091] [I] History dir: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/history
+[2018-03-26 15:43:50.092] [W] Failed to open history file "C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/history/.sp0" for reading
+[2018-03-26 15:43:50.093] [I] Add group
+[2018-03-26 15:43:50.104] [I] Request to switch to group 0
+[2018-03-26 15:43:50.259] [I] About to restore pasters...
+[2018-03-26 15:43:50.264] [I] Group 0 [U7XFBX]: "默认"
+[2018-03-26 15:43:50.264] [I] Record version: 162
+[2018-03-26 15:43:50.264] [I] To restore: 0
+[2018-03-26 15:43:50.264] [I] Pasters touched
+[2018-03-26 15:43:50.264] [I] All pasters activated: true
+[2018-03-26 15:43:50.432] [I] Unref images: 0 (0 removed)
+[2018-03-26 15:43:50.442] [I] Unref dirs: 0 (0 removed)
+[2018-03-26 15:43:50.469] [I] Empty history info files: 0 (0 removed)
+[2018-03-26 15:43:50.469] [I] Pasters restored
+[2018-03-26 15:43:50.472] [I] Launch time: 1233 ms
+[2018-03-26 15:43:50.642] [I] Load default ssl configuration: 922 ms
+[2018-03-26 15:44:13.123] [I] User says yes to restart Snipaste with admin privileges
+[2018-03-26 15:44:13.123] [I] About to restart...
+[2018-03-26 15:44:13.777] [I] Snipaste: normal exit
+[2018-03-26 15:44:13.777] [I] Snipper: destructed
+[2018-03-26 15:44:13.797] [I] Restart soon: C:\Users\qiexi\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Snipaste.lnk
+[2018-03-26 15:44:13.985] [I] Exit: 0
+
+
+[2018-03-26 15:44:14.351] [I] ***************************************************************
+[2018-03-26 15:44:14.351] [I] Snipaste 1.16.2 x86 (Qt 5.9.0)
+[2018-03-26 15:44:14.351] [I] OS: Windows 10 (10.0) [10.0.16299]
+[2018-03-26 15:44:14.351] [I] Cores: 8
+[2018-03-26 15:44:14.351] [I] Elevated: true
+[2018-03-26 15:44:14.351] [I] Log level: 2
+[2018-03-26 15:44:14.351] [I] Application dir: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste
+[2018-03-26 15:44:14.351] [I] Config: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/config.ini
+[2018-03-26 15:44:14.351] [I] Library paths: (C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste)
+[2018-03-26 15:44:14.351] [I] Screen scale: 1.5
+[2018-03-26 15:44:14.351] [I] Retina factor: 1
+[2018-03-26 15:44:14.351] [I] Screens: 1
+[2018-03-26 15:44:14.351] [I]     QRect(0, 0, 1920 x 1080), DPI = 144 , DPR = 1
+[2018-03-26 15:44:14.351] [I] About to import settings from: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/config.ini
+[2018-03-26 15:44:14.430] [I] Settings imported
+[2018-03-26 15:44:14.434] [I] Breakpad initialized
+[2018-03-26 15:44:14.437] [I] Process priority: 1
+[2018-03-26 15:44:14.437] [I] Initializing Snipaste...
+[2018-03-26 15:44:14.822] [I] Prefetch...
+[2018-03-26 15:44:14.824] [I] About to apply settings...
+[2018-03-26 15:44:14.845] [I] Image writer plugins loaded: 31 ms
+[2018-03-26 15:44:14.905] [I] Image reader plugins loaded: 62 ms
+[2018-03-26 15:44:15.059] [I] Settings applied
+[2018-03-26 15:44:15.107] [I] Log level set to: 2
+[2018-03-26 15:44:15.257] [I] History dir: C:/Users/qiexi/Desktop/信息化助手-1.14/FirefoxPortable/Snipaste/history
+[2018-03-26 15:44:15.261] [I] Header version: 162
+[2018-03-26 15:44:15.266] [I] About to restore pasters...
+[2018-03-26 15:44:15.269] [I] Group 0 [U7XFBX]: "默认"
+[2018-03-26 15:44:15.269] [I] Record version: 162
+[2018-03-26 15:44:15.269] [I] To restore: 0
+[2018-03-26 15:44:15.269] [I] Pasters touched
+[2018-03-26 15:44:15.269] [I] All pasters activated: true
+[2018-03-26 15:44:15.552] [I] Unref images: 0 (0 removed)
+[2018-03-26 15:44:15.561] [I] Unref dirs: 0 (0 removed)
+[2018-03-26 15:44:15.574] [I] Empty history info files: 0 (0 removed)
+[2018-03-26 15:44:15.574] [I] Pasters restored
+[2018-03-26 15:44:15.574] [I] Launch time: 1232 ms
+[2018-03-26 15:44:15.697] [I] Load default ssl configuration: 875 ms

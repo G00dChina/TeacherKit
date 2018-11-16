@@ -1,0 +1,182 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Windows &gt; Motion Controller</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Motion Controller,Animation,Dialog Boxes,Dialog Boxes Motion Controller">
+   <meta name="description" content="Motion Controller">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "windows_motctrl.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Motion Controller</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="windows.htm">Windows</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Motion Controller</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="shortcuts_howto_signum.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="windows.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="windows_motctrl_parts.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_Image_Centered_Large"><img src="window_motn_ctrlr_zoom60.png" width="138" height="82" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the Motion Controller to start objects animating and to control the motion of objects in your sketch.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Movement is at the heart of dynamic geometry. By animating and dragging objects in Sketchpad, you can rapidly explore many different variants of a construction, allowing you to make discoveries and investigate conjectures in a way that would be impossible without motion. Animation also allows you to demonstrate and present your findings in a more interesting and effective way than you could ever do with a static diagram.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Many of the functions of the Motion Controller are available through Sketchpad’s menus, action buttons, and so forth. By providing a shortcut to these functions, the Motion Controller makes it quicker and easier for you to use animation in your sketch.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If you want even more control of animation than the Motion Controller provides, create <a href="objects_btns_animateprops.htm" class="topiclink">Animation</a> and <a href="objects_btns_moveprops.htm" class="topiclink">Movement</a> buttons by choosing </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_btns.htm" class="topiclink">Edit | Action Buttons</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You use the Motion Controller to start objects moving, stop them, reverse their direction, and change their speed. It gives you easy access to the functionality of the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_animate.htm" class="topiclink">Animate</a></span><span class="f_BodyText">, </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_incdecspeed.htm" class="topiclink">Increase Speed</a></span><span class="f_BodyText"><a href="menus_display_incdecspeed.htm" class="topiclink">, </a></span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_incdecspeed.htm" class="topiclink">Decrease</a> <a href="menus_display_incdecspeed.htm" class="topiclink">Speed</a></span><span class="f_BodyText"><a href="menus_display_incdecspeed.htm" class="topiclink">,</a> and </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_stopanimation.htm" class="topiclink">Stop Animation</a></span><span class="f_BodyText"> commands in the <a href="menus_display.htm" class="topiclink">Display</a> menu, while providing better control of the speed and direction of moving objects. It makes it easy to control the motion of a specific moving object without affecting other moving objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The Motion Controller appears when you start an animation or when you choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_motioncontrol.htm" class="topiclink">Display | Show Motion Controller</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you move objects in Sketchpad, whether by using the Motion Controller, by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_display_animate.htm" class="topiclink">Animate</a></span><span class="f_BodyText">, or by pressing an Animation or Movement action button, different objects move or change in different ways.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Independent points move freely in the plane.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Points on paths move along their paths.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Parameters change their values.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">All other objects move by moving their parent objects.</span></p><p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_parts.htm" class="topiclink">Parts of the Motion Controller</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_using.htm" class="topiclink">Using the Motion Controller</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="windows_motctrl_animprinc.htm" class="topiclink">Principles of Animation</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

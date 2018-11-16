@@ -1,0 +1,374 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Perimeter and Area - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Perimeter and Area</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-04.gif">Perimeter and Area: Move from Data, to Graphs, to Functions</h1>
+<p>In this tutorial, you&rsquo;ll explore the connections between a circle&rsquo;s radius, circumference, and area. You&rsquo;ll collect measurements in a table, plot the data on a graph, and plot functions that fit the data.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Measure the radius, circumference, and area of a circle</li>
+<li>Collect measurement data in a table</li>
+<li>Plot table data on a graph</li>
+<li>Adjust the scale of the coordinate axes</li>
+<li>Construct a ray with the <strong>Straightedge</strong> tool</li>
+<li>Measure the slope of a straight object</li>
+<li>Plot and edit a function using Sketchpad&rsquo;s Calculator</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x423.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x423.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+</div>
+<h2>Tabulate Measurement Data <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x424.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x424.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Sketchpad makes it easy to collect measurements in a table and add new data to the table as the measurements change.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>Open a new sketch. (If necessary, choose <strong>File | New Sketch.</strong>)</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Compass tool" alt="Compass Tool" width="32" height="32" src="images/toolCompass.gif"></div>
+<div class="column-2">2.</div>
+<div class="column-3">
+<p>Construct a circle. With the circle selected, choose <strong>Measure | Radius.</strong>
+</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-4_01" src="Images/tutorial-4_01.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">3.</div>
+<div style="width:370px;" class="column-3">
+<p>Click in empty space to deselect all objects. Then select the circle and choose <strong>Measure | Circumference.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">4.</div>
+<div style="width:370px;" class="column-3">
+<p>Select the circle and choose <strong>Measure | Area.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">5.</div>
+<div style="width:370px;" class="column-3">
+<p>Select the three measurements in order (radius, circumference, and area) and choose <strong>Number | Tabulate.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">6.</div>
+<div style="width:370px;" class="column-3">
+<p>Drag radius point <em>B</em> and observe how the table values update.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">7.</div>
+<div style="width:370px;" class="column-3">
+<p>Double-click the table. The current values of the three measurements are recorded in the table and a new row appears.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">8.</div>
+<div style="width:370px;" class="column-3">
+<p>Drag point <em>B</em> and double-click the table again. Repeat this process several more times to add table data for circles of different sizes.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">9.</div><div class="column-3">
+<p>Deselect all objects, then select the table and choose <strong>Number | Add Table Data.</strong> In the dialog box, choose the second radio button, leave the default to add 10 entries at the rate of one every 1.0 second, and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">10.</div>
+<div class="column-3">
+<p>Keep dragging point <em>B</em> and observe how new rows are added to the table over a period of 10 seconds.</p>
+</div>
+</div>
+<h2>Plot Table Data <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x425.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x425.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll take the data you&rsquo;ve collected in your table and plot the radius and circumference measurements on a graph.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Sketchpad allows you to share data between tables and graphs, making it easy to examine it using multiple representations." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">11.</div>
+<div class="column-3">
+<p>Select only the table and choose <strong>Graph | Plot Table Data.</strong> In the dialog box, leave the default settings and click <strong>OK.</strong> The data from your table appears on a coordinate system.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-4_02" src="Images/tutorial-4_02.gif"><div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div style="width:140px;" class="column-3">
+<p>Drag either the <em>x-</em>axis or <em>y-</em>axis to move the coordinate system until the axes and plotted data do not overlap the circle or table.</p>
+<p>Click and drag the bottom right corner of your sketch to make the window larger.</p>
+<p>You can also choose <strong>Graph | Hide Grid.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div class="column-3">
+<p>Drag any number on an axis tick mark to change the scale. Try to spread out the data points as much as you can while keeping them all visible.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">14.</div>
+<div class="column-3">
+<p>Choose <strong>Graph | Grid Form | Rectangular Grid.</strong> Now you can change the vertical and horizontal scales independently. Stretch the <em>x-</em>axis so that your plotted points are more spread out.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Ray tool" alt="Ray Tool" width="32" height="32" src="images/toolRay.gif"></div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>Choose the <strong>Ray</strong> tool&mdash;press and hold the <strong>Segment</strong> tool until the straightedge menu appears, move the cursor to the ray icon, and release.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Construct a ray from the origin through any one of the plotted points. What do you notice?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>With the ray selected, choose <strong>Measure | Slope.</strong> Is this value familiar?</p>
+</div>
+</div>
+<h2>Plot a Function to Fit the Data <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x426.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x426.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll use Sketchpad&rsquo;s Calculator to plot a function to fit the data. Your function will relate the radius of a circle to its circumference.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-4_03" src="Images/tutorial-4_03.gif"><div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">18.</div>
+<div style="width:260px;" class="column-3">
+<p>Choose <strong>Graph | Plot New Function.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div style="width:260px;" class="column-3">
+<p>In the Calculator, click the Values pop-up menu and choose <span style="font-family: arial;font-weight:bold;"><em>π</em></span>. Then click, in order, the <strong>*</strong> key, the <strong><em>x</em></strong> key, and <strong>OK.</strong> A function and its graph appear.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div style="width:260px;" class="column-3">
+<p>How does the shape of the graph compare with the shape of the data? How could you change the function to make the line fit the data?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">21.</div>
+<div style="width:260px;" class="column-3">
+<p>Select the function plot and use the Display menu to make the line thicker and a color of your choice.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">22.</div>
+<div style="width:260px;" class="column-3">
+<p>Double-click the function <span class="nowrap"><em>f</em>(<em>x</em>) = <span style="font-family: arial;"><em>π</em></span> &bull; <em>x</em></span>. Multiply the expression in the Calculator by 2 and click <strong>OK.</strong> What happens? Why?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Text tool" alt="Text Tool" width="32" height="32" src="Images/toolText.gif"></div>
+<div class="column-2">23.</div>
+<div style="width:260px;" class="column-3">
+<p>Double-click the function with the <strong>Text</strong> tool. Change its label to <em>Circumference</em> and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll repeat this process, plotting a function that relates the radius of a circle to its area, rather than its circumference.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">24.</div>
+<div class="column-3">
+<p>Select the table and choose <strong>Graph | Plot Table Data.</strong> In the dialog box, click the pop-up menu for <em>y,</em> choose Area <img style="margin-right:2px;" alt="circle dot" width="12" height="12" src="Images/dotCircle.gif"><em>AB,</em> and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">25.</div>
+<div class="column-3">
+<p>Shrink the <em>y-</em>axis so that all your new data points are in the window. What do you notice about the shape of the data?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">26.</div>
+<div class="column-3">
+<p>Choose <strong>Graph | Plot New Function.</strong> In the Calculator, click in order the <strong><em>x</em></strong> key, the <strong>^</strong> key (to enter an exponent), the <strong>2</strong> key, and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">27.</div>
+<div class="column-3">
+<p>How does the shape of the graph compare with the shape of the data? How could you change the function to make the graph fit the data?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">28.</div>
+<div class="column-3">
+<p>Double-click the new function and change it so that the function plot fits the data perfectly. What is your new function?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Text tool" alt="Text Tool" width="32" height="32" src="Images/toolText.gif"></div>
+<div class="column-2">29.</div>
+<div class="column-3">
+<p>Double-click the new function with the <strong>Text</strong> tool, change its label to <em>Area,</em> and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">30.</div>
+<div class="column-3">
+<p>In a new sketch, construct a square (or other regular polygon) and measure its side length and area. Collect the measurement data in a table as you vary its size, then plot the data and plot a function to fit the data.</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1242 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<import path="common.kuip"/>
+	<resource>
+		<icon>
+			<path path=":/icons/6x6"/>
+			<path path=":/icons/12x12"/>
+			<path path=":/icons/15x15"/>
+			<path path=":/icons/16x16"/>
+			<path path=":/icons/16x16_mso_builtin_icon"/>
+			<path path=":/icons/18x18"/>
+			<path path=":/icons/20x20"/>
+			<path path=":/icons/24x24"/>
+			<path path=":/icons/24x24_mso_builtin_icon"/>
+			<path path=":/icons/28x28"/>
+			<path path=":/icons/32x32"/>
+			<path path=":/icons/36x36"/>
+			<path path=":/icons/48x48"/>
+			<path path=":/icons/256x256"/>
+			<path path=":/icons/26x26"/>
+			<path path=":/icons/30x30"/>
+			<path path=":/icons/40x40"/>
+			<path path=":/icons/64x64"/>
+			<path path=":/icons/WordArtShapes"/>
+			<path path=":/icons/TitleBarButton"/>
+			<path path=":/icons/TextStyleButton"/>
+			<path path=":/icons/DashStyle"/>
+			<path path=":/icons/ArrowStyle"/>
+			<path path=":/icons/ShadowStyle"/>
+			<path path=":/icons/3DStyle"/>
+			<path path=":/icons/3D"/>
+			<path path=":/icons/Numbering_Bullets"/>
+			<path path=":/icons/UnderLine"/>
+			<path path=":/icons/LineStyle"/>
+			<path path=":/icons/wps"/>
+			<path path=":/icons/wpp"/>
+			<path path=":/icons/notabpage"/>
+			<path path=":/icons/formatting"/>
+			<path path=":/icons/formatting/tab"/>
+			<path path=":/NetbackupWizard"/>
+			<path path=":/wpsicons/ongmani"/>
+		</icon>
+	</resource>
+	<theme versionHint="2016">
+		<style class="common">
+			<color value="#6788ab7f" name="spread"/>
+			<color value="#dfecfc7f" name="background"/>
+			<color value="#edeef0" name="window"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#dfecfc7f"/>
+			</linearGradient>
+			<color value="#cccccc" name="border"/>
+			<color value="#dedee0" name="mainborder"/>
+			<color value="#dedee0" name="mainborder2"/>
+			<color value="#ffffff80" name="mainborder-in"/>
+			<color value="#424242" name="text"/>
+			<color value="#00000000" name="text-shadow"/>
+			<color value="#b2cced" name="text-highlight"/>
+			<color value="#c2c2c2" name="text-disabled"/>
+		</style>
+		<style base="common" class="button">
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="1" value="#d3e0f7"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-down" start="0,0">
+				<color position="1" value="#bdceed"/>
+			</linearGradient>
+			<color value="#e4e7eb" name="background-disable"/>
+			<color value="#d3e0f8" name="border-hover"/>
+			<color value="#d3e0f8" name="border-light"/>
+			<color value="#bdceed" name="border-down"/>
+			<color value="#e4e7eb" name="border-disable"/>
+			<color value="#7a7a7a" name="text-shortcut"/>
+		</style>
+		<style base="common" class="TabBarButton">
+			<color value="#00000080" name="text"/>
+			<color value="#000000a6" name="text-hover"/>
+			<color value="#00000066" name="text-down"/>
+			<color value="#00000000" name="text-shadow"/>
+			<color value="#00000033" name="disable"/>
+		</style>
+		<style base="common" class="arrow">
+			<color value="#00000099" name="arrow-enable"/>
+			<color value="#c8c8c8" name="arrow-disable"/>
+			<color value="#00000099" name="downarrowr0"/>
+			<color value="#00000099" name="downarrowr1"/>
+			<color value="#00000099" name="downarrowr2"/>
+			<color value="#00000099" name="downarrowr3"/>
+			<color value="#00000099" name="downarrowr4"/>
+			<color value="#00000099" name="downarrowr5"/>
+			<color value="#00000099" name="downarrowr6"/>
+			<color value="#00000099" name="downarrowr7"/>
+			<color value="#00000099" name="downarrowr8"/>
+		</style>
+		<style base="common" class="KRbTabContextButton">
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1.0" value="#cccccc"/>
+			</linearGradient>
+			<color value="#f0f6fc" name="triangle-background"/>
+			<color value="#ffa800" name="sliderColor"/>
+			<color value="#ffa800" name="sliderColor-hover1"/>
+			<color value="#ffa800" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#ffa800" name="contextTab"/>
+			<linearGradient spread="pad" end="0,1" name="checked-background" start="0,0">
+				<color position="0" value="#e1e9f600"/>
+				<color position="1" value="#e1e9f6"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="0" value="#ff800480"/>
+				<color position="0.8" value="#ff800400"/>
+				<color position="1" value="#ff800400"/>
+			</linearGradient>
+			<color value="#424242" name="text"/>
+			<color value="#ffffff" name="text-hover"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_DesignTable">
+			<color value="#72ad37" name="sliderColor"/>
+			<color value="#72ad37" name="sliderColor-hover1"/>
+			<color value="#72ad37" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#72ad37" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_TableTool">
+			<color value="#72ad37" name="sliderColor"/>
+			<color value="#72ad37" name="sliderColor-hover1"/>
+			<color value="#72ad37" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#72ad37" name="contextTab"/>
+		</style>
+		<style class="KRbLayoutWidget">
+			<color value="#cccccc" name="border"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#fafafa"/>
+			</linearGradient>
+		</style>
+		<style base="KRbTabContextButton-CT_TableTool" class="KRbTabContextButton-CT_TableTools">
+			<color value="#72ad37" name="sliderColor"/>
+			<color value="#72ad37" name="sliderColor-hover1"/>
+			<color value="#72ad37" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#72ad37" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_Design">
+			<color value="#72ad37" name="sliderColor"/>
+			<color value="#72ad37" name="sliderColor-hover1"/>
+			<color value="#72ad37" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#72ad37" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_ChartTools">
+			<color value="#5c8ae6" name="sliderColor"/>
+			<color value="#5c8ae6" name="sliderColor-hover1"/>
+			<color value="#5c8ae6" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#5c8ae6" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_Diagram">
+			<color value="#f06062" name="sliderColor"/>
+			<color value="#f06062" name="sliderColor-hover1"/>
+			<color value="#f06062" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#f06062" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_Paragraph">
+			<color value="#e68b53" name="sliderColor"/>
+			<color value="#e68b53" name="sliderColor-hover1"/>
+			<color value="#e68b53" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#e68b53" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_DrawingTool_Vml">
+			<color value="#e6902e" name="sliderColor"/>
+			<color value="#e6902e" name="sliderColor-hover1"/>
+			<color value="#e6902e" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#e6902e" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton-CT_DrawingTool_Vml" class="KRbTabContextButton-CT_DrawingTool"/>
+		<style base="KRbTabContextButton-CT_DrawingTool_Vml" class="KRbTabContextButton-CT_TextTool"/>
+		<style base="KRbTabContextButton-CT_DrawingTool" class="KRbTabContextButton-CT_DrawingTools"/>
+		<style base="KRbTabContextButton-CT_DrawingTool_Vml" class="KRbTabContextButton-CT_DrawingTools_Vml"/>
+		<style base="KRbTabContextButton-CT_DrawingTool" class="KRbTabContextButton-CT_shadowDrawingTools"/>
+		<style base="KRbTabContextButton-CT_DrawingTool_Vml" class="KRbTabContextButton-CT_shadowDrawingTools_Vml"/>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_PrintPreview">
+			<color value="#26bda4" name="sliderColor"/>
+			<color value="#26bda4" name="sliderColor-hover1"/>
+			<color value="#26bda4" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#26bda4" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_Mailings">
+			<color value="#ffa800" name="sliderColor"/>
+			<color value="#ffa800" name="sliderColor-hover1"/>
+			<color value="#ffa800" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#ffa800" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_HeaderFooter">
+			<color value="#b270e0" name="sliderColor"/>
+			<color value="#b270e0" name="sliderColor-hover1"/>
+			<color value="#b270e0" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#b270e0" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_PictureTool">
+			<color value="#4eacdb" name="sliderColor"/>
+			<color value="#4eacdb" name="sliderColor-hover1"/>
+			<color value="#4eacdb" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#4eacdb" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_VideoTool">
+			<color value="#4eacdb" name="sliderColor"/>
+			<color value="#4eacdb" name="sliderColor-hover1"/>
+			<color value="#4eacdb" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#4eacdb" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_AudioTool">
+			<color value="#4eacdb" name="sliderColor"/>
+			<color value="#4eacdb" name="sliderColor-hover1"/>
+			<color value="#4eacdb" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#4eacdb" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton-CT_PictureTool" class="KRbTabContextButton-CT_PictureTools"/>
+		<style base="KRbTabContextButton-CT_PictureTool" class="KRbTabContextButton-CT_PictureTools_Vml"/>
+		<style base="KRbTabContextButton-CT_PictureTool" class="KRbTabContextButton-CT_PictureTool_Vml"/>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_PivotTableTools">
+			<color value="#f15ec2" name="sliderColor"/>
+			<color value="#f15ec2" name="sliderColor-hover"/>
+			<color value="#f15ec2" name="sliderColor-hover"/>
+			<color value="#ffffff00" name="sliderColor-hover"/>
+			<color value="#f15ec2" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_Outline">
+			<color value="#eb6769" name="sliderColor"/>
+			<color value="#eb6769" name="sliderColor-hover1"/>
+			<color value="#eb6769" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#eb6769" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton-CT_Outline" class="KRbTabContextButton-CT_DevelopTools">
+			<color value="#68c809" name="sliderColor"/>
+			<color value="#68c809" name="sliderColor-hover1"/>
+			<color value="#68c809" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#68c809" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_OrgChart">
+			<color value="#7e81f2" name="sliderColor"/>
+			<color value="#7e81f2" name="sliderColor-hover1"/>
+			<color value="#7e81f2" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#7e81f2" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_SlideMaster">
+			<color value="#f8cf0e" name="sliderColor"/>
+			<color value="#f8cf0e" name="sliderColor-hover"/>
+			<color value="#f8cf0e" name="sliderColor-hover"/>
+			<color value="#ffffff00" name="sliderColor-hover"/>
+			<color value="#f8cf0e" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_WordArt">
+			<color value="#3cb0bd" name="sliderColor"/>
+			<color value="#3cb0bd" name="sliderColor-hover1"/>
+			<color value="#3cb0bd" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#3cb0bd" name="contextTab"/>
+		</style>
+		<style base="KRbTabContextButton-CT_WordArt" class="KRbTabContextButton-CT_WAshadowDrawingTools"/>
+		<style base="KRbTabContextButton" class="KRbTabContextButton-CT_WorkSpace">
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#444851"/>
+			</linearGradient>
+			<color value="#ee6c10" name="sliderColor"/>
+			<color value="#ee6c10" name="sliderColor-hover1"/>
+			<color value="#ee6c10" name="sliderColor-hover2"/>
+			<color value="#ffffff00" name="sliderColor-hover3"/>
+			<color value="#ee6c10" name="contextTab"/>
+		</style>
+		<style base="common" class="KToolBar">
+			<linearGradient spread="pad" end="0,1" name="background-hor" start="0,0">
+				<color position="1" value="#ecedef"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="background-ver" start="0,0">
+				<color position="1" value="#ecedef"/>
+			</linearGradient>
+			<color value="#7b7d94" name="border"/>
+			<color value="#f9f8f7" name="border-top"/>
+		</style>
+		<style base="common" class="KRbTabBar">
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#e3e3e5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-right" start="0,0">
+				<color position="0" value="#feffff"/>
+				<color position="1" value="#f7fbfe"/>
+			</linearGradient>
+			<color value="#383b46" name="border"/>
+			<color value="#ccddf0" name="background"/>
+			<color value="#cddbef" name="background2"/>
+			<linearGradient spread="pad" end="0,1" name="background-aero" start="0,0">
+				<color position="0" value="#676e7a"/>
+				<color position="1" value="#5c6574"/>
+			</linearGradient>
+			<color value="#424242" name="text"/>
+			<color value="#efefef2b" name="border-in-top"/>
+			<hint value="2" name="blineheight"/>
+		</style>
+		<style base="common" class="KRbSubTabBar">
+			<color value="#00000033" name="border"/>
+			<color value="#0000001d" name="background"/>
+		</style>
+		<style base="button" class="KRbHScrollWidgetArrow">
+			<color value="#9195a1" name="border"/>
+			<color value="#868996" name="border-hover"/>
+			<color value="#7a7e8d" name="border-down"/>
+			<color value="#b8bbc2" name="background"/>
+			<color value="#c7cad1" name="background-hover"/>
+			<color value="#aaacb3" name="background-down"/>
+			<color value="#6b6c6d" name="arrow"/>
+		</style>
+		<style base="button" class="KRbHScrollWidgetTabArrow">
+			<color value="#9195a1" name="border"/>
+			<color value="#868996" name="border-hover"/>
+			<color value="#7a7e8d" name="border-down"/>
+			<color value="#b8bbc2" name="background"/>
+			<color value="#c7cad1" name="background-hover"/>
+			<color value="#aaacb3" name="background-down"/>
+			<color value="#6b6c6d" name="arrow"/>
+		</style>
+		<style base="common" class="KRbCategory">
+			<color value="#f0f6fc" name="base"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#fafafa"/>
+			</linearGradient>
+			<color value="#bcbec3" name="border"/>
+		</style>
+		<style base="common" class="KDockWidget">
+			<color value="#f0f6fc" name="base"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#e6f2fb"/>
+				<color position="0" value="#f0f6fc"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KWindow">
+			<color value="#f0f6fc" name="base"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#cfdeeb"/>
+				<color position="1" value="#b6cce1"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="title" start="0,0">
+				<color position="0" value="#d0def1"/>
+				<color position="1" value="#b7cde8"/>
+			</linearGradient>
+		</style>
+		<style base="KWindow" class="QToolBarDock"/>
+		<style base="common" class="KMainwindow-common">
+			<color value="#f5f5f5" name="border-in"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#00ff00"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-left" start="0,1">
+				<color position="0" value="#00000042"/>
+				<color position="0.1" value="#00000042"/>
+				<color position="0.5" value="#00000012"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="border-top" start="0,0">
+				<color position="0" value="#00000042"/>
+				<color position="0.1" value="#00000042"/>
+				<color position="0.5" value="#00000012"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-right" start="0,1">
+				<color position="0" value="#00000042"/>
+				<color position="0.1" value="#00000042"/>
+				<color position="0.6" value="#00000012"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-bottom" start="1,0">
+				<color position="0" value="#00000042"/>
+				<color position="0.1" value="#00000042"/>
+				<color position="0.6" value="#00000012"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<radialGradient radius="1" spread="pad" center="1,1" name="border-topleft" focal="1,1">
+				<color position="0" value="#0000001c"/>
+				<color position="0.6" value="#00000005"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="0,1" name="border-topright" focal="0,1">
+				<color position="0" value="#0000001f"/>
+				<color position="0.6" value="#00000005"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="1,0" name="border-bottomleft" focal="1,0">
+				<color position="0" value="#0000001f"/>
+				<color position="0.6" value="#0000000a"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="0,0" name="border-bottomright" focal="0,0">
+				<color position="0" value="#0000002f"/>
+				<color position="0.7" value="#0000000a"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+		</style>
+		<style base="common" class="KRbFileMenuWidgetCommon">
+			<linearGradient spread="pad" end="0,1" name="leftRectBgGrad" start="0,0">
+				<color position="0" value="#e2ecf5"/>
+				<color position="1" value="#b2c3d6"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="leftRectBorderGrad0" start="0,0">
+				<color position="0" value="#d1deeb"/>
+				<color position="1" value="#aec9d4"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="leftRectBorderGrad1" start="0,0">
+				<color position="0" value="#c9d7e7"/>
+				<color position="1" value="#aabcd2"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="leftRectBorderGrad2" start="0,0">
+				<color position="0" value="#c9d8e7"/>
+				<color position="1" value="#a4b8cf"/>
+			</linearGradient>
+			<color value="#9ab3ce" name="leftRectBorderColor"/>
+			<color value="#7a8a9a" name="separtor"/>
+		</style>
+		<style base="common" class="KRbFileMenuWidgetItemCommon">
+			<radialGradient radius="1" spread="pad" center="0.5,1" name="background-gradient" focal="0.5,1">
+				<color position="0" value="#62a8f8"/>
+				<color position="1" value="#1357b8"/>
+			</radialGradient>
+			<color value="#005fae" name="background-checked"/>
+			<color value="#2a2a2a" name="border-checked"/>
+			<color value="#2a2a2a33" name="border-hover"/>
+			<color value="#527de033" name="background-hover"/>
+		</style>
+		<style base="common" class="KWindowTitleBar">
+			<font size="10" family="Arial" bold="true" name="titleFont"/>
+			<color value="#0043a2" name="titleTextColor"/>
+		</style>
+		<style base="common" class="KWindowTitleButtonGroup">
+			<color value="#a2b5d0" name="borderColor"/>
+			<color value="#ffffff66" name="borderInnerColor"/>
+			<color value="#ffffff66" name="borderOuterColor"/>
+			<color value="#8fa6ca" name="contentBorder"/>
+			<color value="#8fa6ca92" name="contentBorderPoint"/>
+			<color value="#ffffffc0" name="contentBorderInner"/>
+			<linearGradient spread="pad" end="0,1" name="contentInnerGrad" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#d5dce9"/>
+			</linearGradient>
+			<color value="#a2a2a4" name="splitline1"/>
+			<color value="#a2a2a4" name="splitline2"/>
+			<color value="#63a1f0" name="border-minimize-hover"/>
+			<color value="#63a1f0" name="border-minimize-down"/>
+			<linearGradient spread="pad" end="0,1" name="background-minimize-hover" start="0,0">
+				<color position="1" value="#63a1f0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-minimize-down" start="0,0">
+				<color position="1" value="#63a1f0"/>
+			</linearGradient>
+			<color value="#ef6868" name="border-close-hover"/>
+			<color value="#ef6868" name="border-close-down"/>
+			<linearGradient spread="pad" end="0,1" name="background-close-hover" start="0,0">
+				<color position="1" value="#ef6868"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-close-down" start="0,0">
+				<color position="1" value="#ef6868"/>
+			</linearGradient>
+			<color value="#63a1f0" name="border-restore-hover"/>
+			<color value="#63a1f0" name="border-restore-down"/>
+			<linearGradient spread="pad" end="0,1" name="background-restore-hover" start="0,0">
+				<color position="1" value="#63a1f0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-restore-down" start="0,0">
+				<color position="1" value="#63a1f0"/>
+			</linearGradient>
+			<color value="#63a1f0" name="border-other-hover"/>
+			<color value="#63a1f0" name="border-other-down"/>
+			<linearGradient spread="pad" end="0,1" name="background-other-hover" start="0,0">
+				<color position="1" value="#63a1f0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-other-down" start="0,0">
+				<color position="1" value="#63a1f0"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KRbFileMenu">
+			<color value="#c8c8c8" name="filemenu-border"/>
+			<color value="#c8c8c8" name="filemenu-top-border"/>
+			<color value="#eeeeee" name="bottom-top-border"/>
+			<color value="#f5f5f5" name="left-background"/>
+			<color value="#eeeeee" name="left-border"/>
+			<color value="#555555b2" name="filemenu-shadow1"/>
+			<color value="#5555557f" name="filemenu-shadow2"/>
+			<color value="#55555500" name="filemenu-shadow3"/>
+			<color value="#999999b2" name="popup-pane-shadow1"/>
+			<color value="#99999900" name="popup-pane-shadow2"/>
+			<color value="#00000019" name="arround-shadow1"/>
+			<color value="#00000000" name="arround-shadow2"/>
+			<color value="#00000033" name="arround-bottom-shadow1"/>
+			<color value="#00000000" name="arround-bottom-shadow2"/>
+			<linearGradient spread="pad" end="1,0" name="left-background-right" start="0,0">
+				<color position="0" value="#f5f5f5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="bottom-background" start="0,0">
+				<color position="0" value="#fcfcfc"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="popup-pane-title-background" start="0,0">
+				<color position="0" value="#ffffff"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KRbQuickToolbarPanel">
+			<color value="#ffffff" name="background"/>
+		</style>
+		<style base="common" class="KShadowBorder">
+			<linearGradient spread="pad" end="0,0" name="border-left" start="0,1">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="border-top" start="0,0">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-right" start="0,1">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-bottom" start="1,0">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<radialGradient radius="1" spread="pad" center="1,1" name="border-topleft" focal="1,1">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="0,1" name="border-topright" focal="0,1">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="1,0" name="border-bottomleft" focal="1,0">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="0,0" name="border-bottomright" focal="0,0">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+		</style>
+		<style base="common" class="KMenuWidget">
+			<color value="#FFFFFF" name="background"/>
+			<linearGradient spread="pad" end="0,1" name="leader" start="0,0">
+				<color position="0" value="#ffffff"/>
+			</linearGradient>
+			<color value="#eeeeee" name="separator"/>
+			<color value="#424242" name="text"/>
+			<color value="#e2e4e7" name="spliteline"/>
+		</style>
+		<style class="KWordCountStatusButton">
+			<color value="#707172" name="disable-text"/>
+		</style>
+		<style base="common" class="KGalleryInline">
+			<color value="#dddddd" name="border"/>
+			<color value="#dddddd" name="border-disable"/>
+		</style>
+		<style base="button" class="KGalleryModelAbstractItem"/>
+		<style base="button" class="KToolBox">
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#ceddf0"/>
+				<color position="1" value="#ceddf0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="item-title-background" start="0,0">
+				<color position="1" value="#f5f5f5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="item-title-background-hover" start="0,0">
+				<color position="0" value="#ffffff7f"/>
+				<color position="1" value="#dfecfc7f"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="item-title-background-down" start="0,0">
+				<color position="0" value="#ffefb1"/>
+				<color position="0.98" value="#ffefb1"/>
+				<color position="1" value="#fadf5f"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="item-content-pane-background" start="0,0">
+				<color position="1" value="#f5f5f5"/>
+			</linearGradient>
+			<color value="#ffffff00" name="border"/>
+			<color value="#b4b5b8" name="item-title-border"/>
+			<color value="#f5f5f5" name="item-content-pane-border"/>
+			<color value="#797979" name="arrow"/>
+			<color value="#4d7fdc" name="arrow-hover"/>
+			<color value="#4d7fdc" name="arrow-down"/>
+		</style>
+		<style base="common" class="KGalleryModelTitleItem">
+			<color value="#e4e8ee" name="background"/>
+			<color value="#424242" name="text"/>
+		</style>
+		<style base="common" class="KSeparatorWidget">
+			<linearGradient spread="pad" end="0,1" name="Short_Foreground" start="0,0">
+				<color position="1" value="#dddddd"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="Long_Foreground" start="0,0">
+				<color position="1" value="#dddddd"/>
+			</linearGradient>
+			<color value="#fafafa" name="background"/>
+			<color value="#dddddd" name="separator"/>
+		</style>
+		<style base="common" class="KStatusBarSeparator">
+			<linearGradient spread="pad" end="0,1" name="separator" start="0,0">
+				<color position="0" value="#a2a2a4"/>
+				<color position="1" value="#a2a2a4"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#f0f6fc00"/>
+				<color position="0.3" value="#f0f6fc80"/>
+				<color position="0.7" value="#f0f6fc80"/>
+				<color position="1" value="#f0f6fc00"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KStatusBar">
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#dedee0"/>
+			</linearGradient>
+			<color value="#bcbec3" name="border"/>
+			<color value="#bcbec3" name="border-top"/>
+		</style>
+		<style base="common" class="KStatusBarPanel">
+			<color value="#b8cadc" name="background"/>
+		</style>
+		<style base="common" class="KStatusBarLight">
+			<linearGradient spread="pad" end="0,1" name="inner-check" start="0,0">
+				<color position="1" value="#5aba3d"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="inner-uncheck" start="0,0">
+				<color position="1" value="#d6d6d6"/>
+			</linearGradient>
+			<color value="#55a630" name="outer-check"/>
+			<color value="#929292" name="outer-uncheck"/>
+			<linearGradient spread="pad" end="0,1" name="inner-waiting-save" start="0,0">
+				<color position="1" value="#0070eb"/>
+			</linearGradient>
+			<color value="#0070da" name="outer-waiting-save"/>
+		</style>
+		<style base="common" class="KTabBar">
+			<linearGradient spread="pad" end="0,1" name="ButtonIconBorder" start="0,0">
+				<color position="0" value="#8ea7bf"/>
+				<color position="1" value="#1e375b"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="ButtonIconBorderOutline" start="0,0">
+				<color position="0" value="#acbed2"/>
+				<color position="1" value="#94a7b8"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="ButtonIconBorderInline" start="0,0">
+				<color position="0" value="#e7f0f9"/>
+				<color position="1" value="#e7f0f9"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="ButtonIconHoverLine1" start="0,0">
+				<color position="0" value="#8ea3c000"/>
+				<color position="1" value="#8ea3c0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="ButtonIconHoverLine2" start="0,0">
+				<color position="0" value="#ffffff00"/>
+				<color position="1" value="#ffffff"/>
+			</linearGradient>
+			<color value="#ffffff00" name="tagBaseColor"/>
+			<color value="#00000099" name="tagCross"/>
+			<color value="#00000099" name="tagCross-active"/>
+			<color value="#808080" name="tagCross-disable"/>
+			<color value="#1e395b" name="tagTextColor"/>
+			<color value="#bcbec3" name="tabbarEdgeColor"/>
+			<color value="#fafafa" name="tabbarEdgeColor-bottom"/>
+			<font size="8" family="Courier New" name="tagTextFont"/>
+			<color value="#fafafa" name="tagEdgeColor"/>
+			<color value="#fafafa" name="tabbarBgGrad"/>
+			<color value="#dfebf8" name="tagBgGrad"/>
+			<color value="#cccccc" name="line-separator-right"/>
+			<color value="#f5c050" name="line-protect"/>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad" start="0,0">
+				<color position="1" value="#f0f0f0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-lock" start="0,0">
+				<color position="1" value="#f5e9d0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-hover" start="0,0">
+				<color position="1" value="#e3e3e6"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-down" start="0,0">
+				<color position="1" value="#c0c2cc"/>
+			</linearGradient>
+			<color value="#c0c2cc" name="tagBottomLine"/>
+			<color value="#1e395b" name="scroll-border-down"/>
+			<color value="#1e395b" name="scroll-border-hover"/>
+			<linearGradient spread="pad" end="0,1" name="scroll-background-down" start="0,0">
+				<color position="0" value="#f7faff"/>
+				<color position="1" value="#e4f1fc"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="scroll-background-hover" start="0,0">
+				<color position="0" value="#f7faff"/>
+				<color position="1" value="#e4f1fc"/>
+			</linearGradient>
+			<color value="#f5f5f5" name="tabbar-line-inner-top"/>
+			<linearGradient spread="pad" end="0,1" name="tabbar-botton-line-bg" start="0,0">
+				<color position="1" value="#ffffff"/>
+			</linearGradient>
+			<color value="#8f8f8f" name="tabbar-botton-line-edge"/>
+			<linearGradient spread="pad" end="0,1" name="tabbar-botton-line-bg-lock" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#fff6cb"/>
+			</linearGradient>
+			<color value="#8ea5bf" name="tabbar-botton-line-edge-lock"/>
+			<color value="#424242" name="text"/>
+			<color value="#555555" name="text-uncheck"/>
+		</style>
+		<style base="common" class="QMainWindowTabBar">
+			<color value="#94aac2" name="border"/>
+			<color value="#94aac2" name="border-hover"/>
+			<color value="#94aac2" name="border-down"/>
+			<color value="#ffffff43" name="border-in-down"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#b4c8e7"/>
+				<color position="1" value="#b4c8e7"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="0" value="#c2d3ec"/>
+				<color position="1" value="#c2d3ec"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-down" start="0,0">
+				<color position="0" value="#cddbef"/>
+				<color position="1" value="#eff5fc"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KPopupWidget">
+			<color value="#a5a5a5" name="border"/>
+			<color value="#ffffff" name="inner-border"/>
+		</style>
+		<style base="common" class="KDargMenuButton">
+			<color value="#00000099" name="arrow"/>
+		</style>
+		<style base="common" class="KSizeGrip">
+			<color value="#b9cce0" name="lighter"/>
+			<color value="#8ba3bd" name="darker"/>
+			<color value="#ffffff" name="bright"/>
+			<linearGradient spread="pad" end="0,1" name="border-grad" start="0,0">
+				<color position="1" value="#f8f7f7"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KScrollBar">
+			<linearGradient spread="pad" end="0,1" name="background-hor" start="0,0">
+				<color position="1" value="#f5f5f5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="background-ver" start="0,0">
+				<color position="1" value="#f5f5f5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="slider-background-ver" start="0,0">
+				<color position="1" value="#f5f5f5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="slider-background-ver-hover" start="0,0">
+				<color position="1" value="#e8e9ea"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="slider-background-ver-down" start="0,0">
+				<color position="1" value="#e2e2e2"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="slider-background-hor" start="0,0">
+				<color position="1" value="#f5f5f5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="slider-background-hor-hover" start="0,0">
+				<color position="1" value="#e8e9ea"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="slider-background-hor-down" start="0,0">
+				<color position="1" value="#e2e2e2"/>
+			</linearGradient>
+			<color value="#ffffff00" name="border"/>
+			<color value="#bcbec3" name="slider-border"/>
+			<color value="#bcbec3" name="slider-border-hover"/>
+			<color value="#9ca0ac" name="slider-border-down"/>
+			<color value="#c8c8c8" name="slider-centerLine"/>
+			<color value="#68728c" name="arrow-hor"/>
+			<color value="#c8c8c8" name="arrow-hor-disable"/>
+			<color value="#68728c" name="arrow-ver"/>
+			<color value="#c8c8c8" name="arrow-ver-disable"/>
+			<color value="#f5f5f5" name="arrow-bg"/>
+			<color value="#999aa1" name="arrow-bg-hover"/>
+			<color value="#88898f" name="arrow-bg-down"/>
+			<color value="#f5f5f5" name="arrow-bgborder"/>
+			<color value="#999aa1" name="arrow-bgborder-hover"/>
+			<color value="#88898f" name="arrow-bgborder-down"/>
+			<linearGradient spread="pad" end="0,1" name="ex-background-hor" start="0,0">
+				<color position="1" value="#aaabb3"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="ex-background-ver" start="0,0">
+				<color position="1" value="#aaabb3"/>
+			</linearGradient>
+			<color value="#aaabb3" name="ex-border"/>
+			<color value="#aaabb3" name="ex-border-in"/>
+		</style>
+		<style base="KScrollBar" class="KScrollBar-deep">
+			<linearGradient spread="pad" end="0,1" name="background-hor" start="0,0">
+				<color position="1" value="#aaabb3"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="background-ver" start="0,0">
+				<color position="1" value="#aaabb3"/>
+			</linearGradient>
+			<color value="#b6b9c1" name="border"/>
+			<color value="#d0d1d5" name="slider-border"/>
+			<color value="#e1e2e4" name="slider-border-hover"/>
+			<color value="#cccdd1" name="slider-border-down"/>
+			<linearGradient spread="pad" end="1,0" name="slider-background-ver" start="0,0">
+				<color position="1" value="#d0d1d5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="slider-background-ver-hover" start="0,0">
+				<color position="1" value="#e1e2e4"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="slider-background-ver-down" start="0,0">
+				<color position="1" value="#cccdd1"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="slider-background-hor" start="0,0">
+				<color position="1" value="#d0d1d5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="slider-background-hor-hover" start="0,0">
+				<color position="1" value="#e1e2e4"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="slider-background-hor-down" start="0,0">
+				<color position="1" value="#cccdd1"/>
+			</linearGradient>
+			<color value="#8a8a8d" name="slider-centerLine"/>
+			<color value="#ffffff" name="arrow-hor"/>
+			<color value="#ffffff" name="arrow-ver"/>
+			<color value="#aaabb3" name="arrow-bg"/>
+			<color value="#aaabb3" name="arrow-bgborder"/>
+		</style>
+		<style base="common" class="KScrollBar-light">
+			<color value="#6d6e7380" name="slider"/>
+			<color value="#6d6e73a6" name="slider-hover"/>
+			<color value="#6d6e7366" name="slider-down"/>
+		</style>
+		<style base="common" class="KListView">
+			<color value="#ffffff" name="background"/>
+			<color value="#0000001a" name="border"/>
+			<color value="#ffffff" name="border-in"/>
+			<color value="#dddddd" name="line"/>
+		</style>
+		<style base="common" class="KTreeView">
+			<color value="#B6C1CC" name="treeview-border"/>
+		</style>
+		<style base="common" class="KDocMap">
+			<color value="#ffffff64" name="background"/>
+			<color value="#b0d0fa" name="row-background"/>
+			<color value="#8fbbf5" name="row-border"/>
+		</style>
+		<style base="common" class="CornerWidget">
+			<color value="#aaabb3" name="background"/>
+		</style>
+		<style base="common" class="KxETSheetTabbar">
+			<color value="#51942c" name="text-active"/>
+			<color value="#424242" name="text-select"/>
+			<color value="#ffffff" name="text-light"/>
+			<color value="#e1e1e1" name="tab-background"/>
+			<color value="#ffffff" name="tab-background-active"/>
+			<color value="#5ba532" name="tab-background-active-bottom"/>
+			<color value="#f5f5f5" name="tab-background-hover"/>
+			<color value="#f5f5f5" name="tab-background-selected"/>
+			<color value="#b9b9ba" name="tab-border"/>
+			<color value="#ffffff" name="tab-border-top"/>
+			<color value="#ffffff" name="tab-border-inside"/>
+			<color value="#ffffff66" name="tab-hovermask"/>
+			<color value="#555555" name="NewButtonBackground"/>
+			<color value="#5ba532" name="NewButtonBackground-hover"/>
+			<color value="#43970c" name="NewButtonBackground-down"/>
+			<color value="#b9b9ba" name="tabbar-border"/>
+			<color value="#6da744" name="tabbar-marker-background"/>
+			<linearGradient spread="pad" end="0,1" name="tabbar-background" start="0,0">
+				<color position="1" value="#c5c5c7"/>
+			</linearGradient>
+			<color value="#87af6a" name="tagEdgeColor"/>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad" start="0,0">
+				<color position="0" value="#ecf1f5"/>
+				<color position="1" value="#cbdcf2"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-down" start="0,0">
+				<color position="0" value="#ecf0f4"/>
+				<color position="1" value="#ecf0f4"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-hover" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#95eb4f"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KWppTabWidget">
+			<color value="#c0c2cc" name="border"/>
+			<color value="#ffffff00" name="border-in"/>
+			<color value="#92939b" name="bar-line"/>
+			<color value="#e8e8e8" name="tabbar-background"/>
+			<color value="#defecc" name="tagUpLine"/>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad" start="0,0">
+				<color position="1" value="#e8e8e8"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-down" start="0,0">
+				<color position="1" value="#f8f7f7"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="tagBgGrad-hover" start="0,0">
+				<color position="1" value="#f8f7f7"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#c0c2cc"/>
+				<color position="1" value="#c0c2cc"/>
+			</linearGradient>
+		</style>
+		<style base="KWppTabWidget" class="KxTpTabWidgetStyel"/>
+		<style base="common" class="KTaskPanel">
+			<color value="#3b84f1" name="html"/>
+			<color value="#ffffff" name="border"/>
+			<color value="#dddddd" name="border-embed"/>
+			<color value="#ffffff" name="background"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#ffffff"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-title" start="0,0">
+				<color position="1" value="#edeef0"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-seperator" start="0,0">
+				<color position="0" value="#c0c2cc"/>
+				<color position="0.03" value="#a5a7ae"/>
+				<color position="1" value="#a5a7ae"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="border" start="0,0">
+				<color position="1" value="#dedee0"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KGalleryModelColorItem">
+			<color value="#000080" name="border-hover"/>
+			<color value="#000080" name="border-checked"/>
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="0" value="#fff4cc"/>
+				<color position="1" value="#ffc374"/>
+			</linearGradient>
+			<color value="#ffc06f" name="background-checked"/>
+			<color value="#a0a0a0" name="border-color"/>
+		</style>
+		<style base="common" class="KGalleryModel">
+			<color value="#ffffff" name="background-disable"/>
+			<color value="#ffffff" name="background"/>
+			<color value="#dbdbdb" name="separator"/>
+		</style>
+		<style base="common" class="KHotKeyAssistant">
+			<color value="#4b63a9" name="border"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#c1d1e2"/>
+			</linearGradient>
+			<color value="#c8c8c8" name="border-disable"/>
+			<linearGradient spread="pad" end="0,1" name="background-disable" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#ececec"/>
+			</linearGradient>
+		</style>
+		<style base="button" class="BrowseSelectItem">
+			<color value="#4b63a9" name="border"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#c1d1e2"/>
+			</linearGradient>
+			<color value="#4b63a9" name="border-down"/>
+			<linearGradient spread="pad" end="0,1" name="background-down" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#c1d1e2"/>
+			</linearGradient>
+			<color value="#4b63a9" name="border-hover"/>
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="0" value="#ffffff"/>
+				<color position="1" value="#c1d1e2"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KZoomSliderBase">
+			<color value="#dedee0" name="border-left"/>
+			<color value="#dedee0" name="border-right"/>
+			<color value="#8a8a91" name="background-right"/>
+			<color value="#888888" name="border-sliderhandle"/>
+			<color value="#f0f0f0" name="background-sliderhandle"/>
+			<color value="#ffffff" name="background-sliderhandle-hover"/>
+			<color value="#f0f0f0" name="background-sliderhandle-disabled"/>
+			<color value="#eeeeee" name="background-sliderhandle-down"/>
+			<color value="#ffffff99" name="shadow"/>
+		</style>
+		<style base="common" class="KHintBox">
+			<color value="#94a2b9" name="border"/>
+			<color value="#ffffffab" name="border-in"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#f0fbfc"/>
+				<color position="1" value="#d9e4f3"/>
+			</linearGradient>
+			<color value="#c5e0d2" name="bottom1"/>
+			<color value="#acdda9" name="bottom2"/>
+			<color value="#9be37e" name="bottom3"/>
+			<color value="#5ec439" name="bottom4"/>
+			<color value="#222b49" name="font1"/>
+			<color value="#3f4f85" name="font2"/>
+			<color value="#b6c3da" name="shadow"/>
+		</style>
+		<style base="common" class="KxSwitchUiTip">
+			<color value="#e46406" name="text_once"/>
+			<color value="#333333" name="text_change"/>
+			<color value="#f9f9fb" name="bottom_bg"/>
+			<color value="#2068c2" name="bottom_text"/>
+			<color value="#458ee8" name="bottom_text-hover"/>
+		</style>
+		<style base="common" class="KxButtonTip">
+			<color value="#e46406" name="text_once"/>
+			<color value="#333333" name="text_change"/>
+			<color value="#f9f9fb" name="bottom_bg"/>
+			<color value="#2068c2" name="bottom_text"/>
+			<color value="#458ee8" name="bottom_text-hover"/>
+		</style>
+		<style base="common" class="taskpaneNewDocScroll">
+			<color value="#a5bdda" name="arrow-up"/>
+			<color value="#d6deeb" name="line-up"/>
+			<linearGradient spread="pad" end="0,1" name="background-up" start="0,0">
+				<color position="0" value="#e8f0fa"/>
+				<color position="1" value="#dfe8f5"/>
+			</linearGradient>
+			<color value="#968e86" name="arrow-down"/>
+			<color value="#e9d5a6" name="line-down"/>
+			<linearGradient spread="pad" end="0,1" name="background-down" start="0,0">
+				<color position="0" value="#fffde5"/>
+				<color position="1" value="#f0e7ac"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="taskpaneAutoShape">
+			<color value="#ffffff" name="titleColor"/>
+			<color value="#909090" name="titleFontColor"/>
+			<color value="#ffffff" name="titleColor-disable"/>
+			<color value="#757575" name="titleFontColor-disable"/>
+		</style>
+		<style base="common" class="QMdiaArea">
+			<color value="#939aa4" name="background"/>
+		</style>
+		<style base="common" class="KNoTabPageWidget">
+			<color value="#455970" name="text"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#f2f2f2"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="separator-background" start="0,0">
+				<color position="0" value="#e1e1e100"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="separator" start="0,0">
+				<color position="0" value="#e1e1e1"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="Text">
+			<color value="#384e73" name="functionPanelName"/>
+		</style>
+		<style base="common" class="KxTaskPaneContainer">
+			<color value="#ffffff" name="background"/>
+			<color value="#f5f5f5" name="border-in"/>
+			<color value="#ffffff" name="border"/>
+			<color value="#ffffffc8" name="text-shadow"/>
+			<color value="#424242" name="text"/>
+			<color value="#424242" name="text-checked"/>
+			<color value="#0080ff40" name="selmask"/>
+			<color value="#424242" name="main-menuText"/>
+		</style>
+		<style base="common" class="TpTableStyle">
+			<color value="#e4e8ee" name="border"/>
+		</style>
+		<style base="common" class="KxTpSplitterHandle">
+			<color value="#878787" name="EdgeLineColor"/>
+			<color value="#a0a0a0" name="MiddleLineColor"/>
+		</style>
+		<style base="common" class="KxTpDescLabel">
+			<color value="#2c4665" name="TextColor"/>
+			<color value="#aca899" name="DisabledColor"/>
+		</style>
+		<style base="common" class="KxTpETListWidget">
+			<color value="#aaaaff" name="DragInsideBackroundColor"/>
+			<color value="#f0f0ff" name="DragOutsideBackroundColor"/>
+			<color value="#d2d2ff" name="DragSourceBackroundColor"/>
+			<color value="#b4b4b4" name="TextColor"/>
+			<color value="#323296" name="InsetLineColor"/>
+			<color value="#7F9DB9" name="BorderColor"/>
+			<color value="#ffbd69" name="ItemBorderColor"/>
+			<color value="#fff5da" name="ItemBackroundColor"/>
+			<color value="#ffbd69" name="ItemHoverBackroundColor"/>
+			<color value="#FFE8A8" name="ItemFocusBackroundColor"/>
+		</style>
+		<style base="common" class="QSplitterHandle">
+			<color value="#9b9da5" name="line"/>
+			<linearGradient spread="pad" end="0,1" name="line" start="0,0">
+				<color position="0" value="#c0c2cc"/>
+				<color position="0.03" value="#9b9da5"/>
+				<color position="1" value="#9b9da5"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-hor" start="0,0">
+				<color position="0" value="#c0c2cc"/>
+				<color position="1" value="#c0c2cc"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-ver" start="0,0">
+				<color position="1" value="#c0c2cc"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="switchUI">
+			<color value="#94aac2" name="pictureBorder"/>
+		</style>
+		<style base="common" class="KTipWidget">
+			<color value="#5e5e5e" name="linkText"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#ffffff"/>
+			</linearGradient>
+			<color value="#a5a5a5" name="border"/>
+			<font size="9" family="Arial" name="contentFont"/>
+		</style>
+		<style base="common" class="KxHintWidget">
+			<color value="#e4d27b" name="border"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#fff1ad"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KGradientStopsHandle">
+			<color value="#bfbfbf" name="barOuterFrame"/>
+			<color value="#a8a8a8" name="stopOuterFrameFocus"/>
+		</style>
+		<style base="common" class="KFormatSliderBase">
+			<color value="#bfbfbf" name="background-right"/>
+			<color value="#828282" name="border-sliderhandle"/>
+			<color value="#ffffff" name="background-sliderhandle"/>
+			<color value="#e0e0e0" name="background-sliderhandle-hover"/>
+			<color value="#f0f0f0" name="background-sliderhandle-disabled"/>
+			<color value="#e0e0e0" name="background-sliderhandle-down"/>
+			<color value="#ffffff99" name="shadow"/>
+		</style>
+		<style base="common" class="KFormatSpinBoxBase">
+			<color value="#bfbfbf" name="Spinner-outline-normal"/>
+			<color value="#bfbfbf" name="Spinner-outline-disabled"/>
+			<color value="#ffffff" name="Spinner-inner-normal"/>
+			<color value="#f0f0f0" name="Spinner-inner-disabled"/>
+		</style>
+		<style base="common" class="KFormatButtonBase">
+			<color value="#f0f0f0" name="background-disabled"/>
+			<color value="#ffffff" name="background"/>
+			<color value="#bfbfbf" name="border-disabled"/>
+			<color value="#bfbfbf" name="border"/>
+		</style>
+		<style base="common" class="KFormatOptionTabBar">
+			<color value="#ffffff" name="background"/>
+			<color value="#dedee0" name="border"/>
+		</style>
+		<style base="common" class="KFormatPropertyTabBar">
+			<color value="#dddddd" name="border"/>
+		</style>
+		<style base="common" class="KFormatOptionTabButtonBase">
+			<color value="#ffffff" name="background"/>
+			<color value="#dedee0" name="border"/>
+			<color value="#555555" name="text"/>
+		</style>
+		<style base="KFormatButtonBase" class="KPropertyTabButtonBase">
+			<color value="#f8f7f7" name="background"/>
+			<color value="#ecebef" name="border"/>
+			<color value="#333333" name="text"/>
+			<color value="#ffffff" name="text-hover"/>
+			<color value="#333333" name="text-disabled"/>
+			<color value="#ffffff" name="text-down"/>
+		</style>
+		<style base="common" class="KxFormatGroupTitleButtonBase">
+			<color value="#333333" name="title-expansion"/>
+			<color value="#424242" name="title-folded"/>
+			<color value="#6c727D" name="icon-normal"/>
+		</style>
+		<style base="common" class="KFormatSpinSliderButtonBase">
+			<color value="#cccccc" name="border-disabled"/>
+			<color value="#929292" name="border-normal"/>
+			<color value="#cccccc" name="text-disabled"/>
+			<color value="#929292" name="text-normal"/>
+			<color value="#ffffff" name="text-down"/>
+		</style>
+		<style base="common" class="KFormatSliderExBase">
+			<color value="#cccccc" name="bar-disabled"/>
+			<color value="#aaaaaa" name="bar-normal"/>
+			<color value="#cccccc" name="text-disabled"/>
+			<color value="#929292" name="text-normal"/>
+			<color value="#cccccc" name="handle-disabled"/>
+			<color value="#929292" name="handle-normal"/>
+		</style>
+		<style base="KFormatOptionTabButton" class="KFormatOptionTabPopupButton">
+			<color value="#727272" name="arrow-bg"/>
+		</style>
+		<style base="common" class="KFormatListView">
+			<color value="#f8f7f7" name="background"/>
+			<color value="#bcbec3" name="border"/>
+		</style>
+		<style base="common" class="KQuickHelpBar">
+			<color value="#fafafa" name="background"/>
+			<color value="#b0b0b0" name="border"/>
+		</style>
+		<style base="common" class="KQuickHelpWordArtFontBar">
+			<color value="#fafafa" name="background"/>
+			<color value="#b0b0b0" name="border"/>
+		</style>
+		<style base="common" class="KQuickHelpWordArtFontButton">
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#ffffff"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="0" value="#deeafa"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="background-down" start="0,0">
+				<color position="0" value="#b2cced"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KRoamingPage">
+			<color value="#555555" name="listText"/>
+			<color value="#8c8c8c" name="listText-dis"/>
+		</style>
+		<style base="common" class="KQingLoginButton">
+			<color value="#df7255" name="background"/>
+			<color value="#eb7959" name="background-hover"/>
+			<color value="#d16c4f" name="background-down"/>
+			<color value="#ffffff" name="text"/>
+		</style>
+		<style base="common" class="KUserPanelMenuButtonCommon">
+			<color value="#cfcfd1" name="background"/>
+			<color value="#c2c2c4" name="background-hover"/>
+			<color value="#bdbdbf" name="background-down"/>
+			<color value="#424242" name="text"/>
+			<color value="#d97a36" name="text-vip"/>
+			<color value="#d97a36" name="text-hover-vip"/>
+			<color value="#d97a36" name="text-down-vip"/>
+			<color value="#da2020" name="redpoint"/>
+		</style>
+	</theme>
+</shell>

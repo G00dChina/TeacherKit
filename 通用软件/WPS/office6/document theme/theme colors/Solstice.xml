@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Solstice" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="4F271C"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="E7DEC9"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="3891A7"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="FEB80A"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="C32D2E"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="84AA33"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="964305"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="475A8D"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="8DC765"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="AA8A14"/>
+   </a:folHlink>
+</a:clrScheme>
+

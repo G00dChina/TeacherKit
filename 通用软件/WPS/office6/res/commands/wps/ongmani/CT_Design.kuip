@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_design" component="wps">
+	<commands>
+		<KxKsoTableStyleOptionListCommand id="RB_TableStyleOption" text="@Table Style Options"/>
+		<KxMoreColorCommand hotKey="m" ksoCmd="TableShadingColor" aid="1051" icon="MoreColor" id="MoreTableShandColor" dialogHint="1" text="@More Fill Colors"/>
+		<KxValueCommand hotKey="b" ksoCmd="TableOutsideBorderPalette" idMso="BorderBottomNoToggle" icon="BottomBorder" controlType="0" id="BottomBorder" index="7" text="@Bottom Border"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="TableShadingColor" icon="SnapperFill" forceEnabled="1" id="SnapTableShandColor" text="@Snapper" rbHotKey="E"/>
+		<KxValueCommand hotKey="p" ksoCmd="TableOutsideBorderPalette" idMso="BorderTop" icon="TopBorder" controlType="6" id="TopBorder" index="2" text="@Top Border"/>
+		<KxValueCommand hotKey="l" ksoCmd="TableOutsideBorderPalette" idMso="BorderLeft" icon="LeftBorder" controlType="6" id="LeftBorder" index="3" text="@Left Border"/>
+		<KxValueCommand hotKey="r" ksoCmd="TableOutsideBorderPalette" idMso="BorderRight" icon="RightBorder" controlType="6" id="RightBorder" index="8" text="@Right Border"/>
+		<KxValueCommand hotKey="n" ksoCmd="TableOutsideBorderPalette" icon="NoBorder" id="NoBorder" index="6" text="@No Border"/>
+		<KxValueCommand hotKey="a" ksoCmd="TableOutsideBorderPalette" idMso="BordersAll" icon="AllBorders" controlType="0" id="AllBorders" index="1" text="@All Borders"/>
+		<KxValueCommand hotKey="s" ksoCmd="TableOutsideBorderPalette" idMso="BorderOutside" icon="OutsideBorders" controlType="0" id="OutsideBorders" index="0" text="@Outside Borders"/>
+		<KxValueCommand hotKey="i" ksoCmd="TableOutsideBorderPalette" icon="CrossBorder" id="CrossBorder" index="5" text="@Inside Border"/>
+		<KxValueCommand hotKey="h" ksoCmd="TableOutsideBorderPalette" icon="HMiddleBorder" id="HMiddleBorder" index="4" text="@Inside Horizontal Border"/>
+		<KxValueCommand hotKey="v" ksoCmd="TableOutsideBorderPalette" icon="VMiddleBorder" id="VMiddleBorder" index="9" text="@Inside Vertical Border"/>
+		<KQuickMenuCommandEx hotKey="b" icon="OutsideBorders" customTip2="RbTableOutsideBorder2" id="TableOutsideBorder" customTip="RbTableOutsideBorder" spaceHint="suitable" text="@Border" referenceCommand="OutsideBorders" rbHotKey="BD">
+			<command idQ="BottomBorder"/>
+			<command idQ="TopBorder"/>
+			<command idQ="LeftBorder"/>
+			<command idQ="RightBorder"/>
+			<separator/>
+			<command idQ="NoBorder"/>
+			<command idQ="AllBorders"/>
+			<command idQ="OutsideBorders"/>
+			<command idQ="CrossBorder"/>
+			<separator/>
+			<command idQ="HMiddleBorder"/>
+			<command idQ="VMiddleBorder"/>
+			<separator/>
+			<KxPropComposeCommand hotKey="o" ksoCmd="BorderShading" icon="PageBorderColor" id="BordersandShadingInDesignTab" dialogHint="1" text="@Borders and Shading" qtspyName="BorderShading"/>
+		</KQuickMenuCommandEx>
+		<KxWpsBorderStyleGalleryCommand ksoCmd="TableBorderStyle" icon="TableBorderStyle" id="TableBorderStyle" customTip="TableBorderStyle" text="@Line Style" rbHotKey="L"/>
+		<KxWpsBorderWidthGalleryCommand hotKey="b" ksoCmd="TableBorderWidth" icon="TableBorderWidth" id="TableBorderWidth" customTip="TableBorderWidth" text="@Line Weight" rbHotKey="W"/>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="TableBorderColor" icon="MoreColor" id="MoreTableBorderColor" dialogHint="1" text="@More Line Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="TableBorderColor" icon="SnapperFill" forceEnabled="1" id="SnapTableBorderColor" text="@Snapper" rbHotKey="E"/>
+		<KxWpsTableBorderColorCommand hotKey="b" ksoCmd="TableBorderColor" icon="LineColor" customTip2="TableBorderColor2" id="TableBorderColor" customTip="TableBorderColor" text="@Border Color" ksoTriggerCmd="RecentTableBorderColor" rbHotKey="O">
+			<command idQ="MoreTableBorderColor"/>
+		</KxWpsTableBorderColorCommand>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="TableEraser" idMso="TableEraser" icon="TableEraser" controlType="6" id="TableEraser" customTip="TableEraser" text="@Eraser" rbHotKey="TE"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="DrawTable" aid="2059" idMso="TableDrawTable" icon="DrawTable" controlType="6" id="DrawTableInToolbar" customTip="DrawTable" spaceHint="suitable" text="@Draw Table" rbHotKey="DR"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="DrawTable" aid="2059" idMso="TableDrawTable" icon="DrawTable" controlType="6" id="US_DrawTableInToolbar" customTip="DrawTable" text="@Draw Table" rbHotKey="DR"/>
+		<KxLegacyTriggerCommand text2="@Draw Diagonal Line in Cell" hotKey="u" ksoCmd="InsertMutidiagonalCell" aid="3961" icon="InsertMutidiagonalCell" id="InsertMutidiagonalCell" dialogHint="1" customTip="InsertMutidiagonalCell" spaceHint="suitable" text="@Draw Diagonal Line in Cell" rbHotKey="W"/>
+		<KListCommand id="RB_TableStyle" text="@Table Styles">
+			<KxKsoTableStyleCommand galleryWidth="476" embedHint="1" id="TableStyleGallery" galleryHeight="100" qtspyName="TableStyleGallery"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KxWpsTableFillColorCommand ksoCmd="TableShadingColor" icon="TableShadingColor" customTip2="RecentTableShadingColor2" id="TableShading" customTip="RecentTableShadingColor" spaceHint="suitable" text="@Shading" qtspyName="TableShadingColor" ksoTriggerCmd="RecentTableShadingColor" rbHotKey="H">
+				<command idQ="MoreTableShandColor"/>
+			</KxWpsTableFillColorCommand>
+			<command idQ="TableOutsideBorder"/>
+		</KListCommand>
+		<KListCommand id="RB_DrawTable">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand>
+					<command idQ="TableBorderStyle"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand>
+					<command idQ="TableBorderWidth"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand layoutOnly="1" rightSpace="7" leftSpace="3">
+					<command idQ="TableBorderColor"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="DrawTableInToolbar" filter="patent:MultiDiagonalCellUsable=true"/>
+			<command idQ="US_DrawTableInToolbar" filter="patent:MultiDiagonalCellUsable=false"/>
+			<command idQ="InsertMutidiagonalCell"/>
+			<command idQ="TableEraser"/>
+		</KListCommand>
+		<KListCommand id="RB_ClearTableStyleGroup">
+			<KxClearTableStyleCommand hotKey="C" icon="ClearTableStyle" id="RB_ClearTableStyle" customTip="ClearTableStyle" text="@Clear
+Table Style" rbHotKey="C"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Design">
+			<command idQ="RB_TableStyleOption" filter="patent:CustomizableTableStyleList=true"/>
+			<separator filter="patent:CustomizableTableStyleList=true"/>
+			<command idQ="RB_TableStyle"/>
+			<separator/>
+			<command idQ="RB_DrawTable"/>
+			<separator/>
+			<command idQ="RB_ClearTableStyleGroup"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Austin" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="3E3D2D"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="CAF278"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="94C600"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="71685A"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="FF6700"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="909465"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="956B43"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="FEA022"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="E68200"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="FFA94A"/>
+   </a:folHlink>
+</a:clrScheme>
+

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_tabletool" component="wpp">
+	<commands>
+		<KListCommand id="RB_Table" text="@Table" rbFileMenuEmbed="1">
+			<KListCommand icon="Select" id="TableSelectMenu" customTip="Select" text="@Select" qtspyName="Select" rbHotKey="Q">
+				<KxLegacyTriggerCommand hotKey="T" ksoCmd="SelectTable" icon="SelectTable" id="SelectTableInTableToolTab" text="@Select Table" qtspyName="SelectTable"/>
+				<KxLegacyTriggerCommand hotKey="C" ksoCmd="SelectColumn" icon="SelectColumn" id="SelectColumnInTableToolTab" text="@Select Column" qtspyName="SelectColumn"/>
+				<KxLegacyTriggerCommand hotKey="R" ksoCmd="SelectRow" icon="SelectRow" id="SelectRowInTableToolTab" text="@Select Row" qtspyName="SelectRow"/>
+			</KListCommand>
+		</KListCommand>
+		<KxPropComposeCommand hotKey="c" ksoCmd="DeleteColumns" forceVisible="1" icon="DeleteColumns" id="DeleteColumns_AlwaysVisible" text="@Delete Columns" rbHotKey="C"/>
+		<KxPropComposeCommand hotKey="R" ksoCmd="DeleteRows" forceVisible="1" icon="DeleteRows" id="RbDeleteRows_AlwaysVisible" text="@Delete Rows"/>
+		<KxPropComposeCommand hotKey="a" ksoCmd="InsertRowsAbove" forceVisible="1" icon="InsertRowsAbove" id="InsertRowsAbove_AlwaysVisible" customTip="InsertRowsAbove" spaceHint="suitable" text="@Insert Above" rbHotKey="V"/>
+		<KxPropComposeCommand hotKey="b" ksoCmd="InsertRowsBelow" forceVisible="1" icon="InsertRowsBelow" id="InsertRowsBelow_AlwaysVisible" customTip="InsertRowsBelow" spaceHint="suitable" text="@Insert Below" rbHotKey="E"/>
+		<KxPropComposeCommand hotKey="l" ksoCmd="InsertColumnsLeft" forceVisible="1" icon="InsertColumnsLeft" id="InsertColumnsLeft_AlwaysVisible" customTip="InsertColumnsLeft" spaceHint="suitable" text="@Insert Left" rbHotKey="L"/>
+		<KxPropComposeCommand hotKey="r" ksoCmd="InsertColumnsRight" forceVisible="1" icon="InsertColumnsRight" id="InsertColumnsRight_AlwaysVisible" customTip="InsertColumnsRight" spaceHint="suitable" text="@Insert Right" rbHotKey="I"/>
+		<KListCommand id="RB_RowAndColumn" text="@Rows and Columns" rbFileMenuEmbed="1">
+			<KListCommand icon="Delete" id="DeleteMenuInTableToolTab" customTip="Delete" text="@Delete" qtspyName="Delete" rbHotKey="D">
+				<command idQ="DeleteColumns_AlwaysVisible"/>
+				<command idQ="RbDeleteRows_AlwaysVisible"/>
+			</KListCommand>
+			<command idQ="InsertRowsAbove_AlwaysVisible"/>
+			<command idQ="InsertRowsBelow_AlwaysVisible"/>
+			<command idQ="InsertColumnsLeft_AlwaysVisible"/>
+			<command idQ="InsertColumnsRight_AlwaysVisible"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="MergeCells" aid="221" faceid="66" idMso="MergeCells" icon="MergeCells" controlType="0" id="MergeCells" customTip="MergeCells" text="@Merge
+Cells" rbHotKey="M"/>
+		<KListCommand id="RB_MergeSplit" text="@Merge" rbFileMenuEmbed="1">
+			<command idQ="MergeCells"/>
+			<KxLegacyTriggerCommand ksoCmd="SplitCellsUxV" idMso="SplitCells" icon="SplitCells" controlType="0" id="SplitCellsInTableToolTab" customTip="SplitCells" text="@Split
+Cells"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="DistributeRowsEvenly" icon="DistributeRows" id="DistRowSevenly" customTip="DistRowSevenly" spaceHint="suitable" text="@Distribute Rows Evenly" rbHotKey="UR"/>
+		<KxLegacyTriggerCommand ksoCmd="DistributeColumnsEvenly" icon="DistributeColumns" id="DistColumnSevenly" customTip="DistColumnSevenly" spaceHint="suitable" text="@Distribute Columns Evenly" rbHotKey="UC"/>
+		<KListCommand id="RB_Adjust" text="@Adjust" rbFileMenuEmbed="1">
+			<command idQ="DistRowSevenly"/>
+			<command idQ="DistColumnSevenly"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="FormatAlignLeft" forceVisible="1" icon="AlignLeft" id="rLeft" customTip="TableLeft" text="@Align Left" rbHotKey="AL"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="FormatAlignCenter" forceVisible="1" icon="AlignCenter" id="rCenter" customTip="TableCenter" text="@Center" rbHotKey="AC"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="FormatAlignRight" forceVisible="1" icon="AlignRight" id="rRight" customTip="TableRight" text="@Right" rbHotKey="AR"/>
+		<KxValueCommand ksoCmd="BaseLine" aid="962" faceid="23" icon="AlignTop" id="AlignTop" index="-4160" customTip="AlignTop" spaceHint="compact" text="@Align Top" rbHotKey="O"/>
+		<KxValueCommand ksoCmd="BaseLine" aid="830" icon="CenterVertically" id="AlignCenter" index="-4108" customTip="AlignCenter" spaceHint="compact" text="@Center Vertically" rbHotKey="C"/>
+		<KxValueCommand ksoCmd="BaseLine" aid="964" faceid="25" icon="AlignBottom" id="AlignBottom" index="-4107" customTip="AlignBottom" spaceHint="compact" text="@Align Bottom" rbHotKey="B"/>
+		<KListCommand idMso="GroupTableAlignment" controlType="16" id="RB_TableAlignment" text="@Alignment" rbFileMenuEmbed="1">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="rLeft"/>
+					<command idQ="rCenter"/>
+					<command idQ="rRight"/>
+				</KRbLayoutListCommand>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" spaceHint="compact" rightSpace="0" leftSpace="0">
+					<command idQ="AlignTop"/>
+					<command idQ="AlignCenter"/>
+					<command idQ="AlignBottom"/>
+				</KRbLayoutListCommand>
+			</KListCommand>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<separator/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<KListCommand icon="TextDirection" id="TextDirection" customTip="Text Direction" text="@Text Direction" rbHotKey="AX">
+				<KxValueCommand ksoCmd="TextDirection" icon="text_orient_1" index="1" text="@Horizontal direction" qtspyName="TextDirection_Horizontal" rbHotKey="H"/>
+				<KxValueCommand ksoCmd="TextDirection" icon="text_orient_2" index="2" text="@Vertical direction" qtspyName="TextDirection_Vertical" rbHotKey="V"/>
+				<KxValueCommand ksoCmd="TextDirection" icon="text_orient_3" index="3" text="@Rotate all text 90°" qtspyName="TextDirection_Rotate90" rbHotKey="R"/>
+				<KxValueCommand ksoCmd="TextDirection" icon="text_orient_4" index="4" text="@Rotate all text 270°" qtspyName="TextDirection_Rotate270" rbHotKey="O"/>
+				<KxValueCommand ksoCmd="TextDirection" icon="text_orient_5" index="5" text="@Stacked" qtspyName="TextDirection_Stacked" rbHotKey="S"/>
+				<separator/>
+				<KxValueCommand ksoCmd="TextDirection" icon="TextDirection" index="6" text="@More Options..." qtspyName="TextDirection_More" rbHotKey="M"/>
+			</KListCommand>
+			<KListCommand icon="margins" id="CellMarginsInTableToolTab" customTip="TextMargin" text="@Margins">
+				<KxLegacyTriggerCommand hotKey="o" ksoCmd="TextMarginNormalEvenly" customTip="TextMarginNormal" text="@Normal" qtspyName="TextMarginNormalEvenly" rbHotKey="O"/>
+				<KxLegacyTriggerCommand hotKey="n" ksoCmd="TextMarginNoneEvenly" customTip="TextMarginNone" text="@None" qtspyName="TextMarginNoneEvenly" rbHotKey="N"/>
+				<KxLegacyTriggerCommand hotKey="a" ksoCmd="TextMarginNarrowEvenly" customTip="TextMarginNarrow" text="@Narrow" qtspyName="TextMarginNarrowEvenly" rbHotKey="A"/>
+				<KxLegacyTriggerCommand hotKey="w" ksoCmd="TextMarginWideEvenly" customTip="TextMarginWide" text="@Wide" qtspyName="TextMarginWideEvenly" rbHotKey="W"/>
+				<KxLegacyTriggerCommand hotKey="c" ksoCmd="TextMarginCustomEvenly" customTip="TextMarginCustom" text="@Custom" qtspyName="TextMarginCustomEvenly" rbHotKey="C"/>
+			</KListCommand>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="BringForward" aid="344" faceid="136" idMso="ObjectBringForward" icon="BringForward" controlType="0" id="BringForward" text="@Bring Forward" rbHotKey="F"/>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="BringToFront" aid="342" faceid="134" idMso="ObjectBringToFront" icon="BringToFront" controlType="0" id="RbBringToFront" text="@Bring to Front"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="SendBackward" aid="345" faceid="137" idMso="ObjectSendBackward" icon="SendBackward" controlType="0" id="SendBackward" text="@Send Backward" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="SendToBack" aid="343" faceid="135" idMso="ObjectSendToBack" icon="SendToBack" controlType="0" id="SendToBack" text="@Send to Back" rbHotKey="K"/>
+		<KxValueCommand hotKey="l" ksoCmd="DrawAlign" icon="DrawAlignLeft" id="DrawAlign_Left" index="0" text="@Align Left" rbHotKey="L"/>
+		<KxValueCommand hotKey="c" ksoCmd="DrawAlign" icon="DrawAlignCenter" id="DrawAlign_Center" index="1" text="@Align Center" rbHotKey="C"/>
+		<KxValueCommand hotKey="r" ksoCmd="DrawAlign" icon="DrawAlignRight" id="DrawAlign_Right" index="2" text="@Align Right" rbHotKey="R"/>
+		<KxValueCommand hotKey="t" ksoCmd="DrawAlign" icon="DrawAlignTop" id="DrawAlign_Top" index="3" text="@Align Top" rbHotKey="T"/>
+		<KxValueCommand hotKey="m" ksoCmd="DrawAlign" icon="DrawAlignMiddle" id="DrawAlign_Middle" index="4" text="@Align Middle" rbHotKey="M"/>
+		<KxValueCommand hotKey="b" ksoCmd="DrawAlign" icon="DrawAlignBottom" id="DrawAlign_Bottom" index="5" text="@Align Bottom" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="AlignDistributeHori" aid="361" faceid="151" idMso="AlignDistributeHorizontally" icon="AlignDistributeHori" controlType="0" id="AlignDistributeHori" text="@Distribute Horizontally" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="AlignDistributeVert" aid="362" faceid="152" idMso="AlignDistributeVertically" icon="AlignDistributeVert" controlType="0" id="AlignDistributeVert" text="@Distribute Vertically" rbHotKey="V"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EqualHeight" aid="351" faceid="142" icon="EqualHeight" id="EqualHeight" text="@Equal Height" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="EqualWidth" aid="352" faceid="143" icon="EqualWidth" id="EqualWidth" text="@Equal Width" rbHotKey="W"/>
+		<KxLegacyTriggerCommand hotKey="Q" ksoCmd="EqualSize" aid="353" faceid="144" icon="EqualSize" id="RbEqualSize" text="@Equal Size"/>
+		<KxLegacyTriggerCommand hotKey="A" ksoCmd="AlignRelativeToSlide" aid="531" id="RbAlignRelativeToSlide" text="@Relative to Slide"/>
+		<KxLegacyTriggerCommand hotKey="S" ksoCmd="ShowHideGrid" aid="1124" faceid="111" icon="FTB_GridSwitch" id="RbShowHideGrid" spaceHint="suitable" text="@Gridlines"/>
+		<KxLegacyTriggerCommand hotKey="G" ksoCmd="GridGuides" icon="GridGuides" id="RbGuides" dialogHint="1" spaceHint="suitable" text="@Grid and Guides"/>
+		<KListCommand id="RB_BringToFront" text="@Arrange" rbFileMenuEmbed="1">
+			<KxListCommand ksoCmd="BringForward" icon="BringForward" customTip2="BringForward2" id="ShapeBringForward" customTip="BringForward" spaceHint="suitable" text="@Bring Forward" rbHotKey="AF">
+				<command idQ="BringForward"/>
+				<command idQ="RbBringToFront"/>
+			</KxListCommand>
+			<KxListCommand ksoCmd="SendBackward" icon="SendBackward" customTip2="SendBackward2" id="ShapeSendBackward" customTip="SendBackward" spaceHint="suitable" text="@Send Backward" rbHotKey="AE">
+				<command idQ="SendBackward"/>
+				<command idQ="SendToBack"/>
+			</KxListCommand>
+			<KListCommand icon="DrawAlignLeft" id="AlignMenuInTableToolTab" customTip="DrawAlignLeft" text="@Align" qtspyName="DrawAlignLeft" rbHotKey="AA">
+				<command idQ="DrawAlign_Left"/>
+				<command idQ="DrawAlign_Center"/>
+				<command idQ="DrawAlign_Right"/>
+				<separator/>
+				<command idQ="DrawAlign_Top"/>
+				<command idQ="DrawAlign_Middle"/>
+				<command idQ="DrawAlign_Bottom"/>
+				<separator/>
+				<command idQ="AlignDistributeHori"/>
+				<command idQ="AlignDistributeVert"/>
+				<separator/>
+				<command idQ="EqualHeight"/>
+				<command idQ="EqualWidth"/>
+				<command idQ="RbEqualSize"/>
+				<separator/>
+				<command idQ="RbAlignRelativeToSlide"/>
+				<separator/>
+				<command idQ="RbShowHideGrid"/>
+				<command idQ="RbGuides"/>
+			</KListCommand>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="Bold" aid="605" faceid="316" icon="Bold" id="Bold" customTip="Bold" text="@Bold" rbHotKey="1"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="Italic" aid="606" faceid="317" icon="Italic" id="Italic" customTip="Italic" text="@Italic" rbHotKey="2"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="Underline" aid="607" faceid="318" idMso="Underline" icon="Underline" controlType="6" id="Underline" customTip="Underline" text="@Underline" rbHotKey="3"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Shadow" idMso="ObjectEffectShadowGallery" icon="Shadow" controlType="4" id="ShadowButton" customTip="ShadowButton" text="@Shadow" rbHotKey="5"/>
+		<KxWppMoreColorCommand hotKey="m" ksoCmd="FontColor" idMso="FontColorMoreColorsDialogExcel" icon="MoreColor" controlType="0" id="MoreFontColors" dialogHint="1" text="@More Font Colors" rbHotKey="M"/>
+		<KxWppSnapColorCommand hotKey="e" ksoCmd="FontColor" icon="SnapperFill" forceEnabled="1" id="SnapFontColors" text="@Snapper" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="Superscript" aid="137" faceid="26" idMso="OutlineExpand" icon="Superscript" controlType="0" id="Superscript" customTip="Superscript" text="@Superscript" rbHotKey="8"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="Subscript" aid="138" faceid="27" idMso="OutlineCollapse" icon="Subscript" controlType="0" id="Subscript" customTip="Subscript" text="@Subscript" rbHotKey="9"/>
+		<KxLegacyTriggerCommand ksoCmd="IncreaseFontSize" aid="957" faceid="18" idMso="FontSizeIncrease" icon="IncreaseFontSize" controlType="0" id="IncreaseFontSize" customTip="IncreaseFontSize" text="@Increase Font Size" rbHotKey="FG"/>
+		<KxLegacyTriggerCommand ksoCmd="DecreaseFontSize" aid="958" faceid="19" idMso="FontSizeDecrease" icon="DecreaseFontSize" controlType="0" id="DecreaseFontSize" customTip="DecreaseFontSize" text="@Decrease Font Size" rbHotKey="FK"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="IncreaseSpace" forceVisible="1" aid="959" faceid="20" idMso="WindowMoreWindowsDialog" icon="IncreaseSpace" controlType="0" id="IncreaseSpace" customTip="IncreaseSpace" text="@Increase Spacing" rbHotKey="P"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="DecreaseSpace" forceVisible="1" aid="960" faceid="21" icon="DecreaseSpace" id="DecreaseSpace" customTip="DecreaseSpace" text="@Decrease Spacing" rbHotKey="E"/>
+		<KxListCommand ksoCmd="Font" forceVisible="1" id="RB_TableTool_Font" customTip="RB_Font" text="@Font" rbFileMenuEmbed="1">
+			<KListCommand embedHint="1">
+				<KRbLayoutListCommand isDrawInnerBorder="1" horizontalSpacing="1" id="FontLayoutListInTableToolTab">
+					<KxWppFontComboboxCommand minimumWidth="95" horizontalPolicy="Expanding" ksoCmd="FontName" id="Table_FontName" customTip="FontName" verticalPolicy="Preferred" text="@Font" rbHotKey="FF"/>
+					<KxWppFontSizeCommand horizontalPolicy="Preferred" ksoCmd="FontSize" fixedWidth="40" id="FontSize" customTip="FontSize" verticalPolicy="Preferred" text="@Font Size" rbHotKey="FS"/>
+				</KRbLayoutListCommand>
+				<separator/>
+				<KRbLayoutListCommand topSpace="2" layoutOnly="1" bottomSpace="2" rightSpace="0" leftSpace="0">
+					<command idQ="Bold"/>
+					<command idQ="Italic"/>
+					<command idQ="Underline"/>
+					<separator/>
+					<KxWppFontColorCommand ksoCmd="FontColor" icon="ChartFontColor" customTip2="FontColor2" id="FontColorInTableToolTab" customTip="FontColor" text="@Font Color" qtspyName="FontColor" ksoTriggerCmd="RecentFontColor" rbHotKey="FC">
+						<command idQ="MoreFontColors"/>
+						<command idQ="SnapFontColors"/>
+						<separator/>
+						<command idQ="MoreFontFill"/>
+					</KxWppFontColorCommand>
+					<separator/>
+					<command idQ="IncreaseSpace"/>
+					<command idQ="DecreaseSpace"/>
+				</KRbLayoutListCommand>
+				<separator/>
+			</KListCommand>
+		</KxListCommand>
+		<KListCommand id="DetailedSettings_TableTool">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_TableTool" text="@Settings" qtspyName="DetailedSettings">
+				<KxLegacyTriggerCommand hotKey="f" ksoCmd="Font" icon="Font" dialogHint="1" text="@Font" qtspyName="Font"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_TableTool">
+			<command idQ="RB_RowAndColumn"/>
+			<separator/>
+			<command idQ="RB_TableTool_Font"/>
+			<separator/>
+			<command idQ="RB_TableAlignment"/>
+			<separator/>
+			<command idQ="RB_MergeSplit"/>
+			<separator/>
+			<command idQ="RB_Adjust"/>
+			<separator/>
+			<command idQ="RB_BringToFront"/>
+			<separator/>
+			<command idQ="RB_Table"/>
+			<separator/>
+			<command idQ="DetailedSettings_TableTool" filter="patent:LogicGroupShowExtensionButton=false"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

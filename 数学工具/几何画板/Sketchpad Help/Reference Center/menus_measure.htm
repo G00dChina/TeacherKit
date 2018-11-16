@@ -1,0 +1,297 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Measure Menu</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Menus,Menus Measure,Measure Menu">
+   <meta name="description" content="Measure Menu">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_measure.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Measure Menu</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Measure Menu</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_trans_custedit.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="menus_measure_length.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">The Measure menu allows you to measure <a href="objects_measurements.htm" class="topiclink">numeric properties</a> of selected objects. The commands in the top portion of the menu measure objects’ geometric properties; the commands in the bottom portion measure analytic properties.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If you want to measure a specific property and its command is not available, make sure you have only that command’s prerequisites selected. (You may have too many or too few objects selected.)</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:271px; padding:0px;"><p style="margin: 7px 0px 0px 0px;"><map name="map7" id="map7"><area shape="rect" coords="0,381,197,403" href="menus_measure_equation.htm" alt="Equation" title="Equation" /><area shape="rect" coords="0,360,197,382" href="menus_measure_slope.htm" alt="Slope" title="Slope" /><area shape="rect" coords="0,338,197,360" href="menus_measure_coorddist.htm" alt="Coordinate Distance" title="Coordinate Distance" /><area shape="rect" coords="0,315,197,337" href="menus_measure_ordinate.htm" alt="Ordinate (y)" title="Ordinate (y)" /><area shape="rect" coords="0,293,197,315" href="menus_measure_abscissa.htm" alt="Abscissa (x)" title="Abscissa (x)" /><area shape="rect" coords="0,270,197,292" href="menus_measure_coordinates.htm" alt="Coordinates" title="Coordinates" /><area shape="rect" coords="0,240,197,262" href="menus_measure_valueofpoint.htm" alt="Value of Point" title="Value of Point" /><area shape="rect" coords="0,218,197,240" href="menus_measure_ratio.htm" alt="Ratio" title="Ratio" /><area shape="rect" coords="0,197,197,219" href="menus_measure_radius.htm" alt="Radius" title="Radius" /><area shape="rect" coords="0,176,197,198" href="menus_measure_arcangle.htm" alt="Arc Length" title="Arc Length" /><area shape="rect" coords="0,153,197,175" href="menus_measure_arcangle.htm" alt="Arc Angle" title="Arc Angle" /><area shape="rect" coords="0,131,197,153" href="menus_measure_area.htm" alt="Area" title="Area" /><area shape="rect" coords="0,110,197,132" href="menus_measure_angle.htm" alt="Angle" title="Angle" /><area shape="rect" coords="0,87,197,109" href="menus_measure_circumference.htm" alt="Circumference" title="Circumference" /><area shape="rect" coords="0,65,197,87" href="menus_measure_perimeter.htm" alt="Perimeter" title="Perimeter" /><area shape="rect" coords="0,43,197,65" href="menus_measure_distance.htm" alt="Distance" title="Distance" /><area shape="rect" coords="0,20,197,43" href="menus_measure_length.htm" alt="Length" title="Length" /></map><img src="menu_measure.png" width="199" height="408" alt="" style="border:none" usemap="#map7" /></p>
+</td>
+<td style="vertical-align:top; width:728px; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Click the name of any command in the menu to see detailed information about that command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_FlushRight_Narrative"><img src="menu_measure_example_zoom60.png" width="277" height="53" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">To measure an object’s properties, select the object and choose from the available commands in the Measure menu. Sketchpad produces a measurement — a named <a href="objects_measurements.htm" class="topiclink">numeric value</a> in the proper units — as the result. When you drag or change an object that you’ve measured, the measured value changes accordingly.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To use any of these commands, you must select the appropriate objects (the </span><span class="f_BodyText" style="font-style: italic;">prerequisites</span><span class="f_BodyText">) in the sketch.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table class="framed" style="border:solid 2px #808080; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Command:</span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Prerequisites:</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_length.htm" class="topiclink">Length</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_segmentsrayslines.htm" class="topiclink">segments</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_distance.htm" class="topiclink">Distance</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Two <a href="objects_points.htm" class="topiclink">points</a>, or one point and one <a href="objects_segmentsrayslines.htm" class="topiclink">straight object</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_perimeter.htm" class="topiclink">Perimeter</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_polygonsinteriors.htm" class="topiclink">polygon, arc sector, or arc segment interiors</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_circumference.htm" class="topiclink">Circumference</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_circles.htm" class="topiclink">circles</a> or <a href="objects_polygonsinteriors.htm" class="topiclink">circle interiors</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_angle.htm" class="topiclink">Angle</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Three <a href="objects_points.htm" class="topiclink">points</a> (select the vertex as the second point)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_area.htm" class="topiclink">Area</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_polygonsinteriors.htm" class="topiclink">interiors</a> or <a href="objects_circles.htm" class="topiclink">circles</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_arcangle.htm" class="topiclink">Arc Angle</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_arcs.htm" class="topiclink">arcs</a>, or a <a href="objects_circles.htm" class="topiclink">circle</a> and two or three <a href="objects_points.htm" class="topiclink">points</a> on the circle</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_arclength.htm" class="topiclink">Arc Length</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_arcs.htm" class="topiclink">arcs</a>, or a <a href="objects_circles.htm" class="topiclink">circle</a> and two or three <a href="objects_points.htm" class="topiclink">points</a> on the circle</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_radius.htm" class="topiclink">Radius</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_circles.htm" class="topiclink">circles</a>, <a href="objects_polygonsinteriors.htm" class="topiclink">circle interiors</a>, <a href="objects_arcs.htm" class="topiclink">arcs</a>, or <a href="objects_polygonsinteriors.htm" class="topiclink">arc interiors</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_ratio.htm" class="topiclink">Ratio</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Two <a href="objects_segmentsrayslines.htm" class="topiclink">segments</a> or three collinear <a href="objects_points.htm" class="topiclink">points</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_valueofpoint.htm" class="topiclink">Value of Point</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_points.htm" class="topiclink">points</a> on <a href="objects_cats_paths.htm" class="topiclink">paths</a>, or one path and one point not on the path</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_coordinates.htm" class="topiclink">Coordinates</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_points.htm" class="topiclink">points</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_abscissa.htm" class="topiclink">Abscissa (x) or </a></span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_abscissa.htm" class="topiclink">Polar Distance (d)</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_points.htm" class="topiclink">points</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_ordinate.htm" class="topiclink">Ordinate (y) or </a></span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_ordinate.htm" class="topiclink">Polar Angle)</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_points.htm" class="topiclink">points</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; height:17px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_coorddist.htm" class="topiclink">Coordinate Distance</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; height:17px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">Two <a href="objects_points.htm" class="topiclink">points</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_slope.htm" class="topiclink">Slope</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_segmentsrayslines.htm" class="topiclink">straight objects</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:140px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;"><a href="menus_measure_equation.htm" class="topiclink">Equation</a></span></p>
+</td>
+<td style="vertical-align:top; width:402px; padding:5px; border:solid 1px #808080;"><p class="p_BodyText"><span class="f_BodyText">One or more <a href="objects_segmentsrayslines.htm" class="topiclink">lines</a> or <a href="objects_circles.htm" class="topiclink">circles</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

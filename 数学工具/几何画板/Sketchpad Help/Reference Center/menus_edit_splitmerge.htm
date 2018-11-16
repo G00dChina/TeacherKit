@@ -1,0 +1,354 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Menus &gt; Edit Menu &gt; Split/Merge</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Split Command,Merge Command,Edit Menu,Edit Menu Split,Edit Menu Merge,Split Command,Split Command splitting a point from its parents,Split Command splitting a point from its defintion,Split Command splitting a point apart,Merge Command,Merge Command merging two points,Merge Command merging a point to a path,Merge Command merging text to a point,Merge Command merging a picture to a point">
+   <meta name="description" content="Split/Merge">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "menus_edit_splitmerge.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Split/Merge</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="menus.htm">Menus</a> &gt; <a href="menus_edit.htm">Edit Menu</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Split/Merge</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="menus_edit_croppicture.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="menus_edit.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="shortcuts_howto_splitmerge.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">These <a href="menus_edit.htm" class="topiclink">Edit</a> menu commands allow you to alter the <a href="objects_attrib_relations.htm" class="topiclink">relationships</a> of existing objects by splitting points from their parents, by merging points either with other points or onto paths, and by merging pictures or text to points. These commands allow you to fix construction mistakes, to make significant changes in a sketch without starting over, to <a href="shortcuts_howto_splitmerge.htm" class="topiclink">explore constructions</a>, and to modify geometric and mathematical investigations in flexible and powerful ways.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Split a Point from Its Parents</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can split a <a href="menus_construct_midpoint.htm" class="topiclink">midpoint</a>, <a href="menus_construct_pointonobj.htm" class="topiclink">point on a path</a>, <a href="menus_construct_intersect.htm" class="topiclink">point of intersection</a>, or <a href="menus_graph_plotpoints.htm" class="topiclink">plotted point</a> from its parents. Depending on the relationships, the command changes. (For instance, it might </span><span class="f_BodyText" style="font-weight: bold;">Split Midpoint from Segment, Split Intersection from Path Objects,</span><span class="f_BodyText"> </span><span class="f_BodyText">or </span><span class="f_BodyText" style="font-weight: bold;">Split Plotted Point from Coordinate System.</span><span class="f_BodyText">)</span><span class="f_BodyText"> </span></p>
+<p class="p_BodyText"><span class="f_BodyText">To split a transformed image point from its pre-image point, you must hold the Shift key while choosing the command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the selected point is a point on a <a href="objects_cats_paths.htm" class="topiclink">path</a>, it’s removed from its path. If the selected point is an intersection point, it’s split from the intersecting objects. If the selected point is a plotted point, it's split from the coordinate system. In each of these cases, it becomes an independent point and can be dragged anywhere.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_circle_1.png" width="110" height="64" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_circle_2.png" width="109" height="66" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Split Point from Circle</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_intersection_1.png" width="91" height="69" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_intersection_2.png" width="93" height="65" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Split Intersection from Path Objects</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Split a Point from Its Definition</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can split a transformed image point from its definition. Hold the Shift key to enable this command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">The point is split from its pre-image point, and becomes an independent point that can be dragged anywhere. In the first illustration below, the point on the right is a reflected image. In the second illustration, it has been split from its definition as a reflected image, and can be dragged freely.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_reflect1_zoom60.png" width="56" height="76" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_reflect2_zoom60.png" width="64" height="76" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Split Point from Definition</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Split a Point Apart</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can split an independent point with more than one child into multiple points, one for each child. For example, if you have a point that is the center of a circle and is also the endpoint of two segments, you can split it so that the circle center and segment endpoints are now three separate, unrelated points. Select the point you wish to split and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit.htm" class="topiclink">Edit</a> | Split Point.</span><span class="f_BodyText"> The point splits into two or more separate points a small distance from each other.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To split a point apart, you must select an independent point with two or more children.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_splitpoint_1.png" width="75" height="69" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_splitpoint_2.png" width="75" height="69" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Split Point</span></p>
+<p class="p_BodyText"><span class="f_BodyText">In this example, the center point has three children: the circle and each of the two segments. The </span><span class="f_BodyText" style="font-weight: bold;">Split Point</span><span class="f_BodyText"> command results in three points: one is the center of the circle and the other two are the endpoints of the segments.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If you want to split the circle center from the two segments while leaving the segments with a common endpoint, first split the point apart and then merge the two segment endpoints.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A4_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Merge Two Points</a></span></td></tr></table></div><div id="TOGGLE0186A4" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can combine two separate points into a single point. Select an independent point and the point to which you want to merge it. One of the points must be independent so that it’s free to merge with the other point. The other point doesn’t have to be independent, but it must not <a href="objects_attrib_relations.htm" class="topiclink">depend</a> on the first.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">If the second point could depend on the first, after merging, it would be defined in terms of itself!</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mergepoints_1.png" width="78" height="47" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mergepoints_2.png" width="77" height="48" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Merge Points</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Merging two points is a handy way to fix any mistakes you make while using drawing tools.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Merge a Point to a Path</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; height:132px; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can merge a <a href="objects_points.htm" class="topiclink">point</a> to a <a href="objects_cats_paths.htm" class="topiclink">path</a> (<a href="objects_segmentsrayslines.htm" class="topiclink">straight object</a>, <a href="objects_circles.htm" class="topiclink">circle</a>, <a href="objects_arcs.htm" class="topiclink">arc</a>, <a href="objects_polygonsinteriors.htm" class="topiclink">interior</a>, point <a href="objects_loci.htm" class="topiclink">locus</a>, or <a href="objects_functionplots.htm" class="topiclink">function plot</a>) using the </span><span class="f_BodyText" style="font-weight: bold;">Merge</span><span class="f_BodyText"> command. Select an independent point and a path that doesn’t depend on that point. The point must be independent, and the path must not <a href="objects_attrib_relations.htm" class="topiclink">depend</a> on the point. In this way, for example, you can merge an endpoint of a segment to another segment. After it’s merged, the point is attached to the segment and can move along the segment but cannot leave it (unless you later split it from that segment).</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mergesegment_1.png" width="114" height="81" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mergesegment_2.png" width="114" height="81" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Merge Point to Segment</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Merge Text to a Point</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can merge a text object — a <a href="objects_captions.htm" class="topiclink">caption</a>, <a href="objects_measurements.htm" class="topiclink">measurement</a>, <a href="objects_calculations.htm" class="topiclink">calculation</a> or <a href="objects_functions.htm" class="topiclink">function</a> — to a point. To enable this command, hold the Shift key while choosing the </span><span class="f_BodyText" style="font-weight: bold;">Merge</span><span class="f_BodyText"> command.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Select one text object and one point.</span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">While holding down the Shift key, choose </span><span class="f_BodyText" style="font-weight: bold;">Edit | Merge Text to Point.</span></p><p class="p_BodyText"><span class="f_BodyText">A merged copy of your selected text appears, centered on the point you selected. As you move the point (by <a href="tools_arrow.htm" class="topiclink">dragging it</a>, <a href="menus_display_animate.htm" class="topiclink">animating it</a>, or dragging or animating its <a href="objects_attrib_relations.htm" class="topiclink">parents</a>), the merged text moves with it; and as you drag the merged text, the point moves with it. (You may want to <a href="menus_display_hideobjects.htm" class="topiclink">hide</a> the point and/or the original measurement to make your sketch more attractive.)</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mtext2pt1_zoom60.png" width="111" height="81" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mtext2pt2_zoom60.png" width="111" height="81" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Merge Text to Point</span></p>
+<p class="p_BodyText"><span class="f_BodyText">A caption merged to a point can be used to provide a richer description of the point (or the object on which the point is constructed) than can be entered in a label, because you can use the style buttons and Symbolic Notation tools from the <a href="windows_txtpal.htm" class="topiclink">Text Palette</a>. A measurement merged to a point can provide a useful visualization of measured properties. For instance, you can merge the measure of an angle to that angle’s vertex or the length of a segment to a (hidden) point on that segment. Note that the copy of your original text merged to the point is not the measurement itself, however. It’s only a display copy of your original measurement. If you want to use the original measurement elsewhere in your sketch (in a calculation, for instance), you should not hide it after merging its text to a point.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Because the merged text is a copy of the original text object, there’s no need to split the text from the point. Instead, make sure that both the original text object and the point are visible, and then delete the merged text object.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Merge a Picture to a Point</a></span></td></tr></table></div><div id="TOGGLE0186A7" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can merge a <a href="objects_pictures.htm" class="topiclink">picture</a> to a point. </span><span class="f_BodyText_Indented">Select both the picture and the point, and choose </span><span class="f_BodyText_Indented" style="font-weight: bold;">Edit | Merge Picture to Point.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mpict2pt1_zoom60.png" width="104" height="77" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_mpict2pt2_zoom60.png" width="104" height="77" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Merge Picture to Point</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also <a href="importing_pictures.htm" class="topiclink">attach a picture to two or three points</a>, but not by using the </span><span class="f_BodyText" style="font-weight: bold;">Merge</span><span class="f_BodyText"> command. Instead, select the picture and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_cut.htm" class="topiclink">Edit | Cut</a>.</span><span class="f_BodyText"> Then select the points and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_paste.htm" class="topiclink">Edit | Paste</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Split a Picture from One, Two or Three Points</a></span></td></tr></table></div><div id="TOGGLE0186A8" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can split a <a href="objects_pictures.htm" class="topiclink">picture</a> from a point. </span><span class="f_BodyText_Indented">Select a picture attached to one point and choose </span><span class="f_BodyText_Indented" style="font-weight: bold;">Edit | Split Picture from Point.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented">The picture is separated from the point and no longer moves with it</span><span class="f_BodyText">.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can split a <a href="objects_pictures.htm" class="topiclink">picture</a> from two or three points. </span><span class="f_BodyText_Indented">Select a picture attached to two or three points, hold the Shift key, and choose </span><span class="f_BodyText_Indented" style="font-weight: bold;">Edit | Split Picture from Points.</span></p>
+<p class="p_BodyText_Indented"><span class="f_BodyText_Indented">The picture is separated from the points and no longer moves or changes shape with them.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_spict_pt1_zoom60.png" width="71" height="52" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:204px; padding:0px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><img src="splitmerge_spict_pt2_zoom60.png" width="88" height="61" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large" style="font-weight: bold;">Split Picture from Point(s)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can <a href="importing_pictures.htm" class="topiclink">attach a picture to two or three points</a>, but not by using the </span><span class="f_BodyText" style="font-weight: bold;">Merge</span><span class="f_BodyText"> command. Instead, select the picture and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_cut.htm" class="topiclink">Edit | Cut</a>.</span><span class="f_BodyText"> Then select the points and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_paste.htm" class="topiclink">Edit | Paste</a>.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

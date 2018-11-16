@@ -1,0 +1,304 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Iterations and Iterated Images &gt; Working with Iterations</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Iterations,Iterations depth,Iterations parametric depth,Iterations table,Iterations terminal point,Iterations randomize points on paths,Depth of Iteration,Parametric Depth of Iteration,Tables,Tables iterated values,Terminal Point of Iteration,Fractals,Tesselations,Randomize Iterated Points">
+   <meta name="description" content="Working with Iterations">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_iter_working.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Working with Iterations</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_iter.htm">Iterations and Iterated Images</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Working with Iterations</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_iter_numeric.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_iter.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="howto_sierpinski.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Iterations in Sketchpad are powerful and flexible. Here are some of the ways they can be controlled and displayed.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Set Iteration Depth Manually or Parametrically</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Set Iteration Depth Manually</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can change the depth of an iteration in several ways. </span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">To begin, select one or more iterated image objects.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Press the </span><span class="f_BodyText" style="font-weight: bold;">+</span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;">–</span><span class="f_BodyText"> key. Each press of the key increases or decreases the depth of iteration by one.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;">Increase Iterations</span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;">Decrease Iterations</span><span class="f_BodyText"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu. </span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="objects_iter_props.htm" class="topiclink">Edit | Properties | Iteration</a></span><span class="f_BodyText"> and type a value for </span><span class="f_BodyText" style="font-weight: bold;">Number of iterations.</span></p><p class="p_BodyText"><span class="f_BodyText">No matter which method you use, the minimum depth is one, and the maximum depth is limited by the number of iteration samples that can be displayed.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You can choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="windows_advprefs_sampling.htm" class="topiclink">Edit | Advanced Preferences | Sampling</a></span><span class="f_MarginNote"> to change the maximum number of iteration samples allowed.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Set Iteration Depth Parametrically</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you define an iteration, use a <a href="objects_cats_values.htm" class="topiclink">measurement, parameter, or calculation</a> in your sketch to automatically determine the depth of the iteration. First select the points or parameters that define the pre-image, and then select the value that defines the iteration depth. (The depth value must be the last object selected.) Hold the Shift key while you pull down the <a href="menus_trans.htm" class="topiclink">Transform</a> menu, and the </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Iterate</a> </span><span class="f_BodyText">command changes to </span><span class="f_BodyText" style="font-weight: bold;">Iterate to Depth.</span><span class="f_BodyText"> Choose this command and <a href="menus_trans_iter_usedialog.htm" class="topiclink">use the Iterate dialog box</a> to define the iteration normally. Once the iteration is defined, the integer part of the depth value determines the iteration depth.</span></p>
+<p class="p_ExpandableNote"><img id="TOGGLE0186A2_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_ExpandableNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Note</a></span></p>
+<div id="TOGGLE0186A2" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 24px 0px 9px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">If the value is negative, the depth is set to zero.</span></p>
+<p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">If the value is too large to display all the iterated images, Sketchpad uses the maximum depth at which the images can be displayed.</span></p>
+<p class="p_ExpandableNoteSection"><span class="f_ExpandableNoteSection">When an iteration’s depth is determined by the value of a parameter or calculation, you can’t set the depth manually.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A3_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Control the Appearance of Iterated Images</a></span></td></tr></table></div><div id="TOGGLE0186A3" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">You can select, color, style, hide, or <a href="menus_edit_clear.htm" class="topiclink">clear</a> individual iterated image objects. In this example, you might want to hide or clear the images of the iterated triangle’s vertices, so that only the sides of the triangle are visible in your illustration. Click an image object to select the entire <a class="inline-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A4')">orbit</a> <span id="TOGGLE0186A4"> &nbsp;(iterated image)</span> of the corresponding pre-image object. Any change you make in color, point or line style, or visibility will affect the entire orbit of that pre-image object. The appearance of unselected orbits will not be affected.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can display the full orbit of all objects in the iteration, or only the final iteration of all objects. This example shows the full orbit. If it showed the final iteration only, all inner triangles except the smallest would be hidden. To control this setting when you create the iteration, choose </span><span class="f_BodyText" style="font-weight: bold;">Full orbit</span><span class="f_BodyText"> or </span><span class="f_BodyText" style="font-weight: bold;">Final iteration only</span><span class="f_BodyText"> from the Display pop-up menu of the <a href="menus_trans_iter_usedialog.htm" class="topiclink">Iterate dialog box</a>. To change this setting after you’ve created the iteration, use the <a href="objects_iter_props.htm" class="topiclink">Iteration Properties</a> panel.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><a href="objects_iter_geometric.htm" class="topiclink"><img src="mid_tri_iter3.png" width="86" height="91" alt="" style="border:none" /></a></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A5_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Create or Suppress a Table of Iterated Values</a></span></td></tr></table></div><div id="TOGGLE0186A5" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">If one or more visible measured <a href="objects_cats_values.htm" class="topiclink">values</a> change as a result of an iteration, Sketchpad creates a <a href="objects_tables.htm" class="topiclink">table</a> of iterated values when you create the iteration. The table contains one column for each visible value affected by the iteration, as well as an initial column — labeled </span><span class="f_BodyText" style="font-style: italic;">n </span><span class="f_BodyText">— that indicates the level of iteration. Each row in the table describes the values of the measurements at the indicated level of iteration.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">For example, in a sketch containing a parameter </span><span class="f_BodyText" style="font-style: italic;">Seed,</span><span class="f_BodyText"> with an initial value of 100, and a calculation </span><span class="f_BodyText" style="font-style: italic;">Seed</span><span class="f_BodyText"> / 2, if you iterate the pre-image parameter </span><span class="f_BodyText" style="font-style: italic;">Seed</span><span class="f_BodyText"> to the first image calculation </span><span class="f_BodyText" style="font-style: italic;">Seed</span><span class="f_BodyText"> / 2, Sketchpad produces this table, containing the iterated images of </span><span class="f_BodyText" style="font-style: italic;">Seed</span><span class="f_BodyText"> / 2 as </span><span class="f_BodyText" style="font-style: italic;">Seed</span><img src="single_arrow.png" width="22" height="11" alt="" style="border:none" /><span class="f_BodyText" style="font-style: italic;">Seed</span><span class="f_BodyText"> / 2.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="working_numeric.png" width="159" height="111" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">The number of rows in a table of iterated values changes automatically as you increase or decrease the depth of iteration. If you don’t want to create the table of iterated values, uncheck </span><span class="f_BodyText" style="font-weight: bold;">Tabulate Iterated Values</span><span class="f_BodyText"> in the Structure pop-up menu of the <a href="menus_trans_iter_usedialog.htm" class="topiclink">Iterate dialog box</a>. If you create a table when you create the iteration and decide you no longer need it, select the table and <a href="menus_edit_clear.htm" class="topiclink">clear</a> it from your sketch.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A6_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Make Iterated Points on Paths Fixed or Random</a></span></td></tr></table></div><div id="TOGGLE0186A6" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Sometimes you may want to specify a <a href="menus_construct_pointonobj.htm" class="topiclink">point on an object</a> as the first image of an iterated pre-image. For instance, you might map a triangle’s vertices to arbitrary points constructed on its three segment edges. In this case, the Structure pop-up menu of the <a href="menus_trans_iter_usedialog.htm" class="topiclink">Iterate dialog box</a> allows you to choose how Sketchpad will iterate these arbitrary points on objects. </span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">To Same Relative Locations:</span><span class="f_BodyText"> Sketchpad displays each iterated image point at the same relative location as the first image you chose in the Iterate dialog box. If you drag the first image point to a new location on the path on which it’s constructed, all of the iterated images adjust to the same relative new location. </span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">To New Random Locations:</span><span class="f_BodyText"> Each iterated image of your initial point appears at a new, random location on its iterated path, independent of the location of the first image. This choice is useful if you’re exploring geometric probability or other applications of randomness.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">After you’ve constructed an iteration, use its <a href="objects_iter_props.htm" class="topiclink">Iteration Properties</a> panel to experiment with both choices for how to iterate points constructed on path objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When a selected iteration maps at least one point to a random location, you can randomize the locations either by choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="objects_iter_props.htm" class="topiclink">Edit | Properties | Iteration</a></span><span class="f_BodyText"> and clicking the </span><span class="f_BodyText" style="font-weight: bold;">Randomize Now</span><span class="f_BodyText"> button or by pressing </span><span class="f_BodyText" style="font-weight: bold;">!</span><span class="f_BodyText"> (exclamation point) on the keyboard.</span></p>
+</td>
+<td style="vertical-align:top; width:100px; padding:0px;"><p class="p_Image_Centered_Large"><img src="iter_rel_loc_same_zoom60.png" width="82" height="58" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Same Relative Locations</span></p>
+<p class="p_Image_Centered_Large"><img src="iter_rel_loc_new_zoom60.png" width="81" height="58" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">New Random Locations</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A7_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Create the Terminal Point of an Iterated Point Image</a></span></td></tr></table></div><div id="TOGGLE0186A7" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">On occasion you may want to use the very last point of an iterated point object. You may want to attach a construction to this point or measure some quantity that depends on the point.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">You cannot construct a terminal point on an iteration that uses <a href="menus_trans_iter_multmaps.htm" class="topiclink">multiple iteration maps</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">To construct the terminal point of an iterated point image, select the iterated image of the point and choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Transform | Terminal Point</a>.</span><span class="f_BodyText"> If the depth of the iteration changes, the terminal point moves accordingly.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">When you select an iterated point image, the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_trans_iter.htm" class="topiclink">Iterate</a></span><span class="f_MarginNote"> command changes to </span><span class="f_MarginNote" style="font-weight: bold;">Terminal Point.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">In this examples, an iteration was used to construct the flight path of a thrown ball. (The pre-image points, not shown here, defined the initial velocity of the ball and the strength of gravity.) To determine the height of the ball after some number of iterations, the terminal point was constructed and used to <a href="menus_measure_distance.htm" class="topiclink">measure the distance</a> between the terminal point and the ground.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="projectile.png" width="170" height="141" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A8_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Use Multiple Iteration Maps to Create Iterated Fractals and Tessellations</a></span></td></tr></table></div><div id="TOGGLE0186A8" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:60%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Use <a href="menus_trans_iter_multmaps.htm" class="topiclink">multiple iteration maps</a> to make each step of the iteration produce two or more copies of the original objects. Multiple maps allow you to create iterated fractals and tessellations such as the <a href="howto_sierpinski.htm" class="topiclink">Sierpiński gasket</a>, a binary tree, or a parallelogram tessellation.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="binary_tree.png" width="199" height="126" alt="" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="tesselation.png" width="230" height="108" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_geometric.htm" class="topiclink">A Geometric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_numeric.htm" class="topiclink">A Numeric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="howto_sierpinski.htm" class="topiclink">How to Construct a Sierpiński Gasket</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_props.htm" class="topiclink">Iteration Properties</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4','hm.type','inline','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

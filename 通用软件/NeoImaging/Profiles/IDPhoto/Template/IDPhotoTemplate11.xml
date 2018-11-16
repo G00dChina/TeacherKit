@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<PaperName>6寸/4R相纸</PaperName>
+	<BackGround>
+		<Height>4</Height>
+		<Width>6</Width>
+	</BackGround>
+	<SpiltLineList>
+		<Spilt>
+			<Top>0</Top>
+			<Vertical>1</Vertical>
+			<Left>5000</Left>
+			<Length>10000</Length>
+		</Spilt>
+	</SpiltLineList>
+	<Version>1</Version>
+	<PhotoList>
+		<Photo>
+			<Top>0</Top>
+			<Height>10000</Height>
+			<TypeIndex>1</TypeIndex>
+			<Left>6</Left>
+			<Width>4989</Width>
+		</Photo>
+		<Photo>
+			<Top>0</Top>
+			<Height>10000</Height>
+			<TypeIndex>1</TypeIndex>
+			<Left>5006</Left>
+			<Width>4989</Width>
+		</Photo>
+	</PhotoList>
+	<PhotoNameList>
+		<PhotoName>大皮夹照</PhotoName>
+	</PhotoNameList>
+</Config>

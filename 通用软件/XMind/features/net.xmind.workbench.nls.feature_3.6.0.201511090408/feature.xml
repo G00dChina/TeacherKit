@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.xmind.workbench.nls.feature"
+      label="XMind Online Support Native Language Support"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      XMind Online Support Native Language Support
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2015, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin id="org.xmind.core.net.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="org.xmind.core.net.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.signin.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_ar" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_da" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_de" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_es" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_fr" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_it" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_ja" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_ko" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_pt_BR" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_ru" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_sl" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_zh_CN" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+   <plugin id="net.xmind.workbench.nl_zh_TW" fragment="true" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+
+</feature>

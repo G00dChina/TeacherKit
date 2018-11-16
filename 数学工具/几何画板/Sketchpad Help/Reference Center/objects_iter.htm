@@ -1,0 +1,225 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Iterations and Iterated Images</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Iterations,Iterations geometric,Iterations numeric,Iterated Images,Objects,Objects iterations,Objects iterated images,Fractals">
+   <meta name="description" content="Iterations and Iterated Images">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_iter.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Iterations and Iterated Images</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Iterations and Iterated Images</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="working_with_pictures.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_iter_geometric.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">An iteration is a rule that defines a repeated series of geometric or numeric operations. Each step of the iteration is performed on the results of the previous step, and the iteration rule defines how the results of one step are used to perform the next step.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">An iterated image object is the set of iterated objects corresponding to a single constructed or calculated object from the original operation.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the</span><span class="f_BodyText" style="font-weight: bold;"> <a href="menus_trans_iter.htm" class="topiclink">Transform | Iterate</a></span><span class="f_BodyText"> command to create an iteration.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">An iteration can involve <a href="objects_iter_geometric.htm" class="topiclink">geometric constructions</a>, <a href="objects_iter_numeric.htm" class="topiclink">numeric operations</a>, or a combination of both.</span></p>
+<div style="text-align: center; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 5px 5px 5px 5px;"><table style="margin:0 auto; border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">&nbsp;</span></p>
+<p class="p_Image_Centered_Large"><a href="objects_iter_geometric.htm" class="topiclink"><img src="mid_tri_iter6.png" width="183" height="93" alt="" style="border:none" /></a></p>
+<p class="p_Image_Centered_Large"><span class="f_ImageCaption"><a href="objects_iter_geometric.htm" class="topiclink">Geometric Iteration: Midpoint Triangles</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_Image_Centered_Large"><a href="objects_iter_numeric.htm" class="topiclink"><img src="fib_table2.png" width="176" height="109" alt="" style="border:none" /></a></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large"><a href="objects_iter_numeric.htm" class="topiclink">Numeric Iteration: The Fibonacci Sequence</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p style="text-align: center;"><img src="fractal_fern_zoom75.png" width="58" height="110" alt="" style="border:none" /></p>
+<p class="p_Image_Centered_Large"><span class="f_Image_Centered_Large">Combined Iteration: A Fractal Fern</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">The geometric constructions or numeric operations must define an output in terms of some input. The input can be independent <a href="objects_points.htm" class="topiclink">points</a>, points on a <a href="objects_cats_paths.htm" class="topiclink">path</a>, <a href="objects_parameters.htm" class="topiclink">parameters</a> or independent <a href="objects_calculations.htm" class="topiclink">calculations</a>. The iteration uses the output of one step as the input for the next step, and creates an iterated image object for each output object. The iterated image object shows the set of iterated positions or values of the original object on which it’s based. This is called the </span><span class="f_BodyText" style="font-style: italic;">orbit</span><span class="f_BodyText"> of that object.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">A geometric iteration</span><span class="f_BodyText"> repeatedly applies a particular geometric construction to a set of points. At each step the construction is based on the point(s) produced by the previous step. For instance, you could construct a triangle from three points and then translate the original points to the right by 2 cm. When you iterate this construction, the first step constructs a new triangle from the translated points and produces three new translated points. Each additional iteration produces a new triangle and three new translated points. The sequence of triangles is the </span><span class="f_BodyText" style="font-style: italic;">orbit</span><span class="f_BodyText"> of the original triangle you constructed.</span></p>
+</td>
+<td style="vertical-align:middle; padding:5px; border:solid 1px #000000;"><p style="text-align: center;"><img src="tri_translate.png" width="308" height="65" alt="" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">A numeric iteration</span><span class="f_BodyText"> repeatedly applies a particular calculation. At each step the calculation uses the result(s) of the previous step. For instance, you can apply the calculation “add 2” repeatedly, starting with the </span><span class="f_BodyText" style="font-style: italic;">seed</span><span class="f_BodyText"> value </span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText"> = 5. The first step produces 5 + 2 = 7, the second step produces 7 + 2 = 9, and so forth. The sequence of output values (7, 9, 11, 13, ...) is the </span><span class="f_BodyText" style="font-style: italic;">orbit</span><span class="f_BodyText"> of </span><span class="f_BodyText" style="font-style: italic;">a</span><span class="f_BodyText"> + 2.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Sketchpad displays the orbit of iterated numeric or algebraic objects in a table. The first column shows the depth of iteration; additional columns show the orbits of the iterated numeric or algebraic objects.</span></p>
+</td>
+<td style="vertical-align:middle; padding:5px; border:solid 1px #000000;"><p style="text-align: center;"><img src="iter_add_2.png" width="111" height="91" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">In these examples, it’s helpful to think of the iteration as having two distinct elements: the original calculation or construction (the seed or pre-image) and the mapping that takes each value or point to the next value or point in the sequence. Thus you might say that 5 maps to 7 in the numeric iteration, and that 47 maps to 49. Similarly, you might say that A maps to A' in the geometric iteration, and that A' maps to the next translated point. The entire iteration is defined by the pre-image (the seed) and the mapping. When you first apply the mapping to the pre-image, the result is the </span><span class="f_BodyText" style="font-style: italic;">first image</span><span class="f_BodyText">. As you continue to apply the mapping, you generate the second image, the third image, thes fourth image, and so on.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80%; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">Most iterations use a single mapping to produce a single image of the original for each step of the iteration. However, some iterations (like this <a href="howto_sierpinski.htm" class="topiclink">Sierpiński Gasket</a>) produce <a href="menus_trans_iter_multmaps.htm" class="topiclink">multiple copies at each step</a>.</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_Centered_Large"><img src="sierpinski_2.png" width="138" height="132" alt="" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText"><span class="f_BodyText">When you construct an iteration, Sketchpad creates iterated image objects of the objects produced by the original construction, even those objects that aren’t used as input for the next step of the iteration. For instance, in the geometric example above, Sketchpad creates iterated image objects not only of the three vertices of the triangle, but also of the segments and triangle interior. Objects that can be iterated include geometric objects, measurements, loci, functions and function plots, pictures, and text attached to a point. (Sketchpad does not produce iterated image objects for families of functions, for families of loci, for action buttons, or for other previously-constructed iterated images.)</span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">Subtopics:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_geometric.htm" class="topiclink">A Geometric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_numeric.htm" class="topiclink">A Numeric Iteration</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_working.htm" class="topiclink">Working with Iterations</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="howto_sierpinski.htm" class="topiclink">How to Construct a Sierpiński Gasket</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="objects_iter_props.htm" class="topiclink">Iteration Properties</a></span></p>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">See Also:</span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_trans_iter_usedialog.htm" class="topiclink">Using the Iterate Dialog Box</a></span></p>
+<p class="p_LinkList_ListElement"><span class="f_LinkList_ListElement"><a href="menus_trans_iter_multmaps.htm" class="topiclink">Multiple Iteration Maps</a></span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

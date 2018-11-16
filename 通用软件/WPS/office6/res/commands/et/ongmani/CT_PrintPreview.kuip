@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_printpreview" component="et">
+	<commands>
+		<KListCommand id="RB_Print" text="@Print">
+			<KQuickMenuCommand customTip2="Print2" id="RB_PrintMenu" referenceCommand="Print" rbHotKey="P">
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+			</KQuickMenuCommand>
+		</KListCommand>
+		<KListCommand icon="PageZoom" id="rPageZoom" customTip="PageZoom" text="@Page Zoom" rbHotKey="X">
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="NOZoom" id="NOZoomInPrintPreviewTab" text="@No Zoom" qtspyName="NOZoom"/>
+			<KxLegacyTriggerCommand hotKey="a" ksoCmd="FitSheetToPage" id="FitSheetToPageInPrintPreviewTab" text="@Fit Sheet on One Page" qtspyName="FitSheetToPage"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="FitColsToPage" id="FitColsToPageInPrintPreviewTab" text="@Fit All Columns on One Page" qtspyName="FitColsToPage"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="FitRowsToPage" id="FitRowsToPageInPrintPreviewTab" text="@Fit All Rows on One Page" qtspyName="FitRowsToPage"/>
+			<separator/>
+			<KxPropComposeCommand tabIndex="0" hotKey="x" ksoCmd="PageSetup" icon="PageZoom" id="PageZoomInPrintPreviewTab" dialogHint="1" text="@Custom Zoom" qtspyName="PageSetup"/>
+		</KListCommand>
+		<KxEtPrintPreviewZoomCommand space="9" ksoCmd="PrintPreviewZoomCombo" forceVisible="1" aid="908" id="PrintPreviewZoomCombo" dialogHint="1" customTip="PrintPreviewZoomCombo" bVertical="1" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PageBreakPreview" aid="877" faceid="74" icon="PageBreakPreview" id="PageBreakPreview" customTip="PageBreakPreview" text="@Page Break
+Preview" rbHotKey="I"/>
+		<KListCommand id="RB_PrintShow" text="@Show">
+			<KxLegacyTriggerCommand ksoCmd="PrevPreviousPage" icon="PreviewPage" id="PrevPreviousPageInPrintPreviewTab" customTip="PrevPreviousPage" text="@Previous
+Page" qtspyName="PrevPreviousPage" rbHotKey="B"/>
+			<KxLegacyTriggerCommand ksoCmd="PrevNextPage" icon="PrevNextPage" id="PrevNextPageInPrintPreviewTab" customTip="PrevNextPage" text="@Next
+Page" qtspyName="PrevNextPage" rbHotKey="N"/>
+			<KLayoutWidgetCommand fixedWidth="3"/>
+			<command idQ="PrintPreviewZoomCombo"/>
+			<command idQ="rPageZoom"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="PrevPortrait" aid="935" faceid="90" icon="OrientPortrait" id="RB_PrevPortrait" customTip="PrevPortrait" text="@Portrait" rbHotKey="V"/>
+		<KxLegacyTriggerCommand ksoCmd="PrevLandscape" aid="934" faceid="89" icon="OrientLandscape" id="RB_PrevLandscape" customTip="PrevLandscape" text="@Landscape" rbHotKey="L"/>
+		<KListCommand id="RB_PrintSettiing" text="@Settings">
+			<command idQ="RB_PrevPortrait"/>
+			<command idQ="RB_PrevLandscape"/>
+			<KxLegacyTriggerCommand hotKey="h" ksoCmd="HeaderFooter" icon="HeaderFooter" id="HeaderFooterInPrintPreviewTab" customTip="HeaderFooter" text="@Header and 
+Footer" qtspyName="HeaderFooter" rbHotKey="H"/>
+			<KxLegacyTriggerCommand hotKey="u" ksoCmd="PageSetup" icon="PageSetup" id="PageSetupInPrintPreviewTab" customTip="PageSetup" text="@Page
+Setup" qtspyName="PageSetup" rbHotKey="U"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="PrintPreviewMargins" icon="PrintPreviewMargins" id="PrintPreviewMargins" customTip="PrintPreviewMargins" text="@Margins" rbHotKey="M"/>
+		</KListCommand>
+		<KListCommand id="RB_Close" text="@Close">
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="ExitPreview" icon="CloseWindow" id="ExitPreview" customTip="ExitPreview" text="@Close" rbHotKey="C"/>
+		</KListCommand>
+		<KListCommand id="RB_PrintView">
+			<KxLegacyTriggerCommand hotKey="p" ksoCmd="PageBreakPreview" aid="877" faceid="74" icon="PageBreakPreview" id="PageBreakPreviewInPrintPreviewTab" customTip="PageBreakPreview" text="@Page Break
+Preview" qtspyName="PageBreakPreview" rbHotKey="I"/>
+			<KxLegacyTriggerCommand hotKey="n" ksoCmd="Normal" icon="NormalViewEt" id="NormalViewEt" customTip="PrintNormalView" text="@Normal
+View" qtspyName="Normal" rbHotKey="O"/>
+		</KListCommand>
+		<KxEtPrintInfoCommand hookIds="RB_PrintMenu" id="CTP_PrintHook"/>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_PrintPreview">
+			<command idQ="RB_Print"/>
+			<separator/>
+			<command idQ="RB_PrintShow"/>
+			<separator/>
+			<command idQ="RB_PrintView"/>
+			<separator/>
+			<command idQ="RB_PrintSettiing"/>
+			<separator/>
+			<command idQ="RB_Close"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

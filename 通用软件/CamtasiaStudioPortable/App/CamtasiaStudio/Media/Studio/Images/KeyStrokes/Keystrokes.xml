@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+
+<KeystrokeData version="1.0.0">
+
+<KeystrokeItems>
+<KeystrokObject>
+<Name>灰色按键</Name>
+<Subfolder>GrayKeys</Subfolder>
+</KeystrokObject>
+
+<KeystrokObject>
+<Name>透明按键</Name>
+<Subfolder>Clear</Subfolder>
+</KeystrokObject>
+
+<KeystrokObject>
+<Name>传统按键</Name>
+<Subfolder>Traditional</Subfolder>
+</KeystrokObject>
+
+<KeystrokObject>
+<Name>轮廓按键</Name>
+<Subfolder>WhiteOutline</Subfolder>
+</KeystrokObject>
+</KeystrokeItems>
+
+</KeystrokeData>

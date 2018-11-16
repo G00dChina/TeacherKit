@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Verve" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="666666"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="D2D2D2"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="FF388C"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="E40059"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="9C007F"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="68007F"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="005BD3"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="00349E"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="17BBFD"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="FF79C2"/>
+   </a:folHlink>
+</a:clrScheme>
+

@@ -1,0 +1,451 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Constructing Triangles - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Constructing Triangles</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-01.gif">Constructing Triangles: Use Sketchpad's Tools</h1>
+<img class="floatRight" alt="tutorial-1_01" src="Images/tutorial-1_01.gif"><p>A triangle with two congruent sides is called <em>isosceles</em> and one with three congruent sides is called <em>equilateral.</em> In this tutorial, you&rsquo;ll use Sketchpad&rsquo;s tools to construct a triangle, an isosceles triangle, and an equilateral triangle.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Construct segments with the <strong>Straightedge</strong> tool</li></li /><li><strong>Undo</strong> (and <strong>Redo</strong>) actions</li>
+<li>Select, deselect, and drag objects with the <strong>Arrow</strong> tool</li>
+<li>Construct polygons with the <strong>Polygon</strong> tool</li>
+<li>Construct circles with the <strong>Compass</strong> tool</li>
+<li>Hide objects</li>
+<li>Change point sizes, line widths, and object colors</li>
+<li>Use the <strong>Text</strong> tool to add, remove, or change labels</li>
+<li>Use the <strong>Marker</strong> tool to add congruence marks</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x315.xml','Tutorial_1_Intro','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x315.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+</div>
+<h2>Construct a Triangle <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x303.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x303.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div style="width:400px;" class="column-3">
+<p>You can construct a triangle with Sketchpad by simply drawing three connected segments. Unlike a triangle that you draw on paper, a Sketchpad triangle is &ldquo;dynamic&rdquo;&mdash;it can move&mdash;and can become any triangle at all, just by dragging its vertices to change its size and shape.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>Open Sketchpad, or click on the Sketchpad window to make it active. Choose <strong>File | New Sketch</strong> to open a blank sketch.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="Images/toolSegment.gif"></div>
+<div class="column-2">2.</div>
+<div class="column-3">
+<p>Choose the <strong>Segment</strong> tool. Construct a segment using either one of two methods:</p>
+<ul>
+<li>Press and hold, drag, and release.</li>
+<li>Click, move, and click again.</li>
+</ul>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-1_02" src="Images/tutorial-1_02.gif"><div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">3.</div>
+<div style="width:400px;" class="column-3">
+<p>Construct another segment attached to one endpoint of the first segment. Make sure the point is highlighted when you click.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Undoing is different from deleting. Undoing takes you back a step, removing an object or undoing an action. Sketchpad allows you to undo multiple steps&mdash;as far back as you want&mdash;and then redo them again in the same order." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">4.</div>
+<div style="width:360px;" class="column-3">
+<p>If you make a mistake&mdash;now or at any other time&mdash;choose <strong>Edit | Undo</strong> (and if you want to redo what you undid, choose <strong>Edit | Redo</strong>).</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">5.</div>
+<div class="column-3">
+<p>Construct a third segment that connects the two free endpoints (check for highlighted points) to complete your triangle.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Polygon tool" alt="Polygon Tool" width="32" height="32" src="Images/toolPolygon.gif"></div>
+<div class="column-2">6.</div>
+<div class="column-3">
+<p>Choose the <strong>Polygon</strong> tool. Click the triangle&rsquo;s vertices (points) in order. End by clicking on the point you first clicked.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="Images/toolArrow.gif"></div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Choose the <strong>Arrow</strong> tool. Click in empty space to deselect all objects.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Dragging all parts of a shape you&rsquo;ve constructed allows you to check that it is constructed properly. If your shape holds together and keeps the properties you wanted to give it, your shape passes the &ldquo;drag test.&rdquo;" alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>Drag the different parts of your triangle to see how it behaves. Your triangle should stay a triangle. If not, use <strong>Edit | Undo</strong> and try again.</p>
+</div>
+</div>
+<h2>Construct an Isosceles Triangle <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x304.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x304.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll construct a triangle with two congruent sides. A circle holds the key to building a triangle that stays isosceles no matter how you drag it.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Compass tool" alt="Compass Tool" width="32" height="32" src="Images/toolCompass.gif"></div>
+<div class="column-2">9.</div>
+<div class="column-3">
+<p>Choose the <strong>Compass</strong> tool. In a blank area of your sketch, construct a circle using either one of two methods:</p>
+<ul>
+<li>Press and hold, drag, and release.</li>
+<li>Click, move, and click again.</li>
+</ul>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>The circle has two points&mdash;its center and a radius point.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="Images/toolArrow.gif"></div>
+<div class="column-2">10.</div>
+<div class="column-3">
+<p>Choose the <strong>Arrow</strong> tool. Drag each point to see how it affects the circle.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-1_03" src="Images/tutorial-1_03.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="Images/toolSegment.gif"></div>
+<div class="column-2">11.</div>
+<div style="width:400px;" class="column-3">
+<p>Choose the <strong>Segment</strong> tool. Construct a segment from the center to the radius point (check for highlighted points). This is a radius of the circle.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div style="width:400px;" class="column-3">
+<p>Construct a second radius from the center to the circle. Make sure the circle is highlighted when you construct the second point.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div style="width:400px;" class="column-3">
+<p>Construct a segment between the points on the circle.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Polygon tool" alt="Polygon Tool" width="32" height="32" src="Images/toolPolygon.gif"></div>
+<div class="column-2">14.</div>
+<div style="width:400px;" class="column-3">
+<p>Choose the <strong>Polygon</strong> tool and construct the triangle interior.</p>
+</div>
+</div>
+<h2>Hide an Object <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x305.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x305.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>When you construct shapes with Sketchpad, you will often need to construct objects that you don&rsquo;t want to see in your finished product. For your isosceles triangle, how can you make the circle &ldquo;go away&rdquo;?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="Images/toolArrow.gif"></div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>Choose the <strong>Arrow</strong> tool. Select the circle and choose <strong>Edit | Cut</strong> (or press Delete).</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Why does your triangle also go away? The second segment you constructed was defined by the circle. Without the circle, there is no segment. And without the segment, there is no triangle.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Choose <strong>Edit | Undo</strong> to restore the circle (and triangle).</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Hiding an object is not the same as deleting it. When you hide an object, it is not visible, but it is mathematically present&mdash;it&rsquo;s still a part of the model. When you delete an object, it&rsquo;s removed from your sketch entirely, as are any other objects that depend on it." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>Instead, select the circle and choose choose <strong>Display | Hide Circle.</strong> This time, the circle should disappear, but the triangle should remain.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">18.</div>
+<div class="column-3">
+<p>Drag the different parts of your isosceles triangle to make sure your construction stays together. If not, use <strong>Edit | Undo</strong> and try again.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div class="column-3">
+<p>Why is your triangle isosceles?</p>
+</div>
+</div>
+<h2>Format Your Triangles <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x306.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x306.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You can change the color and appearance of the objects that make up your triangles&mdash;points, segments, and polygons&mdash;and label them.</p>
+<p>To select objects with Sketchpad, use the <strong>Arrow</strong> tool. When you click an object, the highlighting indicates that the object is selected. To deselect an object, click it again, or click in empty space to deselect everything.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div class="column-3">
+<p>To change a point&rsquo;s size, select it and choose <strong>Display | Point Style.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">21.</div>
+<div class="column-3">
+<p>To change a segment&rsquo;s thickness, select it and choose <strong>Display | Line Style.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">22.</div>
+<div class="column-3">
+<p>To change the color of any object&mdash;point, segment, or polygon&mdash;select it and choose <strong>Display | Color.</strong>
+</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-1_04" src="Images/tutorial-1_04.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Text tool" alt="Text Tool" width="32" height="32" src="Images/toolText.gif"></div>
+<div class="column-2">23.</div>
+<div style="width:480px;" class="column-3">
+<p>Choose the <strong>Text</strong> tool. Click the points to label them. Click them again to hide the labels, or double-click them to change the labels.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Marker tool" alt="Marker Tool" width="32" height="32" src="images/toolMarker.gif"></div>
+<div class="column-2">24.</div>
+<div style="width:480px;" class="column-3">
+<p>Choose the <strong>Marker</strong> tool. Click on one of the two congruent sides of the isosceles triangle to add a tick mark. Then add a tick mark to the other congruent side. Repeated clicking changes the number of strokes.</p>
+</div>
+</div>
+<h2>Construct an Equilateral Triangle <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x307.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x307.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Constructing an equilateral triangle is similar to constructing an isosceles triangle, but now you&rsquo;ll use two circles instead of one.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="Images/toolArrow.gif"></div>
+<div class="column-2">25.</div>
+<div class="column-3">
+<p>Choose the <strong>Arrow</strong> tool. Drag the first two triangles you made to make room in your sketch.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Compass tool" alt="Compass Tool" width="32" height="32" src="Images/toolCompass.gif"></div>
+<div class="column-2">26.</div>
+<div class="column-3">
+<p>Choose the <strong>Compass</strong> tool and construct a circle.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">27.</div>
+<div class="column-3">
+<p>Construct a second circle that interlocks with the first&mdash;start your new circle at the radius point of the first circle and end it at the center of the first circle. When done, there should only be two circles and two points.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="Images/toolArrow.gif"></div>
+<div class="column-2">28.</div>
+<div class="column-3">
+<p>Choose the <strong>Arrow</strong> tool. Drag each point. Both circles should always stay exactly the same size. If not, choose <strong>Edit | Undo</strong> and try again.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="Images/toolPoint.gif"></div>
+<div class="column-2">29.</div>
+<div class="column-3">
+<p>Choose the <strong>Point</strong> tool. Click on one of the intersections formed by the interlocking circles (make sure both circles are highlighted) to construct the third vertex of your triangle.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-1_05" src="Images/tutorial-1_05.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="Images/toolSegment.gif"></div>
+<div class="column-2">30.</div>
+<div style="width:350px;" class="column-3">
+<p>Choose the <strong>Segment</strong> tool and construct segments between the three vertices.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Polygon tool" alt="Polygon Tool" width="32" height="32" src="Images/toolPolygon.gif"></div>
+<div class="column-2">31.</div>
+<div style="width:350px;" class="column-3">
+<p>Choose the <strong>Polygon</strong> tool and construct the triangle interior.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="Images/toolArrow.gif"></div>
+<div class="column-2">32.</div>
+<div style="width:350px;" class="column-3">
+<p>Choose the <strong>Arrow</strong> tool. Drag each point of your triangle to make sure your construction holds together and stays equilateral. If not, choose <strong>Edit | Undo</strong> and try again.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">33.</div>
+<div style="width:350px;" class="column-3">
+<p>Hide the circles and format your triangle. Use the <strong>Text</strong> and <strong>Marker</strong> tools to add labels and tick marks.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">34.</div>
+<div class="column-3">
+<p>Why is your triangle equilateral?</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">35.</div>
+<div class="column-3">
+<p>Drag the different parts of your three triangles to see how they behave. Can you make them all look as if they are equilateral? Can you make them all look as if they are right triangles? Why or why not?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">36.</div>
+<div class="column-3">
+<p>Choose <strong>File | New Sketch.</strong> With the same tools you used to construct your isosceles and equilateral triangles, construct a rhombus or a regular hexagon.</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

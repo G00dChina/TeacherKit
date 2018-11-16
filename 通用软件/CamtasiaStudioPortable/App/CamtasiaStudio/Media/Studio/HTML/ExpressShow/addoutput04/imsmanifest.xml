@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest identifier="$ScormManifestID" version="$ScormVersion" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+   <metadata>
+      <schema>ADL SCORM</schema>
+		<schemaversion>CAM 1.3</schemaversion>
+		<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+			<general>
+				<identifier>
+					<catalog>$ScormManifestVideoCourse</catalog>
+					<entry>$ScormManifestTitle</entry>
+				</identifier>
+				<title>
+					<string language="en-US">$ScormManifestTitle</string>
+				</title>
+				<language>$ScormLanguage</language>
+				<description>
+					<string language="en-US">$ScormDescription</string>
+				</description>
+				<keyword>
+					<string language="en-US">$ScormManifestVideoCourse</string>
+				</keyword>
+				<coverage>
+					<string language="en-US">Circa, 21st century United States</string>
+				</coverage>
+				<structure>
+					<source>LOMv1.0</source>
+					<value>atomic</value>
+				</structure>
+				<aggregationLevel>
+					<source>LOMv1.0</source>
+					<value>2</value>
+				</aggregationLevel>
+			</general>
+			<lifeCycle>
+				<version>
+					<string language="en-US">1.0</string>
+				</version>
+				<staus>
+					<source>LOMv1.0</source>
+					<value>final</value>
+				</staus>
+				<contribute>
+					<role>
+						<source>LOMv1.0</source>
+						<value>author</value>
+					</role>
+					<entity>BEGIN:VCARD\nFN:Brooks AuthorEnd:VCARD</entity>
+					<date>
+						<dateTime>$ScormCurrentDateTime</dateTime>
+						<description>
+							<string language="en-US">A description for the date</string>
+						</description>
+					</date>
+				</contribute>
+			</lifeCycle>
+			<metaMetadata>
+				<identifier>
+					<catalog>URI</catalog>
+					<entry>http://www.techsmith.com</entry>
+				</identifier>
+				<contribute>
+					<role>
+						<source>LOMv1.0</source>
+						<value>creator</value>
+					</role>
+					<entity>BEGIN:VCARD\nFN:TechSmith Camtasia Studio 5.0CreatorEND:VCARD</entity>
+					<date>
+						<dateTime>$ScormCurrentDateTime</dateTime>
+						<description>
+							<string language="en-US">This date represents the date the creator finished authoring the metadata</string>
+						</description>
+					</date>
+				</contribute>
+				<metadataSchema>LOMv1.0</metadataSchema>
+				<metadataSchema>SCORM_CAM_v1.3</metadataSchema>
+				<language>$ScormLanguage</language>
+			</metaMetadata>
+			<technical>
+				<format>text/html</format>
+				<requirement>
+					<orComposite>
+						<type>
+							<source>LOMv1.0</source>
+							<value>browser</value>
+						</type>
+						<name>
+							<source>LOMv1.0</source>
+							<value>any</value>
+						</name>
+						<minimumVersion>0.0</minimumVersion>
+						<maximumVersion>100.0</maximumVersion>
+					</orComposite>					
+				</requirement>
+				<installationRemarks>
+					<string language="en-US">This activity requires the client browser to have a Macromedia Falsh plugin installed</string>
+				</installationRemarks>
+				<otherPlatformRequirements>
+					<string>Sound card, min RAM: 256MB, Video Card and display: at least 1280 x 1024 pixels x millions of colors</string>
+				</otherPlatformRequirements>
+				<duration>
+					<duration>$ScormDuration</duration>
+               <description>
+                  <string language="en-US">Length of time to play</string>
+               </description>
+            </duration>
+         </technical>
+         <educational>
+            <interactivityType>
+               <source>LOMv1.0</source>
+               <value>mixed</value>
+            </interactivityType>
+            <learningResourceType>
+               <source>LOMv1.0</source>
+               <value>simulation</value>
+            </learningResourceType>
+            <interactivityLevel>
+               <source>LOMv1.0</source>
+               <value>medium</value>
+            </interactivityLevel>
+            <semanticDensity>
+               <source>LOMv1.0</source>
+               <value>high</value>
+            </semanticDensity>
+            <intendedEndUserRole>
+               <source>LOMv1.0</source>
+               <value>learner</value>
+            </intendedEndUserRole>
+            <context>
+               <source>LOMv1.0</source>
+               <value>training</value>
+            </context>
+            <typicalAgeRange>
+               <string language="en-US">15-</string>
+            </typicalAgeRange>
+            <difficulty>
+               <source>LOMv1.0</source>
+               <value>easy</value>
+            </difficulty>
+            <typicalLearningTime>
+               <duration>$ScormDuration</duration>
+					<description>
+						<string language="en-US">Average length of time to experience the activity</string>
+					</description>
+				</typicalLearningTime>
+				<description>
+					<string>This activity is designed to give developers an overview of a small subset of features available in the XMLSpy IDE.</string>
+				</description>
+				<language>eng-US</language>
+			</educational>
+			<rights>
+				<cost>
+					<source>LOMv1.0</source>
+					<value>yes</value>
+					<description>
+						<string language="en-US">The cost of this sco is equal to 0 dollars.</string>
+					</description>
+				</cost>				
+				<copyrightAndOtherRestrictions>
+					<source>LOMv1.0</source>
+					<value>yes</value>
+					<description>
+						<string language="en-US">This is licensed under te creative commons attributions license.</string>
+					</description>
+				</copyrightAndOtherRestrictions>		
+			</rights>						
+		</lom>
+	</metadata>
+   <organizations default="TOC1">
+      <organization identifier="TOC1">
+         <title>$ScormManifestTitle</title>
+         $ScormOrganizationItems
+      </organization>
+   </organizations>
+
+   <resources>
+      $ScormResourceItems
+      <resource identifier="ALLRESOURCES" type="webcontent" adlcp:scormType="asset">
+         $ScormAllResources
+      </resource>
+   </resources>   
+</manifest>

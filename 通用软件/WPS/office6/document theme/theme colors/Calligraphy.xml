@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="Calligraphy" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:sysClr val="windowText" lastClr="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:sysClr val="window" lastClr="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="411401"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="FFE6E6"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="A24A48"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="B2935C"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="6A9A9A"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="B2B787"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="91644B"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="654A76"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="00A800"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="FF00FF"/>
+   </a:folHlink>
+</a:clrScheme>
+

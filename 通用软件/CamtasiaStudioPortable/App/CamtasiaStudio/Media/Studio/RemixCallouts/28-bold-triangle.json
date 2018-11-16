@@ -1,0 +1,12 @@
+{
+      "kind" : "remix",
+      "shape" : "shape-triangle",
+      "style" : "bold",
+      "width" : 180,
+      "height" : 180,
+      "fill-color": "1E5AE2",
+      "fill-style": "solid",
+      "stroke-style" : "solid",
+      "stroke-width": 0.0,
+      "stroke-color": "FFFFFF"
+}

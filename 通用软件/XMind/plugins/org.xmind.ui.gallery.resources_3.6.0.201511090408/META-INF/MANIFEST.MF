@@ -1,0 +1,125 @@
+Manifest-Version: 1.0
+Built-By: so
+Eclipse-BundleShape: dir
+Bundle-Name: %pluginName
+Bundle-Localization: fragment_resources
+Created-By: Apache Maven 3.3.3
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: %providerName
+Fragment-Host: org.xmind.ui.gallery
+Build-Jdk: 1.7.0_75
+Bundle-Version: 3.6.0.201511090408
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.xmind.ui.gallery.resources
+Archiver-Version: Plexus Archiver
+
+Name: images/Office/staff-card.png
+SHA-256-Digest: aU8ZSA5r05kQCGS7aGjMSV8gm0gWbm0A98ARy5E7BZg=
+
+Name: images/Hats/4.png
+SHA-256-Digest: UbzBV6VEiKEt/HNKVhUDnr9qzkZu+oWafr3r2CJyJmU=
+
+Name: images/Office/mail.png
+SHA-256-Digest: GEp6Ts+dBe3v9DjjMXkCUhYlLQd9jdRESMy1N6tupQc=
+
+Name: images/Office/seal.png
+SHA-256-Digest: kzxM3cWTiMC2Msw0grL5vH1vTsVmMISZNzhFF0omOrA=
+
+Name: images/Office/phone.png
+SHA-256-Digest: 3HGmwvV/nwXRX/UDXcjcOh9zLe4QO8Ncy5a6P+uGcVY=
+
+Name: images/Office/bulb.png
+SHA-256-Digest: MyvQQDWl/pQRdz+DODBWUZmy2DFMkyTmXAKlle4Bwro=
+
+Name: images/Hats/6.png
+SHA-256-Digest: Rm5WjkRm9ue97Hm0QTeqKOMdVYcfPasDkwvPJawjXaQ=
+
+Name: images/Office/canlendar.png
+SHA-256-Digest: xpgbB6dZ9Ss26cpN4FWEFJh6DRf/hGx/Wi2NWgwR7ng=
+
+Name: images/Office/ruler.png
+SHA-256-Digest: U8MOiqd5LiV3kqHHBvXeeb1mlyrqTOvgqbqYwW8hPRQ=
+
+Name: images/Office/notebook.png
+SHA-256-Digest: E+4fK+mvl+xvFQUTp7g/qJRN3OoABKfzQS8LG7MAarw=
+
+Name: images/Office/time.png
+SHA-256-Digest: SAyVVUP6IgPjTZnozWQuLvH9+7QD8k7kmdjVTVZ4gKs=
+
+Name: images/Hats/5.png
+SHA-256-Digest: WPwxv+9Mx3gbGjtNQbUn1stuSoXbhtZMFNu5qoqTnIk=
+
+Name: images/Office/lock.png
+SHA-256-Digest: 1ybMwKGue6lDcboQrftRS3ArTaGhBX9Nx3rm/ntL+10=
+
+Name: images/Office/mouse.png
+SHA-256-Digest: gk/EH/IrOGL1tq9qhSwwI9UuPkytGZ0HoyAvW0+Wv74=
+
+Name: images/Office/white-board.png
+SHA-256-Digest: exsqofIBvLBwspOTCKPIkCnDvNRAFRuow+hyHUjm5v8=
+
+Name: images/Office/pinter.png
+SHA-256-Digest: wJN1gU5V4th+6RH18jUCJ0eM0qmSP2O6pjektGffzjQ=
+
+Name: about.html
+SHA-256-Digest: ubyNDyIZu4fWD9Ye1hNYLzBy2OVDBLEF52x1LGSNREE=
+
+Name: images/Office/target.png
+SHA-256-Digest: nZMdE3pN0Oth4rm+FlUAZiHc6g/q/rjOvXg9rvvNxs4=
+
+Name: images/Office/sd-card.png
+SHA-256-Digest: U17oj2YJGGYIYqYJ686MRyzCma6t/nPFSw+dcVwIUjk=
+
+Name: fragment_resources.properties
+SHA-256-Digest: mgVf/FrpE7izpI0vkpp9svFZdRBbzQNHsjJiexaza2E=
+
+Name: images/Hats/1.png
+SHA-256-Digest: 1CCC23sMc8eciwr08DlfT2N/UWG540uAhpf8wYv0T6I=
+
+Name: images/Office/pencil.png
+SHA-256-Digest: JvHnbkqxF1Ijg/xfRCji1rROeIhjLLaMkIOcPa/oD0g=
+
+Name: images/Office/thumbtack.png
+SHA-256-Digest: ymao34ad1Qxuij+6GSas27ATDOm+HjCGlXJ7xaaVX6k=
+
+Name: images/Office/meeting.png
+SHA-256-Digest: JYJBPtBUU5EBNTouLxAdC1+EpbJe7K0+jLTa8uuowqY=
+
+Name: images/Office/calculator.png
+SHA-256-Digest: VBhYxTaax/eBQaRHGWGWiV/VJCj5oHQlSHNG0qDgKFI=
+
+Name: images/Office/money.png
+SHA-256-Digest: QOlS17QzKTiXlG0KxBjndFpV8YMbSmZfO90cNe8IwZA=
+
+Name: META-INF/maven/org.xmind.meggy.plugins/org.xmind.ui.gallery.reso
+ urces/pom.properties
+SHA-256-Digest: 7IFkQFETBTps19x0ri1Y4HVP7uDpeSiw80QQHd5dMiU=
+
+Name: images/Hats/3.png
+SHA-256-Digest: RvoLPw3mCsk0hd0Ts5uZUg2iEu7IjCujSir5jt1zA/s=
+
+Name: META-INF/maven/org.xmind.meggy.plugins/org.xmind.ui.gallery.reso
+ urces/pom.xml
+SHA-256-Digest: iS7dzdK968FoSRQBscZQTRAdC8gPnQUcbhc/yusPz1s=
+
+Name: images/imageGroups.properties
+SHA-256-Digest: 5MkUVmlkvX+FVlXUhRS7HMjnQD731qdGJP4s1nKi3TM=
+
+Name: images/Office/pie-chart.png
+SHA-256-Digest: d4kdFrPdLmJRjFcAlvua5gYOGL9ItyaUzvR+hZLaJLA=
+
+Name: images/Office/coffee.png
+SHA-256-Digest: BwnMBLimYDK76gT1qXk6+0Qr2ALyKdZAIUPRp0hjvQM=
+
+Name: images/Office/bag.png
+SHA-256-Digest: U9wKQ2idlFKiEwqfnhrDdGuRY35vdPxn5gTDA6AVCIM=
+
+Name: images/Office/magnifying-glass.png
+SHA-256-Digest: G4W7tTGWaZM0NH0ih+EhaWDFDLQSq8Q2tkihQg9u01c=
+
+Name: images/Hats/2.png
+SHA-256-Digest: Mu1TZbS1ih53RZ3FP00NyJn3zAC0f5eRfNG3jKnPsUA=
+
+Name: images/Office/computer.png
+SHA-256-Digest: Zy2n+OaNRoWo4jXzyP43BMAU1GrPS8eb0N0gHdMa6es=
+

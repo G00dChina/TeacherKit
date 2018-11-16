@@ -1,0 +1,335 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Common Object Attributes</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Object Attributes,Objects,Objects attributes">
+   <meta name="description" content="Common Object Attributes">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_attrib.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Common Object Attributes</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Common Object Attributes</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="objects_btns_scrollprops.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_attrib_props.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">There are two main ways to control the appearance and properties of Sketchpad objects.</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Modify <a href="objects_attrib_display.htm" class="topiclink">display attributes</a> such as color, object visibility, label visibility, display style, and tracing by using the </span><span class="f_BodyText"><a href="menus_display.htm" class="topiclink">Display</a></span><span class="f_BodyText"> menu, the</span><span class="f_BodyText"> <a href="windows_txtpal.htm" class="topiclink">Text Palette</a></span><span class="f_BodyText">, or the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_text.htm" class="topiclink">Text</a></span><span class="f_BodyText"> tool.</span></p><p style="text-align: left; padding: 0px 0px 0px 13px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BodyText">Inspect and modify the properties of an object by selecting it and choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a> </span><span class="f_BodyText">or choosing </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Properties</a></span><span class="f_BodyText"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu.</span></p><p class="p_BodyText"><span class="f_BodyText">Different properties apply to different kinds of objects:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Properties</span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Applies to</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Purpose</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_attrib_props.htm" class="topiclink">Object</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">All objects</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Inspect and navigate an object’s <a href="objects_attrib_relations.htm" class="topiclink">relationship to other objects</a> in the sketch and control whether the object is visible and whether it can be selected by the </span><span class="f_BodyText" style="font-weight: bold;"><a href="tools_arrow_selectdeselect.htm" class="topiclink">Arrow</a></span><span class="f_BodyText"> tool.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_attrib_labelprops.htm" class="topiclink">Label</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">All objects that can show labels</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Change an object’s label, show or hide the label, and determine whether the label is used in custom tools.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_values_props.htm" class="topiclink">Value</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_measurements.htm" class="topiclink">Measurements</a>, <a href="objects_calculations.htm" class="topiclink">calculations</a>, and <a href="objects_parameters.htm" class="topiclink">parameters</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine how a parameter, measurement, or calculation is displayed.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_parameters_props.htm" class="topiclink">Parameter</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_parameters.htm" class="topiclink">Parameters</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine how a parameter is animated and how it’s controlled by keyboard adjustments.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_tables_props.htm" class="topiclink">Table</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_tables.htm" class="topiclink">Tables</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine whether the last row of a table tracks values as they change in the sketch.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_iter_props.htm" class="topiclink">Iteration</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_iter.htm" class="topiclink">Iterations and iterated objects</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the depth of an iteration and how it’s constructed.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_opacity_props.htm" class="topiclink">Opacity </a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_polygonsinteriors.htm" class="topiclink">Polygons</a>, <a href="objects_polygonsinteriors.htm" class="topiclink">circle interiors</a>, <a href="objects_polygonsinteriors.htm" class="topiclink">arc interiors</a>, <a href="objects_pictures.htm" class="topiclink">pictures</a>, <a href="objects_iter.htm" class="topiclink">iterations</a> and <a href="objects_loci.htm" class="topiclink">loci</a> of these objects, and <a href="angle_markers.htm" class="topiclink">angle markers</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine how much the background of an object shows through it</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_coordsys_axisprops.htm" class="topiclink">Axis</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_coordsys.htm" class="topiclink">Axes</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine whether an axis is numbered using decimal numbers or using fractions and multiples of </span><span class="f_BodyText" style="font-style: italic;">π.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_functions_ddfprops.htm" class="topiclink">Function</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_functions_ddfprops.htm" class="topiclink">Data-defined functions</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the amount of smoothing to be applied to the function.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_plot_locprops.htm" class="topiclink">Plot</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_loci.htm" class="topiclink">Loci</a> and <a href="objects_cats_paths.htm" class="topiclink">sampled transformed paths</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the number of samples and whether the locus or sampled transformed path is displayed continuously or discretely.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cats_plot_fnprops.htm" class="topiclink">Plot</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_functionplots.htm" class="topiclink">Function plots</a> and <a href="object_parametriccurve.htm" class="topiclink">parametric plots</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the domain of the plot, the number of samples, and whether the plot is displayed continuously or discretely. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_cat_plot_sampledpic.htm" class="topiclink">Plot</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="transforming_pictures.htm#sampledtransformedpictures" class="topiclink">Sampled transformed picture</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the number of samples and allowable distortion for a sampled transformed picture. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_markers_props.htm" class="topiclink">Marker</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="angle_markers.htm" class="topiclink">Angle markers</a> and <a href="tick_markers.htm" class="topiclink">tick marks</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the type of tick mark or angle marker, the number of strokes used to mark it, and the form in which it's displayed.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_hideshowprops.htm" class="topiclink">Hide/Show</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_hideshowprops.htm" class="topiclink">Hide/Show buttons</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine whether the button hides or shows and whether it selects the objects when it shows them.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_animateprops.htm" class="topiclink">Animate</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_animateprops.htm" class="topiclink">Animation buttons</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the type and speed of an animation.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_moveprops.htm" class="topiclink">Move</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_moveprops.htm" class="topiclink">Movement buttons</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the speed of a movement and how it handles a moving destination.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_presentprops.htm" class="topiclink">Presentation</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_presentprops.htm" class="topiclink">Presentation buttons</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine whether the presentation is simultaneous or sequential and control various aspects of the presentation.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_linkprops.htm" class="topiclink">Link</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_linkprops.htm" class="topiclink">Link buttons</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine the destination of the link.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:86px; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_scrollprops.htm" class="topiclink">Scroll</a></span></p>
+</td>
+<td style="vertical-align:top; width:30%; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText"><a href="objects_btns_scrollprops.htm" class="topiclink">Scroll buttons</a></span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid 1px #000000;"><p class="p_BodyText"><span class="f_BodyText">Determine whether the target point is at the center or top left of the window after it’s scrolled.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_LinkList_Header"><span class="f_LinkList_Header">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

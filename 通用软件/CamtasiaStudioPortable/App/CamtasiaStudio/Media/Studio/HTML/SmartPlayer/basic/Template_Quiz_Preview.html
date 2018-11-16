@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+    <meta name="google" value="notranslate" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quiz Preview</title>
+    $QuizCSSInclude
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+		
+		.chat-bubble-arrow, .chat-bubble-arrow-border {
+			display: none !important;
+		}
+		
+		#tscVideoContent {
+			position: absolute;
+		}
+		
+		input[type=text], input[type=input] {
+			border: 1px solid #A9A9A9;
+		}
+    </style>
+
+</head>
+<body>
+
+<div id="tscVideoContent" class="tsc-smartplayer remix-skin"><div id="tsc_quiz_preview" class="video-view"></div>
+</div>
+
+<script src="scripts/techsmith-smart-player.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    var quizXMP = '$QuizPreviewXMP';
+	$$(document).ready(function(e) {
+		function refreshQuizOnContinue(event) {
+			if($$(event.target).hasClass('continue-video-button') || $$(event.target).hasClass('continue-button'))
+				window.location.href = window.location.href;
+		}
+		$$('body').on('click', refreshQuizOnContinue)
+
+		var xmpModel = TSC.Xmp.create();
+		xmpModel.parse(quizXMP);
+        xmpModel.ready.then(function() {
+            TSC.playerConfiguration.configureFromXmp(xmpModel);
+            TSC.localizationStrings.configureFromXmp(xmpModel);
+
+            var quizModel = TSC.Quiz.create(xmpModel);
+            TSC.quizController.quizModel = quizModel;
+            TSC.quizController.setViewContainer($$("#tsc_quiz_preview"));
+            TSC.quizController.displayNextQuestionSet();
+            TSC.quizController.setQuestionGrader(TSC.questionGrader.XMP);
+        });
+    });
+</script>
+
+</body>
+</html>

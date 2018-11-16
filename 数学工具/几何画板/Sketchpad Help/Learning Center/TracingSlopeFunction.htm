@@ -1,0 +1,288 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tracing the Slope Function - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Tracing the Slope Function</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-12.gif">Tracing the Slope Function: Animate a Secant Line</h1>
+<p>For a linear function, like <span class="nowrap"><em>f</em>(<em>x</em>) = 2<em>x</em> &ndash; 3</span>, you can calculate the slope by picking two points and applying the slope formula. But what happens when you try to find the slope of a function that isn&rsquo;t linear, like <span class="nowrap"><em>f</em>(<em>x</em>) = sin(<em>x</em>)</span>? In this tutorial, you&rsquo;ll gain some intuition about functions whose slopes are not constant and begin to examine some of the fundamental concepts of calculus. Don&rsquo;t worry if you&rsquo;re not familiar with calculus; there is still plenty to explore.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Measure the slope of a line</li>
+<li>Measure the coordinates of a point </li>
+<li>Plot a point using <strong>Graph | Plot as (x, y)</strong></li>
+<li>Trace the path of a moving point</li>
+<li>Create a movement button</li>
+<li>Compute and plot the derivative of a function</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x457.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x457.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+<div style="display:none;" id="SketchpadSkills">
+<h3>You will learn these new skills:</h3>
+</div>
+</div>
+<h2>Measure a Changing Slope <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x458.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x458.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You&rsquo;ll start by plotting a sine function, <span class="nowrap"><em>f</em>(<em>x</em>) = sin(<em>x</em>)</span>, and constructing a secant line on its graph. Then you&rsquo;ll measure the slope of the secant line and observe how the slope varies as the line moves along the function plot.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>In a new sketch, choose <strong>Graph | Plot New Function.</strong> Type sin(<em>x</em>) in the Calculator and click <strong>OK.</strong> Click <strong>Yes</strong> to switch angle units from degrees to radians.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-12_01" src="Images/tutorial-12_01.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Line tool" alt="Line Tool" width="32" height="32" src="images/toolLine.gif"></div>
+<div class="column-2">2.</div>
+<div style="width:200px;" class="column-3">
+<p>Press and hold the <strong>Segment</strong> tool icon until a pop-out menu appears. Choose the <strong>Line</strong> tool.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">3.</div>
+<div style="width:200px;" class="column-3">
+<p>Construct a secant line to the function plot by clicking two places fairly near each other on the sine graph.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">4.</div>
+<div style="width:200px;" class="column-3">
+<p>Select the secant line and choose <strong>Display | Animate Line.</strong> The secant line begins to move along the graph.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> When you pause an action using the Motion Controller, the animated objects remain in the Target area, even if you make changes to the sketch before re-starting. When you stop an action, you can re-start it again by pressing the Play button, but as soon as you do anything else in your sketch, the animated object will be deselected and gone from the Target area." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">5.</div>
+<div class="column-3">
+<p>Use the Pause button on the Motion Controller to pause and restart the movement. Use the up and down arrows on the Motion Controller to change the speed of the animation.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">6.</div>
+<div class="column-3">
+<p>Describe the motion of the secant line. What changes as it moves from left to right? What happens when the points reach the edge of the screen? What else do you notice?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Pause the movement of the line. Deselect all objects by clicking in empty space. Select the secant line and choose <strong>Measure | Slope.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>What does this measurement represent? What do you observe about it as the line moves? What are the largest and smallest values you observe? Where do they occur?</p>
+</div>
+</div>
+<h2>Plot and Trace a Point <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x459.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x459.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You will now graph the slope measurement to help you understand its behavior.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">9.</div>
+<div class="column-3">
+<p>Select point <em>A</em> and choose <strong>Measure | Abscissa (x).</strong> (If the line is moving, you can select point <em>A</em> by pressing the Target area of the Motion Controller and choosing point <em>A</em> from the menu.)</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">10.</div>
+<div class="column-3">
+<p>Select, in order, the independent variable (<em>x<sub>A</sub></em>) and the dependent variable (Slope <span class="line">AB</span>) and choose <strong>Graph | Plot as (x, y).</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">11.</div>
+<div class="column-3">
+<p>If the line is not moving, set it back in motion. Observe the behavior of the plotted point. How does it move horizontally? How does it move vertically?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div class="column-3">
+<p>Pause the movement of the line. With the plotted point selected, choose <strong>Display | Trace Plotted Point.</strong> Restart the movement.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-12_02" src="Images/tutorial-12_02.gif"><div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div style="width:200px;" class="column-3">
+<p>As the plotted point moves, it leaves a trace. Describe this trace. Watch if for several trips back and forth, and describe everything that you observe. Describe what happens when points <em>A</em> and <em>B</em> reach either edge of the screen.</p>
+</div>
+</div>
+<h2>Make Action Buttons <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x460.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x460.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div style="width:240px;" class="column-3">
+<p>Finally, you&rsquo;ll create an Animation button and a Movement button to further explore your model.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">14.</div>
+<div class="column-3">
+<p>Click Stop in the Motion Controller to stop the animation. Erase the trace of the plotted point by choosing <strong>Display | Erase Traces.</strong> Then, drag points <em>A</em> and <em>B</em> so that they are very close together.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>Select points <em>A</em> and <em>B.</em> and choose <strong>Edit | Action Buttons | Animation.</strong> Leave the default settings and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Press the <em>Animate Points</em> button several times to start and stop the animation. Describe the trace that you see now. What are its maximum and minimum values? Does this trace resemble any function you know?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>Stop the animation. Select in order points <em>B</em> and <em>A</em> and choose <strong>Edit | Action Buttons | Movement.</strong> Leave the default settings and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Creating a Movement button is similar to creating an Animation button, but a Movement button sets a destination for a point. When the point reaches that destination, the animation stops." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">18.</div>
+<div class="column-3">
+<p>Press the <em>Move B &rarr; A</em> button. What happens? Why?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div class="column-3">
+<p>Move one of the points so they&rsquo;re slightly separated and restart the animation.</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div class="column-3">
+<p>The derivative of <span class="nowrap"><em>f</em>(<em>x</em>) = sin(<em>x</em>)</span> gives you the precise slope of the sine function at every point along the curve. Select the equation <span class="nowrap"><em>f</em>(<em>x</em>) = sin(<em>x</em>)</span> and choose <strong>Number | Define Derivative Function.</strong> The derivative, <em>f</em>&prime;(<em>x</em>), appears. Use Sketchpad&rsquo;s Calculator to compute <em>f</em>&prime;(<em>x</em><sub>A</sub>). Then plot the point <span class="nowrap">(<em>x</em><sub>A</sub>, <em>f</em>&prime;(<em>x</em><sub>A</sub>)).</span> Trace the point and press the Animation button to create a function representing the slope of <span class="nowrap"><em>f</em>(<em>x</em>) = sin(<em>x</em>)</span> at every point along the curve.</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

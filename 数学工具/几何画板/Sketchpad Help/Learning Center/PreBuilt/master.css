@@ -1,0 +1,232 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	border:none
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+
+
+/*html styles*/
+body { font-size: 9pt; text-align: center; background-color: #efefef; voice-family: inherit; font-family: verdana, arial, sans-serif; color: #000; line-height: 130%; z-index:0; }
+
+h1 { font-size:15pt; margin: 4px 0 12px 0; font-weight:bold; color: #000; line-height:110%; }
+
+h2 { font-size:13pt; margin:16px 0 6px 0;font-weight:bold;  }
+
+h3 { font-size:10pt; margin:14px 0 4px 0;font-weight:bold;  }
+
+h4 { font-size:9pt; margin:12px 0 0 0;font-weight:bold;  }
+
+p { margin-bottom:6px; }
+
+p, ul, ol { font-size:9pt; }
+
+strong { font-weight:bold; }
+
+ul { margin:0 0 0 16px; list-style: none; }
+li { margin:0 0 4px 0; }
+
+ol { padding-left:1.5em; list-style: decimal; }
+ol li { margin:0 0 4px 1em; padding:0; }
+
+em { font-style:italic; }
+
+.nowrap { white-space:nowrap; }
+
+sup { vertical-align: top; font-size: 80%; }
+sub { vertical-align: sub; font-size: 80%; line-height:0; }
+
+input {font-size: 7.5pt; color: #000; margin:0 4px 0 0;}
+
+blockquote { margin:12px 12px 12px 24px; }
+
+blockquote p { line-height:9.5pt; margin:0; spacing:0; font-style:italic; }
+
+form { margin:10 0 10 0; }
+
+form .req { font-weight:bold; }
+
+form td {padding:4 4 4 0;}
+
+tr.ruleTop td, .ruleTop {
+	border-top-color: #c2c2c2;
+	border-top-style: solid;
+	border-top-width: 1px; }
+
+div.ruleTop { margin-top:12px; }
+
+.ruleBottom {
+	border-bottom-color: #c2c2c2;
+	border-bottom-style: solid;
+	border-bottom-width: 1px; }
+
+table.border { border: 2px solid #c2c2c2; margin:12px 0 12px 0; }
+table.border td, table.border th { border: 1px solid #c2c2c2; padding: 4 4 4 4; }
+
+#container { margin: 0 auto; width: 780px; text-align: left; background-color: #ffffff; }
+
+/* #masthead { width:780px; background-color:0066cc; margin:0 0 8 0;  padding:24px 0; text-align:center; color:#fff; font-weight:bold; font-size: 18pt; } */
+#masthead { height:68px; width:780px; background-image:url("../Images/masthead.jpg"); background-repeat:no-repeat; margin:0 0 0 0;  padding:0; }
+
+
+
+a:link { text-decoration: none; color:#4391c8; }
+a:visited { text-decoration: none; color:#4391c8; }
+a:hover {text-decoration: underline;}
+
+
+#anav { font-size:8pt; padding: 0px 0 0 20px; margin:0; }
+#anav, #anav a:link, #anav a:visited { color:#4391c8; text-decoration:none; }
+#anav a:hover { color:#4391c8; text-decoration:underline;}
+#anav .anavOn {color:#000000;}
+
+#body-main { padding:0 10px 24px 20px;}
+
+input.med { width: 115px; font-size:8pt; }
+
+#sideNav { width:185px; padding:0 0 0px 6px; }
+* html #sideNav { width:193px; } /* IE HACK */
+#sideNav, #sideNav a:link, #sideNav a:visited { color:#4391c8;  text-decoration:none; }
+#sideNav a:hover { color:#4391c8;  text-decoration:underline; }
+
+#sideNav h2 { font-size:8pt; margin:0 0 0 0; }
+#sideNav h2 img { top: 2px; position: relative; }
+
+#sideNav ul { margin:3px 0 0 16px; list-style: none; }
+#sideNav ul ul { margin-left:10px; }
+
+#sideNav li { line-height:1em; margin-bottom:3px; font-size:8pt; color:#4391c8;  }
+
+#sideNav h2.current a, #sideNav li.current a, #sideNav div#active a { color:black;  }
+#sideNav li.current, #sideNav li.current a { font-weight:bold; }
+
+.sideNavGroupHome {
+	padding-top:4px;
+	padding-bottom:8px;
+}
+.sideNavGroup {
+	padding-top:6px;
+	padding-bottom:8px;
+}
+
+.sideNavGroup img, .sideNavGroupHome img { margin:0px 3px 0 0; }
+.sideNavGroup ul.off { display:none; }
+.sideNavGroup ul.current { display:inherit }
+
+.off { display:none; }
+
+#content  { margin-left:24px; padding-bottom:30px; vertical-align:top; width:586px;}
+
+
+
+.pageNav { background-color:fff3cf; padding:8px 16px 8px 16px; border-style: solid; border-color:#ccc; border-width:1px; margin:0 0 12 0; }
+/*.pageNav table { width:340px; }
+.pageNav table td { background-color:e6e6e6; padding:16 16 16 16; border-style: solid; border-color:black; border-width:1px; }
+.pageNav table td { }*/
+.pageNav p, .pageNav li { font-size:90%; }
+.pageNav p { text-align:center; }
+
+.pageNav h4 { padding-bottom: 12px; }
+
+.pageNav ul { margin:0; padding:0; list-style: none; }
+
+.pageNav ul li { margin:0 0 6px 0; }
+.pageNav li li { margin:6 0 0 12; }
+
+.pageNav a { text-decoration: none; }
+.pageNav a:hover { text-decoration: underline; }
+
+.moduleDownloadBox { padding:4 6 4 6; background-color:#fff; margin:0 0 6 0; border-style: solid; border-color:#ccc; border-width:1px; }
+
+ul.moduleChapter { margin:-4pt 0 0 8pt; padding:0; list-style: none; }
+.moduleChapter li { margin:0; padding:0 }
+
+/*TUTORIALS*/
+
+#LC-Tutorial ul { margin-left:24px;list-style:disc; }
+
+#LC-Tutorial .listItem { display: inline-block; margin-bottom:4px; }
+
+#LC-Tutorial .listItem .column-1 { width:80px;float:left;text-align:right;padding-right:6px;display: inline-block; }
+#LC-Tutorial .listItem .column-2 { width:30px;float:left;text-align:right;padding-right:6px;display: inline-block; }
+#LC-Tutorial .listItem .column-3 { width:600px;display: inline-block; }
+
+.column-1 img { margin-left:2px; }
+
+
+img.floatRight { float:right;margin:0 30px 0 18px; }
+
+.segment { font-style:italic;border-top:solid 1px #000; }
+.line { background-image:url("../Images/line.gif"); background-repeat:no-repeat; background-position:top center; padding:4px 4px 0 4px; }
+
+
+.videoIndent { margin: 6px 0 12px 85px; }
+
+#tipPopup { margin-bottom:12px; }
+#SketchpadSkills ul, #Mathematics ul { list-style:disc; margin-left:22px; }
+#SketchpadSkills h3, #Mathematics h3 { font-size:11pt; }
+#SketchpadSkills ul li, #Mathematics ul li { font-size:10pt; }
+
+.tipPopup { width:500px; }
+
+.tipDescription li { list-style:disc; }
+
+.col1, .col2, .col3 { float:left;height:150px;width:160px;margin-top:10px;text-align:center; font-weight:bold; }
+.col1, .col2 { margin-right:10px; }
+.colSpacer { float:left; width:10px; }
+
+.clear { clear:both; }
+
+
+p.footnote { font-size:7pt; }
+
+#footer { font-size:7pt; background-color:#fff; padding:16px 0 6px 0px; color:#000; }
+#footer a:link, #footer a:visited { color:#000; text-decoration:none; }
+#footer a:hover { color:#000; text-decoration:underline; }
+
+.contentsToggle { font-size:85%; color:#0000ff; cursor: pointer; }
+
+.note { margin-bottom:6px; background-color:e6e6e6; padding:8 8 8 8; border-style: solid; border-color:black; border-width:1px; }

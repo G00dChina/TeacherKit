@@ -1,0 +1,129 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.ui.themes;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: e4Build
+Require-Bundle: org.eclipse.e4.ui.css.swt.theme
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.ui.git;path="bundles/org.eclipse.ui.themes";tag="
+ I20150511-2000";commitId=e4dbee8ad6f0f052199ac1c93f05e008f277362d
+Bundle-Vendor: %Plugin.providerName
+Bundle-Name: %Plugin.name
+Bundle-Version: 1.1.0.v20150511-0913
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.1.1
+Build-Jdk: 1.8.0_40
+Eclipse-BundleShape: dir
+
+Name: images/winXPHandle.png
+SHA-256-Digest: pBPfEx6cl7hFSpL7ZACUVpzIzbj7K1k+1PSQ83CdKQI=
+
+Name: plugin.xml
+SHA-256-Digest: 49/ddtfe5e6d7ttcpeH9yxS/FHEtf4nToUis3P2tniQ=
+
+Name: css/e4_default_winxp_olv.css
+SHA-256-Digest: J4vixz7/3imNjxBYBs9gtqrKAabxFOgAMccSx0gDglY=
+
+Name: css/e4_classic_win7.css
+SHA-256-Digest: oGUnDjRdOkD3LM/G5v6ku/gKwt2eP9zYtuy2Fec+LyM=
+
+Name: css/high-contrast.css
+SHA-256-Digest: L9MPyRBZDz+u8iIk25P+oxyBGVOS1TazDqxZDGhwbHk=
+
+Name: css/e4_default_gtk.css
+SHA-256-Digest: AweHBU8VSwDjaDOfHN7PDEh90ez6TetQAY7Ws2CBJIk=
+
+Name: css/e4-dark_mac.css
+SHA-256-Digest: +Nw5j0IUW9SzYicGnXO1M/1ZG1oCtxf9ddjlVfE/HAo=
+
+Name: images/macTSFrame.png
+SHA-256-Digest: M3rItx5OQNbjSEcf3s6v6r/fdjPHGVphm9pPXrrFjSo=
+
+Name: css/e4-dark.css
+SHA-256-Digest: 8QsipxZBtmIolnFnQRV1oRrShbjBZ9iozEd5HyTmYBw=
+
+Name: images/gtkTSFrame.png
+SHA-256-Digest: RXrytpobfQof4fdvoZemowpbecapF5rGLHiphhETfgU=
+
+Name: images/win7.png
+SHA-256-Digest: efoA3wIEengi95NOOq6cPcK5t8WWC17Imhd1pUg24EQ=
+
+Name: css/dark/e4-dark_basestyle.css
+SHA-256-Digest: puHJ02SNgxyJHNuqdhxkGwdOQvfUHYg6ZQ47tA+1ljA=
+
+Name: css/e4-dark_win.css
+SHA-256-Digest: hBtEnKHP/+n1LX0pbQ6quOMiWs52851O0xbazkk7P+8=
+
+Name: css/e4_classic_winxp.css
+SHA-256-Digest: oGUnDjRdOkD3LM/G5v6ku/gKwt2eP9zYtuy2Fec+LyM=
+
+Name: css/e4_default_win7.css
+SHA-256-Digest: O722+p2aA94deqzdAAySE8c1RR2ArkTSAFsA8glIKSU=
+
+Name: images/winClassicTSFrame.png
+SHA-256-Digest: nduBZyaRKYEb7AwQe9nJPmYKatjNn52v4PZJ/L6coqg=
+
+Name: plugin.properties
+SHA-256-Digest: 7UGBDhvd6Ej0fn2WQbuxAeJKxXVXWwMPiAtaS1YDxI8=
+
+Name: images/macHandle.png
+SHA-256-Digest: I51wAAj7d5ozFd/A/g3hcvUm08DCClt18pqd9LFQunA=
+
+Name: images/winXPOlive.png
+SHA-256-Digest: C2Ipw7OnxlmPOUHTn4Db7gPMWvdb4/4NAO0ib74Aef8=
+
+Name: css/dark/e4-dark_partstyle.css
+SHA-256-Digest: puoRMglftbf1Qi4BY4KSZuA1PeQjwzkUZ8SMB708UHI=
+
+Name: images/macGrey.png
+SHA-256-Digest: +WWQ7VMreL1siXqXdo6NPT7M+IBBYQd7U3o8NYCZ09I=
+
+Name: css/e4_default_mac.css
+SHA-256-Digest: 2QoyTiIhdDk6P9TE/FQ/yO2eFHsE+MSckyDbx/Y/bDg=
+
+Name: about.html
+SHA-256-Digest: 0RM1x9lTJa7T8YkysaegPuBIeaEvSZypRDfXoMpsJAU=
+
+Name: css/dark/e4-dark_globalstyle.css
+SHA-256-Digest: kvceRyAtz7ilntvi4SHt/LWNT16D9ZmroK7DwLEoiv8=
+
+Name: images/winXPTSFrame.png
+SHA-256-Digest: DQuegTqQkj0+OOF8iUzPb9s8mINYAJCfmyZGEbm8E9I=
+
+Name: images/win7Handle.png
+SHA-256-Digest: Oh9SF8i5+kQ24zAMTJ4ui/Br4S+UTaQVVH0t5BaCDhc=
+
+Name: css/e4_basestyle.css
+SHA-256-Digest: zpKsPJMRfyrKdSiHs9QOFsvNfyMXfIjnkklWHtEsh2s=
+
+Name: images/dragHandle.png
+SHA-256-Digest: 7wzoK/YKkvvCnGK7UkXKxj7t2YLYsYKAPSkmi2L3dU4=
+
+Name: images/gtkHandle.png
+SHA-256-Digest: bPbRP2bshPbwfMIAElSBK1iF0CsqLCp1l3hrfna6Xlo=
+
+Name: images/winClassicHandle.png
+SHA-256-Digest: C7ztgrKYAkqoYZG59II171ZDVFmke75zl/KHLbEYx7Q=
+
+Name: images/winXPBluTSFrame.png
+SHA-256-Digest: K9XImyMWZ18rxhm/lP4JhwbJDrd6AmBvuelzPMtmWuc=
+
+Name: images/winXPBluHandle.png
+SHA-256-Digest: ISk+95nFyPE60FJ86zTGJzs8KE7mXTEMyi2QH82Xyi0=
+
+Name: images/win7TSFrame.png
+SHA-256-Digest: jJtgiMPzFQCTjyVZQQCiR5vbkbVN2RHEiHYENYqVEh4=
+
+Name: images/winXPBlue.png
+SHA-256-Digest: 7WOW/TPpt8xJyyfe2OUivBYJgj0cIoWySp0IJ+HrX6o=
+
+Name: css/e4_default_winxp_blu.css
+SHA-256-Digest: rZ8AxQPi38geFex3oKFtVCZBtgw6RrPTBuFur+9FhFQ=
+
+Name: css/e4_default_mru_on_win7.css
+SHA-256-Digest: 1Qz04Rrf/T7+pNKxxQLlgPeCPJi+07DMyCJwSyt4YlI=
+
+Name: css/dark/e4-dark_preferencestyle.css
+SHA-256-Digest: NYFLs8tV82VvNt0IxXZp3DkuSZsOOPvaZ2STW6LnxWM=
+

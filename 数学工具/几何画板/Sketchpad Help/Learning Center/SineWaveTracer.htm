@@ -1,0 +1,437 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sine Wave Tracer - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Sine Wave Tracer</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-11.gif">Sine Wave Tracer: Animate and Trace Points</h1>
+<p>In this tutorial, you&rsquo;ll construct an animation that traces out a special curve called a <em>sine wave.</em>
+</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Draw a horizontal segment </li>
+<li>Edit properties of an angle marker </li>
+<li>Create an animation button </li>
+<li>Define a coordinate system based on a unit circle </li>
+<li>Use a trigonometric axis </li>
+<li>Merge two points</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x452.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x452.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+<div style="display:none;" id="SketchpadSkills">
+<h3>You will learn these new skills:</h3>
+</div>
+</div>
+<h2>Construct a Model <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x453.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x453.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>You&rsquo;ll start by constructing a point that moves along a circle and a point that moves along a segment.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">1.</div>
+<div class="column-3">
+<p>In a new sketch, construct a segment. Hold down the Shift key as you draw the segment to keep it horizontal.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">2.</div>
+<div class="column-3">
+<p>Label the endpoints <em>A</em> and <em>B.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Compass tool" alt="Compass Tool" width="32" height="32" src="images/toolCompass.gif"></div>
+<div class="column-2">3.</div>
+<div class="column-3">
+<p>Construct a circle centered at point <em>A</em> with a radius point not on <span class="segment">AB</span>. Label this point <em>C.</em>
+</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-11_01" src="Images/tutorial-11_01.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">4.</div>
+<div style="width:200;" class="column-3">
+<p>Construct a point on the circle. Label it point <em>D.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">5.</div>
+<div style="width:200;" class="column-3">
+<p>Construct <span class="segment">AD</span>.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Marker tool" alt="Marker Tool" width="32" height="32" src="images/toolMarker.gif"></div>
+<div class="column-2">6.</div>
+<div style="width:200;" class="column-3">
+<p>Click point <em>A</em> with the <strong>Marker</strong> tool, drag into <img style="margin-right:2px;" alt="anlge" width="12" height="12" src="Images/angle.gif"><em>BAD,</em> and release to create an angle marker in <img style="margin-right:2px;" alt="anlge" width="12" height="12" src="Images/angle.gif"><em>BAD.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Drag point <em>D</em> around the circle and watch the angle marker. What do you notice? By default, the angle marker is defined to be a <em>simple</em> angle of less than 180&deg;.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Sketchpad lets you define angles in different ways. A <em>simple</em> angle is defined to always be less than 180&deg;. A <em>reflex</em> angle is always between 180&deg; and 360&deg;. <em>Counter-clockwise</em> and <em>clockwise</em> angles are between 0&deg; and 360&deg;." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>Select the angle marker and choose <strong>Edit | Properties.</strong> On the Marker panel, choose <strong>Counter-clockwise</strong> as the angle definition and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">9.</div>
+<div class="column-3">
+<p>Drag point <em>D</em> around the circle again. What do you notice now?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">10.</div>
+<div class="column-3">
+<p>Construct a point on <span class="segment">AB</span> that is not on the circle. Label it point <em>E.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">11.</div>
+<div class="column-3">
+<p>Select point <em>E</em> and <span class="segment">AB</span> and choose <strong>Construct | Perpendicular Line.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div class="column-3">
+<p>Select point <em>D</em> and <span class="segment">AB</span> and choose <strong>Construct | Parallel Line.</strong>
+</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-11_02" src="Images/tutorial-11_02.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="images/toolPoint.gif"></div>
+<div class="column-2">13.</div>
+<div style="width:200;" class="column-3">
+<p>Construct a point at the intersection of the horizontal line through point <em>D</em> and the vertical line through point <em>E.</em> Label it point <em>F.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">14.</div>
+<div style="width:200;" class="column-3">
+<p>Drag point <em>D</em> around the circle and watch what happens to point <em>F.</em> How does dragging point <em>D</em> change the horizontal and vertical position of point <em>F?</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>Now drag point <em>E</em> and watch point <em>F.</em> How does dragging point <em>E</em> change the horizontal and vertical position of point <em>F?</em>
+</p>
+</div>
+</div>
+<h2>Make an Animation Button <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x454.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x454.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll create a button that makes points <em>D</em> and <em>E</em> move at the same time.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Select in order points <em>E</em> and <em>D</em> and choose <strong>Edit | Action Buttons | Animation.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>In the dialog box, check that point <em>E</em> is highlighted in the Animate list. If not, click the row describing point <em>E</em> to highlight it.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">18.</div>
+<div class="column-3">
+<p>In the Direction pop-up menu, choose <strong>forward.</strong> Then click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div class="column-3">
+<p>Press the <em>Animate Points</em> button. Describe the path traveled by point <em>F.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div class="column-3">
+<p>Press the button again to stop the animation. Press the button on and off a few more times.</p>
+</div>
+</div>
+<h2>Trace a Point <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x455.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x455.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>By tracing point <em>F,</em> you will form a sine wave curve.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">21.</div>
+<div class="column-3">
+<p>Select point <em>F</em> and choose <strong>Display | Trace Intersection.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">22.</div>
+<div class="column-3">
+<p>Press the button to start the animation again. How do the motions of points <em>D</em> and <em>E</em> result in the path traced by point <em>F?</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">23.</div>
+<div class="column-3">
+<p>Stop the animation and choose <strong>Display | Erase Traces.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">24.</div>
+<div class="column-3">
+<p>Adjust the length of <span class="segment">AB</span> until you can make the path traveled by point <em>F</em> trace back on itself instead of drawing a new curve every time. Press Shift as you drag point <em>B</em> to keep <span class="segment">AB</span> horizontal.</p>
+<p>Start and stop the animation, and erase your traces as necessary. (If you have difficulty, try measuring the circumference of the circle and the length of <span class="segment">AB</span> and work with these lengths.)</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">25.</div>
+<div class="column-3">
+<p>After you&rsquo;ve finished adjusting <span class="segment">AB</span>, erase all traces and then trace the path of point <em>F</em> one last time. This curve is a called a <em>sine wave.</em> The trace of point <em>F</em> graphs the height of point <em>D</em> on the circle as point <em>E</em> travels in time.</p>
+</div>
+</div>
+<h2>Use a Trigonometric Axis <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x456.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x456.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll explore the connection between the trace of point <em>F</em> and the algebraic equation of a sine curve.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">26.</div>
+<div class="column-3">
+<p>Stop all motion, erase all traces, and deselect all objects. Then select the circle and choose <strong>Graph | Define Unit Circle.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">27.</div>
+<div class="column-3">
+<p>Choose <strong>Graph | Plot Points.</strong> Plot point (2<span style="font-family: arial;"><em>π</em></span>, 0). To enter <span style="font-family: arial;"><em>π</em></span> from your keyboard, simply type &ldquo;P.&rdquo; Then click <strong>Plot</strong> and <strong>Done.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">28.</div>
+<div class="column-3">
+<p>Choose <strong>Graph | Grid Form | Trigonometric Axis,</strong> and then click <strong>Yes</strong> to switch angle units from degrees to radians.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Merging points allows you to easily build mathematical constraints into a model after you have constructed key parts. It also allows you to fix mistakes in constructions." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">29.</div>
+<div class="column-3">
+<p>Select Point <em>B</em> and the point at (2<span style="font-family: arial;"><em>π</em></span>, 0) and choose <strong>Edit | Merge Points.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">30.</div>
+<div class="column-3">
+<p>Drag point <em>D</em> to (1, 0) and point <em>E</em> to the origin of the coordinate system. Erase all traces and then press your animation button.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">31.</div>
+<div class="column-3">
+<p>Where does your sine wave reach its maximum and minimum? Where is it zero?</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">32.</div>
+<div class="column-3">
+<p>Choose <strong>Graph | Plot New Function.</strong> In the Calculator, type &ldquo;sin&rdquo; and insert an <em>x</em> between the parentheses that appear. Then click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you can see your traced sine wave as one <em>period</em> in the complete <em>sine function.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">33.</div>
+<div class="column-3">
+<p>Select <img style="margin-right:2px;" alt="anlge" width="12" height="12" src="Images/angle.gif"><em>BAD</em>&rsquo;s angle marker and choose <strong>Measure | Angle.</strong> Start and stop the animation and observe the relationship between the measure of <img style="margin-right:2px;" alt="anlge" width="12" height="12" src="Images/angle.gif"><em>BAD</em> and the location of point <em>E</em> along the <em>x-</em>axis.</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">34.</div>
+<div class="column-3">
+<p>You can improve your sine wave model with <strong>Movement</strong> buttons to move points <em>D</em> and <em>E</em> to their starting positions at (1, 0) and (0, 0). For example, to move point <em>D</em> to (1, 0), first construct or plot a point at (1, 0). Then select in order point <em>D</em> and the point at (1, 0) and choose <strong>Edit | Action Buttons | Movement.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">35.</div>
+<div class="column-3">
+<p>Can you find a way to trace the cosine function?</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

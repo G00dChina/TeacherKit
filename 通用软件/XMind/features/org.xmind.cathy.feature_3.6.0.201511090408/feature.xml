@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.xmind.cathy.feature"
+      label="XMind RCP Application"
+      version="3.6.0.201511090408"
+      provider-name="XMind Ltd.">
+
+   <description>
+      XMind RCP Application
+   </description>
+
+   <copyright>
+      Copyright(C) 2006-2015, XMind Ltd. and others.
+   </copyright>
+
+   <license url="license.html">
+      XMind 3 is dual licensed under 2 open source licenses:
+the Eclipse Public License v1.0 (EPL),
+which is available at http://www.eclipse.org/legal/epl-v10.html ,
+and the GNU Lesser General Public License v3 (LGPL),
+which is available at http://www.gnu.org/licenses/lgpl.html .
+   </license>
+
+   <plugin
+         id="org.xmind.cathy"
+         download-size="816"
+         install-size="2043"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.ui.menus"
+         download-size="29"
+         install-size="124"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.cathy.win32"
+         ws="win32"
+         download-size="10"
+         install-size="15"
+         version="3.6.0.201511090408"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.cathy.fonts"
+         download-size="3"
+         install-size="3"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="org.json"
+         download-size="48"
+         install-size="90"
+         version="1.0.0.201510292325"
+         unpack="false"/>
+
+   <plugin
+         id="org.xmind.core.net"
+         download-size="30"
+         install-size="54"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+   <plugin
+         id="net.xmind.signin"
+         download-size="127"
+         install-size="242"
+         version="3.6.0.201511090408"
+         unpack="false"/>
+
+</feature>

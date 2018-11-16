@@ -1,0 +1,22 @@
+如果您在使用《数学工具》时发现插入数学符号会出现乱码，说明您的系统中缺少相应的字体文件，请按以下方法安装字体文件，以解决此问题。
+
+    字体文件名:
+
+mathtool.ttf	数学符号字体(自制)
+euextra.ttf	Euclid Extra
+eumat1.ttf	Euclid Math One
+eumat2.ttf	Euclid Math Two
+
+一、字体安装方法：
+
+1、自动安装：
+
+    双击运行fontsetup即可完成字体安装.
+
+2、手动安装：
+
+    将*.ttf(即本文件夹下的所有以ttf为扩展名的字体文件)拷贝到体文件所在目录就可以完成字体安装。(注：在win9x/winxp下，系统字体所在目录为c:\windows\fonts，在winnt/win2000下，系统字体所在目录为c:\winnt\fonts。如果默认安装目录不是c:\则盘符需改变)
+
+二、符号插入：
+
+    字体文件安装完成后在word的菜单中选择"插入->符号"然后在弹出的对话框中选择"mathtool"或"Euclid"字体就可以看到新的数学符号了! :-)

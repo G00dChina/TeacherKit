@@ -1,0 +1,14 @@
+{
+      "kind" : "remix",
+      "shape" : "arrow",
+      "style" : "bold",
+      "tail-x" : { "defaultValue" : 100,
+                   "interp" : "eioe" },
+      "tail-y" : { "defaultValue" : 0,
+                   "interp" : "eioe" },
+      "stroke-style" : "solid",
+      "stroke-width": 8.0,
+      "stroke-color" : "F4BD21",
+      "shape-anchor" : "none",
+      "shape-tail" : "none"
+}

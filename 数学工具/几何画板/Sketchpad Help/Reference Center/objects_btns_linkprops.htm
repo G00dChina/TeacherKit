@@ -1,0 +1,215 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Objects &gt; Action Buttons &gt; Link Buttons and Properties</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Link Buttons,Link Buttons creating,Link Buttons properties,Link Properties,Properties,Properties Link,Objects,Objects link buttons,Action Buttons,Action Buttons Link">
+   <meta name="description" content="Link Buttons and Properties">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "objects_btns_linkprops.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Link Buttons and Properties</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="objects.htm">Objects</a> &gt; <a href="objects_btns.htm">Action Buttons</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Link Buttons and Properties</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="sound_buttons.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="objects_btns.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="objects_btns_scrollprops.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">A <a href="menus_edit_btns_link.htm" class="topiclink">Link button</a> links to a different page in the current document, or to a web site or other location defined by a URL.</span></p>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A1_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Creating and Using a Link Button</a></span></td></tr></table></div><div id="TOGGLE0186A1" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Image_FlushRight_Narrative"><img src="link.png" width="175" height="46" alt="" style="float:right;margin:0px 0px 0px 0px; border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Use a Link button to make it easy to navigate among pages in a multiple-page document, to open a web site related to the topic of your sketch, or to open a local Sketchpad or Help system document.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Use </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_file_documentoptions.htm" class="topiclink">File | Document Options</a></span><span class="f_MarginNote"> to add multiple pages to your <a href="windows_docs.htm" class="topiclink">document</a>.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_btns_link.htm" class="topiclink">Edit | Action Buttons | Link</a></span><span class="f_BodyText"> to create a Link button.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Choose </span><span class="f_BodyText" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a> | Link</span><span class="f_BodyText"> to open the Properties panel and set the destination page or URL for the button.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Use URLs to connect your sketch to related mathematical, historic, or reference material available on the Internet. Use special codes in the URL to link to local Sketchpad documents, Help system documents, or other local documents.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Link Properties</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -18px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 18px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">This <a href="menus_edit_properties.htm" class="topiclink">Properties</a> panel appears only for <a href="menus_edit_btns_link.htm" class="topiclink">Link</a> <a href="objects_btns.htm" class="topiclink">action buttons</a>. Use it to determine the destination of the Link button.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The panel appears automatically when you choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_btns_link.htm" class="topiclink">Edit | Action Buttons | Link</a></span><span class="f_MarginNote"> to create a button. After you’ve created the button, choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Edit | Properties</a>,</span><span class="f_MarginNote"> or choose </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_edit_properties.htm" class="topiclink">Properties</a></span><span class="f_MarginNote"> from the <a href="menus_context.htm" class="topiclink">Context</a> menu, to display the panel again to make further adjustments.</span></p>
+<p class="p_Image_Centered_Large"><img src="link_props_zoom75.png" width="280" height="205" alt="" style="border:none" /></p>
+<p class="p_BodyText"><span class="f_BodyText">Use the </span><span class="f_BodyText" style="font-weight: bold;">Link to</span><span class="f_BodyText"> radio buttons to choose whether the button links to <a href="windows_docs.htm" class="topiclink">another page in your document</a> or to an Internet URL such as a web page.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Page:</span><span class="f_BodyText"> When this is chosen, the Link button will link to a different page of the current document. Use the Page pop-up menu to decide which page to link to. If that page contains any action buttons of its own (such as an Animation or Movement button), you can choose one of those buttons in the </span><span class="f_BodyText" style="font-weight: bold;">Button on page</span><span class="f_BodyText"> pop-up menu to cause the Link button to automatically activate the specified button on the linked page.</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">Use the </span><span class="f_MarginNote" style="font-weight: bold;"><a href="menus_file_documentoptions.htm" class="topiclink">File | Document Options</a></span><span class="f_MarginNote"> command to add or copy new pages into your document.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">URL:</span><span class="f_BodyText"> When this is chosen, the Link button will link to a URL using your web browser. You must enter the actual URL, which can be a web site (if the URL starts with “http://”) or a local file or program (if the URL starts with “file://”).</span></p>
+<p class="p_MarginNote"><span class="f_MarginNote">The default URL points to the <a href="http://www.keypress.com/sketchpad/" target="_top" class="weblink">Sketchpad Resource Center</a>, a web site with additional resources and information about using Sketchpad. You can copy web page URLs from your browser and paste them here.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">URL links can also use these special URL forms:</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">sketchdoc://</span><span class="f_BodyText">: Start the URL with “sketchdoc://” to link to a document in the same folder as the current document. For example, if you want to link from a document named Demo1.gsp to a document called Demo2.gsp in the same folder, you could use the URL “sketchdoc://Demo2.gsp”.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">sketchapp://</span><span class="f_BodyText">: Start the URL with “sketchapp://” to link to a document in the same folder as the Sketchpad application.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">help://</span><span class="f_BodyText">: Start the URL with “help://” to link to a document in the Sketchpad Help folder.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">file://</span><span class="f_BodyText">: Start the URL with “file://” to link to a local document by its path name. Add a third slash (&quot;file:///&quot;) to use the absolute path name, starting from the root directory of the current drive.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">rdb://</span><span class="f_BodyText">: Start the URL with “rdb://” to link to an <a href="opening_remote_documents.htm" class="topiclink">rdb description</a> of a remote collection of Sketchpad documents on the web. This method allows you to download and open any of the remote documents directly within Sketchpad.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">rdl://</span><span class="f_BodyText">: Start the URL with “rdl://” to link to a remote Sketchpad document on the web. This allows you to open a remote document directly within Sketchpad.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Internet URLs such as http:// web sites are only accessible if you’re connected to the Internet and have a web browser installed on your computer. Local file:// URLs are useful for accessing documents or other resources on your specific computer, but these buttons may not function if you open your document on another computer (which may well be missing the linked-to documents). The relative URLs — sketchdoc://, sketchapp://, and help:// — let you refer to resources in relation to “known locations” on any computer running Sketchpad. They can be handy if you’re creating a folder of linked documents you’d like to share with others. As long as you use sketchdoc:// URLs, the documents within that folder will stay linked together no matter where you move or copy that folder.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BodyText" style="text-indent: -18px; margin: 7px 0px 0px 18px;"><span class="f_BodyText">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

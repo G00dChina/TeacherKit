@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.proxycommands" component="et">
+	<modules>
+		<module name="etsolver">
+			<KxListCommand hotKey="g" ksoCmd="GoalSeek" showiconAndText="1" idMso="WhatIfAnalysisMenu" icon="GoalSeek" controlType="15" id="rWhat-If Analysis" customTip="What-If Analysis" text="@What-If Analysis" rbHotKey="SG">
+				<KxLegacyTriggerCommand hotKey="g" ksoCmd="GoalSeek" showiconAndText="1" id="rGoalSeek" dialogHint="1" customTip="GoalSeek" spaceHint="suitable" text="@Goal Seek" rbHotKey="G"/>
+				<KxDelayLoadModuleLegacyTriggerCommand hotKey="v" ksoCmd="Solver" showiconAndText="1" id="rSolver" dialogHint="1" customTip="Solver" spaceHint="suitable" delayloadModule="etsolver" text="@Solver" rbHotKey="V"/>
+			</KxListCommand>
+		</module>
+		<module name="wpsspeaker">
+			<KxEtBridgeSpeakListCommand hotKey="RL" speakingTip="TextSpeech2" icon="TextSpeech" id="TextToSpeechOption" customTip="TextSpeech" text="@Text Speech" rbHotKey="RL">
+				<KxEtBridgeSpeakAllCommand hotKey="a" customShortcutEnabled="false" icon="TextSpeechAll" id="TextToSpeechAll" text="@Full-Text Speech" rbHotKey="A"/>
+				<KxEtBridgeSpeakSelectionCommand hotKey="s" customShortcutEnabled="false" icon="TextSpeechSelect" id="TextToSpeechSelect" text="@Selection Speech" rbHotKey="S"/>
+				<separator/>
+				<KxEtSpeakOnDemandSwitchCommand hotKey="e" customShortcutEnabled="false" id="TextToSpeechOnDemand" text="@Press Enter to Start Reading" rbHotKey="E"/>
+				<KxEtSpeakToolBarCommand hotKey="d" customShortcutEnabled="false" id="TextToSpeechToolBar" text="@Show Toolbar" rbHotKey="D"/>
+			</KxEtBridgeSpeakListCommand>
+		</module>
+		<module name="kdocumentfix">
+			<KDocumentFixCommand hotKey="RF" icon="DocumentFix" id="DocumentFix" customTip="DocumentFix" text="@Document Fix" rbHotKey="RF"/>
+		</module>
+		<module name="kocrtool">
+			<KOCRToolCommand hotKey="PT" icon="PictureToText" id="OCRToolCmd" customTip="PictureToText" text="@Picture to Text" rbHotKey="PT"/>
+		</module>
+		<module name="kpdf2word">
+			<KPDF2WordCommand hotKey="PW" icon="PDFToWord" id="PDF2Word" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+		</module>
+		<module name="kpdf2wordv2">
+			<KPDF2WordV2Command hotKey="PW" icon="PDFToWord" id="PDF2WordV2" customTip="PDFToWord" text="@PDF To Word" rbHotKey="PW"/>
+		</module>
+	</modules>
+	<proxycommands>
+		<proxycommand targetId="rWhat-If Analysis" id="ProxyrWhat-If Analysis"/>
+		<proxycommand targetId="TextToSpeechOption" id="ProxyTextToSpeechOption"/>
+		<proxycommand targetId="DocumentFix" id="ProxyDocumentFix"/>
+		<proxycommand targetId="PDF2Word" id="ProxyPDF2Word"/>
+		<proxycommand targetId="PDF2WordV2" visible="false" id="ProxyPDF2WordV2"/>
+		<proxycommand targetId="OCRToolCmd" id="ProxyOCRToolCmd"/>
+	</proxycommands>
+</shell>

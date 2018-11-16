@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_formulas" component="et">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Sum" idMso="AutoSum" icon="AutoSum" controlType="0" id="rSum" customTip="AutoSum" text="@Sum" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="Average" aid="842" idMso="AutoSumAverage" icon="Average" controlType="0" id="Average" customTip="Average" text="@Average" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="Count" aid="843" idMso="AutoSumCount" icon="Count" controlType="0" id="Count" customTip="Count" text="@Count" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="Max" aid="844" idMso="AutoSumMax" icon="Max" controlType="0" id="Max" customTip="Max" text="@Max" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="Min" aid="845" idMso="AutoSumMin" icon="Min" controlType="0" id="Min" customTip="Min" text="@Min" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="Morefunctions" aid="846" idMso="AutoSumMoreFunctions" icon="MoreFunctions" controlType="0" id="Morefunctions" dialogHint="1" customTip="Morefunctions" text="@More
+Functions" rbHotKey="F"/>
+		<KxListCommand ksoCmd="AutoSum" idMso="AutoSumMenu" icon="AutoSum" customTip2="sp_AutoSum2" controlType="15" id="sp_AutoSum_01" customTip="sp_AutoSum" text="@AutoSum" rbHotKey="U">
+			<command idQ="rSum"/>
+			<command idQ="Average"/>
+			<command idQ="Count"/>
+			<command idQ="Max"/>
+			<command idQ="Min"/>
+			<separator/>
+			<command idQ="Morefunctions"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="Function" idMso="FunctionWizard" icon="etFormulaBarFunc" controlType="0" id="FuncLibInsertFunction" dialogHint="1" text="@Insert
+Function" rbHotKey="F"/>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="RecenttlyUsed" id="FuncCatRecenttlyUsed" customTip="RecenttlyUsed" text="@Recently 
+Used" rbHotKey="R">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="0" id="FuncCatRecenttlyUsed2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="AllFunctions" id="FuncCatAllFunction" customTip="AllFunction" text="@All" rbHotKey="A">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="1" id="FuncCatAllFunction2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="Financial" id="FuncCatFinancial" customTip="Financial" text="@Financial" rbHotKey="I">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="2" id="FuncCatFinancial2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="Logical" id="FuncCatLogical" customTip="Logical" text="@Logical" rbHotKey="L">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="9" id="FuncCatLogical2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="Text" id="FuncCatText" customTip="FuncCatText" text="@Text" rbHotKey="T">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="8" id="FuncCatText2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="DateAndTime" id="FuncCatDateAndTime" customTip="FuncCatDateAndTime" text="@Date and
+Time" rbHotKey="E">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="3" id="FuncCatDateAndTime2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="LookupAndReference" id="FuncCatLookupAndReference" customTip="LookupAndReference" text="@Lookup and
+Reference" rbHotKey="O">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="6" id="FuncCatLookupAndReference2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" icon="MathAndTrig" id="FuncCatMathAndTrig" customTip="MathAndTrig" text="@Math and
+Trig" rbHotKey="G">
+			<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="4" id="FuncCatMathAndTrig2"/>
+			<command idQ="FuncLibInsertFunction"/>
+		</KxEtFuncCatListCommand>
+		<KxEtFuncCatListCommand ksoCmd="FormulaMenuInsertFunction" idMso="FormulaMoreFunctionsMenu" icon="MoreFunctions" controlType="15" id="FuncCatMoreFunctions" customTip="FuncCatMoreFunctions" text="@More
+Functions" rbHotKey="Q">
+			<KxEtFuncCatListCommand hotKey="S" ksoCmd="FormulaMenuInsertFunction" icon="Statistical" id="FuncCatStatistical" text="@Statistical">
+				<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="5" id="FuncCatStatistical2"/>
+				<command idQ="FuncLibInsertFunction"/>
+			</KxEtFuncCatListCommand>
+			<KxEtFuncCatListCommand hotKey="E" ksoCmd="FormulaMenuInsertFunction" icon="Engineering" id="FuncCatEngineering" text="@Engineering">
+				<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="16" id="FuncCatEngineering2"/>
+				<command idQ="FuncLibInsertFunction"/>
+			</KxEtFuncCatListCommand>
+			<KxEtFuncCatListCommand hotKey="I" ksoCmd="FormulaMenuInsertFunction" icon="Information" id="FuncCatInformation" text="@Information">
+				<KxEtFunctionLibraryCommand ksoCmd="FormulaMenuInsertFunction" catIdx="10" id="FuncCatInformation2"/>
+				<command idQ="FuncLibInsertFunction"/>
+			</KxEtFuncCatListCommand>
+		</KxEtFuncCatListCommand>
+		<KListCommand id="RB_Function_library" text="@Function Library" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="Function" icon="Function" id="FunctionInFormulasTab" customTip="InsertFunction" text="@Insert
+Function" qtspyName="Function" rbHotKey="F"/>
+			<separator/>
+			<command idQ="sp_AutoSum_01"/>
+			<command idQ="FuncCatRecenttlyUsed"/>
+			<command idQ="FuncCatAllFunction"/>
+			<command idQ="FuncCatFinancial"/>
+			<command idQ="FuncCatLogical"/>
+			<command idQ="FuncCatText"/>
+			<command idQ="FuncCatDateAndTime"/>
+			<command idQ="FuncCatLookupAndReference"/>
+			<command idQ="FuncCatMathAndTrig"/>
+			<command idQ="FuncCatMoreFunctions"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="NameManager" idMso="NameManager" icon="NameManager" controlType="0" shortcutHint="Ctrl+F3" id="Name_Manager" customTip="NameManager" text="@Name
+Manager" rbHotKey="N"/>
+		<KxLegacyTriggerCommand ksoCmd="NewName" idMso="NameDefine" controlType="0" id="Name_New" customTip="NameDefine" text="@New Name" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="NamePaste" idMso="NamePasteName" icon="NamePaste" controlType="0" id="rNamePaste" customTip="NamePaste" spaceHint="suitable" text="@Paste" rbHotKey="P"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="NameCreate" idMso="NameCreateFromSelection" icon="NameCreate" controlType="0" id="rNameCreate" customTip="NameCreate" spaceHint="suitable" text="@Create" rbHotKey="C"/>
+		<KListCommand idMso="NameDefineMenu" controlType="15" id="RB_Define_Names" text="@Defined Names" rbFileMenuEmbed="1">
+			<command idQ="Name_Manager"/>
+			<command idQ="rNameCreate"/>
+			<command idQ="rNamePaste"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="EvaluateFormula" idMso="FormulaEvaluate" icon="EvaluateFormula" controlType="0" id="rEvaluateFormula" customTip="EvaluateFormula" spaceHint="suitable" text="@Evaluate Formula" rbHotKey="v"/>
+		<KxLegacyTriggerCommand hotKey="y" ksoCmd="CircularReferences" icon="CircularReferences" id="rCircularReferences" customTip="CircularReferences" spaceHint="suitable" text="@Circular References"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="FormulaErrorCheck" icon="ErrorChecking" id="rFormulaErrorCheck" customTip="FormulaErrorCheck" spaceHint="suitable" text="@Error Checking"/>
+		<KQuickMenuCommand aid="793" idMso="ErrorCheckingMenu" controlType="5" id="TabBarErrorCheck" spaceHint="suitable" referenceCommand="rFormulaErrorCheck" rbHotKey="k">
+			<command idQ="rFormulaErrorCheck"/>
+			<command idQ="rCircularReferences"/>
+		</KQuickMenuCommand>
+		<KListCommand id="RB_Formula_Auditing" text="@Formula Auditing" rbFileMenuEmbed="1">
+			<command idQ="rEvaluateFormula"/>
+			<command idQ="TabBarErrorCheck"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="RecalculateBook" icon="RecalculateBook" id="rRecalculateBook" customTip="RecalculateBook" text="@Recalculate
+Workbook" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="j" ksoCmd="CalculateSheet" idMso="CalculateSheet" icon="CalculateCurrentSheet" controlType="0" id="rCalculateSheet" customTip="CalculateSheet" text="@Calculate Sheet" rbHotKey="J"/>
+		<KListCommand id="RB_Calculation" text="@Calculation" rbFileMenuEmbed="1">
+			<command idQ="rRecalculateBook"/>
+			<command idQ="rCalculateSheet"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="EditCrossBookLinks" idMso="EditLinks" icon="EditLinks" controlType="0" id="rEditCrossBookLinks" customTip="EditCrossBookLinks" text="@Edit Links" rbHotKey="H"/>
+		<KListCommand idMso="Connections" controlType="16" id="RB_Connections" text="@Connections" rbFileMenuEmbed="1">
+			<command idQ="rEditCrossBookLinks"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Formulas">
+			<command idQ="RB_Function_library"/>
+			<separator/>
+			<command idQ="RB_Define_Names"/>
+			<separator/>
+			<command idQ="RB_Formula_Auditing"/>
+			<separator/>
+			<command idQ="RB_Calculation"/>
+			<separator/>
+			<command idQ="RB_Connections"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

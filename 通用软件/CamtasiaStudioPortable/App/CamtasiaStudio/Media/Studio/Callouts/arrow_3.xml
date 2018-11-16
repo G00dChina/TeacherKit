@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+
+<Overlay version="1.0.1">
+
+<Overlay_Filename>arrow_3.png</Overlay_Filename>
+<Overlay_Name>弯曲箭头</Overlay_Name>
+<Overlay_XGrow>100</Overlay_XGrow>
+<Overlay_YGrow>100</Overlay_YGrow>
+<Text_Top>30</Text_Top>
+<Text_Left>65</Text_Left>
+<Text_Bottom>120</Text_Bottom>
+<Text_Right>15</Text_Right>
+<Vector_Grow>0</Vector_Grow>
+<CanRotate_90>1</CanRotate_90>
+<CanRotate_180>1</CanRotate_180>
+<CanRotate_270>1</CanRotate_270>
+<CanFlip_X>1</CanFlip_X>
+<CanFlip_X90>1</CanFlip_X90>
+<CanFlip_X180>1</CanFlip_X180>
+<CanFlip_X270>1</CanFlip_X270>
+<Fill_Color>1</Fill_Color>
+<Border_Color>1</Border_Color>
+<VectorProps>
+<figure>
+<svg>M148.125,78.875c-9.441,0.08-23.938-0.197-33.375,0.08c-11.073,0.324-17.38,0.409-28.382,1.753c-17.369,2.122-30.455,13.861-33.33,31.362c-3.139,19.112,7.023,38.749,21.02,51.459c10.838,9.843,22.791,17.039,36.442,22.095c-11.708,0.104-22.945-2.374-34.39-4.478c-7.924-1.457-15.442-3.931-22.771-7.296c-20.159-9.254-38.583-24.502-46.925-45.643c-8.193-20.764-5.178-46.135,5.982-65.177c11.269-19.226,30.732-32.3,52.607-36.312c11.818-2.167,23.915-1.855,35.873-1.594h47.5L147.75,2.5L189.563,53.374L146.751,104.537z</svg>
+</figure>
+<borderWidth>3.00</borderWidth>
+<seamY>53.00</seamY>
+<shapeWidth>193</shapeWidth>
+<shapeHeight>190</shapeHeight>
+</VectorProps>
+</Overlay>

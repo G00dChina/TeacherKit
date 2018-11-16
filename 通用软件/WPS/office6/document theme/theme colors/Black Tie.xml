@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<a:clrScheme name="BlackTie" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+   <a:dk1>
+      <a:srgbClr val="000000"/>
+   </a:dk1>
+   <a:lt1>
+      <a:srgbClr val="FFFFFF"/>
+   </a:lt1>
+   <a:dk2>
+      <a:srgbClr val="46464A"/>
+   </a:dk2>
+   <a:lt2>
+      <a:srgbClr val="E3DCCF"/>
+   </a:lt2>
+   <a:accent1>
+      <a:srgbClr val="6F6F74"/>
+   </a:accent1>
+   <a:accent2>
+      <a:srgbClr val="A7B789"/>
+   </a:accent2>
+   <a:accent3>
+      <a:srgbClr val="BEAE98"/>
+   </a:accent3>
+   <a:accent4>
+      <a:srgbClr val="92A9B9"/>
+   </a:accent4>
+   <a:accent5>
+      <a:srgbClr val="9C8265"/>
+   </a:accent5>
+   <a:accent6>
+      <a:srgbClr val="8D6974"/>
+   </a:accent6>
+   <a:hlink>
+      <a:srgbClr val="67AABF"/>
+   </a:hlink>
+   <a:folHlink>
+      <a:srgbClr val="B1B5AB"/>
+   </a:folHlink>
+</a:clrScheme>
+

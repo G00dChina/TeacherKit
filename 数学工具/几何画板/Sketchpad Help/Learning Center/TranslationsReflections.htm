@@ -1,0 +1,316 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Translations and Reflections - The Geometer's Sketchpad Learning Center</title>
+<meta content="" name="keyword">
+<script src="PreBuilt/jquery-1.3.2.min.js" type="text/javascript" language="javaScript"></script><script type="text/javascript" src="PreBuilt/jquery.qtip-1.0.0-rc3.min.js"></script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div#tipPopup a[href][title]').qtip({
+								  position: {
+									 corner: {
+										target: 'bottomMiddle',
+										tooltip: 'topLeft'
+									 }
+								  },
+								  style: {
+									  border: {
+										 width: 3,
+										 radius: 8,
+										 color: '#797979'
+									  },
+									 color: 'black',
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 400,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script><script type="text/javascript">
+							$(document).ready(function()
+							{
+							   $('div.column-1 img[title]').qtip({
+								  position: {
+									 corner: {
+										target: 'rightMiddle',
+										tooltip: 'leftMiddle'
+									 }
+								  },
+								  style: {
+										  border: {
+											 width: 3,
+											 radius: 8,
+											 color: '#797979'
+										  },
+									 name: 'light',
+									 padding: '7px 13px',
+									 width: {
+										max: 500,
+										min: 0
+									 },
+									 tip: true
+								  }
+							   });
+							});
+							</script>
+<link href="PreBuilt/master.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PreBuilt/clmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="PreBuilt/clmenu.css">
+<script type="text/javascript">
+							function toggle_visibility(id) {
+							   var e = document.getElementById(id);
+							   if(e.style.display == 'none')
+								  e.style.display = 'block';
+							   else
+								  e.style.display = 'none';
+							}
+						</script><script type="text/javascript">
+							function openWin(url,target,w,h){
+							window.open(url,target,"width="+w+",height="+h);
+							return;
+							}
+						</script>
+</head>
+<body>
+<div class="learningCenter" id="container">
+<a name="top"></a>
+<div xmlns:igxlib="urn:igxlibns" xmlns:msxsl="urn:schemas-microsoft-com:xslt" id="masthead">&nbsp;</div>
+<div id="anav">
+<a href="index.html">Learning Center</a> &gt;
+			<a href="UsingSketchpad.htm">Using Sketchpad</a> &gt;
+			<a href="GettingStartedTutorials.htm">Getting Started Tutorials</a> &gt;
+			<span class="anavOn">Translations and Reflections</span>
+</div>
+<div id="body-main">
+<div style="padding-top:12px;clear:both;" id="LC-Tutorial">
+<h1>
+<img style="vertical-align:middle;margin-right:4px;" height="26" width="26" alt="" src="Images/tutorial-07.gif">Translations and Reflections: Define a Custom Transformation</h1>
+<img class="floatRight" alt="tutorial-7_01" src="Images/tutorial-7_01.gif"><p>In this tutorial, you&rsquo;ll use a combination of transformations to create a pattern of footprints. You&rsquo;ll start from just one footprint and apply translations and reflections to obtain the entire set of footprints.</p>
+<div id="tipPopup">
+<h3>
+<a title="<div id=&quot;sketchpadSkills&quot;><h3>You will learn these new skills:</h3><ul><li>Mark a vector </li>
+<li>Translate an object by a marked vector </li>
+<li>Construct a line with the <strong>Straightedge</strong> tool </li>
+<li>Mark a mirror line </li>
+<li>Reflect an object over a mirror line </li>
+<li>Create and apply a custom transformation</li></ul></div>" href="#">Sketchpad Skills</a> | <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x436.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x436.xml">Introductory Movie <img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h3>
+</div>
+<h2>Translate by a Vector <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x437.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x437.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div style="width:500px;" class="column-3">
+<p>When you apply a translation to a picture, the picture moves a certain distance in a certain direction. A vector is a geometric object that specifies a distance and direction, so you&rsquo;ll use a vector to translate a footprint.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">1.</div>
+<div style="width:400px;" class="column-3">
+<p>Open Sketchpad and choose <strong>Help | Picture Gallery.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">2.</div>
+<div style="width:400px;" class="column-3">
+<p>Click the <strong>Transformation</strong> link and find the picture of a footprint. Drag and drop (or copy and paste) the footprint picture into your sketch.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Segment tool" alt="Segment Tool" width="32" height="32" src="images/toolSegment.gif"></div>
+<div class="column-2">3.</div>
+<div style="width:400px;" class="column-3">
+<p>Construct a vertical segment to the left of the footprint. (Hold the Shift key as you construct your segment to make it vertical.)</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Text tool" alt="Text Tool" width="32" height="32" src="images/toolText.gif"></div>
+<div class="column-2">4.</div>
+<div style="width:400px;" class="column-3">
+<p>Label the endpoints <em>A</em> and <em>B.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">5.</div>
+<div class="column-3">
+<p>Select points <em>A</em> and <em>B</em> and choose <strong>Transform | Mark Vector.</strong> A brief animation appears.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">6.</div>
+<div class="column-3">
+<p>Select the picture and choose <strong>Transform | Translate.</strong> In the dialog box, click <strong>Translate.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">7.</div>
+<div class="column-3">
+<p>Leave the new footprint selected and translate it again. Repeat a few times to make a series of footprints.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> Objects in a Sketchpad document can be used to model a real world situation." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">8.</div>
+<div class="column-3">
+<p>Drag each endpoint of <span class="segment">AB</span> and observe how the footprints behave. How does the length and direction of the segment relate to the pattern of the footprints? In real life, how could you create this pattern with your own feet?</p>
+</div>
+</div>
+<h2>Reflect Across a Mirror Line <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x438.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x438.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now that you have a collection of right footprints, you&rsquo;ll reflect them over a mirror line to obtain the corresponding set of left footprints.</p>
+</div>
+</div>
+<img class="floatRight" alt="tutorial-7_02" src="Images/tutorial-7_02.gif"><div class="listItem">
+<div class="column-1">
+<img title="Choose the Line tool" alt="Line Tool" width="32" height="32" src="images/toolLine.gif"></div>
+<div class="column-2">9.</div>
+<div style="width:500px;" class="column-3">
+<p>Choose the <strong>Line</strong> tool&mdash;press and hold the <strong>Segment</strong> tool until the straightedge menu appears, move the cursor to the line icon, and release.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">10.</div>
+<div style="width:480px;" class="column-3">
+<p>Click points <em>A</em> and <em>B</em> to construct <span class="line">AB</span>. Leave the line selected and choose <strong>Display | Line Style | Dashed.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">11.</div>
+<div style="width:500px;" class="column-3">
+<p>Move <span class="line">AB</span> just to the left of your footprints. Double-click the line to mark it as a mirror (or select the line and choose <strong>Transform | Mark Mirror</strong>).</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">12.</div>
+<div style="width:500px;" class="column-3">
+<p>Select the pictures (click each one, or use a selection rectangle) and choose <strong>Transform | Reflect.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">13.</div>
+<div style="width:500px;" class="column-3">
+<p>Drag the mirror line and observe the behavior of the reflected footprints. In real life, how could you create this pattern of footprints?</p>
+</div>
+</div>
+<h2>Define a Glide-Reflect Transformation <a onclick="javascript:window.open('http://learningcenter.dynamicgeometry.com/x439.xml','','toolbar=0,status=0,scrollbars=0,width=500,height=398'); return false" target="_Blank" href="http://learningcenter.dynamicgeometry.com/x439.xml"><img title="Click to view an online video." alt="Video Icon" style="margin:0 2px -5px 0;" width="26" height="24" src="Images/iconVideo.gif"></a>
+</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-3">
+<p>Now you&rsquo;ll combine the reflection and the translation into a single custom transformation called a <em>glide reflection.</em> By repeatedly applying a glide reflection, you can create a sequence of footprints that represents a typical walking pattern.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">14.</div>
+<div class="column-3">
+<p>Select all pictures except for the original picture and choose <strong>Edit | Clear Pictures</strong> (or press Delete on your keyboard). If you are not sure which was the original, you can use the <strong>Information</strong> tool to find out.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Point tool" alt="Point Tool" width="32" height="32" src="Images/toolPoint.gif"></div>
+<div class="column-2">15.</div>
+<div class="column-3">
+<p>Construct a point close to <span class="line">AB</span>. Label it <em>C.</em>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="Choose the Arrow tool" alt="Arrow Tool" width="32" height="32" src="images/toolArrow.gif"></div>
+<div class="column-2">16.</div>
+<div class="column-3">
+<p>Select point <em>C,</em> and translate it as in step 6. Label the new image point <em>C</em>&prime;.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">17.</div>
+<div class="column-3">
+<p>Leave point <em>C&prime;</em> selected and reflect it as in step 12. Label the new image point <em>C</em>&prime;&prime;.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">
+<img title="<strong>Big Idea:</strong> By defining your own custom transformations, you can add new transformations to the Transform menu." alt="Big Idea" width="32" height="32" src="images/iconBigIdea.gif"></div>
+<div class="column-2">18.</div>
+<div class="column-3">
+<p>Deselect all objects. Select only points <em>C</em> and <em>C</em>&prime;&prime; and choose <strong>Transform | Define Custom Transform.</strong> Name your new transformation <em>Glide Reflect</em> and click <strong>OK.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">19.</div>
+<div class="column-3">
+<p>Select points <em>C,</em><em>C</em>&prime;, and <em>C</em>&prime;&prime; and choose <strong>Display | Hide Points.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">20.</div>
+<div class="column-3">
+<p>Select the picture and choose <strong>Transform | Glide Reflect.</strong>
+</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">21.</div>
+<div class="column-3">
+<p>Leave the new picture selected and glide-reflect it again. Repeat many times (or use the keyboard shortcut shown next to <strong>Glide Reflect</strong> in the Transform menu) to make a series of footprints.</p>
+</div>
+</div>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">22.</div>
+<div class="column-3">
+<p>Drag points <em>A</em> and <em>B</em> and <span class="line">AB</span> and observe how the footprints behave.</p>
+</div>
+</div>
+<h2>Explore More</h2>
+<div class="listItem">
+<div class="column-1">&nbsp;</div>
+<div class="column-2">23.</div>
+<div class="column-3">
+<p>Redo this tutorial, but this time in step 9, construct a mirror line that is separate from points <em>A</em> and <em>B.</em> What happens to the footprints pattern when the direction of the translation vector is not parallel to the mirror line?</p>
+</div>
+</div>
+<p>
+<a href="GettingStartedTutorials.htm">Back to Getting Started Tutorials</a>
+</p>
+</div>
+<div style="clear:both;" id="footer">&copy; 2012 KCP Technologies, Inc. All rights reserved.
+		</div>
+</div>
+</div>
+</body>
+</html>

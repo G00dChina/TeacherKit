@@ -1,0 +1,23 @@
+{
+      "kind" : "remix",
+      "shape" : "text-rectangle",
+      "style" : "basic",
+      "font" : {
+          "name":"Montserrat",
+          "size":64.0,
+          "weight": "Regular",
+          "color": "2F3B44",
+          "tracking":0.0
+      },
+      "word-wrap" : true,
+      "text" : "ABC",
+      "width" : 350,
+      "height" : 150,
+      "tail-x" : 0,
+      "tail-y" : -20,
+      "fill-color": "FFFFFF",
+      "fill-style" : "solid",
+      "stroke-style" : "solid",
+      "stroke-width": 2.0,
+      "stroke-color": "05AF8F"
+}

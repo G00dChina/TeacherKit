@@ -1,0 +1,203 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Appendix &gt; Advanced Topics &gt; Advanced Tool Topics &gt; Use a Custom Tool as a Custom Command</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Advanced Topics,Advanced Topics using a custom tool as a command,Custom Commands,Custom Tools,Custom Tools using a custom tool as a command">
+   <meta name="description" content="Use a Custom Tool as a Custom Command">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="styles.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style type="text/css" media="screen"> 
+html, body { margin:0; 
+   padding:0; 
+   overflow: hidden; 
+   background: #FFFFFF; 
+  }
+ 
+div#printheader { 
+   display: none;
+   padding-bottom: 10px;
+   }
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }
+   </style>
+<!--[if lt IE 7]>
+<style type="text/css">
+  #idcontent {padding: 0px;} 
+  #innerdiv {padding: 10px 5px 5px 10px ;} 
+</style> 
+<![endif]-->
+<noscript>
+<style type="text/css">
+html, body { overflow: auto; }
+</style> 
+</noscript>
+<style type="text/css" media="print">
+span.f_Heading1 { color: black; }
+#idheader, #printheader img { display:none; }
+#printheader { display: block; margin-top: 20px; }
+#idcontent { margin-top: 10px; }
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "adv_tool_missing_given.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Use a Custom Tool as a Custom Command</span></h1>
+</div> 
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="app.htm">Appendix</a> &gt; <a href="adv.htm">Advanced Topics</a> &gt; <a href="adv_tool.htm">Advanced Tool Topics</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Use a Custom Tool as a Custom Command</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="adv_tool.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="adv_tool.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="adv_tool_alttoolfolders.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+   
+  <table id="idnav" class="expander">
+  <tr><td><a href="javascript:toggleToggles()" title="Click to open/close expanding sections">Show/Hide Hidden Text</a>
+  </td></tr></table>
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p class="p_BodyText"><span class="f_BodyText">Normally you use the <a href="tools_cust.htm" class="topiclink">Custom Tools</a> menu to choose a tool, and then employ the chosen tool by clicking in your sketch. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">You can also use the Custom Tools menu to choose commands, called </span><span class="f_BodyText" style="font-style: italic;">custom commands,</span><span class="f_BodyText"> that have the same effect as applying the tool to the selected objects. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">To use a custom command:</span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">1.</span><span class="f_BodyText">Select the tool’s required <a href="tools_cust_using.htm" class="topiclink">given objects</a>, in the order listed in the custom tool’s <a href="windows_script.htm" class="topiclink">Script View</a>. (There is no need to have previously chosen the desired tool or to have the Script View visible.) </span></p><p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">2.</span><span class="f_BodyText">Hold the Alt key (Windows) or </span><img src="cloverleaf.png" width="12" height="9" alt="" style="border:none" /><span class="f_BodyText">key (Mac) while pressing the </span><span class="f_BodyText" style="font-weight: bold;">Custom</span><span class="f_BodyText"> tool icon. The items listed in the menu are unchanged, but with the modifier key down they represent custom commands rather than custom tools. </span></p><p class="p_MarginNote"><span class="f_MarginNote">Custom commands that can be applied to the selected objects are enabled; all others are disabled. </span></p>
+<p style="text-align: left; padding: 0px 0px 0px 15px; margin: 7px 0px 0px 0px;"><span style="font-size:13px; font-family: 'Arial';color:#000000;display:inline-block;width:15px;margin-left:-15px">3.</span><span class="f_BodyText">Choose the desired command to apply it to the selections.</span></p><p class="p_MarginNote" style="text-indent: -34px; margin: 3px 24px 0px 58px;"><img id="TOGGLE0186A1_ICON" src="suggestion.png" width="17" height="22" alt="" style="border:none" /><span class="f_MarginNote"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Hint</a></span></p>
+<div id="TOGGLE0186A1" style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 24px 0px 38px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_MarginNote" style="margin: 3px 24px 0px 3px;"><span class="f_MarginNote">If the meaning is not ambiguous, you can select multiple objects to satisfy the script’s given objects multiple times. For example, if you have a </span><span class="f_MarginNote" style="font-weight: bold;">Perpendicular Segment</span><span class="f_MarginNote"> tool that constructs a perpendicular segment to a given line from a given point, you can select a point and a line to enable the </span><span class="f_MarginNote" style="font-weight: bold;">Perpendicular Segment</span><span class="f_MarginNote"> custom tool. You can also select, for example, five points and one line to enable the command, which now appears as </span><span class="f_MarginNote" style="font-weight: bold;">Perpendicular Segment (5x).</span><span class="f_MarginNote"> Similarly, you can select one point and three lines to enable the command as </span><span class="f_MarginNote" style="font-weight: bold;">Perpendicular Segment (3x).</span></p>
+<p class="p_MarginNote" style="margin: 3px 24px 0px 3px;"><span class="f_MarginNote">Using a custom command does not change your currently chosen custom tool.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; border-color: #008080; border-style: solid; border-width: 1px; background: #effaf5; padding: 2px 2px 2px 2px; margin: 8px 0px 0px 0px;"><table style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:18px"><img id="TOGGLE0186A2_ICON" src="hmtoggle_plus1.gif" width="11" height="11" alt="" style="border:none" /></td><td style="border:none;padding:0"><span class="f_CollapsibleSubhead"><a class="dropdown-toggle" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Missing Assumed Object for a Custom Command</a></span></td></tr></table></div><div id="TOGGLE0186A2" style="text-align: left; text-indent: -22px; padding: 0px 0px 0px 0px; margin: 7px 0px 0px 22px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_BodyText"><span class="f_BodyText">A custom tool may be set to <a href="adv_tool_automatch.htm" class="topiclink">automatically match</a> one or more of its given objects to object(s) in the sketch with the same name. In the <a href="windows_script.htm" class="topiclink">Script View</a>, such an object appears in the Assuming section, before the Given section.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you use such a tool, any assumed objects are matched immediately, without any action on your part. You only have to click to match objects in the Given section. If an assumed object is missing, then you must click to match that assumed object before matching the given objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">When you use a custom command, assumed objects are similarly matched automatically (based on their names) to objects in the sketch, and the selected objects are matched to the given objects.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">If the sketch does not contain a properly-named object of the correct type to match an assumed object, the command cannot be applied to the selected objects. In this case a dialog box appears, and you must name a sketch object properly to match the assumed object of the tool. (You may need to create the assumed object before naming it correctly.)</span></p>
+<p class="p_BodyText"><span class="f_BodyText">Depending on the type of object that's missing, you may be able to use the dialog box to tell Sketchpad to create such an object at random and name it appropriately.</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','suggestion0.png','hm.src1','suggestion.png','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','hmtoggle_plus0.gif','hm.src1','hmtoggle_plus1.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

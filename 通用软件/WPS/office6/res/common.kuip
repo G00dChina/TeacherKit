@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<libraries>
+		<library path="." name="kdbgconsole"/>
+		<library path="." name="kdemoalert"/>
+		<library path="." filter="support:HomePagePlugin=true" name="khomepage"/>
+		<library path="." name="kglobalmenu"/>
+		<library path="./addons/officespace" name="officespace"/>
+		<library path="./addons/kwpsassist" name="kwpsassist"/>
+		<library path="./addons/kfeedback" filter="lang=zh_CN" name="kfeedback"/>
+		<library path="./addons/touchkeyboard" name="ktouchkeyboard"/>
+		<library path="./addons/docpermission" name="docpermission"/>
+	</libraries>
+	<commands tc="commands">
+		<KInfoCollUICommand aid="40001" id="KInfoCollUICommand"/>
+		<KxFontFetcherCommand aid="40002" id="fontFetcherCommand"/>
+		<KxSystemCheckerCommand filter="platform!=win32" id="KxSystemCheckerCommand"/>
+		<KxCheckUpdateCommand filter="platform!=win32" id="KxCheckUpdateCommand"/>
+		<KxQingAuthCommand filter="category!=personal|lang!=zh_CN" id="QingAuth"/>
+	</commands>
+	<mainwindow>
+		<commands tc="commands">
+			<KGlobalMenuCommand id="KGlobalMenuCommand"/>
+		</commands>
+	</mainwindow>
+</shell>

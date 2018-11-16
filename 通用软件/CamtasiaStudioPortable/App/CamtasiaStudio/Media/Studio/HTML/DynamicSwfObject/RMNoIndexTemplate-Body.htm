@@ -1,0 +1,21 @@
+﻿   <body $OnLoadParams >
+      <table border="0" cellpadding="0" style="text-align:$Align$#;margin:auto" width="$VideoWidth" align="$Alignment">
+        <tr> 
+          <td >
+             <div id="media">
+                <div id="cs_noJSorReal">
+                   <p>The Camtasia Studio video content presented here requires JavaScript to be enabled and the  latest version of the Real Player. If you are using a browser with JavaScript disabled please enable it now. Otherwise, please update your version of the free Real Player by <a href="http://www.real.com/player">downloading here</a>. </p>
+                </div>
+             </div>
+             <div id="player"> </div>
+             <script type="text/javascript">
+                if ( isRealInstalled() )
+                {
+                   $RealMediaPlayer
+                   $RealMediaController
+                }
+             </script>
+          </td>
+        </tr> 
+      </table>
+   </body>
