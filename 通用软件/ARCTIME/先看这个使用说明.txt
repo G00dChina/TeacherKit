@@ -6,9 +6,9 @@
 
 【2、运行Arctime】
 
-双击“ArcTime.exe”即可。
+双击“Arctime Pro.exe”即可。
 若不能打开，可双击“ArcTime-Debug.bat”查找问题所在。
 
 
 【3、使用教程】
-http://arctime.org/guide.html
+http://arctime.cn/zh/guide.html

@@ -3,13 +3,13 @@
 script_info = {
 	["title"] = "嘀哩嘀哩",
 	["description"] = "",
-	["version"] = "0.0.2",
-	["tooltip"] = "http://www.dilidili.wang/",
+	["version"] = "0.0.3",
+	["tooltip"] = "http://www.dilidili.name/",
 }
 
 --初始化新番列表
 function onInitAnime()
-	return parse(get("http://www.dilidili.wang/"))
+	return parse(get("http://www.dilidili.name/"))
 end
 
 --列表项点击事件
@@ -66,10 +66,10 @@ function parse(data)
 				break
 			end
 			if #url > 0 and string.byte(url) == 47 then
-				url = "http://www.dilidili.wang" .. url
+				url = "http://www.dilidili.name" .. url
 			end
 			if #img > 0 and string.byte(img) == 47 then
-				img = "http://www.dilidili.wang" .. img
+				img = "http://www.dilidili.name" .. img
 			end
 			table.insert(anime_day, {["url"] = url, ["name"] = name, ["image"] = img, ["icon_size"] = "55,55"})
 			begin = b + 1

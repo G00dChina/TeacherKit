@@ -3,25 +3,73 @@ local json = require "cjson.safe"
 
 script_info = {
 	["title"] = "AGE动漫",
-	["description"] = "",
-	["version"] = "0.0.2",
-	["tooltip"] = "http://donghua.agefans.com/",
+	["description"] = "http://donghua.agefans.com/",
+	["version"] = "0.0.4",
 }
 
+header = {"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"}
+
 function onInitAnime()
-	return parse(get())
+	local data = get("http://donghua.agefans.com/")
+	_, _, data = string.find(data, "var new_anime_list = (.-);")
+	if data == nil or #data == 0 then
+		return
+	end
+	local j = json.decode(data)
+	if j == nil then
+		return
+	end
+
+	local anime_week = {
+		{["title"] = "星期一"},
+		{["title"] = "星期二"},
+		{["title"] = "星期三"},
+		{["title"] = "星期四"},
+		{["title"] = "星期五"},
+		{["title"] = "星期六"},
+		{["title"] = "星期日"}
+	}
+
+	for _, item in ipairs(j) do 
+		local anime_item = {}
+		anime_item["url"] = "http://donghua.agefans.com/detail/" .. math.tointeger(item["id"])
+		anime_item["name"] = item["name"]
+		anime_item["icon_size"] = "63,88"
+		anime_item["image"] = "http://donghua.agefans.com/poster/" .. math.tointeger(item["id"]) .. ".jpg"
+		local wd = item["wd"]
+		if wd == 0 then
+			wd = 7
+		end
+		if wd > 0 and wd <= 7 then
+			table.insert(anime_week[wd], anime_item)
+		end
+	end
+	return anime_week
 end
 
 function onItemClick(item)
-	return ACT_SHARELINK, item.url
+	local act = ACT_SHARELINK
+	local data = get(item.url)
+	local _, _, arg = string.find(data, "<a class=\"res_links_a\" href=\"(.-)\"")
+	if arg then
+		arg = getEffectiveUrl("http://donghua.agefans.com" .. arg)
+		local _, _, pwd = string.find(data, "<span class=\"res_links_pswd\".-(%w%w%w%w).-</span>")
+		if pwd then
+			arg = arg .. " " .. pwd
+		end
+	end
+	if arg == nil or #arg == 0 then
+		act = ACT_ERROR
+		arg = "获取链接失败"
+	end
+	return act, arg
 end
 
-function get()
+function get(url)
 	local r = ""
 	local c = curl.easy{
-		url = "http://donghua.agefans.com/new_anime_all",
-		ssl_verifyhost = 0,
-		ssl_verifypeer = 0,
+		url = url,
+		httpheader = header,
 		followlocation = 1,
 		timeout = 15,
 		proxy = pd.getProxy(),
@@ -30,36 +78,25 @@ function get()
 			return #buffer
 		end,
 	}
-	local _, e = c:perform()
+	c:perform()
 	c:close()
 	return r
 end
 
-function parse(data)
-	local anime_week = {}
-	local week = {"星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"}
-	local j = json.decode(data)
-	if j == nil then
-		return anime_week
+function getEffectiveUrl(url)
+	local c = curl.easy{
+		url = url,
+		httpheader = header,
+		nobody = 1,
+		followlocation = 1,
+		timeout = 15,
+		proxy = pd.getProxy(),
+	}
+	c:perform()
+	local ret = c:getinfo(curl.INFO_EFFECTIVE_URL)
+	c:close()
+	if ret == url then
+		ret = ""
 	end
-	local count = 0
-	for i, day in ipairs(j) do 
-		if type(day) == "table" then
-			count = count + 1
-			local anime_day = {["title"] = week[count]}
-			for a, item in ipairs(day) do 
-				local anime_item = {}
-				anime_item["url"] = item["url"]
-				anime_item["name"] = item["name"]
-				anime_item["id"] = item["id"]
-				anime_item["icon_size"] = "63,88"
-				if type(anime_item.url) == "string" and #anime_item.url > 0 then
-					anime_item["image"] = "http://donghua.agefans.com/poster/" .. item["id"]
-					table.insert(anime_day, anime_item)
-				end
-			end
-			table.insert(anime_week, anime_day)
-		end
-	end
-	return anime_week
+	return ret
 end
