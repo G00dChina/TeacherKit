@@ -12,4 +12,4 @@
 ![](https://attach.52pojie.cn/forum/201903/10/124119asrmy6rqm79dmhyz.jpg)
 ![](https://attach.52pojie.cn/forum/201903/10/124123fklbqb5lb029jfs9.jpg)
 ![](https://attach.52pojie.cn/forum/201903/10/124126a4bhoepdev8sdgr4.jpg)
-![](https://attach.52pojie.cn/forum/201903/10/123910wdeksitofevhrosf.png)
+![](https://github.com/G00dChina/TeacherKit/blob/master/structure.png)
