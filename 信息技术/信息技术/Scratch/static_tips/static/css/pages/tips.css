@@ -1,0 +1,191 @@
+/* standalone tips page */
+
+body, html {
+    background-color: #eee;
+    background-image: none;
+    height: auto;
+    font-size: 13px !important;
+    overflow-x: hidden; /* so IE8 won't have a horizontal scrollbar */
+}
+/* Customize the tip bar scrollbar in webkit */
+::-webkit-scrollbar {
+    width: 9px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    background: rgba(208,210,211,1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    background: rgba(177,179,181,1);
+}
+
+#tip-content {
+    width:291px; /* 300-scrollbar track width */
+    padding: 10px 0 10px 10px;
+}
+
+#tip-content h1 {font-size:19.5px; margin-bottom:0;padding-top:2px;}
+#tip-content h2 {font-size:18px; clear:both; font-weight:400; padding:10px 0 5px 0;}
+#tip-content h3 {font-size:14px; line-height: 23.8px; clear:both; cursor:pointer; font-weight:400;}
+#tip-content h3.accordion-heading:hover,
+#tip-content a.indent:hover {
+    background-color:#DDD;
+}
+
+
+/* Content styling */
+
+#tip-content .block-1 h3,
+#tip-content .block-2 h3,
+#tip-content .block-3 h3 {font-size: 13px;}
+
+#tip-content .block-21 h3{color:#4a6cd4}
+#tip-content .block-22 h3{color:#8a55d7}
+#tip-content .block-23 h3{color:#bb42c3}
+#tip-content .block-24 h3{color:#0e9a6c}
+#tip-content .block-25 h3{color:#ee7d16}
+#tip-content .block-26 h3{color:#c88330}
+#tip-content .block-27 h3{color:#e1a91a}
+#tip-content .block-28 h3{color:#2ca5e2}
+#tip-content .block-29 h3{color:#5cb712}
+#tip-content .block-30 h3{color:#672d79}
+
+
+
+/* headers */
+#tip-content .header {
+  background-color: #CFDAE4;
+  color: #333;
+  border: 0px solid #CCC;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+#tip-content .header h2 {
+  color: #333;
+  margin-top: 10px;
+}
+#tip-content .header h3 {
+  cursor: default;
+}
+
+#tip-content .header h4 {
+  color: #333;
+}
+
+/* contents */
+
+
+#tip-content .example {
+  background-color: #D7D7D7;
+  color: #333;
+  padding: 10px 10px 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#tip-content .steps {
+  color: #333;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+
+#tip-content .tips-video {
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 1px;
+text-align: center;
+}
+
+
+#tip-content .steps.last {
+  margin-bottom: 23px; /* offset content from fixed floating nav */
+}
+
+#tip-content .maps {
+  background-color: #FFFFFF;
+  color: #333;
+  padding: 0 10px;
+   border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#tip-content .navcenter {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 310px;
+  background-color: #eee;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+
+  margin-left: -10px;
+  padding-left: 10px;
+}
+
+#tip-content .navigate {
+  vertical-align:top;
+}
+#tip-content .navigate a {
+  padding: 3px;
+}
+
+#tip-content .navtext {
+  padding: 0px; 5px; 3px; 3px;
+}
+
+#tip-content .navtext a {
+  padding: 0px; 5px; 3px; 3px;
+}
+
+
+
+
+/* accordion style overrides */
+#tip-content .accordion {
+  margin-left: .1em;
+  margin-bottom: .7em;
+/* need a margin here so the body element isn't stuck at a fixed height when the accordion expands */
+}
+
+#tip-content .accordion-group{
+  margin-bottom:0;
+}
+
+#tip-content .accordion-heading > span{
+  color: #999;
+  margin-right: 5px;
+  width: 12px;
+  display: inline-block;
+  text-align:center;
+}
+
+#tip-content .accordion-heading.expanded {
+  background-color: #CCCCCF;
+}
+
+#tip-content .accordion.tip-homescreen > h2,
+#tip-content .tip-homescreen .accordion-heading{
+  /* padding-left:16px; */
+}
+
+#tip-content .accordion-heading > a,
+#tip-content .accordion-body,
+#tip-content .indent {
+  padding-left: 20px;
+  display: block;
+}
+
+

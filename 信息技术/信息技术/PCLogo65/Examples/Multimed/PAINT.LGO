@@ -1,0 +1,400 @@
+to aaa
+;
+; This example shows how to use the Mouse to build a "Paint"
+; like routine. It allows you to choose color, and has tools
+; for drawing a LINE, RECTANGLE or ELLIPSE.
+;
+; Start this Example up and let a 5 year old get introduced
+; to MSWLogo !!!.
+;
+; Example:
+;
+paint
+;
+; <Choose Color by clicking on Color Palette>
+; <Choose Tool By Clicking on "Geometric Shape">
+; <Click in Frame and Hold Mouse Down And Drag>
+; <The Shape will be dynamically resized as you move the Mouse>
+;
+; There is NOTHING complex in this program (not a spec of trig,
+; if you think that's good). Look at one routine at a time.
+; To look up a built in function while in MSWLogo's editor,
+; in online help, just select the primitive with the mouse and
+; hit <F1>.
+;
+; You may also think some code is a wierd way of doing things.
+; This because I coded it much like how a Windows Programmer "Thinks".
+; Windows Programmers think in Rectangles, they think in positive
+; Y down, They think Event Driven (also know as User driven) , The whole
+; program runs like a "State Machine". The code is doing absolutely
+; NOTHING until the USER changes its state by clicking or moving the
+; Mouse.
+;
+; Try adding more goodies such as:
+;
+; An Filled RECTANGLE tool
+; An Filled ELLIPSE tool
+; An FILL tool
+; An ARC tool
+; An PENWIDTH tool
+; An TURTLEHEADING tool
+; Add a Print Button
+; An FLOWER tool (Multiple Ellipses) [better be a blazing fast machine]
+; Store the shapes in a list and allow the user to UNDO.
+; Allow the user to Select a shape and Move it or Delete it.
+;
+; I promised myself that MSWLogo would not be yet another
+; "Paint Program". A Paint program is a classic example used
+; when learning how to program Graphical User Interfaces.
+; However, I have no problem with "Writing" a Paint program
+; in MSWLogo. It prooves to me that it's stable and complete
+; for GUI development. The recent "Bring you to the Error Fix"
+; in the Editor is really makes it much more kind to use.
+; 
+; In years past if I wrote such a program in MSWLogo, I'd
+; always stumble into something I really did not like. Doing
+; this example is the 1st time this did not happen me.
+; I'm not saying there are no more problems to tackle in
+; MSWLogo.
+;
+; Enjoy
+;
+end
+
+to BoxEnd :pt
+; Erase previous box and draw a permanent one
+penreverse
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawBox (list first :StartPoint last :StartPoint -:w :h)
+penpaint
+make "EndPoint :pt
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawBox (list first :StartPoint last :StartPoint -:w :h)
+end
+
+to BoxResize :pt
+; Erase previous box and draw a temperary new one
+penreverse
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawBox (list first :StartPoint last :StartPoint -:w :h)
+make "EndPoint :pt
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawBox (list first :StartPoint last :StartPoint -:w :h)
+end
+
+to BoxStart :pt
+; Draw a temperary new box
+penreverse
+Make "StartPoint :pt
+Make "EndPoint :pt
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawBox (list first :StartPoint last :StartPoint -:w :h)
+end
+
+to CenterBox :box
+; Output the point at the center of a Box define by [X Y Width Height]
+make "x first :box
+make "y first butfirst :box
+make "w first butfirst butfirst :box
+make "h last :box
+output (list :x+(:w/2) :y-(:h/2))
+end
+
+to ChooseBox :pt
+; Choose Box Tool
+Make "Tool "Box
+UpdateSelector
+end
+
+to ChooseColor :pt
+; Choose a New Color
+pu setpos :pt pd
+setpencolor pixel
+setfloodcolor pixel
+UpdateSelector
+end
+
+to ChooseEllipse :pt
+; Choose Ellipse Tool
+Make "Tool "Ellipse
+UpdateSelector
+end
+
+to ChooseLine :pt
+; Choose Line Tool
+Make "Tool "Line
+UpdateSelector
+end
+
+to DrawBox :box
+; Draw box defined by [X Y Width Height]
+make "x first :box
+make "y first butfirst :box
+make "w first butfirst butfirst :box
+make "h last :box
+pu setxy :x :y pd
+setxy :x+:w :y
+setxy :x+:w :y-:h
+setxy :x    :y-:h
+setxy :x    :y
+end
+
+to DrawLine :box
+; Draw line defined by [X Y DeltaX DeltaY]
+make "x first :box
+make "y first butfirst :box
+make "w first butfirst butfirst :box
+make "h last :box
+pu setxy :x :y pd
+setxy :x+:w :y-:h
+end
+
+to DrawPalette :posi :size
+; Draw the Color Palette
+make "res 6
+clearpalette
+pu
+ht
+make "z 0
+repeat :res ~
+  [
+  make "red round ((repcount-1)*(255/:res))
+  make "y 0
+  repeat :res ~
+     [
+     make "green round ((repcount-1)*(255/:res))
+     make "x 0
+     repeat :res ~
+        [
+        make "blue round ((repcount-1)*(255/:res))
+        setpencolor (list :red :green :blue)
+        setfloodcolor (list :red :green :blue)
+        setxy (first :posi) + :x+(:z*:size) (last :posi) + :y - :size
+        bitblock :size :size
+        make "x :x + :size
+        ]
+     make "y :y - :size
+     ]
+  make "z :z + :size + 1
+  ]
+setpencolor [0 0 0]
+setfloodcolor [0 0 0]
+end
+
+to DrawSelector :box
+; Draw a box of width 5 to right of :box
+make "x first :box
+make "y first butfirst :box
+make "w first butfirst butfirst :box
+make "h last :box
+make "rect (list :x+:w+1 :y 5 :h)
+DrawBox :rect
+end
+
+to DrawToolDown :Tool :pt
+; Determine Which Tool to "Start"
+if :Tool = "Ellipse [EllipseStart :pt]
+if :Tool = "Box [BoxStart :pt]
+if :Tool = "Line [LineStart :pt]
+make "Down "True
+end
+
+to DrawToolMove :Tool :pt
+; Determine Which Tool to "Move" (only if "Down is True)
+if not :Down [stop]
+if :Tool = "Ellipse [EllipseResize :pt]
+if :Tool = "Box [BoxResize :pt]
+if :Tool = "Line [LineResize :pt]
+end
+
+to DrawToolUp :Tool :pt
+; Determine Which Tool to "End"
+if :Tool = "Ellipse [EllipseEnd :pt]
+if :Tool = "Box [BoxEnd :pt]
+if :Tool = "Line [LineEnd :pt]
+make "Down "False
+end
+
+to EllipseEnd :pt
+; Erase previous ellipse and draw a permanent one
+penreverse
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+Ellipse :w :h
+penpaint
+make "EndPoint :pt
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+Ellipse :w :h
+end
+
+to EllipseResize :pt
+; Erase previous ellipse and draw a temperary new one
+penreverse
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+Ellipse :w :h
+make "EndPoint :pt
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+Ellipse :w :h
+end
+
+to EllipseStart :pt
+; Draw a temperary new ellipse
+penreverse
+Make "StartPoint :pt
+Make "EndPoint :pt
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+Ellipse :w :h
+end
+
+to LineEnd :pt
+; Erase previous line and draw a permanent one
+penreverse
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawLine (list first :StartPoint last :StartPoint -:w :h)
+penpaint
+make "EndPoint :pt
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawLine (list first :StartPoint last :StartPoint -:w :h)
+end
+
+to LineResize :pt
+; Erase previous line and draw a temperary new one
+penreverse
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawLine (list first :StartPoint last :StartPoint -:w :h)
+make "EndPoint :pt
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawLine (list first :StartPoint last :StartPoint -:w :h)
+end
+
+to LineStart :pt
+; Draw a temperary new line
+penreverse
+Make "StartPoint :pt
+Make "EndPoint :pt
+pu SetPos :StartPoint pd
+make "w (first :StartPoint) - (first :EndPoint) 
+make "h (last :StartPoint) - (last :EndPoint)
+DrawLine (list first :StartPoint last :StartPoint -:w :h)
+end
+
+to OnLeftDown
+; Determine Which "Thing" (Frame or A Tool) got hit
+make "pt mousepos
+if PtInRect :pt :Frame [DrawToolDown :Tool :pt]
+if PtInRect :pt :ToolPal [ChooseColor :pt]
+if PtInRect :pt :ToolEllipse [ChooseEllipse :pt]
+if PtInRect :pt :ToolBox [ChooseBox :pt]
+if PtInRect :pt :ToolLine [ChooseLine :pt]
+end
+
+to OnLeftUp
+; Determine Which "Thing" (Frame or A Tool) is done
+make "pt mousepos
+if PtInRect :pt :Frame [DrawToolUp :Tool :pt]
+end
+
+to OnMove
+; Determine Which "Thing" (Frame or A Tool) needs an update
+make "pt mousepos
+if PtInRect :pt :Frame [DrawToolMove :Tool :pt]
+end
+
+to Paint
+; Get to know state
+cs
+scrollx 0
+scrolly 0
+setpencolor [0 0 0]
+setfloodcolor [0 0 0]
+setpensize [1 1]
+penpaint
+
+; Draw the frame Area
+make "Frame [-200 150 400 300]
+DrawBox :Frame
+
+; Draw the Palette Tool
+make "ToolPal [200 150 180 36]
+DrawBox :ToolPal
+DrawPalette [200 150] 5
+
+; Draw the Ellipse Tool
+make "ToolEllipse [200 100 80 40]
+DrawBox :ToolEllipse
+
+pu setpos CenterBox :ToolEllipse pd
+ellipse (last butlast :ToolEllipse)/2 (last :ToolEllipse)/2
+
+; Draw the Box Tool
+make "ToolBox [200 60 80 40]
+DrawBox :ToolBox
+DrawBox (list 220 50 (last butlast :ToolBox)/2 (last :ToolBox)/2)
+
+; Draw the Line Tool
+make "ToolLine [200 20 80 40]
+DrawBox :ToolLine
+DrawLine (list 220 10 (last butlast :ToolLine)/2 (last :ToolLine)/2)
+
+; Init to Line Tool
+ChooseLine CenterBox :ToolLine
+make "Down "False
+
+; Activate the mouse
+mouseon [OnLeftDown] [OnLeftUp] [] [] [OnMove]
+
+end
+
+to PtInRect :pos :box
+; Output True if Point defined by :pos is in Rectangle defined by :box
+make "xp first :pos
+make "yp last :pos
+make "xb first :box
+make "yb first butfirst :box
+make "wb first butfirst butfirst :box
+make "hb last :box
+if :xp > :xb+:wb [output "false]
+if :xp < :xb [output "false]
+if :yp < :yb-:hb [output "false]
+if :yp > :yb [output "false]
+output "true
+end
+
+to UpdateSelector
+; Erase all Selector Boxes Then Draw a "Selector Box" next to active tool
+make "savecolor pencolor
+setpencolor [255 255 255]
+DrawSelector :ToolEllipse
+DrawSelector :ToolBox
+DrawSelector :ToolLine
+setpencolor :savecolor
+if :Tool = "Ellipse [DrawSelector :ToolEllipse]
+if :Tool = "Box [DrawSelector :ToolBox]
+if :Tool = "Line [DrawSelector :ToolLine]
+sound [1000 100]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

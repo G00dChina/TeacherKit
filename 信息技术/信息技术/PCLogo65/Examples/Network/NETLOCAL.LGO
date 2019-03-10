@@ -1,0 +1,36 @@
+to aaa
+;
+; Function:
+;
+; Sends 360 packets of 2 commands each out the network and back.
+;
+; To run:
+;
+; load "netlocal.lgo
+; Call NETLOCAL MyMachineName
+;
+; Example:
+;
+NETLOCAL "Logo
+;
+; System requirements:
+;
+; You must have a WinSock capable machine and know your machine name.
+; You must know your MyMachineName.
+;
+end
+
+to netlocal :machine
+netstartup
+show netaccepton 5124 [] [run netacceptreceivevalue]
+show netconnecton :machine 5124 [print "aok] []
+wait 100 ; Wait for net to start
+repeat 360 [make "foo netconnectsendvalue [fd 1 rt 1]]
+end
+
+to zzz
+MessageBox [Welcome] [Study it now.]
+edall
+end
+
+Make "startup [zzz]

@@ -1,0 +1,8 @@
+to pop :pop.stack.name
+local "result
+make "result first thing :pop.stack.name
+make :pop.stack.name butfirst thing :pop.stack.name
+output :result
+end
+
+bury "pop

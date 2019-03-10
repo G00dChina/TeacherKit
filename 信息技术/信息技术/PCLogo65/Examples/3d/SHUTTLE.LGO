@@ -1,0 +1,104 @@
+to aaa
+;
+; This is a MSWLogo 3D example where I have written a simple ".3DV"
+; file viewer. 3DV is a simple public domain format for 3D Vectors.
+;
+; Do not confuse how this "Shuttle" database was built.
+;   The vectors were not built with MSWLogo (although they could be).
+; Do not confuse how you "normally" build 3D objects in MSWLogo.
+;   You normally build 3D object just like you always built them
+;   in 2D, by moving the turtle around.
+; 
+; This example was just done for a completeness test. The data is
+; absolute and uses SETXYZ for all drawing. No turtle.
+;
+; It's a good example of how to use file and Array operations.
+;
+; It's also an example of seeing how I took "foreign" data from the
+; internet and used it in logo. There is TONS of "data" out their.
+; Mars weather statistics, continental drift statistics, etc. that
+; can be used for all sorts of projects.
+;
+shuttle
+end
+
+to object_display
+local "vtx
+local "cmd
+repeat :commands ~
+   [
+   ; Get a command. Format [VertexIndex Color] Color = 0 means "Move"
+   make "cmd (item repcount :command)
+
+   ; Get the vertex. Format [X Y Z]
+   make "vtx (item (item 1 :cmd) :vertex) 
+
+   ; If color 0 then Move else Draw (I'm ingoring the color, not RGB Yuck)
+   ifelse (item 2 :cmd) = 0 [pu] [pd]
+
+   ; Move or draw to the vertex
+   setxyz (item 1 :vtx) (item 2 :vtx) (item 3 :vtx)
+   ]
+end
+
+to object_load :file
+; Start in known state
+closeall
+
+; Open Vectors Commands
+openread :file
+setread :file
+
+; Get # of vertices (1st record of file)
+make "vertices first readlist
+
+; Now build a "Vertex" array based on # of vertices
+make "vertex (array :vertices 1)
+
+; Now read in each "Vertex". Format [X Y Z]
+repeat :vertices [setitem repcount :vertex readlist]
+
+; Get # of "commands" (comes after all vertices)
+make "commands first readlist
+
+; Now build a "Command" array based on # of commands
+make "command (array :commands 1)
+
+; Now read in each "Command". Format [Vertex_Index Color]
+repeat :commands [setitem repcount :command readlist]
+
+; Done
+setread []
+close :file
+end
+
+to shuttle
+local "start
+local "finish
+ht
+perspective
+cs
+
+; We have to stand WAY back for this baby
+setturtle -1
+setxyz 30000 20000 30000
+setturtle 0
+
+; Load Shuttle Vectors
+object_load "shuttle.3dv
+
+; Time and Display Shuttle
+cs
+make "start timemilli
+object_display
+make "finish (timemilli - :start) / 600
+
+; It takes about 3 seconds on a P133
+show (sentence :commands "3D "Commands "in :finish "seconds)
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

@@ -1,0 +1,109 @@
+to aaa
+;
+; Example of drawing random spheres in random oribits around
+; a larger sphere.
+;
+; An obvious project would be to get the correct relative
+; sizes and orbits of your solar system and plug them in.
+; 
+; For folks living in solar systems with 2 suns you'll
+; have some tricky math to work out first :-).
+;
+; MSWLogo has only been tested on earth's version of
+; MicroSoft Windows.
+;
+; Try mapping a turtle to halley's comet trajectory
+; and fly it through the solar system.
+;
+; Elliptical orbits should not be hard to do (for high school
+; student). But if I recall most of our planet's orbits are
+; very near circular, so you won't see much. Send some email
+; to your friends in other solar systems to see what there
+; orbits are like.
+;
+; Orbits off axis should be piece cake once you get the
+; hang of things.
+;
+; Sorry, I don't know much about other solar systems you other
+; folks are living in.
+;
+; You can move the planets along their respective orbits
+; and take snap shots and play them back like the GROW.LGO example.
+; Or save the snap shots as .BMP files and make a GIF movie
+; for a web page.
+;
+; The sky is the limit, well not actually, the unverse is the limit.
+;
+SolarSystem
+end
+
+to SolarSystem
+perspective
+; We are in deep space
+setscreencolor [0 0 0]
+cs
+ht
+; Space is big so back up
+setturtle -1
+setxyz 1000 1000 2000
+setturtle 0
+pd
+; Draw a big sun in yellow
+setpc [255 255 0]
+sphere 200 20
+pu
+; Now do some random planets oribiting the sun
+repeat 10 ~
+   [
+   ; Random position in orbit
+   make "angle random 360
+   ; Random radius of orbit
+   make "dist 200 + random 2000
+   downpitch 90
+   pd
+   setpc (list 56+random 200 56+random 200 56+random 200)
+   ; Show oribit path
+   circle :dist
+   pu
+   ; go to planet position
+   rt :angle
+   fd :dist
+   uppitch 90
+   pd
+   ; draw planet
+   sphere 10 + random 100 20
+   pu
+   downpitch 90
+   ; get back to the sun
+   bk :dist
+   lt :angle
+   uppitch 90
+   ]
+end
+
+to sphere :rad :step
+; Thanks to for some help on this function
+; Garry Clark
+; Lecturer,
+; Dept. of Curriculum Studies
+; University of New England 2351
+; Longitude lines
+repeat 180/:step [circle :rad rightroll :step]
+rightroll 180
+; Latitude lines
+repeat 180/:step ~
+   [
+   make "q repcount*:step-90
+   fd :rad*sin :q
+   downpitch 90
+   circle :rad*cos :q
+   uppitch 90
+   bk :rad*sin :q
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

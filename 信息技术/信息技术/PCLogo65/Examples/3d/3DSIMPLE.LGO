@@ -1,0 +1,125 @@
+to aaa
+;
+; Traditional Logo examples with a 3D twist
+;
+all
+end
+
+to all
+turnon3d
+messagebox [] [Square] cs square
+wait 60
+messagebox [] [Rectangle] cs rectangle
+wait 60
+messagebox [] [Grid Squares] cs gridsquares
+wait 60
+messagebox [] [Stairs] cs stairs
+wait 60
+messagebox [] [Poly Squares] cs polysquares
+wait 60
+messagebox [] [Poly Squares 2] cs polysquares2
+wait 60
+messagebox [] [Spin Squares] cs spinsquares
+wait 60
+messagebox [] [Flip Squares] cs flipsquares
+wait 60
+messagebox [] [Cube] cs cube
+wait 60
+messagebox [] [Poly Cube] cs polycube
+wait 60
+messagebox [] [Grid Cubes] cs gridcubes
+wait 60
+messagebox [] [Cube of Cubes] cs cubeofcubes
+end
+
+to square
+repeat 4 [fd 100 rt 90]
+end
+
+to rectangle
+repeat 2 [fd 50 rt 90 fd 200 rt 90]
+end
+
+to stairs
+repeat 100 ~
+   [
+   rectangle
+   fd 50 down 90
+   rectangle
+   fd 50 up 90
+   ]
+end
+
+to polysquares
+repeat 36 [square fd 100 rt 10]
+end
+
+to polysquares2
+repeat 36 [square fd 100 down 10]
+end
+
+to spinsquares
+repeat 36 [square rr 10]
+end
+
+to flipsquares
+repeat 36 [square down 10]
+end
+
+to gridsquares
+for [x 1 500 100] ~
+   [
+   for [y 1 500 100] ~
+      [
+      pu setxy :x :y pd
+      square
+      ]
+   ]
+end
+
+to cube
+repeat 4 [square fd 100 down 90]
+end
+
+to polycube
+repeat 36 [cube fd 100 down 10]
+end
+
+to gridcubes
+for [x 1 300 100] ~
+   [
+   for [y 1 300 100] ~
+      [
+      pu setxy :x :y pd
+      cube
+      ]
+   ]
+end
+
+to cubeofcubes
+for [x 1 300 100] ~
+   [
+   for [y 1 300 100] ~
+      [
+      for [z 1 300 100] ~
+          [
+          pu setxyz :x :y :z pd
+          cube
+          ]
+      ]
+   ]
+end
+
+to turnon3d
+; This can be a library procedure
+perspective
+setturtle -1
+setxyz 500 500 500
+setturtle 0
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

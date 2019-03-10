@@ -1,0 +1,936 @@
+to aaa
+;
+; Function:
+;
+; This function is a simple DialogBox editor. It is still incomplete
+; but is usable. In fact I wrote part of this application with itself !!!
+;
+; To run:
+;
+; Load "visual.lgo
+; Call visual
+; <click on load button>
+; <enter "boxes">
+;
+; Example:
+;
+visual
+;
+; To move a control, click down with mouse in the upper left corner inside
+; the box and drag it. Then let mouse button go.
+;
+; To resize a control, click down with mouse in the lower right corner inside
+; the box and drag it. Then let mouse button go.
+;
+; To change parameters on a box or delete it click in the middle of the control
+;
+; To see what the dialog really looks like click on the Test Button.
+; Click EndTest button to close it.
+;
+; To snap each control to a grid in the snap to grid button and enter
+; grid size.
+;
+; To save the changes click on save (note testing does a save).
+;
+; If dragging is to slow hot fast drag
+;
+; To add a control hit one of the "NEW-" bottons. The control will be
+; placed in the upper left corner outside of the dialog box.
+;
+; To select the DIalog box itself for resizing, click
+; anywhere inside the dialog box but not on a control.
+;
+; It does not know about the code that actaully makes the dialog
+; box/window itself, just the control in one.
+;
+; It does not know about ANY other code except "SOMETHINGcreate".
+;
+; If you put all your code that "CREATE"s controls in one procedure,
+; it's almost usable. I used it for all the dialogs in this application
+; and found an improment over calculating coordinates.
+;
+; If also expects ALL text arguments to be LISTs (even though
+; words are legal).
+;
+; Some day I hope to finish this and perhaps add hooks (or rewrite in C)
+; to MswLogo so that REAL buttons can be dragged FAST. 
+;
+end
+
+to boxes
+groupboxcreate "main [group1] 20 50 70 50
+radiobuttoncreate "main [group1] [Radio1] [Radio Button] 30 60 50 10
+checkboxcreate "main [group1] [check1] [Check Box] 30 80 50 10
+scrollbarcreate "main [Scroll1] 20 30 70 10 [Print "Scrolled]
+buttoncreate "main [Button1] [Button to be Push] 20 10 50 10 [Print "Push]
+comboboxcreate "main [combo1] 20 110 50 30
+listboxcreate "main [list1] 20 150 70 20
+staticcreate "main [static1] [This is a static box] 20 180 140 10
+end
+
+to deletething
+unselectbox :select
+setpensize [2 2]
+drawbox_detail last :select first :select
+make "select []
+end
+
+to doclose2
+ifelse equalp first :select "buttoncreate~
+  [
+  make "the_last last :select
+  make "the_title comboboxgettext "cb22
+  make "the_cb comboboxgettext "cb21
+  make "the_name comboboxgettext "cb23
+  make "select butlast butlast butlast butlast :select
+  make "select lput :the_name :select
+  make "select lput :the_title :select
+  make "select lput :the_cb :select
+  make "select lput :the_last :select
+  ]~
+  [
+  ifelse equalp first :select "scrollbarcreate~
+    [
+    make "the_cb comboboxgettext "cb21
+    make "the_last last :select
+    make "the_name comboboxgettext "cb23
+    make "select butlast butlast butlast :select
+    make "select lput :the_name :select
+    make "select lput :the_cb :select
+    make "select lput :the_last :select
+    ]~
+    [
+    ifelse equalp :kind "staticcreate~
+      [
+      make "the_title comboboxgettext "cb22
+      make "the_last last :select
+      make "the_name comboboxgettext "cb23
+      make "select butlast butlast butlast :select
+      make "select lput :the_name :select
+      make "select lput :the_title :select
+      make "select lput :the_last :select
+      ]~
+      [
+      ifelse (or equalp :kind "radiobuttoncreate equalp :kind "checkboxcreate)~
+        [
+        make "the_title comboboxgettext "cb22
+        make "the_last last :select
+        make "the_name comboboxgettext "cb23
+        make "the_group comboboxgettext "cb24
+        make "select butlast butlast butlast butlast :select
+        make "select lput :the_group :select
+        make "select lput :the_name :select
+        make "select lput :the_title :select
+        make "select lput :the_last :select
+        ]~
+        [
+        make "the_last last :select
+        make "the_name comboboxgettext "cb23
+        make "select butlast butlast :select
+        make "select lput :the_name :select
+        make "select lput :the_last :select
+        ]
+      ]
+    ]
+  ]
+dialogdelete "dlg2
+end
+
+to doclose3
+make "main_x first comboboxgettext "cb31
+make "main_y first comboboxgettext "cb32
+dialogdelete "dlg3
+vrefresh
+end
+
+to doinit2
+make "kind first :select
+ifelse equalp :kind "buttoncreate~
+  [
+  make "the_cb last butlast :select
+  make "the_title last butlast butlast :select
+  make "the_name last butlast butlast butlast :select
+  make "the_group "N/A
+  comboboxsettext "cb24 :the_group
+  comboboxsettext "cb23 :the_name
+  comboboxsettext "cb22 :the_title
+  comboboxsettext "cb21 :the_cb
+  ]~
+  [
+  ifelse equalp :kind "scrollbarcreate~
+    [
+    make "the_cb last butlast :select
+    make "the_name last butlast butlast :select
+    make "the_title "N/A
+    make "the_group "N/A
+    comboboxsettext "cb24 :the_group
+    comboboxsettext "cb23 :the_name
+    comboboxsettext "cb22 :the_title
+    comboboxsettext "cb21 :the_cb
+    ]~
+    [
+    ifelse equalp :kind "staticcreate~
+      [
+      make "the_cb "N/A
+      make "the_title last butlast :select
+      make "the_name last butlast butlast :select
+      make "the_group "N/A
+      comboboxsettext "cb24 :the_group
+      comboboxsettext "cb23 :the_name
+      comboboxsettext "cb22 :the_title
+      comboboxsettext "cb21 :the_cb
+      ]~
+      [
+      ifelse (or equalp :kind "radiobuttoncreate equalp :kind "checkboxcreate)~
+        [
+        make "the_cb "N/A
+        make "the_title last butlast :select
+        make "the_name last butlast butlast :select
+        make "the_group last butlast butlast butlast :select
+        comboboxsettext "cb24 :the_group
+        comboboxsettext "cb23 :the_name
+        comboboxsettext "cb22 :the_title
+        comboboxsettext "cb21 :the_cb
+        ]~
+        [
+        make "the_cb "N/A
+        make "the_title "N/A
+        make "the_name last butlast :select
+        make "the_group "N/A
+        comboboxsettext "cb24 :the_group
+        comboboxsettext "cb23 :the_name
+        comboboxsettext "cb22 :the_title
+        comboboxsettext "cb21 :the_cb
+        ]
+      ]
+    ]
+  ]
+end
+
+to doinit3
+comboboxsettext "cb31 :main_x
+comboboxsettext "cb32 :main_y
+end
+
+to dosetup
+buttoncreate "dlg "New5 "New-ComboBox 15 85 55 15 [newbutton "comboboxcreate]
+buttoncreate "dlg "Save "Save 85 95 50 15 [vsave]
+buttoncreate "dlg "New2 "New-ScrollBar 15 25 55 15 [newbutton "scrollbarcreate]
+buttoncreate "dlg "Load "Load 140 95 45 15 [vload first readlist]
+buttoncreate "dlg "Fast "Fast-Drag 140 115 45 15 [Make "slowmode "false]
+buttoncreate "dlg "Snap "Snap 105 15 65 15 [snapboxes]
+buttoncreate "dlg "New1 "New-Button 15 5 55 15 [newbutton "buttoncreate]
+buttoncreate "dlg "Slow "Slow-Drag 85 115 50 15 [Make "slowmode "true]
+buttoncreate "dlg "New9 "New-CheckBox 15 145 55 15 [newbutton "checkboxcreate]
+buttoncreate "dlg "Test "Test 85 75 50 15 [mytest]
+buttoncreate "dlg "end "End 80 165 50 15 [visualend]
+buttoncreate "dlg "Refresh "Refresh 105 35 65 15 [vrefresh]
+buttoncreate "dlg "End [End Test] 140 75 45 15 [myendtest]
+buttoncreate "dlg "New4 "New-RadioBtn 15 125 55 15 [newbutton "radiobuttoncreate]
+buttoncreate "dlg "New3 "New-GroupBox 15 105 55 15 [newbutton "groupboxcreate]
+buttoncreate "dlg "New8 "New-StaticBox 15 45 55 15 [newbutton "staticcreate]
+buttoncreate "dlg "New7 "New-ListBox 15 65 55 15 [newbutton "listboxcreate]
+end
+
+to dosetup2
+comboboxcreate "dlg2 "cb21 60 12 60 12
+comboboxcreate "dlg2 "cb22 60 36 60 12
+staticcreate "dlg2 "st22 [Title] 12 36 36 12
+staticcreate "dlg2 "st21 [Callback] 12 12 36 12
+staticcreate "dlg2 "st23 [Name] 12 60 36 12
+buttoncreate "dlg2 "dlg2_OK [OK] 12 132 48 12 [doclose2]
+buttoncreate "dlg2 "btn23 [Cancel] 72 132 48 12 [dialogdelete "dlg2]
+comboboxcreate "dlg2 "cb23 60 60 60 12
+comboboxcreate "dlg2 [cb24] 60 84 60 12
+buttoncreate "dlg2 "del [Delete] 36 108 48 12 [deletething dialogdelete "dlg2]
+staticcreate "dlg2 [st24] [Group] 12 84 36 12
+end
+
+to dosetup3
+comboboxcreate "dlg3 "cb31 48 12 48 12
+buttoncreate "dlg3 "btn32 [Cancel] 60 60 36 12 [dialogdelete "dlg3]
+buttoncreate "dlg3 "dlg3_OK [OK] 12 60 36 12 [doclose3]
+comboboxcreate "dlg3 "cb32 48 36 48 12
+staticcreate "dlg3 "st31 [Width] 12 12 24 12
+staticcreate "dlg3 "st32 [Height] 12 36 24 12
+end
+
+to dowindows
+windowcreate "root "dlg [Visual Logo] 0 0 :main_x :main_y [dosetup]
+end
+
+to dowindows2
+dialogcreate "root "dlg2 [Edit Selected Box] 50 50 200 200 [dosetup2 doinit2]
+end
+
+to dowindows3
+dialogcreate "root "dlg3 [Edit Main Window] 50 50 100 100 [dosetup3 doinit3]
+end
+
+to drawbox :box
+make "x first :box
+make "y first butfirst :box
+make "w first butfirst butfirst :box
+make "h last :box
+setxy :x :y
+penreverse
+setxy :x+:w :y
+setxy :x+:w :y-:h
+setxy :x    :y-:h
+setxy :x    :y
+pu
+end
+
+to drawbox_detail :box :kind
+drawbox :box
+make "x first :box
+make "y first butfirst :box
+make "w first butfirst butfirst :box
+make "h last :box
+print :kind
+ifelse equalp :kind "buttoncreate~
+  [
+  setxy :x :y
+  ]~
+  [
+  ifelse equalp :kind "staticcreate~
+    [
+    setxy :x :y
+    ]~
+    [
+    ifelse equalp :kind "listboxcreate~
+      [
+      make "w75 :w*.75
+      setxy :x+:w75 :y
+      penreverse
+      setxy :x+:w75 :y-:h
+      pu
+      ]~
+      [
+    ifelse equalp :kind "comboboxcreate~
+      [
+      make "w75 :w*.75
+      setxy :x+:w75 :y
+      penreverse
+      setxy :x+:w75 :y-:h
+      pu
+      make "h25 :h*.25
+      setxy :x :y-:h25
+      penreverse
+      setxy :x+:w :y-:h25
+      pu
+      ]~
+      [
+    ifelse equalp :kind "groupboxcreate~
+      [
+      setxy :x :y
+      ]~
+      [
+    ifelse equalp :kind "radiobuttoncreate~
+      [
+      make "w25 :w*.25
+      setxy :x+:w25 :y
+      penreverse
+      setxy :x+:w25 :y-:h
+      pu
+      ]~
+      [
+    ifelse equalp :kind "checkboxcreate~
+      [
+      make "w25 :w*.25
+      setxy :x+:w25 :y
+      penreverse
+      setxy :x+:w25 :y-:h
+      pu
+      ]~
+      [
+      if equalp :kind "scrollbarcreate~
+        [
+        ifelse :w > :h
+          [
+         make "w25 :w*.25
+         setxy :x+:w25 :y
+         penreverse
+         setxy :x+:w25 :y-:h
+         pu
+         make "w75 :w*.75
+         setxy :x+:w75 :y
+         penreverse
+         setxy :x+:w75 :y-:h
+         pu
+         ]~
+         [
+         make "h25 :h*.25
+         setxy :x :y-:h25
+         penreverse
+         setxy :x+:w :y-:h25
+         pu
+         make "h75 :h*.75
+         setxy :x :y-:h75
+         penreverse
+         setxy :x+:w :y-:h75
+         pu
+         ]
+       ]
+     ]
+   ]
+         ]
+       ]
+     ]
+   ]
+  ]
+end
+
+to inanybox :pos :boxs
+if emptyp :boxs [output "false]
+if inbox :pos last first :boxs [make "select first :boxs output "true]
+output inanybox :pos butfirst :boxs
+end
+
+to inbox :pos :box
+make "xp first :pos
+make "yp last :pos
+make "xb first :box
+make "yb first butfirst :box
+make "wb first butfirst butfirst :box
+make "hb last :box
+if :xp > :xb+:wb [output "false]
+if :xp < :xb [output "false]
+if :yp < :yb-:hb [output "false]
+if :yp > :yb [output "false]
+output "true
+end
+
+to lbtndown
+make "posd mousepos
+ifelse inanybox :posd :master~
+   [
+   selectabox :select
+   make "whichone vwhich :posd last :select
+   ifelse equalp 1 :whichone~
+      [
+      make "boxisselected "true
+      ]~
+      [
+      ifelse equalp 2 :whichone~
+         [make "edgeisselected "true]~
+         [make "wholeisselected "true]
+      ]
+   make "backupselect :select
+   make "groupisselected "false
+   ]~
+   [
+   ifelse inanybox :posd :master_group~
+     [
+     selectabox :select
+     make "whichone vwhich :posd last :select
+     ifelse equalp 1 :whichone~
+        [
+        make "boxisselected "true
+        ]~
+        [
+        ifelse equalp 2 :whichone~
+           [make "edgeisselected "true]~
+           [make "wholeisselected "true]
+        ]
+     make "backupselect :select
+     make "groupisselected "true
+     ]~
+     [
+     make "windowisselected "true
+     ]
+   ]
+make "mousedn "true
+vupdate
+end
+
+to lbtnup
+vupdate
+ifelse :boxisselected~
+  [
+  make "boxisselected "false
+  unselectbox :select
+  ifelse :groupisselected~
+    [
+    make "master_group remove :backupselect :master_group
+    make "master_group lput :select :master_group
+    ]~
+    [
+    make "master remove :backupselect :master
+    make "master lput :select :master
+    ]
+  ]~
+  [
+  ifelse :edgeisselected~
+    [
+    make "edgeisselected "false
+    unselectbox :select
+    ifelse :groupisselected~
+      [
+      make "master_group remove :backupselect :master_group
+      make "master_group lput :select :master_group
+      ]~
+      [
+      make "master remove :backupselect :master
+      make "master lput :select :master
+      ]
+    ]~
+    [
+    ifelse :wholeisselected~
+      [
+      make "wholeisselected "false
+      dowindows2
+      ifelse :groupisselected
+        [make "master_group remove :backupselect :master_group]~
+        [make "master remove :backupselect :master]
+      ; it may of been deleted
+      if not equalp [] :select~
+        [
+        unselectbox :select
+        ifelse :groupisselected~
+          [make "master_group lput :select :master_group]~
+          [make "master lput :select :master]
+        ]
+      ]~
+      [
+      dowindows3
+      ]
+    ]
+  ]
+make "mousedn "false
+end
+
+to mmove
+if :slowmode [vupdate]
+end
+
+to myendtest
+windowdelete :mastername
+end
+
+to mytest
+vsave
+windowcreate "root :mastername [Visual Test] 0 0 :main_x :main_y []
+run :mastermodule
+end
+
+to newbutton :kind
+mouseon [lbtndown] [lbtnup] [] [] [mmove]
+make "mousedn "false
+make "boxisselected "false
+make "edgeisselected "false
+make "wholeisselected "false
+make "groupisselected "false
+if equalp :kind "buttoncreate [make "select (se :kind word "" :mastername [[]] [[]] [[]] [[-50 0 50 50]])]
+if equalp :kind "comboboxcreate [make "select (se :kind word "" :mastername [[]] [[-50 0 50 50]])]
+if equalp :kind "groupboxcreate [make "select (se :kind word "" :mastername [[]] [[-50 0 50 50]])]
+if equalp :kind "listboxcreate [make "select (se :kind word "" :mastername [[]] [[-50 0 50 50]])]
+if equalp :kind "scrollbarcreate [make "select (se :kind word "" :mastername [[]] [[]] [[-50 0 50 50]])]
+if equalp :kind "staticcreate [make "select (se :kind word "" :mastername [[]] [[]] [[-50 0 50 50]])]
+if equalp :kind "checkboxcreate [make "select (se :kind word "" :mastername word "" first :groupname [[]] [[]] [[-50 0 50 50]])]
+if equalp :kind "radiobuttoncreate [make "select (se :kind word "" :mastername word "" first :groupname [[]] [[]] [[-50 0 50 50]])]
+setpensize [2 2]
+drawbox_detail last :select first :select
+selectabox :select
+dowindows2
+; it may of been deleted
+if not equalp [] :select~
+  [
+  unselectbox :select
+  ifelse equalp :kind "groupboxcreate
+     [make "master_group lput :select :master_group]~
+     [make "master lput :select :master]
+  ]
+end
+
+to selectabox :box
+setpensize [2 2]
+drawbox_detail last :box first :box
+setpensize [4 4]
+drawbox last :box
+end
+
+to snap :box
+print :box
+make "xb first :box
+make "yb first butfirst :box
+make "wb first butfirst butfirst :box
+make "hb last :box
+make "xb snap1 :xb :the_grid
+make "yb snap1 :yb :the_grid
+make "wb snap1 :wb :the_grid
+make "hb snap1 :hb :the_grid
+make "snapbox []
+make "snapbox lput :xb :snapbox
+make "snapbox lput :yb :snapbox
+make "snapbox lput :wb :snapbox
+make "snapbox lput :hb :snapbox
+print :snapbox
+output :snapbox
+end
+
+to snap1 :num :grid
+output (:num+ (int :grid/2)) - remainder (:num+(int :grid/2)) :grid
+end
+
+to snapboxes
+make "the_grid first readlist
+make "master snapboxes1 :master
+make "master_group snapboxes1 :master_group
+vrefresh
+end
+
+to snapboxes1 :boxs
+if emptyp :boxs [output []]
+make "tempboxs butfirst :boxs
+make "tempboxs snapboxes1 :tempboxs
+make "thebox first :boxs
+make "thebox lput snap last :thebox butlast :thebox
+make "tempboxs fput :thebox :tempboxs
+output :tempboxs
+end
+
+to unselectbox :box
+setpensize [4 4]
+drawbox last :box
+setpensize [2 2]
+drawbox_detail last :box first :box
+end
+
+to vedit
+mouseon [lbtndown] [lbtnup] [] [] [mmove]
+end
+
+to vinit
+make "the_scale 2
+cs
+setpensize [2 2]
+ht
+pd
+setxy :main_x*:the_scale 0
+setxy :main_x*:the_scale -:main_y*:the_scale
+setxy 0 -:main_y*:the_scale
+setxy 0 0
+pu
+make "boxisselected "false
+make "edgeisselected "false
+make "wholeisselected "false
+end
+
+to visual
+make "main_x 200
+make "main_y 200
+vinit
+make "slowmode "true
+make "master []
+make "master_group []
+dowindows
+end
+
+to visualend
+windowdelete "dlg
+mouseoff
+st
+cs
+end
+
+to vload :module
+make "mastermodule :module
+savel :module "boxes.lg
+openread "boxes.lg
+setread "boxes.lg
+make "mastername []
+make "master []
+make "master_group []
+make "trec readlist
+while [not emptyp :trec]~
+  [
+  ifelse equalp first :trec "buttoncreate~
+    [
+    ;   parse:
+    ;   buttoncreate "dlg "end "End 78 162 50 25 [visualend]
+    ; 
+    if emptyp :mastername [make "mastername butfirst first butfirst :trec]
+    ; strip off callback and save in xrec
+    make "xrec last :trec
+    make "trec butlast :trec
+    ; build up BOX list in yrec
+    make "yrec []
+    make "yrec fput :the_scale*last :trec :yrec
+    make "trec butlast :trec
+    make "yrec fput :the_scale*last :trec :yrec
+    make "trec butlast :trec
+    make "yrec fput minus :the_scale*last :trec :yrec
+    make "trec butlast :trec
+    make "yrec fput :the_scale*last :trec :yrec
+    make "trec butlast :trec
+    ; Tack callback back on (But before BOX instead of after)
+    make "trec lput :xrec :trec
+    ; Put BOX back as a list 
+    make "trec lput :yrec :trec
+    make "master lput :trec :master
+    ]~
+    [
+    ifelse (or 
+              equalp first :trec "staticcreate
+              equalp first :trec "listboxcreate
+              equalp first :trec "comboboxcreate
+              equalp first :trec "groupboxcreate
+              equalp first :trec "radiobuttoncreate
+              equalp first :trec "checkboxcreate)~
+      [
+      ;   parse:
+      ;   buttoncreate "dlg "end "End 78 162 50 25 [visualend]
+      ; 
+      if emptyp :mastername [make "mastername butfirst first butfirst :trec]
+      ; build up BOX list in yrec
+      make "yrec []
+      make "yrec fput :the_scale*last :trec :yrec
+      make "trec butlast :trec
+      make "yrec fput :the_scale*last :trec :yrec
+      make "trec butlast :trec
+      make "yrec fput minus :the_scale*last :trec :yrec
+      make "trec butlast :trec
+      make "yrec fput :the_scale*last :trec :yrec
+      make "trec butlast :trec
+      ; Put BOX back as a list 
+      make "trec lput :yrec :trec
+      ifelse equalp first :trec "groupboxcreate [make "master_group lput :trec :master_group] [make "master lput :trec :master]
+      ]~
+      [
+      if equalp first :trec "scrollbarcreate~
+        [
+        if emptyp :mastername [make "mastername butfirst first butfirst :trec]
+        make "xrec last :trec
+        make "trec butlast :trec
+        make "yrec []
+        make "yrec fput :the_scale*last :trec :yrec
+        make "trec butlast :trec
+        make "yrec fput :the_scale*last :trec :yrec
+        make "trec butlast :trec
+        make "yrec fput minus :the_scale*last :trec :yrec
+        make "trec butlast :trec
+        make "yrec fput :the_scale*last :trec :yrec
+        make "trec butlast :trec
+        make "trec lput :xrec :trec
+        make "trec lput :yrec :trec
+        make "master lput :trec :master
+        ]
+      ]
+    ]
+  make "trec readlist
+  ] 
+close "boxes.lg
+setread []
+vrefresh
+mouseon [lbtndown] [lbtnup] [] [] [mmove]
+end
+
+to vrefresh
+vinit
+vrefresh1 :master
+vrefresh1 :master_group
+end
+
+to vrefresh1 :arg
+if emptyp :arg [stop]
+;print se "drawing last first :arg
+drawbox_detail last first :arg first first :arg
+vrefresh1 butfirst :arg 
+end
+
+to vsave
+make "arg :mastermodule
+openwrite "boxes.lg
+setwrite "boxes.lg
+print se [to] :arg
+vsave1 :master_group
+vsave1 :master
+print [end]
+close "boxes.lg
+setwrite []
+load "boxes.lg
+end
+
+to vsave1 :arg
+if emptyp :arg [stop]
+; Get widget
+make "trec first :arg
+; Strip of BOX and save in xrec
+make "xrec last :trec
+make "trec butlast :trec
+ifelse or equalp first :trec "buttoncreate equalp first :trec "scrollbarcreate~
+  [
+  ; Strip of callback and save in yrec
+  make "yrec last :trec
+  make "trec butlast :trec
+  ; Take BOX back a part
+  make "trec lput int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  make "trec lput minus int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  make "trec lput int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  make "trec lput int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  ; Tack on callback
+  make "trec lput :yrec :trec
+  ]~
+  [
+  make "trec lput int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  make "trec lput minus int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  make "trec lput int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  make "trec lput int (first :xrec)/:the_scale :trec
+  make "xrec butfirst :xrec
+  ]
+print :trec
+vsave1 butfirst :arg 
+end
+
+to vupdate
+; Erase old box and draw new one
+make "posm mousepos
+ifelse :boxisselected~
+    [
+    setpensize [4 4]
+    drawbox last :select
+    make "select lput fput first :posm fput last :posm butfirst butfirst last :select butlast :select
+    drawbox last :select
+    make "posd :posm
+    ]~
+    [
+    if :edgeisselected~
+      [
+      setpensize [4 4]
+      drawbox last :select
+      make "xxx first last :select
+      make "yyy first butfirst last :select
+      make "www first butfirst butfirst last :select
+      make "hhh last last :select
+      make "select lput lput (:yyy-(last :posm)) (lput ((first :posm)-:xxx) (butlast butlast last :select)) (butlast :select)
+      drawbox last :select
+      make "posd :posm
+      ]
+    ]
+end
+
+to vwhich :pos :box
+make "xp first :pos
+make "yp last :pos
+make "xb first :box
+make "yb first butfirst :box
+make "wb first butfirst butfirst :box
+make "hb last :box
+ifelse and (:xp < :xb+5) (:yp > :yb-5)~
+   [
+   output 1
+   ]~
+   [
+   ifelse and (:yp < :yb-:hb+5) (:xp > :xb+:wb-5)~
+      [output 2]~
+      [output 3]
+   ]
+end
+
+Make "arg "boxes
+Make "backupselect [buttoncreate "main [Button1] [Button to be Push] [Print "Push] [40 -20 100 20]]
+Make "boxisselected "false
+Make "edgeisselected "false
+Make "groupisselected "false
+Make "groupname [group1]
+Make "h 20
+Make "h25 15
+Make "h75 18.75
+Make "hb 20
+Make "hhh 20
+Make "kind "buttoncreate
+Make "main_x 200
+Make "main_y 200
+Make "master [[radiobuttoncreate "main [group1] [Radio1] [Radio Button] [60 -120 100 20]] [checkboxcreate "main [group1] [check1] [Check Box] [60 -160 100 20]] [scrollbarcreate "main [Scroll1] [Print "Scrolled] [40 -60 140 20]] [comboboxcreate "main [combo1] [40 -220 100 60]] [listboxcreate "main [list1] [40 -300 140 40]] [staticcreate "main [static1] [This is a static box] [40 -360 280 20]] [buttoncreate "main [Button1] [Button to Push] [Print "Push] [40 -20 100 20]]]
+Make "master_group [[groupboxcreate "main [group1] [40 -100 140 100]]]
+Make "mastermodule "boxes
+Make "mastername "main
+Make "mousedn "false
+Make "name []
+Make "posd [75 -33]
+Make "posm [75 -33]
+Make "select [buttoncreate "main [Button1] [Button to Push] [Print "Push] [40 -20 100 20]]
+Make "slowmode "false
+Make "snapbox [120 -24 120 24]
+Make "tempboxs [[comboboxcreate "dlg2 "cb21 [120 -24 120 24]] [comboboxcreate "dlg2 "cb22 [120 -72 120 24]] [staticcreate "dlg2 "st22 [Title] [24 -72 72 24]] [staticcreate "dlg2 "st21 [Callback] [24 -24 72 24]] [staticcreate "dlg2 "st23 [Name] [24 -120 72 24]] [buttoncreate "dlg2 "dlg2_OK [OK] [doclose2] [24 -264 96 24]] [buttoncreate "dlg2 "btn23 [Cancel] [dialogdelete "dlg2] [144 -264 96 24]] [comboboxcreate "dlg2 "cb23 [120 -120 120 24]] [comboboxcreate "dlg2 [cb24] [120 -168 120 24]] [buttoncreate "dlg2 "del [Delete] [deletething dialogdelete "dlg2] [72 -216 96 24]] [staticcreate "dlg2 [st24] [Group] [24 -168 72 24]]]
+Make "the_cb [Print "Push]
+Make "the_grid 24
+Make "the_group "N/A
+Make "the_last [40 -20 100 20]
+Make "the_name [Button1]
+Make "the_scale 2
+Make "the_title [Button to Push]
+Make "thebox [comboboxcreate "dlg2 "cb21 [120 -24 120 24]]
+Make "title []
+Make "trec [staticcreate "main [static1] [This is a static box] 20 180 140 10]
+Make "w 100
+Make "w25 35
+Make "w75 105
+Make "wb 100
+Make "whichone 3
+Make "wholeisselected "false
+Make "windowisselected "true
+Make "www 95
+Make "x 40
+Make "xb 40
+Make "xp 75
+Make "xrec []
+Make "xxx 121
+Make "y -20
+Make "yb -20
+Make "yp -33
+Make "yrec [Print "Push]
+Make "yyy -168
+
+bury "deletething
+bury "doclose2
+bury "doclose3
+bury "doinit2
+bury "doinit3
+bury "dosetup
+bury "dosetup2
+bury "dosetup3
+bury "dowindows
+bury "dowindows2
+bury "dowindows3
+bury "drawbox
+bury "drawbox_detail
+bury "inanybox
+bury "inbox
+bury "lbtndown
+bury "lbtnup
+bury "mmove
+bury "myendtest
+bury "mytest
+bury "newbutton
+bury "selectabox
+bury "snap
+bury "snap1
+bury "snapboxes
+bury "snapboxes1
+bury "unselectbox
+bury "vedit
+bury "vinit
+bury "visual
+bury "visualend
+bury "vload
+bury "vrefresh
+bury "vrefresh1
+bury "vsave
+bury "vsave1
+bury "vupdate
+bury "vwhich
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz] 

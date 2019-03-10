@@ -1,0 +1,93 @@
+to aaa
+; This is an example of how to do sprites (Animation) in MSWLogo
+; Part of the trick here is how the two Images car.bmp and carmask.bmp
+; are drawn.  carmask.bmp is like a silk screen it only allows ink to
+; pass through where it is black and no ink where it is white. car.bmp
+; Must be WHITE exactly where carmask.bmp is WHITE (the reverse is not
+; true).
+;
+; This is all done by ANDing and ORing colors together controlled by
+; SETBITMODE.
+;
+; BLACK ANDed with a PIXEL will be BLACK.
+; BLACK ORed  with a PIXEL will be that same PIXEL.
+; WHITE ANDed with a PIXEL will be that same PIXEL.
+; WHITE ORed  with a PIXEL will be WHITE.
+;
+; Why because?
+; BLACK is [  0   0   0] (or in hex [00 00 00])
+; WHITE is [255 255 255] (or in hex [FF FF FF])
+;
+; So lets say PIXEL is [01 01 01] in hex for easy math.
+; PIXEL ([01 01 01]) ANDed with BLACK ([00 00 00]) is [00 00 00] (because 01 AND 00 is 00)
+; PIXEL ([01 01 01])  ORed with BLACK ([00 00 00]) is [01 01 01] (because 01 OR  00 is 01)
+; PIXEL ([01 01 01]) ANDed with WHITE ([FF FF FF]) is [01 01 01] (because 01 AND FF is 01)
+; PIXEL ([01 01 01])  ORed with WHITE ([FF FF FF]) is [00 00 00] (because 01 OR  FF is FF)
+;
+; Some systems (like MultiMedia Logic) will generate car.bmp and carmask.bmp internally
+; from a single image by reserving a color as "transparent" and apply the operations
+; below automatically.
+;
+; Example:
+;
+sprite
+end
+
+to sprite
+cs
+; Load an Image of a Car in Buffer 1
+setbitindex 1
+localmake "size bitloadsize "car.bmp
+bitload "car.bmp
+bitcut first :size last :size
+
+; Load an Image of a Car "MASK" in Buffer 2
+setbitindex 2
+localmake "size bitloadsize "carmask.bmp
+bitload "carmask.bmp
+bitcut first :size last :size
+
+; Load a Background Image in Buffer 3
+setbitindex 3
+localmake "roadsize bitloadsize "road.bmp
+bitload "road.bmp
+bitcut first :roadsize last :roadsize
+
+; Reserve a buffer the same size as the background in Buffer 4
+setbitindex 4
+bitcut first :roadsize last :roadsize
+
+; Move the car across the road
+repeat first :roadsize~
+   [
+   ; Calculate coordinates that zip down the middle
+   localmake "newx repcount
+   localmake "newy round ((last :roadsize)/2)
+
+   ; Make a fresh copy of the background into buffer 4
+   setbitindex 3
+   setbitmode 1
+   bitpastetoindex 4 0 0
+
+   ; Punch a hole in buffer 4 where we wish to place the car (AND in the Mask)
+   setbitindex 1
+   setbitmode 3
+   bitpastetoindex 4 :newx :newy
+
+   ; Now place the car exactly in the hole without disturbing the background (OR in the Image)
+   setbitindex 2
+   setbitmode 2
+   bitpastetoindex 4 :newx :newy
+
+   ; Now drop the combined image onto the screen (this will be an instant change to the user no flicker)
+   setbitindex 4
+   setbitmode 1
+   bitpaste
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

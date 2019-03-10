@@ -1,0 +1,733 @@
+to axis
+ifelse greaterp first bf machine 30 ~
+[settextfont[[Times New Roman] 20 0 0 400 0 0 0]] ~
+[settextfont[[System] 20 0 0 400 0 0 0]]
+fd 200
+rt 90 label "+Y lt 90
+bk 400
+rt 90 label "-Y lt 90
+fd 200
+rt 90
+fd 200
+label "+X
+bk 400
+label "-X
+fd 200
+lt 90
+down 90
+fd 200
+up 90
+rt 90 label "-Z lt 90
+down 90
+bk 400
+up 90
+rt 90 label "+Z lt 90
+down 90
+fd 200
+up 90
+end
+
+to cube :size
+repeat 4 ~
+   [
+   repeat 4 [fd :size rt 90]
+   fd :size
+   down 90
+   ]
+end
+
+to demo
+demo.00
+if not yesnobox [Demo] [Welcome to MSWLogo Demonstration (more?)] [stop]
+demo.01
+if not yesnobox [Demo] [Up to 1024 independent turtles (more?)] [stop]
+demo.02
+if not yesnobox [Demo] [Each turtle has it's own Heading and Pen mode (more?)] [stop]
+demo.03
+if not yesnobox [Demo] [Each turtle can be mapped to a bitmap (more?)] [stop]
+demo.04
+if not yesnobox [Demo] [The numbers you see are bitmaps, they could be anything (more?)] [stop]
+demo.05
+if not yesnobox [Demo] [MSWLogo can do Fonts, at any angle and any color (more?)] [stop]
+demo.06
+if not yesnobox [Demo] [MSWLogo can do Flood Fills (more?)] [stop]
+demo.07
+if not yesnobox [Demo] [MSWLogo can use the full range of colors (more?)] [stop]
+demo.08
+if not yesnobox [Demo] [MSWLogo can cut Bitmaps (more?)] [stop]
+demo.09
+if not yesnobox [Demo] [MSWLogo can paste Bitmaps (more?)] [stop]
+demo.10
+if not yesnobox [Demo] [MSWLogo can even control what you normally control (more?)] [stop]
+demo.11
+if not yesnobox [Demo] [You can find out what MSWLogo is up to at any time (more?)] [stop]
+demo.12
+if not yesnobox [Demo] [This image will be pasted onto a Neutral background 9 ways (more?)] [stop]
+demo.13
+if not yesnobox [Demo] [MSWLogo can solve complex problems with your help (more?)] [stop]
+demo.14
+if not yesnobox [Demo] [MSWLogo can make all the sounds you like (more?)] [stop]
+demo.15
+if not yesnobox [Demo] [MSWLogo can even do more than one thing at a time Note that the tone you will hear is a timer executing code while the picture is being drawn (more?)] [stop]
+demo.16
+if not yesnobox [Demo] [MSWLogo can even work in 3 dimensions (more?)] [stop]
+demo.17
+if not yesnobox [Demo] [You can change your vantage point by moving a special turtle (more?)] [stop]
+demo.18
+if not yesnobox [Demo] [Everything you've learned in 2D applies in 3D [see 3DSTEPS.LGO example] (more?)] [stop]
+demo.19
+if not yesnobox [Demo] [You can view your objects as 3D solids (more?)] [stop]
+demo.20
+if not yesnobox [Demo] [MSWLogo can even write Windows programs (more?)] [stop]
+demo.21
+if not yesnobox [Demo] [End of Demonstration and the Start of your imagination (more?)] [stop]
+end
+
+to demo.00
+wrap
+cs
+scrollx 0
+scrolly 0
+st
+setbitmode 1
+setpensize [1 1]
+setpencolor [0 0 0]
+pennormal
+ifelse greaterp first bf machine 30 ~
+[settextfont[[Times New Roman] 20 0 0 400 0 0 0]] ~
+[settextfont[[System] 20 0 0 400 0 0 0]]
+rt 90
+label [I am timing your computer]
+make "scale 4
+buryname "scale
+settimer 1 100 [make "scale :scale+1]
+repeat 60 [rt 6]
+cleartimer 1
+make "scale round 100/:scale 
+show :scale
+st
+end
+
+to demo.01
+cs
+end
+
+to demo.02
+repeat 8 [setturtle repcount-1 rt (repcount-1) * 360/8 fd 100]
+wait 60
+end
+
+to demo.03
+repeat 4*:scale [repeat 8 [setturtle repcount-1 rt (random 30)-15 fd 20]]
+end
+
+to demo.04
+cs
+pu
+repeat 8 [rt 90 label repcount-1 lt 90 bk 20 setbitindex repcount-1 bitcut 20 20 cs]
+pd
+repeat 8 [setturtle repcount-1 rt (repcount-1) * 360/8 fd 100]
+repeat 8 [setturtle repcount-1 bitmapturtle]
+wait 60
+end
+
+to demo.05
+repeat 4*:scale [repeat 8 [setturtle repcount-1 rt (random 30)-15 fd 20]]
+end
+
+to demo.06
+ifelse greaterp first bf machine 30 ~
+[settextfont[[Times New Roman] 50 0 0 400 0 0 0]] ~
+[settextfont[[System] 50 0 0 400 0 0 0]]
+cs
+ht
+pu
+repeat 36 [fd 175 setpencolor (list 0 repcount*8 0) label heading bk 175 rt 10 wait 2]
+pd
+end
+
+to demo.07
+cs 
+repeat 18 [pu fd 100 pd repeat 4 [fd 50 rt 90] rt 45 pu fd 5 setfloodcolor (list repcount*15 0 0) fill bk 5 lt 45 bk 100 rt 20 wait 2]
+pd
+end
+
+to demo.08
+cs 
+setpensize [2 2]
+clearpalette
+repeat 72 [repeat 4 [fd 100 rt 90] setpencolor (list repcount*3 0 0) rt 5 wait 2]
+pu
+end
+
+to demo.09
+setxy -50 -50
+bitcut 100 100
+end
+
+to demo.10
+cs
+pu
+repeat 36 [fd 150 bitpaste bk 150 rt 10 wait 2]
+end
+
+to demo.11
+repeat 10 [scrollx 10 wait 2]
+repeat 10 [scrolly 10 wait 2]
+scrollx 0
+scrolly 0
+repeat 10 [scrollx -10 wait 2]
+repeat 10 [scrolly -10 wait 2]
+scrollx 0
+scrolly 0
+end
+
+to demo.12
+status
+cs
+pd
+setpensize [1 1]
+rose 150 30 [pu setx xcor + 5 pd wait 5]
+nostatus
+end
+
+to demo.13
+setxy 0 0
+bitcut 50 50
+rt 90
+setfloodcolor [125 125 125]
+setxy -250 -50
+bitblock 550 150
+setxy -200 0
+repeat 9 [setbitmode repcount bitpaste fd 50 wait 5]
+end
+
+to demo.14
+cs
+hanoi 4
+pd
+end
+
+to demo.15
+cs
+repeat 50 [sound (list repcount*10 100)]
+end
+
+to demo.16
+cs
+settimer 1 1000 [sound [1000 40]]
+penpaint
+spiral 91 2 10 100
+cleartimer 1
+setpencolor [0 0 0]
+setpensize [1 1]
+end
+
+to demo.17
+perspective
+cs
+ht
+setturtle -1
+setxyz 0 0 1000
+setturtle 0
+lr 60
+repeat 72 [cube 100 fd 20 down 5]
+end
+
+to demo.18
+perspective
+cs
+ht
+setturtle -1
+setxyz 0 0 1000
+setturtle 0
+repeat 36 [setturtle -1 sety 700 lt 90 rr 90 arc2 10 1000 lr 90 rt 90 setturtle 0 cs cube 100 axis wait 15]
+end
+
+to demo.19
+perspective
+cs
+setturtle -1
+setxyz 500 500 1000
+setturtle 0
+repeat 36 [rr 10 ellipsa2 180 100 100 0 ellipsa2 -180 100 100 0]
+end
+
+to Demo.20
+perspective
+cs
+setsc [0 0 0]
+clearpalette
+setturtle -3
+setxyz 207 243 97
+setturtle 0
+ht
+pu
+Sphere 150 10 [128 0 0]
+polyview
+pd
+end
+
+to demo.21
+wrap
+clearpalette
+setsc [255 255 255]
+cs
+win
+end
+
+to demo.22
+end
+
+to hanoi :number 
+;
+; Towers of Hanoi
+; Meyer A. Billmers
+; November, 1983
+;
+; This procedure plays a graphic version of the Towers of Hanoi puzzle
+; The argument is the number of disks in the configuration.
+;
+; c.f. hanoi.putdisk, hanoi.towercnt,hanoi.towerset, hanoi.helper
+; 
+local "from
+local "to
+local "other
+local "datfil
+;make "datfil openw "hanoi.dat
+;fileprint :datfil (sentence [Hanoi of ] :number [towers Started at: ] time)
+; to change the starting and ending needles, change the next three assignments
+make "from 1
+make "to 3
+make "other 2
+cs
+ht
+penpaint
+setpensize [5 5]
+; first we draw the table and the golden needles
+setpencolor [255 0 0]
+pu
+setxy -350 -100
+pd
+setxy 350 -100
+pu
+setx -240
+pd
+fd 250
+pu
+setxy -15 -100
+pd
+fd 250
+pu
+setxy 210 -100
+pd
+fd 250
+localmake "tower1 0
+localmake "tower2 0
+localmake "tower3 0
+; draw the initial stack of disks. note that hanoi.putdisk draws the 
+; "fixed up" towers.
+repeat :number ~
+   [~
+   hanoi.putdisk :from :number - repcount + 1 "final ~
+   ifelse :from = 1 ~
+      [make "tower1 :tower1 + 1] ~
+      [ifelse :from = 2 ~
+         [make "tower2 :tower2 + 1] ~
+         [make "tower3 :tower3 + 1] ~
+      ] ~
+   ]
+hanoi.helper :number :from :to :other
+; fileprint :datfil (sentence [Hanoi Ended at: ] time)
+; close :datfil
+end
+
+to hanoi.helper :number :from :to :other
+;
+; Called by HANOI. Contains the actual recursive Towers of Hanoi algorithm
+;
+local "tcf 
+local "tct
+if equalp :number 0 [stop]
+hanoi.helper :number-1 :from :other :to
+make "tcf hanoi.towercnt :from
+make "tct hanoi.towercnt :to
+hanoi.towerset :from :tcf - 1
+hanoi.putdisk :from :number "temp
+hanoi.putdisk :to :number "temp
+hanoi.putdisk :from :number "erase
+hanoi.putdisk :to :number "final
+hanoi.towerset :to :tct + 1
+hanoi.helper :number-1 :other :to :from
+end
+
+to hanoi.putdisk :tnum :dnum :state
+;
+; Called by HANOI to put a disk on a tower.
+; first arg. is number of tower (1,2 or 3)
+; second arg. is number of disk to draw (1 is smallest)
+; third arg. is "final, "temp, or "erase depending on whether
+;   disk is drawn in final state, in temporary state to indicate
+;   motion, or is being erased (removed from this tower)
+; Note that this procedure re-draws the tower correctly.
+;
+local "tc
+local "halfsize
+make "tc hanoi.towercnt :tnum
+make "halfsize sum 20 product :dnum 10
+pu
+ifelse :tnum = 1 ~
+   [setxy "-240 "-100] ~
+   [ ~
+   ifelse :tnum = 2 ~
+      [setxy "-15 "-100] ~
+      [setxy 210 "-100] ~
+   ]
+pe
+fd product 30 :tc
+pu
+setxy xcor - :halfsize ycor
+pd
+penpaint
+ifelse :state = "final ~
+   [setpencolor [0 255 0]] ~
+   [ ~
+   ifelse :state = "temp ~
+      [setpencolor [0 0 255]] ~
+      [pe] ~
+   ]
+fd 30
+rt 90
+fd product :halfsize 2
+rt 90
+fd 30
+rt 90
+pu
+fd :halfsize
+rt 90
+setpencolor [255 0 0]
+ifelse :state = "erase ~
+   [ ~
+   pd ~
+   penpaint ~
+   fd 30 ~
+   ] ~
+   [ ~
+   pe ~
+   fd 30 ~
+   ]
+end
+
+to hanoi.towercnt :tn
+;
+; Called by HANOI. Returns the current number of disks on tower :tn,
+; as stored in the globals tower1, tower2, and tower3.
+;
+ifelse :tn = 1 ~
+   [output :tower1] ~
+   [ ~
+   ifelse :tn = 2 ~
+      [output :tower2] ~
+      [output :tower3] ~
+   ]
+end
+
+to hanoi.towerset :tn :value
+;
+; Called by HANOI. Sets the current number of disks on tower :tn,
+; as stored in the globals tower1, tower2, and tower3.
+;
+ifelse :tn = 1 ~
+   [make "tower1 :value] ~
+   [ ~
+   ifelse :tn = 2 ~
+      [make "tower2 :value] ~
+      [make "tower3 :value] ~
+   ]
+wait 10
+end
+
+to rose :size :petalcount :function
+localmake "ctr 0
+do.while ~
+   [ ~
+   rose.line :size ~
+   rt 360 / :petalcount ~
+   make "ctr :ctr + 1 ~
+   run :function ~
+   ] ~
+   [:ctr < :petalcount]
+end
+
+to rose.line :length
+fd :length / 2
+pu
+bk :length
+pd
+fd :length / 2
+end
+
+to spiral :angle :repeat :incr :segs
+;; 
+;; Spirals, by Meyer A. Billmers
+;;  
+;; This procedure makes pretty spirals. I suggest you first do a 
+;; hideturtle so the drawing will proceed at a reasonable rate.
+;; 
+;; angle   is the amount of turn at each piece, 
+;; repeat  is the number of turns before the distance is incremented, and
+;; incr    is the amount of distance increment.
+;; 
+;; Suggested fun spirals:
+;;     spiral 90 2 10
+;;     spiral 91 2 10
+;;     spiral 60 3 10
+;;     spiral 61 3 10
+;;     spiral 179 2 5
+;;     spiral 20 10 4
+;; 
+localmake "len :incr
+localmake "ctr 0
+repeat :segs ~
+  [ ~
+  fd :len ~
+  rt :angle ~
+  make "ctr :ctr + 1 ~
+  if :ctr = :repeat ~
+     [ ~
+     make "ctr 0 ~
+     make "len :len + :incr ~
+     ] ~
+  wait 2
+  ]
+end
+
+to win
+make "cmw 75
+make "cmh 30
+make "sth 12
+make "lsw :cmw
+make "lsh 20
+make "scw 10
+make "sch 40
+make "btw 50
+make "bth 12
+make "gapx 6
+make "gapy 6
+make "mary 2
+make "wnx 180
+make "wny 120
+make "wnx2 round :wnx / 2
+make "wny2 round :wny / 2
+make "wnx3 round :wnx / 3
+make "wny3 round :wny / 3
+make "wnx6 round :wnx / 6
+make "wny6 round :wny / 6
+make "st2w 30
+make "row2 :wny3+:gapy
+make "row3 :wny3*2-:gapy/2
+
+buryname "cmw
+buryname "cmh
+buryname "sth
+buryname "lsw
+buryname "lsh
+buryname "scw
+buryname "sch
+buryname "btw
+buryname "bth
+buryname "gapx
+buryname "gapy
+buryname "mary
+buryname "wnx
+buryname "wny
+buryname "wnx2
+buryname "wny2
+buryname "wnx3
+buryname "wny3
+buryname "wnx6
+buryname "wny6
+buryname "st2w
+buryname "row2
+buryname "row3
+
+windowcreate "main "d1 [This is a Demo Windows Application] 0 0 :wnx+:gapy :wny+:gapy+5 [win.setup]
+end
+
+to win.blue
+staticupdate "st13 sentence [Blue] scrollbarget "s3
+end
+
+to win.drawthing
+setpencolor (list scrollbarget "s1 scrollbarget "s2 scrollbarget "s3)
+ifelse checkboxget "cb1 [ht] [st]
+ifelse checkboxget "cb2 [status] [nostatus]
+repeat scrollbarget "s4~
+  [~
+  if equalp [HEXAGON] listboxgetselect "l1 [repeat 6 [fd 100 rt 60]]~
+  if equalp [SQUARE] listboxgetselect "l1 [repeat 4 [fd 100 rt 90]]~
+  if equalp [TRIANGLE] listboxgetselect "l1 [repeat 3 [fd 100 rt 120]]~
+  run comboboxgettext "c2~
+  ]
+end
+
+to win.end
+windowdelete "d1
+end
+
+to win.green
+staticupdate "st12 sentence [Grn] scrollbarget "s2
+end
+
+to win.nil
+end
+
+to win.red
+staticupdate "st11 sentence [Red] scrollbarget "s1 
+end
+
+to win.repeat
+staticupdate "st14 sentence [Repeat Count] scrollbarget "s4 
+end
+
+to win.setup
+staticcreate "d1 "st2 [Run mode] :gapx :mary :cmw :sth
+groupboxcreate "d1 "g1 :gapx :sth+:mary :cmw :cmh
+checkboxcreate "d1 "g1 "cb1 [Hide Turtle] :gapx+:gapx :sth+:mary+:gapy :btw :bth
+checkboxcreate "d1 "g1 "cb2 [Status]      :gapx+:gapx :sth+:mary+:bth+4 :btw :bth
+
+staticcreate "d1 "st3 [Select Post-Command] :wnx2+:gapx :mary :cmw :sth
+comboboxcreate "d1 "c2 :wnx2+:gapx :sth+:mary :cmw :cmh
+comboboxaddstring "c2 [RT 2]
+comboboxaddstring "c2 [RT 5]
+comboboxaddstring "c2 [RT 10]
+comboboxsettext "c2 [RT 5]
+
+staticcreate "d1 "st4 [Select Shape] :gapx :row2 :lsw :sth
+listboxcreate "d1 "l1 :gapx :row2+:sth+1 :lsw :lsh
+listboxaddstring "l1 "SQUARE
+listboxaddstring "l1 "TRIANGLE
+listboxaddstring "l1 "HEXAGON
+
+staticcreate "d1 "st11 "Red :wnx6*3+:gapx-5 :row2 :st2w :sth
+scrollbarcreate "d1 "s1 :wnx6*3+:gapx :row2+:sth :scw :sch [win.red]
+scrollbarset "s1 1 255 125 win.red
+
+staticcreate "d1 "st12 "Grn :wnx6*4+:gapx-5 :row2 :st2w :sth
+scrollbarcreate "d1 "s2 :wnx6*4+:gapx :row2+:sth :scw :sch [win.green]
+scrollbarset "s2 1 255 125 win.green
+
+staticcreate "d1 "st13 "Blue :wnx6*5+:gapx-5 :row2 :st2w :sth
+scrollbarcreate "d1 "s3 :wnx6*5+:gapx :row2+:sth :scw :sch [win.blue]
+scrollbarset "s3 1 255 125 win.blue
+
+staticcreate "d1 "st14 [Repeat Count] :gapx :row3 :sch*2 :sth
+scrollbarcreate "d1 "s4 :gapx :row3+:sth :sch*2 :scw [win.repeat]
+scrollbarset "s4 1 360 72 win.repeat
+
+buttoncreate "d1 "b1 "END :gapx :wny-:bth-:gapy :btw :bth [win.end]
+buttoncreate "d1 "b3 "CLEAR :wnx2-:btw/2 :wny-:bth-:gapy :btw :bth [cs]
+buttoncreate "d1 "b2 "DRAW :wnx-:btw-:gapx :wny-:bth-:gapy :btw :bth [win.drawthing]
+end
+
+to win.static
+staticupdate "st14 sentence [Repeat Count] scrollbarget "s4 
+end
+
+to GetPoint :rad
+   fd :rad
+   localmake "pos posxyz
+   bk :rad
+   output :pos
+end
+
+to Slice :rad :step
+   ; Draw an "orange" slice (just the outside surface)
+   up 90
+   localmake "i 0
+   repeat 360/:step ~
+     [
+     down :i
+     localmake "PointA GetPoint :rad
+     down :step
+     localmake "PointB GetPoint :rad
+     up :step
+     up :i
+     rt :step
+     down :i
+     localmake "PointD GetPoint :rad
+     down :step
+     localmake "PointC GetPoint :rad
+     up :step
+     up :i
+     lt :step
+     localmake "PointE posxyz
+     setposxyz :PointA
+     pd
+     polystart
+     setposxyz :PointB
+     setposxyz :PointC
+     setposxyz :PointD
+     setposxyz :PointA
+     polyend
+     pu
+     setposxyz :PointE
+     make "i :i + :step
+     ]
+   down 90
+end
+
+to Sphere :rad :step :color
+   setpc :color
+   ; Cover the surface of the sphere with polygons
+   repeat 180/:step [Slice :rad :step rr :step]
+   rr 180
+end
+
+bury "axis
+bury "cube
+bury "demo
+bury "demo.00
+bury "demo.01
+bury "demo.02
+bury "demo.03
+bury "demo.04
+bury "demo.05
+bury "demo.06
+bury "demo.07
+bury "demo.08
+bury "demo.09
+bury "demo.10
+bury "demo.11
+bury "demo.12
+bury "demo.13
+bury "demo.14
+bury "demo.15
+bury "demo.16
+bury "demo.17
+bury "demo.18
+bury "demo.19
+bury "demo.20
+bury "demo.21
+bury "demo.22
+bury "hanoi
+bury "hanoi.helper
+bury "hanoi.putdisk
+bury "hanoi.towercnt
+bury "hanoi.towerset
+bury "rose
+bury "rose.line
+bury "spiral
+bury "win
+bury "win.blue
+bury "win.drawthing
+bury "win.end
+bury "win.green
+bury "win.nil
+bury "win.red
+bury "win.repeat
+bury "win.setup
+bury "win.static
+bury "sphere
+bury "getpoint
+bury "slice

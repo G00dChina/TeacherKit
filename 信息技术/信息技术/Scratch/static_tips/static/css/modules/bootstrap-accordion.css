@@ -1,0 +1,15 @@
+.accordion {margin-bottom: 18px;}
+.accordion .accordion-group {margin-bottom: .1em;}
+.accordion .accordion-heading {border-bottom: 0;}
+.accordion .accordion-heading .accordion-toggle {display: block;}
+.accordion .accordion-inner {padding: 5px 10px;}
+.accordion .collapse {
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -ms-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}

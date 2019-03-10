@@ -1,0 +1,190 @@
+to aaa
+;
+; Function:
+;
+; Sovles the towers of hanoi puzzle
+; The :arg is the desired number of disks to start with
+;
+; To run:
+;
+; load "hanoi.lgo
+; Call hanoi :arg
+;
+; Example:
+;
+hanoi 5
+;
+end
+
+to hanoi :number 
+;
+; Towers of Hanoi
+; Meyer A. Billmers
+; November, 1983
+;
+; This procedure plays a graphic version of the Towers of Hanoi puzzle
+; The argument is the number of disks in the configuration.
+;
+; c.f. putdisk, towercnt,towerset, hanoihlpr
+; 
+local "from
+local "to
+local "other
+local "datfil
+;make "datfil openw "hanoi.dat
+;fileprint :datfil (sentence [Hanoi of ] :number [towers Started at: ] time)
+; to change the starting and ending needles, change the next three assignments
+make "from 1
+make "to 3
+make "other 2
+cs
+ht
+penpaint
+setpensize [5 5]
+; first we draw the table and the golden needles
+setpencolor [255 0 0]
+pu
+setxy -350 -100
+pd
+setxy 350 -100
+pu
+setx -240
+pd
+fd 250
+pu
+setxy -15 -100
+pd
+fd 250
+pu
+setxy 210 -100
+pd
+fd 250
+make "tower1 0
+make "tower2 0
+make "tower3 0
+; draw the initial stack of disks. note that putdisk draws the 
+; "fixed up" towers.
+repeat :number ~
+   [~
+   putdisk :from :number - repcount + 1 "final ~
+   ifelse :from = 1 ~
+      [make "tower1 :tower1 + 1] ~
+      [ifelse :from = 2 ~
+         [make "tower2 :tower2 + 1] ~
+         [make "tower3 :tower3 + 1] ~
+      ] ~
+   ]
+hanoihlpr :number :from :to :other
+; fileprint :datfil (sentence [Hanoi Ended at: ] time)
+; close :datfil
+end
+
+to hanoihlpr :number :from :to :other
+;
+; Called by HANOI. Contains the actual recursive Towers of Hanoi algorithm
+;
+local "tcf 
+local "tct
+if equalp :number 0 [stop]
+hanoihlpr :number-1 :from :other :to
+make "tcf towercnt :from
+make "tct towercnt :to
+towerset :from :tcf - 1
+putdisk :from :number "temp
+putdisk :to :number "temp
+putdisk :from :number "erase
+putdisk :to :number "final
+towerset :to :tct + 1
+hanoihlpr :number-1 :other :to :from
+end
+
+to putdisk :tnum :dnum :state
+;
+; Called by HANOI to put a disk on a tower.
+; first arg. is number of tower (1,2 or 3)
+; second arg. is number of disk to draw (1 is smallest)
+; third arg. is "final, "temp, or "erase depending on whether
+;   disk is drawn in final state, in temporary state to indicate
+;   motion, or is being erased (removed from this tower)
+; Note that this procedure re-draws the tower correctly.
+;
+local "tc
+local "halfsize
+make "tc towercnt :tnum
+make "halfsize sum 20 product :dnum 10
+pu
+ifelse :tnum = 1 ~
+   [setxy "-240 "-100] ~
+   [ ~
+   ifelse :tnum = 2 ~
+      [setxy "-15 "-100] ~
+      [setxy 210 "-100] ~
+   ]
+pe
+fd product 30 :tc
+pu
+setxy xcor - :halfsize ycor
+pd
+penpaint
+ifelse :state = "final ~
+   [setpencolor [0 255 0]] ~
+   [ ~
+   ifelse :state = "temp ~
+      [setpencolor [0 0 255]] ~
+      [pe] ~
+   ]
+fd 30
+rt 90
+fd product :halfsize 2
+rt 90
+fd 30
+rt 90
+pu
+fd :halfsize
+rt 90
+setpencolor [255 0 0]
+ifelse :state = "erase ~
+   [ ~
+   pd ~
+   penpaint ~
+   fd 30 ~
+   ] ~
+   [ ~
+   pe ~
+   fd 30 ~
+   ]
+end
+
+to towercnt :tn
+;
+; Called by HANOI. Returns the current number of disks on tower :tn,
+; as stored in the globals tower1, tower2, and tower3.
+;
+ifelse :tn = 1 ~
+   [output :tower1] ~
+   [ ~
+   ifelse :tn = 2 ~
+      [output :tower2] ~
+      [output :tower3] ~
+   ]
+end
+
+to towerset :tn :value
+;
+; Called by HANOI. Sets the current number of disks on tower :tn,
+; as stored in the globals tower1, tower2, and tower3.
+;
+ifelse :tn = 1 ~
+   [make "tower1 :value] ~
+   [ ~
+   ifelse :tn = 2 ~
+      [make "tower2 :value] ~
+      [make "tower3 :value] ~
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

@@ -1,0 +1,150 @@
+to aaa
+;
+; This example ROTATEs a Bitmap in 3D with PIXEL/SETPIXEL
+; Takes a good 5 minutes on a P200
+;
+; It works by "scanning" the 2D Image pixel by pixel and
+; places that pixel in 3D space.
+;
+; It assumes you have a common bitmap c:\windows\forest.bmp
+; If it's not there change it to what ever you like.
+; But don't make it much bigger than say 200x200 pixels.
+;
+; Experiment:
+;
+; Try mapping the image to a cylinder rather than cube.
+; Just form an "ARC" using ARC2 as the base for
+; each scan line rather than a straight line. Right
+; now that is a straight line in NextLine3D by the
+; command FD 1.
+;
+; But remember MSWLogo does not do hidden surface/line
+; removal. Don't go all the way around. Or if you do draw
+; the side facing you last (go around the back then then
+; front).
+;
+cs
+ht
+pu
+; Reset scrollers
+scrollx 0
+scrolly 0
+scrolly -500
+; Place image to be scanned here
+setxy 200 200
+make "size bitloadsize "c:\\windows\\forest.bmp
+bitload "c:\\windows\\forest.bmp
+; Enable 3D mode
+perspective
+;
+; Position Eye such that the size of something in 2D is the
+; same size as it would be if it were on the XY plane in 3D.
+; I found this by trial and error and debated whether to
+; make it the default instead of 1000.
+;
+; Do to this right we could of jumped back and forth between
+; PERSPETIVE and WRAP but PERSPECTIVE is expensive operation
+; because it initializes a lot of things.
+;
+; Another right way would of been to scan the whole image in
+; WRAP mode into a Logo Array and then blast that array out
+; in PERSPECTIVE where ever we want it.
+;
+setturtle -1
+setxyz 0 0 855
+setturtle 0
+;
+; All the images are placed high in Y axis so we can see under
+; the cube. We could of moved turtle -1 as we normally do for a
+; better view but it's already critcally set such that we can
+; scan the 2D image easily while in 3D.
+;
+; Position and orientation in 3D to place 1st image
+setposxyz [-100 200 0]
+setorientation [0 0 0]
+rr 45
+DrawImage3D
+; Position and orientation in 3D to place 2nd image
+setposxyz [-100 200 0]
+setorientation [0 0 0]
+rr 135
+DrawImage3D
+; Position and orientation in 3D to place 3rd image
+setposxyz [-100 200 0]
+setorientation [0 0 0]
+rr 135
+up 90
+DrawImage3D
+end
+
+to DrawDot3D :color
+; Save 2D image position and orientation
+make "savepos2d posxyz
+make "saveori2d orientation
+; Restore 3D image position and orientation
+setposxyz :savepos3d
+setorientation :saveori3d
+; Now draw the dot we scanned in on the 2D image in 3D space
+setpixel :color
+; Next dot
+fd 1
+; Save 3D image position and orientation
+make "savepos3d posxyz
+make "saveori3d orientation
+; Restore 2D image position and orientation
+setposxyz :savepos2d
+setorientation :saveori2d
+end
+
+to DrawImage3D
+; Save our initial position and orientation
+make "savepos3d posxyz
+make "saveori3d orientation
+; Go to start of image to scan
+setxyz 200 200 0
+setorientation [0 0 0]
+; Scan "2D" image while still in 3D
+repeat item 1 :size ~
+   [
+   repeat item 2 :size ~
+      [
+      ; Draw the pixel we are on in the 3D cube
+      DrawDot3D pixel
+      ; Next dot to scan
+      fd 1
+      ]
+   ; Next line to scan
+   bk item 2 :size
+   rt 90
+   fd 1
+   lt 90
+   ; Next line to draw in 3D cube
+   NextLine3D :size
+   ]
+end
+
+to NextLine3D :size
+; Save 2D image position and orientation
+make "savepos2d posxyz
+make "saveori2d orientation
+; Restore 3D image position and orientation
+setposxyz :savepos3d
+setorientation :saveori3d
+; Next scan line (notice it looks just 2D code)
+bk item 2 :size
+rt 90
+fd 1
+lt 90
+; Save 3D image position and orientation
+make "savepos3d posxyz
+make "saveori3d orientation
+; Restore 2D image position and orientation
+setposxyz :savepos2d
+setorientation :saveori2d
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

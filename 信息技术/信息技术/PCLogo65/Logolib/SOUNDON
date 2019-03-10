@@ -1,0 +1,10 @@
+to soundon :Freq
+   localmake "count round 1193180 / :Freq
+
+   OUTPORTB 67 182
+   OUTPORTB 66 :count
+   OUTPORTB 66 ashift :count -8
+   OUTPORTB 97 bitor 3 INPORTB 97
+end
+
+bury "soundon

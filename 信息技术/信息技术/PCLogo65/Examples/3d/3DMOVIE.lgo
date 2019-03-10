@@ -1,0 +1,130 @@
+to aaa
+; This example shows how circles, ellipses etc. can also be
+; used to define polygons. Note that I lucked out a bit on
+; this example and I'm not sure why. Placing one polygon (a flower)
+; coincidently on another (box face) is unpredictable as to which
+; will be visible. I thought I was going to have to raise the
+; flower just a tad away from the box face to have it work reliably.
+; but it turned I did not have to do this. I believe it has to
+; to with the order I did things. Another order may of placed
+; all the flower inside the box. But if I had raise the flower
+; off the surface order would not matter.
+;
+; When the program is done you'll see a 3dmovie.gif file that
+; you can view with your favorite browser.
+
+Perspective
+ask -1 [setxyz 500 500 500]
+ask -3 [setxyz 264 279 90]
+setsc 0
+
+; Set the frame size for the movie
+setactivearea [-100 -100 275 450]
+
+; I love to timing things don't I
+localmake "start timemilli
+
+flowerboxmovie 6 100
+show (timemilli - :start) / 600
+
+MessageBox [Done] [Use Netscape or Internet Explorer to view 3DMOVIE.GIF file just produced]
+
+; This is what I used to arrive at a good light placement (nothing scientific here :-))
+stop
+repeat 100 [ask -3 [setxyz random 300 random 300 random 300] wait 60]
+end
+
+to flower
+; All I had to do was add polystart/polyend around my already existing polygons
+setpc [255 255 0]
+polystart
+circle 10
+polyend
+setpc [255 0 0]
+repeat 8 ~
+   [
+   pu
+   fd 10+20
+   pd
+   polystart
+   ellipse 10 20
+   polyend
+   pu
+   bk 10+20
+   pd
+   rt 45
+   ]
+end
+
+to flowerboxmovie :frames :delay
+; First time through the loop you tell gifsave to
+; not append but start a new movie
+localmake "append "False
+repeat :frames ~
+   [
+   cs
+   floweredbox repcount*90/:frames
+   polyview
+   ; Save a frame (with delay and loop forever)
+   (gifsave "3dmovie.gif :delay :append 0)
+   make "append "True
+   ]
+end
+
+to floweredbox :closure
+; This draws one flowered box where :closure defines
+; how folded up it is.
+lt 90
+down :closure
+squareflower
+up :closure
+rt 180
+fd 100
+lt 90
+fd 100
+rt 90
+down :closure
+squareflower
+up :closure
+lt 90
+bk 100
+rt 90
+bk 100
+lt 90
+repeat 4 ~
+   [
+   squareflower
+   fd 100
+   downpitch :closure
+   ]
+end
+
+to square
+; This one should be pretty familiar
+setpc [0 0 255]
+polystart
+repeat 4 [fd 100 rt 90]
+polyend
+end
+
+to squareflower
+; This draws one face with a flower placed at the center
+pu
+fd 50
+rt 90
+fd 50
+pd
+flower
+pu
+bk 50
+lt 90
+bk 50
+pd
+square
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

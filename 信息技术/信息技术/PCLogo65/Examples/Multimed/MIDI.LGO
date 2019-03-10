@@ -1,0 +1,380 @@
+to aaa
+;
+; Function:
+;
+; This routine will simulate a MIDI keyboard
+;
+; To run:
+;
+; load "midi.lgo
+; Call MIDI (or let it auto-execute)
+;
+; System requirements:
+;
+; You must have Windows 3.1 (or 3.0 with Multi-Media Extentions)
+; You must have the correct driver loaded in Windows for your sound card.
+; You must have a sound card.
+;
+; Example:
+;
+midi
+end
+
+to chan
+make "chan 17-scrollbarget "sc3
+staticupdate "st3 (list "Channel :chan)
+setfocus [MswLogo Screen]
+end
+
+to changespeed
+make "recordspeed 60-scrollbarget "sspeed
+staticupdate "stspeed (list "Speed 60-:recordspeed)
+setfocus [MswLogo Screen]
+end
+
+to dohelp
+drawkeys
+messagebox [Help] [\
+The picture drawn shows how your keyboard maps to notes\
+The keyboard key C is Middle C when the Octave is set to 3\
+The Main Window must have focus for keyboard to work\
+You may have to try different channels to get things to work\
+]
+messagebox [Help] [\
+Velocity is how hard you hit the keys\
+Octave moves your keyboard up or down an octave\
+Volume sets the volume\
+Channel selects the channel (MIDI MAPPER is being used)\
+]
+setfocus [MswLogo Screen]
+end
+
+to drawkey :arg
+label :arg
+repeat 4 [fd 25 rt 90]
+fd 25
+end
+
+to drawkeys
+cs
+pu
+setxy -200 0
+pd
+rt 90
+drawkey "A
+drawkey "B
+drawkey "C
+drawkey "D
+drawkey "E
+drawkey "F
+drawkey "G
+drawkey "A
+drawkey "B
+drawkey "C
+pu
+setxy -212 25
+pd
+drawkey "G#
+drawkey "A#
+drawkey "-
+drawkey "C#
+drawkey "D#
+drawkey "-
+drawkey "F#
+drawkey "G#
+drawkey "A#
+drawkey "-
+drawkey "C#
+end
+
+to inst
+local "inst
+make "inst listboxgetselect "foo
+staticupdate "st4 fput "Instrument :inst
+midimessage (list 192+:chan first :inst 0)
+midimessage (list 192+:chan first :inst 0)
+setfocus [MswLogo Screen]
+end
+
+to keydown
+local "thekey
+local "note
+make "thekey keyboardvalue
+make "note item :thekey :themap
+if not equalp :note -10 ~
+  [~
+  midimessage (list 144+:chan :octa+:note :velo)~
+  if :recording [recordmessage (list 144+:chan :octa+:note :velo)]~
+  ]
+end
+
+to keyup
+local "thekey
+local "note
+make "thekey keyboardvalue
+make "note item :thekey :themap
+if not equalp :note -10 ~
+  [~
+  midimessage (list 144+:chan :octa+:note 0)~
+  if :recording [recordmessage (list 144+:chan :octa+:note 0)]~
+  ]
+end
+
+to midi
+print midiopen
+(keyboardon [keydown] [keyup])
+windowcreate "root "main "main 0 0 185 185 [midisetup]
+midiinit
+make "recording "false
+make "recordnotes array 1000
+make "recordcount 0
+end
+
+to midiinit
+listboxaddstring "foo [000 Acoustic Grand Piano]
+listboxaddstring "foo [001 Bright Acoustic Piano]
+listboxaddstring "foo [002 Electric Grand Piano]
+listboxaddstring "foo [003 Honky-tonk Piano]
+listboxaddstring "foo [004 Rhodes Piano]
+listboxaddstring "foo [005 Chorused Piano]
+listboxaddstring "foo [006 Harpsichord]
+listboxaddstring "foo [007 Clavinet]
+listboxaddstring "foo [008 Celesta]
+listboxaddstring "foo [009 Glockenspiel]
+listboxaddstring "foo [010 Music box]
+listboxaddstring "foo [011 Vibraphone]
+listboxaddstring "foo [012 Marimba]
+listboxaddstring "foo [013 Xylophone]
+listboxaddstring "foo [014 Tubular Bells]
+listboxaddstring "foo [015 Dulcimer]
+listboxaddstring "foo [016 Hammond Organ]
+listboxaddstring "foo [017 Percussive Organ]
+listboxaddstring "foo [018 Rock Organ]
+listboxaddstring "foo [019 Church Organ]
+listboxaddstring "foo [020 Reed Organ]
+listboxaddstring "foo [021 Accordian]
+listboxaddstring "foo [022 Harmonica]
+listboxaddstring "foo [023 Tango Accordian]
+listboxaddstring "foo [024 Acoustic Guitar (nylon)]
+listboxaddstring "foo [025 Acoustic Guitar (steel)]
+listboxaddstring "foo [026 Electric Guitar (jazz)]
+listboxaddstring "foo [027 Electric Guitar (clean)]
+listboxaddstring "foo [028 Electric Guitar (muted)]
+listboxaddstring "foo [029 Overdriven Guitar]
+listboxaddstring "foo [030 Distortion Guitar]
+listboxaddstring "foo [031 Guitar Harmonics]
+listboxaddstring "foo [032 Acoustic Bass]
+listboxaddstring "foo [033 Electric Bass (finger)]
+listboxaddstring "foo [034 Electric Bass (pick)]
+listboxaddstring "foo [035 Fretless Bass]
+listboxaddstring "foo [036 Slap Bass 1]
+listboxaddstring "foo [037 Slap Bass 2]
+listboxaddstring "foo [038 Synth Bass 1]
+listboxaddstring "foo [039 Synth Bass 2]
+listboxaddstring "foo [040 Violin]
+listboxaddstring "foo [041 Viola]
+listboxaddstring "foo [042 Cello]
+listboxaddstring "foo [043 Contrabass]
+listboxaddstring "foo [044 Tremolo Strings]
+listboxaddstring "foo [045 Pizzicato Strings]
+listboxaddstring "foo [046 Orchestral Harp]
+listboxaddstring "foo [047 Timpani]
+listboxaddstring "foo [048 String Ensemble 1]
+listboxaddstring "foo [049 String Ensemble 2]
+listboxaddstring "foo [050 Synth Strings 1]
+listboxaddstring "foo [051 Synth Strings 2]
+listboxaddstring "foo [052 Choir Aahs]
+listboxaddstring "foo [053 Voice Oohs]
+listboxaddstring "foo [054 Synth Voice]
+listboxaddstring "foo [055 Orchestra Hit]
+listboxaddstring "foo [056 Trumpet]
+listboxaddstring "foo [057 Trombone]
+listboxaddstring "foo [058 Tuba]
+listboxaddstring "foo [059 Muted Trumpet]
+listboxaddstring "foo [060 French Horn]
+listboxaddstring "foo [061 Brass Section]
+listboxaddstring "foo [062 Synth Brass 1]
+listboxaddstring "foo [063 Synth Brass 2]
+listboxaddstring "foo [064 Soprano Sax]
+listboxaddstring "foo [065 Alto Sax]
+listboxaddstring "foo [066 Tenor Sax]
+listboxaddstring "foo [067 Baritone Sax]
+listboxaddstring "foo [068 Oboe]
+listboxaddstring "foo [069 English Horn]
+listboxaddstring "foo [070 Bassoon]
+listboxaddstring "foo [071 Clarinet]
+listboxaddstring "foo [072 Piccolo]
+listboxaddstring "foo [073 Flute]
+listboxaddstring "foo [074 Recorder]
+listboxaddstring "foo [075 Pan Flute]
+listboxaddstring "foo [076 Bottle Blow]
+listboxaddstring "foo [077 Shakuhachi]
+listboxaddstring "foo [078 Whistle]
+listboxaddstring "foo [079 Ocarina]
+listboxaddstring "foo [080 Lead 1 (square)]
+listboxaddstring "foo [081 Lead 2 (sawtooth)]
+listboxaddstring "foo [082 Lead 3 (caliope lead)]
+listboxaddstring "foo [083 Lead 4 (chiff lead)]
+listboxaddstring "foo [084 Lead 5 (charang)]
+listboxaddstring "foo [085 Lead 6 (voice)]
+listboxaddstring "foo [086 Lead 7 (fifths)]
+listboxaddstring "foo [087 Lead 8 (brass + lead)]
+listboxaddstring "foo [088 Pad 1 (new age)]
+listboxaddstring "foo [089 Pad 2 (warm)]
+listboxaddstring "foo [090 Pad 3 (polysynth)]
+listboxaddstring "foo [091 Pad 4 (choir)]
+listboxaddstring "foo [092 Pad 5 (bowed)]
+listboxaddstring "foo [093 Pad 6 (metallic)]
+listboxaddstring "foo [094 Pad 7 (halo)]
+listboxaddstring "foo [095 Pad 8 (sweep)]
+listboxaddstring "foo [096 FX 1 (rain)]
+listboxaddstring "foo [097 FX 2 (soundtrack)]
+listboxaddstring "foo [098 FX 3 (crystal)]
+listboxaddstring "foo [099 FX 4 (atmosphere)]
+listboxaddstring "foo [100 FX 5 (brightness)]
+listboxaddstring "foo [101 FX 6 (goblins)]
+listboxaddstring "foo [102 FX 7 (echoes)]
+listboxaddstring "foo [103 FX 8 (sci-fi)]
+listboxaddstring "foo [104 Sitar]
+listboxaddstring "foo [105 Banjo]
+listboxaddstring "foo [106 Shamisen]
+listboxaddstring "foo [107 Koto]
+listboxaddstring "foo [108 Kalimba]
+listboxaddstring "foo [109 Bagpipe]
+listboxaddstring "foo [110 Fiddle]
+listboxaddstring "foo [111 Shanai]
+listboxaddstring "foo [112 Tinkle Bell]
+listboxaddstring "foo [113 Agogo]
+listboxaddstring "foo [114 Steel Drums]
+listboxaddstring "foo [115 Woodblock]
+listboxaddstring "foo [116 Taiko Drum]
+listboxaddstring "foo [117 Melodic Tom]
+listboxaddstring "foo [118 Synth Drum]
+listboxaddstring "foo [119 Reverse Cymbal]
+listboxaddstring "foo [120 Guitar Fret Noise]
+listboxaddstring "foo [121 Breath Noise]
+listboxaddstring "foo [122 Seashore]
+listboxaddstring "foo [123 Bird Tweet]
+listboxaddstring "foo [124 Telephone Ring]
+listboxaddstring "foo [125 Helicopter]
+listboxaddstring "foo [126 Applause]
+listboxaddstring "foo [127 Gunshot]
+scrollbarset "sc3 1 16 9
+chan
+scrollbarset "sc1 1 127 1
+scrollbarset "sc2 1 127 1
+scrollbarset "sc4 1 11 6
+scrollbarset "sspeed 1 60 50
+volu
+velo
+octa
+inst
+changespeed
+make "themap array 256
+repeat 256 [setitem repcount :themap -10]
+setitem 65  :themap -4
+setitem 90  :themap -3
+setitem 83  :themap -2
+setitem 88  :themap -1
+setitem 67  :themap 0
+setitem 70  :themap 1
+setitem 86  :themap 2
+setitem 71  :themap 3
+setitem 66  :themap 4
+setitem 78  :themap 5
+setitem 74  :themap 6
+setitem 77  :themap 7
+setitem 75  :themap 8
+setitem 188 :themap 9
+setitem 76  :themap 10
+setitem 190 :themap 11
+setitem 191 :themap 12
+setitem 222 :themap 13
+staticupdate "record2 [Recorder is Stopped]
+end
+
+to midisetup
+groupboxcreate "main [recordit] 10 115 160 35
+groupboxcreate "main [group3] 7 0 165 17
+scrollbarcreate "main [sc3] 105 20 10 40 [chan]
+scrollbarcreate "main [sc2] 145 20 10 40 [velo]
+scrollbarcreate "main [sc4] 65 20 10 40 [octa]
+listboxcreate "main [foo] 45 75 125 25
+buttoncreate "main [brec] [Start] 15 120 45 10 [recordstart]
+buttoncreate "main [bstop] [Stop] 120 120 45 10 [recordstop]
+buttoncreate "main [b3] [End] 65 155 50 10 [myend]
+buttoncreate "main [b2] [Help] 120 155 45 10 [dohelp]
+buttoncreate "main [bplay] [Play] 65 120 50 10 [recordplay]
+buttoncreate "main [b1] [Select] 10 75 30 25 [inst]
+staticcreate "main [record2] [Recorder] 10 105 90 10
+scrollbarcreate "main [sspeed] 65 135 100 10 [changespeed]
+staticcreate "main [stspeed] [Speed] 15 135 45 10
+scrollbarcreate "main [sc1] 25 20 10 40 [volu]
+staticcreate "main [st1] [Volume] 10 5 40 10
+staticcreate "main [st5] [Octave] 50 5 40 10
+staticcreate "main [st3] [Channel] 90 5 40 10
+staticcreate "main [st2] [Velocity] 130 5 40 10
+staticcreate "main [st4] [Instrument] 10 62 160 10
+end
+
+to myend
+midiclose
+keyboardoff
+windowdelete "main
+end
+
+to octa
+make "octa 12-scrollbarget "sc4
+staticupdate "st5 (list "Octave "C :octa-3)
+make "octa ((:octa*12)-12)
+setfocus [MswLogo Screen]
+end
+
+to recordmessage :arg
+make "recordcount :recordcount + 1
+setitem :recordcount :recordnotes :arg
+end
+
+to recordplay
+if :recording [messagebox "Error [Still Recording] stop]
+if equalp :recordcount 0 [messagebox "Error [Nothing recorded] stop]
+staticupdate "record2 [Recorder is Playing]
+repeat :recordcount [midimessage item repcount :recordnotes wait :recordspeed]
+staticupdate "record2 [Recorder is Stopped]
+setfocus [MswLogo Screen]
+end
+
+to recordstart
+if :recording [messagebox "Error [Already started] stop]
+make "recording "true
+make "recordcount 0
+staticupdate "record2 [Recorder is Recording]
+setfocus [MswLogo Screen]
+end
+
+to recordstop
+if not :recording [messagebox "Error [Already stopped] stop]
+make "recording "false
+staticupdate "record2 [Recorder is Stopped]
+setfocus [MswLogo Screen]
+end
+
+to velo
+make "velo 128-scrollbarget "sc2
+staticupdate "st2 (list "Velocity :velo)
+setfocus [MswLogo Screen]
+end
+
+to volu
+local "volu
+make "volu 128-scrollbarget "sc1
+staticupdate "st1 (list "Volume :volu)
+midimessage (list 176+:chan 7 :volu)
+setfocus [MswLogo Screen]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

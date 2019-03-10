@@ -1,0 +1,97 @@
+to aaa
+;
+; Function:
+;
+; Simple Windows Calculator.
+;
+; To run:
+;
+; Load "calc.lgo
+; Call CALC
+;
+; Example:
+;
+calc
+;
+end
+
+to setup
+local "marx make "marx 5
+local "mary make "mary 20
+local "sizx make "sizx 10
+local "sizy make "sizy 10
+
+comboboxcreate "calc "c1 :marx 5 :sizx*9 12
+
+buttoncreate "calc "bd ". :marx+:sizx*0 :mary+:sizy*3 :sizx :sizy [number ".]
+buttoncreate "calc "b0 "0 :marx+:sizx*1 :mary+:sizy*3 :sizx :sizy [number 0]
+buttoncreate "calc "bn "- :marx+:sizx*2 :mary+:sizy*3 :sizx :sizy [negate]
+buttoncreate "calc "b1 "1 :marx+:sizx*0 :mary+:sizy*2 :sizx :sizy [number 1]
+buttoncreate "calc "b2 "2 :marx+:sizx*1 :mary+:sizy*2 :sizx :sizy [number 2]
+buttoncreate "calc "b3 "3 :marx+:sizx*2 :mary+:sizy*2 :sizx :sizy [number 3]
+buttoncreate "calc "b4 "4 :marx+:sizx*0 :mary+:sizy*1 :sizx :sizy [number 4]
+buttoncreate "calc "b5 "5 :marx+:sizx*1 :mary+:sizy*1 :sizx :sizy [number 5]
+buttoncreate "calc "b6 "6 :marx+:sizx*2 :mary+:sizy*1 :sizx :sizy [number 6]
+buttoncreate "calc "b7 "7 :marx+:sizx*0 :mary+:sizy*0 :sizx :sizy [number 7]
+buttoncreate "calc "b8 "8 :marx+:sizx*1 :mary+:sizy*0 :sizx :sizy [number 8]
+buttoncreate "calc "b9 "9 :marx+:sizx*2 :mary+:sizy*0 :sizx :sizy [number 9]
+
+buttoncreate "calc "bm "* :marx+:sizx*4 :mary+:sizy*0 :sizx :sizy [state 1]
+buttoncreate "calc "bq "/ :marx+:sizx*4 :mary+:sizy*1 :sizx :sizy [state 2]
+buttoncreate "calc "ba "+ :marx+:sizx*4 :mary+:sizy*2 :sizx :sizy [state 3]
+buttoncreate "calc "bs "- :marx+:sizx*4 :mary+:sizy*3 :sizx :sizy [state 4]
+
+buttoncreate "calc "be "= :marx+:sizx*4 :mary+:sizy*4+:sizy/2 :sizx :sizy [dofunction]
+buttoncreate "calc "bc "CLEAR :marx :mary+:sizy*4+:sizy/2 :sizx*3 :sizy [clear]
+
+buttoncreate "calc "bend "CLOSE :marx+:sizx*6 :mary+:sizy*4+:sizy/2 :sizx*3 :sizy [myend]
+end
+
+to calc
+local "wnx make "wnx 100
+local "wny make "wny 90
+windowcreate "main "calc [Calculator] 0 0 :wnx :wny [setup]
+end
+
+to clear
+make "function 0
+make "firstarg 0
+comboboxsettext "c1 []
+end
+
+to dofunction
+local "answer
+local "secondarg make "secondarg comboboxgettext "c1
+if :function = 1 [make "answer  (first :firstarg) * (first :secondarg)]
+if :function = 2 [make "answer  (first :firstarg) / (first :secondarg)]
+if :function = 3 [make "answer  (first :firstarg) + (first :secondarg)]
+if :function = 4 [make "answer  (first :firstarg) - (first :secondarg)]
+comboboxsettext "c1 :answer
+end
+
+to myend
+windowdelete "calc
+end
+
+to negate
+comboboxsettext "c1 ((first comboboxgettext "c1) * (-1))
+end
+
+to number :arg
+local "temp make "temp comboboxgettext "c1
+ifelse :temp = []~
+  [comboboxsettext "c1 :arg]~
+  [comboboxsettext "c1 word first :temp :arg]
+end
+
+to state :arg
+make "function :arg
+make "firstarg comboboxgettext "c1
+comboboxsettext "c1 []
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

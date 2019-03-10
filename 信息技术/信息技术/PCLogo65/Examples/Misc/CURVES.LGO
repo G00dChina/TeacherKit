@@ -1,0 +1,99 @@
+to aaa
+;
+; You can generate any number of curves (Koch, Hilbert, Peano etc.)
+; with this. By just defining a new expression. This is the
+; same approach used in the 3D Hilbert except this is 2D.
+; 
+; See the web page below for the different equations.
+;
+; Note: I used P for + and M for - in the equations.
+;
+; Note: In the Koch example F is both a graphics function
+; (forward) and it's a recursive function. To deal with this
+; I replaced all "F" with "KX" and let X do the recursion
+; and K do the graphics (like F but only done at level 1).
+;
+; http://forum.swarthmore.edu/advanced/robertd/lsys2d.html
+;
+; This one is still not quite right.
+;
+;cs pr [Koch]
+;DoFunction [X] [X K P X K M M X K P X K] [] 60 5 4
+;wait 120
+
+cs pr [Sierpinski arrowhead]
+DoFunction [Y F] [Y F P X F P Y] [X F M Y F M X] 60 5 7
+wait 120
+
+cs pr [Square]
+DoFunction [F P X F P F P X F] [X F M F P F M X F P F P X F M F P F M X] [] 90 5 4
+wait 120
+
+cs pr [Hilbert curve]
+DoFunction [X] [P Y F M X F X M F Y P] [M X F P Y F Y P F X M] 90 5 5
+wait 120
+
+cs pr [Dragon]
+DoFunction [X] [X P Y F P] [M F X M Y] 90 5 12
+wait 120
+
+pu
+home
+pd
+pr [Done]
+end
+
+to DoFunction :function_root :function_of_x :function_of_y :angle :siz :lev
+; We are at the top level and we don't want X or Y to decrement :lev
+make "lev :lev + 1
+; Run the base equation (all arguments are passed down implicity)
+run :function_root
+end
+
+to F
+; :siz and :lev implicity passed from FX or FY or DoFunction
+setpc :lev
+;sound (list 200*:lev (:lev*20))
+fd :siz
+end
+
+to FX :siz :lev
+; :function_of_x implicity passed from DoFunction
+if :lev > 0 [run :function_of_x]
+end
+
+to FY :siz :lev
+; :function_of_y implicity passed from DoFunction
+if :lev > 0 [run :function_of_y]
+end
+
+to K
+; :siz and :lev implicity passed from FX or FY or DoFunction
+if (:lev = 1) [fd :siz]
+end
+
+to M
+; :angle implicity passed from DoFunction
+lt :angle
+end
+
+to P
+; :angle implicity passed from DoFunction
+rt :angle
+end
+
+to X
+; :siz and :lev implicity passed from FX or FY or DoFunction
+fx :siz :lev-1
+end
+
+to Y
+; :siz and :lev implicity passed from FX or FY or DoFunction
+fy :siz :lev-1
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

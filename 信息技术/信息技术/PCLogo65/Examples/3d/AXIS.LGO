@@ -1,0 +1,76 @@
+to aaa
+;
+; This example gives you an idea of how 3D space looks.
+;
+; Note also that the object is not moving. Your view onto
+; 3D space is what is moving.
+;
+perspective
+cs
+ht
+; "Fly" the EYE turtle in an ARC around the object and axis
+setturtle -1
+; Now fly at an altitude of 600 feet
+; Do *NOT* remove safety belts, *ALL* flights are non smoking.
+sety 600
+setturtle 0
+; Keep flying
+repeat 72 ~
+  [
+  ; Now fly at a gentle arc aorund object
+  ; Always looking at turtle -2 (which is still at home by default)
+  setturtle -1
+  ; Level out for ARC (we are still pointing +Y axis)
+  lt 90
+  rr 90
+  arc2 5 1000
+  ; Restore to pointing +Y axis because turtle -1 also effects which end is "UP"
+  lr 90
+  rt 90
+  setturtle 0
+  ; Clear screen will not reset turtle -1 or -2 (PERSPECTIVE will though)
+  cs
+  ; Draw the 2 objects always in the same place
+  cube
+  axis
+  wait 10
+  ]
+end
+
+to axis
+;
+; Even though "labels" can't be rolled or pitched
+; they will still be placed at the correct coordinate
+; But turtle heading is still used on labels and is effected by roll and pitch.
+;
+fd 200
+label "+Y
+bk 400
+label "-Y
+fd 200
+rt 90
+fd 200
+label "+X
+bk 400
+label "-X
+fd 200
+lt 90
+down 90
+fd 200
+label "-Z
+bk 400
+label "+Z
+fd 200
+up 90
+end
+
+to cube
+; Draw a wall, climb up it, bend DOWN and draw another...
+repeat 4 [repeat 4 [fd 100 rt 90] fd 100 down 90]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

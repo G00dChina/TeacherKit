@@ -1,0 +1,134 @@
+.help #content{font-size:1.2em} 
+
+.inline-icon-left {padding-left:20px;background-position:left;background-repeat:no-repeat;}
+.inline-icon-right{padding-right:20px;background-position:right;background-repeat:no-repeat;}
+.icon-pdf{background-image: url('../../images/icon-pdf-16x20.png');}
+.icon-eye{background-image: url('../../images/icon-eye-17x12.png');}
+
+.help .box-content {padding:20px;}
+.help form.faq-search {float:none}
+.help form.faq-search > *{background-color:#eee}
+.help .button {padding-left: .5em;padding-right: .5em;}
+.help .thumb-with-subtext img {width:158px;height:128px;border:1px solid #ccc}
+.help .thumb-with-subtext p {width:158px;height:auto}
+.help .thumb-with-subtext{white-space:normal;display:inline-block;width:30%;margin:0 9px;vertical-align:top}
+.help .thumb-with-title-and-sublinks{white-space:normal;display:inline-block;width:auto;margin:0 20px 20px 20px;vertical-align:top;text-align:left;}
+.help .thumb-with-title-and-sublinks .span{}
+.help .thumb-with-title-and-sublinks a {display:block}
+
+.help .rightcol {float:right;width:30%;clear:none;margin-bottom:20px}
+.help .rightcol .box-content{background-color:#FBFBFB}
+.help .rightcol .box{margin-bottom:-10px;position:relative;}
+.help .rightcol .box1{z-index:10}
+.help .rightcol .box2{z-index:20}
+.help .rightcol .box3{z-index:30}
+
+
+
+/*FAQ*/
+.help .faq a{font-weight:700;}
+.help .faq .box{background-color:#fff}
+.help .faq .box-content{padding:0;border-top:none}
+.help .faq .box-content > div {clear:both;margin:10px 20px 0;padding-bottom:10px;border-bottom:1px solid #ccc}
+.help .faq .box-content h2{margin-bottom:10px}
+.help .faq .box-content h4{margin-top:1em}
+.help .faq .box-content h2,
+.help .faq .box-content h4 {font-weight:700}
+.help .faq #faq-browse td {padding:0 4em .8em 0;}
+.help .faq #faq-search form {margin-bottom:1em;}
+.help .faq #faq-search form input{width:400px;font-size:1em;height: 1.5em;}
+
+
+
+/*GENERAL*/
+.help .general > H1 {text-shadow:none;margin-bottom:.5em}
+.help .general h2 {font-size:1.4em}
+.help .general .leftcol{float:left;width:65%;clear:none}
+.help .general .leftcol .box-head {text-shadow:none}
+.help .general .leftcol .box-content {padding:10px 20px 0}
+.help .general a{font-weight:700;}
+.help .general .box-login{background-color:#9c0;border-color:#9c0}
+.help .general .box-login a {color:#9c0;}
+.help .general .leftcol .box1 H2 {color:#333;}
+.help .general .leftcol .box1 {background-color:#DF8BB6;white-space:nowrap;border-color:#DF8BB6;}
+.help .general .leftcol .box1 a {color:#D85EB4;}
+.help .general .leftcol .box2{background-color:#83C7B4;border-color:#83C7B4}
+.help .general .leftcol .box2 a {color:#339999}
+.help .general .leftcol .box2 .box-content > p {margin-bottom:2em}
+.help .general .leftcol .box2 .sub-box {width:75%;clear:left;margin-top:1em;margin-bottom:3em}
+.help .general .leftcol .box2 .sub-box img {}
+.help .general .leftcol .box2 .sub-box-title{display:block;}
+.help .general .leftcol .box2 .sub-box-title,
+.help .general .leftcol .box2 .sub-box-content {padding-left:100px;}
+.help .general .leftcol .box2 .video-tutorials{float:right;clear:none;width:40%;}
+.help .general .leftcol .box2 .video-tutorials img{border:1px solid #ccc;height:120px;margin-top:20px}
+.help .general .leftcol .box2 .box-content img{float:left;}
+.help .general .leftcol .box3{background-color:#FCC062;border-color:#FCC062}
+.help .general .leftcol .box3 a {color:#f90;}
+.help .general .leftcol .box3 .inlinesearchform{display:inline-block;margin-bottom: .7em;}
+.help .general .leftcol .box3 .inlinesearchform input {font-size:1em}
+.help .general .rightcol h6 {font-size:1em;margin-top:0.2em}
+.help .general .rightcol h5 {font-size:1em;margin-top:1.2em}
+.help .general .rightcol .lower {text-align: center;margin: 40px auto 0;width: 150px;}
+.help .general .rightcol .search input {margin-bottom:1em;font-size: 1em;}
+.help .general .rightcol p.third a {border-bottom: 1px solid #1AA0D8; padding-bottom: 1em;}
+.help .general .rightcol p.last {padding-top: .8em; margin-top: 1.2em; line-height: 1.2em; font-style: italic; }
+.help .general .cat_bullet_list li {list-style-type: none; padding-left: 25px; background-image: url('../../images/cat-face-bullet.gif'); background-repeat: no-repeat; margin: 0em 8em 1em 4em; text-align:justify;}
+
+/*CARDS*/
+.help .cards a{font-weight:700;}
+.help .cards .intro{height: 350px} 
+.help .cards .intro-content{margin-right: 50px;display:inline-block;width:340px;vertical-align:top;}
+.help .cards .intro-content p{font-size: 1.4em;width: 14em;line-height: 1.4em;margin-bottom: 1.1em;} 
+.help .cards .intro-content a{font-size: 18px;} 
+.help .cards .intro img{display:inline-block;position: relative;top: -30px;} 
+.help .cards .cards-content-container h4{font-weight:700;}
+.help .cards .cards-content-container{text-align:center;}
+.help .cards .cards-content-container .box{background-color:#fff}
+.help .cards .cards-content-container .box-content{border-top:none;}
+.help .cards .cards-content-container .icon-eye{margin-bottom:1em;margin-top:.3em}
+.help .cards .thumb-with-title-and-sublinks img{margin:.3em inherit}
+
+/*ABOUT*/
+.help .about a{font-weight:700;}
+.help .about .intro {height:380px;}
+.help .about .intro H1 {margin-bottom:10px}
+.help .about .intro H1 span{vertical-align: top; display: inline-block; margin-top: 30px;}
+.help .about p{font-size:15px;}
+.help .about .intro .intro-content {width:480px;float:left;clear:none}
+.help .about .intro .intro-content p{line-height:22px;margin-bottom: 15px;}
+.help .about .intro .media-container{width:412px;height:250px;float:right;clear:none;border:1px solid #ccc}
+.help .about .box {background-color:#fff;}
+.help .about .box-content{margin-top:5px; border-top:none; padding: 20px 50px;}
+.help .about .box-content p{font-size:14px;}
+.help .about .box-content h3{margin-top:1em; margin-bottom:10px;}
+.help .about .box-content h3:first-child{margin-top:0;}
+.help .about .box-content h3 a{color:#FBA939}
+.help .about .box-content iframe,
+.help .about .box-content img{width:384px; height:210px; padding:5px; border: 1px solid #ccc; margin-bottom:10px;}
+.help .about .leftcol{float:left;width:47%;clear:none}
+.help .about .rightcol {width:47%;}
+
+/*PARENTS*/
+.help .parents a{font-weight:700;}
+.help .parents .intro {height:360px;}
+.help .parents .intro H1 {margin-bottom:10px}
+.help .parents .intro H1 span{vertical-align: top; display: inline-block; margin-top: 10px;}
+.help .parents .intro .intro-content {width:480px;float:left;clear:none}
+.help .parents .intro .intro-content p{font-size:1.2em;line-height:1.6em;margin-bottom: 0.1em;}
+.help .parents .intro .media-container{width:412px;height:250px;float:right;clear:none;border:1px solid #ccc}
+.help .parents .leftcol{float:left;width:65%;clear:none}
+.help .parents .leftcol .box{background-color:#fff}
+.help .parents .leftcol .box-content{border-top:none;padding-top:0}
+.help .parents .leftcol .box-content h3{margin-top:1em;color:#F9A739}
+.help .parents .leftcol .box-content h3 a{color:#F9A739}
+.help .parents .rightcol .lower{margin:30px 20px 0;font-size: .8em;color: #777;}
+.help .parents .rightcol .box1 .newslink a{font-weight:400}
+
+
+/* QUOTES */
+.help span.quotes {
+  font-family: none; 
+  font-size: 20px;
+  color: #666;
+}

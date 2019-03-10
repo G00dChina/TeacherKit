@@ -1,0 +1,5 @@
+to settextfont :font
+setlabelfont :font
+end
+
+bury "settextfont

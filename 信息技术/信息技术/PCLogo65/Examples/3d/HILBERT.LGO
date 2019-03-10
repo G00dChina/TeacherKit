@@ -1,0 +1,209 @@
+to aaa
+;
+; Hilbert Cube Filling Curve using MSWLogo 3D
+;
+; Just as 2D Hilbert space filling curves map eleganly to 2D Logo
+; 3D Hilbert volume filling curves map just as elegantly in 3D Logo
+;
+; The string language used to describe these curves maps directly
+; to MSWLogo 3D Primitives.
+;
+; Compare with mathamatica solution done at:
+;
+; http://forum.swarthmore.edu/advanced/robertd/lsys3d.html
+;
+cs
+perspective
+
+; Get A Good View
+ask -1 [setxyz 100 200 300]
+setsc 0
+
+; One color is all we need (lighting will do the rest)
+setpc [255 0 0]
+
+; We want good lighting now
+ask -3 [setxyz 0 455 834]
+
+; Position HilbertCube such that it's center ends up at origin
+pu
+setxyz -50 -50 50
+pd
+
+ht
+
+; Click, Tic, Tic, Tic
+localmake "start timemilli
+
+HilbertCube 5 2
+polyview
+
+; Click, Cool 3.5 seconds !!! (PII-300)
+show (timemilli - :start) / 1000
+
+st
+stop
+
+messagebox [Shed some light on the subject] []
+setturtle -3
+repeat 36 [fd 100 down 10]
+setturtle 0
+
+messagebox [Come fly with me] []
+setturtle -1
+repeat 36 [fd 100 down 10]
+setturtle 0
+end
+
+to bkbox :dist
+fdbox -:dist
+end
+
+to D
+downbox 90
+end
+
+to downbox :angle
+upbox -:angle
+end
+
+to endbox
+; Box at end
+down 90
+pu
+repeat 2 [lt 90 fd :size]
+pd
+rt 180
+      polystart
+      repeat 4 [fd :size*2 rt 90]
+      polyend
+lt 180
+pu
+repeat 2 [bk :size rt 90]
+pd
+up 90
+end
+
+to F
+; This simply maps the forward move to a single letter
+; :lev and :siz are being implicity passed
+;setpc :lev
+fdbox :siz
+end
+
+to fdbox :dist
+; Cap the start of the box
+endbox
+; We are at the center of the duct work go to the edge
+pu
+up 90
+fd :size
+down 90
+lt 90
+fd :size
+rt 90
+pd
+; Now draw boxes along the path
+repeat abs :dist ~
+   [
+   repeat 4 ~
+      [
+      polystart
+      repeat 4 [fd :size*2 rt 90]
+      polyend
+      rt 90
+      fd :size*2
+      lt 90
+      rr 90
+      ]
+   pu
+   fd ((sign :dist) * :size*2)
+   pd
+   ]
+; Get back to where we started
+pu
+lt 90
+bk :size
+rt 90
+up 90
+bk :size
+down 90
+pd
+
+; Cap the end of the box
+endbox
+end
+
+to HilbertCube :siz :lev
+;
+; X -> "DLXFDLXFXMFDRRXFXUFPRRXFXMFRXMR"
+;
+; In the expression above
+;
+; X = Hilbert
+;
+; D = Down Pitch 90
+; U = Up   Pitch 90
+; M = Left  Turn 90
+; P = Right Turn 90
+; L = Left  Roll 90
+; R = Right Roll 90
+; F = Forward  Size
+
+if :lev > 0 ~
+  [D L X F D L X F X M F D R R X F X U F P R R X F X M F R X M R]
+end
+
+to L
+lr 90
+end
+
+to ltbox :angle
+rtbox -:angle
+end
+
+to M
+ltbox 90
+end
+
+to P
+rtbox 90
+end
+
+to R
+rr 90
+end
+
+to rtbox :angle
+pu
+bk :size
+rt :angle
+fd :size
+pd
+end
+
+to U
+upbox 90
+end
+
+to upbox :angle
+pu
+bk :size
+up :angle
+fd :size
+pd
+end
+
+to X
+; This simply maps the Hiblert Recursive call to a single letter
+; :lev and :siz are being implicity passed
+HilbertCube :siz :lev-1
+end
+
+Make "size 4
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

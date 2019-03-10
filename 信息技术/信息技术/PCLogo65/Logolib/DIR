@@ -1,0 +1,6 @@
+to dir
+repeat count files [(print "File item repcount files)]
+repeat count directories [(print "Directory item repcount directories)]
+end
+
+bury "dir

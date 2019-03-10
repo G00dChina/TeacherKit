@@ -1,0 +1,125 @@
+to aaa
+;
+; Function:
+;
+; This program will connect n machines in a loop.
+;
+; Imagine distributed computing
+; Imagine distributed sorting
+; Imagine distributed recursion
+; Imagine almost anything you've written in logo in a distributed manner
+;
+; To run:
+;
+; load "netring.lgo
+; Call NETRING "NextMachineInLoop "ThisMachine
+;
+; Example with machines "A", "B" and "C"
+;
+; On machine "A" Run
+; netring "b "a
+;
+; On Machine "B" Run
+; netring "c "b
+;
+; On Machine "C" Run
+; netring "a "c
+;
+; Any machine can issue a command like this and every machine will execute it.
+; sendcommand [repeat 4 [fd 100 rt 90]]
+;
+; For a very heavy test you can also Run
+; ringtest 
+;
+; System requirements:
+;
+; You must have a WinSock capable machine and know your machine name.
+;
+end
+
+to netring :remotemachine :this_machine
+; Save as a global value
+make "thismachine :this_machine
+; Queue for saveing data when it cannot go out
+make "savequeue []
+; start the net
+netstartup
+; listen on socket 5124
+ifelse netaccepton 5124 [] [onreceive] ~
+   [
+   MessageBox "Status [Hit Ok when All Machines have this message up]
+   ] ~
+   [
+   MessageBox "Status [Network failed to setup receive]
+   ]
+if not netconnecton :remotemachine 5124 [onsend] [] ~
+   [
+   MessageBox "Status [Network failed to setup send]
+   ]
+end
+
+to onreceive
+;Make sure it is not empty (which happens when the net first starts up)
+if not emptyp netacceptreceivevalue~
+   [
+   ; pass it along data if it was not this machine that sent it
+   if not equalp first netacceptreceivevalue :thismachine ~
+      [
+      ; if we can't send it now queue it up and we can send it when it's ok
+      if not netconnectsendvalue netacceptreceivevalue ~
+         [
+         make "savequeue fput netacceptreceivevalue :savequeue
+         ]
+      ]
+   ; Run Everything include what we sent
+   run last netacceptreceivevalue
+   ]
+end
+
+to onsend
+; we get here after a send failed and it's ok to send again
+if not emptyp :savequeue~
+   [
+   ; if successful remove from queue and attempt recursively call again in acse there is more
+   if netconnectsendvalue first :savequeue ~
+      [
+      make "savequeue butfirst :savequeue
+      onsend
+      ]
+   ]
+end
+
+to ringtest
+; this will 7200 commands (3600 vectors) when complete all machines should
+; show 3600 vectors in the status window. Don't run the status window during the
+; test or it will bog the network down
+
+; This is a VERY difficult test for MswLogo
+; A less harsh test could of waited until the command make the loop
+; before sending the next command.
+
+; MswLogo is Sending, Drawing, Queueing, Dequeueing etc. all at the same time
+
+sendcommand [cs] repeat 3600 [sendcommand [fd 1 rt 1]]
+; A much easier test for slow networks
+;sendcommand [cs] repeat 3600 [wait 100 sendcommand [fd 1 rt 1]]
+end
+
+to sendcommand :command
+; this sends a command to all machines in the ring including this machine which will
+; be last, if you get the response of your command then you know all the other machines
+; also got it.
+
+; if we can't send it now queue it up and we can send it when it's ok
+if not netconnectsendvalue (list :thismachine :command) ~
+   [
+   make "savequeue fput netacceptreceivevalue :savequeue
+   ]
+end
+
+to zzz
+MessageBox [Welcome] [Study it now.]
+edall
+end
+
+Make "startup [zzz]

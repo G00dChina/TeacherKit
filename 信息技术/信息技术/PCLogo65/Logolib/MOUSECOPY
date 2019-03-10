@@ -1,0 +1,82 @@
+to mousecopy.down
+; Init P1 and P2 and SelectionBox
+make "mousecopy.p1 mousepos
+make "mousecopy.p2 mousepos
+buryname "mousecopy.p1
+buryname "mousecopy.p2
+mousecopy.selection
+; Activate Mouse Move
+mouseon [mousecopy.down] [mousecopy.up] [] [] [mousecopy.move]
+end
+
+to mousecopy.move
+; Erase Box, Reset P2 and draw Again
+mousecopy.selection
+make "mousecopy.p2 mousepos
+mousecopy.selection
+setpos mousepos
+end
+
+to mousecopy.selection
+; Draw a bounding PX Box
+localmake "x1 first :mousecopy.p1
+localmake "y1 last  :mousecopy.p1
+localmake "x2 first :mousecopy.p2
+localmake "y2 last  :mousecopy.p2
+pu
+setxy :x1 :y1
+px
+setxy :x2 :y1
+setxy :x2 :y2
+setxy :x1 :y2
+setxy :x1 :y1
+pu
+end
+
+to mousecopy.up
+; Erase Box
+mousecopy.selection
+; Get Final P2
+make "mousecopy.p2 mousepos
+localmake "x1 first :mousecopy.p1
+localmake "y1 last  :mousecopy.p1
+localmake "x2 first :mousecopy.p2
+localmake "y2 last  :mousecopy.p2
+; Calculate Width, Height and Lower Left Corner
+localmake "width abs :x1 - :x2
+localmake "height abs :y1 - :y2
+localmake "x ifelse :x1 < :x2 [:x1] [:x2]
+localmake "y ifelse :y1 < :y2 [:y1] [:y2]
+pu
+; Copy selection to clipboard
+setxy :x :y
+setbitindex 0
+(print "Width :width "Height :height)
+bitcopy :width :height
+; Done
+mouseoff
+setpen :mouse.savepen
+setscrunch first :mouse.savescrunch last :mouse.savescrunch
+setpensize :mouse.savepensize
+end
+
+to mousecopy
+; Will not work while Perspective is on
+make "mouse.savepen pen
+buryname "mouse.savepen
+make "mouse.savescrunch scrunch
+buryname "mouse.savescrunch
+make "mouse.savepensize pensize
+buryname "mouse.savepensize
+setscrunch 1 1
+setpensize [1 1]
+wrap
+mouseon [mousecopy.down] [mousecopy.up] [] [] []
+Print [Use mouse to select area to copy to Clipboard]
+end
+
+bury "mousecopy
+bury "mousecopy.down
+bury "mousecopy.move
+bury "mousecopy.selection
+bury "mousecopy.up

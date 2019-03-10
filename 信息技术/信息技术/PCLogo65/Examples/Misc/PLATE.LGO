@@ -1,0 +1,127 @@
+to aaa
+;Logo folks are always asking for new projects.
+;
+;This underlying technique is used in so many solutions
+;it's not funny. By using different functions on the
+;cell (I'm using average of North South East West).
+;That's ALL it is an averaging. With different forumals
+;this technique is used in:
+;
+;Wheather simulation.
+;Image processing (this exact forumala I used here *IS* a smoothing function).
+;Circuit board Routing.
+;Morphing.
+;And probably about 10,000+ other applications.
+;
+;This can be converted to UCBLogo without too much trouble.
+;Except you have to come up with a linear function to choose color.
+;BitBlock can be replaced with PD FD 1 with scale set 1. Or write
+;an emulation for bitblock but that would be extremely slow.
+;
+;It can be converted to any logo by simulating arrays with lists.
+;But that will be expensive.
+;
+;Enjoy
+;
+; Example:
+;
+simulate 1000
+;
+end
+
+to simulate :iterations
+
+;
+; Simulate temperature propagation in an "Ideal" plate.
+; Note this simulation does not perform previous and next state.
+; This means it is not quite as accurate because the
+; current iteration should not affect (infect) the current iteration
+; but it does. If you run it long enough it won't matter.
+
+pu
+ht
+cs
+make "size_x 50       ; Size of plate in x
+make "size_y 50       ; Size of plate in y
+make "initial_temp 0  ; Initial temperature of plate
+make "applied_temp 255; Temperature to be applied
+;make "iterations 10   ; Number of iterations
+make "scale 5         ; Scales picture up
+
+; Define the plate
+
+make "plate (mdarray (list :size_x :size_y) 1)
+
+; Init the plate to initial conditions
+
+repeat :size_x ~
+   [
+   make "x repcount
+   repeat :size_y ~
+      [
+      make "y repcount
+      mdsetitem (list :x :y) :plate :initial_temp
+      setfloodcolor (list :initial_temp 0 255-:initial_temp)
+      setpos (list :x*:scale :y*:scale)
+      bitblock :scale :scale
+      ]
+   ]
+
+; Apply temperature to one edge
+
+repeat :size_y ~
+   [
+   make "y repcount
+   make "x 1
+   mdsetitem (list :x :y) :plate :applied_temp
+   setfloodcolor (list :applied_temp 0 255-:applied_temp)
+   setpos (list :x*:scale :y*:scale)
+   bitblock :scale :scale
+   ]
+
+; Now simulate
+; Note how I do not use the whole array (2 to n-1)
+; Because I don't want "write" the "edges" of the array
+; This eliminates the need to "test" for edges of the array
+; The edge is "read" when asking neighbors temperature.
+
+repeat :iterations ~
+   [
+
+; Label what we are doing
+
+   setpos (list 0 -50)
+   setheading 90
+   setfloodcolor [255 255 255]
+   bitblock 200 45
+   setpencolor [0 0 0]
+   setpos (list 0 -25)
+   label (list "Iteration repcount)
+
+; This is the core simulation
+
+   repeat :size_x-2 ~
+      [
+      make "x repcount+1
+      repeat :size_y-2 ~
+         [
+         make "y repcount+1
+         make "north mditem (list :x :y+1) :plate
+         make "south mditem (list :x :y-1) :plate
+         make "east  mditem (list :x+1 :y) :plate
+         make "west  mditem (list :x-1 :y) :plate
+         make "newtemp (:north+:south+:east+:west)/4
+         mdsetitem (list :x :y) :plate :newtemp
+         setfloodcolor (list round :newtemp 0 round 255-:newtemp)
+         setpos (list :x*:scale :y*:scale)
+         bitblock :scale :scale
+         ]
+      ]
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

@@ -1,0 +1,5 @@
+to ellipse :rad1 :rad2
+ellipsearc 360 :rad1 :rad2 0
+end
+
+bury "ellipse

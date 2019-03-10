@@ -1,0 +1,13 @@
+to maketurtle :turtle :pen
+localmake "saveturtle turtle
+setturtle :turtle
+pu
+setpos butlast butlast :pen
+pd
+setheading last butlast :pen
+localmake "maybeoutput runresult last :pen
+setturtle :saveturtle
+if emptyp :maybeoutput [stop]
+output first :maybeoutput
+end
+bury "maketurtle

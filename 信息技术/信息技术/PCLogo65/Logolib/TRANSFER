@@ -1,0 +1,16 @@
+to transfer :transfer.limit :transfer.template :transfer.init
+output cascade.2 (ifelse emptyp :transfer.limit ~
+                         [[emptyp ?2]] ~
+                         [se [or emptyp ?2] :transfer.limit]) ~
+                 :transfer.template [] [butfirst ?2] :transfer.init
+end
+
+to ?in
+output first ?2
+end
+
+to ?out
+output ?1
+end
+
+bury [transfer ?in ?out]

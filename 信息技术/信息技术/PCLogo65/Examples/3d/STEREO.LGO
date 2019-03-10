@@ -1,0 +1,131 @@
+to aaa
+;
+; This is a MSWLogo 3D example of "Stereo Vision".
+; It is the same as Shuttle.LGO but 2 Images are drawn
+; with slightly different "view points" (a CYAN image
+; for the right eye and RED image for the left eye).
+;
+; You must use "3D Glasses" to appreciate it.
+;
+; This was a blast figuring out because at first it did
+; not seem to work for several reasons:
+;
+; My first attempt used [255 0 0] (red) and [0 0 255] (blue).
+; But it didn't look right. Then I notice that if I put the
+; red lens up to the screen the red lines turned white (as they
+; should). But when I put the blue lens up to the screen I
+; still saw dark lines.
+;
+; So I use Logo to generate "blue" color spectrums
+; for i 0 to 255 [0 0 i] still not right.
+; for i 0 to 255 [i i 255] still not right.
+; for i 0 to 255 [0 i 255] bingo.
+;
+; [0 255 255] cyan turned white under the glasses blue lens
+;
+; Something was happening but still not quite right.
+; So I parameterized the distance between the eyes (view points).
+; My daughter thought she was seeing the effect but she saw it
+; backwards. Then I put the 3D glasses on upside down and bingo
+; there it was. So I flipped the around the colors and put the
+; glasses on right side up and hard coded the numbers.
+;
+; Experiment:
+;
+; There is a problem here, some of the "second" images vectors
+; obscure the "first" images. This can be solved using bitmaps.
+;
+; Set the screen to a BLACK background.
+; Draw the 1st image and save to buffer 1.
+; Clear the screen to a BLACK background again.
+; Draw the 2nd image.
+; Now OR in 1st image (buffer 1). (use SETBITMODE)
+; Now COPY the screen image to buffer 2.
+; Set things back to a WHITE background.
+; Now AND in the image (buffer 2) to the screen. (use SETBITMODE)
+;
+; Lines that crossed will now be truly OR'd together and
+; be visible with either lens.
+; 
+shuttle
+end
+
+to object_display
+local "vtx
+local "cmd
+repeat :commands ~
+   [
+   ; Get a command. Format [VertexIndex Color] Color = 0 means "Move"
+   make "cmd (item repcount :command)
+
+   ; Get the vertex. Format [X Y Z]
+   make "vtx (item (item 1 :cmd) :vertex) 
+
+   ; If color 0 then Move else Draw (I'm ingoring the color, not RGB Yuck)
+   ifelse (item 2 :cmd) = 0 [pu] [pd]
+
+   ; Move or draw to the vertex
+   setxyz (item 1 :vtx) (item 2 :vtx) (item 3 :vtx)
+   ]
+end
+
+to object_load :file
+; Start in known state
+closeall
+
+; Open Vectors Commands
+openread :file
+setread :file
+
+; Get # of vertices (1st record of file)
+make "vertices first readlist
+
+; Now build a "Vertex" array based on # of vertices
+make "vertex (array :vertices 1)
+
+; Now read in each "Vertex". Format [X Y Z]
+repeat :vertices [setitem repcount :vertex readlist]
+
+; Get # of "commands" (comes after all vertices)
+make "commands first readlist
+
+; Now build a "Command" array based on # of commands
+make "command (array :commands 1)
+
+; Now read in each "Command". Format [Vertex_Index Color]
+repeat :commands [setitem repcount :command readlist]
+
+; Done
+setread []
+close :file
+end
+
+to shuttle
+ht
+perspective
+cs
+
+; Load Shuttle Vectors
+object_load "shuttle.3dv
+
+; Right Eye Image in Cyan
+setturtle -1
+setxyz 10000+200 10000 20000
+setturtle 0
+setpencolor [0 255 255]
+object_display
+
+; Left Eye Image in Red
+setturtle -1
+setxyz 10000-200 10000 20000
+setturtle 0
+setpencolor [255 0 0]
+object_display
+
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

@@ -1,0 +1,116 @@
+
+        MSWLogo Version 6.5b for Micro-Soft Windows 95/98/NT/2000/XP
+        ------------------------------------------------------------
+
+                                Contents
+                                --------
+
+Part    I) Kit Description/Location:
+Part   II) New features/bugs fixed:
+Part  III) Installation:
+Part   IV) Standard features:
+Part    V) Recommended usage:
+Part   VI) Bugs / Missing features / Wish List:
+Part  VII) Reporting bugs:
+Part VIII) Sources:
+Part   IX) Minimum System Requirements:
+Part    X) Related Tools/Kits/Addons:
+
+Part I) Kit Description/Location (http://www.softronix.com/):
+
+mswlogo65.exe (32bit kit: Win32 95/NT)
+mswsrc65.zip  (source kit: most sites)
+mswtut64.zip  (online video tutorial for beginners 3.5 MB compressed V4.2)
+
+I do not supply UCBLOGO, please contact Brian Harvey
+<bh@cs.berkeley.edu> or the Logo Foundation <michaelt@media.mit.edu>.
+
+Part II) New features/bugs fixed:
+
+   o Added for 6.5b, Fix MSWLogo using too much CPU when idle.
+
+   o Added for 6.5a, Remove OLE server since it broke command line
+
+   o New installation for XP systems
+
+   o Dropped support for all systems older than Win95
+
+   o SWitch to pentium processor only for higher speed.
+
+   o Fixed missing resources for some Borland OWL Exceptions.
+
+   o Fixed crash when closing some network connections.
+
+   o Fixed crash when moving turtle past the max floating point number.
+
+   o Added proplistp and proplist?.
+
+   o Fixed bug with argument to OUTPUT missing causing a crash.
+
+   o Enabled MSWLogo to be an OLE Server (Experimental no docs).
+
+   o Fixed command line version of SETLABELFONT not always
+     finding all fonts.
+
+Thanks to many folks for support MSWLogo.
+
+Special thanks to:
+
+Brian Harvey <bh@cs.berkeley.edu>
+Jim Muller
+Erich Neuwirth <neuwirth@smc.univie.ac.at>
+Yehuda Katz <yehuka@softhome.net>
+ 
+Part IV) Standard features:
+
+   o Supports TCP/IP WinSock Networking.
+   o Supports Win16, Win32 and Win32s.
+   o Supports Text in all available fonts and sizes.
+   o Supports 1024 independent Turtles.
+   o Supports Bitmapped Turtles.
+   o Supports Cut, Paste and stretching bitmaps.
+   o Supports Clipboard Text and Bitmaps.
+   o Supports MIDI devices.
+   o Supports Direct I/O for Controlling External hardware.
+   o Supports Serial and Parallel Port communications.
+   o Supports Zooming.
+   o Supports Tail recursion (optimizes most recursive functions).
+   o Supports User error handling.
+   o Supports "Standard" Logo parsing.
+   o Supports Floodfill.
+   o Supports Save and restore images in .BMP format files.
+   o Supports 1, 4, 8, 16, 24 bits per pixels colors.
+   o Supports standard Windows Hypertext Help.
+   o Supports standard Windows Printing.
+   o Supports separate library and work area.
+   o Supports construction of Windows Dialog Boxes.
+   o Supports Event Driven programming (Mouse, KeyBoard, Timer).
+   o Supports MultiMedia Devices (.WAV sound files, CD-ROM control etc.)
+   o Supports Event Timers allowing multiprocessing.
+   o Supports 3D Perspective drawing (Wireframe and Solids).
+   o Supports Animated GIF generation.
+
+Part V) Recommended usage:
+
+   o Ages 6 and up, from beginner (Forward 100, Right 90) to expert
+     (develop professional looking Graphical User Interfaces). 
+
+Part VII) Reporting bugs:
+
+   Report bugs to George Mills:
+
+   Internet: mills@softronix.com
+
+Part VIII) Sources:
+ 
+   Sources are available at some kit sites.
+
+   The MSWLogo sources are written using:
+
+      Borland C++ 5.02 for windows (for .EXE)
+      Borland Turbo 32bit Assembler (for 32bit .EXE)
+      Microsoft Word 97 (for online help and DOC's)
+           
+Part IX) Minimum System Requirements:
+
+   Pentium with Minimum of 8meg running Windows 95 in is strongly recommended.

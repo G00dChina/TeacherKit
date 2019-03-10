@@ -1,0 +1,5 @@
+to ellipse2 :radius_x :radius_y
+ellipsa2 360 :radius_x :radius_y 0
+end
+
+bury "ellipse2

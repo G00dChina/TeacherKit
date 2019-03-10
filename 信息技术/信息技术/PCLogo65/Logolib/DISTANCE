@@ -1,0 +1,16 @@
+to distance :point
+localmake "dx (item 1 pos) - (item 1 :point)
+localmake "dy (item 2 pos) - (item 2 :point)
+output sqrt (:dx*:dx + :dy*:dy)
+end
+
+bury "distance
+
+to distancexyz :point
+localmake "dx (item 1 posxyz) - (item 1 :point)
+localmake "dy (item 2 posxyz) - (item 2 :point)
+localmake "dz (item 3 posxyz) - (item 3 :point)
+output sqrt (:dx*:dx + :dy*:dy + :dz*:dz)
+end
+
+bury "distancexyz

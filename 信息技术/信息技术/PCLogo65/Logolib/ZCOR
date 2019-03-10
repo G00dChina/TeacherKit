@@ -1,0 +1,5 @@
+to zcor
+output last posxyz
+end
+
+bury "zcor

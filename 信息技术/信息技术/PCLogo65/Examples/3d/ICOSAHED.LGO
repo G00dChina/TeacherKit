@@ -1,0 +1,197 @@
+to aaa
+; An Icosahedron built by connecting vertices of 3 perpendicular golden rectangles
+; Inspired by Stan Munson
+cs
+perspective
+setsc 0
+setpc [255 0 0]
+ask -1 [setxyz 100 200 300]
+ask -3 [setxyz 0 455 834]
+
+; draw 3 golden rectangles perpendicular to one another (returning the vertices of each)
+
+localmake "set1 goldenrectangle 100
+rr 90
+lt 90
+localmake "set2 goldenrectangle 100
+rr 90
+lt 90
+localmake "set3 goldenrectangle 100
+rr 90
+lt 90
+
+; Now connect the vertcies
+connectsets :set1 :set2 :set3
+
+; Render it
+polyview
+end
+
+to connectpair :p1 :p2
+; This is a cool routine, it will connect any two points in space with a cylinder (a pipe)
+
+localmake "rad 1    ; radius of pipe
+localmake "sides 16 ; number of sides of pipe
+local "q1
+local "q2
+local "q3
+local "q4
+pu
+
+; Position our selves at one end pointing directly at the other
+setposxyz :p1
+setorientation towardsxyz :p2
+localmake "dist distancexyz :p2
+
+; draw panels (polygons) around the center line bewteen p1 and p2
+repeat :sides~
+   [ 
+   ; Go to the edge of the cylinder and record the coordinate
+   down 90
+   fd :rad
+   make "q1 posxyz
+   bk :rad
+   up 90
+
+   ; Now go to the other end of teh cylinder and do the same
+   fd :dist
+   down 90
+   fd :rad
+   make "q2 posxyz
+   bk :rad
+   up 90
+   bk :dist
+
+   ; Now roll (one panel) and record two more coordinates the same way
+   rr 360/:sides
+
+   ; Go to the edge of the cylinder and record the coordinate
+   down 90
+   fd :rad
+   make "q3 posxyz
+   bk :rad
+   up 90
+
+   ; Now go to the other end of teh cylinder and do the same
+   fd :dist
+   down 90
+   fd :rad
+   make "q4 posxyz
+   bk :rad
+   up 90
+   bk :dist
+
+   ; Now connect the 4 vertices into a polygon
+   setposxyz :q1
+   pd
+   polystart
+   setposxyz :q2
+   setposxyz :q4
+   setposxyz :q3
+   setposxyz :q1
+   pu
+   polyend
+
+   ; Get back into the center for the next panel
+   setposxyz :p1
+   ]
+pd
+end
+
+to connectsets :set1 :set2 :set3
+; These connect all the vertices of the icosahedron (little bit of trial and error)
+setpc [0 0 255]
+
+; Set 1
+
+connectpair item 1 :set1 item 2 :set1
+connectpair item 3 :set1 item 4 :set1
+
+connectpair item 1 :set1 item 3 :set3
+connectpair item 1 :set1 item 4 :set3
+
+connectpair item 2 :set1 item 1 :set3
+connectpair item 2 :set1 item 2 :set3
+
+connectpair item 4 :set1 item 3 :set3
+connectpair item 4 :set1 item 4 :set3
+
+connectpair item 3 :set1 item 1 :set3
+connectpair item 3 :set1 item 2 :set3
+
+; Set 2
+
+connectpair item 1 :set2 item 2 :set2
+connectpair item 3 :set2 item 4 :set2
+
+connectpair item 1 :set2 item 3 :set1
+connectpair item 1 :set2 item 4 :set1
+
+connectpair item 2 :set2 item 1 :set1
+connectpair item 2 :set2 item 2 :set1
+
+connectpair item 4 :set2 item 3 :set1
+connectpair item 4 :set2 item 4 :set1
+
+connectpair item 3 :set2 item 1 :set1
+connectpair item 3 :set2 item 2 :set1
+
+; Set 3
+
+connectpair item 1 :set3 item 2 :set3
+connectpair item 3 :set3 item 4 :set3
+
+connectpair item 1 :set3 item 3 :set2
+connectpair item 1 :set3 item 4 :set2
+
+connectpair item 2 :set3 item 1 :set2
+connectpair item 2 :set3 item 2 :set2
+
+connectpair item 4 :set3 item 3 :set2
+connectpair item 4 :set3 item 4 :set2
+
+connectpair item 3 :set3 item 1 :set2
+connectpair item 3 :set3 item 2 :set2
+
+end
+
+to goldenratio
+output 1/2*(1 + sqrt 5)
+end
+
+to goldenrectangle :l
+  ; Draw a golden rectangle :l by :l*goldenratio
+  ; This routine looks more complex because it draws it with respect to
+  ; its center and it also records the vertices to be output.
+  localmake "vertices []
+  pu
+  fd :l*goldenratio/2
+  lt 90
+  fd :l/2
+  rt 180
+  pd
+  polystart
+  repeat 2~
+    [
+    make "vertices lput posxyz :vertices
+    fd :l
+    rt 90
+    make "vertices lput posxyz :vertices
+    fd :l*goldenratio
+    rt 90
+    ]
+  polyend
+  pu
+  rt 180
+  bk :l/2
+  rt 90
+  bk :l*goldenratio/2
+  pd
+  output :vertices
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

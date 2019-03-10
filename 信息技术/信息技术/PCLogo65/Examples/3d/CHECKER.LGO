@@ -1,0 +1,65 @@
+to aaa
+;
+; Original 2D Checkerboard done by Yehuda Katz <yehuka@beitberl.beitberl.ac.il>
+;
+; The original code had to be converted to MSWLogo's RGB color system
+;
+; Also modified it such that it did not matter what your start heading
+; was which made it more flexible in 2D or 3D.
+;
+main
+end
+
+to chess :size :level :startheading
+if :level<1 [stop]
+repeat 4 [draw :startheading]
+setfloodcolor ifelse 0=remainder round (heading-:startheading) 180 [[255 0 0]] [[0 0 0]]
+fill_it
+setpc [255 255 0] ; Yellow lines
+end
+
+to draw :startheading
+fd :size
+rt 90
+chess :size/2 :level-1 :startheading
+end
+
+to fill_it
+pu rt 45 fd 10 pd
+fill        ; Red or Black Checks
+pu bk 10 lt 45 pd
+end
+
+to main ; Chessboard's
+cs
+wrap
+MessageBox [Chessboard] [You can use the same code in 2D]
+chess 128 4 heading
+rt 120
+chess 128 4 heading
+rt 120
+chess 128 4 heading
+rt 120
+MessageBox [Chessboard] [As you do in 3D]
+perspective
+cs
+; Get in position so we can see under the cube
+setturtle -1
+setxyz -400 -400 400
+setturtle 0
+; Draw face 1
+chess 128 4 heading
+rr 90
+; Draw face 2
+chess 128 4 heading
+rt 90
+lr 90
+; Draw face 3
+chess 128 4 heading
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

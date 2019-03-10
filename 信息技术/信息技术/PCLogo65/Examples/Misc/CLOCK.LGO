@@ -1,0 +1,122 @@
+to aaa
+;
+; Function:
+;
+; Simple graphical real time clock.
+;
+; To run:
+;
+; load "clock.lgo
+; Call CLOCK
+;
+; Example:
+;
+clock
+;
+end
+
+to clock
+cs
+ht
+drawface
+make "sec 0
+make "min 0
+make "hour 0
+plottimehour :hour
+plottimemin :min
+plottimesec :sec
+settimer 1 1000 [update]
+end
+
+to drawface
+setheading 30
+pu
+repeat 12 ~
+  [~
+  fd 120 ~
+  setx xcor-12 ~
+  sety ycor+12 ~
+  make "sh heading
+  setheading 90
+  label repcount ~
+  setheading :sh
+  setx xcor+12 ~
+  sety ycor-12 ~
+  bk 120 ~
+  rt 30 ~
+  ]
+end
+
+to gettime
+make "thetime time
+make "thetime butfirst :thetime
+make "thetime butfirst :thetime
+make "thetime butfirst :thetime
+make "thetime first :thetime
+make "thetime parse map "oo :thetime
+output :thetime
+end
+
+to oo :a
+ifelse equalp ": :a [output char 32] [output :a]
+end
+
+to plottimehour :hour
+penreverse
+setpensize [5 5]
+setheading :hour*30
+pd
+fd 50
+pu
+bk 50
+end
+
+to plottimemin :min
+penreverse
+setpensize [2 2]
+setheading :min*6
+pd
+fd 100
+pu
+bk 100
+end
+
+to plottimesec :sec
+penreverse
+setpensize [1 1]
+setheading :sec*6
+pd
+fd 100
+pu
+bk 100
+end
+
+to update
+  make "thetime gettime
+  make "nhour first :thetime
+  make "thetime butfirst :thetime
+  make "nmin first :thetime
+  make "thetime butfirst :thetime
+  make "nsec first :thetime
+  plottimesec :sec
+  if not equalp :min :nmin~
+    [~
+    plottimemin :min ~
+    if not equalp :hour :nhour~
+      [~
+      plottimehour :hour ~
+      plottimehour :nhour ~
+      ]~
+    plottimemin :nmin ~
+    ]
+  plottimesec :nsec
+  make "hour :nhour
+  make "min :nmin
+  make "sec :nsec
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

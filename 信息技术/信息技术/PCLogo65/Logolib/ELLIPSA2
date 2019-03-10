@@ -1,0 +1,23 @@
+to ellipsa2 :ang :radius_x :radius_y :startang
+local "penstate 
+make "penstate pendownp
+local "x
+make "x -(sin :startang)*:radius_x
+local "y
+make "y -(cos :startang)*:radius_y
+pu
+rt 90
+fd sqrt (:x*:x + :y*:y)
+lt :startang
+if :penstate [pd]
+ellipsearc :ang :radius_x :radius_y :startang
+make "x -(sin :ang+:startang)*:radius_x
+make "y -(cos :ang+:startang)*:radius_y
+pu
+rt :ang+:startang-180
+fd sqrt (:x*:x + :y*:y)
+rt 90
+if :penstate [pd]
+end
+
+bury "ellipsa2

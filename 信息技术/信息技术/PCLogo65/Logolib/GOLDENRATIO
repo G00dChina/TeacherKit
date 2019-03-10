@@ -1,0 +1,4 @@
+to goldenratio
+output 1/2*(1 + sqrt 5)
+end
+bury "goldenratio

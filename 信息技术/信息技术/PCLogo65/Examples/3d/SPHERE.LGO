@@ -1,0 +1,107 @@
+to aaa
+   ; This example truely covers the surface of a sphere with each
+   ; vertex of each polygon exactly on the surface with no overlaping
+   ; polygons and letting logo do all the trig involved.
+   ;
+   ; Place yourself in the center of a sphere and imagine you have
+   ; a laser gun that can mark the surface. Now you basically
+   ; shoot a dot on the surface (call that point A), then move your
+   ; aim 5 degrees (:step) down (by lowering your arm), shoot another
+   ; dot (call that point B). Now aim 5 degrees to the right by rotating
+   ; your body (not your arm), shoot another dot (call that point C).
+   ; Now aim 5 degrees up (by lifting your arm), shoot another dot.
+   ; Now connect the 4 dots with a string and you have your polygon.
+   ; Get the idea.
+   ; 
+   ; Note this example produced triangles with 4 dots in some cases.
+   ; The reason is the top and bottom of each slice the polygon
+   ; is a triangle but we still shot 4 dots to produce it. That means
+   ; 2 dots hit the same target (this is when we are shooting at the poles
+   ; of the sphere). MswLogo automatically eliminates sequential
+   ; duplicate vertices.
+   ;
+   perspective
+   cs
+   setsc [0 0 0]
+   clearpalette
+   ask -3 [setxyz 207 243 97]
+
+   ht
+   pu
+
+   ; Time drawing
+   localmake "start timemilli
+
+   repeat 6 [fd 100 Sphere 50 10 [0 0 128] bk 100 rt 360/6]
+
+   ; Display elapsed drawing
+   (print "Define (timemilli - :start) / 1000)
+
+   ; Time shading
+   make "start timemilli
+
+   polyview
+
+   ; Display elapsed shading
+   (print "Render (timemilli - :start) / 1000)
+
+   stop
+   repeat 100 [ask -3 [setxyz random 300 random 300 random 300 show posxyz]]
+   pd
+end
+
+to GetPoint :rad
+   fd :rad
+   localmake "pos posxyz
+   bk :rad
+   output :pos
+end
+
+to Slice :rad :step
+   ; Draw an "orange" slice (just the outside surface)
+   localmake "i 0
+   repeat 180/:step ~
+     [
+     down :i
+     localmake "PointA GetPoint :rad
+     down :step
+     localmake "PointB GetPoint :rad
+     up :step
+     up :i
+     rr :step
+     down :i
+     localmake "PointD GetPoint :rad
+     down :step
+     localmake "PointC GetPoint :rad
+     up :step
+     up :i
+     lr :step
+     localmake "PointE posxyz
+     setposxyz :PointA
+     pd
+     polystart
+     setposxyz :PointB
+;     if not equalp :i 180 [setposxyz :PointC]
+     setposxyz :PointC
+;     if not equalp :i 0   [setposxyz :PointD]
+     setposxyz :PointD
+     setposxyz :PointA
+     polyend
+     pu
+     setposxyz :PointE
+     make "i :i + :step
+     ]
+;   down 90
+end
+
+to Sphere :rad :step :color
+   setpc :color
+   ; Cover the surface of the sphere with polygons
+   repeat 360/:step [Slice :rad :step rr :step]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

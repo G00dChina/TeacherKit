@@ -1,0 +1,10 @@
+to setorientation :yxz
+lt heading
+down pitch
+lr roll
+setroll item 1 :yxz
+setpitch item 2 :yxz
+setheading item 3 :yxz
+end
+
+bury "setorientation

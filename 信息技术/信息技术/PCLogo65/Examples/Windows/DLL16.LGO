@@ -1,0 +1,36 @@
+to aaa
+;
+; Function:
+;
+; Uses Windows system DLL to change main window size.
+;
+; To run:
+;
+; load "dll16.lgo
+; Call RESIZEMAIN
+;
+; Example:
+;
+resizemain
+;
+; System Requirements:
+;
+; This assumes 16bit version of MswLogo
+;
+end
+
+to resizemain
+; Note DLLs are not always called .DLL
+dllload "user.exe
+; Get Window Handle to Main Window
+make "hwnd dllcall [w FindWindow l 0 s [MswLogo Screen]]
+; Now Resize it
+make "status dllcall (list "w "MoveWindow "w :hwnd "w "0 "w "0 "w "100 "w "100 "w "1)
+dllfree
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

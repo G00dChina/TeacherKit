@@ -1,0 +1,6 @@
+to sign :arg
+if :arg > 0 [output 1]
+if :arg < 0 [output -1]
+output 0
+end
+bury "sign

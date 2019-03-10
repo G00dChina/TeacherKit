@@ -1,0 +1,64 @@
+to aaa
+;
+; This example uses the joystick to move the turtle around the screen
+;
+drive
+end
+
+to drive
+cs
+; This sets how much range of the stick is dead
+localmake "DeadRange 0.07
+; Time the speed of the computer to adjust the sensitivity
+localmake "start timemilli
+repeat 360 [rt 1]
+localmake "elapse timemilli - :start
+localmake "TurnSensitivity  :elapse/150
+localmake "SpeedSensitivity :elapse/75
+localmake "ShouldWe "False
+if not namep "ZeroLeftHeading [localmake "ShouldWe "True]
+if not :ShouldWe [localmake "ShouldWe YesNoBox [Calibrate] [Do you wish to Calibrate?]]
+if :ShouldWe~
+  [
+  MessageBox [Calibrate] [We are now calibrating the Joy Stick, Hands Free]
+  localmake "ZeroHeading ingameport 1
+  localmake "ZeroSpeed   ingameport 2
+  MessageBox [Calibrate] [Hold Full Right]
+  make "FullRightHeading  ingameport 1
+  MessageBox [Calibrate] [Hold Full Left]
+  make "FullLeftHeading   ingameport 1
+  MessageBox [Calibrate] [Hold Full Forward]
+  make "FullForwardSpeed  ingameport 2
+  MessageBox [Calibrate] [Hold Full Back]
+  make "FullBackwardSpeed ingameport 2
+  make "ZeroLeftHeading   int (:ZeroHeading  - (:ZeroHeading  - :FullLeftHeading) * :DeadRange)
+  make "ZeroRightHeading  int (:ZeroHeading  + (:FullRightHeading - :ZeroHeading) * :DeadRange)
+  make "ZeroForwardSpeed  int (:ZeroSpeed    - (:ZeroSpeed   - :FullForwardSpeed) * :DeadRange)
+  make "ZeroBackwardSpeed int (:ZeroSpeed    + (:FullBackwardSpeed  - :ZeroSpeed) * :DeadRange)
+  ]
+MessageBox [Joy Stick 2D] [Y Axis is Speed, X Axis is Turning, Button 1 is PenDown, Button 2 is CS]
+
+do.while ~
+  [ ~
+  localmake "CurrentHeading ingameport 1
+  localmake "CurrentSpeed   ingameport 2
+  localmake "CurrentSwitch  inportb 513
+  ifelse not ((BitAND :CurrentSwitch 16) = 0) [pu] [pd]
+  if         ((BitAND :CurrentSwitch 32) = 0) [cs]
+  if :CurrentHeading < :ZeroLeftHeading ~
+  [lt :TurnSensitivity  * (:ZeroLeftHeading-:CurrentHeading)  / (:ZeroLeftheading-:FullLeftHeading)]
+  if :CurrentHeading > :ZeroRightHeading ~
+  [rt :TurnSensitivity  * (:CurrentHeading-:ZeroRightHeading) / (:FullRightHeading-:ZeroRightheading)]
+  if :CurrentSpeed   < :ZeroForwardSpeed ~
+  [fd :SpeedSensitivity * (:ZeroForwardSpeed-:Currentspeed)   / (:ZeroForwardSpeed-:FullForwardSpeed)]
+  if :CurrentSpeed   > :ZeroBackwardSpeed ~
+  [bk :SpeedSensitivity * (:CurrentSpeed-:ZeroBackwardSpeed)  / (:FullBackwardSpeed-:ZeroBackwardSpeed)]
+  ] ~
+["true]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

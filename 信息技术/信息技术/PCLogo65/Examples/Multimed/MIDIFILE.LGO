@@ -1,0 +1,52 @@
+to aaa
+;
+; This routine will allow you to play a MIDI (.MID) file
+; The :arg is the midi file you wish to play.
+; It plays it asynchronously and you can stop it any time
+; by issuing the command midistop. It will loop until
+; you stop it.
+;
+; To run:
+;
+; load "midifile.lgo
+; Call midifile file
+;
+; Example:
+;
+midifile "c:/windows/media/canyon.mid
+;
+; System requirements:
+;
+; You must have Windows 3.1 (or 3.0 with Multi-Media Extentions)
+; You must have the correct driver loaded in Windows for video
+;    (MCI avivideo).
+;
+end
+
+to midifile :a
+print sentence [opened sequencer on channel] mci (sentence [open] (word "sequencer! :a) [alias music])
+print sentence [playing the music] :a
+make "midi.stopped "false
+midiplay
+end
+
+to midiplay
+if not :midi.stopped ~
+  [
+  (mci [seek music to start])
+  (mci [play music notify] [midiplay])
+  ]
+end
+
+to midistop
+make "midi.stopped "true
+mci [stop music wait]
+mci [close music wait]
+print [Midi stopped]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

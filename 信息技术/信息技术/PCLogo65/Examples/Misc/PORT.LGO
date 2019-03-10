@@ -1,0 +1,46 @@
+to PortBitClear :bit
+make "PortOutputState BITAND :PortOutputState BITNOT (ashift 1 :bit)
+PortUpdateOutput
+end
+
+to PortBitSet :bit
+make "PortOutputState BITOR :PortOutputState (ashift 1 :bit)
+PortUpdateOutput
+end
+
+to PortBitStatus :bit
+outportb :PortAddr+2 12
+localmake "hi BITAND (inportb :PortAddr+1) 248
+localmake "lo BITAND (inportb :PortAddr+2) 7
+localmake "byte (BITOR :lo :hi)
+localmake "byte BITXOR (BITOR :lo :hi) 131
+output equalp 0 (BITAND :byte (ashift 1 :bit))
+end
+
+to PortBitToggle :Bit
+make "PortOutputState BITXOR :PortOutputState (ashift 1 :bit)
+PortUpdateOutput
+end
+
+to PortInit
+localmake "choice selectbox [Choose Port] [LPT1(0x378) LPT2(0x278) LPT3(0x3BC)]
+if :choice = 1 [make "PortAddr 888]
+if :choice = 2 [make "PortAddr 632]
+if :choice = 3 [make "PortAddr 956]
+make "PortOutputState 0
+PortUpdateOutput
+buryname "PortAddr
+repeat 8 [(Print "Bit repcount-1 "Status PortBitStatus repcount-1)]
+MessageBox [Port] [~
+PortBitSet <Bit 0-7>\
+PortBitStop <Bit 0-7>\
+PortBitToggle <Bit 0-7>\
+PortBitStatus <Bit 0-7>]
+end
+
+to PortUpdateOutput
+outportb :PortAddr :PortOutputState
+end
+
+Make "portoutputstate 0
+Make "startup [PortInit]

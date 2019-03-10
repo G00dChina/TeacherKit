@@ -1,0 +1,55 @@
+to aaa
+;
+; If we tried to solve this problem by doing it all on the screen,
+; the screen would "flicker" between just a Red Block and a Red Block
+; with a small Green one on top. That is, you would see the intermediate
+; states. By using bitpastetoindex we go directly from a Red and Green
+; block to a new Red and Green block by combining them in memory before
+; we display them. It becomes smooth.
+;
+; This may seem like a dumb example, but it is one of the primary foundations
+; that "Windows" in built upon.
+;
+; Example:
+;
+noflick
+end
+
+to noflick
+; Draw a red block 100x100 in Bitmap Buffer 1
+cs
+setbitindex 1
+setfloodcolor [255 0 0]
+bitblock 100 100
+bitcopy 100 100
+; Draw a green block 50x50 in Bitmap Buffer 2
+cs
+setbitindex 2
+setfloodcolor [0 255 0]
+bitblock 50 50
+bitcopy 50 50
+; Reserve 100x100 space in Bitmap Buffer 3
+cs
+setbitindex 3
+bitcopy 100 100
+; Now combine Buffer 1 and 2 into 3 at different positions
+cs
+repeat 50 ~
+   [
+   ; Copy 1 to 3
+   setbitindex 1
+   bitpastetoindex 3 0 0
+   ; Copy 2 to 3
+   setbitindex 2
+   bitpastetoindex 3 repcount repcount
+   ; Paste 3 to Screen
+   setbitindex 3
+   bitpaste
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

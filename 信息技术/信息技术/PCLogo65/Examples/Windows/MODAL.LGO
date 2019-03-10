@@ -1,0 +1,156 @@
+to aaa
+;
+; Function:
+;
+; This function is shows all the controls available to MswLogo.
+; It runs in "MODAL" mode. That is, the parent window and the caller
+; cannot proceed until this window is closed.
+;
+; To run:
+;
+; Load "modal.lgo
+; Call MODAL
+;
+; Example:
+;
+modal
+;
+end
+
+to modal
+make "cmw 75
+make "cmh 30
+make "sth 12
+make "lsw :cmw
+make "lsh 20
+make "scw 10
+make "sch 40
+make "btw 50
+make "bth 12
+make "gapx 6
+make "gapy 6
+make "mary 2
+make "wnx 180
+make "wny 120
+make "wnx2 :wnx / 2
+make "wny2 :wny / 2
+make "wnx3 :wnx / 3
+make "wny3 :wny / 3
+make "wnx6 :wnx / 6
+make "wny6 :wny / 6
+make "st2w 30
+make "row2 :wny3+:gapy
+make "row3 :wny3*2-:gapy/2
+
+dialogcreate "main "d1 [This is a Demo Windows Application] 0 0 :wnx+:gapy :wny+:gapy [setup]
+end
+
+to drawthing
+setpencolor (list scrollbarget "s1 scrollbarget "s2 scrollbarget "s3)
+repeat scrollbarget "s4~
+  [~
+  run comboboxgettext "c1~
+  if equalp [HEXAGON] listboxgetselect "l1 [repeat 6 [fd 100 rt 60]]~
+  if equalp [SQUARE] listboxgetselect "l1 [repeat 4 [fd 100 rt 90]]~
+  if equalp [TRIANGLE] listboxgetselect "l1 [repeat 3 [fd 100 rt 120]]~
+  run comboboxgettext "c2~
+  ]
+end
+
+to myblue
+staticupdate "st13 sentence [Blue] scrollbarget "s3
+end
+
+to myend
+dialogdelete "d1
+end
+
+to mygreen
+staticupdate "st12 sentence [Grn] scrollbarget "s2
+end
+
+to mynil
+end
+
+to myred
+staticupdate "st11 sentence [Red] scrollbarget "s1 
+end
+
+to myrepeat
+staticupdate "st14 sentence [Repeat Count] scrollbarget "s4 
+end
+
+to mystatic
+staticupdate "st14 sentence [Repeat Count] scrollbarget "s4 
+end
+
+to setup
+staticcreate "d1 "st2 [Select Pre-Command] :gapx :mary :cmw :sth
+comboboxcreate "d1 "c1 :gapx :sth+:mary :cmw :cmh
+comboboxaddstring "c1 [PU FD 50 PD]
+comboboxaddstring "c1 [PU FD 100 PD]
+comboboxaddstring "c1 [PU FD REPCOUNT PD]
+
+staticcreate "d1 "st3 [Select Post-Command] :wnx2+:gapx :mary :cmw :sth
+comboboxcreate "d1 "c2 :wnx2+:gapx :sth+:mary :cmw :cmh
+comboboxaddstring "c2 [PU BK 50 PD RT 2]
+comboboxaddstring "c2 [PU BK 100 PD RT 5]
+comboboxaddstring "c2 [PU BK REPCOUNT PD RT 5]
+comboboxsettext "c2 [RT 5]
+
+staticcreate "d1 "st4 [Select Shape] :gapx :row2 :lsw :sth
+listboxcreate "d1 "l1 :gapx :row2+:sth+1 :lsw :lsh
+listboxaddstring "l1 "SQUARE
+listboxaddstring "l1 "TRIANGLE
+listboxaddstring "l1 "HEXAGON
+
+staticcreate "d1 "st11 "Red :wnx6*3+:gapx :row2 :st2w :sth
+scrollbarcreate "d1 "s1 :wnx6*3+:gapx :row2+:sth :scw :sch [myred]
+scrollbarset "s1 1 255 125 myred
+
+staticcreate "d1 "st12 "Grn :wnx6*4+:gapx :row2 :st2w :sth
+scrollbarcreate "d1 "s2 :wnx6*4+:gapx :row2+:sth :scw :sch [mygreen]
+scrollbarset "s2 1 255 125 mygreen
+
+staticcreate "d1 "st13 "Blue :wnx6*5+:gapx :row2 :st2w :sth
+scrollbarcreate "d1 "s3 :wnx6*5+:gapx :row2+:sth :scw :sch [myblue]
+scrollbarset "s3 1 255 125 myblue
+
+staticcreate "d1 "st14 [Repeat Count] :gapx :row3 :sch*2 :sth
+scrollbarcreate "d1 "s4 :gapx :row3+:sth :sch*2 :scw [myrepeat]
+scrollbarset "s4 1 360 72 myrepeat
+
+buttoncreate "d1 "b1 "END :gapx :wny-:bth-:gapy :btw :bth [myend]
+buttoncreate "d1 "b3 "CLEAR :wnx2-:btw/2 :wny-:bth-:gapy :btw :bth [cs]
+buttoncreate "d1 "b2 "DRAW :wnx-:btw-:gapx :wny-:bth-:gapy :btw :bth [drawthing]
+end
+
+Make "bth 12
+Make "btw 50
+Make "cmh 30
+Make "cmw 75
+Make "gapx 6
+Make "gapy 6
+Make "lsh 20
+Make "lsw 75
+Make "mary 2
+Make "row2 46
+Make "row3 77
+Make "sch 40
+Make "scw 10
+Make "st2w 30
+Make "sth 12
+Make "wnx 180
+Make "wnx2 90
+Make "wnx3 60
+Make "wnx6 30
+Make "wny 120
+Make "wny2 60
+Make "wny3 40
+Make "wny6 20
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

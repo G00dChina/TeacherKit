@@ -1,0 +1,72 @@
+to aaa
+;
+; This example uses the joystick to move the turtle around in 3D Space
+;
+drive
+end
+
+to drive
+window
+cs
+; This sets how much range of the stick is dead
+localmake "DeadRange 0.07 ; 7 percent
+; Time the speed of the computer to adjust the sensitivity
+localmake "start timemilli
+repeat 360 [rt 1]
+localmake "elapse timemilli - :start
+localmake "TurnSensitivity  :elapse/150
+localmake "SpeedSensitivity :elapse/150000
+localmake "SpeedLimit       :elapse/300
+localmake "CurrentSpeed 0
+perspective
+cs
+pd
+localmake "ShouldWe "False
+if not namep "ZeroLeftHeading [localmake "ShouldWe "True]
+if not :ShouldWe [localmake "ShouldWe YesNoBox [Calibrate] [Do you wish to Calibrate?]]
+if :ShouldWe~
+  [
+  MessageBox [Calibrate] [We are now calibrating the Joy Stick, Hands Free]
+  localmake "ZeroRoll ingameport 1
+  localmake "ZeroSpeed   ingameport 2
+  MessageBox [Calibrate] [Hold Full Right]
+  make "FullRightRoll  ingameport 1
+  MessageBox [Calibrate] [Hold Full Left]
+  make "FullLeftRoll   ingameport 1
+  MessageBox [Calibrate] [Hold Full Forward]
+  make "FullDownPitch  ingameport 2
+  MessageBox [Calibrate] [Hold Full Back]
+  make "FullUpPitch ingameport 2
+  make "ZeroLeftRoll   int (:ZeroRoll  - (:ZeroRoll      - :FullLeftRoll ) * :DeadRange)
+  make "ZeroRightRoll  int (:ZeroRoll  + (:FullRightRoll - :ZeroRoll     ) * :DeadRange)
+  make "ZeroDownPitch  int (:ZeroSpeed - (:ZeroSpeed     - :FullDownPitch) * :DeadRange)
+  make "ZeroUpPitch    int (:ZeroSpeed + (:FullUpPitch   - :ZeroSpeed    ) * :DeadRange)
+  ]
+MessageBox [Joy Stick 3D] [Y Axis is Pitch, X Axis is Roll, Hold Button 1 to speed up, Button 2 is Clear Screen]
+
+do.while ~
+  [ ~
+  localmake "CurrentRoll ingameport 1
+  localmake "CurrentPitch   ingameport 2
+  localmake "CurrentSwitch  inportb 513
+  ifelse not ((BitAND :CurrentSwitch 16) = 0) [make "CurrentSpeed 0] [make "CurrentSpeed :CurrentSpeed + :SpeedSensitivity]
+  ifelse not ((BitAND :CurrentSwitch 32) = 0) [] [cs]
+  if :CurrentSpeed > :SpeedLimit [make "CurrentSpeed :SpeedLimit]
+  if :CurrentRoll  < :ZeroLeftRoll ~
+  [lr   :TurnSensitivity * (:ZeroLeftRoll-:CurrentRoll)   / (:ZeroLeftRoll-:FullLeftRoll)]
+  if :CurrentRoll  > :ZeroRightRoll ~
+  [rr   :TurnSensitivity * (:CurrentRoll-:ZeroRightRoll)  / (:FullRightRoll-:ZeroRightRoll)]
+  if :CurrentPitch < :ZeroDownPitch ~
+  [down :TurnSensitivity * (:ZeroDownPitch-:CurrentPitch) / (:ZeroDownPitch-:FullDownPitch)]
+  if :CurrentPitch > :ZeroUpPitch ~
+  [up   :TurnSensitivity * (:CurrentPitch-:ZeroUpPitch)   / (:FullUpPitch-:ZeroUpPitch)]
+  if not :CurrentSpeed = 0 [fd :CurrentSpeed]
+  ] ~
+["true]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

@@ -1,0 +1,4 @@
+to soundoff
+   OUTPORTB 97 bitand 252 INPORTB 97
+end
+bury "soundoff

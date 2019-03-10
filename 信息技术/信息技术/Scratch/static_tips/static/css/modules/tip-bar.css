@@ -1,0 +1,159 @@
+body #tip-bar{display:none;} /* hide it by default */
+
+#tip-bar {
+  overflow:hidden;
+  position: fixed;
+  right: 0px;
+  top:0px;
+  margin-top:60px;
+  width: 19px;
+  height: auto;
+  z-index: 10000;
+  text-shadow:none;
+}
+
+#tip-bar .tip-header {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  color:#888;
+  border-left: 1px solid #BBB;
+  border-top: 1px solid #BBB;
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid #BBB;
+  webkit-border-top-left-radius: 10px;
+  padding: 6px 20px 6px 3px;
+  position: relative;
+  overflow: hidden;
+  /* IE gradient backgrounds ignore the rounded corners, so removing them and just leaving the background grey for IE
+    background: -ms-linear-gradient(#FFFFFF, #EEEEEE);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#DDDDDD');
+  */
+  background:#dddddd;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dddddd));
+  background: -webkit-linear-gradient(#ffffff 0%, #E6E8E8);
+  background: -moz-linear-gradient(top, #ffffff, #E6E8E8);
+  background: -o-linear-gradient(#ffffff, #E6E8E8);
+  background: linear-gradient(#ffffff, #E6E8E8);
+  background-repeat: no-repeat;
+}
+
+#tip-bar .tip-content {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  border-bottom-left-radius: 10px;
+  webkit-border-bottom-left-radius: 10px;
+  height:90%;
+  background-color:#E6E8E8;
+  filter: alpha(opacity=96);
+  -khtml-opacity: .96;
+  -moz-opacity: .96;
+  opacity: .96;
+  position:relative;
+}
+
+
+#tip-bar .tip-header .tip-arrow {margin-left: 5px; font-size:14px;height: 20px;display: inline-block;width: 20px;text-align: center;cursor:default;}
+#tip-bar .tip-header .tip-arrow:hover {color:#1AA0D8;}
+
+#tip-bar #tip-content-container{
+    height: 100%;
+    width: 320px;
+    border:0;
+    background-color:#E6E8E8;
+    /* border-left: 1px solid #BBB; */
+    /* border-bottom: 1px solid #BBB; */
+    border-bottom-left-radius: 10px;
+    webkit-border-bottom-left-radius: 10px;
+}
+#tip-bar .tipsopen .opentip{display:none}
+
+#tip-bar .tipsclosed #tip-content-container {display:none}
+#tip-bar .tipsclosed .closetip{display:none}
+
+#tip-bar .tipsclosed .tip-header h5 {
+  display: none;
+}
+
+#tip-bar .toggle-control,
+#tip-bar .tipsclosed { cursor:default;}
+
+#tip-bar .toggle-control:hover {
+    border-color: #1AA0D8 !important;
+    color: #1AA0D8;
+}
+
+#tip-bar .tip-content .tip-arrow-container {
+  position: relative;
+  top: 40%;
+  right: 22px;
+  font-size: 11px;
+  color: #aaa;
+}
+
+#tip-bar .tipsclosed .tip-header .tip-icon {
+  border: 2px solid #AAA;
+  margin-left: 2px;
+  text-shadow: none;
+  padding: 0px 3px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 11px;
+  cursor:default;
+}
+
+#tip-bar .tipsopen .tip-header .tip-icon {
+  display:none;
+}
+
+#tip-bar .tip-ctrl {
+  display:inline-block;
+  width:20px;
+  height:20px;
+  background-repeat:no-repeat;
+}
+
+#tip-bar .tip-home{
+  background-image: url('../../images/tipbar/nav-home.png');
+  background-position: left 2px;
+  width: 50px;
+  text-align: left;
+  vertical-align: top;
+  cursor:default;
+  margin-left:12px;
+  padding-left:24px;
+  cursor: pointer;
+}
+#tip-bar .active.tip-home:hover{background-image: url('../../images/tipbar/nav-home-blue.png'); color:#1AA0D8;}
+
+#tip-bar .tip-back{background-image: url('../../images/tipbar/nav-left-arrow.png');}
+#tip-bar .active.tip-back:hover{background-image: url('../../images/tipbar/nav-left-arrow-blue.png');}
+
+#tip-bar .close-circle-dark{
+  color: white;
+  border-radius: 13px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  text-align: center;
+  line-height: 14px;
+  display: block;
+  position: absolute;
+  left: 281px;
+  background: #777;
+  font-size: 11px;
+  margin-top: 1px;
+  cursor:pointer;
+}
+
+#tip-bar .close-circle-dark:hover {
+    background-color: #1AA0D8;
+}

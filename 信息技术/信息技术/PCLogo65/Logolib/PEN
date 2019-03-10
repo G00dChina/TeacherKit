@@ -1,0 +1,6 @@
+to pen
+op (list (ifelse pendownp ["pendown] ["penup]) ~
+         penmode pensize pencolor [1])
+end
+
+bury [pen]

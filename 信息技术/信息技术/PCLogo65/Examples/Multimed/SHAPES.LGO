@@ -1,0 +1,76 @@
+to aaa
+;
+; Example of pasting irregular images you wish to overlap.
+;
+cs
+; Normal Paste Mode
+setbitmode 1
+; Draw the shape
+shape
+pu
+; Position our self to the lower left bounding rectangle
+setxy -50 0
+pd
+; Copy to clipboard
+bitcopy 151 121
+; Why the +1's because when you draw a square (repeat 4 [fd 2 rt 90]) it's
+; size in pixels is NOT 2x2 but 3x3 (inclusive). All Logo's do this !!!
+; Many folks think BITCOPY is off by one pixel, it's actually Logo's
+; drawings that are off by 1 pixel.
+cs
+; Set ourself in AND mode (will behave as if white is transparent)
+setbitmode 3
+pu
+; Now paste the shapes a few pixels apart
+for [x -500 500 101+1] ~
+   [
+   for [y -500 500 121+2] ~
+       [
+       setxy :x :y
+       bitpaste
+       ]
+   ]
+pd
+end
+
+to shape
+
+; draw the bulge slightly smaller
+setpc [255 0 0]
+fd 12
+lt 90
+arc2 180 48
+lt 90
+fd 12
+rt 90
+fd 100
+rt 90
+
+; draw the socket slightly bigger than the bulge
+fd 8
+rt 270
+arc2 -180 52
+lt 90
+fd 8
+rt 90
+fd 100
+rt 90
+pu
+
+; Example of new distance command (which is overkill here)
+setheading towards [25 25]
+forward distance [25 25]
+; fill thing with green
+setfc [0 255 0]
+fill
+setheading towards [0 0]
+forward distance [0 0]
+setheading 0
+pd
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

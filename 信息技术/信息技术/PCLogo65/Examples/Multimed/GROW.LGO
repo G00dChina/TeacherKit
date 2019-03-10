@@ -1,0 +1,140 @@
+to aaa
+;
+; This example will "Grow" a flower faster than you can blink.
+;
+; Continuous Motion (to the Eye),
+; Continuous Sound (to the Ear),
+; Continuous Geometric Shapes (to the Turtle).
+;
+; I think "Q" from the "Continium" (Star Trek) would be pleased.
+;
+; grow :years :delay_between_years
+;
+; delay_bewteen_years is in 1/60ths of a second
+;
+; Example:
+;
+grow 30 0  ; <P90 Machine <16meg Memory
+; grow 60 0  ; <P90 Machine >16meg Memory
+; grow 30 10 ; >P90 Machine <16meg Memory
+; grow 60 10 ; >P90 Machine >16meg Memory
+;
+; <Don't stop it, wait for the MessageBox to pop up>
+;
+; WARNING: this EXAMPLE can use a HUGE Amount of memory.
+; Your Video mode will effect how much memory it will use.
+;
+; Add color parameterized by it's size if you like.
+; If you add color it will "record" slower, but it will "play"
+; exactly as fast. It doesn't care what's in it, it's just a
+; "Picture".
+;
+; The technique used in this Example is what I suggested once
+; to be used on the "Heat Applied to a Plate" example (PLATE.LGO)
+; You can move the "Record" and "Playback" code from this Example
+; into PLATE.LGO. Run PLATE.LGO overnight and then "replay"
+; the recording in the morning. Skip some "Iterations" if you need
+; limit the number of frames your Computer Memory can hold.
+;
+; If you use too small a value, it will run through the
+; Video so fast, you may never see or hear it. Use a
+; minimum of 30. My P120 is getting approximately 120 frames
+; a second with this example, that's:
+;
+; 120 frames * (18 petals + 1 pod) = 2160 Ellipses in a Second !!!
+;
+; It took 34 seconds to Generate them, which is nothing to
+; sneeze at either.
+;
+; My 32meg, 64meg swap, 64k Color mode machine ran out of
+; memory when I tried to grow 120. Animation is not cheap.
+; Note that the bitmaps we are recording pretty large.
+;
+end
+
+to flower :center :pet1 :pet2 :pets
+; Seed pod
+arc 360 :center
+; Petals
+repeat :pets ~
+   [
+   pu
+   ; Move to the edge of Pod then to the center of the petal
+   fd :center+:pet2
+   pd
+   ; This will draw an ellipse across the turtles heading of radius :pet1
+   ; and extend outward (and inward) by radius :pet2. It will be exactly
+   ; tangent to the pod because that is exactly how far we moved out to get
+   ; to the petal's center.
+   ellipse :pet1 :pet2
+   pu
+   ; Back to the pod
+   bk :center+:pet2
+   ; Where is that next petal suposed to go
+   rt 360/:pets
+   ]
+end
+
+to grow :years :delay
+; No need for our little friend this time, see ya buddy.
+ht 
+setpensize [1 1]
+setpencolor [0 0 0]
+setbitmode 1
+localmake "starttime timemilli
+show (list "Start "Recording :years "Years)
+; Let's watch this flower grow
+repeat :years ~
+   [
+   cs
+   ; setheading repcount * (360/:years)
+   pd
+   ; Flower with center of 1 unit and a Petal with an aspect ratio of 2 to 1
+   flower repcount repcount/2 repcount 18
+   pu
+   ; Lets take a picture, get in a good position now.
+   setpos (list -repcount*3 -repcount*3)
+   ; Advance the video camera to the next frame.
+   setbitindex repcount
+   ; Click, for simplicity we used the same size "film" for each frame.
+   ; It was easy to know what the largest "film" size we will need.
+   ; Where did 6 come from, 1 radius for the pod, 1 diameter (2 radius)
+   ; for the petal, all times 2 for a diameter of 6 radius.
+   bitcut repcount*6 repcount*6
+   setpos [0 0]
+   ; Another year gone by, how time flys.
+   ]
+show (list "End "Recorded :years "Years "in timemilli - :starttime "MilliSeconds)
+cs
+
+; That was boring.
+MessageBox [] [Too slow, fasten your seat belts]
+
+; Loop until, the user is hypmotized
+repeat 1000 ~
+   [
+   localmake "starttime timemilli
+   show (list "Start "Playing :years "Years)
+   ; Lets watch the video
+   repeat :years~
+      [
+      ; Lets sit exactly where the picture was taken for a good view
+      setpos (list -repcount*3 -repcount*3)
+      setbitindex repcount
+      bitpaste
+      soundon 10000/:years*repcount
+      wait :delay
+      ]
+   soundoff
+   show (list "End "Recorded :years "Years "in timemilli - :starttime "MilliSeconds)
+   ; Had enough
+   if Not YesNoBox [] [Was that fast enough for you, Again?] [stop]
+   cs
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

@@ -1,0 +1,46 @@
+to aaa
+;
+; Function:
+;
+; This routine will record and play your voice back.
+; The :arg is the number of seconds you want to record your voice for.
+; Watch for messages for when to start and stop speaking.
+; It will automatically play back what was recorded.
+;
+; To run:
+;
+; load "echo.lgo
+; Call ECHO secondstorecord
+;
+; Example:
+;
+echo 2
+;
+; System requirements:
+;
+; You must have Windows 3.1 (or 3.0 with Multi-Media Extentions)
+; You must have the correct driver loaded in Windows for your sound card.
+; You must have a sound card with a microphone input.
+; You must have a microphone.
+; In Win95 Goto ControlPanel->MultiMedia->Advanced->Media Control Devices->WaveAudioDevice
+;    to set maximum recording time.
+end
+
+to echo :arg
+print mci sentence [open new type waveaudio alias wa buffer] :arg
+mci [record wa]
+print "Recording...
+wait :arg*60
+print "Stopped...
+mci [seek wa to start]
+print "Playing...
+mci [play wa wait]
+print "Stopped...
+mci [close wa]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]

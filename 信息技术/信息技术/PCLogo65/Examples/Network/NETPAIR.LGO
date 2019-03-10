@@ -1,0 +1,66 @@
+to aaa
+;
+; Function:
+;
+; Connects a pair of machines such that each can send
+; logo commands to one another.  It does not do all
+; all the error checking that is possible. Note the
+; remote machine can be your own machine.
+;
+; To run:
+;
+; load "netpair.lgo
+; Call NETPAIR RemoteMachineName
+;
+; Example:
+;
+; On Machine "logo.ultranet.com"
+; netpair "brian.cs.berkeley.edu
+;
+; On Machine "brian.cs.berkeley.edu"
+; netpair "logo.ultranet.com
+;
+; <once connected>
+;
+; On Either Machine
+; netcircle 2
+; 
+; This tells remote machine to send a command define its time on the local machine
+; show netconnectsendvalue [show netconnectsendvalue (list "make ""result timemilli)]
+;
+; System requirements:
+;
+; You must have a WinSock capable machine and know your machine name.
+;
+end
+
+to netcircle :num
+; Send :num circles to remote machine
+repeat :num ~
+  [
+  make "foo netconnectsendvalue [cs]
+  repeat 360 [wait 1 make "foo netconnectsendvalue [fd 1 rt 1]]
+  ]
+end
+
+to netpair :remotemachine
+netstartup
+ifelse netaccepton 5124 [] [run netacceptreceivevalue] ~
+   [
+   MessageBox "Status [Hit Ok when Both Machines have this message up]
+   ] ~
+   [
+   MessageBox "Status [Network failed to setup receive]
+   ]
+if not netconnecton :remotemachine 5124 [print [Ready]] []~
+   [
+   MessageBox "Status [Network failed to setup send]
+   ]
+end
+
+to zzz
+MessageBox [Welcome] [Study it now.]
+edall
+end
+
+Make "startup [zzz]

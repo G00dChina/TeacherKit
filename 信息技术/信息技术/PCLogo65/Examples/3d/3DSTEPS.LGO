@@ -1,0 +1,311 @@
+to aaa
+;
+; 2D                3D
+;====================================================================
+; setxy             setxy (z stays current)
+;                   setxyz
+; setx              setx (y and z stay current)
+; sety              sety (x and z stay current)
+;                   setz
+; xcor              xcor
+; ycor              ycor
+;                   zcor
+; pos               pos (z dropped)
+;                   posxyz
+; setpos            setpos (z stays current)
+;                   setposxyz
+; towards           towards
+;                   towardsxyz (returns orientation)
+; distance (new)    distance
+;                   distancexyz
+; heading           heading
+;                   roll
+;                   pitch
+;                   orientation
+; setheading        setheading
+;                   setroll
+;                   setpitch
+;                   setorientation
+; right (rt)        right (rt) (on current plane)
+;                   rightroll (rr)
+;                   uppitch (up)
+; left (lt)         left (lt) (on current plane)
+;                   leftroll (lr)
+;                   downpitch (down)
+; window            perspective (enables 3d mode, in a window like mode)
+; wrap
+; fence
+; setturtle 0-1023  setturtle 0-1023
+;                   setturtle -1 (is your eye view)
+;                                (it's trajectory is which end is up)
+;                   setturtle -2 (is where your looking)
+; 
+; These function are not Truely 3D but will perform at the XYZ Location
+;
+; pixel             pixel
+; setpixel (new)    setpixel
+; fill              fill (reduced flicker)
+; label             label
+; bitpaste          bitpaste
+; bitcopy           bitcopy
+; bitcut            bitcut
+; bitblock          bitblock
+;
+; The beauty of these extensions is that all you have learned in 2D
+; applies. For example if you had code that drew a 2D Picture,
+; say a star, you can run the same code and place that image on
+; six sides of a cube by getting the turtle to the correct
+; 3D coordinate and orientation before you call your old 2D code. You
+; get it there like you fly an airplane. Airplanes have 3
+; controls to manipulate them through 3D space. Elevators on the tail,
+; a rudder on the fin and ailerons on the wings.
+;
+; MSWLogo has always had a rudder (Right/Left) also know as Yaw, you've
+; been flying already on just 1 geometric plane. But now we add the
+; other 2 controls ailerons (RightRoll/LeftRoll) and elevators
+; (Uppitch/Downpitch). Now you have an infinite number of planes
+; (geometric ones, that is) to fly on and each can be at any orientation.
+; Once your on the desired plane you can use 2D commands to
+; traverse it.
+;
+; When you start at (X=0,Y=0,Z=0) the +Y axis is still up the screen
+; and the +X axis is to the right of the screen. But now you can
+; go into the screen (away from you) or out of the screen (closer
+; to you). How, just like an airplane flies.
+;
+; When an airplane Rolls to the right it does not change it's
+; trajectory does it, neither does MSWLogo. But if your
+; rolled 90 degrees to the right and take a right turn guess
+; what will happen. You'll go down real fast, straight down.
+; Think of a real turtle on the floor. Now roll it on to its
+; right side. Now if he takes a right turn towards his right
+; front leg like he always does he will want to go into the
+; floor. Let him take the turn and now his nose is pointing
+; at the floor. Forward will now go down in the Z axis
+; (away from you).
+;
+; Intro
+;
+localmake "SeeCode not yesnobox [3D Intro] [Do you wish to skip viewing the code as intro progresses (say yes first time through)]
+if :SeeCode [MessageBox [3D Intro] [During this little Intro the Editor will pop up with some sample code. After viewing close the editor before continuing the intro (don't change the code)]]
+;
+; Run Steps
+;
+if not yesnobox [Step1] [Draw a square in 2D, Continue?] [stop]
+if :SeeCode [edit "step1]
+cs
+Step1
+;
+if not yesnobox [Step2] [It's not much harder to draw a box in 3D, Continue?] [stop]
+if :SeeCode [edit "step2]
+cs
+Step2
+;
+;if not yesnobox [Step3] [That doesn't look like a box, Continue?] [stop]
+;if :SeeCode [edit "step2]
+;cs
+;Step3
+;
+;if not yesnobox [Step4] [That's better but still not quite right, Continue?] [stop]
+;if :SeeCode [edit "step4]
+;cs
+;Step4
+;
+if not yesnobox [Step5] [Lets play with some old 2D code in 3D, Continue?] [stop]
+if :SeeCode [edit "step5]
+cs
+Step5
+;
+if not yesnobox [Step6] [Lets make a few adjustments, Continue?] [stop]
+if :SeeCode [edit "step6]
+cs
+Step6
+;
+if not yesnobox [Step7] [Lets mix the 2D with 3D, Continue?] [stop]
+if :SeeCode [edit "step7]
+cs
+Step7
+;
+Messagebox [Step8] [Notice where the turtle is, try some FD's and RT's and notice what happens]
+Messagebox [Done] [Don't get lost in 3D space]
+end
+
+to allsteps
+;
+cs
+perspective
+step1
+window home setbitindex 1 label "Step1 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+perspective
+step2
+window home setbitindex 2 label "Step2 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+perspective
+step3
+window home setbitindex 3 label "Step3 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+perspective
+step4
+window home setbitindex 4 label "Step4 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+perspective
+step5
+window home setbitindex 5 label "Step5 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+perspective
+step6
+window home setbitindex 6 label "Step6 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+perspective
+step7
+window home setbitindex 7 label "Step7 pu setxy -50 -50 pd bitcopy 200 200
+;
+cs
+pu setxy -350 175 pd setbitindex 1 bitpaste
+pu setxy -175 175 pd setbitindex 2 bitpaste
+pu setxy    0 175 pd setbitindex 3 bitpaste
+pu setxy  175 175 pd setbitindex 4 bitpaste
+pu setxy -350   0 pd setbitindex 5 bitpaste
+pu setxy -175   0 pd setbitindex 6 bitpaste
+pu setxy    0   0 pd setbitindex 7 bitpaste
+end
+
+to step1
+; Exit editor once your done reviewing the code, don't edit.
+;
+; Enable 3D mode.
+Perspective
+; Draw a square, same old stuff.
+repeat 4 [fd 100 rt 90]
+end
+
+to step2
+; Exit editor once your done reviewing the code, don't edit.
+;
+; Draw 4 squares (Step1 2D code) to form a box.
+repeat 4 ~
+   [
+   step1
+   ; After drawing the previous square go to the corner straight ahead
+   fd 100
+   ; now point your nose down 90 degrees to get ready for the next square
+   downpitch 90
+   ]
+end
+
+to step3
+; Exit editor once your done reviewing the code, don't edit.
+;
+; Why does it not look right?
+;
+; Imagine standing in a doorway with a painting on the
+; same wall as the doorway is in. Can you see the painting?
+; That's the problem. Even worse your lying on the floor
+; in the doorway trying to view a box on the floor up
+; against the same wall. We could either move our Eye with
+; SETTURTLE -1 or move the box. Rotating the box is easier.
+;
+; Just like 2D code if we did a RIGHT before we draw something
+; everything after is relative to that move. Same is true in 3D,
+; Except we are rolling the turtle 60 degrees on its side.
+;
+; This will roll the box.
+leftroll 60
+; Draws the box again
+step2 
+end
+
+to step4
+; Exit the editor once your done reviewing the code, don't edit.
+;
+; Like the previous step except we are pointing the turtle's nose
+; up little. This draw the box tipped up.
+uppitch 30
+; Draws the box again with a some roll
+step3
+end
+
+to step5
+; Exit editor once your done reviewing the code, don't edit.
+;
+; Back to 2D code for a minute. This code was extracted,
+; from the Examples directory and is old 2D code that
+; draws a flower.
+;
+; Draw Seed pod
+circle 10
+; Draw Petals
+repeat 8 ~
+   [
+   ; Move to the edge of Pod then to the center of the petal
+   pu
+   fd 10+20
+   pd
+   ; This will draw an ellipse across the turtles heading of radius 10
+   ; and extend outward (and inward) by radius 20. It will be exactly
+   ; tangent to the pod because that is exactly how far we moved out
+   ; to get to the petal's center.
+   ellipse 10 20
+   ; Back to the pod
+   pu
+   bk 10+20
+   pd
+   ; Where is that next petal suposed to go
+   rt 45
+   ]
+end
+
+to step6
+; Exit editor once your done reviewing the code, don't edit.
+;
+; Still in 2D land.
+; Lets put the flower (step5) into the center of the square (step1)
+;
+; draw a square
+step1
+; move to center of square
+pu
+fd 50
+rt 90
+fd 50
+pd
+; draw the flower
+step5
+; back to where we came from
+pu
+bk 50
+lt 90
+bk 50
+pd
+end
+
+to step7
+; Exit editor once your done reviewing the code, don't edit.
+;
+; pitch and roll the object for a good viewing
+leftroll 60 ; Explained in Step3
+uppitch 30  ; Explained in Step4
+;
+; same as the cube code in step2 but we replaced step1 (square)
+; with step6 (squarea and flower)
+repeat 4 ~
+   [
+   ; draw square and flower
+   step6
+   fd 100
+   downpitch 90
+   ]
+end
+
+to zzz
+ifelse YesNoBox [Welcome] [Choose YES to run example now, Choose NO Study it now.] [aaa] [edall]
+end
+
+Make "startup [zzz]
