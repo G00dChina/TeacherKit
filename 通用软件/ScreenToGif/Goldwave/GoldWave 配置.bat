@@ -1,1 +1,0 @@
-start GoldWave.exe -config
