@@ -1,0 +1,92 @@
+;;;
+;;; Sfilter
+;;;
+;;;
+;;; Copyright (c) 2000, Microsoft Corporation
+;;;
+
+[Version]
+signature  	= "$Windows NT$"
+Class		= "ActivityMonitor"				;This is determined by the work this filter driver does
+ClassGuid 	= {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}	;This value is determined by the Class
+Provider 	= %Msft%
+DriverVer 	= 08/28/2000,1.0.0.1
+CatalogFile     = FileInterceptor.cat                                   ; A CatalogFile entry is required for a WHQL signature.
+                                                                ; The actual catalog file will be provided by WHQL.  The
+                                                                ; catalog file for this sample is not provided for use.
+[DestinationDirs]
+DefaultDestDir	         = 12
+FileInterceptor.DriverFiles      = 12 			;%windir%\system32\drivers
+
+[SourceDisksNames]
+1 = %Disk1%
+
+[SourceDisksFiles]
+FileInterceptor.sys = 1
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc          = %FileInterceptorServiceDesc%
+CopyFiles           = FileInterceptor.DriverFiles
+
+[DefaultInstall.Services]
+AddService          = %FileInterceptorServiceName%,,FileInterceptor.Service
+AddReg              = FileInterceptor.AddRegistry
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = FileInterceptor.DriverFiles
+DelReg     = FileInterceptor.DelRegistry
+
+[DefaultUninstall.Services]
+DelService = FileInterceptor,0x200		; Flags note to stop service first
+
+;
+; Services Section
+;
+
+[FileInterceptor.Service]
+DisplayName      = %FileInterceptorServiceName%
+Description      = %FileInterceptorServiceDesc%
+ServiceBinary    = %12%\FileInterceptor.sys		;%windir%\system32\drivers\FileInterceptor.sys
+ServiceType      = 2					;SERVICE_FILE_SYSTEM_DRIVER
+StartType        = 0					;SERVICE_BOOT_START
+ErrorControl     = 1					;SERVICE_ERROR_NORMAL
+LoadOrderGroup   = "FileInterceptor Activity Monitor"
+AddReg			 = FileInterceptor.AddRegistry
+
+;
+; Registry Modifications
+;
+
+[FileInterceptor.AddRegistry]
+HKLM,%FileInterceptorRegistry%,%FileInterceptorDebugFlags%,0x00010001 ,0
+
+[FileInterceptor.DelRegistry]
+HKLM,%FileInterceptorRegistry%,%FileInterceptorDebugFlags%
+
+;
+; Copy Files
+;
+
+[FileInterceptor.DriverFiles]
+FileInterceptor.sys
+
+;;
+;; String Section
+;;
+
+[Strings]
+Msft	            = "Microsoft Corporation"
+FileInterceptorServiceDesc  = "FileInterceptor Filter Driver"
+FileInterceptorServiceName  = "FileInterceptor"
+FileInterceptorRegistry     = "system\currentcontrolset\services\FileInterceptor"
+FileInterceptorDebugFlags   = "DebugFlags"
+Disk1               = "FileInterceptor Source Media"
+
