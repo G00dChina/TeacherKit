@@ -7,8 +7,8 @@
  【腾讯微云】https://share.weiyun.com/5chtZ46
 
 
-![Alt text](https://attach.52pojie.cn/forum/201903/10/124115j2ses4ivgviegssz.jpg)
-![](https://attach.52pojie.cn/forum/201903/10/124119asrmy6rqm79dmhyz.jpg)
-![](https://attach.52pojie.cn/forum/201903/10/124123fklbqb5lb029jfs9.jpg)
-![](https://attach.52pojie.cn/forum/201903/10/124126a4bhoepdev8sdgr4.jpg)
+![Alt text](https://github.com/G00dChina/TeacherKit/blob/master/Files/01.jpg)
+![](https://github.com/G00dChina/TeacherKit/blob/master/Files/02.jpg)
+![](https://github.com/G00dChina/TeacherKit/blob/master/Files/03.jpg)
+![](https://github.com/G00dChina/TeacherKit/blob/master/Files/04.jpg)
 ![](https://github.com/G00dChina/TeacherKit/blob/master/structure.png)
