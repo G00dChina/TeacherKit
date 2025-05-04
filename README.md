@@ -4,8 +4,7 @@
  
  【百度云盘】 链接过期
 
- 【腾讯微云】https://share.weiyun.com/5chtZ46
-
+ 【腾讯微云】链接过期
 
 ![Alt text](https://github.com/G00dChina/TeacherKit/blob/master/Files/01.jpg)
 ![](https://github.com/G00dChina/TeacherKit/blob/master/Files/02.jpg)
